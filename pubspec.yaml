@@ -1,0 +1,16 @@
+name: opal
+description: >-
+  Tokenization and syntax highlighting support for
+  various programming languages and data formats.
+version: 0.0.1
+repository: https://github.com/dart-community/opal
+
+environment:
+  sdk: ^3.8.0
+
+dependencies:
+  meta: ^1.16.0
+
+dev_dependencies:
+  night_raven_insight: ^4.0.0
+  test: ^1.26.0

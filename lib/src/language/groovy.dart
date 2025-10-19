@@ -4,8 +4,8 @@ import '../matcher.dart';
 import '../tag.dart';
 
 @internal
-final class KotlinGrammar extends MatcherGrammar {
-  const KotlinGrammar();
+final class GroovyGrammar extends MatcherGrammar {
+  const GroovyGrammar();
 
   @override
   List<Matcher> get matchers => [
@@ -21,6 +21,7 @@ final class KotlinGrammar extends MatcherGrammar {
   ];
 
   Matcher _comments() => Matcher.options([
+    Matcher.regex(r'#!.*$', tag: Tags.lineComment),
     Matcher.regex(r'//.*$', tag: Tags.lineComment),
     Matcher.verbatim(r'/**/', tag: Tags.docComment),
     Matcher.wrapped(
@@ -34,16 +35,12 @@ final class KotlinGrammar extends MatcherGrammar {
       ),
       content: Matcher.options([
         Matcher.regex(
-          r'@(param|property|constructor|receiver|return|throws|'
-          r'exception|sample|see|author|since|suppress)\b',
+          r'@(param|return|throws|exception|see|since|deprecated|author|'
+          r'version|link|code)\b',
           tag: Tags.annotation,
         ),
         Matcher.regex(
-          r'\[[^\]]+\]',
-          tag: Tags.commentReference,
-        ),
-        Matcher.regex(
-          r'[^@*\[]+',
+          r'[^@*]+',
           tag: const Tag('content', parent: Tags.docComment),
         ),
         Matcher.regex(
@@ -72,52 +69,37 @@ final class KotlinGrammar extends MatcherGrammar {
   ]);
 
   Matcher _strings() => Matcher.options([
-    Matcher.include(_rawString),
+    Matcher.include(_dollarSlashyString),
+    Matcher.include(_slashyString),
+    Matcher.include(_tripleDoubleQuotedGString),
+    Matcher.include(_tripleSingleQuotedString),
+    Matcher.include(_doubleQuotedGString),
+    Matcher.include(_singleQuotedString),
     Matcher.include(_characterLiteral),
-    Matcher.include(_doubleQuotedString),
   ]);
 
-  Matcher _rawString() => Matcher.wrapped(
-    begin: Matcher.verbatim(
-      '"""',
-      tag: const Tag('begin', parent: Tags.tripleQuoteString),
-    ),
-    end: Matcher.verbatim(
-      '"""',
-      tag: const Tag('end', parent: Tags.tripleQuoteString),
-    ),
-    content: Matcher.options([
-      Matcher.regex(r'\$\{[^}]*\}', tag: Tags.stringInterpolation),
-      Matcher.regex(r'\$\w+', tag: Tags.stringInterpolation),
-      Matcher.regex(
-        r'[\s\S]+?',
-        tag: Tags.stringContent,
-      ),
-    ], tag: Tags.stringContent),
-    tag: Tags.tripleQuoteString,
-  );
-
-  Matcher _characterLiteral() => Matcher.wrapped(
+  Matcher _singleQuotedString() => Matcher.wrapped(
     begin: Matcher.verbatim(
       "'",
-      tag: const Tag('begin', parent: Tags.characterLiteral),
+      tag: const Tag('begin', parent: Tags.singleQuoteString),
     ),
     end: Matcher.verbatim(
       "'",
-      tag: const Tag('end', parent: Tags.characterLiteral),
+      tag: const Tag('end', parent: Tags.singleQuoteString),
     ),
     content: Matcher.options([
-      Matcher.regex(r"""\\[tnr'\\$]""", tag: Tags.stringEscape),
+      Matcher.regex(r"""\\[btnfr"'\\]""", tag: Tags.stringEscape),
       Matcher.regex(r'\\u[0-9a-fA-F]{4}', tag: Tags.stringEscape),
+      Matcher.regex(r'\\[0-7]{1,3}', tag: Tags.stringEscape),
       Matcher.regex(
-        r"[^'\\]",
+        r"[^'\\]+",
         tag: Tags.stringContent,
       ),
     ], tag: Tags.stringContent),
-    tag: Tags.characterLiteral,
+    tag: Tags.singleQuoteString,
   );
 
-  Matcher _doubleQuotedString() => Matcher.wrapped(
+  Matcher _doubleQuotedGString() => Matcher.wrapped(
     begin: Matcher.verbatim(
       '"',
       tag: const Tag('begin', parent: Tags.doubleQuoteString),
@@ -128,9 +110,13 @@ final class KotlinGrammar extends MatcherGrammar {
     ),
     content: Matcher.options([
       Matcher.regex(r'\$\{[^}]*\}', tag: Tags.stringInterpolation),
-      Matcher.regex(r'\$\w+', tag: Tags.stringInterpolation),
-      Matcher.regex(r'\\[tnr"\\$]', tag: Tags.stringEscape),
+      Matcher.regex(
+        r'\$[a-zA-Z_][a-zA-Z0-9_.]*',
+        tag: Tags.stringInterpolation,
+      ),
+      Matcher.regex(r"""\\[btnfr"'\\$]""", tag: Tags.stringEscape),
       Matcher.regex(r'\\u[0-9a-fA-F]{4}', tag: Tags.stringEscape),
+      Matcher.regex(r'\\[0-7]{1,3}', tag: Tags.stringEscape),
       Matcher.regex(
         r'[^"\\$]+',
         tag: Tags.stringContent,
@@ -139,26 +125,143 @@ final class KotlinGrammar extends MatcherGrammar {
     tag: Tags.doubleQuoteString,
   );
 
+  Matcher _tripleSingleQuotedString() => Matcher.wrapped(
+    begin: Matcher.verbatim(
+      "'''",
+      tag: const Tag('begin', parent: Tags.tripleQuoteString),
+    ),
+    end: Matcher.verbatim(
+      "'''",
+      tag: const Tag('end', parent: Tags.tripleQuoteString),
+    ),
+    content: Matcher.options([
+      Matcher.regex(r"""\\[btnfr"'\\]""", tag: Tags.stringEscape),
+      Matcher.regex(r'\\u[0-9a-fA-F]{4}', tag: Tags.stringEscape),
+      Matcher.regex(
+        r'[\s\S]+?',
+        tag: Tags.stringContent,
+      ),
+    ], tag: Tags.stringContent),
+    tag: Tags.tripleQuoteString,
+  );
+
+  Matcher _tripleDoubleQuotedGString() => Matcher.wrapped(
+    begin: Matcher.verbatim(
+      '"""',
+      tag: const Tag('begin', parent: Tags.tripleQuoteString),
+    ),
+    end: Matcher.verbatim(
+      '"""',
+      tag: const Tag('end', parent: Tags.tripleQuoteString),
+    ),
+    content: Matcher.options([
+      Matcher.regex(r'\$\{[^}]*\}', tag: Tags.stringInterpolation),
+      Matcher.regex(
+        r'\$[a-zA-Z_][a-zA-Z0-9_.]*',
+        tag: Tags.stringInterpolation,
+      ),
+      Matcher.regex(r"""\\[btnfr"'\\$]""", tag: Tags.stringEscape),
+      Matcher.regex(r'\\u[0-9a-fA-F]{4}', tag: Tags.stringEscape),
+      Matcher.regex(
+        r'[\s\S]+?',
+        tag: Tags.stringContent,
+      ),
+    ], tag: Tags.stringContent),
+    tag: Tags.tripleQuoteString,
+  );
+
+  Matcher _slashyString() => Matcher.wrapped(
+    begin: Matcher.verbatim(
+      '/',
+      tag: const Tag('begin', parent: Tags.regexpLiteral),
+    ),
+    end: Matcher.verbatim(
+      '/',
+      tag: const Tag('end', parent: Tags.regexpLiteral),
+    ),
+    content: Matcher.options([
+      Matcher.regex(r'\$\{[^}]*\}', tag: Tags.stringInterpolation),
+      Matcher.regex(
+        r'\$[a-zA-Z_][a-zA-Z0-9_.]*',
+        tag: Tags.stringInterpolation,
+      ),
+      Matcher.regex(r'\\/', tag: Tags.stringEscape),
+      Matcher.regex(
+        r'[^/$]+',
+        tag: Tags.stringContent,
+      ),
+    ], tag: Tags.stringContent),
+    tag: Tags.regexpLiteral,
+  );
+
+  Matcher _dollarSlashyString() => Matcher.wrapped(
+    begin: Matcher.verbatim(
+      r'$/',
+      tag: const Tag('begin', parent: Tags.regexpLiteral),
+    ),
+    end: Matcher.verbatim(
+      r'/$',
+      tag: const Tag('end', parent: Tags.regexpLiteral),
+    ),
+    content: Matcher.options([
+      Matcher.regex(r'\$\{[^}]*\}', tag: Tags.stringInterpolation),
+      Matcher.regex(r'\$\$', tag: Tags.stringEscape),
+      Matcher.regex(r'\$/\$', tag: Tags.stringEscape),
+      Matcher.regex(
+        r'[\s\S]+?',
+        tag: Tags.stringContent,
+      ),
+    ], tag: Tags.stringContent),
+    tag: Tags.regexpLiteral,
+  );
+
+  Matcher _characterLiteral() => Matcher.regex(
+    r"""'[^'\\]'|'\\[btnfr"'\\]'|'\\u[0-9a-fA-F]{4}'""",
+    tag: Tags.characterLiteral,
+  );
+
   Matcher _keywords() => Matcher.options([
+    Matcher.include(_gradleKeywords),
     Matcher.include(_controlKeywords),
     Matcher.include(_declarationKeywords),
     Matcher.include(_modifierKeywords),
-    Matcher.include(_functionalKeywords),
-    Matcher.include(_coroutineKeywords),
     Matcher.include(_exceptionKeywords),
     Matcher.include(_otherKeywords),
   ]);
 
+  Matcher _gradleKeywords() => Matcher.keywords(
+    [
+      'allprojects',
+      'android',
+      'apply',
+      'buildscript',
+      'configurations',
+      'dependencies',
+      'ext',
+      'implementation',
+      'plugins',
+      'project',
+      'repositories',
+      'subprojects',
+      'task',
+      'tasks',
+    ],
+    baseTag: Tags.keyword,
+  );
+
   Matcher _controlKeywords() => Matcher.keywords(
     [
+      'assert',
       'break',
+      'case',
       'continue',
+      'default',
       'do',
       'else',
       'for',
       'if',
       'return',
-      'when',
+      'switch',
       'while',
     ],
     baseTag: Tags.controlKeyword,
@@ -167,16 +270,14 @@ final class KotlinGrammar extends MatcherGrammar {
   Matcher _declarationKeywords() => Matcher.keywords(
     [
       'class',
-      'constructor',
+      'def',
       'enum',
-      'fun',
+      'extends',
+      'implements',
       'import',
       'interface',
-      'object',
       'package',
-      'typealias',
-      'val',
-      'var',
+      'trait',
     ],
     baseTag: Tags.declarationKeyword,
   );
@@ -184,60 +285,18 @@ final class KotlinGrammar extends MatcherGrammar {
   Matcher _modifierKeywords() => Matcher.keywords(
     [
       'abstract',
-      'actual',
-      'annotation',
-      'companion',
-      'const',
-      'crossinline',
-      'data',
-      'expect',
-      'external',
       'final',
-      'infix',
-      'inline',
-      'inner',
-      'internal',
-      'lateinit',
-      'noinline',
-      'open',
-      'operator',
-      'out',
-      'override',
+      'native',
       'private',
       'protected',
       'public',
-      'reified',
-      'sealed',
-      'tailrec',
-      'value',
-      'vararg',
+      'static',
+      'strictfp',
+      'synchronized',
+      'transient',
+      'volatile',
     ],
     baseTag: Tags.modifierKeyword,
-  );
-
-  Matcher _functionalKeywords() => Matcher.keywords(
-    [
-      'by',
-      'delegate',
-      'field',
-      'file',
-      'get',
-      'init',
-      'param',
-      'property',
-      'receiver',
-      'set',
-      'setparam',
-      'where',
-    ],
-    baseTag: Tags.keyword,
-  );
-
-  Matcher _coroutineKeywords() => Matcher.keywords(
-    [
-      'suspend',
-    ],
-    baseTag: Tags.keyword,
   );
 
   Matcher _exceptionKeywords() => Matcher.keywords(
@@ -245,6 +304,7 @@ final class KotlinGrammar extends MatcherGrammar {
       'catch',
       'finally',
       'throw',
+      'throws',
       'try',
     ],
     baseTag: Tags.controlKeyword,
@@ -254,7 +314,8 @@ final class KotlinGrammar extends MatcherGrammar {
     [
       'as',
       'in',
-      'is',
+      'instanceof',
+      'new',
       'super',
       'this',
     ],
@@ -276,25 +337,35 @@ final class KotlinGrammar extends MatcherGrammar {
 
   Matcher _numberLiterals() => Matcher.options([
     Matcher.regex(
-      r'\b0[xX][0-9a-fA-F_]+[uUlL]*\b',
+      r'\b0[xX][0-9a-fA-F_]+[lLgGdDfF]?\b',
       tag: Tags.integerLiteral,
     ),
-    Matcher.regex(r'\b0[bB][01_]+[uUlL]*\b', tag: Tags.integerLiteral),
     Matcher.regex(
-      r'\b\d[\d_]*\.\d[\d_]*[eE][+-]?\d[\d_]*[fFdD]?\b',
+      r'\b0[bB][01_]+[lLgGdDfF]?\b',
+      tag: Tags.integerLiteral,
+    ),
+    Matcher.regex(
+      r'\b0[0-7_]+[lLgGdDfF]?\b',
+      tag: Tags.integerLiteral,
+    ),
+    Matcher.regex(
+      r'\b\d[\d_]*\.\d[\d_]*[eE][+-]?\d[\d_]*[gGdDfF]?\b',
       tag: Tags.floatLiteral,
     ),
     Matcher.regex(
-      r'\b\d[\d_]*\.\d[\d_]*[fFdD]?\b',
+      r'\b\d[\d_]*\.\d[\d_]*[gGdDfF]?\b',
       tag: Tags.floatLiteral,
     ),
     Matcher.regex(
-      r'\b\d[\d_]*[eE][+-]?\d[\d_]*[fFdD]?\b',
+      r'\b\d[\d_]*[eE][+-]?\d[\d_]*[gGdDfF]?\b',
       tag: Tags.floatLiteral,
     ),
-    Matcher.regex(r'\b\d[\d_]*[fFdD]\b', tag: Tags.floatLiteral),
-    Matcher.regex(r'\b\d[\d_]*[uUlL]+\b', tag: Tags.integerLiteral),
-    Matcher.regex(r'\b\d[\d_]*\b', tag: Tags.integerLiteral),
+    Matcher.regex(
+      r'\b\d[\d_]*\.[gGdDfF]\b',
+      tag: Tags.floatLiteral,
+    ),
+    Matcher.regex(r'\b\d[\d_]*[gGdDfF]\b', tag: Tags.floatLiteral),
+    Matcher.regex(r'\b\d[\d_]*[lL]?\b', tag: Tags.integerLiteral),
   ]);
 
   Matcher _annotations() => Matcher.regex(
@@ -310,50 +381,47 @@ final class KotlinGrammar extends MatcherGrammar {
 
   Matcher _primitiveTypes() => Matcher.builtInTypes(
     [
-      'Boolean',
-      'Byte',
-      'Char',
-      'Double',
-      'Float',
-      'Int',
-      'Long',
-      'Short',
-      'UByte',
-      'UInt',
-      'ULong',
-      'UShort',
+      'boolean',
+      'byte',
+      'char',
+      'double',
+      'float',
+      'int',
+      'long',
+      'short',
+      'void',
     ],
     tag: Tags.builtInType,
   );
 
   Matcher _builtInTypes() => Matcher.builtInTypes([
-    'Any',
-    'Array',
-    'BooleanArray',
-    'ByteArray',
-    'CharArray',
-    'CharSequence',
-    'Comparable',
-    'DoubleArray',
+    'BigDecimal',
+    'BigInteger',
+    'Boolean',
+    'Byte',
+    'Character',
+    'Class',
+    'Closure',
+    'Double',
     'Enum',
-    'FloatArray',
-    'IntArray',
+    'Exception',
+    'Float',
+    'Integer',
     'List',
-    'LongArray',
+    'Long',
     'Map',
-    'Nothing',
     'Number',
-    'Pair',
+    'Object',
+    'Range',
+    'Script',
     'Set',
-    'ShortArray',
+    'Short',
     'String',
+    'StringBuffer',
+    'StringBuilder',
+    'System',
+    'Thread',
     'Throwable',
-    'Triple',
-    'UByteArray',
-    'UIntArray',
-    'ULongArray',
-    'UShortArray',
-    'Unit',
   ]);
 
   Matcher _typeIdentifiers() =>
@@ -366,16 +434,16 @@ final class KotlinGrammar extends MatcherGrammar {
 
   Matcher _operators() => Matcher.options([
     Matcher.regex(
-      r'\+\+|--|\.\.\.|\.\.<|<=|>=|==|!=|&&|\|\||->|::|!!|\?\.|\?:',
+      r'\+\+|--|<<|>>>|>>|<=|>=|<=>|==|!=|&&|\|\||->|\*\.|\?\.'
+      r'|\?:|\.\.|\.\.\.|\?\[',
       tag: Tags.operator,
     ),
     Matcher.regex(r'[+\-*/%&|^~<>=!?:]', tag: Tags.operator),
-    Matcher.regex(r'[{}()\[\].,;]', tag: Tags.punctuation),
+    Matcher.regex(r'[{}()\[\],;]', tag: Tags.punctuation),
     Matcher.regex(r'\.', tag: Tags.accessor),
   ]);
 
   Matcher _identifiers() => Matcher.options([
-    Matcher.regex(r'`[^`]+`', tag: Tags.identifier),
     Matcher.regex(
       r'\b[A-Z][A-Z0-9_]*\b',
       tag: const Tag('constant', parent: Tags.specialIdentifier),

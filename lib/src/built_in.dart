@@ -2,12 +2,14 @@ import 'package:meta/meta.dart';
 
 import 'language.dart';
 import 'language/dart.dart';
+import 'language/groovy.dart';
 import 'language/html.dart';
 import 'language/java.dart';
 import 'language/js.dart';
 import 'language/json.dart';
 import 'language/kotlin.dart';
 import 'language/markdown.dart';
+import 'language/objective_c.dart';
 import 'language/swift.dart';
 import 'language/text.dart';
 import 'language/xml.dart';
@@ -22,12 +24,14 @@ abstract final class BuiltInLanguages {
   @useResult
   static final List<Language> all = [
     dart,
+    groovy,
     html,
     java,
     js,
     json,
     kotlin,
     markdown,
+    objectiveC,
     swift,
     text,
     xml,
@@ -39,6 +43,13 @@ abstract final class BuiltInLanguages {
     name: 'dart',
     grammar: const DartGrammar(),
     baseTag: const Tag('dart', parent: Tags.codeSource),
+  );
+
+  /// A tokenizing language implementation for the Groovy programming language.
+  static final Language groovy = MatcherLanguage(
+    name: 'groovy',
+    grammar: const GroovyGrammar(),
+    baseTag: const Tag('groovy', parent: Tags.codeSource),
   );
 
   /// A tokenizing language implementation for HTML.
@@ -81,6 +92,13 @@ abstract final class BuiltInLanguages {
     name: 'markdown',
     grammar: const MarkdownGrammar(),
     baseTag: const Tag('markdown', parent: Tags.markupSource),
+  );
+
+  /// A tokenizing language implementation for Objective-C.
+  static final Language objectiveC = MatcherLanguage(
+    name: 'objectiveC',
+    grammar: const ObjectiveCGrammar(),
+    baseTag: const Tag('objectiveC', parent: Tags.codeSource),
   );
 
   /// A tokenizing language implementation for the Swift programming language.

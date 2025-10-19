@@ -15,12 +15,31 @@ final class SwiftGrammar extends MatcherGrammar {
     Matcher.include(_literals),
     Matcher.include(_attributes),
     Matcher.include(_types),
+    Matcher.include(_functions),
     Matcher.include(_operators),
     Matcher.include(_identifiers),
   ];
 
   Matcher _comments() => Matcher.options([
+    Matcher.regex(r'///.*$', tag: Tags.docComment),
     Matcher.regex(r'//.*$', tag: Tags.lineComment),
+    Matcher.verbatim(r'/**/', tag: Tags.docComment),
+    Matcher.wrapped(
+      begin: Matcher.verbatim(
+        '/**',
+        tag: const Tag('begin', parent: Tags.docComment),
+      ),
+      end: Matcher.verbatim(
+        '*/',
+        tag: const Tag('end', parent: Tags.docComment),
+      ),
+      content: Matcher.regex(
+        r'.+?(?=\*/|$)',
+        tag: const Tag('content', parent: Tags.docComment),
+      ),
+      tag: Tags.docComment,
+    ),
+    Matcher.verbatim(r'/**/', tag: Tags.blockComment),
     Matcher.wrapped(
       begin: Matcher.verbatim(
         '/*',
@@ -39,84 +58,64 @@ final class SwiftGrammar extends MatcherGrammar {
   ]);
 
   Matcher _strings() => Matcher.options([
+    Matcher.include(_rawMultilineString),
+    Matcher.include(_rawString),
     Matcher.include(_multilineString),
     Matcher.include(_interpolatedString),
-    Matcher.include(_rawString),
-    Matcher.include(_singleQuotedString),
+  ]);
+
+  Matcher _rawMultilineString() => Matcher.options([
+    Matcher.regex(r'###"""[\s\S]*?"""###', tag: Tags.tripleQuoteString),
+    Matcher.regex(r'##"""[\s\S]*?"""##', tag: Tags.tripleQuoteString),
+    Matcher.regex(r'#"""[\s\S]*?"""#', tag: Tags.tripleQuoteString),
+  ]);
+
+  Matcher _rawString() => Matcher.options([
+    Matcher.regex(r'###"[^"]*"###', tag: Tags.stringLiteral),
+    Matcher.regex(r'##"[^"]*"##', tag: Tags.stringLiteral),
+    Matcher.regex(r'#"[^"]*"#', tag: Tags.stringLiteral),
   ]);
 
   Matcher _multilineString() => Matcher.wrapped(
     begin: Matcher.verbatim(
       '"""',
-      tag: const Tag('begin', parent: Tags.stringLiteral),
+      tag: const Tag('begin', parent: Tags.tripleQuoteString),
     ),
     end: Matcher.verbatim(
       '"""',
-      tag: const Tag('end', parent: Tags.stringLiteral),
+      tag: const Tag('end', parent: Tags.tripleQuoteString),
     ),
-    content: Matcher.options(
-      [
-        Matcher.regex(r'\\\(.*?\)', tag: Tags.stringInterpolation),
-        Matcher.regex(
-          r'[\s\S]*?',
-        ),
-      ],
-      tag: Tags.stringContent,
-    ),
-    tag: Tags.stringLiteral,
+    content: Matcher.options([
+      Matcher.regex(r'\\\([^)]*\)', tag: Tags.stringInterpolation),
+      Matcher.regex(r"""\\[0nrtbf"'\\]""", tag: Tags.stringEscape),
+      Matcher.regex(r'\\u\{[0-9a-fA-F]+\}', tag: Tags.stringEscape),
+      Matcher.regex(
+        r'[\s\S]+?',
+        tag: Tags.stringContent,
+      ),
+    ], tag: Tags.stringContent),
+    tag: Tags.tripleQuoteString,
   );
 
   Matcher _interpolatedString() => Matcher.wrapped(
     begin: Matcher.verbatim(
       '"',
-      tag: const Tag('begin', parent: Tags.stringLiteral),
+      tag: const Tag('begin', parent: Tags.doubleQuoteString),
     ),
     end: Matcher.verbatim(
       '"',
-      tag: const Tag('end', parent: Tags.stringLiteral),
+      tag: const Tag('end', parent: Tags.doubleQuoteString),
     ),
-    content: Matcher.options(
-      [
-        Matcher.regex(r'\\\(.*?\)', tag: Tags.stringInterpolation),
-        Matcher.regex(r"""\\[nrtbf"'\\]""", tag: Tags.stringEscape),
-        Matcher.regex(r'\\u\{[0-9a-fA-F]+\}', tag: Tags.stringEscape),
-        Matcher.regex(
-          r'[^"\\]+',
-        ),
-      ],
-      tag: Tags.stringContent,
-    ),
-    tag: Tags.stringLiteral,
-  );
-
-  Matcher _rawString() => Matcher.options([
-    Matcher.regex(r'#"[^"]*"#', tag: Tags.stringLiteral),
-    Matcher.regex(r'##"[^"]*"##', tag: Tags.stringLiteral),
-    Matcher.regex(r'###"""[\s\S]*?"""###', tag: Tags.stringLiteral),
-    Matcher.regex(r'##"""[\s\S]*?"""##', tag: Tags.stringLiteral),
-    Matcher.regex(r'#"""[\s\S]*?"""#', tag: Tags.stringLiteral),
-  ]);
-
-  Matcher _singleQuotedString() => Matcher.wrapped(
-    begin: Matcher.verbatim(
-      "'",
-      tag: const Tag('begin', parent: Tags.stringLiteral),
-    ),
-    end: Matcher.verbatim(
-      "'",
-      tag: const Tag('end', parent: Tags.stringLiteral),
-    ),
-    content: Matcher.options(
-      [
-        Matcher.regex(r"""\\[nrtbf"'\\]""", tag: Tags.stringEscape),
-        Matcher.regex(r'\\u\{[0-9a-fA-F]+\}', tag: Tags.stringEscape),
-        Matcher.regex(
-          r"[^'\\]",
-        ),
-      ],
-      tag: Tags.stringContent,
-    ),
-    tag: Tags.stringLiteral,
+    content: Matcher.options([
+      Matcher.regex(r'\\\([^)]*\)', tag: Tags.stringInterpolation),
+      Matcher.regex(r"""\\[0nrtbf"'\\]""", tag: Tags.stringEscape),
+      Matcher.regex(r'\\u\{[0-9a-fA-F]+\}', tag: Tags.stringEscape),
+      Matcher.regex(
+        r'[^"\\]+',
+        tag: Tags.stringContent,
+      ),
+    ], tag: Tags.stringContent),
+    tag: Tags.doubleQuoteString,
   );
 
   Matcher _keywords() => Matcher.options([
@@ -128,95 +127,116 @@ final class SwiftGrammar extends MatcherGrammar {
     Matcher.include(_otherKeywords),
   ]);
 
-  Matcher _controlKeywords() => Matcher.keywords([
-    'break',
-    'case',
-    'continue',
-    'default',
-    'defer',
-    'do',
-    'else',
-    'fallthrough',
-    'for',
-    'guard',
-    'if',
-    'in',
-    'repeat',
-    'return',
-    'switch',
-    'where',
-    'while',
-  ]);
+  Matcher _controlKeywords() => Matcher.keywords(
+    [
+      'break',
+      'case',
+      'continue',
+      'default',
+      'defer',
+      'do',
+      'else',
+      'fallthrough',
+      'for',
+      'guard',
+      'if',
+      'in',
+      'repeat',
+      'return',
+      'switch',
+      'where',
+      'while',
+    ],
+    baseTag: Tags.controlKeyword,
+  );
 
-  Matcher _declarationKeywords() => Matcher.keywords([
-    'associatedtype',
-    'class',
-    'deinit',
-    'enum',
-    'extension',
-    'func',
-    'import',
-    'init',
-    'let',
-    'operator',
-    'precedencegroup',
-    'protocol',
-    'struct',
-    'subscript',
-    'typealias',
-    'var',
-  ]);
+  Matcher _declarationKeywords() => Matcher.keywords(
+    [
+      'associatedtype',
+      'class',
+      'deinit',
+      'enum',
+      'extension',
+      'func',
+      'import',
+      'init',
+      'let',
+      'macro',
+      'operator',
+      'precedencegroup',
+      'protocol',
+      'struct',
+      'subscript',
+      'typealias',
+      'var',
+    ],
+    baseTag: Tags.declarationKeyword,
+  );
 
-  Matcher _modifierKeywords() => Matcher.keywords([
-    'convenience',
-    'dynamic',
-    'final',
-    'indirect',
-    'infix',
-    'lazy',
-    'mutating',
-    'nonmutating',
-    'optional',
-    'override',
-    'postfix',
-    'prefix',
-    'required',
-    'static',
-    'unowned',
-    'weak',
-    'private',
-    'fileprivate',
-    'internal',
-    'public',
-    'open',
-    'isolated',
-    'nonisolated',
-  ]);
+  Matcher _modifierKeywords() => Matcher.keywords(
+    [
+      'borrowing',
+      'consuming',
+      'convenience',
+      'dynamic',
+      'fileprivate',
+      'final',
+      'indirect',
+      'infix',
+      'internal',
+      'isolated',
+      'lazy',
+      'mutating',
+      'nonisolated',
+      'nonmutating',
+      'open',
+      'optional',
+      'override',
+      'postfix',
+      'prefix',
+      'private',
+      'public',
+      'required',
+      'static',
+      'unowned',
+      'weak',
+    ],
+    baseTag: Tags.modifierKeyword,
+  );
 
-  Matcher _asyncKeywords() => Matcher.keywords([
-    'async',
-    'await',
-    'actor',
-  ]);
+  Matcher _asyncKeywords() => Matcher.keywords(
+    [
+      'actor',
+      'async',
+      'await',
+    ],
+    baseTag: Tags.controlKeyword,
+  );
 
-  Matcher _exceptionKeywords() => Matcher.keywords([
-    'catch',
-    'rethrows',
-    'throw',
-    'throws',
-    'try',
-  ]);
+  Matcher _exceptionKeywords() => Matcher.keywords(
+    [
+      'catch',
+      'rethrows',
+      'throw',
+      'throws',
+      'try',
+    ],
+    baseTag: Tags.controlKeyword,
+  );
 
-  Matcher _otherKeywords() => Matcher.keywords([
-    'as',
-    'is',
-    'nil',
-    'self',
-    'Self',
-    'super',
-    'Any',
-    'some',
-  ]);
+  Matcher _otherKeywords() => Matcher.keywords(
+    [
+      'Any',
+      'Self',
+      'as',
+      'is',
+      'nil',
+      'self',
+      'some',
+      'super',
+    ],
+    baseTag: Tags.keyword,
+  );
 
   Matcher _literals() => Matcher.options([
     Matcher.include(_booleanLiterals),
@@ -232,73 +252,99 @@ final class SwiftGrammar extends MatcherGrammar {
   Matcher _nilLiteral() => Matcher.regex(r'\bnil\b', tag: Tags.nullLiteral);
 
   Matcher _numberLiterals() => Matcher.options([
-    Matcher.regex(r'\b0x[0-9a-fA-F_]+\b', tag: Tags.numberLiteral),
-    Matcher.regex(r'\b0b[01_]+\b', tag: Tags.numberLiteral),
-    Matcher.regex(r'\b0o[0-7_]+\b', tag: Tags.numberLiteral),
+    Matcher.regex(r'\b0x[0-9a-fA-F_]+\b', tag: Tags.integerLiteral),
+    Matcher.regex(r'\b0b[01_]+\b', tag: Tags.integerLiteral),
+    Matcher.regex(r'\b0o[0-7_]+\b', tag: Tags.integerLiteral),
     Matcher.regex(
       r'\b\d[\d_]*\.[\d_]+([eE][+-]?\d[\d_]*)?\b',
-      tag: Tags.numberLiteral,
+      tag: Tags.floatLiteral,
     ),
-    Matcher.regex(r'\b\d[\d_]*([eE][+-]?\d[\d_]*)?\b', tag: Tags.numberLiteral),
+    Matcher.regex(
+      r'\b\d[\d_]*[eE][+-]?\d[\d_]*\b',
+      tag: Tags.floatLiteral,
+    ),
+    Matcher.regex(r'\b\d[\d_]*\b', tag: Tags.integerLiteral),
   ]);
 
   Matcher _attributes() => Matcher.options([
-    Matcher.regex(r'@\w+', tag: Tags.annotation),
-    Matcher.regex(r'#\w+', tag: Tags.annotation),
+    Matcher.regex(r'@[a-zA-Z_][a-zA-Z0-9_]*', tag: Tags.annotation),
+    Matcher.regex(
+      r'#(available|unavailable|selector|keyPath|colorLiteral|'
+      r'imageLiteral|fileLiteral|file|fileID|filePath|line|column|'
+      r'function|dsohandle)\b',
+      tag: Tags.preprocessor,
+    ),
+    Matcher.regex(r'#[a-zA-Z_][a-zA-Z0-9_]*', tag: Tags.annotation),
   ]);
 
   Matcher _types() => Matcher.options([
-    Matcher.include(_primitiveTypes),
     Matcher.include(_builtInTypes),
     Matcher.include(_typeIdentifiers),
   ]);
 
-  Matcher _primitiveTypes() => Matcher.keywords([
-    'Bool',
-    'Double',
-    'Float',
-    'Int',
-    'Int8',
-    'Int16',
-    'Int32',
-    'Int64',
-    'String',
-    'UInt',
-    'UInt8',
-    'UInt16',
-    'UInt32',
-    'UInt64',
-    'Void',
-  ]);
-
   Matcher _builtInTypes() => Matcher.builtInTypes([
+    'Any',
+    'AnyObject',
     'Array',
+    'Bool',
     'Character',
     'ClosedRange',
     'Dictionary',
+    'Double',
     'Error',
+    'Float',
+    'Int',
+    'Int16',
+    'Int32',
+    'Int64',
+    'Int8',
     'Optional',
     'Range',
     'Result',
     'Set',
+    'String',
     'Substring',
+    'UInt',
+    'UInt16',
+    'UInt32',
+    'UInt64',
+    'UInt8',
+    'Void',
   ]);
 
   Matcher _typeIdentifiers() =>
       Matcher.regex(r'\b[A-Z][a-zA-Z0-9_]*\b', tag: Tags.type);
 
+  Matcher _functions() => Matcher.regex(
+    r'\b[a-zA-Z_][a-zA-Z0-9_]*(?=\s*\()',
+    tag: Tags.function,
+  );
+
   Matcher _operators() => Matcher.options([
     Matcher.regex(
-      r'\.\.\.|\.\.<?|===|!==|<=|>=|==|!=|&&|\|\||->|=>|\?\?|!',
+      r'\.\.\.|\.\.<?|===|!==|<=|>=|==|!=|&&|\|\||->|=>|\?\?|~=',
       tag: Tags.operator,
     ),
     Matcher.regex(r'[+\-*/%&|^~<>=!?:]', tag: Tags.operator),
     Matcher.regex(r'[{}()\[\],.;]', tag: Tags.punctuation),
+    Matcher.regex(r'\.', tag: Tags.accessor),
   ]);
 
   Matcher _identifiers() => Matcher.options([
-    Matcher.regex(r'\b[a-z_][a-zA-Z0-9_]*\b', tag: Tags.identifier),
-    Matcher.regex(r'\$\d+', tag: Tags.specialIdentifier),
+    Matcher.regex(
+      r'\$[a-zA-Z_][a-zA-Z0-9_]*',
+      tag: const Tag('property-wrapper', parent: Tags.property),
+    ),
+    Matcher.regex(
+      r'_[a-zA-Z_][a-zA-Z0-9_]*',
+      tag: const Tag('backing', parent: Tags.property),
+    ),
+    Matcher.regex(r'\$\d+', tag: Tags.parameter),
     Matcher.regex(r'`[^`]+`', tag: Tags.identifier),
+    Matcher.regex(
+      r'\b[A-Z][A-Z0-9_]+\b',
+      tag: const Tag('constant', parent: Tags.specialIdentifier),
+    ),
+    Matcher.regex(r'\b[a-z_][a-zA-Z0-9_]*\b', tag: Tags.identifier),
   ]);
 }

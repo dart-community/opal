@@ -43,20 +43,19 @@ final class DartGrammar extends MatcherGrammar {
 
   Matcher _strings() => Matcher.options([
     Matcher.include(_rawString),
-    Matcher.include(_interpolatedString),
     Matcher.include(_tripleQuotedString),
-    Matcher.include(_singleQuotedString),
     Matcher.include(_doubleQuotedString),
+    Matcher.include(_singleQuotedString),
   ]);
 
   Matcher _rawString() => Matcher.options([
-    Matcher.regex(r"r'[^']*'", tag: Tags.stringLiteral),
-    Matcher.regex(r'r"[^"]*"', tag: Tags.stringLiteral),
     Matcher.regex(r"r'''[\s\S]*?'''", tag: Tags.stringLiteral),
     Matcher.regex(r'r"""[\s\S]*?"""', tag: Tags.stringLiteral),
+    Matcher.regex(r"r'[^']*'", tag: Tags.stringLiteral),
+    Matcher.regex(r'r"[^"]*"', tag: Tags.stringLiteral),
   ]);
 
-  Matcher _interpolatedString() => Matcher.wrapped(
+  Matcher _doubleQuotedString() => Matcher.wrapped(
     begin: Matcher.verbatim(
       '"',
       tag: const Tag('begin', parent: Tags.stringLiteral),
@@ -68,7 +67,7 @@ final class DartGrammar extends MatcherGrammar {
     content: Matcher.options([
       Matcher.regex(r'\$\{[^}]*\}', tag: Tags.stringInterpolation),
       Matcher.regex(r'\$\w+', tag: Tags.stringInterpolation),
-      Matcher.regex(r"""\\[nrtbf"'\\]""", tag: Tags.stringEscape),
+      Matcher.regex(r"""\\[nrtbf"'\\$]""", tag: Tags.stringEscape),
       Matcher.regex(r'\\u[0-9a-fA-F]{4}', tag: Tags.stringEscape),
       Matcher.regex(r'\\x[0-9a-fA-F]{2}', tag: Tags.stringEscape),
       Matcher.regex(
@@ -79,8 +78,48 @@ final class DartGrammar extends MatcherGrammar {
   );
 
   Matcher _tripleQuotedString() => Matcher.options([
-    Matcher.regex(r"'''[\s\S]*?'''", tag: Tags.stringLiteral),
-    Matcher.regex(r'"""[\s\S]*?"""', tag: Tags.stringLiteral),
+    Matcher.wrapped(
+      begin: Matcher.verbatim(
+        "'''",
+        tag: const Tag('begin', parent: Tags.stringLiteral),
+      ),
+      end: Matcher.verbatim(
+        "'''",
+        tag: const Tag('end', parent: Tags.stringLiteral),
+      ),
+      content: Matcher.options([
+        Matcher.regex(r'\$\{[^}]*\}', tag: Tags.stringInterpolation),
+        Matcher.regex(r'\$\w+', tag: Tags.stringInterpolation),
+        Matcher.regex(r"""\\[nrtbf"'\\$]""", tag: Tags.stringEscape),
+        Matcher.regex(r'\\u[0-9a-fA-F]{4}', tag: Tags.stringEscape),
+        Matcher.regex(r'\\x[0-9a-fA-F]{2}', tag: Tags.stringEscape),
+        Matcher.regex(
+          r"[^'\\$]+",
+        ),
+      ], tag: Tags.stringContent),
+      tag: Tags.stringLiteral,
+    ),
+    Matcher.wrapped(
+      begin: Matcher.verbatim(
+        '"""',
+        tag: const Tag('begin', parent: Tags.stringLiteral),
+      ),
+      end: Matcher.verbatim(
+        '"""',
+        tag: const Tag('end', parent: Tags.stringLiteral),
+      ),
+      content: Matcher.options([
+        Matcher.regex(r'\$\{[^}]*\}', tag: Tags.stringInterpolation),
+        Matcher.regex(r'\$\w+', tag: Tags.stringInterpolation),
+        Matcher.regex(r"""\\[nrtbf"'\\$]""", tag: Tags.stringEscape),
+        Matcher.regex(r'\\u[0-9a-fA-F]{4}', tag: Tags.stringEscape),
+        Matcher.regex(r'\\x[0-9a-fA-F]{2}', tag: Tags.stringEscape),
+        Matcher.regex(
+          r'[^"\\$]+',
+        ),
+      ], tag: Tags.stringContent),
+      tag: Tags.stringLiteral,
+    ),
   ]);
 
   Matcher _singleQuotedString() => Matcher.wrapped(
@@ -93,31 +132,13 @@ final class DartGrammar extends MatcherGrammar {
       tag: const Tag('end', parent: Tags.stringLiteral),
     ),
     content: Matcher.options([
-      Matcher.regex(r"""\\[nrtbf"'\\]""", tag: Tags.stringEscape),
+      Matcher.regex(r'\$\{[^}]*\}', tag: Tags.stringInterpolation),
+      Matcher.regex(r'\$\w+', tag: Tags.stringInterpolation),
+      Matcher.regex(r"""\\[nrtbf"'\\$]""", tag: Tags.stringEscape),
       Matcher.regex(r'\\u[0-9a-fA-F]{4}', tag: Tags.stringEscape),
       Matcher.regex(r'\\x[0-9a-fA-F]{2}', tag: Tags.stringEscape),
       Matcher.regex(
-        r"[^'\\]+",
-      ),
-    ], tag: Tags.stringContent),
-    tag: Tags.stringLiteral,
-  );
-
-  Matcher _doubleQuotedString() => Matcher.wrapped(
-    begin: Matcher.verbatim(
-      '"',
-      tag: const Tag('begin', parent: Tags.stringLiteral),
-    ),
-    end: Matcher.verbatim(
-      '"',
-      tag: const Tag('end', parent: Tags.stringLiteral),
-    ),
-    content: Matcher.options([
-      Matcher.regex(r"""\\[Match.include("'\\]""", tag: Tags.stringEscape),
-      Matcher.regex(r'\\u[0-9a-fA-F]{4}', tag: Tags.stringEscape),
-      Matcher.regex(r'\\x[0-9a-fA-F]{2}', tag: Tags.stringEscape),
-      Matcher.regex(
-        r'[^"\\]+',
+        r"[^'\\$]+",
       ),
     ], tag: Tags.stringContent),
     tag: Tags.stringLiteral,
@@ -150,12 +171,15 @@ final class DartGrammar extends MatcherGrammar {
 
   Matcher _declarationKeywords() => Matcher.keywords([
     'as',
+    'augment',
     'class',
     'deferred',
     'enum',
     'export',
+    'extends',
     'extension',
     'hide',
+    'implements',
     'import',
     'library',
     'mixin',
@@ -203,6 +227,7 @@ final class DartGrammar extends MatcherGrammar {
     'in',
     'is',
     'new',
+    'of',
     'super',
     'this',
     'with',
@@ -285,7 +310,9 @@ final class DartGrammar extends MatcherGrammar {
 
   Matcher _operators() => Matcher.options([
     Matcher.regex(
-      r'\+\+|--|<<|>>|<=|>=|==|!=|&&|\|\||=>|\.\.',
+      r'\.\.\.\?|\.\.\.|'
+      r'\?\?=|\?\?|\?\.|\+\+|--|~/|'
+      r'<<|>>|<=|>=|==|!=|&&|\|\||=>|\.\.',
       tag: Tags.operator,
     ),
     Matcher.regex(r'[+\-*/%&|^~=!?:]', tag: Tags.operator),

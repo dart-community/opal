@@ -106,8 +106,10 @@ final Map<String, String> _defaultFallbackLanguageNames = {
   'plaintext': BuiltInLanguages.text.name,
   'none': BuiltInLanguages.text.name,
   'nocode': BuiltInLanguages.text.name,
+  'txt': BuiltInLanguages.text.name,
   'yml': BuiltInLanguages.yaml.name,
   'gradle': BuiltInLanguages.groovy.name,
   'objc': BuiltInLanguages.objectiveC.name,
+  'obj-c': BuiltInLanguages.objectiveC.name,
   'objective-c': BuiltInLanguages.objectiveC.name,
 };

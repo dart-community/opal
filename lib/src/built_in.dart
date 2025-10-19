@@ -96,9 +96,9 @@ abstract final class BuiltInLanguages {
 
   /// A tokenizing language implementation for Objective-C.
   static final Language objectiveC = MatcherLanguage(
-    name: 'objectiveC',
+    name: 'objective-c',
     grammar: const ObjectiveCGrammar(),
-    baseTag: const Tag('objectiveC', parent: Tags.codeSource),
+    baseTag: const Tag('objective-c', parent: Tags.codeSource),
   );
 
   /// A tokenizing language implementation for the Swift programming language.

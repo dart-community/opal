@@ -18,3 +18,22 @@ dart pub add opal
 The package contains one library:
 
 - `package:opal/opal.dart`
+
+### Supported languages
+
+Currently the following languages are supported with
+the specified default and alternative IDs:
+
+- Dart (`dart`)
+- Groovy (`groovy`, `gradle`)
+- HTML (`html`)
+- Java (`java`)
+- JavaScript (`javascript`, `js`)
+- JSON (`json`)
+- Kotlin (`kotlin`, `kt`)
+- Markdown (`markdown`, `md`)
+- Objective-C (`objective-c`, `objectivec`, `obj-c`, `objc`)
+- Swift (`swift`)
+- Text (`text`, `plaintext`, `none`, `txt`)
+- XML (`xml`, `xhtml`)
+- YAML (`yaml`, `yml`)

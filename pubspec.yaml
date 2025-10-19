@@ -6,11 +6,11 @@ version: 0.1.0-wip
 repository: https://github.com/dart-community/opal
 
 environment:
-  sdk: ^3.8.0
+  sdk: ^3.9.0
 
 dependencies:
   meta: ^1.16.0
 
 dev_dependencies:
   night_raven_insight: ^4.0.0
-  test: ^1.26.0
+  test: ^1.26.3

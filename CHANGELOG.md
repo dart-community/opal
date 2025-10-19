@@ -2,6 +2,7 @@
 
 - Implement initial support for `groovy` and `objective-c`.
 - Improve support for `java`, `json`, `kotlin`, `swift`, and `yaml`.
+- Require Dart SDK version 3.9.0 or higher.
 
 ## 0.0.1
 

@@ -1,0 +1,6 @@
+const String message = 'Hello, world!';
+
+void main() {
+  // Print the message.
+  print('The message is: $message');
+}

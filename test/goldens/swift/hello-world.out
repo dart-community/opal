@@ -1,0 +1,44 @@
+let message: String = "Hello, world!"
+^^^
+source-code-swift-keyword-declaration-let
+   ^
+   source-code-swift-whitespace
+    ^^^^^^^
+    source-code-swift-identifier
+           ^
+           source-code-swift-keyword-operator
+            ^
+            source-code-swift-whitespace
+             ^^^^^^
+             source-code-swift-identifier-type-built-in
+                   ^
+                   source-code-swift-whitespace
+                    ^
+                    source-code-swift-keyword-operator
+                     ^
+                     source-code-swift-whitespace
+                      ^
+                      source-code-swift-literal-string-quoted-double-literal-string-quoted-double-begin
+                       ^^^^^^^^^^^^^
+                       source-code-swift-literal-string-quoted-double-literal-string-unquoted-literal-string-unquoted
+                                    ^
+                                    source-code-swift-literal-string-quoted-double-literal-string-quoted-double-end
+
+// Print the message.
+^^^^^^^^^^^^^^^^^^^^^
+source-code-swift-comment-line
+print("The message is: \(message)")
+^^^^^
+source-code-swift-identifier-function
+     ^
+     source-code-swift-punctuation
+      ^
+      source-code-swift-literal-string-quoted-double-literal-string-quoted-double-begin
+       ^^^^^^^^^^^^^^^^
+       source-code-swift-literal-string-quoted-double-literal-string-unquoted-literal-string-unquoted
+                       ^^^^^^^^^^
+                       source-code-swift-literal-string-quoted-double-literal-string-unquoted-literal-string-interpolation
+                                 ^
+                                 source-code-swift-literal-string-quoted-double-literal-string-quoted-double-end
+                                  ^
+                                  source-code-swift-punctuation

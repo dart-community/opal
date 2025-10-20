@@ -1,0 +1,6 @@
+const val MESSAGE = "Hello, world!"
+
+fun main() {
+    // Print the message.
+    println("The message is: $MESSAGE")
+}

@@ -1,0 +1,64 @@
+const val MESSAGE = "Hello, world!"
+^^^^^
+source-code-kotlin-keyword-modifier-const
+     ^
+     source-code-kotlin-whitespace
+      ^^^
+      source-code-kotlin-keyword-declaration-val
+         ^
+         source-code-kotlin-whitespace
+          ^^^^^^^
+          source-code-kotlin-identifier-type
+                 ^
+                 source-code-kotlin-whitespace
+                  ^
+                  source-code-kotlin-keyword-operator
+                   ^
+                   source-code-kotlin-whitespace
+                    ^
+                    source-code-kotlin-literal-string-quoted-double-literal-string-quoted-double-begin
+                     ^^^^^^^^^^^^^
+                     source-code-kotlin-literal-string-quoted-double-literal-string-unquoted-literal-string-unquoted
+                                  ^
+                                  source-code-kotlin-literal-string-quoted-double-literal-string-quoted-double-end
+
+fun main() {
+^^^
+source-code-kotlin-keyword-declaration-fun
+   ^
+   source-code-kotlin-whitespace
+    ^^^^
+    source-code-kotlin-identifier-function
+        ^
+        source-code-kotlin-punctuation
+         ^
+         source-code-kotlin-punctuation
+          ^
+          source-code-kotlin-whitespace
+           ^
+           source-code-kotlin-punctuation
+    // Print the message.
+^^^^
+source-code-kotlin-whitespace
+    ^^^^^^^^^^^^^^^^^^^^^
+    source-code-kotlin-comment-line
+    println("The message is: $MESSAGE")
+^^^^
+source-code-kotlin-whitespace
+    ^^^^^^^
+    source-code-kotlin-identifier-function
+           ^
+           source-code-kotlin-punctuation
+            ^
+            source-code-kotlin-literal-string-quoted-double-literal-string-quoted-double-begin
+             ^^^^^^^^^^^^^^^^
+             source-code-kotlin-literal-string-quoted-double-literal-string-unquoted-literal-string-unquoted
+                             ^^^^^^^^
+                             source-code-kotlin-literal-string-quoted-double-literal-string-unquoted-literal-string-interpolation
+                                     ^
+                                     source-code-kotlin-literal-string-quoted-double-literal-string-quoted-double-end
+                                      ^
+                                      source-code-kotlin-punctuation
+}
+^
+source-code-kotlin-punctuation

@@ -1,0 +1,4 @@
+let message: String = "Hello, world!"
+
+// Print the message.
+print("The message is: \(message)")

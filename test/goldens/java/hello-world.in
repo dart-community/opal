@@ -1,0 +1,8 @@
+public class Main {
+    public static final String MESSAGE = "Hello, world!";
+
+    public static void main(String[] args) {
+        // Print the message.
+        System.out.println("The message is: " + MESSAGE);
+    }
+}

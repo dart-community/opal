@@ -1,0 +1,132 @@
+public class Main {
+^^^^^^
+source-code-java-keyword-modifier-public
+      ^
+      source-code-java-whitespace
+       ^^^^^
+       source-code-java-keyword-declaration-class
+            ^
+            source-code-java-whitespace
+             ^^^^
+             source-code-java-identifier-type
+                 ^
+                 source-code-java-whitespace
+                  ^
+                  source-code-java-punctuation
+    public static final String MESSAGE = "Hello, world!";
+^^^^
+source-code-java-whitespace
+    ^^^^^^
+    source-code-java-keyword-modifier-public
+          ^
+          source-code-java-whitespace
+           ^^^^^^
+           source-code-java-keyword-modifier-static
+                 ^
+                 source-code-java-whitespace
+                  ^^^^^
+                  source-code-java-keyword-modifier-final
+                       ^
+                       source-code-java-whitespace
+                        ^^^^^^
+                        source-code-java-identifier-type-built-in
+                              ^
+                              source-code-java-whitespace
+                               ^^^^^^^
+                               source-code-java-identifier-type
+                                      ^
+                                      source-code-java-whitespace
+                                       ^
+                                       source-code-java-keyword-operator
+                                        ^
+                                        source-code-java-whitespace
+                                         ^
+                                         source-code-java-literal-string-quoted-double-literal-string-quoted-double-begin
+                                          ^^^^^^^^^^^^^
+                                          source-code-java-literal-string-quoted-double-literal-string-unquoted-literal-string-unquoted
+                                                       ^
+                                                       source-code-java-literal-string-quoted-double-literal-string-quoted-double-end
+                                                        ^
+                                                        source-code-java-punctuation
+
+    public static void main(String[] args) {
+^^^^
+source-code-java-whitespace
+    ^^^^^^
+    source-code-java-keyword-modifier-public
+          ^
+          source-code-java-whitespace
+           ^^^^^^
+           source-code-java-keyword-modifier-static
+                 ^
+                 source-code-java-whitespace
+                  ^^^^
+                  source-code-java-keyword-void
+                      ^
+                      source-code-java-whitespace
+                       ^^^^
+                       source-code-java-identifier-function
+                           ^
+                           source-code-java-punctuation
+                            ^^^^^^
+                            source-code-java-identifier-type-built-in
+                                  ^
+                                  source-code-java-punctuation
+                                   ^
+                                   source-code-java-punctuation
+                                    ^
+                                    source-code-java-whitespace
+                                     ^^^^
+                                     source-code-java-identifier
+                                         ^
+                                         source-code-java-punctuation
+                                          ^
+                                          source-code-java-whitespace
+                                           ^
+                                           source-code-java-punctuation
+        // Print the message.
+^^^^^^^^
+source-code-java-whitespace
+        ^^^^^^^^^^^^^^^^^^^^^
+        source-code-java-comment-line
+        System.out.println("The message is: " + MESSAGE);
+^^^^^^^^
+source-code-java-whitespace
+        ^^^^^^
+        source-code-java-identifier-type-built-in
+              ^
+              source-code-java-punctuation
+               ^^^
+               source-code-java-identifier
+                  ^
+                  source-code-java-punctuation
+                   ^^^^^^^
+                   source-code-java-identifier-function
+                          ^
+                          source-code-java-punctuation
+                           ^
+                           source-code-java-literal-string-quoted-double-literal-string-quoted-double-begin
+                            ^^^^^^^^^^^^^^^^
+                            source-code-java-literal-string-quoted-double-literal-string-unquoted-literal-string-unquoted
+                                            ^
+                                            source-code-java-literal-string-quoted-double-literal-string-quoted-double-end
+                                             ^
+                                             source-code-java-whitespace
+                                              ^
+                                              source-code-java-keyword-operator
+                                               ^
+                                               source-code-java-whitespace
+                                                ^^^^^^^
+                                                source-code-java-identifier-type
+                                                       ^
+                                                       source-code-java-punctuation
+                                                        ^
+                                                        source-code-java-punctuation
+    }
+^^^^
+source-code-java-whitespace
+    ^
+    source-code-java-punctuation
+}
+^
+source-code-java-punctuation

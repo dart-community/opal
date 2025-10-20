@@ -1,0 +1,46 @@
+const message = 'Hello, world!';
+^^^^^
+source-code-js-keyword-const
+     ^
+     source-code-js-whitespace
+      ^^^^^^^
+      source-code-js-identifier
+             ^
+             source-code-js-whitespace
+              ^
+              source-code-js-keyword-operator
+               ^
+               source-code-js-whitespace
+                ^
+                source-code-js-literal-string-literal-string-begin
+                 ^^^^^^^^^^^^^
+                 source-code-js-literal-string-literal-string-unquoted
+                              ^
+                              source-code-js-literal-string-literal-string-end
+                               ^
+                               source-code-js-punctuation
+
+// Print the message.
+^^^^^^^^^^^^^^^^^^^^^
+source-code-js-comment-line
+console.log(`The message is: ${message}`);
+^^^^^^^
+source-code-js-identifier
+       ^
+       source-code-js-punctuation
+        ^^^
+        source-code-js-identifier
+           ^
+           source-code-js-punctuation
+            ^
+            source-code-js-literal-string-literal-string-begin
+             ^^^^^^^^^^^^^^^^
+             source-code-js-literal-string-literal-string-unquoted
+                             ^^^^^^^^^^
+                             source-code-js-literal-string-literal-string-unquoted-literal-string-interpolation
+                                       ^
+                                       source-code-js-literal-string-literal-string-end
+                                        ^
+                                        source-code-js-punctuation
+                                         ^
+                                         source-code-js-punctuation

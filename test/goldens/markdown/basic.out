@@ -1,0 +1,278 @@
+# Hello world
+^^^^^^^^^^^^^
+source-text-markup-markdown-tag-heading
+
+This is **bold** text.
+^
+source-text-markup-markdown-unknown
+ ^
+ source-text-markup-markdown-unknown
+  ^
+  source-text-markup-markdown-unknown
+   ^
+   source-text-markup-markdown-unknown
+    ^
+    source-text-markup-markdown-whitespace
+     ^
+     source-text-markup-markdown-unknown
+      ^
+      source-text-markup-markdown-unknown
+       ^
+       source-text-markup-markdown-whitespace
+        ^^
+        source-text-markup-markdown-tag-strong-punctuation-strong-marker
+          ^^^^
+          source-text-markup-markdown-tag-strong-tag-strong
+              ^^
+              source-text-markup-markdown-tag-strong-punctuation-strong-marker
+                ^
+                source-text-markup-markdown-whitespace
+                 ^
+                 source-text-markup-markdown-unknown
+                  ^
+                  source-text-markup-markdown-unknown
+                   ^
+                   source-text-markup-markdown-unknown
+                    ^
+                    source-text-markup-markdown-unknown
+                     ^
+                     source-text-markup-markdown-unknown
+
+This is _italic_ text.
+^
+source-text-markup-markdown-unknown
+ ^
+ source-text-markup-markdown-unknown
+  ^
+  source-text-markup-markdown-unknown
+   ^
+   source-text-markup-markdown-unknown
+    ^
+    source-text-markup-markdown-whitespace
+     ^
+     source-text-markup-markdown-unknown
+      ^
+      source-text-markup-markdown-unknown
+       ^
+       source-text-markup-markdown-whitespace
+        ^
+        source-text-markup-markdown-tag-emphasis-punctuation-emphasis-marker
+         ^^^^^^
+         source-text-markup-markdown-tag-emphasis-tag-emphasis
+               ^
+               source-text-markup-markdown-tag-emphasis-punctuation-emphasis-marker
+                ^
+                source-text-markup-markdown-whitespace
+                 ^
+                 source-text-markup-markdown-unknown
+                  ^
+                  source-text-markup-markdown-unknown
+                   ^
+                   source-text-markup-markdown-unknown
+                    ^
+                    source-text-markup-markdown-unknown
+                     ^
+                     source-text-markup-markdown-unknown
+
+This is `inline code`.
+^
+source-text-markup-markdown-unknown
+ ^
+ source-text-markup-markdown-unknown
+  ^
+  source-text-markup-markdown-unknown
+   ^
+   source-text-markup-markdown-unknown
+    ^
+    source-text-markup-markdown-whitespace
+     ^
+     source-text-markup-markdown-unknown
+      ^
+      source-text-markup-markdown-unknown
+       ^
+       source-text-markup-markdown-whitespace
+        ^
+        source-text-markup-markdown-source-source-backtick
+         ^^^^^^^^^^^
+         source-text-markup-markdown-source-source-content
+                    ^
+                    source-text-markup-markdown-source-source-backtick
+                     ^
+                     source-text-markup-markdown-unknown
+
+## Lists
+^^^^^^^^
+source-text-markup-markdown-tag-heading
+
+- Item 1
+^^
+source-text-markup-markdown-punctuation-list-marker
+  ^
+  source-text-markup-markdown-unknown
+   ^
+   source-text-markup-markdown-unknown
+    ^
+    source-text-markup-markdown-unknown
+     ^
+     source-text-markup-markdown-unknown
+      ^
+      source-text-markup-markdown-whitespace
+       ^
+       source-text-markup-markdown-unknown
+- Item 2
+^^
+source-text-markup-markdown-punctuation-list-marker
+  ^
+  source-text-markup-markdown-unknown
+   ^
+   source-text-markup-markdown-unknown
+    ^
+    source-text-markup-markdown-unknown
+     ^
+     source-text-markup-markdown-unknown
+      ^
+      source-text-markup-markdown-whitespace
+       ^
+       source-text-markup-markdown-unknown
+- Item 3
+^^
+source-text-markup-markdown-punctuation-list-marker
+  ^
+  source-text-markup-markdown-unknown
+   ^
+   source-text-markup-markdown-unknown
+    ^
+    source-text-markup-markdown-unknown
+     ^
+     source-text-markup-markdown-unknown
+      ^
+      source-text-markup-markdown-whitespace
+       ^
+       source-text-markup-markdown-unknown
+
+1. First
+^^^
+source-text-markup-markdown-punctuation-list-marker
+   ^
+   source-text-markup-markdown-unknown
+    ^
+    source-text-markup-markdown-unknown
+     ^
+     source-text-markup-markdown-unknown
+      ^
+      source-text-markup-markdown-unknown
+       ^
+       source-text-markup-markdown-unknown
+2. Second
+^^^
+source-text-markup-markdown-punctuation-list-marker
+   ^
+   source-text-markup-markdown-unknown
+    ^
+    source-text-markup-markdown-unknown
+     ^
+     source-text-markup-markdown-unknown
+      ^
+      source-text-markup-markdown-unknown
+       ^
+       source-text-markup-markdown-unknown
+        ^
+        source-text-markup-markdown-unknown
+3. Third
+^^^
+source-text-markup-markdown-punctuation-list-marker
+   ^
+   source-text-markup-markdown-unknown
+    ^
+    source-text-markup-markdown-unknown
+     ^
+     source-text-markup-markdown-unknown
+      ^
+      source-text-markup-markdown-unknown
+       ^
+       source-text-markup-markdown-unknown
+
+## Code block
+^^^^^^^^^^^^^
+source-text-markup-markdown-tag-heading
+
+```dart
+^^^^^^^
+source-text-markup-markdown-source-source-fence
+void main() {
+^^^^^^^^^^^^^
+source-text-markup-markdown-source-source-content
+  print('Hello world!');
+^^^^^^^^^^^^^^^^^^^^^^^^
+source-text-markup-markdown-source-source-content
+}
+^
+source-text-markup-markdown-source-source-content
+```
+^^^
+source-text-markup-markdown-source-source-fence
+
+## Links
+^^^^^^^^
+source-text-markup-markdown-tag-heading
+
+Make sure to read the [Dart documentation](https://dart.dev).
+^
+source-text-markup-markdown-unknown
+ ^
+ source-text-markup-markdown-unknown
+  ^
+  source-text-markup-markdown-unknown
+   ^
+   source-text-markup-markdown-unknown
+    ^
+    source-text-markup-markdown-whitespace
+     ^
+     source-text-markup-markdown-unknown
+      ^
+      source-text-markup-markdown-unknown
+       ^
+       source-text-markup-markdown-unknown
+        ^
+        source-text-markup-markdown-unknown
+         ^
+         source-text-markup-markdown-whitespace
+          ^
+          source-text-markup-markdown-unknown
+           ^
+           source-text-markup-markdown-unknown
+            ^
+            source-text-markup-markdown-whitespace
+             ^
+             source-text-markup-markdown-unknown
+              ^
+              source-text-markup-markdown-unknown
+               ^
+               source-text-markup-markdown-unknown
+                ^
+                source-text-markup-markdown-unknown
+                 ^
+                 source-text-markup-markdown-whitespace
+                  ^
+                  source-text-markup-markdown-unknown
+                   ^
+                   source-text-markup-markdown-unknown
+                    ^
+                    source-text-markup-markdown-unknown
+                     ^
+                     source-text-markup-markdown-whitespace
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                      source-text-markup-markdown-link
+                                                            ^
+                                                            source-text-markup-markdown-unknown
+
+## Blockquotes
+^^^^^^^^^^^^^^
+source-text-markup-markdown-tag-heading
+
+> This is a blockquote
+^^^^^^^^^^^^^^^^^^^^^^
+source-text-markup-markdown-punctuation-block-quote
+> that spans multiple lines.
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+source-text-markup-markdown-punctuation-block-quote

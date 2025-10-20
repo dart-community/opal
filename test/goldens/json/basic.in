@@ -1,0 +1,7 @@
+{
+  "name": "Dart",
+  "version": 3,
+  "stable": true,
+  "type": "programming language",
+  "tags": ["object-oriented", "functional"],
+}

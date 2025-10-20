@@ -1,0 +1,117 @@
+{
+^
+source-text-data-json-literal-collection-map-literal-collection-map-begin
+  "name": "Dart",
+^^
+source-text-data-json-literal-collection-map-whitespace
+  ^
+  source-text-data-json-literal-collection-map-identifier-property-identifier-property-begin
+   ^^^^
+   source-text-data-json-literal-collection-map-identifier-property-literal-string-unquoted
+       ^
+       source-text-data-json-literal-collection-map-identifier-property-identifier-property-end
+        ^
+        source-text-data-json-literal-collection-map-punctuation-separator
+         ^
+         source-text-data-json-literal-collection-map-whitespace
+          ^
+          source-text-data-json-literal-collection-map-identifier-property-identifier-property-begin
+           ^^^^
+           source-text-data-json-literal-collection-map-identifier-property-literal-string-unquoted
+               ^
+               source-text-data-json-literal-collection-map-identifier-property-identifier-property-end
+                ^
+                source-text-data-json-literal-collection-map-punctuation-separator
+  "version": 3,
+^^
+source-text-data-json-literal-collection-map-whitespace
+  ^
+  source-text-data-json-literal-collection-map-identifier-property-identifier-property-begin
+   ^^^^^^^
+   source-text-data-json-literal-collection-map-identifier-property-literal-string-unquoted
+          ^
+          source-text-data-json-literal-collection-map-identifier-property-identifier-property-end
+           ^
+           source-text-data-json-literal-collection-map-punctuation-separator
+            ^
+            source-text-data-json-literal-collection-map-whitespace
+             ^
+             source-text-data-json-literal-collection-map-literal-number
+              ^
+              source-text-data-json-literal-collection-map-punctuation-separator
+  "stable": true,
+^^
+source-text-data-json-literal-collection-map-whitespace
+  ^
+  source-text-data-json-literal-collection-map-identifier-property-identifier-property-begin
+   ^^^^^^
+   source-text-data-json-literal-collection-map-identifier-property-literal-string-unquoted
+         ^
+         source-text-data-json-literal-collection-map-identifier-property-identifier-property-end
+          ^
+          source-text-data-json-literal-collection-map-punctuation-separator
+           ^
+           source-text-data-json-literal-collection-map-whitespace
+            ^^^^
+            source-text-data-json-literal-collection-map-literal-boolean-true
+                ^
+                source-text-data-json-literal-collection-map-punctuation-separator
+  "type": "programming language",
+^^
+source-text-data-json-literal-collection-map-whitespace
+  ^
+  source-text-data-json-literal-collection-map-identifier-property-identifier-property-begin
+   ^^^^
+   source-text-data-json-literal-collection-map-identifier-property-literal-string-unquoted
+       ^
+       source-text-data-json-literal-collection-map-identifier-property-identifier-property-end
+        ^
+        source-text-data-json-literal-collection-map-punctuation-separator
+         ^
+         source-text-data-json-literal-collection-map-whitespace
+          ^
+          source-text-data-json-literal-collection-map-identifier-property-identifier-property-begin
+           ^^^^^^^^^^^^^^^^^^^^
+           source-text-data-json-literal-collection-map-identifier-property-literal-string-unquoted
+                               ^
+                               source-text-data-json-literal-collection-map-identifier-property-identifier-property-end
+                                ^
+                                source-text-data-json-literal-collection-map-punctuation-separator
+  "tags": ["object-oriented", "functional"],
+^^
+source-text-data-json-literal-collection-map-whitespace
+  ^
+  source-text-data-json-literal-collection-map-identifier-property-identifier-property-begin
+   ^^^^
+   source-text-data-json-literal-collection-map-identifier-property-literal-string-unquoted
+       ^
+       source-text-data-json-literal-collection-map-identifier-property-identifier-property-end
+        ^
+        source-text-data-json-literal-collection-map-punctuation-separator
+         ^
+         source-text-data-json-literal-collection-map-whitespace
+          ^
+          source-text-data-json-literal-collection-map-literal-collection-array-literal-collection-array-begin
+           ^
+           source-text-data-json-literal-collection-map-literal-collection-array-literal-string-quoted-double-literal-string-quoted-double-begin
+            ^^^^^^^^^^^^^^^
+            source-text-data-json-literal-collection-map-literal-collection-array-literal-string-quoted-double-literal-string-unquoted
+                           ^
+                           source-text-data-json-literal-collection-map-literal-collection-array-literal-string-quoted-double-literal-string-quoted-double-end
+                            ^
+                            source-text-data-json-literal-collection-map-literal-collection-array-punctuation-separator
+                             ^
+                             source-text-data-json-literal-collection-map-literal-collection-array-whitespace
+                              ^
+                              source-text-data-json-literal-collection-map-literal-collection-array-literal-string-quoted-double-literal-string-quoted-double-begin
+                               ^^^^^^^^^^
+                               source-text-data-json-literal-collection-map-literal-collection-array-literal-string-quoted-double-literal-string-unquoted
+                                         ^
+                                         source-text-data-json-literal-collection-map-literal-collection-array-literal-string-quoted-double-literal-string-quoted-double-end
+                                          ^
+                                          source-text-data-json-literal-collection-map-literal-collection-array-literal-collection-array-end
+                                           ^
+                                           source-text-data-json-literal-collection-map-punctuation-separator
+}
+^
+source-text-data-json-literal-collection-map-literal-collection-map-end

@@ -1,0 +1,4 @@
+const message = 'Hello, world!';
+
+// Print the message.
+console.log(`The message is: ${message}`);

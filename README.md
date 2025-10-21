@@ -19,6 +19,30 @@ The package contains one library:
 
 - `package:opal/opal.dart`
 
+### Tokenize code from a known language
+
+To tokenize text with a known language that has built-in support,
+access the language from `BuiltInLanguages`:
+
+```dart
+import 'dart:convert';
+
+import 'package:opal/opal.dart';
+
+void main() {
+  final dart = BuiltInLanguages.dart;
+  final tokens = dart.tokenize(
+    const LineSplitter().convert('''
+void main() {
+  print('hi!');
+}
+'''),
+  );
+
+  print(tokens);
+}
+```
+
 ### Supported languages
 
 Currently the following languages are supported with

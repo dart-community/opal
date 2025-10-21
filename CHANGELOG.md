@@ -1,3 +1,8 @@
+## 0.1.1
+
+- Add pub topics to the package.
+- Add a basic example to the README.
+
 ## 0.1.0
 
 - Implement initial support for `groovy` and `objective-c`.

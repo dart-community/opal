@@ -14,9 +14,9 @@ final class YamlGrammar extends MatcherGrammar {
     Matcher.include(_anchorsAndAliases),
     Matcher.include(_tags),
     Matcher.include(_multilineIndicators),
-    Matcher.include(_strings),
-    Matcher.include(_literals),
     Matcher.include(_keys),
+    Matcher.include(_literals),
+    Matcher.include(_strings),
     Matcher.include(_punctuation),
   ];
 
@@ -180,37 +180,12 @@ final class YamlGrammar extends MatcherGrammar {
       r'[a-zA-Z0-9_-]+(?=\s*:(?:\s|$))',
       tag: Tags.property,
     ),
-    Matcher.wrapped(
-      begin: Matcher.verbatim(
-        '"',
-        tag: const Tag('begin', parent: _quotedKey),
-      ),
-      end: Matcher.regex(
-        r'"(?=\s*:)',
-        tag: const Tag('end', parent: _quotedKey),
-      ),
-      content: Matcher.options([
-        Matcher.regex(r'\\[0abtnvfre "\\\/N_LP]', tag: Tags.stringEscape),
-        Matcher.regex(r'\\x[0-9a-fA-F]{2}', tag: Tags.stringEscape),
-        Matcher.regex(r'\\u[0-9a-fA-F]{4}', tag: Tags.stringEscape),
-        Matcher.regex(r'\\U[0-9a-fA-F]{8}', tag: Tags.stringEscape),
-        Matcher.regex(r'[^"\\]+'),
-      ], tag: Tags.stringContent),
+    Matcher.regex(
+      r'"(?:[^"\\]|\\.)*"(?=\s*:)',
       tag: _quotedKey,
     ),
-    Matcher.wrapped(
-      begin: Matcher.verbatim(
-        "'",
-        tag: const Tag('begin', parent: _quotedKey),
-      ),
-      end: Matcher.regex(
-        r"'(?=\s*:)",
-        tag: const Tag('end', parent: _quotedKey),
-      ),
-      content: Matcher.options([
-        Matcher.regex(r"''", tag: Tags.stringEscape),
-        Matcher.regex(r"[^']+"),
-      ], tag: Tags.stringContent),
+    Matcher.regex(
+      r"'(?:[^']|'')*'(?=\s*:)",
       tag: _quotedKey,
     ),
   ]);

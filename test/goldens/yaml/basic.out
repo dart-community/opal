@@ -1,33 +1,33 @@
 name: Dart
 ^^^^
-source-text-data-yaml-literal-string-unquoted
+source-text-data-yaml-identifier-property
     ^
     source-text-data-yaml-punctuation-separator
      ^
      source-text-data-yaml-whitespace
       ^^^^
       source-text-data-yaml-literal-string-unquoted
-version: 3
-^^^^^^^
-source-text-data-yaml-literal-string-unquoted
-       ^
-       source-text-data-yaml-punctuation-separator
-        ^
-        source-text-data-yaml-whitespace
-         ^
-         source-text-data-yaml-literal-string-unquoted
+major-version: 3
+^^^^^^^^^^^^^
+source-text-data-yaml-identifier-property
+             ^
+             source-text-data-yaml-punctuation-separator
+              ^
+              source-text-data-yaml-whitespace
+               ^
+               source-text-data-yaml-literal-number
 stable: true
 ^^^^^^
-source-text-data-yaml-literal-string-unquoted
+source-text-data-yaml-identifier-property
       ^
       source-text-data-yaml-punctuation-separator
        ^
        source-text-data-yaml-whitespace
         ^^^^
-        source-text-data-yaml-literal-string-unquoted
+        source-text-data-yaml-literal-boolean-true
 type: "programming language"
 ^^^^
-source-text-data-yaml-literal-string-unquoted
+source-text-data-yaml-identifier-property
     ^
     source-text-data-yaml-punctuation-separator
      ^
@@ -38,9 +38,9 @@ source-text-data-yaml-literal-string-unquoted
        source-text-data-yaml-literal-string-quoted-double-literal-string-unquoted
                            ^
                            source-text-data-yaml-literal-string-quoted-double-literal-string-quoted-double-end
-tags: ["object-oriented", "functional"]
+tags: ["object-oriented", 'functional']
 ^^^^
-source-text-data-yaml-literal-string-unquoted
+source-text-data-yaml-identifier-property
     ^
     source-text-data-yaml-punctuation-separator
      ^
@@ -58,10 +58,10 @@ source-text-data-yaml-literal-string-unquoted
                          ^
                          source-text-data-yaml-whitespace
                           ^
-                          source-text-data-yaml-literal-string-quoted-double-literal-string-quoted-double-begin
+                          source-text-data-yaml-literal-string-quoted-single-literal-string-quoted-single-begin
                            ^^^^^^^^^^
-                           source-text-data-yaml-literal-string-quoted-double-literal-string-unquoted
+                           source-text-data-yaml-literal-string-quoted-single-literal-string-unquoted
                                      ^
-                                     source-text-data-yaml-literal-string-quoted-double-literal-string-quoted-double-end
+                                     source-text-data-yaml-literal-string-quoted-single-literal-string-quoted-single-end
                                       ^
                                       source-text-data-yaml-punctuation

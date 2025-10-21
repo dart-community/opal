@@ -1,5 +1,5 @@
 name: Dart
-version: 3
+major-version: 3
 stable: true
 type: "programming language"
-tags: ["object-oriented", "functional"]
+tags: ["object-oriented", 'functional']

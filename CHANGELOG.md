@@ -1,4 +1,4 @@
-## 0.1.0-wip
+## 0.1.0
 
 - Implement initial support for `groovy` and `objective-c`.
 - Improve support for `dart`, `java`, `json`, `kotlin`, `swift`, and `yaml`.

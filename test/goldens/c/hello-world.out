@@ -1,0 +1,94 @@
+#include <stdio.h>
+^^^^^^^^^^^^^^^^^^
+source-code-c-metadata-preprocessor
+
+const char* message = "Hello, world!";
+^^^^^
+source-code-c-keyword-modifier-const
+     ^
+     source-code-c-whitespace
+      ^^^^
+      source-code-c-identifier-type-built-in
+          ^
+          source-code-c-keyword-operator
+           ^
+           source-code-c-whitespace
+            ^^^^^^^
+            source-code-c-identifier
+                   ^
+                   source-code-c-whitespace
+                    ^
+                    source-code-c-keyword-operator
+                     ^
+                     source-code-c-whitespace
+                      ^
+                      source-code-c-literal-string-quoted-double-literal-string-quoted-double-begin
+                       ^^^^^^^^^^^^^
+                       source-code-c-literal-string-quoted-double-literal-string-unquoted-literal-string-unquoted
+                                    ^
+                                    source-code-c-literal-string-quoted-double-literal-string-quoted-double-end
+                                     ^
+                                     source-code-c-punctuation
+
+int main(void) {
+^^^
+source-code-c-identifier-type-built-in
+   ^
+   source-code-c-whitespace
+    ^^^^
+    source-code-c-identifier-function
+        ^
+        source-code-c-punctuation
+         ^^^^
+         source-code-c-identifier-type-built-in
+             ^
+             source-code-c-punctuation
+              ^
+              source-code-c-whitespace
+               ^
+               source-code-c-punctuation
+  // Print the message.
+^^
+source-code-c-whitespace
+  ^^^^^^^^^^^^^^^^^^^^^
+  source-code-c-comment-line
+  printf("The message is: %s\n", message);
+^^
+source-code-c-whitespace
+  ^^^^^^
+  source-code-c-identifier-function
+        ^
+        source-code-c-punctuation
+         ^
+         source-code-c-literal-string-quoted-double-literal-string-quoted-double-begin
+          ^^^^^^^^^^^^^^^^^^
+          source-code-c-literal-string-quoted-double-literal-string-unquoted-literal-string-unquoted
+                            ^^
+                            source-code-c-literal-string-quoted-double-literal-string-unquoted-literal-string-escape
+                              ^
+                              source-code-c-literal-string-quoted-double-literal-string-quoted-double-end
+                               ^
+                               source-code-c-punctuation
+                                ^
+                                source-code-c-whitespace
+                                 ^^^^^^^
+                                 source-code-c-identifier
+                                        ^
+                                        source-code-c-punctuation
+                                         ^
+                                         source-code-c-punctuation
+
+  return 0;
+^^
+source-code-c-whitespace
+  ^^^^^^
+  source-code-c-keyword-control-return
+        ^
+        source-code-c-whitespace
+         ^
+         source-code-c-literal-number-integer
+          ^
+          source-code-c-punctuation
+}
+^
+source-code-c-punctuation

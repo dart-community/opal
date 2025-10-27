@@ -112,4 +112,5 @@ final Map<String, String> _defaultFallbackLanguageNames = {
   'objc': BuiltInLanguages.objectiveC.name,
   'obj-c': BuiltInLanguages.objectiveC.name,
   'objective-c': BuiltInLanguages.objectiveC.name,
+  'clang': BuiltInLanguages.c.name,
 };

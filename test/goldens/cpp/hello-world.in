@@ -1,0 +1,11 @@
+#include <iostream>
+#include <string_view>
+
+constexpr std::string_view message = "Hello, world!";
+
+int main() {
+  // Print the message.
+  std::cout << "The message is: " << message << std::endl;
+
+  return 0;
+}

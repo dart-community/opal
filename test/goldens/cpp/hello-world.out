@@ -1,0 +1,115 @@
+#include <iostream>
+^^^^^^^^^^^^^^^^^^^
+source-code-cpp-metadata-preprocessor
+#include <string_view>
+^^^^^^^^^^^^^^^^^^^^^^
+source-code-cpp-metadata-preprocessor
+
+constexpr std::string_view message = "Hello, world!";
+^^^^^^^^^
+source-code-cpp-keyword-modifier-constexpr
+         ^
+         source-code-cpp-whitespace
+          ^^^
+          source-code-cpp-identifier
+             ^^
+             source-code-cpp-keyword-operator
+               ^^^^^^^^^^^
+               source-code-cpp-identifier-type-built-in
+                          ^
+                          source-code-cpp-whitespace
+                           ^^^^^^^
+                           source-code-cpp-identifier
+                                  ^
+                                  source-code-cpp-whitespace
+                                   ^
+                                   source-code-cpp-keyword-operator
+                                    ^
+                                    source-code-cpp-whitespace
+                                     ^
+                                     source-code-cpp-literal-string-quoted-double-literal-string-quoted-double-begin
+                                      ^^^^^^^^^^^^^
+                                      source-code-cpp-literal-string-quoted-double-literal-string-unquoted-literal-string-unquoted
+                                                   ^
+                                                   source-code-cpp-literal-string-quoted-double-literal-string-quoted-double-end
+                                                    ^
+                                                    source-code-cpp-punctuation
+
+int main() {
+^^^
+source-code-cpp-identifier-type-built-in
+   ^
+   source-code-cpp-whitespace
+    ^^^^
+    source-code-cpp-identifier-function
+        ^
+        source-code-cpp-punctuation
+         ^
+         source-code-cpp-punctuation
+          ^
+          source-code-cpp-whitespace
+           ^
+           source-code-cpp-punctuation
+  // Print the message.
+^^
+source-code-cpp-whitespace
+  ^^^^^^^^^^^^^^^^^^^^^
+  source-code-cpp-comment-line
+  std::cout << "The message is: " << message << std::endl;
+^^
+source-code-cpp-whitespace
+  ^^^
+  source-code-cpp-identifier
+     ^^
+     source-code-cpp-keyword-operator
+       ^^^^
+       source-code-cpp-identifier
+           ^
+           source-code-cpp-whitespace
+            ^^
+            source-code-cpp-keyword-operator
+              ^
+              source-code-cpp-whitespace
+               ^
+               source-code-cpp-literal-string-quoted-double-literal-string-quoted-double-begin
+                ^^^^^^^^^^^^^^^^
+                source-code-cpp-literal-string-quoted-double-literal-string-unquoted-literal-string-unquoted
+                                ^
+                                source-code-cpp-literal-string-quoted-double-literal-string-quoted-double-end
+                                 ^
+                                 source-code-cpp-whitespace
+                                  ^^
+                                  source-code-cpp-keyword-operator
+                                    ^
+                                    source-code-cpp-whitespace
+                                     ^^^^^^^
+                                     source-code-cpp-identifier
+                                            ^
+                                            source-code-cpp-whitespace
+                                             ^^
+                                             source-code-cpp-keyword-operator
+                                               ^
+                                               source-code-cpp-whitespace
+                                                ^^^
+                                                source-code-cpp-identifier
+                                                   ^^
+                                                   source-code-cpp-keyword-operator
+                                                     ^^^^
+                                                     source-code-cpp-identifier
+                                                         ^
+                                                         source-code-cpp-punctuation
+
+  return 0;
+^^
+source-code-cpp-whitespace
+  ^^^^^^
+  source-code-cpp-keyword-control-return
+        ^
+        source-code-cpp-whitespace
+         ^
+         source-code-cpp-literal-number-integer
+          ^
+          source-code-cpp-punctuation
+}
+^
+source-code-cpp-punctuation

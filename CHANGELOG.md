@@ -1,6 +1,6 @@
 ## 0.2.0-wip
 
-- Add initial support for `c`.
+- Add initial support for `c` and `cpp` (C++).
 
 ## 0.1.1
 

@@ -2,6 +2,7 @@ import 'package:meta/meta.dart';
 
 import 'language.dart';
 import 'language/c.dart';
+import 'language/c_plus_plus.dart';
 import 'language/dart.dart';
 import 'language/groovy.dart';
 import 'language/html.dart';
@@ -25,6 +26,7 @@ abstract final class BuiltInLanguages {
   @useResult
   static final List<Language> all = [
     c,
+    cPlusPlus,
     dart,
     groovy,
     html,
@@ -45,6 +47,13 @@ abstract final class BuiltInLanguages {
     name: 'c',
     grammar: const CGrammar(),
     baseTag: const Tag('c', parent: Tags.codeSource),
+  );
+
+  /// A tokenizing language implementation for the C++ programming language.
+  static final Language cPlusPlus = MatcherLanguage(
+    name: 'cpp',
+    grammar: const CPlusPlusGrammar(),
+    baseTag: const Tag('cpp', parent: Tags.codeSource),
   );
 
   /// A tokenizing language implementation for the Dart programming language.

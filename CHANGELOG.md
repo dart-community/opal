@@ -1,6 +1,6 @@
-## 0.2.0-wip
+## 0.2.0
 
-- Add initial support for `c` and `cpp` (C++).
+- Add basic, initial support for `c` and `cpp` (C++).
 - Fix group counting when processing `Matcher.capture`.
 
 ## 0.1.1

@@ -1,6 +1,10 @@
 #include <stdio.h>
-^^^^^^^^^^^^^^^^^^
-source-code-c-metadata-preprocessor
+^
+source-code-c-metadata-preprocessor-directive-punctuation
+ ^^^^^^^
+ source-code-c-metadata-preprocessor-directive-metadata-preprocessor-directive-name
+        ^^^^^^^^^^
+        source-code-c-metadata-preprocessor-directive-metadata-preprocessor-directive-options
 
 const char* message = "Hello, world!";
 ^^^^^

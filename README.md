@@ -48,6 +48,8 @@ void main() {
 Currently the following languages are supported with
 the specified default and alternative IDs:
 
+- C (`c`)
+- C++ (`cpp`)
 - Dart (`dart`)
 - Groovy (`groovy`, `gradle`)
 - HTML (`html`)

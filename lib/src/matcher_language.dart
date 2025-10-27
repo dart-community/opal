@@ -88,11 +88,11 @@ final class MatcherLanguage extends Language {
               if (tag != null) {
                 tags.addLast(tag);
               }
-              if (captures.length != match.groupCount - 1) {
+              if (captures.length != match.groupCount) {
                 throw StateError(
                   'The amount of captures specified (${captures.length}) '
                   'doesn\'t match the amount of non-full groups matched '
-                  '(${match.groupCount - 1}).',
+                  '(${match.groupCount}).',
                 );
               }
 

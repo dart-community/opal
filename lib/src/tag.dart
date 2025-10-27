@@ -158,6 +158,12 @@ abstract final class Tags {
   /// A tag for preprocessor directives, such as `#include` or `#define`.
   static const Tag preprocessor = Tag('preprocessor', parent: metadata);
 
+  /// A tag for preprocessor directives, such as `include` in `#include`.
+  static const Tag preprocessorDirective = Tag(
+    'directive',
+    parent: preprocessor,
+  );
+
   /// A general tag for literals.
   ///
   /// If available, prefer using a more specific tag,

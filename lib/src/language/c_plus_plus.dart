@@ -20,10 +20,15 @@ final class CPlusPlusGrammar extends MatcherGrammar {
     Matcher.include(_identifiers),
   ];
 
-  Matcher _preprocessor() => Matcher.regex(
-    r'^\s*#\s*(include|define|undef|if|ifdef|ifndef|elif|else|endif|'
-    r'pragma|error|warning|line|import)\b.*$',
-    tag: Tags.preprocessor,
+  Matcher _preprocessor() => Matcher.capture(
+    r'^(#)(include|import|define|undef|if|ifdef|ifndef|elif|else|endif|'
+    r'pragma|error|warning|line)\b(.*)$',
+    captures: [
+      Tags.punctuation,
+      const Tag('name', parent: Tags.preprocessorDirective),
+      const Tag('options', parent: Tags.preprocessorDirective),
+    ],
+    tag: Tags.preprocessorDirective,
   );
 
   Matcher _comments() => Matcher.options([
@@ -151,6 +156,8 @@ final class CPlusPlusGrammar extends MatcherGrammar {
       'class',
       'concept',
       'enum',
+      'import',
+      'module',
       'namespace',
       'struct',
       'template',

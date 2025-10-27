@@ -21,10 +21,15 @@ final class ObjectiveCGrammar extends MatcherGrammar {
     Matcher.include(_identifiers),
   ];
 
-  Matcher _preprocessor() => Matcher.regex(
-    r'^\s*#\s*(import|include|define|undef|if|ifdef|ifndef|elif|else|endif|'
-    r'pragma|error|warning|line)\b.*$',
-    tag: Tags.preprocessor,
+  Matcher _preprocessor() => Matcher.capture(
+    r'^(#)(import|include|define|undef|if|ifdef|ifndef|elif|else|endif|'
+    r'pragma|error|warning|line)\b(.*)$',
+    captures: [
+      Tags.punctuation,
+      const Tag('name', parent: Tags.preprocessorDirective),
+      const Tag('options', parent: Tags.preprocessorDirective),
+    ],
+    tag: Tags.preprocessorDirective,
   );
 
   Matcher _comments() => Matcher.options([

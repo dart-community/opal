@@ -1,9 +1,17 @@
 #include <iostream>
-^^^^^^^^^^^^^^^^^^^
-source-code-cpp-metadata-preprocessor
+^
+source-code-cpp-metadata-preprocessor-directive-punctuation
+ ^^^^^^^
+ source-code-cpp-metadata-preprocessor-directive-metadata-preprocessor-directive-name
+        ^^^^^^^^^^^
+        source-code-cpp-metadata-preprocessor-directive-metadata-preprocessor-directive-options
 #include <string_view>
-^^^^^^^^^^^^^^^^^^^^^^
-source-code-cpp-metadata-preprocessor
+^
+source-code-cpp-metadata-preprocessor-directive-punctuation
+ ^^^^^^^
+ source-code-cpp-metadata-preprocessor-directive-metadata-preprocessor-directive-name
+        ^^^^^^^^^^^^^^
+        source-code-cpp-metadata-preprocessor-directive-metadata-preprocessor-directive-options
 
 constexpr std::string_view message = "Hello, world!";
 ^^^^^^^^^

@@ -1,0 +1,6 @@
+class Test {
+  static const String _sharedName = 'test';
+
+  String get name => 'test';
+  final int _age = 10;
+}

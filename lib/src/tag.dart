@@ -84,6 +84,12 @@ abstract final class Tags {
   /// [Tags.function], [Tags.variable], and [Tags.type].
   static const Tag identifier = Tag('identifier');
 
+  /// A tag for identifiers that are private.
+  ///
+  /// An example is the name of a private instance variable (field) in Dart,
+  /// which starts with an underscore, such as `int _fieldName`.
+  static const Tag privateIdentifier = Tag('private', parent: identifier);
+
   /// A tag for special identifiers with a reserved meaning
   /// in the current context, such as `this` in Dart.
   static const Tag specialIdentifier = Tag('special', parent: identifier);

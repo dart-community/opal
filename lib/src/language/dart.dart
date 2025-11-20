@@ -320,7 +320,7 @@ final class DartGrammar extends MatcherGrammar {
   ]);
 
   Matcher _identifiers() => Matcher.options([
-    Matcher.regex(r'\b_[a-zA-Z0-9_]*\b', tag: Tags.specialIdentifier),
+    Matcher.regex(r'\b_[a-zA-Z0-9_]*\b', tag: Tags.privateIdentifier),
     Matcher.regex(r'\b[a-z][a-zA-Z0-9_]*\b', tag: Tags.identifier),
   ]);
 }

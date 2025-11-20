@@ -1,3 +1,7 @@
+## 0.2.1
+
+- Mark private property identifiers as private instead of special in Dart.
+
 ## 0.2.0
 
 - Add basic, initial support for `c` and `cpp` (C++).

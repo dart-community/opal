@@ -1,0 +1,96 @@
+class Test {
+^^^^^
+source-code-dart-keyword-class
+     ^
+     source-code-dart-whitespace
+      ^^^^
+      source-code-dart-identifier-type
+          ^
+          source-code-dart-whitespace
+           ^
+           source-code-dart-punctuation
+  static const String _sharedName = 'test';
+^^
+source-code-dart-whitespace
+  ^^^^^^
+  source-code-dart-keyword-static
+        ^
+        source-code-dart-whitespace
+         ^^^^^
+         source-code-dart-keyword-const
+              ^
+              source-code-dart-whitespace
+               ^^^^^^
+               source-code-dart-identifier-type-built-in
+                     ^
+                     source-code-dart-whitespace
+                      ^^^^^^^^^^^
+                      source-code-dart-identifier-private
+                                 ^
+                                 source-code-dart-whitespace
+                                  ^
+                                  source-code-dart-keyword-operator
+                                   ^
+                                   source-code-dart-whitespace
+                                    ^
+                                    source-code-dart-literal-string-literal-string-begin
+                                     ^^^^
+                                     source-code-dart-literal-string-literal-string-unquoted
+                                         ^
+                                         source-code-dart-literal-string-literal-string-end
+                                          ^
+                                          source-code-dart-punctuation
+
+  String get name => 'test';
+^^
+source-code-dart-whitespace
+  ^^^^^^
+  source-code-dart-identifier-type-built-in
+        ^
+        source-code-dart-whitespace
+         ^^^
+         source-code-dart-keyword-get
+            ^
+            source-code-dart-whitespace
+             ^^^^
+             source-code-dart-identifier
+                 ^
+                 source-code-dart-whitespace
+                  ^^
+                  source-code-dart-keyword-operator
+                    ^
+                    source-code-dart-whitespace
+                     ^
+                     source-code-dart-literal-string-literal-string-begin
+                      ^^^^
+                      source-code-dart-literal-string-literal-string-unquoted
+                          ^
+                          source-code-dart-literal-string-literal-string-end
+                           ^
+                           source-code-dart-punctuation
+  final int _age = 10;
+^^
+source-code-dart-whitespace
+  ^^^^^
+  source-code-dart-keyword-final
+       ^
+       source-code-dart-whitespace
+        ^^^
+        source-code-dart-identifier-type-built-in
+           ^
+           source-code-dart-whitespace
+            ^^^^
+            source-code-dart-identifier-private
+                ^
+                source-code-dart-whitespace
+                 ^
+                 source-code-dart-keyword-operator
+                  ^
+                  source-code-dart-whitespace
+                   ^^
+                   source-code-dart-literal-number
+                     ^
+                     source-code-dart-punctuation
+}
+^
+source-code-dart-punctuation

@@ -1,4 +1,4 @@
-## 0.2.2-wip
+## 0.2.2
 
 - Add initial, basic support for `ruby`.
 - Add initial, basic support for `glsl` (OpenGL Shading Language).

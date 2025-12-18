@@ -1,8 +1,8 @@
 Dart package with basic support for tokenization and syntax highlighting of
 various programming languages and data formats.
 
-This package is currently experimental, untested, and
-expected to change heavily.
+This package is currently experimental, not fully tested, and
+is still subject to large, potentially breaking changes.
 
 ## Installation
 
@@ -51,6 +51,7 @@ the specified default and alternative IDs:
 - C (`c`)
 - C++ (`cpp`)
 - Dart (`dart`)
+- GLSL (`glsl`, `frag`, `vert`, `geom`, `comp`)
 - Groovy (`groovy`, `gradle`)
 - HTML (`html`)
 - Java (`java`)
@@ -59,6 +60,7 @@ the specified default and alternative IDs:
 - Kotlin (`kotlin`, `kt`)
 - Markdown (`markdown`, `md`)
 - Objective-C (`objective-c`, `objectivec`, `obj-c`, `objc`)
+- Ruby (`ruby`, `rb`)
 - Swift (`swift`)
 - Text (`text`, `plaintext`, `none`, `txt`)
 - XML (`xml`, `xhtml`)

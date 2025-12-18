@@ -1,0 +1,919 @@
+#!/usr/bin/env ruby
+^^^^^^^^^^^^^^^^^^^
+source-code-ruby-comment-line
+# Ruby 3+ features demonstration
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+source-code-ruby-comment-line
+
+class Person
+^^^^^
+source-code-ruby-keyword-class
+     ^
+     source-code-ruby-whitespace
+      ^^^^^^
+      source-code-ruby-identifier-type
+  attr_accessor :name, :age
+^^
+source-code-ruby-whitespace
+  ^^^^^^^^^^^^^
+  source-code-ruby-keyword-attr_accessor
+               ^
+               source-code-ruby-whitespace
+                ^^^^^
+                source-code-ruby-literal-symbol
+                     ^
+                     source-code-ruby-punctuation
+                      ^
+                      source-code-ruby-whitespace
+                       ^^^^
+                       source-code-ruby-literal-symbol
+
+  def initialize(name, age)
+^^
+source-code-ruby-whitespace
+  ^^^
+  source-code-ruby-keyword-def
+     ^
+     source-code-ruby-whitespace
+      ^^^^^^^^^^
+      source-code-ruby-identifier-function
+                ^
+                source-code-ruby-punctuation
+                 ^^^^
+                 source-code-ruby-identifier
+                     ^
+                     source-code-ruby-punctuation
+                      ^
+                      source-code-ruby-whitespace
+                       ^^^
+                       source-code-ruby-identifier
+                          ^
+                          source-code-ruby-punctuation
+    @name = name
+^^^^
+source-code-ruby-whitespace
+    ^^^^^
+    source-code-ruby-identifier-variable-instance
+         ^
+         source-code-ruby-whitespace
+          ^
+          source-code-ruby-keyword-operator
+           ^
+           source-code-ruby-whitespace
+            ^^^^
+            source-code-ruby-identifier
+    @age = age
+^^^^
+source-code-ruby-whitespace
+    ^^^^
+    source-code-ruby-identifier-variable-instance
+        ^
+        source-code-ruby-whitespace
+         ^
+         source-code-ruby-keyword-operator
+          ^
+          source-code-ruby-whitespace
+           ^^^
+           source-code-ruby-identifier
+  end
+^^
+source-code-ruby-whitespace
+  ^^^
+  source-code-ruby-keyword-end
+
+  def adult?
+^^
+source-code-ruby-whitespace
+  ^^^
+  source-code-ruby-keyword-def
+     ^
+     source-code-ruby-whitespace
+      ^^^^^^
+      source-code-ruby-identifier-function
+    @age >= 18
+^^^^
+source-code-ruby-whitespace
+    ^^^^
+    source-code-ruby-identifier-variable-instance
+        ^
+        source-code-ruby-whitespace
+         ^^
+         source-code-ruby-keyword-operator
+           ^
+           source-code-ruby-whitespace
+            ^^
+            source-code-ruby-literal-number-integer
+  end
+^^
+source-code-ruby-whitespace
+  ^^^
+  source-code-ruby-keyword-end
+
+  private
+^^
+source-code-ruby-whitespace
+  ^^^^^^^
+  source-code-ruby-keyword-private
+
+  def secret_method
+^^
+source-code-ruby-whitespace
+  ^^^
+  source-code-ruby-keyword-def
+     ^
+     source-code-ruby-whitespace
+      ^^^^^^^^^^^^^
+      source-code-ruby-identifier-function
+    "This is private"
+^^^^
+source-code-ruby-whitespace
+    ^
+    source-code-ruby-literal-string-literal-string-begin
+     ^^^^^^^^^^^^^^^
+     source-code-ruby-literal-string-literal-string-unquoted-literal-string-unquoted
+                    ^
+                    source-code-ruby-literal-string-literal-string-end
+  end
+^^
+source-code-ruby-whitespace
+  ^^^
+  source-code-ruby-keyword-end
+end
+^^^
+source-code-ruby-keyword-end
+
+module Greeting
+^^^^^^
+source-code-ruby-keyword-module
+      ^
+      source-code-ruby-whitespace
+       ^^^^^^^^
+       source-code-ruby-identifier-type
+  def say_hello
+^^
+source-code-ruby-whitespace
+  ^^^
+  source-code-ruby-keyword-def
+     ^
+     source-code-ruby-whitespace
+      ^^^^^^^^^
+      source-code-ruby-identifier-function
+    puts "Hello!"
+^^^^
+source-code-ruby-whitespace
+    ^^^^
+    source-code-ruby-identifier-function
+        ^
+        source-code-ruby-whitespace
+         ^
+         source-code-ruby-literal-string-literal-string-begin
+          ^^^^^^
+          source-code-ruby-literal-string-literal-string-unquoted-literal-string-unquoted
+                ^
+                source-code-ruby-literal-string-literal-string-end
+  end
+^^
+source-code-ruby-whitespace
+  ^^^
+  source-code-ruby-keyword-end
+end
+^^^
+source-code-ruby-keyword-end
+
+# Numbers
+^^^^^^^^^
+source-code-ruby-comment-line
+count = 42
+^^^^^
+source-code-ruby-identifier
+     ^
+     source-code-ruby-whitespace
+      ^
+      source-code-ruby-keyword-operator
+       ^
+       source-code-ruby-whitespace
+        ^^
+        source-code-ruby-literal-number-integer
+hex = 0xFF
+^^^
+source-code-ruby-identifier
+   ^
+   source-code-ruby-whitespace
+    ^
+    source-code-ruby-keyword-operator
+     ^
+     source-code-ruby-whitespace
+      ^^^^
+      source-code-ruby-literal-number-integer
+binary = 0b1010
+^^^^^^
+source-code-ruby-identifier
+      ^
+      source-code-ruby-whitespace
+       ^
+       source-code-ruby-keyword-operator
+        ^
+        source-code-ruby-whitespace
+         ^^^^^^
+         source-code-ruby-literal-number-integer
+float_num = 3.14159
+^^^^^^^^^
+source-code-ruby-identifier
+         ^
+         source-code-ruby-whitespace
+          ^
+          source-code-ruby-keyword-operator
+           ^
+           source-code-ruby-whitespace
+            ^^^^^^^
+            source-code-ruby-literal-number-float
+scientific = 1.5e-10
+^^^^^^^^^^
+source-code-ruby-identifier
+          ^
+          source-code-ruby-whitespace
+           ^
+           source-code-ruby-keyword-operator
+            ^
+            source-code-ruby-whitespace
+             ^^^^^^^
+             source-code-ruby-literal-number-float
+
+# Strings and interpolation
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+source-code-ruby-comment-line
+message = "Count is: #{count}"
+^^^^^^^
+source-code-ruby-identifier
+       ^
+       source-code-ruby-whitespace
+        ^
+        source-code-ruby-keyword-operator
+         ^
+         source-code-ruby-whitespace
+          ^
+          source-code-ruby-literal-string-literal-string-begin
+           ^^^^^^^^^^
+           source-code-ruby-literal-string-literal-string-unquoted-literal-string-unquoted
+                     ^^^^^^^^
+                     source-code-ruby-literal-string-literal-string-unquoted-literal-string-interpolation
+                             ^
+                             source-code-ruby-literal-string-literal-string-end
+raw_string = 'No #{interpolation} here'
+^^^^^^^^^^
+source-code-ruby-identifier
+          ^
+          source-code-ruby-whitespace
+           ^
+           source-code-ruby-keyword-operator
+            ^
+            source-code-ruby-whitespace
+             ^
+             source-code-ruby-literal-string-literal-string-begin
+              ^^^^^^^^^^^^^^^^^^^^^^^^
+              source-code-ruby-literal-string-literal-string-unquoted-literal-string-unquoted
+                                      ^
+                                      source-code-ruby-literal-string-literal-string-end
+multiline = %Q{
+^^^^^^^^^
+source-code-ruby-identifier
+         ^
+         source-code-ruby-whitespace
+          ^
+          source-code-ruby-keyword-operator
+           ^
+           source-code-ruby-whitespace
+            ^^^
+            source-code-ruby-literal-string-literal-string-begin
+  This is a
+^^^^^^^^^^^
+source-code-ruby-literal-string-literal-string-unquoted-literal-string-unquoted
+  multiline string
+^^^^^^^^^^^^^^^^^^
+source-code-ruby-literal-string-literal-string-unquoted-literal-string-unquoted
+}
+^
+source-code-ruby-literal-string-literal-string-end
+
+# Symbols
+^^^^^^^^^
+source-code-ruby-comment-line
+status = :active
+^^^^^^
+source-code-ruby-identifier
+      ^
+      source-code-ruby-whitespace
+       ^
+       source-code-ruby-keyword-operator
+        ^
+        source-code-ruby-whitespace
+         ^^^^^^^
+         source-code-ruby-literal-symbol
+quoted_sym = :"hello world"
+^^^^^^^^^^
+source-code-ruby-identifier
+          ^
+          source-code-ruby-whitespace
+           ^
+           source-code-ruby-keyword-operator
+            ^
+            source-code-ruby-whitespace
+             ^^^^^^^^^^^^^^
+             source-code-ruby-literal-symbol
+
+# Regular expressions
+^^^^^^^^^^^^^^^^^^^^^
+source-code-ruby-comment-line
+pattern = /\d+/
+^^^^^^^
+source-code-ruby-identifier
+       ^
+       source-code-ruby-whitespace
+        ^
+        source-code-ruby-keyword-operator
+         ^
+         source-code-ruby-whitespace
+          ^^^^^
+          source-code-ruby-literal-string-quoted
+email = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
+^^^^^
+source-code-ruby-identifier
+     ^
+     source-code-ruby-whitespace
+      ^
+      source-code-ruby-keyword-operator
+       ^
+       source-code-ruby-whitespace
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        source-code-ruby-literal-string-quoted
+
+# Arrays and hashes
+^^^^^^^^^^^^^^^^^^^
+source-code-ruby-comment-line
+numbers = [1, 2, 3]
+^^^^^^^
+source-code-ruby-identifier
+       ^
+       source-code-ruby-whitespace
+        ^
+        source-code-ruby-keyword-operator
+         ^
+         source-code-ruby-whitespace
+          ^
+          source-code-ruby-punctuation
+           ^
+           source-code-ruby-literal-number-integer
+            ^
+            source-code-ruby-punctuation
+             ^
+             source-code-ruby-whitespace
+              ^
+              source-code-ruby-literal-number-integer
+               ^
+               source-code-ruby-punctuation
+                ^
+                source-code-ruby-whitespace
+                 ^
+                 source-code-ruby-literal-number-integer
+                  ^
+                  source-code-ruby-punctuation
+config = { name: 'app', version: '1.0' }
+^^^^^^
+source-code-ruby-identifier
+      ^
+      source-code-ruby-whitespace
+       ^
+       source-code-ruby-keyword-operator
+        ^
+        source-code-ruby-whitespace
+         ^
+         source-code-ruby-punctuation
+          ^
+          source-code-ruby-whitespace
+           ^^^^
+           source-code-ruby-identifier
+               ^
+               source-code-ruby-unknown
+                ^
+                source-code-ruby-whitespace
+                 ^
+                 source-code-ruby-literal-string-literal-string-begin
+                  ^^^
+                  source-code-ruby-literal-string-literal-string-unquoted-literal-string-unquoted
+                     ^
+                     source-code-ruby-literal-string-literal-string-end
+                      ^
+                      source-code-ruby-punctuation
+                       ^
+                       source-code-ruby-whitespace
+                        ^^^^^^^
+                        source-code-ruby-identifier
+                               ^
+                               source-code-ruby-unknown
+                                ^
+                                source-code-ruby-whitespace
+                                 ^
+                                 source-code-ruby-literal-string-literal-string-begin
+                                  ^^^
+                                  source-code-ruby-literal-string-literal-string-unquoted-literal-string-unquoted
+                                     ^
+                                     source-code-ruby-literal-string-literal-string-end
+                                      ^
+                                      source-code-ruby-whitespace
+                                       ^
+                                       source-code-ruby-punctuation
+
+# Control flow
+^^^^^^^^^^^^^^
+source-code-ruby-comment-line
+if count > 0
+^^
+source-code-ruby-keyword-if
+  ^
+  source-code-ruby-whitespace
+   ^^^^^
+   source-code-ruby-identifier
+        ^
+        source-code-ruby-whitespace
+         ^
+         source-code-ruby-keyword-operator
+          ^
+          source-code-ruby-whitespace
+           ^
+           source-code-ruby-literal-number-integer
+  result = true
+^^
+source-code-ruby-whitespace
+  ^^^^^^
+  source-code-ruby-identifier
+        ^
+        source-code-ruby-whitespace
+         ^
+         source-code-ruby-keyword-operator
+          ^
+          source-code-ruby-whitespace
+           ^^^^
+           source-code-ruby-literal-boolean-true
+elsif count == 0
+^^^^^
+source-code-ruby-keyword-elsif
+     ^
+     source-code-ruby-whitespace
+      ^^^^^
+      source-code-ruby-identifier
+           ^
+           source-code-ruby-whitespace
+            ^^
+            source-code-ruby-keyword-operator
+              ^
+              source-code-ruby-whitespace
+               ^
+               source-code-ruby-literal-number-integer
+  result = nil
+^^
+source-code-ruby-whitespace
+  ^^^^^^
+  source-code-ruby-identifier
+        ^
+        source-code-ruby-whitespace
+         ^
+         source-code-ruby-keyword-operator
+          ^
+          source-code-ruby-whitespace
+           ^^^
+           source-code-ruby-literal-null
+else
+^^^^
+source-code-ruby-keyword-else
+  result = false
+^^
+source-code-ruby-whitespace
+  ^^^^^^
+  source-code-ruby-identifier
+        ^
+        source-code-ruby-whitespace
+         ^
+         source-code-ruby-keyword-operator
+          ^
+          source-code-ruby-whitespace
+           ^^^^^
+           source-code-ruby-literal-boolean-false
+end
+^^^
+source-code-ruby-keyword-end
+
+unless result.nil?
+^^^^^^
+source-code-ruby-keyword-unless
+      ^
+      source-code-ruby-whitespace
+       ^^^^^^
+       source-code-ruby-identifier
+             ^
+             source-code-ruby-punctuation
+              ^^^^
+              source-code-ruby-identifier-function
+  puts "Has result"
+^^
+source-code-ruby-whitespace
+  ^^^^
+  source-code-ruby-identifier-function
+      ^
+      source-code-ruby-whitespace
+       ^
+       source-code-ruby-literal-string-literal-string-begin
+        ^^^^^^^^^^
+        source-code-ruby-literal-string-literal-string-unquoted-literal-string-unquoted
+                  ^
+                  source-code-ruby-literal-string-literal-string-end
+end
+^^^
+source-code-ruby-keyword-end
+
+# Case/when
+^^^^^^^^^^^
+source-code-ruby-comment-line
+case status
+^^^^
+source-code-ruby-keyword-case
+    ^
+    source-code-ruby-whitespace
+     ^^^^^^
+     source-code-ruby-identifier
+when :active
+^^^^
+source-code-ruby-keyword-when
+    ^
+    source-code-ruby-whitespace
+     ^^^^^^^
+     source-code-ruby-literal-symbol
+  puts "Active"
+^^
+source-code-ruby-whitespace
+  ^^^^
+  source-code-ruby-identifier-function
+      ^
+      source-code-ruby-whitespace
+       ^
+       source-code-ruby-literal-string-literal-string-begin
+        ^^^^^^
+        source-code-ruby-literal-string-literal-string-unquoted-literal-string-unquoted
+              ^
+              source-code-ruby-literal-string-literal-string-end
+when :inactive
+^^^^
+source-code-ruby-keyword-when
+    ^
+    source-code-ruby-whitespace
+     ^^^^^^^^^
+     source-code-ruby-literal-symbol
+  puts "Inactive"
+^^
+source-code-ruby-whitespace
+  ^^^^
+  source-code-ruby-identifier-function
+      ^
+      source-code-ruby-whitespace
+       ^
+       source-code-ruby-literal-string-literal-string-begin
+        ^^^^^^^^
+        source-code-ruby-literal-string-literal-string-unquoted-literal-string-unquoted
+                ^
+                source-code-ruby-literal-string-literal-string-end
+else
+^^^^
+source-code-ruby-keyword-else
+  puts "Unknown"
+^^
+source-code-ruby-whitespace
+  ^^^^
+  source-code-ruby-identifier-function
+      ^
+      source-code-ruby-whitespace
+       ^
+       source-code-ruby-literal-string-literal-string-begin
+        ^^^^^^^
+        source-code-ruby-literal-string-literal-string-unquoted-literal-string-unquoted
+               ^
+               source-code-ruby-literal-string-literal-string-end
+end
+^^^
+source-code-ruby-keyword-end
+
+# Blocks and lambdas
+^^^^^^^^^^^^^^^^^^^^
+source-code-ruby-comment-line
+numbers.each { |n| puts n }
+^^^^^^^
+source-code-ruby-identifier
+       ^
+       source-code-ruby-punctuation
+        ^^^^
+        source-code-ruby-identifier-function
+            ^
+            source-code-ruby-whitespace
+             ^
+             source-code-ruby-punctuation
+              ^
+              source-code-ruby-whitespace
+               ^
+               source-code-ruby-keyword-operator
+                ^
+                source-code-ruby-identifier
+                 ^
+                 source-code-ruby-keyword-operator
+                  ^
+                  source-code-ruby-whitespace
+                   ^^^^
+                   source-code-ruby-identifier-function
+                       ^
+                       source-code-ruby-whitespace
+                        ^
+                        source-code-ruby-identifier
+                         ^
+                         source-code-ruby-whitespace
+                          ^
+                          source-code-ruby-punctuation
+numbers.map do |n|
+^^^^^^^
+source-code-ruby-identifier
+       ^
+       source-code-ruby-punctuation
+        ^^^
+        source-code-ruby-identifier-function
+           ^
+           source-code-ruby-whitespace
+            ^^
+            source-code-ruby-keyword-do
+              ^
+              source-code-ruby-whitespace
+               ^
+               source-code-ruby-keyword-operator
+                ^
+                source-code-ruby-identifier
+                 ^
+                 source-code-ruby-keyword-operator
+  n * 2
+^^
+source-code-ruby-whitespace
+  ^
+  source-code-ruby-identifier
+   ^
+   source-code-ruby-whitespace
+    ^
+    source-code-ruby-keyword-operator
+     ^
+     source-code-ruby-whitespace
+      ^
+      source-code-ruby-literal-number-integer
+end
+^^^
+source-code-ruby-keyword-end
+
+square = ->(x) { x ** 2 }
+^^^^^^
+source-code-ruby-identifier
+      ^
+      source-code-ruby-whitespace
+       ^
+       source-code-ruby-keyword-operator
+        ^
+        source-code-ruby-whitespace
+         ^^
+         source-code-ruby-keyword-operator
+           ^
+           source-code-ruby-punctuation
+            ^
+            source-code-ruby-identifier
+             ^
+             source-code-ruby-punctuation
+              ^
+              source-code-ruby-whitespace
+               ^
+               source-code-ruby-punctuation
+                ^
+                source-code-ruby-whitespace
+                 ^
+                 source-code-ruby-identifier
+                  ^
+                  source-code-ruby-whitespace
+                   ^^
+                   source-code-ruby-keyword-operator
+                     ^
+                     source-code-ruby-whitespace
+                      ^
+                      source-code-ruby-literal-number-integer
+                       ^
+                       source-code-ruby-whitespace
+                        ^
+                        source-code-ruby-punctuation
+cube = lambda { |x| x ** 3 }
+^^^^
+source-code-ruby-identifier
+    ^
+    source-code-ruby-whitespace
+     ^
+     source-code-ruby-keyword-operator
+      ^
+      source-code-ruby-whitespace
+       ^^^^^^
+       source-code-ruby-keyword-lambda
+             ^
+             source-code-ruby-whitespace
+              ^
+              source-code-ruby-punctuation
+               ^
+               source-code-ruby-whitespace
+                ^
+                source-code-ruby-keyword-operator
+                 ^
+                 source-code-ruby-identifier
+                  ^
+                  source-code-ruby-keyword-operator
+                   ^
+                   source-code-ruby-whitespace
+                    ^
+                    source-code-ruby-identifier
+                     ^
+                     source-code-ruby-whitespace
+                      ^^
+                      source-code-ruby-keyword-operator
+                        ^
+                        source-code-ruby-whitespace
+                         ^
+                         source-code-ruby-literal-number-integer
+                          ^
+                          source-code-ruby-whitespace
+                           ^
+                           source-code-ruby-punctuation
+
+# Exception handling
+^^^^^^^^^^^^^^^^^^^^
+source-code-ruby-comment-line
+begin
+^^^^^
+source-code-ruby-keyword-begin
+  raise StandardError, "Something went wrong"
+^^
+source-code-ruby-whitespace
+  ^^^^^
+  source-code-ruby-keyword-raise
+       ^
+       source-code-ruby-whitespace
+        ^^^^^^^^^^^^^
+        source-code-ruby-identifier-type
+                     ^
+                     source-code-ruby-punctuation
+                      ^
+                      source-code-ruby-whitespace
+                       ^
+                       source-code-ruby-literal-string-literal-string-begin
+                        ^^^^^^^^^^^^^^^^^^^^
+                        source-code-ruby-literal-string-literal-string-unquoted-literal-string-unquoted
+                                            ^
+                                            source-code-ruby-literal-string-literal-string-end
+rescue StandardError => e
+^^^^^^
+source-code-ruby-keyword-rescue
+      ^
+      source-code-ruby-whitespace
+       ^^^^^^^^^^^^^
+       source-code-ruby-identifier-type
+                    ^
+                    source-code-ruby-whitespace
+                     ^^
+                     source-code-ruby-keyword-operator
+                       ^
+                       source-code-ruby-whitespace
+                        ^
+                        source-code-ruby-identifier
+  puts e.message
+^^
+source-code-ruby-whitespace
+  ^^^^
+  source-code-ruby-identifier-function
+      ^
+      source-code-ruby-whitespace
+       ^
+       source-code-ruby-identifier
+        ^
+        source-code-ruby-punctuation
+         ^^^^^^^
+         source-code-ruby-identifier
+ensure
+^^^^^^
+source-code-ruby-keyword-ensure
+  puts "Cleanup"
+^^
+source-code-ruby-whitespace
+  ^^^^
+  source-code-ruby-identifier-function
+      ^
+      source-code-ruby-whitespace
+       ^
+       source-code-ruby-literal-string-literal-string-begin
+        ^^^^^^^
+        source-code-ruby-literal-string-literal-string-unquoted-literal-string-unquoted
+               ^
+               source-code-ruby-literal-string-literal-string-end
+end
+^^^
+source-code-ruby-keyword-end
+
+# Global and class variables
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+source-code-ruby-comment-line
+$global_var = "I'm global"
+^^^^^^^^^^^
+source-code-ruby-identifier-variable-global
+           ^
+           source-code-ruby-whitespace
+            ^
+            source-code-ruby-keyword-operator
+             ^
+             source-code-ruby-whitespace
+              ^
+              source-code-ruby-literal-string-literal-string-begin
+               ^^^^^^^^^^
+               source-code-ruby-literal-string-literal-string-unquoted-literal-string-unquoted
+                         ^
+                         source-code-ruby-literal-string-literal-string-end
+@@class_var = "I'm a class variable"
+^^^^^^^^^^^
+source-code-ruby-identifier-variable-class
+           ^
+           source-code-ruby-whitespace
+            ^
+            source-code-ruby-keyword-operator
+             ^
+             source-code-ruby-whitespace
+              ^
+              source-code-ruby-literal-string-literal-string-begin
+               ^^^^^^^^^^^^^^^^^^^^
+               source-code-ruby-literal-string-literal-string-unquoted-literal-string-unquoted
+                                   ^
+                                   source-code-ruby-literal-string-literal-string-end
+
+# Special variables and constants
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+source-code-ruby-comment-line
+puts __FILE__
+^^^^
+source-code-ruby-identifier-function
+    ^
+    source-code-ruby-whitespace
+     ^^^^^^^^
+     source-code-ruby-identifier-special
+puts __LINE__
+^^^^
+source-code-ruby-identifier-function
+    ^
+    source-code-ruby-whitespace
+     ^^^^^^^^
+     source-code-ruby-identifier-special
+CONSTANT = 100
+^^^^^^^^
+source-code-ruby-identifier-type
+        ^
+        source-code-ruby-whitespace
+         ^
+         source-code-ruby-keyword-operator
+          ^
+          source-code-ruby-whitespace
+           ^^^
+           source-code-ruby-literal-number-integer
+
+# Method with bang and question mark
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+source-code-ruby-comment-line
+def valid?
+^^^
+source-code-ruby-keyword-def
+   ^
+   source-code-ruby-whitespace
+    ^^^^^^
+    source-code-ruby-identifier-function
+  true
+^^
+source-code-ruby-whitespace
+  ^^^^
+  source-code-ruby-literal-boolean-true
+end
+^^^
+source-code-ruby-keyword-end
+
+def mutate!
+^^^
+source-code-ruby-keyword-def
+   ^
+   source-code-ruby-whitespace
+    ^^^^^^^
+    source-code-ruby-identifier-function
+  self
+^^
+source-code-ruby-whitespace
+  ^^^^
+  source-code-ruby-identifier-special
+end
+^^^
+source-code-ruby-keyword-end

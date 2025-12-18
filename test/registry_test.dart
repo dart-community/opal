@@ -36,7 +36,7 @@ void main() {
 
       test('returns null for unknown language', () {
         expect(registry['unknown'], isNull);
-        expect(registry['ruby'], isNull);
+        expect(registry['perl'], isNull);
         expect(registry['python'], isNull);
       });
 

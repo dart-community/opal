@@ -1,6 +1,7 @@
 ## 0.2.2-wip
 
-- Add initial support for `glsl` (OpenGL Shading Language).
+- Add initial, basic support for `ruby`.
+- Add initial, basic support for `glsl` (OpenGL Shading Language).
 
 ## 0.2.1
 

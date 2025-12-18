@@ -1,0 +1,113 @@
+#!/usr/bin/env ruby
+# Ruby 3+ features demonstration
+
+class Person
+  attr_accessor :name, :age
+
+  def initialize(name, age)
+    @name = name
+    @age = age
+  end
+
+  def adult?
+    @age >= 18
+  end
+
+  private
+
+  def secret_method
+    "This is private"
+  end
+end
+
+module Greeting
+  def say_hello
+    puts "Hello!"
+  end
+end
+
+# Numbers
+count = 42
+hex = 0xFF
+binary = 0b1010
+float_num = 3.14159
+scientific = 1.5e-10
+
+# Strings and interpolation
+message = "Count is: #{count}"
+raw_string = 'No #{interpolation} here'
+multiline = %Q{
+  This is a
+  multiline string
+}
+
+# Symbols
+status = :active
+quoted_sym = :"hello world"
+
+# Regular expressions
+pattern = /\d+/
+email = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
+
+# Arrays and hashes
+numbers = [1, 2, 3]
+config = { name: 'app', version: '1.0' }
+
+# Control flow
+if count > 0
+  result = true
+elsif count == 0
+  result = nil
+else
+  result = false
+end
+
+unless result.nil?
+  puts "Has result"
+end
+
+# Case/when
+case status
+when :active
+  puts "Active"
+when :inactive
+  puts "Inactive"
+else
+  puts "Unknown"
+end
+
+# Blocks and lambdas
+numbers.each { |n| puts n }
+numbers.map do |n|
+  n * 2
+end
+
+square = ->(x) { x ** 2 }
+cube = lambda { |x| x ** 3 }
+
+# Exception handling
+begin
+  raise StandardError, "Something went wrong"
+rescue StandardError => e
+  puts e.message
+ensure
+  puts "Cleanup"
+end
+
+# Global and class variables
+$global_var = "I'm global"
+@@class_var = "I'm a class variable"
+
+# Special variables and constants
+puts __FILE__
+puts __LINE__
+CONSTANT = 100
+
+# Method with bang and question mark
+def valid?
+  true
+end
+
+def mutate!
+  self
+end

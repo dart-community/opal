@@ -1,0 +1,50 @@
+MESSAGE = 'Hello, world!'
+^^^^^^^
+source-code-ruby-identifier-type
+       ^
+       source-code-ruby-whitespace
+        ^
+        source-code-ruby-keyword-operator
+         ^
+         source-code-ruby-whitespace
+          ^
+          source-code-ruby-literal-string-literal-string-begin
+           ^^^^^^^^^^^^^
+           source-code-ruby-literal-string-literal-string-unquoted-literal-string-unquoted
+                        ^
+                        source-code-ruby-literal-string-literal-string-end
+
+def main
+^^^
+source-code-ruby-keyword-def
+   ^
+   source-code-ruby-whitespace
+    ^^^^
+    source-code-ruby-identifier-function
+  # Print the message.
+^^
+source-code-ruby-whitespace
+  ^^^^^^^^^^^^^^^^^^^^
+  source-code-ruby-comment-line
+  puts "The message is: #{MESSAGE}"
+^^
+source-code-ruby-whitespace
+  ^^^^
+  source-code-ruby-identifier-function
+      ^
+      source-code-ruby-whitespace
+       ^
+       source-code-ruby-literal-string-literal-string-begin
+        ^^^^^^^^^^^^^^^^
+        source-code-ruby-literal-string-literal-string-unquoted-literal-string-unquoted
+                        ^^^^^^^^^^
+                        source-code-ruby-literal-string-literal-string-unquoted-literal-string-interpolation
+                                  ^
+                                  source-code-ruby-literal-string-literal-string-end
+end
+^^^
+source-code-ruby-keyword-end
+
+main
+^^^^
+source-code-ruby-identifier

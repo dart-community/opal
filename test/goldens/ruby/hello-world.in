@@ -1,0 +1,8 @@
+MESSAGE = 'Hello, world!'
+
+def main
+  # Print the message.
+  puts "The message is: #{MESSAGE}"
+end
+
+main

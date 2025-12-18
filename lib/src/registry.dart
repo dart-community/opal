@@ -115,4 +115,10 @@ final Map<String, String> _defaultFallbackLanguageNames = {
   'clang': BuiltInLanguages.c.name,
   'c++': BuiltInLanguages.cPlusPlus.name,
   'cplusplus': BuiltInLanguages.cPlusPlus.name,
+  'frag': BuiltInLanguages.glsl.name,
+  'vert': BuiltInLanguages.glsl.name,
+  'geom': BuiltInLanguages.glsl.name,
+  'comp': BuiltInLanguages.glsl.name,
+  'tesc': BuiltInLanguages.glsl.name,
+  'tese': BuiltInLanguages.glsl.name,
 };

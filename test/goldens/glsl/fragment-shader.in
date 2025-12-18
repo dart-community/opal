@@ -1,0 +1,22 @@
+#version 330 core
+
+uniform sampler2D uTexture;
+uniform vec3 uLightPos;
+
+in vec2 vTexCoord;
+in vec3 vNormal;
+
+out vec4 fragColor;
+
+const float PI = 3.14159;
+
+void main() {
+  // Sample the texture.
+  vec4 texColor = texture(uTexture, vTexCoord);
+
+  /* Calculate lighting. */
+  vec3 lightDir = normalize(uLightPos - gl_FragCoord.xyz);
+  float diff = max(dot(vNormal, lightDir), 0.0);
+
+  fragColor = texColor * diff;
+}

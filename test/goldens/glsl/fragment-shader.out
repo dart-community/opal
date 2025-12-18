@@ -1,0 +1,266 @@
+#version 330 core
+^
+source-code-glsl-metadata-preprocessor-directive-punctuation
+ ^^^^^^^
+ source-code-glsl-metadata-preprocessor-directive-metadata-preprocessor-directive-name
+        ^^^^^^^^^
+        source-code-glsl-metadata-preprocessor-directive-metadata-preprocessor-directive-options
+
+uniform sampler2D uTexture;
+^^^^^^^
+source-code-glsl-keyword-storage-uniform
+       ^
+       source-code-glsl-whitespace
+        ^^^^^^^^^
+        source-code-glsl-identifier-type-built-in
+                 ^
+                 source-code-glsl-whitespace
+                  ^^^^^^^^
+                  source-code-glsl-identifier
+                          ^
+                          source-code-glsl-punctuation
+uniform vec3 uLightPos;
+^^^^^^^
+source-code-glsl-keyword-storage-uniform
+       ^
+       source-code-glsl-whitespace
+        ^^^^
+        source-code-glsl-identifier-type-built-in
+            ^
+            source-code-glsl-whitespace
+             ^^^^^^^^^
+             source-code-glsl-identifier
+                      ^
+                      source-code-glsl-punctuation
+
+in vec2 vTexCoord;
+^^
+source-code-glsl-keyword-storage-in
+  ^
+  source-code-glsl-whitespace
+   ^^^^
+   source-code-glsl-identifier-type-built-in
+       ^
+       source-code-glsl-whitespace
+        ^^^^^^^^^
+        source-code-glsl-identifier
+                 ^
+                 source-code-glsl-punctuation
+in vec3 vNormal;
+^^
+source-code-glsl-keyword-storage-in
+  ^
+  source-code-glsl-whitespace
+   ^^^^
+   source-code-glsl-identifier-type-built-in
+       ^
+       source-code-glsl-whitespace
+        ^^^^^^^
+        source-code-glsl-identifier
+               ^
+               source-code-glsl-punctuation
+
+out vec4 fragColor;
+^^^
+source-code-glsl-keyword-storage-out
+   ^
+   source-code-glsl-whitespace
+    ^^^^
+    source-code-glsl-identifier-type-built-in
+        ^
+        source-code-glsl-whitespace
+         ^^^^^^^^^
+         source-code-glsl-identifier
+                  ^
+                  source-code-glsl-punctuation
+
+const float PI = 3.14159;
+^^^^^
+source-code-glsl-keyword-modifier-const
+     ^
+     source-code-glsl-whitespace
+      ^^^^^
+      source-code-glsl-identifier-type-built-in
+           ^
+           source-code-glsl-whitespace
+            ^^
+            source-code-glsl-identifier-special-constant
+              ^
+              source-code-glsl-whitespace
+               ^
+               source-code-glsl-keyword-operator
+                ^
+                source-code-glsl-whitespace
+                 ^^^^^^^
+                 source-code-glsl-literal-number-float
+                        ^
+                        source-code-glsl-punctuation
+
+void main() {
+^^^^
+source-code-glsl-identifier-type-built-in
+    ^
+    source-code-glsl-whitespace
+     ^^^^
+     source-code-glsl-identifier-function
+         ^
+         source-code-glsl-punctuation
+          ^
+          source-code-glsl-punctuation
+           ^
+           source-code-glsl-whitespace
+            ^
+            source-code-glsl-punctuation
+  // Sample the texture.
+^^
+source-code-glsl-whitespace
+  ^^^^^^^^^^^^^^^^^^^^^^
+  source-code-glsl-comment-line
+  vec4 texColor = texture(uTexture, vTexCoord);
+^^
+source-code-glsl-whitespace
+  ^^^^
+  source-code-glsl-identifier-type-built-in
+      ^
+      source-code-glsl-whitespace
+       ^^^^^^^^
+       source-code-glsl-identifier
+               ^
+               source-code-glsl-whitespace
+                ^
+                source-code-glsl-keyword-operator
+                 ^
+                 source-code-glsl-whitespace
+                  ^^^^^^^
+                  source-code-glsl-identifier-function
+                         ^
+                         source-code-glsl-punctuation
+                          ^^^^^^^^
+                          source-code-glsl-identifier
+                                  ^
+                                  source-code-glsl-punctuation
+                                   ^
+                                   source-code-glsl-whitespace
+                                    ^^^^^^^^^
+                                    source-code-glsl-identifier
+                                             ^
+                                             source-code-glsl-punctuation
+                                              ^
+                                              source-code-glsl-punctuation
+
+  /* Calculate lighting. */
+^^
+source-code-glsl-whitespace
+  ^^
+  source-code-glsl-comment-block-comment-block-begin
+    ^^^^^^^^^^^^^^^^^^^^^
+    source-code-glsl-comment-block-comment-block-content
+                         ^^
+                         source-code-glsl-comment-block-comment-block-end
+  vec3 lightDir = normalize(uLightPos - gl_FragCoord.xyz);
+^^
+source-code-glsl-whitespace
+  ^^^^
+  source-code-glsl-identifier-type-built-in
+      ^
+      source-code-glsl-whitespace
+       ^^^^^^^^
+       source-code-glsl-identifier
+               ^
+               source-code-glsl-whitespace
+                ^
+                source-code-glsl-keyword-operator
+                 ^
+                 source-code-glsl-whitespace
+                  ^^^^^^^^^
+                  source-code-glsl-identifier-function
+                           ^
+                           source-code-glsl-punctuation
+                            ^^^^^^^^^
+                            source-code-glsl-identifier
+                                     ^
+                                     source-code-glsl-whitespace
+                                      ^
+                                      source-code-glsl-keyword-operator
+                                       ^
+                                       source-code-glsl-whitespace
+                                        ^^^^^^^^^^^^
+                                        source-code-glsl-identifier-variable-built-in
+                                                    ^
+                                                    source-code-glsl-punctuation-accessor
+                                                     ^^^
+                                                     source-code-glsl-identifier
+                                                        ^
+                                                        source-code-glsl-punctuation
+                                                         ^
+                                                         source-code-glsl-punctuation
+  float diff = max(dot(vNormal, lightDir), 0.0);
+^^
+source-code-glsl-whitespace
+  ^^^^^
+  source-code-glsl-identifier-type-built-in
+       ^
+       source-code-glsl-whitespace
+        ^^^^
+        source-code-glsl-identifier
+            ^
+            source-code-glsl-whitespace
+             ^
+             source-code-glsl-keyword-operator
+              ^
+              source-code-glsl-whitespace
+               ^^^
+               source-code-glsl-identifier-function
+                  ^
+                  source-code-glsl-punctuation
+                   ^^^
+                   source-code-glsl-identifier-function
+                      ^
+                      source-code-glsl-punctuation
+                       ^^^^^^^
+                       source-code-glsl-identifier
+                              ^
+                              source-code-glsl-punctuation
+                               ^
+                               source-code-glsl-whitespace
+                                ^^^^^^^^
+                                source-code-glsl-identifier
+                                        ^
+                                        source-code-glsl-punctuation
+                                         ^
+                                         source-code-glsl-punctuation
+                                          ^
+                                          source-code-glsl-whitespace
+                                           ^^^
+                                           source-code-glsl-literal-number-float
+                                              ^
+                                              source-code-glsl-punctuation
+                                               ^
+                                               source-code-glsl-punctuation
+
+  fragColor = texColor * diff;
+^^
+source-code-glsl-whitespace
+  ^^^^^^^^^
+  source-code-glsl-identifier
+           ^
+           source-code-glsl-whitespace
+            ^
+            source-code-glsl-keyword-operator
+             ^
+             source-code-glsl-whitespace
+              ^^^^^^^^
+              source-code-glsl-identifier
+                      ^
+                      source-code-glsl-whitespace
+                       ^
+                       source-code-glsl-keyword-operator
+                        ^
+                        source-code-glsl-whitespace
+                         ^^^^
+                         source-code-glsl-identifier
+                             ^
+                             source-code-glsl-punctuation
+}
+^
+source-code-glsl-punctuation

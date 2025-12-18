@@ -4,6 +4,7 @@ import 'language.dart';
 import 'language/c.dart';
 import 'language/c_plus_plus.dart';
 import 'language/dart.dart';
+import 'language/glsl.dart';
 import 'language/groovy.dart';
 import 'language/html.dart';
 import 'language/java.dart';
@@ -28,6 +29,7 @@ abstract final class BuiltInLanguages {
     c,
     cPlusPlus,
     dart,
+    glsl,
     groovy,
     html,
     java,
@@ -61,6 +63,13 @@ abstract final class BuiltInLanguages {
     name: 'dart',
     grammar: const DartGrammar(),
     baseTag: const Tag('dart', parent: Tags.codeSource),
+  );
+
+  /// A tokenizing language implementation for the GLSL shading language.
+  static final Language glsl = MatcherLanguage(
+    name: 'glsl',
+    grammar: const GlslGrammar(),
+    baseTag: const Tag('glsl', parent: Tags.codeSource),
   );
 
   /// A tokenizing language implementation for the Groovy programming language.

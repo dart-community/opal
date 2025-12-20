@@ -1,0 +1,82 @@
+message = 'Hello, world!'
+^^^^^^^
+source-code-python-identifier
+       ^
+       source-code-python-whitespace
+        ^
+        source-code-python-keyword-operator
+         ^
+         source-code-python-whitespace
+          ^
+          source-code-python-literal-string-literal-string-begin
+           ^^^^^^^^^^^^^
+           source-code-python-literal-string-literal-string-unquoted-literal-string-unquoted
+                        ^
+                        source-code-python-literal-string-literal-string-end
+
+def main():
+^^^
+source-code-python-keyword-declaration-def
+   ^
+   source-code-python-whitespace
+    ^^^^
+    source-code-python-identifier
+        ^
+        source-code-python-punctuation
+         ^
+         source-code-python-punctuation
+          ^
+          source-code-python-punctuation
+    # Print the message.
+^^^^
+source-code-python-whitespace
+    ^^^^^^^^^^^^^^^^^^^^
+    source-code-python-comment-line
+    print(f'The message is: {message}')
+^^^^
+source-code-python-whitespace
+    ^^^^^
+    source-code-python-identifier-function
+         ^
+         source-code-python-punctuation
+          ^^
+          source-code-python-literal-string-literal-string-begin
+            ^^^^^^^^^^^^^^^^
+            source-code-python-literal-string-literal-string-unquoted-literal-string-unquoted
+                            ^^^^^^^^^
+                            source-code-python-literal-string-literal-string-unquoted-literal-string-interpolation
+                                     ^
+                                     source-code-python-literal-string-literal-string-end
+                                      ^
+                                      source-code-python-punctuation
+
+if __name__ == '__main__':
+^^
+source-code-python-keyword-control-if
+  ^
+  source-code-python-whitespace
+   ^^^^^^^^
+   source-code-python-identifier-special
+           ^
+           source-code-python-whitespace
+            ^^
+            source-code-python-keyword-operator
+              ^
+              source-code-python-whitespace
+               ^
+               source-code-python-literal-string-literal-string-begin
+                ^^^^^^^^
+                source-code-python-literal-string-literal-string-unquoted-literal-string-unquoted
+                        ^
+                        source-code-python-literal-string-literal-string-end
+                         ^
+                         source-code-python-punctuation
+    main()
+^^^^
+source-code-python-whitespace
+    ^^^^
+    source-code-python-identifier
+        ^
+        source-code-python-punctuation
+         ^
+         source-code-python-punctuation

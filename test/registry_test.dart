@@ -37,7 +37,7 @@ void main() {
       test('returns null for unknown language', () {
         expect(registry['unknown'], isNull);
         expect(registry['perl'], isNull);
-        expect(registry['python'], isNull);
+        expect(registry['cobol'], isNull);
       });
 
       test('is case insensitive', () {

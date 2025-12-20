@@ -103,6 +103,7 @@ final Map<String, String> _defaultFallbackLanguageNames = {
   'ts': BuiltInLanguages.js.name,
   'kt': BuiltInLanguages.kotlin.name,
   'md': BuiltInLanguages.markdown.name,
+  'py': BuiltInLanguages.python.name,
   'plaintext': BuiltInLanguages.text.name,
   'none': BuiltInLanguages.text.name,
   'nocode': BuiltInLanguages.text.name,

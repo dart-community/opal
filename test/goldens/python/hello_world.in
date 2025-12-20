@@ -1,0 +1,8 @@
+message = 'Hello, world!'
+
+def main():
+    # Print the message.
+    print(f'The message is: {message}')
+
+if __name__ == '__main__':
+    main()

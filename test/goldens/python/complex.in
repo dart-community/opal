@@ -1,0 +1,23 @@
+import math
+
+# A simple class
+class Point:
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+
+    def distance(self, other):
+        """Calculate distance to another point."""
+        dx = self.x - other.x
+        dy = self.y - other.y
+        return math.sqrt(dx**2 + dy**2)
+
+@decorator
+def main():
+    p1 = Point(0, 0)
+    p2 = Point(3, 4)
+    dist = p1.distance(p2)
+    print(f"Distance: {dist}")
+
+if __name__ == "__main__":
+    main()

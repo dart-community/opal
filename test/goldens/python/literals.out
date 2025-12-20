@@ -1,0 +1,310 @@
+# Number literals
+^^^^^^^^^^^^^^^^^
+source-code-python-comment-line
+x = 42
+^
+source-code-python-identifier
+ ^
+ source-code-python-whitespace
+  ^
+  source-code-python-keyword-operator
+   ^
+   source-code-python-whitespace
+    ^^
+    source-code-python-literal-number-integer
+y = 3.14
+^
+source-code-python-identifier
+ ^
+ source-code-python-whitespace
+  ^
+  source-code-python-keyword-operator
+   ^
+   source-code-python-whitespace
+    ^^^^
+    source-code-python-literal-number-float
+z = 1e-10
+^
+source-code-python-identifier
+ ^
+ source-code-python-whitespace
+  ^
+  source-code-python-keyword-operator
+   ^
+   source-code-python-whitespace
+    ^^^^^
+    source-code-python-literal-number-float
+hex_num = 0xFF
+^^^^^^^
+source-code-python-identifier
+       ^
+       source-code-python-whitespace
+        ^
+        source-code-python-keyword-operator
+         ^
+         source-code-python-whitespace
+          ^^^^
+          source-code-python-literal-number-integer
+bin_num = 0b1010
+^^^^^^^
+source-code-python-identifier
+       ^
+       source-code-python-whitespace
+        ^
+        source-code-python-keyword-operator
+         ^
+         source-code-python-whitespace
+          ^^^^^^
+          source-code-python-literal-number-integer
+oct_num = 0o755
+^^^^^^^
+source-code-python-identifier
+       ^
+       source-code-python-whitespace
+        ^
+        source-code-python-keyword-operator
+         ^
+         source-code-python-whitespace
+          ^^^^^
+          source-code-python-literal-number-integer
+complex_num = 3+4j
+^^^^^^^^^^^
+source-code-python-identifier
+           ^
+           source-code-python-whitespace
+            ^
+            source-code-python-keyword-operator
+             ^
+             source-code-python-whitespace
+              ^
+              source-code-python-literal-number-integer
+               ^
+               source-code-python-keyword-operator
+                ^^
+                source-code-python-literal-number
+
+# Boolean and None
+^^^^^^^^^^^^^^^^^^
+source-code-python-comment-line
+flag = True
+^^^^
+source-code-python-identifier
+    ^
+    source-code-python-whitespace
+     ^
+     source-code-python-keyword-operator
+      ^
+      source-code-python-whitespace
+       ^^^^
+       source-code-python-literal-boolean-true
+empty = None
+^^^^^
+source-code-python-identifier
+     ^
+     source-code-python-whitespace
+      ^
+      source-code-python-keyword-operator
+       ^
+       source-code-python-whitespace
+        ^^^^
+        source-code-python-literal-null
+
+# Built-in types
+^^^^^^^^^^^^^^^^
+source-code-python-comment-line
+my_list: list = [1, 2, 3]
+^^^^^^^
+source-code-python-identifier
+       ^
+       source-code-python-punctuation
+        ^
+        source-code-python-whitespace
+         ^^^^
+         source-code-python-identifier-type-built-in
+             ^
+             source-code-python-whitespace
+              ^
+              source-code-python-keyword-operator
+               ^
+               source-code-python-whitespace
+                ^
+                source-code-python-punctuation
+                 ^
+                 source-code-python-literal-number-integer
+                  ^
+                  source-code-python-punctuation
+                   ^
+                   source-code-python-whitespace
+                    ^
+                    source-code-python-literal-number-integer
+                     ^
+                     source-code-python-punctuation
+                      ^
+                      source-code-python-whitespace
+                       ^
+                       source-code-python-literal-number-integer
+                        ^
+                        source-code-python-punctuation
+my_dict: dict = {'key': 'value'}
+^^^^^^^
+source-code-python-identifier
+       ^
+       source-code-python-punctuation
+        ^
+        source-code-python-whitespace
+         ^^^^
+         source-code-python-identifier-type-built-in
+             ^
+             source-code-python-whitespace
+              ^
+              source-code-python-keyword-operator
+               ^
+               source-code-python-whitespace
+                ^
+                source-code-python-punctuation
+                 ^
+                 source-code-python-literal-string-literal-string-begin
+                  ^^^
+                  source-code-python-literal-string-literal-string-unquoted-literal-string-unquoted
+                     ^
+                     source-code-python-literal-string-literal-string-end
+                      ^
+                      source-code-python-punctuation
+                       ^
+                       source-code-python-whitespace
+                        ^
+                        source-code-python-literal-string-literal-string-begin
+                         ^^^^^
+                         source-code-python-literal-string-literal-string-unquoted-literal-string-unquoted
+                              ^
+                              source-code-python-literal-string-literal-string-end
+                               ^
+                               source-code-python-punctuation
+my_str: str = "hello"
+^^^^^^
+source-code-python-identifier
+      ^
+      source-code-python-punctuation
+       ^
+       source-code-python-whitespace
+        ^^^
+        source-code-python-identifier-type-built-in
+           ^
+           source-code-python-whitespace
+            ^
+            source-code-python-keyword-operator
+             ^
+             source-code-python-whitespace
+              ^
+              source-code-python-literal-string-literal-string-begin
+               ^^^^^
+               source-code-python-literal-string-literal-string-unquoted-literal-string-unquoted
+                    ^
+                    source-code-python-literal-string-literal-string-end
+my_int: int = 10
+^^^^^^
+source-code-python-identifier
+      ^
+      source-code-python-punctuation
+       ^
+       source-code-python-whitespace
+        ^^^
+        source-code-python-identifier-type-built-in
+           ^
+           source-code-python-whitespace
+            ^
+            source-code-python-keyword-operator
+             ^
+             source-code-python-whitespace
+              ^^
+              source-code-python-literal-number-integer
+
+# Logical operators
+^^^^^^^^^^^^^^^^^^^
+source-code-python-comment-line
+result = True and False or not True
+^^^^^^
+source-code-python-identifier
+      ^
+      source-code-python-whitespace
+       ^
+       source-code-python-keyword-operator
+        ^
+        source-code-python-whitespace
+         ^^^^
+         source-code-python-literal-boolean-true
+             ^
+             source-code-python-whitespace
+              ^^^
+              source-code-python-keyword-and
+                 ^
+                 source-code-python-whitespace
+                  ^^^^^
+                  source-code-python-literal-boolean-false
+                       ^
+                       source-code-python-whitespace
+                        ^^
+                        source-code-python-keyword-or
+                          ^
+                          source-code-python-whitespace
+                           ^^^
+                           source-code-python-keyword-not
+                              ^
+                              source-code-python-whitespace
+                               ^^^^
+                               source-code-python-literal-boolean-true
+check = x in [1, 2, 3] and y is not None
+^^^^^
+source-code-python-identifier
+     ^
+     source-code-python-whitespace
+      ^
+      source-code-python-keyword-operator
+       ^
+       source-code-python-whitespace
+        ^
+        source-code-python-identifier
+         ^
+         source-code-python-whitespace
+          ^^
+          source-code-python-keyword-in
+            ^
+            source-code-python-whitespace
+             ^
+             source-code-python-punctuation
+              ^
+              source-code-python-literal-number-integer
+               ^
+               source-code-python-punctuation
+                ^
+                source-code-python-whitespace
+                 ^
+                 source-code-python-literal-number-integer
+                  ^
+                  source-code-python-punctuation
+                   ^
+                   source-code-python-whitespace
+                    ^
+                    source-code-python-literal-number-integer
+                     ^
+                     source-code-python-punctuation
+                      ^
+                      source-code-python-whitespace
+                       ^^^
+                       source-code-python-keyword-and
+                          ^
+                          source-code-python-whitespace
+                           ^
+                           source-code-python-identifier
+                            ^
+                            source-code-python-whitespace
+                             ^^
+                             source-code-python-keyword-is
+                               ^
+                               source-code-python-whitespace
+                                ^^^
+                                source-code-python-keyword-not
+                                   ^
+                                   source-code-python-whitespace
+                                    ^^^^
+                                    source-code-python-literal-null

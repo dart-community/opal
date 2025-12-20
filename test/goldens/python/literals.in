@@ -1,0 +1,22 @@
+# Number literals
+x = 42
+y = 3.14
+z = 1e-10
+hex_num = 0xFF
+bin_num = 0b1010
+oct_num = 0o755
+complex_num = 3+4j
+
+# Boolean and None
+flag = True
+empty = None
+
+# Built-in types
+my_list: list = [1, 2, 3]
+my_dict: dict = {'key': 'value'}
+my_str: str = "hello"
+my_int: int = 10
+
+# Logical operators
+result = True and False or not True
+check = x in [1, 2, 3] and y is not None

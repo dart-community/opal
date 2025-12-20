@@ -13,6 +13,7 @@ import 'language/json.dart';
 import 'language/kotlin.dart';
 import 'language/markdown.dart';
 import 'language/objective_c.dart';
+import 'language/python.dart';
 import 'language/ruby.dart';
 import 'language/swift.dart';
 import 'language/text.dart';
@@ -38,6 +39,7 @@ abstract final class BuiltInLanguages {
     json,
     kotlin,
     markdown,
+    python,
     objectiveC,
     ruby,
     swift,
@@ -128,6 +130,13 @@ abstract final class BuiltInLanguages {
     name: 'objective-c',
     grammar: const ObjectiveCGrammar(),
     baseTag: const Tag('objective-c', parent: Tags.codeSource),
+  );
+
+  /// A tokenizing language implementation for the Python programming language.
+  static final Language python = MatcherLanguage(
+    name: 'python',
+    grammar: const PythonGrammar(),
+    baseTag: const Tag('python', parent: Tags.codeSource),
   );
 
   /// A tokenizing language implementation for the Ruby programming language.

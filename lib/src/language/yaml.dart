@@ -14,8 +14,10 @@ final class YamlGrammar extends MatcherGrammar {
     Matcher.include(_anchorsAndAliases),
     Matcher.include(_tags),
     Matcher.include(_multilineIndicators),
-    Matcher.include(_keys),
+    Matcher.include(_blockKeys),
     Matcher.include(_literals),
+    Matcher.include(_flowSequence),
+    Matcher.include(_flowMapping),
     Matcher.include(_strings),
     Matcher.include(_punctuation),
   ];
@@ -73,6 +75,58 @@ final class YamlGrammar extends MatcherGrammar {
   ]);
 
   static const Tag _multiline = Tag('multiline', parent: Tags.stringLiteral);
+
+  Matcher _flowSequence() => Matcher.wrapped(
+    begin: Matcher.verbatim(
+      '[',
+      tag: const Tag('begin', parent: Tags.arrayLiteral),
+    ),
+    end: Matcher.verbatim(
+      ']',
+      tag: const Tag('end', parent: Tags.arrayLiteral),
+    ),
+    content: Matcher.include(_flowContent),
+    tag: Tags.arrayLiteral,
+  );
+
+  Matcher _flowMapping() => Matcher.wrapped(
+    begin: Matcher.verbatim(
+      '{',
+      tag: const Tag('begin', parent: Tags.mapLiteral),
+    ),
+    end: Matcher.verbatim(
+      '}',
+      tag: const Tag('end', parent: Tags.mapLiteral),
+    ),
+    content: Matcher.include(_flowContent),
+    tag: Tags.mapLiteral,
+  );
+
+  Matcher _flowContent() => Matcher.options([
+    Matcher.include(_comments),
+    Matcher.include(_anchorsAndAliases),
+    Matcher.include(_tags),
+    Matcher.include(_flowKeys),
+    Matcher.include(_literals),
+    Matcher.include(_flowSequence),
+    Matcher.include(_flowMapping),
+    Matcher.include(_doubleQuotedString),
+    Matcher.include(_singleQuotedString),
+    Matcher.include(_flowPlainScalar),
+    Matcher.regex(r'\?(?=\s)', tag: Tags.punctuation),
+    Matcher.regex(r',', tag: Tags.separator),
+    Matcher.regex(r':', tag: Tags.separator),
+  ]);
+
+  /// A plain scalar restricted for flow context.
+  ///
+  /// Unlike [_plainScalar], the continuation excludes flow indicator
+  /// characters (`[`, `]`, `{`, `}`, `,`) which have structural
+  /// meaning inside flow collections.
+  Matcher _flowPlainScalar() => Matcher.regex(
+    r'''[^\s:#\[\]{},&*!|>'"%@`-][^\n:#\[\]{},]*(?<!\s)''',
+    tag: Tags.unquotedString,
+  );
 
   Matcher _strings() => Matcher.options([
     Matcher.include(_doubleQuotedString),
@@ -175,9 +229,24 @@ final class YamlGrammar extends MatcherGrammar {
     ),
   ]);
 
-  Matcher _keys() => Matcher.options([
+  Matcher _blockKeys() => Matcher.options([
     Matcher.regex(
       r'[a-zA-Z0-9_-]+(?=\s*:(?:\s|$))',
+      tag: Tags.property,
+    ),
+    Matcher.regex(
+      r'"(?:[^"\\]|\\.)*"(?=\s*:)',
+      tag: _quotedKey,
+    ),
+    Matcher.regex(
+      r"'(?:[^']|'')*'(?=\s*:)",
+      tag: _quotedKey,
+    ),
+  ]);
+
+  Matcher _flowKeys() => Matcher.options([
+    Matcher.regex(
+      r'[a-zA-Z0-9_-]+(?=\s*:(?:\s|$|[\]},]))',
       tag: Tags.property,
     ),
     Matcher.regex(
@@ -199,7 +268,6 @@ final class YamlGrammar extends MatcherGrammar {
     ),
     Matcher.regex(r':', tag: Tags.separator),
     Matcher.regex(r',', tag: Tags.separator),
-    Matcher.regex(r'[\[\]{}]', tag: Tags.punctuation),
     Matcher.regex(r'\?(?=\s)', tag: Tags.punctuation),
   ]);
 }

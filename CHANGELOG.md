@@ -1,6 +1,7 @@
 ## 0.2.3-wip
 
 - Add initial, basic support for `python`.
+- Improve support for flow-style productions in YAML.
 
 ## 0.2.2
 

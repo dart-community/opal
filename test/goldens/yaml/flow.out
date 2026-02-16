@@ -1,0 +1,183 @@
+sequence: [one, two, three]
+^^^^^^^^
+source-text-data-yaml-identifier-property
+        ^
+        source-text-data-yaml-punctuation-separator
+         ^
+         source-text-data-yaml-whitespace
+          ^
+          source-text-data-yaml-literal-collection-array-literal-collection-array-begin
+           ^^^
+           source-text-data-yaml-literal-collection-array-literal-string-unquoted
+              ^
+              source-text-data-yaml-literal-collection-array-punctuation-separator
+               ^
+               source-text-data-yaml-literal-collection-array-whitespace
+                ^^^
+                source-text-data-yaml-literal-collection-array-literal-string-unquoted
+                   ^
+                   source-text-data-yaml-literal-collection-array-punctuation-separator
+                    ^
+                    source-text-data-yaml-literal-collection-array-whitespace
+                     ^^^^^
+                     source-text-data-yaml-literal-collection-array-literal-string-unquoted
+                          ^
+                          source-text-data-yaml-literal-collection-array-literal-collection-array-end
+mapping: {name: Dart, version: 3}
+^^^^^^^
+source-text-data-yaml-identifier-property
+       ^
+       source-text-data-yaml-punctuation-separator
+        ^
+        source-text-data-yaml-whitespace
+         ^
+         source-text-data-yaml-literal-collection-map-literal-collection-map-begin
+          ^^^^
+          source-text-data-yaml-literal-collection-map-identifier-property
+              ^
+              source-text-data-yaml-literal-collection-map-punctuation-separator
+               ^
+               source-text-data-yaml-literal-collection-map-whitespace
+                ^^^^
+                source-text-data-yaml-literal-collection-map-literal-string-unquoted
+                    ^
+                    source-text-data-yaml-literal-collection-map-punctuation-separator
+                     ^
+                     source-text-data-yaml-literal-collection-map-whitespace
+                      ^^^^^^^
+                      source-text-data-yaml-literal-collection-map-identifier-property
+                             ^
+                             source-text-data-yaml-literal-collection-map-punctuation-separator
+                              ^
+                              source-text-data-yaml-literal-collection-map-whitespace
+                               ^
+                               source-text-data-yaml-literal-collection-map-literal-number
+                                ^
+                                source-text-data-yaml-literal-collection-map-literal-collection-map-end
+nested: {langs: [Dart, Rust], active: true}
+^^^^^^
+source-text-data-yaml-identifier-property
+      ^
+      source-text-data-yaml-punctuation-separator
+       ^
+       source-text-data-yaml-whitespace
+        ^
+        source-text-data-yaml-literal-collection-map-literal-collection-map-begin
+         ^^^^^
+         source-text-data-yaml-literal-collection-map-identifier-property
+              ^
+              source-text-data-yaml-literal-collection-map-punctuation-separator
+               ^
+               source-text-data-yaml-literal-collection-map-whitespace
+                ^
+                source-text-data-yaml-literal-collection-map-literal-collection-array-literal-collection-array-begin
+                 ^^^^
+                 source-text-data-yaml-literal-collection-map-literal-collection-array-literal-string-unquoted
+                     ^
+                     source-text-data-yaml-literal-collection-map-literal-collection-array-punctuation-separator
+                      ^
+                      source-text-data-yaml-literal-collection-map-literal-collection-array-whitespace
+                       ^^^^
+                       source-text-data-yaml-literal-collection-map-literal-collection-array-literal-string-unquoted
+                           ^
+                           source-text-data-yaml-literal-collection-map-literal-collection-array-literal-collection-array-end
+                            ^
+                            source-text-data-yaml-literal-collection-map-punctuation-separator
+                             ^
+                             source-text-data-yaml-literal-collection-map-whitespace
+                              ^^^^^^
+                              source-text-data-yaml-literal-collection-map-identifier-property
+                                    ^
+                                    source-text-data-yaml-literal-collection-map-punctuation-separator
+                                     ^
+                                     source-text-data-yaml-literal-collection-map-whitespace
+                                      ^^^^
+                                      source-text-data-yaml-literal-collection-map-literal-boolean-true
+                                          ^
+                                          source-text-data-yaml-literal-collection-map-literal-collection-map-end
+quoted: ["Double quoted", 'Single quoted']
+^^^^^^
+source-text-data-yaml-identifier-property
+      ^
+      source-text-data-yaml-punctuation-separator
+       ^
+       source-text-data-yaml-whitespace
+        ^
+        source-text-data-yaml-literal-collection-array-literal-collection-array-begin
+         ^
+         source-text-data-yaml-literal-collection-array-literal-string-quoted-double-literal-string-quoted-double-begin
+          ^^^^^^^^^^^^^
+          source-text-data-yaml-literal-collection-array-literal-string-quoted-double-literal-string-unquoted
+                       ^
+                       source-text-data-yaml-literal-collection-array-literal-string-quoted-double-literal-string-quoted-double-end
+                        ^
+                        source-text-data-yaml-literal-collection-array-punctuation-separator
+                         ^
+                         source-text-data-yaml-literal-collection-array-whitespace
+                          ^
+                          source-text-data-yaml-literal-collection-array-literal-string-quoted-single-literal-string-quoted-single-begin
+                           ^^^^^^^^^^^^^
+                           source-text-data-yaml-literal-collection-array-literal-string-quoted-single-literal-string-unquoted
+                                        ^
+                                        source-text-data-yaml-literal-collection-array-literal-string-quoted-single-literal-string-quoted-single-end
+                                         ^
+                                         source-text-data-yaml-literal-collection-array-literal-collection-array-end
+literals: [true, false, null, 42, 3.14]
+^^^^^^^^
+source-text-data-yaml-identifier-property
+        ^
+        source-text-data-yaml-punctuation-separator
+         ^
+         source-text-data-yaml-whitespace
+          ^
+          source-text-data-yaml-literal-collection-array-literal-collection-array-begin
+           ^^^^
+           source-text-data-yaml-literal-collection-array-literal-boolean-true
+               ^
+               source-text-data-yaml-literal-collection-array-punctuation-separator
+                ^
+                source-text-data-yaml-literal-collection-array-whitespace
+                 ^^^^^
+                 source-text-data-yaml-literal-collection-array-literal-boolean-false
+                      ^
+                      source-text-data-yaml-literal-collection-array-punctuation-separator
+                       ^
+                       source-text-data-yaml-literal-collection-array-whitespace
+                        ^^^^
+                        source-text-data-yaml-literal-collection-array-literal-null
+                            ^
+                            source-text-data-yaml-literal-collection-array-punctuation-separator
+                             ^
+                             source-text-data-yaml-literal-collection-array-whitespace
+                              ^^
+                              source-text-data-yaml-literal-collection-array-literal-number
+                                ^
+                                source-text-data-yaml-literal-collection-array-punctuation-separator
+                                 ^
+                                 source-text-data-yaml-literal-collection-array-whitespace
+                                  ^^^^
+                                  source-text-data-yaml-literal-collection-array-literal-number
+                                      ^
+                                      source-text-data-yaml-literal-collection-array-literal-collection-array-end
+empty_sequence: []
+^^^^^^^^^^^^^^
+source-text-data-yaml-identifier-property
+              ^
+              source-text-data-yaml-punctuation-separator
+               ^
+               source-text-data-yaml-whitespace
+                ^
+                source-text-data-yaml-literal-collection-array-literal-collection-array-begin
+                 ^
+                 source-text-data-yaml-literal-collection-array-literal-collection-array-end
+empty_map: {}
+^^^^^^^^^
+source-text-data-yaml-identifier-property
+         ^
+         source-text-data-yaml-punctuation-separator
+          ^
+          source-text-data-yaml-whitespace
+           ^
+           source-text-data-yaml-literal-collection-map-literal-collection-map-begin
+            ^
+            source-text-data-yaml-literal-collection-map-literal-collection-map-end

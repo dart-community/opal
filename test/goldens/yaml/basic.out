@@ -46,22 +46,22 @@ source-text-data-yaml-identifier-property
      ^
      source-text-data-yaml-whitespace
       ^
-      source-text-data-yaml-punctuation
+      source-text-data-yaml-literal-collection-array-literal-collection-array-begin
        ^
-       source-text-data-yaml-literal-string-quoted-double-literal-string-quoted-double-begin
+       source-text-data-yaml-literal-collection-array-literal-string-quoted-double-literal-string-quoted-double-begin
         ^^^^^^^^^^^^^^^
-        source-text-data-yaml-literal-string-quoted-double-literal-string-unquoted
+        source-text-data-yaml-literal-collection-array-literal-string-quoted-double-literal-string-unquoted
                        ^
-                       source-text-data-yaml-literal-string-quoted-double-literal-string-quoted-double-end
+                       source-text-data-yaml-literal-collection-array-literal-string-quoted-double-literal-string-quoted-double-end
                         ^
-                        source-text-data-yaml-punctuation-separator
+                        source-text-data-yaml-literal-collection-array-punctuation-separator
                          ^
-                         source-text-data-yaml-whitespace
+                         source-text-data-yaml-literal-collection-array-whitespace
                           ^
-                          source-text-data-yaml-literal-string-quoted-single-literal-string-quoted-single-begin
+                          source-text-data-yaml-literal-collection-array-literal-string-quoted-single-literal-string-quoted-single-begin
                            ^^^^^^^^^^
-                           source-text-data-yaml-literal-string-quoted-single-literal-string-unquoted
+                           source-text-data-yaml-literal-collection-array-literal-string-quoted-single-literal-string-unquoted
                                      ^
-                                     source-text-data-yaml-literal-string-quoted-single-literal-string-quoted-single-end
+                                     source-text-data-yaml-literal-collection-array-literal-string-quoted-single-literal-string-quoted-single-end
                                       ^
-                                      source-text-data-yaml-punctuation
+                                      source-text-data-yaml-literal-collection-array-literal-collection-array-end

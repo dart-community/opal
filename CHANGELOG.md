@@ -1,4 +1,4 @@
-## 0.2.3-wip
+## 0.2.3
 
 - Add initial, basic support for `python`.
 - Improve support for flow-style productions in YAML.

@@ -1,0 +1,37 @@
+# Decorators are the first token on their line, so they're annotations.
+@decorator
+def plain():
+    pass
+
+@module.registry.register
+def dotted():
+    pass
+
+class Widget:
+    @property
+    def value(self):
+        return self._value
+
+# Since Python 3.9 (PEP 614) a decorator can be an arbitrary expression.
+# The `@` marker is tagged and the rest is tokenized as ordinary code.
+@buttons[0].clicked.connect
+def on_click():
+    pass
+
+@(make_decorator())
+def built():
+    pass
+
+@decorator_with("an argument", 42)
+def configured():
+    pass
+
+# Matrix multiplication is a binary operator, never a decorator,
+# regardless of the spacing around the `@`.
+spaced = matrix_a @ matrix_b
+tight = matrix_a@matrix_b
+left_space = matrix_a @matrix_b
+right_space = matrix_a@ matrix_b
+chained = m1 @ m2 @ m3
+after_call = compute() @ matrix
+after_index = rows[0] @ columns

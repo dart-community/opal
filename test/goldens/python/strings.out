@@ -1,0 +1,257 @@
+import re
+^^^^^^
+source-code-python-keyword-declaration-import
+      ^
+      source-code-python-whitespace
+       ^^
+       source-code-python-identifier
+
+# Raw strings keep backslashes literal.
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+source-code-python-comment-line
+pattern = re.compile(r"\d+\.\d+")
+^^^^^^^
+source-code-python-identifier
+       ^
+       source-code-python-whitespace
+        ^
+        source-code-python-keyword-operator
+         ^
+         source-code-python-whitespace
+          ^^
+          source-code-python-identifier
+            ^
+            source-code-python-punctuation
+             ^^^^^^^
+             source-code-python-identifier-function
+                    ^
+                    source-code-python-punctuation
+                     ^^
+                     source-code-python-literal-string-literal-string-begin
+                       ^^
+                       source-code-python-literal-string-literal-string-unquoted
+                         ^
+                         source-code-python-literal-string-literal-string-unquoted
+                          ^^
+                          source-code-python-literal-string-literal-string-unquoted
+                            ^^
+                            source-code-python-literal-string-literal-string-unquoted
+                              ^
+                              source-code-python-literal-string-literal-string-unquoted
+                               ^
+                               source-code-python-literal-string-literal-string-end
+                                ^
+                                source-code-python-punctuation
+windows_path = r'C:\Users\name'
+^^^^^^^^^^^^
+source-code-python-identifier
+            ^
+            source-code-python-whitespace
+             ^
+             source-code-python-keyword-operator
+              ^
+              source-code-python-whitespace
+               ^^
+               source-code-python-literal-string-literal-string-begin
+                 ^^
+                 source-code-python-literal-string-literal-string-unquoted
+                   ^^
+                   source-code-python-literal-string-literal-string-unquoted
+                     ^^^^
+                     source-code-python-literal-string-literal-string-unquoted
+                         ^^
+                         source-code-python-literal-string-literal-string-unquoted
+                           ^^^
+                           source-code-python-literal-string-literal-string-unquoted
+                              ^
+                              source-code-python-literal-string-literal-string-end
+
+# Escapes are highlighted in regular strings.
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+source-code-python-comment-line
+escaped = "tab\tnewline\n\x41é"
+^^^^^^^
+source-code-python-identifier
+       ^
+       source-code-python-whitespace
+        ^
+        source-code-python-keyword-operator
+         ^
+         source-code-python-whitespace
+          ^
+          source-code-python-literal-string-literal-string-begin
+           ^^^
+           source-code-python-literal-string-literal-string-unquoted
+              ^^
+              source-code-python-literal-string-literal-string-unquoted-literal-string-escape
+                ^^^^^^^
+                source-code-python-literal-string-literal-string-unquoted
+                       ^^
+                       source-code-python-literal-string-literal-string-unquoted-literal-string-escape
+                         ^^^^
+                         source-code-python-literal-string-literal-string-unquoted-literal-string-escape
+                             ^
+                             source-code-python-literal-string-literal-string-unquoted
+                              ^
+                              source-code-python-literal-string-literal-string-end
+unknown = "\d is a literal backslash"
+^^^^^^^
+source-code-python-identifier
+       ^
+       source-code-python-whitespace
+        ^
+        source-code-python-keyword-operator
+         ^
+         source-code-python-whitespace
+          ^
+          source-code-python-literal-string-literal-string-begin
+           ^^
+           source-code-python-literal-string-literal-string-unquoted
+             ^^^^^^^^^^^^^^^^^^^^^^^
+             source-code-python-literal-string-literal-string-unquoted
+                                    ^
+                                    source-code-python-literal-string-literal-string-end
+
+# f-strings with interpolation and literal braces.
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+source-code-python-comment-line
+name = "world"
+^^^^
+source-code-python-identifier
+    ^
+    source-code-python-whitespace
+     ^
+     source-code-python-keyword-operator
+      ^
+      source-code-python-whitespace
+       ^
+       source-code-python-literal-string-literal-string-begin
+        ^^^^^
+        source-code-python-literal-string-literal-string-unquoted
+             ^
+             source-code-python-literal-string-literal-string-end
+greeting = f"Hello, {name}!"
+^^^^^^^^
+source-code-python-identifier
+        ^
+        source-code-python-whitespace
+         ^
+         source-code-python-keyword-operator
+          ^
+          source-code-python-whitespace
+           ^^
+           source-code-python-literal-string-literal-string-begin
+             ^^^^^^^
+             source-code-python-literal-string-literal-string-unquoted
+                    ^^^^^^
+                    source-code-python-literal-string-literal-string-unquoted-literal-string-interpolation
+                          ^
+                          source-code-python-literal-string-literal-string-unquoted
+                           ^
+                           source-code-python-literal-string-literal-string-end
+braces = f"a set looks like {{1, 2}} and value {name}"
+^^^^^^
+source-code-python-identifier
+      ^
+      source-code-python-whitespace
+       ^
+       source-code-python-keyword-operator
+        ^
+        source-code-python-whitespace
+         ^^
+         source-code-python-literal-string-literal-string-begin
+           ^^^^^^^^^^^^^^^^^
+           source-code-python-literal-string-literal-string-unquoted
+                            ^^
+                            source-code-python-literal-string-literal-string-unquoted-literal-string-escape
+                              ^^^^
+                              source-code-python-literal-string-literal-string-unquoted
+                                  ^^
+                                  source-code-python-literal-string-literal-string-unquoted-literal-string-escape
+                                    ^^^^^^^^^^^
+                                    source-code-python-literal-string-literal-string-unquoted
+                                               ^^^^^^
+                                               source-code-python-literal-string-literal-string-unquoted-literal-string-interpolation
+                                                     ^
+                                                     source-code-python-literal-string-literal-string-end
+raw_fstring = rf"\d+ matches {name}"
+^^^^^^^^^^^
+source-code-python-identifier
+           ^
+           source-code-python-whitespace
+            ^
+            source-code-python-keyword-operator
+             ^
+             source-code-python-whitespace
+              ^^^
+              source-code-python-literal-string-literal-string-begin
+                 ^^
+                 source-code-python-literal-string-literal-string-unquoted
+                   ^^^^^^^^^^
+                   source-code-python-literal-string-literal-string-unquoted
+                             ^^^^^^
+                             source-code-python-literal-string-literal-string-unquoted-literal-string-interpolation
+                                   ^
+                                   source-code-python-literal-string-literal-string-end
+
+# Byte and triple-quoted strings.
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+source-code-python-comment-line
+data = b"\x00\xff"
+^^^^
+source-code-python-identifier
+    ^
+    source-code-python-whitespace
+     ^
+     source-code-python-keyword-operator
+      ^
+      source-code-python-whitespace
+       ^^
+       source-code-python-literal-string-literal-string-begin
+         ^^^^
+         source-code-python-literal-string-literal-string-unquoted-literal-string-escape
+             ^^^^
+             source-code-python-literal-string-literal-string-unquoted-literal-string-escape
+                 ^
+                 source-code-python-literal-string-literal-string-end
+doc = """Triple
+^^^
+source-code-python-identifier
+   ^
+   source-code-python-whitespace
+    ^
+    source-code-python-keyword-operator
+     ^
+     source-code-python-whitespace
+      ^^^
+      source-code-python-literal-string-literal-string-begin
+         ^^^^^^
+         source-code-python-literal-string-literal-string-unquoted
+quoted string."""
+^^^^^^^^^^^^^^
+source-code-python-literal-string-literal-string-unquoted
+              ^^^
+              source-code-python-literal-string-literal-string-end
+
+# The matrix multiplication operator shouldn't be a decorator.
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+source-code-python-comment-line
+product = matrix_a @ matrix_b
+^^^^^^^
+source-code-python-identifier
+       ^
+       source-code-python-whitespace
+        ^
+        source-code-python-keyword-operator
+         ^
+         source-code-python-whitespace
+          ^^^^^^^^
+          source-code-python-identifier
+                  ^
+                  source-code-python-whitespace
+                   ^
+                   source-code-python-keyword-operator
+                    ^
+                    source-code-python-whitespace
+                     ^^^^^^^^
+                     source-code-python-identifier

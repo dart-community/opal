@@ -60,6 +60,7 @@ the specified default and alternative IDs:
 - Kotlin (`kotlin`, `kt`)
 - Markdown (`markdown`, `md`)
 - Objective-C (`objective-c`, `objectivec`, `obj-c`, `objc`)
+- Python (`python`, `py`)
 - Ruby (`ruby`, `rb`)
 - Swift (`swift`)
 - Text (`text`, `plaintext`, `none`, `txt`)

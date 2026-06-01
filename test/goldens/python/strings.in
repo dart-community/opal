@@ -1,0 +1,23 @@
+import re
+
+# Raw strings keep backslashes literal.
+pattern = re.compile(r"\d+\.\d+")
+windows_path = r'C:\Users\name'
+
+# Escapes are highlighted in regular strings.
+escaped = "tab\tnewline\n\x41é"
+unknown = "\d is a literal backslash"
+
+# f-strings with interpolation and literal braces.
+name = "world"
+greeting = f"Hello, {name}!"
+braces = f"a set looks like {{1, 2}} and value {name}"
+raw_fstring = rf"\d+ matches {name}"
+
+# Byte and triple-quoted strings.
+data = b"\x00\xff"
+doc = """Triple
+quoted string."""
+
+# The matrix multiplication operator shouldn't be a decorator.
+product = matrix_a @ matrix_b

@@ -1,0 +1,353 @@
+# Decorators are the first token on their line, so they're annotations.
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+source-code-python-comment-line
+@decorator
+^^^^^^^^^^
+source-code-python-metadata-annotation
+def plain():
+^^^
+source-code-python-keyword-declaration-def
+   ^
+   source-code-python-whitespace
+    ^^^^^
+    source-code-python-identifier
+         ^
+         source-code-python-punctuation
+          ^
+          source-code-python-punctuation
+           ^
+           source-code-python-punctuation
+    pass
+^^^^
+source-code-python-whitespace
+    ^^^^
+    source-code-python-keyword-declaration-pass
+
+@module.registry.register
+^^^^^^^^^^^^^^^^^^^^^^^^^
+source-code-python-metadata-annotation
+def dotted():
+^^^
+source-code-python-keyword-declaration-def
+   ^
+   source-code-python-whitespace
+    ^^^^^^
+    source-code-python-identifier
+          ^
+          source-code-python-punctuation
+           ^
+           source-code-python-punctuation
+            ^
+            source-code-python-punctuation
+    pass
+^^^^
+source-code-python-whitespace
+    ^^^^
+    source-code-python-keyword-declaration-pass
+
+class Widget:
+^^^^^
+source-code-python-keyword-declaration-class
+     ^
+     source-code-python-whitespace
+      ^^^^^^
+      source-code-python-identifier
+            ^
+            source-code-python-punctuation
+    @property
+^^^^
+source-code-python-whitespace
+    ^^^^^^^^^
+    source-code-python-metadata-annotation
+    def value(self):
+^^^^
+source-code-python-whitespace
+    ^^^
+    source-code-python-keyword-declaration-def
+       ^
+       source-code-python-whitespace
+        ^^^^^
+        source-code-python-identifier
+             ^
+             source-code-python-punctuation
+              ^^^^
+              source-code-python-identifier-special
+                  ^
+                  source-code-python-punctuation
+                   ^
+                   source-code-python-punctuation
+        return self._value
+^^^^^^^^
+source-code-python-whitespace
+        ^^^^^^
+        source-code-python-keyword-control-return
+              ^
+              source-code-python-whitespace
+               ^^^^
+               source-code-python-identifier-special
+                   ^
+                   source-code-python-punctuation
+                    ^^^^^^
+                    source-code-python-identifier
+
+# Since Python 3.9 (PEP 614) a decorator can be an arbitrary expression.
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+source-code-python-comment-line
+# The `@` marker is tagged and the rest is tokenized as ordinary code.
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+source-code-python-comment-line
+@buttons[0].clicked.connect
+^^^^^^^^
+source-code-python-metadata-annotation
+        ^
+        source-code-python-punctuation
+         ^
+         source-code-python-literal-number-integer
+          ^
+          source-code-python-punctuation
+           ^
+           source-code-python-punctuation
+            ^^^^^^^
+            source-code-python-identifier
+                   ^
+                   source-code-python-punctuation
+                    ^^^^^^^
+                    source-code-python-identifier
+def on_click():
+^^^
+source-code-python-keyword-declaration-def
+   ^
+   source-code-python-whitespace
+    ^^^^^^^^
+    source-code-python-identifier
+            ^
+            source-code-python-punctuation
+             ^
+             source-code-python-punctuation
+              ^
+              source-code-python-punctuation
+    pass
+^^^^
+source-code-python-whitespace
+    ^^^^
+    source-code-python-keyword-declaration-pass
+
+@(make_decorator())
+^
+source-code-python-metadata-annotation
+ ^
+ source-code-python-punctuation
+  ^^^^^^^^^^^^^^
+  source-code-python-identifier
+                ^
+                source-code-python-punctuation
+                 ^
+                 source-code-python-punctuation
+                  ^
+                  source-code-python-punctuation
+def built():
+^^^
+source-code-python-keyword-declaration-def
+   ^
+   source-code-python-whitespace
+    ^^^^^
+    source-code-python-identifier
+         ^
+         source-code-python-punctuation
+          ^
+          source-code-python-punctuation
+           ^
+           source-code-python-punctuation
+    pass
+^^^^
+source-code-python-whitespace
+    ^^^^
+    source-code-python-keyword-declaration-pass
+
+@decorator_with("an argument", 42)
+^^^^^^^^^^^^^^^
+source-code-python-metadata-annotation
+               ^
+               source-code-python-punctuation
+                ^
+                source-code-python-literal-string-literal-string-begin
+                 ^^^^^^^^^^^
+                 source-code-python-literal-string-literal-string-unquoted
+                            ^
+                            source-code-python-literal-string-literal-string-end
+                             ^
+                             source-code-python-punctuation
+                              ^
+                              source-code-python-whitespace
+                               ^^
+                               source-code-python-literal-number-integer
+                                 ^
+                                 source-code-python-punctuation
+def configured():
+^^^
+source-code-python-keyword-declaration-def
+   ^
+   source-code-python-whitespace
+    ^^^^^^^^^^
+    source-code-python-identifier
+              ^
+              source-code-python-punctuation
+               ^
+               source-code-python-punctuation
+                ^
+                source-code-python-punctuation
+    pass
+^^^^
+source-code-python-whitespace
+    ^^^^
+    source-code-python-keyword-declaration-pass
+
+# Matrix multiplication is a binary operator, never a decorator,
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+source-code-python-comment-line
+# regardless of the spacing around the `@`.
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+source-code-python-comment-line
+spaced = matrix_a @ matrix_b
+^^^^^^
+source-code-python-identifier
+      ^
+      source-code-python-whitespace
+       ^
+       source-code-python-keyword-operator
+        ^
+        source-code-python-whitespace
+         ^^^^^^^^
+         source-code-python-identifier
+                 ^
+                 source-code-python-whitespace
+                  ^
+                  source-code-python-keyword-operator
+                   ^
+                   source-code-python-whitespace
+                    ^^^^^^^^
+                    source-code-python-identifier
+tight = matrix_a@matrix_b
+^^^^^
+source-code-python-identifier
+     ^
+     source-code-python-whitespace
+      ^
+      source-code-python-keyword-operator
+       ^
+       source-code-python-whitespace
+        ^^^^^^^^
+        source-code-python-identifier
+                ^
+                source-code-python-keyword-operator
+                 ^^^^^^^^
+                 source-code-python-identifier
+left_space = matrix_a @matrix_b
+^^^^^^^^^^
+source-code-python-identifier
+          ^
+          source-code-python-whitespace
+           ^
+           source-code-python-keyword-operator
+            ^
+            source-code-python-whitespace
+             ^^^^^^^^
+             source-code-python-identifier
+                     ^
+                     source-code-python-whitespace
+                      ^
+                      source-code-python-keyword-operator
+                       ^^^^^^^^
+                       source-code-python-identifier
+right_space = matrix_a@ matrix_b
+^^^^^^^^^^^
+source-code-python-identifier
+           ^
+           source-code-python-whitespace
+            ^
+            source-code-python-keyword-operator
+             ^
+             source-code-python-whitespace
+              ^^^^^^^^
+              source-code-python-identifier
+                      ^
+                      source-code-python-keyword-operator
+                       ^
+                       source-code-python-whitespace
+                        ^^^^^^^^
+                        source-code-python-identifier
+chained = m1 @ m2 @ m3
+^^^^^^^
+source-code-python-identifier
+       ^
+       source-code-python-whitespace
+        ^
+        source-code-python-keyword-operator
+         ^
+         source-code-python-whitespace
+          ^^
+          source-code-python-identifier
+            ^
+            source-code-python-whitespace
+             ^
+             source-code-python-keyword-operator
+              ^
+              source-code-python-whitespace
+               ^^
+               source-code-python-identifier
+                 ^
+                 source-code-python-whitespace
+                  ^
+                  source-code-python-keyword-operator
+                   ^
+                   source-code-python-whitespace
+                    ^^
+                    source-code-python-identifier
+after_call = compute() @ matrix
+^^^^^^^^^^
+source-code-python-identifier
+          ^
+          source-code-python-whitespace
+           ^
+           source-code-python-keyword-operator
+            ^
+            source-code-python-whitespace
+             ^^^^^^^
+             source-code-python-identifier
+                    ^
+                    source-code-python-punctuation
+                     ^
+                     source-code-python-punctuation
+                      ^
+                      source-code-python-whitespace
+                       ^
+                       source-code-python-keyword-operator
+                        ^
+                        source-code-python-whitespace
+                         ^^^^^^
+                         source-code-python-identifier
+after_index = rows[0] @ columns
+^^^^^^^^^^^
+source-code-python-identifier
+           ^
+           source-code-python-whitespace
+            ^
+            source-code-python-keyword-operator
+             ^
+             source-code-python-whitespace
+              ^^^^
+              source-code-python-identifier
+                  ^
+                  source-code-python-punctuation
+                   ^
+                   source-code-python-literal-number-integer
+                    ^
+                    source-code-python-punctuation
+                     ^
+                     source-code-python-whitespace
+                      ^
+                      source-code-python-keyword-operator
+                       ^
+                       source-code-python-whitespace
+                        ^^^^^^^
+                        source-code-python-identifier

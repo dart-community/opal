@@ -1,0 +1,11 @@
+whole = 1_000_000
+hexadecimal = 0xABCD_EF01
+binary = 0b1010_1010
+octal = 0o7_5_5
+fraction = 3.14
+leading_dot = .5
+trailing_dot = 10.
+exponent = 1e10
+signed_exponent = 2.5e-3
+imaginary = 4j
+imaginary_caps = 1.5J

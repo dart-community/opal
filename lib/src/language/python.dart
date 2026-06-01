@@ -23,109 +23,110 @@ final class PythonGrammar extends MatcherGrammar {
   Matcher _comments() => Matcher.regex(r'#.*$', tag: Tags.lineComment);
 
   Matcher _strings() => Matcher.options([
-    Matcher.include(_fTripleDoubleQuotedString),
-    Matcher.include(_fTripleSingleQuotedString),
-    Matcher.include(_fDoubleQuotedString),
-    Matcher.include(_fSingleQuotedString),
-    Matcher.include(_tripleDoubleQuotedString),
-    Matcher.include(_tripleSingleQuotedString),
-    Matcher.include(_doubleQuotedString),
-    Matcher.include(_singleQuotedString),
+    // Triple-quoted strings are listed before single-character quotes so that
+    // an opening `"""` or `'''` is never mistaken for an empty string.
+    ..._stringVariants('"""', '"'),
+    ..._stringVariants("'''", "'"),
+    ..._stringVariants('"', '"'),
+    ..._stringVariants("'", "'"),
   ]);
 
-  static const _nonFPrefixes = r'(?:[rR]|[uU]|[bB]|[bB][rR]|[rR][bB])?';
-  static const _fPrefixes = r'(?:[fF]|[fF][rR]|[rR][fF])';
+  /// Builds the supported prefix variants for a [quote] delimiter.
+  ///
+  /// The variants are ordered from most to least specific prefix so that,
+  /// for example, `rf"..."` isn't matched as a raw string followed by content.
+  ///
+  /// [contentDelimiter] is the single quote character that string content
+  /// stops at, which is `"` for both `"` and `"""` (and likewise for `'`).
+  List<Matcher> _stringVariants(String quote, String contentDelimiter) => [
+    // Raw f-strings (`rf"..."`, `fr"..."`): interpolations, no escapes.
+    _string(
+      prefixPattern: r'(?:[fF][rR]|[rR][fF])',
+      quote: quote,
+      content: _fStringContent(contentDelimiter, raw: true),
+    ),
+    // f-strings (`f"..."`): interpolations and escape sequences.
+    _string(
+      prefixPattern: r'[fF]',
+      quote: quote,
+      content: _fStringContent(contentDelimiter),
+    ),
+    // Raw strings (`r"..."`, `rb"..."`, `br"..."`): literal backslashes.
+    _string(
+      prefixPattern: r'(?:[rR]|[bB][rR]|[rR][bB])',
+      quote: quote,
+      content: _stringContent(contentDelimiter, raw: true),
+    ),
+    // Plain strings, optionally byte or unicode prefixed (`b"..."`, `u"..."`).
+    // The prefix is optional, so unprefixed strings match here too.
+    _string(
+      prefixPattern: r'(?:[uU]|[bB])?',
+      quote: quote,
+      content: _stringContent(contentDelimiter),
+    ),
+  ];
 
-  Matcher _wrappedString({
-    required String beginPattern,
-    required String endLiteral,
+  Matcher _string({
+    required String prefixPattern,
+    required String quote,
     required Matcher content,
   }) => Matcher.wrapped(
     begin: Matcher.regex(
-      beginPattern,
+      '$prefixPattern$quote',
       tag: const Tag('begin', parent: Tags.stringLiteral),
     ),
     end: Matcher.verbatim(
-      endLiteral,
+      quote,
       tag: const Tag('end', parent: Tags.stringLiteral),
     ),
     content: content,
     tag: Tags.stringLiteral,
   );
 
-  Matcher _fTripleDoubleQuotedString() => _wrappedString(
-    beginPattern: '$_fPrefixes"""',
-    endLiteral: '"""',
-    content: _fStringContent(delimiter: '"'),
-  );
+  /// The escape sequences recognized inside regular (non-raw) strings.
+  List<Matcher> get _escapeSequences => [
+    Matcher.regex(r"""\\['"\\abfnrtv]""", tag: Tags.stringEscape),
+    Matcher.regex(r'\\[0-7]{1,3}', tag: Tags.stringEscape),
+    Matcher.regex(r'\\x[0-9a-fA-F]{2}', tag: Tags.stringEscape),
+    Matcher.regex(r'\\u[0-9a-fA-F]{4}', tag: Tags.stringEscape),
+    Matcher.regex(r'\\U[0-9a-fA-F]{8}', tag: Tags.stringEscape),
+    Matcher.regex(r'\\N\{[^}]+\}', tag: Tags.stringEscape),
+  ];
 
-  Matcher _fTripleSingleQuotedString() => _wrappedString(
-    beginPattern: "$_fPrefixes'''",
-    endLiteral: "'''",
-    content: _fStringContent(delimiter: "'"),
-  );
+  /// Content for non-f-strings.
+  ///
+  /// Recognized escape sequences are highlighted unless [raw] is set,
+  /// in which case backslashes are literal.
+  /// However, a backslash before a quote still
+  /// keeps that quote from ending the string.
+  Matcher _stringContent(String delimiter, {bool raw = false}) =>
+      Matcher.options([
+        if (!raw) ..._escapeSequences,
+        // An unrecognized escape (or any backslash in a raw string) keeps its
+        // backslash so the following character can't terminate the string.
+        Matcher.regex(r'\\.'),
+        Matcher.regex('[^\\\\$delimiter]+'),
+        // A lone delimiter that doesn't close the string is literal content,
+        // such as a single `"` inside a `"""` triple-quoted string.
+        // The end matcher is always tried first,
+        // so this never eats a real terminator.
+        Matcher.regex(r'.'),
+      ], tag: Tags.stringContent);
 
-  Matcher _fDoubleQuotedString() => _wrappedString(
-    beginPattern: '$_fPrefixes"',
-    endLiteral: '"',
-    content: _fStringContent(delimiter: '"'),
-  );
-
-  Matcher _fSingleQuotedString() => _wrappedString(
-    beginPattern: "$_fPrefixes'",
-    endLiteral: "'",
-    content: _fStringContent(delimiter: "'"),
-  );
-
-  Matcher _tripleDoubleQuotedString() => _wrappedString(
-    beginPattern: '$_nonFPrefixes"""',
-    endLiteral: '"""',
-    content: _plainStringContent(delimiter: '"'),
-  );
-
-  Matcher _tripleSingleQuotedString() => _wrappedString(
-    beginPattern: "$_nonFPrefixes'''",
-    endLiteral: "'''",
-    content: _plainStringContent(delimiter: "'"),
-  );
-
-  Matcher _doubleQuotedString() => _wrappedString(
-    beginPattern: '$_nonFPrefixes"',
-    endLiteral: '"',
-    content: _plainStringContent(delimiter: '"'),
-  );
-
-  Matcher _singleQuotedString() => _wrappedString(
-    beginPattern: "$_nonFPrefixes'",
-    endLiteral: "'",
-    content: _plainStringContent(delimiter: "'"),
-  );
-
-  Matcher _plainStringContent({required String delimiter}) {
-    return Matcher.options([
-      Matcher.regex(r"""\\[nrtbf"'\\abfnrtv]""", tag: Tags.stringEscape),
-      Matcher.regex(r'\\x[0-9a-fA-F]{2}', tag: Tags.stringEscape),
-      Matcher.regex(r'\\u[0-9a-fA-F]{4}', tag: Tags.stringEscape),
-      Matcher.regex(r'\\U[0-9a-fA-F]{8}', tag: Tags.stringEscape),
-      Matcher.regex(r'\\N\{[^}]+\}', tag: Tags.stringEscape),
-      Matcher.regex(r'\\[0-7]{1,3}', tag: Tags.stringEscape),
-      Matcher.regex('[^\\\\$delimiter]+', tag: Tags.stringContent),
-    ], tag: Tags.stringContent);
-  }
-
-  Matcher _fStringContent({required String delimiter}) {
-    return Matcher.options([
-      Matcher.regex(r'\{[^}]*\}', tag: Tags.stringInterpolation),
-      Matcher.regex(r"""\\[nrtbf"'\\abfnrtv]""", tag: Tags.stringEscape),
-      Matcher.regex(r'\\x[0-9a-fA-F]{2}', tag: Tags.stringEscape),
-      Matcher.regex(r'\\u[0-9a-fA-F]{4}', tag: Tags.stringEscape),
-      Matcher.regex(r'\\U[0-9a-fA-F]{8}', tag: Tags.stringEscape),
-      Matcher.regex(r'\\N\{[^}]+\}', tag: Tags.stringEscape),
-      Matcher.regex(r'\\[0-7]{1,3}', tag: Tags.stringEscape),
-      Matcher.regex('[^{}\\\\$delimiter]+', tag: Tags.stringContent),
-      Matcher.regex(r'.', tag: Tags.stringContent),
-    ], tag: Tags.stringContent);
-  }
+  /// Content for f-strings: interpolations and literal (doubled) braces.
+  ///
+  /// Escape sequences are recognized unless [raw] is set, since raw f-strings
+  /// (`rf"..."`) keep backslashes literal just like other raw strings.
+  Matcher _fStringContent(String delimiter, {bool raw = false}) =>
+      Matcher.options([
+        // Doubled braces are literal `{` and `}`, not interpolations.
+        Matcher.regex(r'\{\{|\}\}', tag: Tags.stringEscape),
+        Matcher.regex(r'\{[^}]*\}', tag: Tags.stringInterpolation),
+        if (!raw) ..._escapeSequences,
+        Matcher.regex(r'\\.'),
+        Matcher.regex('[^{}\\\\$delimiter]+'),
+        Matcher.regex(r'.'),
+      ], tag: Tags.stringContent);
 
   Matcher _keywords() => Matcher.options([
     Matcher.include(_controlKeywords),
@@ -191,20 +192,33 @@ final class PythonGrammar extends MatcherGrammar {
     Matcher.regex(r'\b0[xX][0-9a-fA-F_]+\b', tag: Tags.integerLiteral),
     Matcher.regex(r'\b0[bB][01_]+\b', tag: Tags.integerLiteral),
     Matcher.regex(r'\b0[oO][0-7_]+\b', tag: Tags.integerLiteral),
+    // Floats with a fractional dot, such as `3.14`, `10.`, and `2.5e-3j`.
     Matcher.regex(
-      r'\b\d[\d_]*\.[\d_]*([eE][+-]?[\d_]+)?j?\b',
+      r'\b\d[\d_]*\.[\d_]*(?:[eE][+-]?\d[\d_]*)?[jJ]?',
       tag: Tags.floatLiteral,
     ),
+    // Floats that start with a dot, such as `.5` and `.5j`.
     Matcher.regex(
-      r'\b\d[\d_]*[eE][+-]?[\d_]+j?\b',
+      r'(?<![\w.])\.\d[\d_]*(?:[eE][+-]?\d[\d_]*)?[jJ]?',
       tag: Tags.floatLiteral,
     ),
-    Matcher.regex(r'\b\d[\d_]*j\b', tag: Tags.numberLiteral),
-    Matcher.regex(r'\b\d[\d_]*\b', tag: Tags.integerLiteral),
+    // Floats with an exponent but no dot, such as `1e10` and `2E-3j`.
+    Matcher.regex(
+      r'\b\d[\d_]*[eE][+-]?\d[\d_]*[jJ]?',
+      tag: Tags.floatLiteral,
+    ),
+    // Imaginary integers, such as `4j`.
+    Matcher.regex(r'\b\d[\d_]*[jJ]', tag: Tags.numberLiteral),
+    // Decimal integers, such as `42` and `1_000`.
+    Matcher.regex(r'\b\d[\d_]*', tag: Tags.integerLiteral),
   ]);
 
+  // Only `@` at the start of a line is a decorator,
+  // elsewhere it's the matrix-multiplication operator.
+  // The name is optional so the bare `@` of
+  // an expression decorator (such as `@(deco())`) is still tagged.
   Matcher _decorators() => Matcher.regex(
-    r'@\s*[a-zA-Z_][a-zA-Z0-9_.]*',
+    r'(?<=^\s*)@(?:[a-zA-Z_][a-zA-Z0-9_.]*)?',
     tag: Tags.annotation,
   );
 

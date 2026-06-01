@@ -165,7 +165,7 @@ source-code-python-identifier
                  ^
                  source-code-python-literal-string-literal-string-begin
                   ^^^
-                  source-code-python-literal-string-literal-string-unquoted-literal-string-unquoted
+                  source-code-python-literal-string-literal-string-unquoted
                      ^
                      source-code-python-literal-string-literal-string-end
                       ^
@@ -175,7 +175,7 @@ source-code-python-identifier
                         ^
                         source-code-python-literal-string-literal-string-begin
                          ^^^^^
-                         source-code-python-literal-string-literal-string-unquoted-literal-string-unquoted
+                         source-code-python-literal-string-literal-string-unquoted
                               ^
                               source-code-python-literal-string-literal-string-end
                                ^
@@ -198,7 +198,7 @@ source-code-python-identifier
               ^
               source-code-python-literal-string-literal-string-begin
                ^^^^^
-               source-code-python-literal-string-literal-string-unquoted-literal-string-unquoted
+               source-code-python-literal-string-literal-string-unquoted
                     ^
                     source-code-python-literal-string-literal-string-end
 my_int: int = 10

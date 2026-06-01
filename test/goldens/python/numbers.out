@@ -1,0 +1,121 @@
+whole = 1_000_000
+^^^^^
+source-code-python-identifier
+     ^
+     source-code-python-whitespace
+      ^
+      source-code-python-keyword-operator
+       ^
+       source-code-python-whitespace
+        ^^^^^^^^^
+        source-code-python-literal-number-integer
+hexadecimal = 0xABCD_EF01
+^^^^^^^^^^^
+source-code-python-identifier
+           ^
+           source-code-python-whitespace
+            ^
+            source-code-python-keyword-operator
+             ^
+             source-code-python-whitespace
+              ^^^^^^^^^^^
+              source-code-python-literal-number-integer
+binary = 0b1010_1010
+^^^^^^
+source-code-python-identifier
+      ^
+      source-code-python-whitespace
+       ^
+       source-code-python-keyword-operator
+        ^
+        source-code-python-whitespace
+         ^^^^^^^^^^^
+         source-code-python-literal-number-integer
+octal = 0o7_5_5
+^^^^^
+source-code-python-identifier
+     ^
+     source-code-python-whitespace
+      ^
+      source-code-python-keyword-operator
+       ^
+       source-code-python-whitespace
+        ^^^^^^^
+        source-code-python-literal-number-integer
+fraction = 3.14
+^^^^^^^^
+source-code-python-identifier
+        ^
+        source-code-python-whitespace
+         ^
+         source-code-python-keyword-operator
+          ^
+          source-code-python-whitespace
+           ^^^^
+           source-code-python-literal-number-float
+leading_dot = .5
+^^^^^^^^^^^
+source-code-python-identifier
+           ^
+           source-code-python-whitespace
+            ^
+            source-code-python-keyword-operator
+             ^
+             source-code-python-whitespace
+              ^^
+              source-code-python-literal-number-float
+trailing_dot = 10.
+^^^^^^^^^^^^
+source-code-python-identifier
+            ^
+            source-code-python-whitespace
+             ^
+             source-code-python-keyword-operator
+              ^
+              source-code-python-whitespace
+               ^^^
+               source-code-python-literal-number-float
+exponent = 1e10
+^^^^^^^^
+source-code-python-identifier
+        ^
+        source-code-python-whitespace
+         ^
+         source-code-python-keyword-operator
+          ^
+          source-code-python-whitespace
+           ^^^^
+           source-code-python-literal-number-float
+signed_exponent = 2.5e-3
+^^^^^^^^^^^^^^^
+source-code-python-identifier
+               ^
+               source-code-python-whitespace
+                ^
+                source-code-python-keyword-operator
+                 ^
+                 source-code-python-whitespace
+                  ^^^^^^
+                  source-code-python-literal-number-float
+imaginary = 4j
+^^^^^^^^^
+source-code-python-identifier
+         ^
+         source-code-python-whitespace
+          ^
+          source-code-python-keyword-operator
+           ^
+           source-code-python-whitespace
+            ^^
+            source-code-python-literal-number
+imaginary_caps = 1.5J
+^^^^^^^^^^^^^^
+source-code-python-identifier
+              ^
+              source-code-python-whitespace
+               ^
+               source-code-python-keyword-operator
+                ^
+                source-code-python-whitespace
+                 ^^^^
+                 source-code-python-literal-number-float

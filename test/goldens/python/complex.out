@@ -111,7 +111,7 @@ source-code-python-whitespace
         ^^^
         source-code-python-literal-string-literal-string-begin
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-           source-code-python-literal-string-literal-string-unquoted-literal-string-unquoted
+           source-code-python-literal-string-literal-string-unquoted
                                                ^^^
                                                source-code-python-literal-string-literal-string-end
         dx = self.x - other.x
@@ -307,7 +307,7 @@ source-code-python-whitespace
           ^^
           source-code-python-literal-string-literal-string-begin
             ^^^^^^^^^^
-            source-code-python-literal-string-literal-string-unquoted-literal-string-unquoted
+            source-code-python-literal-string-literal-string-unquoted
                       ^^^^^^
                       source-code-python-literal-string-literal-string-unquoted-literal-string-interpolation
                             ^
@@ -331,7 +331,7 @@ source-code-python-keyword-control-if
                ^
                source-code-python-literal-string-literal-string-begin
                 ^^^^^^^^
-                source-code-python-literal-string-literal-string-unquoted-literal-string-unquoted
+                source-code-python-literal-string-literal-string-unquoted
                         ^
                         source-code-python-literal-string-literal-string-end
                          ^

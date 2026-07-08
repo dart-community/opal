@@ -45,12 +45,15 @@ void main() {
 
 ### Supported languages
 
-Currently the following languages are supported with
+The following languages are currently supported with
 the specified default and alternative IDs:
 
+- ABNF (`abnf`)
+- BNF (`bnf`)
 - C (`c`)
 - C++ (`cpp`)
 - Dart (`dart`)
+- EBNF (`ebnf`)
 - GLSL (`glsl`, `frag`, `vert`, `geom`, `comp`)
 - Groovy (`groovy`, `gradle`)
 - HTML (`html`)

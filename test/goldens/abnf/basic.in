@@ -1,0 +1,27 @@
+; An ABNF grammar for a simple calculator language.
+
+calculation = expression *(line-break expression) [line-break]
+
+expression = term *(spacing add-op spacing term)
+term = factor *(spacing mul-op spacing factor)
+factor = number / (open-paren expression close-paren)
+factor =/ sign factor
+
+add-op = "+" / "-"
+mul-op = %s"*" / %s"/"
+sign = %d43 / %d45 ; a plus or minus sign
+
+number = integer [fraction] [exponent]
+integer = 1*DIGIT
+fraction = "." 1*DIGIT
+exponent = exponent-marker [sign] 1*3DIGIT
+exponent-marker = %I"e" ; prefixes are case insensitive too
+
+digit = %x30-39 ; equivalent to the DIGIT core rule
+open-paren = %x28 ; a left parenthesis
+close-paren = %X29 ; a right parenthesis
+
+spacing = *2(SP / HTAB)
+line-break = %d13.10 / %b1010 ; CRLF or a bare line feed
+padding = *htab ; rule names are case insensitive
+enter-key = <the Enter or Return key>

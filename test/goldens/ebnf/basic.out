@@ -1,0 +1,493 @@
+(* An EBNF grammar for a simple calculator language. *)
+^^
+source-code-grammar-ebnf-comment-block-comment-block-begin
+  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  source-code-grammar-ebnf-comment-block-comment-block-content
+                                                     ^^
+                                                     source-code-grammar-ebnf-comment-block-comment-block-end
+expression = term, { ( "+" | "-" ), term } ;
+^^^^^^^^^^
+source-code-grammar-ebnf-identifier-function
+          ^
+          source-code-grammar-ebnf-whitespace
+           ^
+           source-code-grammar-ebnf-keyword-operator
+            ^
+            source-code-grammar-ebnf-whitespace
+             ^^^^
+             source-code-grammar-ebnf-identifier-variable
+                 ^
+                 source-code-grammar-ebnf-keyword-operator
+                  ^
+                  source-code-grammar-ebnf-whitespace
+                   ^
+                   source-code-grammar-ebnf-punctuation
+                    ^
+                    source-code-grammar-ebnf-whitespace
+                     ^
+                     source-code-grammar-ebnf-punctuation
+                      ^
+                      source-code-grammar-ebnf-whitespace
+                       ^^^
+                       source-code-grammar-ebnf-literal-string-quoted-double
+                          ^
+                          source-code-grammar-ebnf-whitespace
+                           ^
+                           source-code-grammar-ebnf-keyword-operator
+                            ^
+                            source-code-grammar-ebnf-whitespace
+                             ^^^
+                             source-code-grammar-ebnf-literal-string-quoted-double
+                                ^
+                                source-code-grammar-ebnf-whitespace
+                                 ^
+                                 source-code-grammar-ebnf-punctuation
+                                  ^
+                                  source-code-grammar-ebnf-keyword-operator
+                                   ^
+                                   source-code-grammar-ebnf-whitespace
+                                    ^^^^
+                                    source-code-grammar-ebnf-identifier-variable
+                                        ^
+                                        source-code-grammar-ebnf-whitespace
+                                         ^
+                                         source-code-grammar-ebnf-punctuation
+                                          ^
+                                          source-code-grammar-ebnf-whitespace
+                                           ^
+                                           source-code-grammar-ebnf-punctuation-separator
+term = factor, { ( "*" | "/" ), factor } ;
+^^^^
+source-code-grammar-ebnf-identifier-function
+    ^
+    source-code-grammar-ebnf-whitespace
+     ^
+     source-code-grammar-ebnf-keyword-operator
+      ^
+      source-code-grammar-ebnf-whitespace
+       ^^^^^^
+       source-code-grammar-ebnf-identifier-variable
+             ^
+             source-code-grammar-ebnf-keyword-operator
+              ^
+              source-code-grammar-ebnf-whitespace
+               ^
+               source-code-grammar-ebnf-punctuation
+                ^
+                source-code-grammar-ebnf-whitespace
+                 ^
+                 source-code-grammar-ebnf-punctuation
+                  ^
+                  source-code-grammar-ebnf-whitespace
+                   ^^^
+                   source-code-grammar-ebnf-literal-string-quoted-double
+                      ^
+                      source-code-grammar-ebnf-whitespace
+                       ^
+                       source-code-grammar-ebnf-keyword-operator
+                        ^
+                        source-code-grammar-ebnf-whitespace
+                         ^^^
+                         source-code-grammar-ebnf-literal-string-quoted-double
+                            ^
+                            source-code-grammar-ebnf-whitespace
+                             ^
+                             source-code-grammar-ebnf-punctuation
+                              ^
+                              source-code-grammar-ebnf-keyword-operator
+                               ^
+                               source-code-grammar-ebnf-whitespace
+                                ^^^^^^
+                                source-code-grammar-ebnf-identifier-variable
+                                      ^
+                                      source-code-grammar-ebnf-whitespace
+                                       ^
+                                       source-code-grammar-ebnf-punctuation
+                                        ^
+                                        source-code-grammar-ebnf-whitespace
+                                         ^
+                                         source-code-grammar-ebnf-punctuation-separator
+factor = number | "(", expression, ")" ;
+^^^^^^
+source-code-grammar-ebnf-identifier-function
+      ^
+      source-code-grammar-ebnf-whitespace
+       ^
+       source-code-grammar-ebnf-keyword-operator
+        ^
+        source-code-grammar-ebnf-whitespace
+         ^^^^^^
+         source-code-grammar-ebnf-identifier-variable
+               ^
+               source-code-grammar-ebnf-whitespace
+                ^
+                source-code-grammar-ebnf-keyword-operator
+                 ^
+                 source-code-grammar-ebnf-whitespace
+                  ^^^
+                  source-code-grammar-ebnf-literal-string-quoted-double
+                     ^
+                     source-code-grammar-ebnf-keyword-operator
+                      ^
+                      source-code-grammar-ebnf-whitespace
+                       ^^^^^^^^^^
+                       source-code-grammar-ebnf-identifier-variable
+                                 ^
+                                 source-code-grammar-ebnf-keyword-operator
+                                  ^
+                                  source-code-grammar-ebnf-whitespace
+                                   ^^^
+                                   source-code-grammar-ebnf-literal-string-quoted-double
+                                      ^
+                                      source-code-grammar-ebnf-whitespace
+                                       ^
+                                       source-code-grammar-ebnf-punctuation-separator
+number = digit, { digit } ;
+^^^^^^
+source-code-grammar-ebnf-identifier-function
+      ^
+      source-code-grammar-ebnf-whitespace
+       ^
+       source-code-grammar-ebnf-keyword-operator
+        ^
+        source-code-grammar-ebnf-whitespace
+         ^^^^^
+         source-code-grammar-ebnf-identifier-variable
+              ^
+              source-code-grammar-ebnf-keyword-operator
+               ^
+               source-code-grammar-ebnf-whitespace
+                ^
+                source-code-grammar-ebnf-punctuation
+                 ^
+                 source-code-grammar-ebnf-whitespace
+                  ^^^^^
+                  source-code-grammar-ebnf-identifier-variable
+                       ^
+                       source-code-grammar-ebnf-whitespace
+                        ^
+                        source-code-grammar-ebnf-punctuation
+                         ^
+                         source-code-grammar-ebnf-whitespace
+                          ^
+                          source-code-grammar-ebnf-punctuation-separator
+digit = "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9" ;
+^^^^^
+source-code-grammar-ebnf-identifier-function
+     ^
+     source-code-grammar-ebnf-whitespace
+      ^
+      source-code-grammar-ebnf-keyword-operator
+       ^
+       source-code-grammar-ebnf-whitespace
+        ^^^
+        source-code-grammar-ebnf-literal-string-quoted-double
+           ^
+           source-code-grammar-ebnf-whitespace
+            ^
+            source-code-grammar-ebnf-keyword-operator
+             ^
+             source-code-grammar-ebnf-whitespace
+              ^^^
+              source-code-grammar-ebnf-literal-string-quoted-double
+                 ^
+                 source-code-grammar-ebnf-whitespace
+                  ^
+                  source-code-grammar-ebnf-keyword-operator
+                   ^
+                   source-code-grammar-ebnf-whitespace
+                    ^^^
+                    source-code-grammar-ebnf-literal-string-quoted-double
+                       ^
+                       source-code-grammar-ebnf-whitespace
+                        ^
+                        source-code-grammar-ebnf-keyword-operator
+                         ^
+                         source-code-grammar-ebnf-whitespace
+                          ^^^
+                          source-code-grammar-ebnf-literal-string-quoted-double
+                             ^
+                             source-code-grammar-ebnf-whitespace
+                              ^
+                              source-code-grammar-ebnf-keyword-operator
+                               ^
+                               source-code-grammar-ebnf-whitespace
+                                ^^^
+                                source-code-grammar-ebnf-literal-string-quoted-double
+                                   ^
+                                   source-code-grammar-ebnf-whitespace
+                                    ^
+                                    source-code-grammar-ebnf-keyword-operator
+                                     ^
+                                     source-code-grammar-ebnf-whitespace
+                                      ^^^
+                                      source-code-grammar-ebnf-literal-string-quoted-double
+                                         ^
+                                         source-code-grammar-ebnf-whitespace
+                                          ^
+                                          source-code-grammar-ebnf-keyword-operator
+                                           ^
+                                           source-code-grammar-ebnf-whitespace
+                                            ^^^
+                                            source-code-grammar-ebnf-literal-string-quoted-double
+                                               ^
+                                               source-code-grammar-ebnf-whitespace
+                                                ^
+                                                source-code-grammar-ebnf-keyword-operator
+                                                 ^
+                                                 source-code-grammar-ebnf-whitespace
+                                                  ^^^
+                                                  source-code-grammar-ebnf-literal-string-quoted-double
+                                                     ^
+                                                     source-code-grammar-ebnf-whitespace
+                                                      ^
+                                                      source-code-grammar-ebnf-keyword-operator
+                                                       ^
+                                                       source-code-grammar-ebnf-whitespace
+                                                        ^^^
+                                                        source-code-grammar-ebnf-literal-string-quoted-double
+                                                           ^
+                                                           source-code-grammar-ebnf-whitespace
+                                                            ^
+                                                            source-code-grammar-ebnf-keyword-operator
+                                                             ^
+                                                             source-code-grammar-ebnf-whitespace
+                                                              ^^^
+                                                              source-code-grammar-ebnf-literal-string-quoted-double
+                                                                 ^
+                                                                 source-code-grammar-ebnf-whitespace
+                                                                  ^
+                                                                  source-code-grammar-ebnf-punctuation-separator
+
+(* A comment that
+^^
+source-code-grammar-ebnf-comment-block-comment-block-begin
+  ^^^^^^^^^^^^^^^
+  source-code-grammar-ebnf-comment-block-comment-block-content
+   spans multiple lines,
+^^^^^^^^^^^^^^^^^^^^^^^^
+source-code-grammar-ebnf-comment-block-comment-block-content
+   with (* a nested comment *) inside. *)
+^^^^^^^^
+source-code-grammar-ebnf-comment-block-comment-block-content
+        ^^
+        source-code-grammar-ebnf-comment-block-comment-block-comment-block-begin
+          ^^^^^^^^^^^^^^^^^^
+          source-code-grammar-ebnf-comment-block-comment-block-comment-block-content
+                            ^^
+                            source-code-grammar-ebnf-comment-block-comment-block-comment-block-end
+                              ^^^^^^^^^
+                              source-code-grammar-ebnf-comment-block-comment-block-content
+                                       ^^
+                                       source-code-grammar-ebnf-comment-block-comment-block-end
+
+empty sequence = ;
+^^^^^^^^^^^^^^
+source-code-grammar-ebnf-identifier-function
+              ^
+              source-code-grammar-ebnf-whitespace
+               ^
+               source-code-grammar-ebnf-keyword-operator
+                ^
+                source-code-grammar-ebnf-whitespace
+                 ^
+                 source-code-grammar-ebnf-punctuation-separator
+uses empty = empty sequence ;
+^^^^^^^^^^
+source-code-grammar-ebnf-identifier-function
+          ^
+          source-code-grammar-ebnf-whitespace
+           ^
+           source-code-grammar-ebnf-keyword-operator
+            ^
+            source-code-grammar-ebnf-whitespace
+             ^^^^^^^^^^^^^^
+             source-code-grammar-ebnf-identifier-variable
+                           ^
+                           source-code-grammar-ebnf-whitespace
+                            ^
+                            source-code-grammar-ebnf-punctuation-separator
+optional part = [ sign ] .
+^^^^^^^^^^^^^
+source-code-grammar-ebnf-identifier-function
+             ^
+             source-code-grammar-ebnf-whitespace
+              ^
+              source-code-grammar-ebnf-keyword-operator
+               ^
+               source-code-grammar-ebnf-whitespace
+                ^
+                source-code-grammar-ebnf-punctuation
+                 ^
+                 source-code-grammar-ebnf-whitespace
+                  ^^^^
+                  source-code-grammar-ebnf-identifier-variable
+                      ^
+                      source-code-grammar-ebnf-whitespace
+                       ^
+                       source-code-grammar-ebnf-punctuation
+                        ^
+                        source-code-grammar-ebnf-whitespace
+                         ^
+                         source-code-grammar-ebnf-punctuation-separator
+also optional = (/ sign /) .
+^^^^^^^^^^^^^
+source-code-grammar-ebnf-identifier-function
+             ^
+             source-code-grammar-ebnf-whitespace
+              ^
+              source-code-grammar-ebnf-keyword-operator
+               ^
+               source-code-grammar-ebnf-whitespace
+                ^^
+                source-code-grammar-ebnf-punctuation
+                  ^
+                  source-code-grammar-ebnf-whitespace
+                   ^^^^
+                   source-code-grammar-ebnf-identifier-variable
+                       ^
+                       source-code-grammar-ebnf-whitespace
+                        ^^
+                        source-code-grammar-ebnf-punctuation
+                          ^
+                          source-code-grammar-ebnf-whitespace
+                           ^
+                           source-code-grammar-ebnf-punctuation-separator
+repeated part = { digit } .
+^^^^^^^^^^^^^
+source-code-grammar-ebnf-identifier-function
+             ^
+             source-code-grammar-ebnf-whitespace
+              ^
+              source-code-grammar-ebnf-keyword-operator
+               ^
+               source-code-grammar-ebnf-whitespace
+                ^
+                source-code-grammar-ebnf-punctuation
+                 ^
+                 source-code-grammar-ebnf-whitespace
+                  ^^^^^
+                  source-code-grammar-ebnf-identifier-variable
+                       ^
+                       source-code-grammar-ebnf-whitespace
+                        ^
+                        source-code-grammar-ebnf-punctuation
+                         ^
+                         source-code-grammar-ebnf-whitespace
+                          ^
+                          source-code-grammar-ebnf-punctuation-separator
+also repeated = (: digit :) .
+^^^^^^^^^^^^^
+source-code-grammar-ebnf-identifier-function
+             ^
+             source-code-grammar-ebnf-whitespace
+              ^
+              source-code-grammar-ebnf-keyword-operator
+               ^
+               source-code-grammar-ebnf-whitespace
+                ^^
+                source-code-grammar-ebnf-punctuation
+                  ^
+                  source-code-grammar-ebnf-whitespace
+                   ^^^^^
+                   source-code-grammar-ebnf-identifier-variable
+                        ^
+                        source-code-grammar-ebnf-whitespace
+                         ^^
+                         source-code-grammar-ebnf-punctuation
+                           ^
+                           source-code-grammar-ebnf-whitespace
+                            ^
+                            source-code-grammar-ebnf-punctuation-separator
+triple a = 3 * 'a' ;
+^^^^^^^^
+source-code-grammar-ebnf-identifier-function
+        ^
+        source-code-grammar-ebnf-whitespace
+         ^
+         source-code-grammar-ebnf-keyword-operator
+          ^
+          source-code-grammar-ebnf-whitespace
+           ^
+           source-code-grammar-ebnf-literal-number-integer
+            ^
+            source-code-grammar-ebnf-whitespace
+             ^
+             source-code-grammar-ebnf-keyword-operator
+              ^
+              source-code-grammar-ebnf-whitespace
+               ^^^
+               source-code-grammar-ebnf-literal-string-quoted-single
+                  ^
+                  source-code-grammar-ebnf-whitespace
+                   ^
+                   source-code-grammar-ebnf-punctuation-separator
+no zero = digit - '0' ;
+^^^^^^^
+source-code-grammar-ebnf-identifier-function
+       ^
+       source-code-grammar-ebnf-whitespace
+        ^
+        source-code-grammar-ebnf-keyword-operator
+         ^
+         source-code-grammar-ebnf-whitespace
+          ^^^^^
+          source-code-grammar-ebnf-identifier-variable
+               ^
+               source-code-grammar-ebnf-whitespace
+                ^
+                source-code-grammar-ebnf-keyword-operator
+                 ^
+                 source-code-grammar-ebnf-whitespace
+                  ^^^
+                  source-code-grammar-ebnf-literal-string-quoted-single
+                     ^
+                     source-code-grammar-ebnf-whitespace
+                      ^
+                      source-code-grammar-ebnf-punctuation-separator
+choices = 'x' ! 'y' / 'z' ;
+^^^^^^^
+source-code-grammar-ebnf-identifier-function
+       ^
+       source-code-grammar-ebnf-whitespace
+        ^
+        source-code-grammar-ebnf-keyword-operator
+         ^
+         source-code-grammar-ebnf-whitespace
+          ^^^
+          source-code-grammar-ebnf-literal-string-quoted-single
+             ^
+             source-code-grammar-ebnf-whitespace
+              ^
+              source-code-grammar-ebnf-keyword-operator
+               ^
+               source-code-grammar-ebnf-whitespace
+                ^^^
+                source-code-grammar-ebnf-literal-string-quoted-single
+                   ^
+                   source-code-grammar-ebnf-whitespace
+                    ^
+                    source-code-grammar-ebnf-keyword-operator
+                     ^
+                     source-code-grammar-ebnf-whitespace
+                      ^^^
+                      source-code-grammar-ebnf-literal-string-quoted-single
+                         ^
+                         source-code-grammar-ebnf-whitespace
+                          ^
+                          source-code-grammar-ebnf-punctuation-separator
+white space = ? ASCII whitespace characters ? ;
+^^^^^^^^^^^
+source-code-grammar-ebnf-identifier-function
+           ^
+           source-code-grammar-ebnf-whitespace
+            ^
+            source-code-grammar-ebnf-keyword-operator
+             ^
+             source-code-grammar-ebnf-whitespace
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+              source-code-grammar-ebnf-literal-special-sequence
+                                             ^
+                                             source-code-grammar-ebnf-whitespace
+                                              ^
+                                              source-code-grammar-ebnf-punctuation-separator

@@ -80,6 +80,10 @@ sealed class Matcher {
   /// The regular expression is created with the
   /// [RegExp.isUnicode] and [RegExp.isMultiLine] flags enabled.
   ///
+  /// If [caseSensitive] is set to `false`,
+  /// the pattern matches regardless of case,
+  /// corresponding to [RegExp.isCaseSensitive].
+  ///
   /// The optional [tag] is applied to any text that matches the pattern.
   ///
   /// Usage example:
@@ -88,8 +92,17 @@ sealed class Matcher {
   /// // Match single-line comments.
   /// Matcher.regex(r'//.*$', tag: Tags.lineComment)
   /// ```
-  factory Matcher.regex(String pattern, {Tag? tag}) => PatternMatcher._(
-    pattern: RegExp(pattern, unicode: true, multiLine: true),
+  factory Matcher.regex(
+    String pattern, {
+    Tag? tag,
+    bool caseSensitive = true,
+  }) => PatternMatcher._(
+    pattern: RegExp(
+      pattern,
+      unicode: true,
+      multiLine: true,
+      caseSensitive: caseSensitive,
+    ),
     tag: tag,
   );
 
@@ -117,6 +130,10 @@ sealed class Matcher {
   /// The number of items in [captures] should
   /// match the number of capture groups in the pattern.
   ///
+  /// If [caseSensitive] is set to `false`,
+  /// the pattern matches regardless of case,
+  /// corresponding to [RegExp.isCaseSensitive].
+  ///
   /// The optional [tag] is applied to the entire span of text matched.
   ///
   /// Usage example:
@@ -132,8 +149,14 @@ sealed class Matcher {
     String pattern, {
     required List<Tag> captures,
     Tag? tag,
+    bool caseSensitive = true,
   }) => CaptureMatcher._(
-    pattern: RegExp(pattern, unicode: true, multiLine: true),
+    pattern: RegExp(
+      pattern,
+      unicode: true,
+      multiLine: true,
+      caseSensitive: caseSensitive,
+    ),
     captures: captures,
     tag: tag,
   );

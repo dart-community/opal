@@ -1,0 +1,17 @@
+<expression> ::= <term> | <expression> <adding operator> <term>
+<term> ::= <factor> | <term> <multiplying operator> <factor>
+<factor> ::= <number> | ( <expression> ) | <sign> <factor>
+
+<adding operator> ::= + | -
+<multiplying operator> ::= * | /
+<sign> ::= + | -
+
+<number> ::= <integer> | <integer> . <integer>
+<integer> ::= <digit> | <integer> <digit>
+<digit> ::= 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9
+
+<relational operator> ::= < | <= | > | >=
+
+<quoted terminals> ::= "double quoted" | 'single quoted'
+<alternate definition> := <quoted terminals>
+bare-definition = <quoted terminals>

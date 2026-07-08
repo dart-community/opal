@@ -16,6 +16,18 @@ void main() {
         expect((patternMatcher.pattern as RegExp).isUnicode, isTrue);
       });
 
+      test('regex is case sensitive by default', () {
+        final matcher = Matcher.regex(r'\d+') as PatternMatcher;
+        expect((matcher.pattern as RegExp).isCaseSensitive, isTrue);
+
+        final insensitiveMatcher =
+            Matcher.regex(r'\d+', caseSensitive: false) as PatternMatcher;
+        expect(
+          (insensitiveMatcher.pattern as RegExp).isCaseSensitive,
+          isFalse,
+        );
+      });
+
       test('verbatim creates PatternMatcher with String', () {
         final matcher = Matcher.verbatim('hello', tag: Tags.keyword);
         expect(matcher, isA<PatternMatcher>());

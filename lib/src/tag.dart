@@ -285,12 +285,16 @@ abstract final class Tags {
   /// A root tag for source content classification.
   ///
   /// Prefer using a more specific source tag,
-  /// such as [Tags.codeSource], [Tags.textualSource],
-  /// [Tags.dataSource], or [Tags.markupSource].
+  /// such as [Tags.codeSource], [Tags.grammarSource],
+  /// [Tags.textualSource], [Tags.dataSource], or [Tags.markupSource].
   static const Tag source = Tag('source');
 
   /// A tag for programming language source code content.
   static const Tag codeSource = Tag('code', parent: source);
+
+  /// A tag for grammar and syntactic metalanguage content,
+  /// such as ABNF or EBNF content.
+  static const Tag grammarSource = Tag('grammar', parent: codeSource);
 
   /// A tag for textual content (non-code source).
   static const Tag textualSource = Tag('text', parent: source);

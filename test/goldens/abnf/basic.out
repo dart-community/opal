@@ -1,0 +1,449 @@
+; An ABNF grammar for a simple calculator language.
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+source-code-grammar-abnf-comment-line
+
+calculation = expression *(line-break expression) [line-break]
+^^^^^^^^^^^
+source-code-grammar-abnf-identifier-function
+           ^
+           source-code-grammar-abnf-whitespace
+            ^
+            source-code-grammar-abnf-keyword-operator
+             ^
+             source-code-grammar-abnf-whitespace
+              ^^^^^^^^^^
+              source-code-grammar-abnf-identifier-variable
+                        ^
+                        source-code-grammar-abnf-whitespace
+                         ^
+                         source-code-grammar-abnf-keyword-operator
+                          ^
+                          source-code-grammar-abnf-punctuation
+                           ^^^^^^^^^^
+                           source-code-grammar-abnf-identifier-variable
+                                     ^
+                                     source-code-grammar-abnf-whitespace
+                                      ^^^^^^^^^^
+                                      source-code-grammar-abnf-identifier-variable
+                                                ^
+                                                source-code-grammar-abnf-punctuation
+                                                 ^
+                                                 source-code-grammar-abnf-whitespace
+                                                  ^
+                                                  source-code-grammar-abnf-punctuation
+                                                   ^^^^^^^^^^
+                                                   source-code-grammar-abnf-identifier-variable
+                                                             ^
+                                                             source-code-grammar-abnf-punctuation
+
+expression = term *(spacing add-op spacing term)
+^^^^^^^^^^
+source-code-grammar-abnf-identifier-function
+          ^
+          source-code-grammar-abnf-whitespace
+           ^
+           source-code-grammar-abnf-keyword-operator
+            ^
+            source-code-grammar-abnf-whitespace
+             ^^^^
+             source-code-grammar-abnf-identifier-variable
+                 ^
+                 source-code-grammar-abnf-whitespace
+                  ^
+                  source-code-grammar-abnf-keyword-operator
+                   ^
+                   source-code-grammar-abnf-punctuation
+                    ^^^^^^^
+                    source-code-grammar-abnf-identifier-variable
+                           ^
+                           source-code-grammar-abnf-whitespace
+                            ^^^^^^
+                            source-code-grammar-abnf-identifier-variable
+                                  ^
+                                  source-code-grammar-abnf-whitespace
+                                   ^^^^^^^
+                                   source-code-grammar-abnf-identifier-variable
+                                          ^
+                                          source-code-grammar-abnf-whitespace
+                                           ^^^^
+                                           source-code-grammar-abnf-identifier-variable
+                                               ^
+                                               source-code-grammar-abnf-punctuation
+term = factor *(spacing mul-op spacing factor)
+^^^^
+source-code-grammar-abnf-identifier-function
+    ^
+    source-code-grammar-abnf-whitespace
+     ^
+     source-code-grammar-abnf-keyword-operator
+      ^
+      source-code-grammar-abnf-whitespace
+       ^^^^^^
+       source-code-grammar-abnf-identifier-variable
+             ^
+             source-code-grammar-abnf-whitespace
+              ^
+              source-code-grammar-abnf-keyword-operator
+               ^
+               source-code-grammar-abnf-punctuation
+                ^^^^^^^
+                source-code-grammar-abnf-identifier-variable
+                       ^
+                       source-code-grammar-abnf-whitespace
+                        ^^^^^^
+                        source-code-grammar-abnf-identifier-variable
+                              ^
+                              source-code-grammar-abnf-whitespace
+                               ^^^^^^^
+                               source-code-grammar-abnf-identifier-variable
+                                      ^
+                                      source-code-grammar-abnf-whitespace
+                                       ^^^^^^
+                                       source-code-grammar-abnf-identifier-variable
+                                             ^
+                                             source-code-grammar-abnf-punctuation
+factor = number / (open-paren expression close-paren)
+^^^^^^
+source-code-grammar-abnf-identifier-function
+      ^
+      source-code-grammar-abnf-whitespace
+       ^
+       source-code-grammar-abnf-keyword-operator
+        ^
+        source-code-grammar-abnf-whitespace
+         ^^^^^^
+         source-code-grammar-abnf-identifier-variable
+               ^
+               source-code-grammar-abnf-whitespace
+                ^
+                source-code-grammar-abnf-keyword-operator
+                 ^
+                 source-code-grammar-abnf-whitespace
+                  ^
+                  source-code-grammar-abnf-punctuation
+                   ^^^^^^^^^^
+                   source-code-grammar-abnf-identifier-variable
+                             ^
+                             source-code-grammar-abnf-whitespace
+                              ^^^^^^^^^^
+                              source-code-grammar-abnf-identifier-variable
+                                        ^
+                                        source-code-grammar-abnf-whitespace
+                                         ^^^^^^^^^^^
+                                         source-code-grammar-abnf-identifier-variable
+                                                    ^
+                                                    source-code-grammar-abnf-punctuation
+factor =/ sign factor
+^^^^^^
+source-code-grammar-abnf-identifier-function
+      ^
+      source-code-grammar-abnf-whitespace
+       ^^
+       source-code-grammar-abnf-keyword-operator
+         ^
+         source-code-grammar-abnf-whitespace
+          ^^^^
+          source-code-grammar-abnf-identifier-variable
+              ^
+              source-code-grammar-abnf-whitespace
+               ^^^^^^
+               source-code-grammar-abnf-identifier-variable
+
+add-op = "+" / "-"
+^^^^^^
+source-code-grammar-abnf-identifier-function
+      ^
+      source-code-grammar-abnf-whitespace
+       ^
+       source-code-grammar-abnf-keyword-operator
+        ^
+        source-code-grammar-abnf-whitespace
+         ^^^
+         source-code-grammar-abnf-literal-string-quoted-double
+            ^
+            source-code-grammar-abnf-whitespace
+             ^
+             source-code-grammar-abnf-keyword-operator
+              ^
+              source-code-grammar-abnf-whitespace
+               ^^^
+               source-code-grammar-abnf-literal-string-quoted-double
+mul-op = %s"*" / %s"/"
+^^^^^^
+source-code-grammar-abnf-identifier-function
+      ^
+      source-code-grammar-abnf-whitespace
+       ^
+       source-code-grammar-abnf-keyword-operator
+        ^
+        source-code-grammar-abnf-whitespace
+         ^^
+         source-code-grammar-abnf-literal-string-escape
+           ^^^
+           source-code-grammar-abnf-literal-string-quoted-double
+              ^
+              source-code-grammar-abnf-whitespace
+               ^
+               source-code-grammar-abnf-keyword-operator
+                ^
+                source-code-grammar-abnf-whitespace
+                 ^^
+                 source-code-grammar-abnf-literal-string-escape
+                   ^^^
+                   source-code-grammar-abnf-literal-string-quoted-double
+sign = %d43 / %d45 ; a plus or minus sign
+^^^^
+source-code-grammar-abnf-identifier-function
+    ^
+    source-code-grammar-abnf-whitespace
+     ^
+     source-code-grammar-abnf-keyword-operator
+      ^
+      source-code-grammar-abnf-whitespace
+       ^^^^
+       source-code-grammar-abnf-literal-number
+           ^
+           source-code-grammar-abnf-whitespace
+            ^
+            source-code-grammar-abnf-keyword-operator
+             ^
+             source-code-grammar-abnf-whitespace
+              ^^^^
+              source-code-grammar-abnf-literal-number
+                  ^
+                  source-code-grammar-abnf-whitespace
+                   ^^^^^^^^^^^^^^^^^^^^^^
+                   source-code-grammar-abnf-comment-line
+
+number = integer [fraction] [exponent]
+^^^^^^
+source-code-grammar-abnf-identifier-function
+      ^
+      source-code-grammar-abnf-whitespace
+       ^
+       source-code-grammar-abnf-keyword-operator
+        ^
+        source-code-grammar-abnf-whitespace
+         ^^^^^^^
+         source-code-grammar-abnf-identifier-variable
+                ^
+                source-code-grammar-abnf-whitespace
+                 ^
+                 source-code-grammar-abnf-punctuation
+                  ^^^^^^^^
+                  source-code-grammar-abnf-identifier-variable
+                          ^
+                          source-code-grammar-abnf-punctuation
+                           ^
+                           source-code-grammar-abnf-whitespace
+                            ^
+                            source-code-grammar-abnf-punctuation
+                             ^^^^^^^^
+                             source-code-grammar-abnf-identifier-variable
+                                     ^
+                                     source-code-grammar-abnf-punctuation
+integer = 1*DIGIT
+^^^^^^^
+source-code-grammar-abnf-identifier-function
+       ^
+       source-code-grammar-abnf-whitespace
+        ^
+        source-code-grammar-abnf-keyword-operator
+         ^
+         source-code-grammar-abnf-whitespace
+          ^
+          source-code-grammar-abnf-literal-number-integer
+           ^
+           source-code-grammar-abnf-keyword-operator
+            ^^^^^
+            source-code-grammar-abnf-identifier-type-built-in
+fraction = "." 1*DIGIT
+^^^^^^^^
+source-code-grammar-abnf-identifier-function
+        ^
+        source-code-grammar-abnf-whitespace
+         ^
+         source-code-grammar-abnf-keyword-operator
+          ^
+          source-code-grammar-abnf-whitespace
+           ^^^
+           source-code-grammar-abnf-literal-string-quoted-double
+              ^
+              source-code-grammar-abnf-whitespace
+               ^
+               source-code-grammar-abnf-literal-number-integer
+                ^
+                source-code-grammar-abnf-keyword-operator
+                 ^^^^^
+                 source-code-grammar-abnf-identifier-type-built-in
+exponent = exponent-marker [sign] 1*3DIGIT
+^^^^^^^^
+source-code-grammar-abnf-identifier-function
+        ^
+        source-code-grammar-abnf-whitespace
+         ^
+         source-code-grammar-abnf-keyword-operator
+          ^
+          source-code-grammar-abnf-whitespace
+           ^^^^^^^^^^^^^^^
+           source-code-grammar-abnf-identifier-variable
+                          ^
+                          source-code-grammar-abnf-whitespace
+                           ^
+                           source-code-grammar-abnf-punctuation
+                            ^^^^
+                            source-code-grammar-abnf-identifier-variable
+                                ^
+                                source-code-grammar-abnf-punctuation
+                                 ^
+                                 source-code-grammar-abnf-whitespace
+                                  ^
+                                  source-code-grammar-abnf-literal-number-integer
+                                   ^
+                                   source-code-grammar-abnf-keyword-operator
+                                    ^
+                                    source-code-grammar-abnf-literal-number-integer
+                                     ^^^^^
+                                     source-code-grammar-abnf-identifier-type-built-in
+exponent-marker = %I"e" ; prefixes are case insensitive too
+^^^^^^^^^^^^^^^
+source-code-grammar-abnf-identifier-function
+               ^
+               source-code-grammar-abnf-whitespace
+                ^
+                source-code-grammar-abnf-keyword-operator
+                 ^
+                 source-code-grammar-abnf-whitespace
+                  ^^
+                  source-code-grammar-abnf-literal-string-escape
+                    ^^^
+                    source-code-grammar-abnf-literal-string-quoted-double
+                       ^
+                       source-code-grammar-abnf-whitespace
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        source-code-grammar-abnf-comment-line
+
+digit = %x30-39 ; equivalent to the DIGIT core rule
+^^^^^
+source-code-grammar-abnf-identifier-function
+     ^
+     source-code-grammar-abnf-whitespace
+      ^
+      source-code-grammar-abnf-keyword-operator
+       ^
+       source-code-grammar-abnf-whitespace
+        ^^^^^^^
+        source-code-grammar-abnf-literal-number
+               ^
+               source-code-grammar-abnf-whitespace
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                source-code-grammar-abnf-comment-line
+open-paren = %x28 ; a left parenthesis
+^^^^^^^^^^
+source-code-grammar-abnf-identifier-function
+          ^
+          source-code-grammar-abnf-whitespace
+           ^
+           source-code-grammar-abnf-keyword-operator
+            ^
+            source-code-grammar-abnf-whitespace
+             ^^^^
+             source-code-grammar-abnf-literal-number
+                 ^
+                 source-code-grammar-abnf-whitespace
+                  ^^^^^^^^^^^^^^^^^^^^
+                  source-code-grammar-abnf-comment-line
+close-paren = %X29 ; a right parenthesis
+^^^^^^^^^^^
+source-code-grammar-abnf-identifier-function
+           ^
+           source-code-grammar-abnf-whitespace
+            ^
+            source-code-grammar-abnf-keyword-operator
+             ^
+             source-code-grammar-abnf-whitespace
+              ^^^^
+              source-code-grammar-abnf-literal-number
+                  ^
+                  source-code-grammar-abnf-whitespace
+                   ^^^^^^^^^^^^^^^^^^^^^
+                   source-code-grammar-abnf-comment-line
+
+spacing = *2(SP / HTAB)
+^^^^^^^
+source-code-grammar-abnf-identifier-function
+       ^
+       source-code-grammar-abnf-whitespace
+        ^
+        source-code-grammar-abnf-keyword-operator
+         ^
+         source-code-grammar-abnf-whitespace
+          ^
+          source-code-grammar-abnf-keyword-operator
+           ^
+           source-code-grammar-abnf-literal-number-integer
+            ^
+            source-code-grammar-abnf-punctuation
+             ^^
+             source-code-grammar-abnf-identifier-type-built-in
+               ^
+               source-code-grammar-abnf-whitespace
+                ^
+                source-code-grammar-abnf-keyword-operator
+                 ^
+                 source-code-grammar-abnf-whitespace
+                  ^^^^
+                  source-code-grammar-abnf-identifier-type-built-in
+                      ^
+                      source-code-grammar-abnf-punctuation
+line-break = %d13.10 / %b1010 ; CRLF or a bare line feed
+^^^^^^^^^^
+source-code-grammar-abnf-identifier-function
+          ^
+          source-code-grammar-abnf-whitespace
+           ^
+           source-code-grammar-abnf-keyword-operator
+            ^
+            source-code-grammar-abnf-whitespace
+             ^^^^^^^
+             source-code-grammar-abnf-literal-number
+                    ^
+                    source-code-grammar-abnf-whitespace
+                     ^
+                     source-code-grammar-abnf-keyword-operator
+                      ^
+                      source-code-grammar-abnf-whitespace
+                       ^^^^^^
+                       source-code-grammar-abnf-literal-number
+                             ^
+                             source-code-grammar-abnf-whitespace
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+                              source-code-grammar-abnf-comment-line
+padding = *htab ; rule names are case insensitive
+^^^^^^^
+source-code-grammar-abnf-identifier-function
+       ^
+       source-code-grammar-abnf-whitespace
+        ^
+        source-code-grammar-abnf-keyword-operator
+         ^
+         source-code-grammar-abnf-whitespace
+          ^
+          source-code-grammar-abnf-keyword-operator
+           ^^^^
+           source-code-grammar-abnf-identifier-type-built-in
+               ^
+               source-code-grammar-abnf-whitespace
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                source-code-grammar-abnf-comment-line
+enter-key = <the Enter or Return key>
+^^^^^^^^^
+source-code-grammar-abnf-identifier-function
+         ^
+         source-code-grammar-abnf-whitespace
+          ^
+          source-code-grammar-abnf-keyword-operator
+           ^
+           source-code-grammar-abnf-whitespace
+            ^^^^^^^^^^^^^^^^^^^^^^^^^
+            source-code-grammar-abnf-literal-prose

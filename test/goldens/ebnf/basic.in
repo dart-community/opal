@@ -1,0 +1,21 @@
+(* An EBNF grammar for a simple calculator language. *)
+expression = term, { ( "+" | "-" ), term } ;
+term = factor, { ( "*" | "/" ), factor } ;
+factor = number | "(", expression, ")" ;
+number = digit, { digit } ;
+digit = "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9" ;
+
+(* A comment that
+   spans multiple lines,
+   with (* a nested comment *) inside. *)
+
+empty sequence = ;
+uses empty = empty sequence ;
+optional part = [ sign ] .
+also optional = (/ sign /) .
+repeated part = { digit } .
+also repeated = (: digit :) .
+triple a = 3 * 'a' ;
+no zero = digit - '0' ;
+choices = 'x' ! 'y' / 'z' ;
+white space = ? ASCII whitespace characters ? ;

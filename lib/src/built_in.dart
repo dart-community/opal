@@ -1,9 +1,12 @@
 import 'package:meta/meta.dart';
 
 import 'language.dart';
+import 'language/abnf.dart';
+import 'language/bnf.dart';
 import 'language/c.dart';
 import 'language/c_plus_plus.dart';
 import 'language/dart.dart';
+import 'language/ebnf.dart';
 import 'language/glsl.dart';
 import 'language/groovy.dart';
 import 'language/html.dart';
@@ -28,9 +31,12 @@ abstract final class BuiltInLanguages {
   /// A collection of all built-in languages.
   @useResult
   static final List<Language> all = [
+    abnf,
+    bnf,
     c,
     cPlusPlus,
     dart,
+    ebnf,
     glsl,
     groovy,
     html,
@@ -47,6 +53,24 @@ abstract final class BuiltInLanguages {
     xml,
     yaml,
   ];
+
+  /// A tokenizing language implementation for the
+  /// Augmented Backus-Naur Form (ABNF) syntactic metalanguage.
+  static final Language abnf = MatcherLanguage(
+    name: 'abnf',
+    grammar: const AbnfGrammar(),
+    baseTag: const Tag('abnf', parent: Tags.grammarSource),
+  );
+
+  /// A tokenizing language implementation for the
+  /// Backus-Naur Form (BNF) syntactic metalanguage.
+  ///
+  /// For other specified variants, see [abnf] and [ebnf].
+  static final Language bnf = MatcherLanguage(
+    name: 'bnf',
+    grammar: const BnfGrammar(),
+    baseTag: const Tag('bnf', parent: Tags.grammarSource),
+  );
 
   /// A tokenizing language implementation for the C programming language.
   static final Language c = MatcherLanguage(
@@ -67,6 +91,14 @@ abstract final class BuiltInLanguages {
     name: 'dart',
     grammar: const DartGrammar(),
     baseTag: const Tag('dart', parent: Tags.codeSource),
+  );
+
+  /// A tokenizing language implementation for the
+  /// Extended Backus-Naur Form (EBNF) syntactic metalanguage.
+  static final Language ebnf = MatcherLanguage(
+    name: 'ebnf',
+    grammar: const EbnfGrammar(),
+    baseTag: const Tag('ebnf', parent: Tags.grammarSource),
   );
 
   /// A tokenizing language implementation for the GLSL shading language.

@@ -1,0 +1,363 @@
+<expression> ::= <term> | <expression> <adding operator> <term>
+^^^^^^^^^^^^
+source-code-grammar-bnf-identifier-function
+            ^
+            source-code-grammar-bnf-whitespace
+             ^^^
+             source-code-grammar-bnf-keyword-operator
+                ^
+                source-code-grammar-bnf-whitespace
+                 ^^^^^^
+                 source-code-grammar-bnf-identifier-variable
+                       ^
+                       source-code-grammar-bnf-whitespace
+                        ^
+                        source-code-grammar-bnf-keyword-operator
+                         ^
+                         source-code-grammar-bnf-whitespace
+                          ^^^^^^^^^^^^
+                          source-code-grammar-bnf-identifier-variable
+                                      ^
+                                      source-code-grammar-bnf-whitespace
+                                       ^^^^^^^^^^^^^^^^^
+                                       source-code-grammar-bnf-identifier-variable
+                                                        ^
+                                                        source-code-grammar-bnf-whitespace
+                                                         ^^^^^^
+                                                         source-code-grammar-bnf-identifier-variable
+<term> ::= <factor> | <term> <multiplying operator> <factor>
+^^^^^^
+source-code-grammar-bnf-identifier-function
+      ^
+      source-code-grammar-bnf-whitespace
+       ^^^
+       source-code-grammar-bnf-keyword-operator
+          ^
+          source-code-grammar-bnf-whitespace
+           ^^^^^^^^
+           source-code-grammar-bnf-identifier-variable
+                   ^
+                   source-code-grammar-bnf-whitespace
+                    ^
+                    source-code-grammar-bnf-keyword-operator
+                     ^
+                     source-code-grammar-bnf-whitespace
+                      ^^^^^^
+                      source-code-grammar-bnf-identifier-variable
+                            ^
+                            source-code-grammar-bnf-whitespace
+                             ^^^^^^^^^^^^^^^^^^^^^^
+                             source-code-grammar-bnf-identifier-variable
+                                                   ^
+                                                   source-code-grammar-bnf-whitespace
+                                                    ^^^^^^^^
+                                                    source-code-grammar-bnf-identifier-variable
+<factor> ::= <number> | ( <expression> ) | <sign> <factor>
+^^^^^^^^
+source-code-grammar-bnf-identifier-function
+        ^
+        source-code-grammar-bnf-whitespace
+         ^^^
+         source-code-grammar-bnf-keyword-operator
+            ^
+            source-code-grammar-bnf-whitespace
+             ^^^^^^^^
+             source-code-grammar-bnf-identifier-variable
+                     ^
+                     source-code-grammar-bnf-whitespace
+                      ^
+                      source-code-grammar-bnf-keyword-operator
+                       ^
+                       source-code-grammar-bnf-whitespace
+                        ^
+                        source-code-grammar-bnf-literal-string-unquoted
+                         ^
+                         source-code-grammar-bnf-whitespace
+                          ^^^^^^^^^^^^
+                          source-code-grammar-bnf-identifier-variable
+                                      ^
+                                      source-code-grammar-bnf-whitespace
+                                       ^
+                                       source-code-grammar-bnf-literal-string-unquoted
+                                        ^
+                                        source-code-grammar-bnf-whitespace
+                                         ^
+                                         source-code-grammar-bnf-keyword-operator
+                                          ^
+                                          source-code-grammar-bnf-whitespace
+                                           ^^^^^^
+                                           source-code-grammar-bnf-identifier-variable
+                                                 ^
+                                                 source-code-grammar-bnf-whitespace
+                                                  ^^^^^^^^
+                                                  source-code-grammar-bnf-identifier-variable
+
+<adding operator> ::= + | -
+^^^^^^^^^^^^^^^^^
+source-code-grammar-bnf-identifier-function
+                 ^
+                 source-code-grammar-bnf-whitespace
+                  ^^^
+                  source-code-grammar-bnf-keyword-operator
+                     ^
+                     source-code-grammar-bnf-whitespace
+                      ^
+                      source-code-grammar-bnf-literal-string-unquoted
+                       ^
+                       source-code-grammar-bnf-whitespace
+                        ^
+                        source-code-grammar-bnf-keyword-operator
+                         ^
+                         source-code-grammar-bnf-whitespace
+                          ^
+                          source-code-grammar-bnf-literal-string-unquoted
+<multiplying operator> ::= * | /
+^^^^^^^^^^^^^^^^^^^^^^
+source-code-grammar-bnf-identifier-function
+                      ^
+                      source-code-grammar-bnf-whitespace
+                       ^^^
+                       source-code-grammar-bnf-keyword-operator
+                          ^
+                          source-code-grammar-bnf-whitespace
+                           ^
+                           source-code-grammar-bnf-literal-string-unquoted
+                            ^
+                            source-code-grammar-bnf-whitespace
+                             ^
+                             source-code-grammar-bnf-keyword-operator
+                              ^
+                              source-code-grammar-bnf-whitespace
+                               ^
+                               source-code-grammar-bnf-literal-string-unquoted
+<sign> ::= + | -
+^^^^^^
+source-code-grammar-bnf-identifier-function
+      ^
+      source-code-grammar-bnf-whitespace
+       ^^^
+       source-code-grammar-bnf-keyword-operator
+          ^
+          source-code-grammar-bnf-whitespace
+           ^
+           source-code-grammar-bnf-literal-string-unquoted
+            ^
+            source-code-grammar-bnf-whitespace
+             ^
+             source-code-grammar-bnf-keyword-operator
+              ^
+              source-code-grammar-bnf-whitespace
+               ^
+               source-code-grammar-bnf-literal-string-unquoted
+
+<number> ::= <integer> | <integer> . <integer>
+^^^^^^^^
+source-code-grammar-bnf-identifier-function
+        ^
+        source-code-grammar-bnf-whitespace
+         ^^^
+         source-code-grammar-bnf-keyword-operator
+            ^
+            source-code-grammar-bnf-whitespace
+             ^^^^^^^^^
+             source-code-grammar-bnf-identifier-variable
+                      ^
+                      source-code-grammar-bnf-whitespace
+                       ^
+                       source-code-grammar-bnf-keyword-operator
+                        ^
+                        source-code-grammar-bnf-whitespace
+                         ^^^^^^^^^
+                         source-code-grammar-bnf-identifier-variable
+                                  ^
+                                  source-code-grammar-bnf-whitespace
+                                   ^
+                                   source-code-grammar-bnf-literal-string-unquoted
+                                    ^
+                                    source-code-grammar-bnf-whitespace
+                                     ^^^^^^^^^
+                                     source-code-grammar-bnf-identifier-variable
+<integer> ::= <digit> | <integer> <digit>
+^^^^^^^^^
+source-code-grammar-bnf-identifier-function
+         ^
+         source-code-grammar-bnf-whitespace
+          ^^^
+          source-code-grammar-bnf-keyword-operator
+             ^
+             source-code-grammar-bnf-whitespace
+              ^^^^^^^
+              source-code-grammar-bnf-identifier-variable
+                     ^
+                     source-code-grammar-bnf-whitespace
+                      ^
+                      source-code-grammar-bnf-keyword-operator
+                       ^
+                       source-code-grammar-bnf-whitespace
+                        ^^^^^^^^^
+                        source-code-grammar-bnf-identifier-variable
+                                 ^
+                                 source-code-grammar-bnf-whitespace
+                                  ^^^^^^^
+                                  source-code-grammar-bnf-identifier-variable
+<digit> ::= 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9
+^^^^^^^
+source-code-grammar-bnf-identifier-function
+       ^
+       source-code-grammar-bnf-whitespace
+        ^^^
+        source-code-grammar-bnf-keyword-operator
+           ^
+           source-code-grammar-bnf-whitespace
+            ^
+            source-code-grammar-bnf-literal-string-unquoted
+             ^
+             source-code-grammar-bnf-whitespace
+              ^
+              source-code-grammar-bnf-keyword-operator
+               ^
+               source-code-grammar-bnf-whitespace
+                ^
+                source-code-grammar-bnf-literal-string-unquoted
+                 ^
+                 source-code-grammar-bnf-whitespace
+                  ^
+                  source-code-grammar-bnf-keyword-operator
+                   ^
+                   source-code-grammar-bnf-whitespace
+                    ^
+                    source-code-grammar-bnf-literal-string-unquoted
+                     ^
+                     source-code-grammar-bnf-whitespace
+                      ^
+                      source-code-grammar-bnf-keyword-operator
+                       ^
+                       source-code-grammar-bnf-whitespace
+                        ^
+                        source-code-grammar-bnf-literal-string-unquoted
+                         ^
+                         source-code-grammar-bnf-whitespace
+                          ^
+                          source-code-grammar-bnf-keyword-operator
+                           ^
+                           source-code-grammar-bnf-whitespace
+                            ^
+                            source-code-grammar-bnf-literal-string-unquoted
+                             ^
+                             source-code-grammar-bnf-whitespace
+                              ^
+                              source-code-grammar-bnf-keyword-operator
+                               ^
+                               source-code-grammar-bnf-whitespace
+                                ^
+                                source-code-grammar-bnf-literal-string-unquoted
+                                 ^
+                                 source-code-grammar-bnf-whitespace
+                                  ^
+                                  source-code-grammar-bnf-keyword-operator
+                                   ^
+                                   source-code-grammar-bnf-whitespace
+                                    ^
+                                    source-code-grammar-bnf-literal-string-unquoted
+                                     ^
+                                     source-code-grammar-bnf-whitespace
+                                      ^
+                                      source-code-grammar-bnf-keyword-operator
+                                       ^
+                                       source-code-grammar-bnf-whitespace
+                                        ^
+                                        source-code-grammar-bnf-literal-string-unquoted
+                                         ^
+                                         source-code-grammar-bnf-whitespace
+                                          ^
+                                          source-code-grammar-bnf-keyword-operator
+                                           ^
+                                           source-code-grammar-bnf-whitespace
+                                            ^
+                                            source-code-grammar-bnf-literal-string-unquoted
+                                             ^
+                                             source-code-grammar-bnf-whitespace
+                                              ^
+                                              source-code-grammar-bnf-keyword-operator
+                                               ^
+                                               source-code-grammar-bnf-whitespace
+                                                ^
+                                                source-code-grammar-bnf-literal-string-unquoted
+
+<relational operator> ::= < | <= | > | >=
+^^^^^^^^^^^^^^^^^^^^^
+source-code-grammar-bnf-identifier-function
+                     ^
+                     source-code-grammar-bnf-whitespace
+                      ^^^
+                      source-code-grammar-bnf-keyword-operator
+                         ^
+                         source-code-grammar-bnf-whitespace
+                          ^
+                          source-code-grammar-bnf-literal-string-unquoted
+                           ^
+                           source-code-grammar-bnf-whitespace
+                            ^
+                            source-code-grammar-bnf-keyword-operator
+                             ^
+                             source-code-grammar-bnf-whitespace
+                              ^^
+                              source-code-grammar-bnf-literal-string-unquoted
+                                ^
+                                source-code-grammar-bnf-whitespace
+                                 ^
+                                 source-code-grammar-bnf-keyword-operator
+                                  ^
+                                  source-code-grammar-bnf-whitespace
+                                   ^
+                                   source-code-grammar-bnf-literal-string-unquoted
+                                    ^
+                                    source-code-grammar-bnf-whitespace
+                                     ^
+                                     source-code-grammar-bnf-keyword-operator
+                                      ^
+                                      source-code-grammar-bnf-whitespace
+                                       ^^
+                                       source-code-grammar-bnf-literal-string-unquoted
+
+<quoted terminals> ::= "double quoted" | 'single quoted'
+^^^^^^^^^^^^^^^^^^
+source-code-grammar-bnf-identifier-function
+                  ^
+                  source-code-grammar-bnf-whitespace
+                   ^^^
+                   source-code-grammar-bnf-keyword-operator
+                      ^
+                      source-code-grammar-bnf-whitespace
+                       ^^^^^^^^^^^^^^^
+                       source-code-grammar-bnf-literal-string-quoted-double
+                                      ^
+                                      source-code-grammar-bnf-whitespace
+                                       ^
+                                       source-code-grammar-bnf-keyword-operator
+                                        ^
+                                        source-code-grammar-bnf-whitespace
+                                         ^^^^^^^^^^^^^^^
+                                         source-code-grammar-bnf-literal-string-quoted-single
+<alternate definition> := <quoted terminals>
+^^^^^^^^^^^^^^^^^^^^^^
+source-code-grammar-bnf-identifier-function
+                      ^
+                      source-code-grammar-bnf-whitespace
+                       ^^
+                       source-code-grammar-bnf-keyword-operator
+                         ^
+                         source-code-grammar-bnf-whitespace
+                          ^^^^^^^^^^^^^^^^^^
+                          source-code-grammar-bnf-identifier-variable
+bare-definition = <quoted terminals>
+^^^^^^^^^^^^^^^
+source-code-grammar-bnf-identifier-function
+               ^
+               source-code-grammar-bnf-whitespace
+                ^
+                source-code-grammar-bnf-keyword-operator
+                 ^
+                 source-code-grammar-bnf-whitespace
+                  ^^^^^^^^^^^^^^^^^^
+                  source-code-grammar-bnf-identifier-variable

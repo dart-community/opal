@@ -1,4 +1,4 @@
-## 0.2.4-wip
+## 0.2.4
 
 - Add initial, basic support for `abnf` (Augmented Backus-Naur Form).
 - Add initial, basic support for `bnf` (Backus-Naur Form).

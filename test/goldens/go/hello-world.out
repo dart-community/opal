@@ -1,0 +1,57 @@
+package main
+^^^^^^^
+source-code-go-keyword-declaration-package
+       ^
+       source-code-go-whitespace
+        ^^^^
+        source-code-go-identifier
+
+import "fmt"
+^^^^^^
+source-code-go-keyword-declaration-import
+      ^
+      source-code-go-whitespace
+       ^
+       source-code-go-literal-string-quoted-double-literal-string-quoted-double-begin
+        ^^^
+        source-code-go-literal-string-quoted-double-literal-string-unquoted-literal-string-unquoted
+           ^
+           source-code-go-literal-string-quoted-double-literal-string-quoted-double-end
+
+func main() {
+^^^^
+source-code-go-keyword-declaration-func
+    ^
+    source-code-go-whitespace
+     ^^^^
+     source-code-go-identifier-function
+         ^
+         source-code-go-punctuation
+          ^
+          source-code-go-punctuation
+           ^
+           source-code-go-whitespace
+            ^
+            source-code-go-punctuation
+	fmt.Println("Hello, world!")
+^
+source-code-go-whitespace
+ ^^^
+ source-code-go-identifier
+    ^
+    source-code-go-punctuation-accessor
+     ^^^^^^^
+     source-code-go-identifier-function
+            ^
+            source-code-go-punctuation
+             ^
+             source-code-go-literal-string-quoted-double-literal-string-quoted-double-begin
+              ^^^^^^^^^^^^^
+              source-code-go-literal-string-quoted-double-literal-string-unquoted-literal-string-unquoted
+                           ^
+                           source-code-go-literal-string-quoted-double-literal-string-quoted-double-end
+                            ^
+                            source-code-go-punctuation
+}
+^
+source-code-go-punctuation

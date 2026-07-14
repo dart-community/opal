@@ -1,3 +1,7 @@
+## 0.2.5-wip
+
+- Add initial, basic support for `go`.
+
 ## 0.2.4
 
 - Add initial, basic support for `abnf` (Augmented Backus-Naur Form).

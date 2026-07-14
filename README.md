@@ -55,6 +55,7 @@ the specified default and alternative IDs:
 - Dart (`dart`)
 - EBNF (`ebnf`)
 - GLSL (`glsl`, `frag`, `vert`, `geom`, `comp`)
+- Go (`go`, `golang`)
 - Groovy (`groovy`, `gradle`)
 - HTML (`html`)
 - Java (`java`)

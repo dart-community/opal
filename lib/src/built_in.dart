@@ -8,6 +8,7 @@ import 'language/c_plus_plus.dart';
 import 'language/dart.dart';
 import 'language/ebnf.dart';
 import 'language/glsl.dart';
+import 'language/go.dart';
 import 'language/groovy.dart';
 import 'language/html.dart';
 import 'language/java.dart';
@@ -38,6 +39,7 @@ abstract final class BuiltInLanguages {
     dart,
     ebnf,
     glsl,
+    go,
     groovy,
     html,
     java,
@@ -106,6 +108,13 @@ abstract final class BuiltInLanguages {
     name: 'glsl',
     grammar: const GlslGrammar(),
     baseTag: const Tag('glsl', parent: Tags.codeSource),
+  );
+
+  /// A tokenizing language implementation for the Go programming language.
+  static final Language go = MatcherLanguage(
+    name: 'go',
+    grammar: const GoGrammar(),
+    baseTag: const Tag('go', parent: Tags.codeSource),
   );
 
   /// A tokenizing language implementation for the Groovy programming language.

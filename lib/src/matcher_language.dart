@@ -63,13 +63,16 @@ final class MatcherLanguage extends Language {
     }
 
     while (!scanner.isDone) {
-      bool tryMatcher(Matcher matcher) {
+      bool tryMatcher(Matcher matcher, {bool allowZeroLength = false}) {
         switch (matcher) {
           case PatternMatcher(:final pattern, :final tag):
             if (scanner.match(pattern) case final match?) {
               if (match.isZeroLength) {
-                // Do not accept zero-length matches; they don't advance.
-                return false;
+                // Wrapped matchers can use a zero-width end sentinel
+                // because accepting it exits the wrapping loop without
+                // needing to advance the scanner.
+                // Other zero-width matches would stall.
+                return allowZeroLength;
               }
               if (tag != null) {
                 tags.addLast(tag);
@@ -124,7 +127,8 @@ final class MatcherLanguage extends Language {
             }
 
             if (tryMatcher(begin)) {
-              while (!scanner.isDone && !tryMatcher(end)) {
+              while (!scanner.isDone &&
+                  !tryMatcher(end, allowZeroLength: true)) {
                 if (!tryMatcher(content)) {
                   handleUnknownToken();
                 }
@@ -153,7 +157,10 @@ final class MatcherLanguage extends Language {
               if (tag != null) {
                 tags.addLast(tag);
               }
-              final result = tryMatcher(child);
+              final result = tryMatcher(
+                child,
+                allowZeroLength: allowZeroLength,
+              );
               if (tag != null) {
                 tags.removeLast();
               }
@@ -175,7 +182,10 @@ final class MatcherLanguage extends Language {
               tags.addLast(tag);
             }
 
-            final result = tryMatcher(matcher);
+            final result = tryMatcher(
+              matcher,
+              allowZeroLength: allowZeroLength,
+            );
 
             if (tag != null) {
               tags.removeLast();

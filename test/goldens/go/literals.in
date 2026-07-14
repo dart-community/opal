@@ -1,0 +1,8 @@
+package sample
+
+var values = []float64{1_000, .25, 0x1.fp2, 2i}
+var trailing = []float64{1., 0.}
+var raw = `raw
+string`
+var whitespace = []string{" hello", "a\n b", " "}
+var runes = []rune{'\n', ' '}

@@ -1,0 +1,9 @@
+package sample
+
+// Incomplete code should still highlight usefully.
+func unfinished(value int) {
+	if value > 0 {
+		brokenRune := 'x
+		// This comment must not be swallowed by the rune.
+		println("missing end
+	/* and an unfinished comment

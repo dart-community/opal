@@ -1,0 +1,229 @@
+const single = 'unterminated
+^^^^^
+source-code-js-keyword-declaration-const
+     ^
+     source-code-js-whitespace
+      ^^^^^^
+      source-code-js-identifier
+            ^
+            source-code-js-whitespace
+             ^
+             source-code-js-keyword-operator
+              ^
+              source-code-js-whitespace
+               ^
+               source-code-js-literal-string-literal-string-begin
+                ^^^^^^^^^^^^
+                source-code-js-literal-string-literal-string-unquoted
+const afterSingle = 1;
+^^^^^
+source-code-js-keyword-declaration-const
+     ^
+     source-code-js-whitespace
+      ^^^^^^^^^^^
+      source-code-js-identifier
+                 ^
+                 source-code-js-whitespace
+                  ^
+                  source-code-js-keyword-operator
+                   ^
+                   source-code-js-whitespace
+                    ^
+                    source-code-js-literal-number
+                     ^
+                     source-code-js-punctuation
+const double = "unterminated
+^^^^^
+source-code-js-keyword-declaration-const
+     ^
+     source-code-js-whitespace
+      ^^^^^^
+      source-code-js-identifier
+            ^
+            source-code-js-whitespace
+             ^
+             source-code-js-keyword-operator
+              ^
+              source-code-js-whitespace
+               ^
+               source-code-js-literal-string-literal-string-begin
+                ^^^^^^^^^^^^
+                source-code-js-literal-string-literal-string-unquoted
+const afterDouble = true;
+^^^^^
+source-code-js-keyword-declaration-const
+     ^
+     source-code-js-whitespace
+      ^^^^^^^^^^^
+      source-code-js-identifier
+                 ^
+                 source-code-js-whitespace
+                  ^
+                  source-code-js-keyword-operator
+                   ^
+                   source-code-js-whitespace
+                    ^^^^
+                    source-code-js-literal-boolean-true
+                        ^
+                        source-code-js-punctuation
+const continued = 'first\
+^^^^^
+source-code-js-keyword-declaration-const
+     ^
+     source-code-js-whitespace
+      ^^^^^^^^^
+      source-code-js-identifier
+               ^
+               source-code-js-whitespace
+                ^
+                source-code-js-keyword-operator
+                 ^
+                 source-code-js-whitespace
+                  ^
+                  source-code-js-literal-string-literal-string-begin
+                   ^^^^^
+                   source-code-js-literal-string-literal-string-unquoted
+                        ^
+                        source-code-js-literal-string-literal-string-unquoted-literal-string-escape
+second';
+^^^^^^
+source-code-js-literal-string-literal-string-unquoted
+      ^
+      source-code-js-literal-string-literal-string-end
+       ^
+       source-code-js-punctuation
+const afterContinued = null;
+^^^^^
+source-code-js-keyword-declaration-const
+     ^
+     source-code-js-whitespace
+      ^^^^^^^^^^^^^^
+      source-code-js-identifier
+                    ^
+                    source-code-js-whitespace
+                     ^
+                     source-code-js-keyword-operator
+                      ^
+                      source-code-js-whitespace
+                       ^^^^
+                       source-code-js-literal-null
+                           ^
+                           source-code-js-punctuation
+const continuedOddSingle = 'first\\\
+^^^^^
+source-code-js-keyword-declaration-const
+     ^
+     source-code-js-whitespace
+      ^^^^^^^^^^^^^^^^^^
+      source-code-js-identifier
+                        ^
+                        source-code-js-whitespace
+                         ^
+                         source-code-js-keyword-operator
+                          ^
+                          source-code-js-whitespace
+                           ^
+                           source-code-js-literal-string-literal-string-begin
+                            ^^^^^
+                            source-code-js-literal-string-literal-string-unquoted
+                                 ^^
+                                 source-code-js-literal-string-literal-string-unquoted-literal-string-escape
+                                   ^
+                                   source-code-js-literal-string-literal-string-unquoted-literal-string-escape
+second';
+^^^^^^
+source-code-js-literal-string-literal-string-unquoted
+      ^
+      source-code-js-literal-string-literal-string-end
+       ^
+       source-code-js-punctuation
+const continuedOddDouble = "first\\\
+^^^^^
+source-code-js-keyword-declaration-const
+     ^
+     source-code-js-whitespace
+      ^^^^^^^^^^^^^^^^^^
+      source-code-js-identifier
+                        ^
+                        source-code-js-whitespace
+                         ^
+                         source-code-js-keyword-operator
+                          ^
+                          source-code-js-whitespace
+                           ^
+                           source-code-js-literal-string-literal-string-begin
+                            ^^^^^
+                            source-code-js-literal-string-literal-string-unquoted
+                                 ^^
+                                 source-code-js-literal-string-literal-string-unquoted-literal-string-escape
+                                   ^
+                                   source-code-js-literal-string-literal-string-unquoted-literal-string-escape
+second";
+^^^^^^
+source-code-js-literal-string-literal-string-unquoted
+      ^
+      source-code-js-literal-string-literal-string-end
+       ^
+       source-code-js-punctuation
+const afterOddContinuations = true;
+^^^^^
+source-code-js-keyword-declaration-const
+     ^
+     source-code-js-whitespace
+      ^^^^^^^^^^^^^^^^^^^^^
+      source-code-js-identifier
+                           ^
+                           source-code-js-whitespace
+                            ^
+                            source-code-js-keyword-operator
+                             ^
+                             source-code-js-whitespace
+                              ^^^^
+                              source-code-js-literal-boolean-true
+                                  ^
+                                  source-code-js-punctuation
+const escapedBackslash = 'unterminated\\
+^^^^^
+source-code-js-keyword-declaration-const
+     ^
+     source-code-js-whitespace
+      ^^^^^^^^^^^^^^^^
+      source-code-js-identifier
+                      ^
+                      source-code-js-whitespace
+                       ^
+                       source-code-js-keyword-operator
+                        ^
+                        source-code-js-whitespace
+                         ^
+                         source-code-js-literal-string-literal-string-begin
+                          ^^^^^^^^^^^^
+                          source-code-js-literal-string-literal-string-unquoted
+                                      ^^
+                                      source-code-js-literal-string-literal-string-unquoted-literal-string-escape
+const afterEscapedBackslash = 2;
+^^^^^
+source-code-js-keyword-declaration-const
+     ^
+     source-code-js-whitespace
+      ^^^^^^^^^^^^^^^^^^^^^
+      source-code-js-identifier
+                           ^
+                           source-code-js-whitespace
+                            ^
+                            source-code-js-keyword-operator
+                             ^
+                             source-code-js-whitespace
+                              ^
+                              source-code-js-literal-number
+                               ^
+                               source-code-js-punctuation
+
+/* Unterminated comments remain comments through end of input.
+^^
+source-code-js-comment-block-comment-block-begin
+  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  source-code-js-comment-block-comment-block-content
+still a comment
+^^^^^^^^^^^^^^^
+source-code-js-comment-block-comment-block-content

@@ -1,6 +1,8 @@
 ## 0.2.5-wip
 
 - Add initial, basic support for `go`.
+- Add initial, basic support for `typescript` (or `ts`).
+- Improve highlighting of modern ECMAScript syntax for `js`.
 
 ## 0.2.4
 

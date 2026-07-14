@@ -1,0 +1,781 @@
+type EventMap<T extends object> = {
+^^^^
+source-code-typescript-keyword-declaration-type
+    ^
+    source-code-typescript-whitespace
+     ^^^^^^^^
+     source-code-typescript-identifier-type
+             ^
+             source-code-typescript-keyword-operator
+              ^
+              source-code-typescript-identifier-type
+               ^
+               source-code-typescript-whitespace
+                ^^^^^^^
+                source-code-typescript-keyword-declaration-extends
+                       ^
+                       source-code-typescript-whitespace
+                        ^^^^^^
+                        source-code-typescript-identifier-type-built-in
+                              ^
+                              source-code-typescript-keyword-operator
+                               ^
+                               source-code-typescript-whitespace
+                                ^
+                                source-code-typescript-keyword-operator
+                                 ^
+                                 source-code-typescript-whitespace
+                                  ^
+                                  source-code-typescript-punctuation
+  readonly [K in keyof T as `on${Capitalize<string & K>}`]?: (
+^^
+source-code-typescript-whitespace
+  ^^^^^^^^
+  source-code-typescript-keyword-modifier-readonly
+          ^
+          source-code-typescript-whitespace
+           ^
+           source-code-typescript-punctuation
+            ^
+            source-code-typescript-identifier-type
+             ^
+             source-code-typescript-whitespace
+              ^^
+              source-code-typescript-keyword-operator-in
+                ^
+                source-code-typescript-whitespace
+                 ^^^^^
+                 source-code-typescript-keyword-operator-keyof
+                      ^
+                      source-code-typescript-whitespace
+                       ^
+                       source-code-typescript-identifier-type
+                        ^
+                        source-code-typescript-whitespace
+                         ^^
+                         source-code-typescript-keyword-operator-as
+                           ^
+                           source-code-typescript-whitespace
+                            ^
+                            source-code-typescript-literal-string-literal-string-begin
+                             ^^
+                             source-code-typescript-literal-string-literal-string-unquoted
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^
+                               source-code-typescript-literal-string-literal-string-unquoted-literal-string-interpolation
+                                                        ^
+                                                        source-code-typescript-literal-string-literal-string-end
+                                                         ^
+                                                         source-code-typescript-punctuation
+                                                          ^
+                                                          source-code-typescript-keyword-operator
+                                                           ^
+                                                           source-code-typescript-keyword-operator
+                                                            ^
+                                                            source-code-typescript-whitespace
+                                                             ^
+                                                             source-code-typescript-punctuation
+    value: T[K],
+^^^^
+source-code-typescript-whitespace
+    ^^^^^
+    source-code-typescript-identifier
+         ^
+         source-code-typescript-keyword-operator
+          ^
+          source-code-typescript-whitespace
+           ^
+           source-code-typescript-identifier-type
+            ^
+            source-code-typescript-punctuation
+             ^
+             source-code-typescript-identifier-type
+              ^
+              source-code-typescript-punctuation
+               ^
+               source-code-typescript-punctuation
+  ) => void;
+^^
+source-code-typescript-whitespace
+  ^
+  source-code-typescript-punctuation
+   ^
+   source-code-typescript-whitespace
+    ^^
+    source-code-typescript-keyword-operator
+      ^
+      source-code-typescript-whitespace
+       ^^^^
+       source-code-typescript-identifier-type-built-in
+           ^
+           source-code-typescript-punctuation
+};
+^
+source-code-typescript-punctuation
+ ^
+ source-code-typescript-punctuation
+
+type ElementOf<T> = T extends readonly (infer Item)[] ? Item : never;
+^^^^
+source-code-typescript-keyword-declaration-type
+    ^
+    source-code-typescript-whitespace
+     ^^^^^^^^^
+     source-code-typescript-identifier-type
+              ^
+              source-code-typescript-keyword-operator
+               ^
+               source-code-typescript-identifier-type
+                ^
+                source-code-typescript-keyword-operator
+                 ^
+                 source-code-typescript-whitespace
+                  ^
+                  source-code-typescript-keyword-operator
+                   ^
+                   source-code-typescript-whitespace
+                    ^
+                    source-code-typescript-identifier-type
+                     ^
+                     source-code-typescript-whitespace
+                      ^^^^^^^
+                      source-code-typescript-keyword-declaration-extends
+                             ^
+                             source-code-typescript-whitespace
+                              ^^^^^^^^
+                              source-code-typescript-keyword-modifier-readonly
+                                      ^
+                                      source-code-typescript-whitespace
+                                       ^
+                                       source-code-typescript-punctuation
+                                        ^^^^^
+                                        source-code-typescript-keyword-operator-infer
+                                             ^
+                                             source-code-typescript-whitespace
+                                              ^^^^
+                                              source-code-typescript-identifier-type
+                                                  ^
+                                                  source-code-typescript-punctuation
+                                                   ^
+                                                   source-code-typescript-punctuation
+                                                    ^
+                                                    source-code-typescript-punctuation
+                                                     ^
+                                                     source-code-typescript-whitespace
+                                                      ^
+                                                      source-code-typescript-keyword-operator
+                                                       ^
+                                                       source-code-typescript-whitespace
+                                                        ^^^^
+                                                        source-code-typescript-identifier-type
+                                                            ^
+                                                            source-code-typescript-whitespace
+                                                             ^
+                                                             source-code-typescript-keyword-operator
+                                                              ^
+                                                              source-code-typescript-whitespace
+                                                               ^^^^^
+                                                               source-code-typescript-identifier-type-built-in
+                                                                    ^
+                                                                    source-code-typescript-punctuation
+type Loaded = Awaited<ReturnType<typeof load>>;
+^^^^
+source-code-typescript-keyword-declaration-type
+    ^
+    source-code-typescript-whitespace
+     ^^^^^^
+     source-code-typescript-identifier-type
+           ^
+           source-code-typescript-whitespace
+            ^
+            source-code-typescript-keyword-operator
+             ^
+             source-code-typescript-whitespace
+              ^^^^^^^
+              source-code-typescript-identifier-type-built-in
+                     ^
+                     source-code-typescript-keyword-operator
+                      ^^^^^^^^^^
+                      source-code-typescript-identifier-type-built-in
+                                ^
+                                source-code-typescript-keyword-operator
+                                 ^^^^^^
+                                 source-code-typescript-keyword-operator-typeof
+                                       ^
+                                       source-code-typescript-whitespace
+                                        ^^^^
+                                        source-code-typescript-identifier
+                                            ^^
+                                            source-code-typescript-keyword-operator
+                                              ^
+                                              source-code-typescript-punctuation
+const routes = { home: '/' } satisfies Record<string, string>;
+^^^^^
+source-code-typescript-keyword-declaration-const
+     ^
+     source-code-typescript-whitespace
+      ^^^^^^
+      source-code-typescript-identifier
+            ^
+            source-code-typescript-whitespace
+             ^
+             source-code-typescript-keyword-operator
+              ^
+              source-code-typescript-whitespace
+               ^
+               source-code-typescript-punctuation
+                ^
+                source-code-typescript-whitespace
+                 ^^^^
+                 source-code-typescript-identifier
+                     ^
+                     source-code-typescript-keyword-operator
+                      ^
+                      source-code-typescript-whitespace
+                       ^
+                       source-code-typescript-literal-string-literal-string-begin
+                        ^
+                        source-code-typescript-literal-string-literal-string-unquoted
+                         ^
+                         source-code-typescript-literal-string-literal-string-end
+                          ^
+                          source-code-typescript-whitespace
+                           ^
+                           source-code-typescript-punctuation
+                            ^
+                            source-code-typescript-whitespace
+                             ^^^^^^^^^
+                             source-code-typescript-keyword-operator-satisfies
+                                      ^
+                                      source-code-typescript-whitespace
+                                       ^^^^^^
+                                       source-code-typescript-identifier-type-built-in
+                                             ^
+                                             source-code-typescript-keyword-operator
+                                              ^^^^^^
+                                              source-code-typescript-identifier-type-built-in
+                                                    ^
+                                                    source-code-typescript-punctuation
+                                                     ^
+                                                     source-code-typescript-whitespace
+                                                      ^^^^^^
+                                                      source-code-typescript-identifier-type-built-in
+                                                            ^
+                                                            source-code-typescript-keyword-operator
+                                                             ^
+                                                             source-code-typescript-punctuation
+
+enum Direction { Up, Down }
+^^^^
+source-code-typescript-keyword-declaration-enum
+    ^
+    source-code-typescript-whitespace
+     ^^^^^^^^^
+     source-code-typescript-identifier-type
+              ^
+              source-code-typescript-whitespace
+               ^
+               source-code-typescript-punctuation
+                ^
+                source-code-typescript-whitespace
+                 ^^
+                 source-code-typescript-identifier-type
+                   ^
+                   source-code-typescript-punctuation
+                    ^
+                    source-code-typescript-whitespace
+                     ^^^^
+                     source-code-typescript-identifier-type
+                         ^
+                         source-code-typescript-whitespace
+                          ^
+                          source-code-typescript-punctuation
+namespace Models {
+^^^^^^^^^
+source-code-typescript-keyword-declaration-namespace
+         ^
+         source-code-typescript-whitespace
+          ^^^^^^
+          source-code-typescript-identifier-type
+                ^
+                source-code-typescript-whitespace
+                 ^
+                 source-code-typescript-punctuation
+  export interface Entity { id: number; }
+^^
+source-code-typescript-whitespace
+  ^^^^^^
+  source-code-typescript-keyword-declaration-export
+        ^
+        source-code-typescript-whitespace
+         ^^^^^^^^^
+         source-code-typescript-keyword-declaration-interface
+                  ^
+                  source-code-typescript-whitespace
+                   ^^^^^^
+                   source-code-typescript-identifier-type
+                         ^
+                         source-code-typescript-whitespace
+                          ^
+                          source-code-typescript-punctuation
+                           ^
+                           source-code-typescript-whitespace
+                            ^^
+                            source-code-typescript-identifier
+                              ^
+                              source-code-typescript-keyword-operator
+                               ^
+                               source-code-typescript-whitespace
+                                ^^^^^^
+                                source-code-typescript-identifier-type-built-in
+                                      ^
+                                      source-code-typescript-punctuation
+                                       ^
+                                       source-code-typescript-whitespace
+                                        ^
+                                        source-code-typescript-punctuation
+}
+^
+source-code-typescript-punctuation
+
+@framework.sealed
+^^^^^^^^^^^^^^^^^
+source-code-typescript-metadata-annotation
+abstract class Repository<T extends Models.Entity> implements Iterable<T> {
+^^^^^^^^
+source-code-typescript-keyword-modifier-abstract
+        ^
+        source-code-typescript-whitespace
+         ^^^^^
+         source-code-typescript-keyword-declaration-class
+              ^
+              source-code-typescript-whitespace
+               ^^^^^^^^^^
+               source-code-typescript-identifier-type
+                         ^
+                         source-code-typescript-keyword-operator
+                          ^
+                          source-code-typescript-identifier-type
+                           ^
+                           source-code-typescript-whitespace
+                            ^^^^^^^
+                            source-code-typescript-keyword-declaration-extends
+                                   ^
+                                   source-code-typescript-whitespace
+                                    ^^^^^^
+                                    source-code-typescript-identifier-type
+                                          ^
+                                          source-code-typescript-punctuation
+                                           ^^^^^^
+                                           source-code-typescript-identifier-type
+                                                 ^
+                                                 source-code-typescript-keyword-operator
+                                                  ^
+                                                  source-code-typescript-whitespace
+                                                   ^^^^^^^^^^
+                                                   source-code-typescript-keyword-declaration-implements
+                                                             ^
+                                                             source-code-typescript-whitespace
+                                                              ^^^^^^^^
+                                                              source-code-typescript-identifier-type-built-in
+                                                                      ^
+                                                                      source-code-typescript-keyword-operator
+                                                                       ^
+                                                                       source-code-typescript-identifier-type
+                                                                        ^
+                                                                        source-code-typescript-keyword-operator
+                                                                         ^
+                                                                         source-code-typescript-whitespace
+                                                                          ^
+                                                                          source-code-typescript-punctuation
+  accessor current: T | undefined;
+^^
+source-code-typescript-whitespace
+  ^^^^^^^^
+  source-code-typescript-keyword-modifier-accessor
+          ^
+          source-code-typescript-whitespace
+           ^^^^^^^
+           source-code-typescript-identifier
+                  ^
+                  source-code-typescript-keyword-operator
+                   ^
+                   source-code-typescript-whitespace
+                    ^
+                    source-code-typescript-identifier-type
+                     ^
+                     source-code-typescript-whitespace
+                      ^
+                      source-code-typescript-keyword-operator
+                       ^
+                       source-code-typescript-whitespace
+                        ^^^^^^^^^
+                        source-code-typescript-identifier-type-built-in
+                                 ^
+                                 source-code-typescript-punctuation
+  #cache = new Map<string, T>();
+^^
+source-code-typescript-whitespace
+  ^^^^^^
+  source-code-typescript-identifier-private
+        ^
+        source-code-typescript-whitespace
+         ^
+         source-code-typescript-keyword-operator
+          ^
+          source-code-typescript-whitespace
+           ^^^
+           source-code-typescript-keyword-new
+              ^
+              source-code-typescript-whitespace
+               ^^^
+               source-code-typescript-identifier-type-built-in
+                  ^
+                  source-code-typescript-keyword-operator
+                   ^^^^^^
+                   source-code-typescript-identifier-type-built-in
+                         ^
+                         source-code-typescript-punctuation
+                          ^
+                          source-code-typescript-whitespace
+                           ^
+                           source-code-typescript-identifier-type
+                            ^
+                            source-code-typescript-keyword-operator
+                             ^
+                             source-code-typescript-punctuation
+                              ^
+                              source-code-typescript-punctuation
+                               ^
+                               source-code-typescript-punctuation
+
+  protected constructor(public readonly name: string) {}
+^^
+source-code-typescript-whitespace
+  ^^^^^^^^^
+  source-code-typescript-keyword-modifier-protected
+           ^
+           source-code-typescript-whitespace
+            ^^^^^^^^^^^
+            source-code-typescript-identifier-function-constructor
+                       ^
+                       source-code-typescript-punctuation
+                        ^^^^^^
+                        source-code-typescript-keyword-modifier-public
+                              ^
+                              source-code-typescript-whitespace
+                               ^^^^^^^^
+                               source-code-typescript-keyword-modifier-readonly
+                                       ^
+                                       source-code-typescript-whitespace
+                                        ^^^^
+                                        source-code-typescript-identifier
+                                            ^
+                                            source-code-typescript-keyword-operator
+                                             ^
+                                             source-code-typescript-whitespace
+                                              ^^^^^^
+                                              source-code-typescript-identifier-type-built-in
+                                                    ^
+                                                    source-code-typescript-punctuation
+                                                     ^
+                                                     source-code-typescript-whitespace
+                                                      ^
+                                                      source-code-typescript-punctuation
+                                                       ^
+                                                       source-code-typescript-punctuation
+  abstract load(id: number): Promise<T>;
+^^
+source-code-typescript-whitespace
+  ^^^^^^^^
+  source-code-typescript-keyword-modifier-abstract
+          ^
+          source-code-typescript-whitespace
+           ^^^^
+           source-code-typescript-identifier-function
+               ^
+               source-code-typescript-punctuation
+                ^^
+                source-code-typescript-identifier
+                  ^
+                  source-code-typescript-keyword-operator
+                   ^
+                   source-code-typescript-whitespace
+                    ^^^^^^
+                    source-code-typescript-identifier-type-built-in
+                          ^
+                          source-code-typescript-punctuation
+                           ^
+                           source-code-typescript-keyword-operator
+                            ^
+                            source-code-typescript-whitespace
+                             ^^^^^^^
+                             source-code-typescript-identifier-type-built-in
+                                    ^
+                                    source-code-typescript-keyword-operator
+                                     ^
+                                     source-code-typescript-identifier-type
+                                      ^
+                                      source-code-typescript-keyword-operator
+                                       ^
+                                       source-code-typescript-punctuation
+  override toString(): string { return this.name; }
+^^
+source-code-typescript-whitespace
+  ^^^^^^^^
+  source-code-typescript-keyword-modifier-override
+          ^
+          source-code-typescript-whitespace
+           ^^^^^^^^
+           source-code-typescript-identifier-function
+                   ^
+                   source-code-typescript-punctuation
+                    ^
+                    source-code-typescript-punctuation
+                     ^
+                     source-code-typescript-keyword-operator
+                      ^
+                      source-code-typescript-whitespace
+                       ^^^^^^
+                       source-code-typescript-identifier-type-built-in
+                             ^
+                             source-code-typescript-whitespace
+                              ^
+                              source-code-typescript-punctuation
+                               ^
+                               source-code-typescript-whitespace
+                                ^^^^^^
+                                source-code-typescript-keyword-control-return
+                                      ^
+                                      source-code-typescript-whitespace
+                                       ^^^^
+                                       source-code-typescript-keyword-this
+                                           ^
+                                           source-code-typescript-punctuation
+                                            ^^^^
+                                            source-code-typescript-identifier
+                                                ^
+                                                source-code-typescript-punctuation
+                                                 ^
+                                                 source-code-typescript-whitespace
+                                                  ^
+                                                  source-code-typescript-punctuation
+  [Symbol.iterator](): Iterator<T> { return this.#cache.values(); }
+^^
+source-code-typescript-whitespace
+  ^
+  source-code-typescript-punctuation
+   ^^^^^^
+   source-code-typescript-identifier-type
+         ^
+         source-code-typescript-punctuation
+          ^^^^^^^^
+          source-code-typescript-identifier
+                  ^
+                  source-code-typescript-punctuation
+                   ^
+                   source-code-typescript-punctuation
+                    ^
+                    source-code-typescript-punctuation
+                     ^
+                     source-code-typescript-keyword-operator
+                      ^
+                      source-code-typescript-whitespace
+                       ^^^^^^^^
+                       source-code-typescript-identifier-type-built-in
+                               ^
+                               source-code-typescript-keyword-operator
+                                ^
+                                source-code-typescript-identifier-type
+                                 ^
+                                 source-code-typescript-keyword-operator
+                                  ^
+                                  source-code-typescript-whitespace
+                                   ^
+                                   source-code-typescript-punctuation
+                                    ^
+                                    source-code-typescript-whitespace
+                                     ^^^^^^
+                                     source-code-typescript-keyword-control-return
+                                           ^
+                                           source-code-typescript-whitespace
+                                            ^^^^
+                                            source-code-typescript-keyword-this
+                                                ^
+                                                source-code-typescript-punctuation
+                                                 ^^^^^^
+                                                 source-code-typescript-identifier-private
+                                                       ^
+                                                       source-code-typescript-punctuation
+                                                        ^^^^^^
+                                                        source-code-typescript-identifier-function
+                                                              ^
+                                                              source-code-typescript-punctuation
+                                                               ^
+                                                               source-code-typescript-punctuation
+                                                                ^
+                                                                source-code-typescript-punctuation
+                                                                 ^
+                                                                 source-code-typescript-whitespace
+                                                                  ^
+                                                                  source-code-typescript-punctuation
+}
+^
+source-code-typescript-punctuation
+
+function parse(value: string): number;
+^^^^^^^^
+source-code-typescript-keyword-declaration-function
+        ^
+        source-code-typescript-whitespace
+         ^^^^^
+         source-code-typescript-identifier-function
+              ^
+              source-code-typescript-punctuation
+               ^^^^^
+               source-code-typescript-identifier
+                    ^
+                    source-code-typescript-keyword-operator
+                     ^
+                     source-code-typescript-whitespace
+                      ^^^^^^
+                      source-code-typescript-identifier-type-built-in
+                            ^
+                            source-code-typescript-punctuation
+                             ^
+                             source-code-typescript-keyword-operator
+                              ^
+                              source-code-typescript-whitespace
+                               ^^^^^^
+                               source-code-typescript-identifier-type-built-in
+                                     ^
+                                     source-code-typescript-punctuation
+function parse(value: number): string;
+^^^^^^^^
+source-code-typescript-keyword-declaration-function
+        ^
+        source-code-typescript-whitespace
+         ^^^^^
+         source-code-typescript-identifier-function
+              ^
+              source-code-typescript-punctuation
+               ^^^^^
+               source-code-typescript-identifier
+                    ^
+                    source-code-typescript-keyword-operator
+                     ^
+                     source-code-typescript-whitespace
+                      ^^^^^^
+                      source-code-typescript-identifier-type-built-in
+                            ^
+                            source-code-typescript-punctuation
+                             ^
+                             source-code-typescript-keyword-operator
+                              ^
+                              source-code-typescript-whitespace
+                               ^^^^^^
+                               source-code-typescript-identifier-type-built-in
+                                     ^
+                                     source-code-typescript-punctuation
+function parse(value: string | number): string | number {
+^^^^^^^^
+source-code-typescript-keyword-declaration-function
+        ^
+        source-code-typescript-whitespace
+         ^^^^^
+         source-code-typescript-identifier-function
+              ^
+              source-code-typescript-punctuation
+               ^^^^^
+               source-code-typescript-identifier
+                    ^
+                    source-code-typescript-keyword-operator
+                     ^
+                     source-code-typescript-whitespace
+                      ^^^^^^
+                      source-code-typescript-identifier-type-built-in
+                            ^
+                            source-code-typescript-whitespace
+                             ^
+                             source-code-typescript-keyword-operator
+                              ^
+                              source-code-typescript-whitespace
+                               ^^^^^^
+                               source-code-typescript-identifier-type-built-in
+                                     ^
+                                     source-code-typescript-punctuation
+                                      ^
+                                      source-code-typescript-keyword-operator
+                                       ^
+                                       source-code-typescript-whitespace
+                                        ^^^^^^
+                                        source-code-typescript-identifier-type-built-in
+                                              ^
+                                              source-code-typescript-whitespace
+                                               ^
+                                               source-code-typescript-keyword-operator
+                                                ^
+                                                source-code-typescript-whitespace
+                                                 ^^^^^^
+                                                 source-code-typescript-identifier-type-built-in
+                                                       ^
+                                                       source-code-typescript-whitespace
+                                                        ^
+                                                        source-code-typescript-punctuation
+  return typeof value === 'string' ? value.length : value.toString();
+^^
+source-code-typescript-whitespace
+  ^^^^^^
+  source-code-typescript-keyword-control-return
+        ^
+        source-code-typescript-whitespace
+         ^^^^^^
+         source-code-typescript-keyword-operator-typeof
+               ^
+               source-code-typescript-whitespace
+                ^^^^^
+                source-code-typescript-identifier
+                     ^
+                     source-code-typescript-whitespace
+                      ^^^
+                      source-code-typescript-keyword-operator
+                         ^
+                         source-code-typescript-whitespace
+                          ^
+                          source-code-typescript-literal-string-literal-string-begin
+                           ^^^^^^
+                           source-code-typescript-literal-string-literal-string-unquoted
+                                 ^
+                                 source-code-typescript-literal-string-literal-string-end
+                                  ^
+                                  source-code-typescript-whitespace
+                                   ^
+                                   source-code-typescript-keyword-operator
+                                    ^
+                                    source-code-typescript-whitespace
+                                     ^^^^^
+                                     source-code-typescript-identifier
+                                          ^
+                                          source-code-typescript-punctuation
+                                           ^^^^^^
+                                           source-code-typescript-identifier
+                                                 ^
+                                                 source-code-typescript-whitespace
+                                                  ^
+                                                  source-code-typescript-keyword-operator
+                                                   ^
+                                                   source-code-typescript-whitespace
+                                                    ^^^^^
+                                                    source-code-typescript-identifier
+                                                         ^
+                                                         source-code-typescript-punctuation
+                                                          ^^^^^^^^
+                                                          source-code-typescript-identifier-function
+                                                                  ^
+                                                                  source-code-typescript-punctuation
+                                                                   ^
+                                                                   source-code-typescript-punctuation
+                                                                    ^
+                                                                    source-code-typescript-punctuation
+}
+^
+source-code-typescript-punctuation

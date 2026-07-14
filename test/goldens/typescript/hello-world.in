@@ -1,0 +1,11 @@
+interface User {
+  readonly name: string;
+  age?: number;
+}
+
+function greet<T extends User>(user: T): string {
+  return `Hello, ${user.name}!`;
+}
+
+const ada: User = { name: 'Ada', age: 36 };
+console.log(greet(ada));

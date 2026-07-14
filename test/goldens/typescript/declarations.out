@@ -1,0 +1,557 @@
+// @ts-check
+^^^^^^^^^^^^
+source-code-typescript-metadata-preprocessor-directive
+/// <reference types="node" />
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+source-code-typescript-metadata-preprocessor
+/// <reference lib="es2023" />
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+source-code-typescript-metadata-preprocessor
+/// <reference no-default-lib="true" />
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+source-code-typescript-metadata-preprocessor
+/// <amd-module name="widgets" />
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+source-code-typescript-metadata-preprocessor
+
+/**
+^^^
+source-code-typescript-comment-block-doc-comment-block-doc-begin
+ * Loads a widget.
+^
+source-code-typescript-comment-block-doc-comment-block-doc-content-comment-block-doc-content
+ ^
+ source-code-typescript-comment-block-doc-comment-block-doc-content-comment-block-doc-content
+  ^^^^^^^^^^^^^^^^
+  source-code-typescript-comment-block-doc-comment-block-doc-content-comment-block-doc-content
+ * @param id The widget identifier.
+^
+source-code-typescript-comment-block-doc-comment-block-doc-content-comment-block-doc-content
+ ^
+ source-code-typescript-comment-block-doc-comment-block-doc-content-comment-block-doc-content
+  ^
+  source-code-typescript-comment-block-doc-comment-block-doc-content-comment-block-doc-content
+   ^^^^^^
+   source-code-typescript-comment-block-doc-comment-block-doc-content-metadata-annotation
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+         source-code-typescript-comment-block-doc-comment-block-doc-content-comment-block-doc-content
+ * @returns The matching widget.
+^
+source-code-typescript-comment-block-doc-comment-block-doc-content-comment-block-doc-content
+ ^
+ source-code-typescript-comment-block-doc-comment-block-doc-content-comment-block-doc-content
+  ^
+  source-code-typescript-comment-block-doc-comment-block-doc-content-comment-block-doc-content
+   ^^^^^^^^
+   source-code-typescript-comment-block-doc-comment-block-doc-content-metadata-annotation
+           ^^^^^^^^^^^^^^^^^^^^^
+           source-code-typescript-comment-block-doc-comment-block-doc-content-comment-block-doc-content
+ */
+^
+source-code-typescript-comment-block-doc-comment-block-doc-content-comment-block-doc-content
+ ^^
+ source-code-typescript-comment-block-doc-comment-block-doc-end
+declare function getWidget(id: string): Widget;
+^^^^^^^
+source-code-typescript-keyword-modifier-declare
+       ^
+       source-code-typescript-whitespace
+        ^^^^^^^^
+        source-code-typescript-keyword-declaration-function
+                ^
+                source-code-typescript-whitespace
+                 ^^^^^^^^^
+                 source-code-typescript-identifier-function
+                          ^
+                          source-code-typescript-punctuation
+                           ^^
+                           source-code-typescript-identifier
+                             ^
+                             source-code-typescript-keyword-operator
+                              ^
+                              source-code-typescript-whitespace
+                               ^^^^^^
+                               source-code-typescript-identifier-type-built-in
+                                     ^
+                                     source-code-typescript-punctuation
+                                      ^
+                                      source-code-typescript-keyword-operator
+                                       ^
+                                       source-code-typescript-whitespace
+                                        ^^^^^^
+                                        source-code-typescript-identifier-type
+                                              ^
+                                              source-code-typescript-punctuation
+declare function getWidget(id: number): Widget[];
+^^^^^^^
+source-code-typescript-keyword-modifier-declare
+       ^
+       source-code-typescript-whitespace
+        ^^^^^^^^
+        source-code-typescript-keyword-declaration-function
+                ^
+                source-code-typescript-whitespace
+                 ^^^^^^^^^
+                 source-code-typescript-identifier-function
+                          ^
+                          source-code-typescript-punctuation
+                           ^^
+                           source-code-typescript-identifier
+                             ^
+                             source-code-typescript-keyword-operator
+                              ^
+                              source-code-typescript-whitespace
+                               ^^^^^^
+                               source-code-typescript-identifier-type-built-in
+                                     ^
+                                     source-code-typescript-punctuation
+                                      ^
+                                      source-code-typescript-keyword-operator
+                                       ^
+                                       source-code-typescript-whitespace
+                                        ^^^^^^
+                                        source-code-typescript-identifier-type
+                                              ^
+                                              source-code-typescript-punctuation
+                                               ^
+                                               source-code-typescript-punctuation
+                                                ^
+                                                source-code-typescript-punctuation
+
+declare namespace WidgetAPI {
+^^^^^^^
+source-code-typescript-keyword-modifier-declare
+       ^
+       source-code-typescript-whitespace
+        ^^^^^^^^^
+        source-code-typescript-keyword-declaration-namespace
+                 ^
+                 source-code-typescript-whitespace
+                  ^^^^^^^^^
+                  source-code-typescript-identifier-type
+                           ^
+                           source-code-typescript-whitespace
+                            ^
+                            source-code-typescript-punctuation
+  interface Widget { readonly id: string; }
+^^
+source-code-typescript-whitespace
+  ^^^^^^^^^
+  source-code-typescript-keyword-declaration-interface
+           ^
+           source-code-typescript-whitespace
+            ^^^^^^
+            source-code-typescript-identifier-type
+                  ^
+                  source-code-typescript-whitespace
+                   ^
+                   source-code-typescript-punctuation
+                    ^
+                    source-code-typescript-whitespace
+                     ^^^^^^^^
+                     source-code-typescript-keyword-modifier-readonly
+                             ^
+                             source-code-typescript-whitespace
+                              ^^
+                              source-code-typescript-identifier
+                                ^
+                                source-code-typescript-keyword-operator
+                                 ^
+                                 source-code-typescript-whitespace
+                                  ^^^^^^
+                                  source-code-typescript-identifier-type-built-in
+                                        ^
+                                        source-code-typescript-punctuation
+                                         ^
+                                         source-code-typescript-whitespace
+                                          ^
+                                          source-code-typescript-punctuation
+  type Handler = (widget: Widget) => void;
+^^
+source-code-typescript-whitespace
+  ^^^^
+  source-code-typescript-keyword-declaration-type
+      ^
+      source-code-typescript-whitespace
+       ^^^^^^^
+       source-code-typescript-identifier-type
+              ^
+              source-code-typescript-whitespace
+               ^
+               source-code-typescript-keyword-operator
+                ^
+                source-code-typescript-whitespace
+                 ^
+                 source-code-typescript-punctuation
+                  ^^^^^^
+                  source-code-typescript-identifier
+                        ^
+                        source-code-typescript-keyword-operator
+                         ^
+                         source-code-typescript-whitespace
+                          ^^^^^^
+                          source-code-typescript-identifier-type
+                                ^
+                                source-code-typescript-punctuation
+                                 ^
+                                 source-code-typescript-whitespace
+                                  ^^
+                                  source-code-typescript-keyword-operator
+                                    ^
+                                    source-code-typescript-whitespace
+                                     ^^^^
+                                     source-code-typescript-identifier-type-built-in
+                                         ^
+                                         source-code-typescript-punctuation
+}
+^
+source-code-typescript-punctuation
+
+declare module "virtual:widgets" {
+^^^^^^^
+source-code-typescript-keyword-modifier-declare
+       ^
+       source-code-typescript-whitespace
+        ^^^^^^
+        source-code-typescript-keyword-declaration-module
+              ^
+              source-code-typescript-whitespace
+               ^
+               source-code-typescript-literal-string-literal-string-begin
+                ^^^^^^^^^^^^^^^
+                source-code-typescript-literal-string-literal-string-unquoted
+                               ^
+                               source-code-typescript-literal-string-literal-string-end
+                                ^
+                                source-code-typescript-whitespace
+                                 ^
+                                 source-code-typescript-punctuation
+  export type Widget = WidgetAPI.Widget;
+^^
+source-code-typescript-whitespace
+  ^^^^^^
+  source-code-typescript-keyword-declaration-export
+        ^
+        source-code-typescript-whitespace
+         ^^^^
+         source-code-typescript-keyword-declaration-type
+             ^
+             source-code-typescript-whitespace
+              ^^^^^^
+              source-code-typescript-identifier-type
+                    ^
+                    source-code-typescript-whitespace
+                     ^
+                     source-code-typescript-keyword-operator
+                      ^
+                      source-code-typescript-whitespace
+                       ^^^^^^^^^
+                       source-code-typescript-identifier-type
+                                ^
+                                source-code-typescript-punctuation
+                                 ^^^^^^
+                                 source-code-typescript-identifier-type
+                                       ^
+                                       source-code-typescript-punctuation
+  export default function load(): Promise<Widget>;
+^^
+source-code-typescript-whitespace
+  ^^^^^^
+  source-code-typescript-keyword-declaration-export
+        ^
+        source-code-typescript-whitespace
+         ^^^^^^^
+         source-code-typescript-keyword-control-default
+                ^
+                source-code-typescript-whitespace
+                 ^^^^^^^^
+                 source-code-typescript-keyword-declaration-function
+                         ^
+                         source-code-typescript-whitespace
+                          ^^^^
+                          source-code-typescript-identifier-function
+                              ^
+                              source-code-typescript-punctuation
+                               ^
+                               source-code-typescript-punctuation
+                                ^
+                                source-code-typescript-keyword-operator
+                                 ^
+                                 source-code-typescript-whitespace
+                                  ^^^^^^^
+                                  source-code-typescript-identifier-type-built-in
+                                         ^
+                                         source-code-typescript-keyword-operator
+                                          ^^^^^^
+                                          source-code-typescript-identifier-type
+                                                ^
+                                                source-code-typescript-keyword-operator
+                                                 ^
+                                                 source-code-typescript-punctuation
+}
+^
+source-code-typescript-punctuation
+
+declare global {
+^^^^^^^
+source-code-typescript-keyword-modifier-declare
+       ^
+       source-code-typescript-whitespace
+        ^^^^^^
+        source-code-typescript-keyword-global
+              ^
+              source-code-typescript-whitespace
+               ^
+               source-code-typescript-punctuation
+  const BUILD_ID: unique symbol;
+^^
+source-code-typescript-whitespace
+  ^^^^^
+  source-code-typescript-keyword-declaration-const
+       ^
+       source-code-typescript-whitespace
+        ^^^^^^^^
+        source-code-typescript-identifier-type
+                ^
+                source-code-typescript-keyword-operator
+                 ^
+                 source-code-typescript-whitespace
+                  ^^^^^^
+                  source-code-typescript-keyword-operator-unique
+                        ^
+                        source-code-typescript-whitespace
+                         ^^^^^^
+                         source-code-typescript-identifier-type-built-in
+                               ^
+                               source-code-typescript-punctuation
+}
+^
+source-code-typescript-punctuation
+
+import type { Options } from './options.js';
+^^^^^^
+source-code-typescript-keyword-declaration-import
+      ^
+      source-code-typescript-whitespace
+       ^^^^
+       source-code-typescript-keyword-declaration-type
+           ^
+           source-code-typescript-whitespace
+            ^
+            source-code-typescript-punctuation
+             ^
+             source-code-typescript-whitespace
+              ^^^^^^^
+              source-code-typescript-identifier-type
+                     ^
+                     source-code-typescript-whitespace
+                      ^
+                      source-code-typescript-punctuation
+                       ^
+                       source-code-typescript-whitespace
+                        ^^^^
+                        source-code-typescript-keyword-from
+                            ^
+                            source-code-typescript-whitespace
+                             ^
+                             source-code-typescript-literal-string-literal-string-begin
+                              ^^^^^^^^^^^^
+                              source-code-typescript-literal-string-literal-string-unquoted
+                                          ^
+                                          source-code-typescript-literal-string-literal-string-end
+                                           ^
+                                           source-code-typescript-punctuation
+export type * from './public.js';
+^^^^^^
+source-code-typescript-keyword-declaration-export
+      ^
+      source-code-typescript-whitespace
+       ^^^^
+       source-code-typescript-keyword-declaration-type
+           ^
+           source-code-typescript-whitespace
+            ^
+            source-code-typescript-keyword-operator
+             ^
+             source-code-typescript-whitespace
+              ^^^^
+              source-code-typescript-keyword-from
+                  ^
+                  source-code-typescript-whitespace
+                   ^
+                   source-code-typescript-literal-string-literal-string-begin
+                    ^^^^^^^^^^^
+                    source-code-typescript-literal-string-literal-string-unquoted
+                               ^
+                               source-code-typescript-literal-string-literal-string-end
+                                ^
+                                source-code-typescript-punctuation
+import data from './data.json' with { type: 'json' };
+^^^^^^
+source-code-typescript-keyword-declaration-import
+      ^
+      source-code-typescript-whitespace
+       ^^^^
+       source-code-typescript-identifier
+           ^
+           source-code-typescript-whitespace
+            ^^^^
+            source-code-typescript-keyword-from
+                ^
+                source-code-typescript-whitespace
+                 ^
+                 source-code-typescript-literal-string-literal-string-begin
+                  ^^^^^^^^^^^
+                  source-code-typescript-literal-string-literal-string-unquoted
+                             ^
+                             source-code-typescript-literal-string-literal-string-end
+                              ^
+                              source-code-typescript-whitespace
+                               ^^^^
+                               source-code-typescript-keyword-with
+                                   ^
+                                   source-code-typescript-whitespace
+                                    ^
+                                    source-code-typescript-punctuation
+                                     ^
+                                     source-code-typescript-whitespace
+                                      ^^^^
+                                      source-code-typescript-keyword-declaration-type
+                                          ^
+                                          source-code-typescript-keyword-operator
+                                           ^
+                                           source-code-typescript-whitespace
+                                            ^
+                                            source-code-typescript-literal-string-literal-string-begin
+                                             ^^^^
+                                             source-code-typescript-literal-string-literal-string-unquoted
+                                                 ^
+                                                 source-code-typescript-literal-string-literal-string-end
+                                                  ^
+                                                  source-code-typescript-whitespace
+                                                   ^
+                                                   source-code-typescript-punctuation
+                                                    ^
+                                                    source-code-typescript-punctuation
+import defer * as deferred from './deferred.js';
+^^^^^^
+source-code-typescript-keyword-declaration-import
+      ^
+      source-code-typescript-whitespace
+       ^^^^^
+       source-code-typescript-keyword-defer
+            ^
+            source-code-typescript-whitespace
+             ^
+             source-code-typescript-keyword-operator
+              ^
+              source-code-typescript-whitespace
+               ^^
+               source-code-typescript-keyword-operator-as
+                 ^
+                 source-code-typescript-whitespace
+                  ^^^^^^^^
+                  source-code-typescript-identifier
+                          ^
+                          source-code-typescript-whitespace
+                           ^^^^
+                           source-code-typescript-keyword-from
+                               ^
+                               source-code-typescript-whitespace
+                                ^
+                                source-code-typescript-literal-string-literal-string-begin
+                                 ^^^^^^^^^^^^^
+                                 source-code-typescript-literal-string-literal-string-unquoted
+                                              ^
+                                              source-code-typescript-literal-string-literal-string-end
+                                               ^
+                                               source-code-typescript-punctuation
+
+await using resource = deferred.open(data satisfies Options);
+^^^^^
+source-code-typescript-keyword-control-await
+     ^
+     source-code-typescript-whitespace
+      ^^^^^
+      source-code-typescript-keyword-declaration-using
+           ^
+           source-code-typescript-whitespace
+            ^^^^^^^^
+            source-code-typescript-identifier
+                    ^
+                    source-code-typescript-whitespace
+                     ^
+                     source-code-typescript-keyword-operator
+                      ^
+                      source-code-typescript-whitespace
+                       ^^^^^^^^
+                       source-code-typescript-identifier
+                               ^
+                               source-code-typescript-punctuation
+                                ^^^^
+                                source-code-typescript-identifier-function
+                                    ^
+                                    source-code-typescript-punctuation
+                                     ^^^^
+                                     source-code-typescript-identifier
+                                         ^
+                                         source-code-typescript-whitespace
+                                          ^^^^^^^^^
+                                          source-code-typescript-keyword-operator-satisfies
+                                                   ^
+                                                   source-code-typescript-whitespace
+                                                    ^^^^^^^
+                                                    source-code-typescript-identifier-type
+                                                           ^
+                                                           source-code-typescript-punctuation
+                                                            ^
+                                                            source-code-typescript-punctuation
+
+// @ts-expect-error Boolean input is intentionally unsupported.
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+source-code-typescript-metadata-preprocessor-directive
+getWidget(false);
+^^^^^^^^^
+source-code-typescript-identifier-function
+         ^
+         source-code-typescript-punctuation
+          ^^^^^
+          source-code-typescript-literal-boolean-false
+               ^
+               source-code-typescript-punctuation
+                ^
+                source-code-typescript-punctuation
+
+/// @ts-ignore Symbol input is intentionally unsupported.
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+source-code-typescript-metadata-preprocessor-directive
+getWidget(Symbol());
+^^^^^^^^^
+source-code-typescript-identifier-function
+         ^
+         source-code-typescript-punctuation
+          ^^^^^^
+          source-code-typescript-identifier-type
+                ^
+                source-code-typescript-punctuation
+                 ^
+                 source-code-typescript-punctuation
+                  ^
+                  source-code-typescript-punctuation
+                   ^
+                   source-code-typescript-punctuation
+
+/* @ts-expect-error BigInt input is intentionally unsupported. */
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+source-code-typescript-metadata-preprocessor-directive
+getWidget(1n);
+^^^^^^^^^
+source-code-typescript-identifier-function
+         ^
+         source-code-typescript-punctuation
+          ^^
+          source-code-typescript-literal-number
+            ^
+            source-code-typescript-punctuation
+             ^
+             source-code-typescript-punctuation

@@ -1,6 +1,6 @@
 const message = 'Hello, world!';
 ^^^^^
-source-code-js-keyword-const
+source-code-js-keyword-declaration-const
      ^
      source-code-js-whitespace
       ^^^^^^^

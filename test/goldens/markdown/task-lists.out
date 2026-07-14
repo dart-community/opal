@@ -1,0 +1,24 @@
+- [x] Complete
+^^^^^^
+source-text-markup-markdown-punctuation-task-list
+      ^^^^^^^^
+      source-text-markup-markdown-markup-text
+* [ ] Incomplete
+^^^^^^
+source-text-markup-markdown-punctuation-task-list
+      ^^^^^^^^^^
+      source-text-markup-markdown-markup-text
++ [X] Complete
+^^^^^^
+source-text-markup-markdown-punctuation-task-list
+      ^^^^^^^^
+      source-text-markup-markdown-markup-text
+- Ordinary item
+^^
+source-text-markup-markdown-punctuation-list-marker
+  ^^^^^^^^
+  source-text-markup-markdown-markup-text
+          ^
+          source-text-markup-markdown-whitespace
+           ^^^^
+           source-text-markup-markdown-markup-text

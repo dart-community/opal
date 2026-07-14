@@ -40,6 +40,13 @@ void main() {
         expect(registry['GO'], same(BuiltInLanguages.go));
       });
 
+      test('includes typescript language and fallback', () {
+        expect(registry['typescript'], same(BuiltInLanguages.typescript));
+        expect(registry['ts'], same(BuiltInLanguages.typescript));
+        expect(registry['typescript'], isNot(same(BuiltInLanguages.js)));
+        expect(registry['ts'], isNot(same(BuiltInLanguages.js)));
+      });
+
       test('returns null for unknown language', () {
         expect(registry['unknown'], isNull);
         expect(registry['perl'], isNull);
@@ -62,7 +69,7 @@ void main() {
       test('includes fallback mappings by default', () {
         expect(registry['yml'], same(BuiltInLanguages.yaml));
         expect(registry['javascript'], same(BuiltInLanguages.js));
-        expect(registry['ts'], same(BuiltInLanguages.js));
+        expect(registry['ts'], same(BuiltInLanguages.typescript));
       });
     });
 
@@ -140,8 +147,8 @@ void main() {
           // Test the yml -> yaml fallback from the provided defaults.
           expect(registry['yml'], same(BuiltInLanguages.yaml));
           expect(registry['javascript'], same(registry['js']));
-          expect(registry['typescript'], same(registry['js']));
-          expect(registry['ts'], same(registry['js']));
+          expect(registry['typescript'], same(BuiltInLanguages.typescript));
+          expect(registry['ts'], same(BuiltInLanguages.typescript));
         },
       );
 

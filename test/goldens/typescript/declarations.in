@@ -1,0 +1,43 @@
+// @ts-check
+/// <reference types="node" />
+/// <reference lib="es2023" />
+/// <reference no-default-lib="true" />
+/// <amd-module name="widgets" />
+
+/**
+ * Loads a widget.
+ * @param id The widget identifier.
+ * @returns The matching widget.
+ */
+declare function getWidget(id: string): Widget;
+declare function getWidget(id: number): Widget[];
+
+declare namespace WidgetAPI {
+  interface Widget { readonly id: string; }
+  type Handler = (widget: Widget) => void;
+}
+
+declare module "virtual:widgets" {
+  export type Widget = WidgetAPI.Widget;
+  export default function load(): Promise<Widget>;
+}
+
+declare global {
+  const BUILD_ID: unique symbol;
+}
+
+import type { Options } from './options.js';
+export type * from './public.js';
+import data from './data.json' with { type: 'json' };
+import defer * as deferred from './deferred.js';
+
+await using resource = deferred.open(data satisfies Options);
+
+// @ts-expect-error Boolean input is intentionally unsupported.
+getWidget(false);
+
+/// @ts-ignore Symbol input is intentionally unsupported.
+getWidget(Symbol());
+
+/* @ts-expect-error BigInt input is intentionally unsupported. */
+getWidget(1n);

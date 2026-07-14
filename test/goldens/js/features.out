@@ -1,0 +1,617 @@
+#!/usr/bin/env node
+^^^^^^^^^^^^^^^^^^^
+source-code-js-comment-line
+
+import config from './config.json' with { type: 'json' };
+^^^^^^
+source-code-js-keyword-declaration-import
+      ^
+      source-code-js-whitespace
+       ^^^^^^
+       source-code-js-identifier
+             ^
+             source-code-js-whitespace
+              ^^^^
+              source-code-js-keyword-from
+                  ^
+                  source-code-js-whitespace
+                   ^
+                   source-code-js-literal-string-literal-string-begin
+                    ^^^^^^^^^^^^^
+                    source-code-js-literal-string-literal-string-unquoted
+                                 ^
+                                 source-code-js-literal-string-literal-string-end
+                                  ^
+                                  source-code-js-whitespace
+                                   ^^^^
+                                   source-code-js-keyword-with
+                                       ^
+                                       source-code-js-whitespace
+                                        ^
+                                        source-code-js-punctuation
+                                         ^
+                                         source-code-js-whitespace
+                                          ^^^^
+                                          source-code-js-identifier
+                                              ^
+                                              source-code-js-keyword-operator
+                                               ^
+                                               source-code-js-whitespace
+                                                ^
+                                                source-code-js-literal-string-literal-string-begin
+                                                 ^^^^
+                                                 source-code-js-literal-string-literal-string-unquoted
+                                                     ^
+                                                     source-code-js-literal-string-literal-string-end
+                                                      ^
+                                                      source-code-js-whitespace
+                                                       ^
+                                                       source-code-js-punctuation
+                                                        ^
+                                                        source-code-js-punctuation
+
+class Counter {
+^^^^^
+source-code-js-keyword-declaration-class
+     ^
+     source-code-js-whitespace
+      ^^^^^^^
+      source-code-js-identifier
+             ^
+             source-code-js-whitespace
+              ^
+              source-code-js-punctuation
+  #value = 0;
+^^
+source-code-js-whitespace
+  ^^^^^^
+  source-code-js-identifier-private
+        ^
+        source-code-js-whitespace
+         ^
+         source-code-js-keyword-operator
+          ^
+          source-code-js-whitespace
+           ^
+           source-code-js-literal-number
+            ^
+            source-code-js-punctuation
+  static instances = 0;
+^^
+source-code-js-whitespace
+  ^^^^^^
+  source-code-js-keyword-static
+        ^
+        source-code-js-whitespace
+         ^^^^^^^^^
+         source-code-js-identifier
+                  ^
+                  source-code-js-whitespace
+                   ^
+                   source-code-js-keyword-operator
+                    ^
+                    source-code-js-whitespace
+                     ^
+                     source-code-js-literal-number
+                      ^
+                      source-code-js-punctuation
+
+  increment(step = 1_000) {
+^^
+source-code-js-whitespace
+  ^^^^^^^^^
+  source-code-js-identifier
+           ^
+           source-code-js-punctuation
+            ^^^^
+            source-code-js-identifier
+                ^
+                source-code-js-whitespace
+                 ^
+                 source-code-js-keyword-operator
+                  ^
+                  source-code-js-whitespace
+                   ^^^^^
+                   source-code-js-literal-number
+                        ^
+                        source-code-js-punctuation
+                         ^
+                         source-code-js-whitespace
+                          ^
+                          source-code-js-punctuation
+    Counter.instances ??= 0;
+^^^^
+source-code-js-whitespace
+    ^^^^^^^
+    source-code-js-identifier
+           ^
+           source-code-js-punctuation
+            ^^^^^^^^^
+            source-code-js-identifier
+                     ^
+                     source-code-js-whitespace
+                      ^^^
+                      source-code-js-keyword-operator
+                         ^
+                         source-code-js-whitespace
+                          ^
+                          source-code-js-literal-number
+                           ^
+                           source-code-js-punctuation
+    return this.#value += step;
+^^^^
+source-code-js-whitespace
+    ^^^^^^
+    source-code-js-keyword-control-return
+          ^
+          source-code-js-whitespace
+           ^^^^
+           source-code-js-keyword-this
+               ^
+               source-code-js-punctuation
+                ^^^^^^
+                source-code-js-identifier-private
+                      ^
+                      source-code-js-whitespace
+                       ^^
+                       source-code-js-keyword-operator
+                         ^
+                         source-code-js-whitespace
+                          ^^^^
+                          source-code-js-identifier
+                              ^
+                              source-code-js-punctuation
+  }
+^^
+source-code-js-whitespace
+  ^
+  source-code-js-punctuation
+}
+^
+source-code-js-punctuation
+
+const π = 3.141_592_653_589_793;
+^^^^^
+source-code-js-keyword-declaration-const
+     ^
+     source-code-js-whitespace
+      ^
+      source-code-js-identifier
+       ^
+       source-code-js-whitespace
+        ^
+        source-code-js-keyword-operator
+         ^
+         source-code-js-whitespace
+          ^^^^^^^^^^^^^^^^^^^^^
+          source-code-js-literal-number
+                               ^
+                               source-code-js-punctuation
+const \u0061lias = π;
+^^^^^
+source-code-js-keyword-declaration-const
+     ^
+     source-code-js-whitespace
+      ^^^^^^^^^^
+      source-code-js-identifier
+                ^
+                source-code-js-whitespace
+                 ^
+                 source-code-js-keyword-operator
+                  ^
+                  source-code-js-whitespace
+                   ^
+                   source-code-js-identifier
+                    ^
+                    source-code-js-punctuation
+const big = 0xFF_FFn;
+^^^^^
+source-code-js-keyword-declaration-const
+     ^
+     source-code-js-whitespace
+      ^^^
+      source-code-js-identifier
+         ^
+         source-code-js-whitespace
+          ^
+          source-code-js-keyword-operator
+           ^
+           source-code-js-whitespace
+            ^^^^^^^^
+            source-code-js-literal-number
+                    ^
+                    source-code-js-punctuation
+const values = [0b1010_0101, 0o755, .5, 1., 6.022_140_76e23];
+^^^^^
+source-code-js-keyword-declaration-const
+     ^
+     source-code-js-whitespace
+      ^^^^^^
+      source-code-js-identifier
+            ^
+            source-code-js-whitespace
+             ^
+             source-code-js-keyword-operator
+              ^
+              source-code-js-whitespace
+               ^
+               source-code-js-punctuation
+                ^^^^^^^^^^^
+                source-code-js-literal-number
+                           ^
+                           source-code-js-punctuation
+                            ^
+                            source-code-js-whitespace
+                             ^^^^^
+                             source-code-js-literal-number
+                                  ^
+                                  source-code-js-punctuation
+                                   ^
+                                   source-code-js-whitespace
+                                    ^^
+                                    source-code-js-literal-number
+                                      ^
+                                      source-code-js-punctuation
+                                       ^
+                                       source-code-js-whitespace
+                                        ^^
+                                        source-code-js-literal-number
+                                          ^
+                                          source-code-js-punctuation
+                                           ^
+                                           source-code-js-whitespace
+                                            ^^^^^^^^^^^^^^^
+                                            source-code-js-literal-number
+                                                           ^
+                                                           source-code-js-punctuation
+                                                            ^
+                                                            source-code-js-punctuation
+const matcher = /[\p{Letter}&&[^A-Z/]]+/dgv;
+^^^^^
+source-code-js-keyword-declaration-const
+     ^
+     source-code-js-whitespace
+      ^^^^^^^
+      source-code-js-identifier
+             ^
+             source-code-js-whitespace
+              ^
+              source-code-js-keyword-operator
+               ^
+               source-code-js-whitespace
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                source-code-js-literal-regex
+                                           ^
+                                           source-code-js-punctuation
+const escaped = "\0\v\u{1F680}\x41";
+^^^^^
+source-code-js-keyword-declaration-const
+     ^
+     source-code-js-whitespace
+      ^^^^^^^
+      source-code-js-identifier
+             ^
+             source-code-js-whitespace
+              ^
+              source-code-js-keyword-operator
+               ^
+               source-code-js-whitespace
+                ^
+                source-code-js-literal-string-literal-string-begin
+                 ^^
+                 source-code-js-literal-string-literal-string-unquoted-literal-string-escape
+                   ^^
+                   source-code-js-literal-string-literal-string-unquoted-literal-string-escape
+                     ^^^^^^^^^
+                     source-code-js-literal-string-literal-string-unquoted-literal-string-escape
+                              ^^^^
+                              source-code-js-literal-string-literal-string-unquoted-literal-string-escape
+                                  ^
+                                  source-code-js-literal-string-literal-string-end
+                                   ^
+                                   source-code-js-punctuation
+const label = `total: $${big}`;
+^^^^^
+source-code-js-keyword-declaration-const
+     ^
+     source-code-js-whitespace
+      ^^^^^
+      source-code-js-identifier
+           ^
+           source-code-js-whitespace
+            ^
+            source-code-js-keyword-operator
+             ^
+             source-code-js-whitespace
+              ^
+              source-code-js-literal-string-literal-string-begin
+               ^^^^^^^
+               source-code-js-literal-string-literal-string-unquoted
+                      ^
+                      source-code-js-literal-string-literal-string-unquoted
+                       ^^^^^^
+                       source-code-js-literal-string-literal-string-unquoted-literal-string-interpolation
+                             ^
+                             source-code-js-literal-string-literal-string-end
+                              ^
+                              source-code-js-punctuation
+const result = config?.nested?.value ?? 2 ** 3;
+^^^^^
+source-code-js-keyword-declaration-const
+     ^
+     source-code-js-whitespace
+      ^^^^^^
+      source-code-js-identifier
+            ^
+            source-code-js-whitespace
+             ^
+             source-code-js-keyword-operator
+              ^
+              source-code-js-whitespace
+               ^^^^^^
+               source-code-js-identifier
+                     ^^
+                     source-code-js-keyword-operator
+                       ^^^^^^
+                       source-code-js-identifier
+                             ^^
+                             source-code-js-keyword-operator
+                               ^^^^^
+                               source-code-js-identifier
+                                    ^
+                                    source-code-js-whitespace
+                                     ^^
+                                     source-code-js-keyword-operator
+                                       ^
+                                       source-code-js-whitespace
+                                        ^
+                                        source-code-js-literal-number
+                                         ^
+                                         source-code-js-whitespace
+                                          ^^
+                                          source-code-js-keyword-operator
+                                            ^
+                                            source-code-js-whitespace
+                                             ^
+                                             source-code-js-literal-number
+                                              ^
+                                              source-code-js-punctuation
+const ratio = big / 2n / 3n;
+^^^^^
+source-code-js-keyword-declaration-const
+     ^
+     source-code-js-whitespace
+      ^^^^^
+      source-code-js-identifier
+           ^
+           source-code-js-whitespace
+            ^
+            source-code-js-keyword-operator
+             ^
+             source-code-js-whitespace
+              ^^^
+              source-code-js-identifier
+                 ^
+                 source-code-js-whitespace
+                  ^
+                  source-code-js-keyword-operator
+                   ^
+                   source-code-js-whitespace
+                    ^^
+                    source-code-js-literal-number
+                      ^
+                      source-code-js-whitespace
+                       ^
+                       source-code-js-keyword-operator
+                        ^
+                        source-code-js-whitespace
+                         ^^
+                         source-code-js-literal-number
+                           ^
+                           source-code-js-punctuation
+const propertyRatio = config.return / 2 / 3;
+^^^^^
+source-code-js-keyword-declaration-const
+     ^
+     source-code-js-whitespace
+      ^^^^^^^^^^^^^
+      source-code-js-identifier
+                   ^
+                   source-code-js-whitespace
+                    ^
+                    source-code-js-keyword-operator
+                     ^
+                     source-code-js-whitespace
+                      ^^^^^^
+                      source-code-js-identifier
+                            ^
+                            source-code-js-punctuation
+                             ^^^^^^
+                             source-code-js-keyword-control-return
+                                   ^
+                                   source-code-js-whitespace
+                                    ^
+                                    source-code-js-keyword-operator
+                                     ^
+                                     source-code-js-whitespace
+                                      ^
+                                      source-code-js-literal-number
+                                       ^
+                                       source-code-js-whitespace
+                                        ^
+                                        source-code-js-keyword-operator
+                                         ^
+                                         source-code-js-whitespace
+                                          ^
+                                          source-code-js-literal-number
+                                           ^
+                                           source-code-js-punctuation
+const true$value = undefined;
+^^^^^
+source-code-js-keyword-declaration-const
+     ^
+     source-code-js-whitespace
+      ^^^^^^^^^^
+      source-code-js-identifier
+                ^
+                source-code-js-whitespace
+                 ^
+                 source-code-js-keyword-operator
+                  ^
+                  source-code-js-whitespace
+                   ^^^^^^^^^
+                   source-code-js-literal-null
+                            ^
+                            source-code-js-punctuation
+
+function containsSlash(value) {
+^^^^^^^^
+source-code-js-keyword-declaration-function
+        ^
+        source-code-js-whitespace
+         ^^^^^^^^^^^^^
+         source-code-js-identifier
+                      ^
+                      source-code-js-punctuation
+                       ^^^^^
+                       source-code-js-identifier
+                            ^
+                            source-code-js-punctuation
+                             ^
+                             source-code-js-whitespace
+                              ^
+                              source-code-js-punctuation
+  return/[/]/v.test(value);
+^^
+source-code-js-whitespace
+  ^^^^^^
+  source-code-js-keyword-control-return
+        ^^^^^^
+        source-code-js-literal-regex
+              ^
+              source-code-js-punctuation
+               ^^^^
+               source-code-js-identifier
+                   ^
+                   source-code-js-punctuation
+                    ^^^^^
+                    source-code-js-identifier
+                         ^
+                         source-code-js-punctuation
+                          ^
+                          source-code-js-punctuation
+}
+^
+source-code-js-punctuation
+
+function* patterns(value) {
+^^^^^^^^
+source-code-js-keyword-declaration-function
+        ^
+        source-code-js-keyword-operator
+         ^
+         source-code-js-whitespace
+          ^^^^^^^^
+          source-code-js-identifier
+                  ^
+                  source-code-js-punctuation
+                   ^^^^^
+                   source-code-js-identifier
+                        ^
+                        source-code-js-punctuation
+                         ^
+                         source-code-js-whitespace
+                          ^
+                          source-code-js-punctuation
+  yield /first/u;
+^^
+source-code-js-whitespace
+  ^^^^^
+  source-code-js-keyword-control-yield
+       ^
+       source-code-js-whitespace
+        ^^^^^^^^
+        source-code-js-literal-regex
+                ^
+                source-code-js-punctuation
+  switch (true) {
+^^
+source-code-js-whitespace
+  ^^^^^^
+  source-code-js-keyword-control-switch
+        ^
+        source-code-js-whitespace
+         ^
+         source-code-js-punctuation
+          ^^^^
+          source-code-js-literal-boolean-true
+              ^
+              source-code-js-punctuation
+               ^
+               source-code-js-whitespace
+                ^
+                source-code-js-punctuation
+    case /second/u.test(value):
+^^^^
+source-code-js-whitespace
+    ^^^^
+    source-code-js-keyword-control-case
+        ^
+        source-code-js-whitespace
+         ^^^^^^^^^
+         source-code-js-literal-regex
+                  ^
+                  source-code-js-punctuation
+                   ^^^^
+                   source-code-js-identifier
+                       ^
+                       source-code-js-punctuation
+                        ^^^^^
+                        source-code-js-identifier
+                             ^
+                             source-code-js-punctuation
+                              ^
+                              source-code-js-keyword-operator
+      return/third/u;
+^^^^^^
+source-code-js-whitespace
+      ^^^^^^
+      source-code-js-keyword-control-return
+            ^^^^^^^^
+            source-code-js-literal-regex
+                    ^
+                    source-code-js-punctuation
+  }
+^^
+source-code-js-whitespace
+  ^
+  source-code-js-punctuation
+}
+^
+source-code-js-punctuation
+
+await using resource = openResource();
+^^^^^
+source-code-js-keyword-control-await
+     ^
+     source-code-js-whitespace
+      ^^^^^
+      source-code-js-keyword-declaration-using
+           ^
+           source-code-js-whitespace
+            ^^^^^^^^
+            source-code-js-identifier
+                    ^
+                    source-code-js-whitespace
+                     ^
+                     source-code-js-keyword-operator
+                      ^
+                      source-code-js-whitespace
+                       ^^^^^^^^^^^^
+                       source-code-js-identifier
+                                   ^
+                                   source-code-js-punctuation
+                                    ^
+                                    source-code-js-punctuation
+                                     ^
+                                     source-code-js-punctuation

@@ -1,0 +1,39 @@
+#!/usr/bin/env node
+
+import config from './config.json' with { type: 'json' };
+
+class Counter {
+  #value = 0;
+  static instances = 0;
+
+  increment(step = 1_000) {
+    Counter.instances ??= 0;
+    return this.#value += step;
+  }
+}
+
+const π = 3.141_592_653_589_793;
+const \u0061lias = π;
+const big = 0xFF_FFn;
+const values = [0b1010_0101, 0o755, .5, 1., 6.022_140_76e23];
+const matcher = /[\p{Letter}&&[^A-Z/]]+/dgv;
+const escaped = "\0\v\u{1F680}\x41";
+const label = `total: $${big}`;
+const result = config?.nested?.value ?? 2 ** 3;
+const ratio = big / 2n / 3n;
+const propertyRatio = config.return / 2 / 3;
+const true$value = undefined;
+
+function containsSlash(value) {
+  return/[/]/v.test(value);
+}
+
+function* patterns(value) {
+  yield /first/u;
+  switch (true) {
+    case /second/u.test(value):
+      return/third/u;
+  }
+}
+
+await using resource = openResource();

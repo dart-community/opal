@@ -1,0 +1,31 @@
+type EventMap<T extends object> = {
+  readonly [K in keyof T as `on${Capitalize<string & K>}`]?: (
+    value: T[K],
+  ) => void;
+};
+
+type ElementOf<T> = T extends readonly (infer Item)[] ? Item : never;
+type Loaded = Awaited<ReturnType<typeof load>>;
+const routes = { home: '/' } satisfies Record<string, string>;
+
+enum Direction { Up, Down }
+namespace Models {
+  export interface Entity { id: number; }
+}
+
+@framework.sealed
+abstract class Repository<T extends Models.Entity> implements Iterable<T> {
+  accessor current: T | undefined;
+  #cache = new Map<string, T>();
+
+  protected constructor(public readonly name: string) {}
+  abstract load(id: number): Promise<T>;
+  override toString(): string { return this.name; }
+  [Symbol.iterator](): Iterator<T> { return this.#cache.values(); }
+}
+
+function parse(value: string): number;
+function parse(value: number): string;
+function parse(value: string | number): string | number {
+  return typeof value === 'string' ? value.length : value.toString();
+}

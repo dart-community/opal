@@ -21,6 +21,7 @@ import 'language/python.dart';
 import 'language/ruby.dart';
 import 'language/swift.dart';
 import 'language/text.dart';
+import 'language/typescript.dart';
 import 'language/xml.dart';
 import 'language/yaml.dart';
 import 'matcher_language.dart';
@@ -52,6 +53,7 @@ abstract final class BuiltInLanguages {
     ruby,
     swift,
     text,
+    typescript,
     xml,
     yaml,
   ];
@@ -197,6 +199,13 @@ abstract final class BuiltInLanguages {
   /// A [Language] for textual content that
   /// passes through each line as a single token.
   static const Language text = TextLanguage();
+
+  /// A tokenizing language implementation for TypeScript.
+  static final Language typescript = MatcherLanguage(
+    name: 'typescript',
+    grammar: const TypeScriptGrammar(),
+    baseTag: const Tag('typescript', parent: Tags.codeSource),
+  );
 
   /// A tokenizing language implementation for the XML data format.
   static final Language xml = MatcherLanguage(

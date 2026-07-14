@@ -98,10 +98,7 @@ final Map<String, String> _defaultFallbackLanguageNames = {
   'golang': BuiltInLanguages.go.name,
   'xhtml': BuiltInLanguages.xml.name,
   'javascript': BuiltInLanguages.js.name,
-  // If a TS-specific grammar is ever implemented,
-  // remove these two mappings.
-  'typescript': BuiltInLanguages.js.name,
-  'ts': BuiltInLanguages.js.name,
+  'ts': BuiltInLanguages.typescript.name,
   'kt': BuiltInLanguages.kotlin.name,
   'md': BuiltInLanguages.markdown.name,
   'py': BuiltInLanguages.python.name,

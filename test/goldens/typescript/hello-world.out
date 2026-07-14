@@ -1,0 +1,187 @@
+interface User {
+^^^^^^^^^
+source-code-typescript-keyword-declaration-interface
+         ^
+         source-code-typescript-whitespace
+          ^^^^
+          source-code-typescript-identifier-type
+              ^
+              source-code-typescript-whitespace
+               ^
+               source-code-typescript-punctuation
+  readonly name: string;
+^^
+source-code-typescript-whitespace
+  ^^^^^^^^
+  source-code-typescript-keyword-modifier-readonly
+          ^
+          source-code-typescript-whitespace
+           ^^^^
+           source-code-typescript-identifier
+               ^
+               source-code-typescript-keyword-operator
+                ^
+                source-code-typescript-whitespace
+                 ^^^^^^
+                 source-code-typescript-identifier-type-built-in
+                       ^
+                       source-code-typescript-punctuation
+  age?: number;
+^^
+source-code-typescript-whitespace
+  ^^^
+  source-code-typescript-identifier
+     ^
+     source-code-typescript-keyword-operator
+      ^
+      source-code-typescript-keyword-operator
+       ^
+       source-code-typescript-whitespace
+        ^^^^^^
+        source-code-typescript-identifier-type-built-in
+              ^
+              source-code-typescript-punctuation
+}
+^
+source-code-typescript-punctuation
+
+function greet<T extends User>(user: T): string {
+^^^^^^^^
+source-code-typescript-keyword-declaration-function
+        ^
+        source-code-typescript-whitespace
+         ^^^^^
+         source-code-typescript-identifier-function
+              ^
+              source-code-typescript-keyword-operator
+               ^
+               source-code-typescript-identifier-type
+                ^
+                source-code-typescript-whitespace
+                 ^^^^^^^
+                 source-code-typescript-keyword-declaration-extends
+                        ^
+                        source-code-typescript-whitespace
+                         ^^^^
+                         source-code-typescript-identifier-type
+                             ^
+                             source-code-typescript-keyword-operator
+                              ^
+                              source-code-typescript-punctuation
+                               ^^^^
+                               source-code-typescript-identifier
+                                   ^
+                                   source-code-typescript-keyword-operator
+                                    ^
+                                    source-code-typescript-whitespace
+                                     ^
+                                     source-code-typescript-identifier-type
+                                      ^
+                                      source-code-typescript-punctuation
+                                       ^
+                                       source-code-typescript-keyword-operator
+                                        ^
+                                        source-code-typescript-whitespace
+                                         ^^^^^^
+                                         source-code-typescript-identifier-type-built-in
+                                               ^
+                                               source-code-typescript-whitespace
+                                                ^
+                                                source-code-typescript-punctuation
+  return `Hello, ${user.name}!`;
+^^
+source-code-typescript-whitespace
+  ^^^^^^
+  source-code-typescript-keyword-control-return
+        ^
+        source-code-typescript-whitespace
+         ^
+         source-code-typescript-literal-string-literal-string-begin
+          ^^^^^^^
+          source-code-typescript-literal-string-literal-string-unquoted
+                 ^^^^^^^^^^^^
+                 source-code-typescript-literal-string-literal-string-unquoted-literal-string-interpolation
+                             ^
+                             source-code-typescript-literal-string-literal-string-unquoted
+                              ^
+                              source-code-typescript-literal-string-literal-string-end
+                               ^
+                               source-code-typescript-punctuation
+}
+^
+source-code-typescript-punctuation
+
+const ada: User = { name: 'Ada', age: 36 };
+^^^^^
+source-code-typescript-keyword-declaration-const
+     ^
+     source-code-typescript-whitespace
+      ^^^
+      source-code-typescript-identifier
+         ^
+         source-code-typescript-keyword-operator
+          ^
+          source-code-typescript-whitespace
+           ^^^^
+           source-code-typescript-identifier-type
+               ^
+               source-code-typescript-whitespace
+                ^
+                source-code-typescript-keyword-operator
+                 ^
+                 source-code-typescript-whitespace
+                  ^
+                  source-code-typescript-punctuation
+                   ^
+                   source-code-typescript-whitespace
+                    ^^^^
+                    source-code-typescript-identifier
+                        ^
+                        source-code-typescript-keyword-operator
+                         ^
+                         source-code-typescript-whitespace
+                          ^
+                          source-code-typescript-literal-string-literal-string-begin
+                           ^^^
+                           source-code-typescript-literal-string-literal-string-unquoted
+                              ^
+                              source-code-typescript-literal-string-literal-string-end
+                               ^
+                               source-code-typescript-punctuation
+                                ^
+                                source-code-typescript-whitespace
+                                 ^^^
+                                 source-code-typescript-identifier
+                                    ^
+                                    source-code-typescript-keyword-operator
+                                     ^
+                                     source-code-typescript-whitespace
+                                      ^^
+                                      source-code-typescript-literal-number
+                                        ^
+                                        source-code-typescript-whitespace
+                                         ^
+                                         source-code-typescript-punctuation
+                                          ^
+                                          source-code-typescript-punctuation
+console.log(greet(ada));
+^^^^^^^
+source-code-typescript-identifier
+       ^
+       source-code-typescript-punctuation
+        ^^^
+        source-code-typescript-identifier-function
+           ^
+           source-code-typescript-punctuation
+            ^^^^^
+            source-code-typescript-identifier-function
+                 ^
+                 source-code-typescript-punctuation
+                  ^^^
+                  source-code-typescript-identifier
+                     ^
+                     source-code-typescript-punctuation
+                      ^
+                      source-code-typescript-punctuation
+                       ^
+                       source-code-typescript-punctuation

@@ -1,0 +1,204 @@
+const single = 'unterminated
+^^^^^
+source-code-typescript-keyword-declaration-const
+     ^
+     source-code-typescript-whitespace
+      ^^^^^^
+      source-code-typescript-identifier
+            ^
+            source-code-typescript-whitespace
+             ^
+             source-code-typescript-keyword-operator
+              ^
+              source-code-typescript-whitespace
+               ^
+               source-code-typescript-literal-string-literal-string-begin
+                ^^^^^^^^^^^^
+                source-code-typescript-literal-string-literal-string-unquoted
+const afterSingle: number = 1;
+^^^^^
+source-code-typescript-keyword-declaration-const
+     ^
+     source-code-typescript-whitespace
+      ^^^^^^^^^^^
+      source-code-typescript-identifier
+                 ^
+                 source-code-typescript-keyword-operator
+                  ^
+                  source-code-typescript-whitespace
+                   ^^^^^^
+                   source-code-typescript-identifier-type-built-in
+                         ^
+                         source-code-typescript-whitespace
+                          ^
+                          source-code-typescript-keyword-operator
+                           ^
+                           source-code-typescript-whitespace
+                            ^
+                            source-code-typescript-literal-number
+                             ^
+                             source-code-typescript-punctuation
+const double = "unterminated
+^^^^^
+source-code-typescript-keyword-declaration-const
+     ^
+     source-code-typescript-whitespace
+      ^^^^^^
+      source-code-typescript-identifier
+            ^
+            source-code-typescript-whitespace
+             ^
+             source-code-typescript-keyword-operator
+              ^
+              source-code-typescript-whitespace
+               ^
+               source-code-typescript-literal-string-literal-string-begin
+                ^^^^^^^^^^^^
+                source-code-typescript-literal-string-literal-string-unquoted
+const afterDouble: boolean = true;
+^^^^^
+source-code-typescript-keyword-declaration-const
+     ^
+     source-code-typescript-whitespace
+      ^^^^^^^^^^^
+      source-code-typescript-identifier
+                 ^
+                 source-code-typescript-keyword-operator
+                  ^
+                  source-code-typescript-whitespace
+                   ^^^^^^^
+                   source-code-typescript-identifier-type-built-in
+                          ^
+                          source-code-typescript-whitespace
+                           ^
+                           source-code-typescript-keyword-operator
+                            ^
+                            source-code-typescript-whitespace
+                             ^^^^
+                             source-code-typescript-literal-boolean-true
+                                 ^
+                                 source-code-typescript-punctuation
+const escaped = "tab:\t unicode:\u0041 hex:\x41";
+^^^^^
+source-code-typescript-keyword-declaration-const
+     ^
+     source-code-typescript-whitespace
+      ^^^^^^^
+      source-code-typescript-identifier
+             ^
+             source-code-typescript-whitespace
+              ^
+              source-code-typescript-keyword-operator
+               ^
+               source-code-typescript-whitespace
+                ^
+                source-code-typescript-literal-string-literal-string-begin
+                 ^^^^
+                 source-code-typescript-literal-string-literal-string-unquoted
+                     ^^
+                     source-code-typescript-literal-string-literal-string-unquoted-literal-string-escape
+                       ^^^^^^^^^
+                       source-code-typescript-literal-string-literal-string-unquoted
+                                ^^^^^^
+                                source-code-typescript-literal-string-literal-string-unquoted-literal-string-escape
+                                      ^^^^^
+                                      source-code-typescript-literal-string-literal-string-unquoted
+                                           ^^^^
+                                           source-code-typescript-literal-string-literal-string-unquoted-literal-string-escape
+                                               ^
+                                               source-code-typescript-literal-string-literal-string-end
+                                                ^
+                                                source-code-typescript-punctuation
+const dollars = `Price: $5 and ${afterSingle}`;
+^^^^^
+source-code-typescript-keyword-declaration-const
+     ^
+     source-code-typescript-whitespace
+      ^^^^^^^
+      source-code-typescript-identifier
+             ^
+             source-code-typescript-whitespace
+              ^
+              source-code-typescript-keyword-operator
+               ^
+               source-code-typescript-whitespace
+                ^
+                source-code-typescript-literal-string-literal-string-begin
+                 ^^^^^^^
+                 source-code-typescript-literal-string-literal-string-unquoted
+                        ^
+                        source-code-typescript-literal-string-literal-string-unquoted
+                         ^^^^^^
+                         source-code-typescript-literal-string-literal-string-unquoted
+                               ^^^^^^^^^^^^^^
+                               source-code-typescript-literal-string-literal-string-unquoted-literal-string-interpolation
+                                             ^
+                                             source-code-typescript-literal-string-literal-string-end
+                                              ^
+                                              source-code-typescript-punctuation
+const pattern: RegExp = /a\/b+/dgiu;
+^^^^^
+source-code-typescript-keyword-declaration-const
+     ^
+     source-code-typescript-whitespace
+      ^^^^^^^
+      source-code-typescript-identifier
+             ^
+             source-code-typescript-keyword-operator
+              ^
+              source-code-typescript-whitespace
+               ^^^^^^
+               source-code-typescript-identifier-type-built-in
+                     ^
+                     source-code-typescript-whitespace
+                      ^
+                      source-code-typescript-keyword-operator
+                       ^
+                       source-code-typescript-whitespace
+                        ^^^^^^^^^^^
+                        source-code-typescript-literal-regex
+                                   ^
+                                   source-code-typescript-punctuation
+const binary = 0b1010_0101;
+^^^^^
+source-code-typescript-keyword-declaration-const
+     ^
+     source-code-typescript-whitespace
+      ^^^^^^
+      source-code-typescript-identifier
+            ^
+            source-code-typescript-whitespace
+             ^
+             source-code-typescript-keyword-operator
+              ^
+              source-code-typescript-whitespace
+               ^^^^^^^^^^^
+               source-code-typescript-literal-number
+                          ^
+                          source-code-typescript-punctuation
+const bigintValue = 123_456n;
+^^^^^
+source-code-typescript-keyword-declaration-const
+     ^
+     source-code-typescript-whitespace
+      ^^^^^^^^^^^
+      source-code-typescript-identifier
+                 ^
+                 source-code-typescript-whitespace
+                  ^
+                  source-code-typescript-keyword-operator
+                   ^
+                   source-code-typescript-whitespace
+                    ^^^^^^^^
+                    source-code-typescript-literal-number
+                            ^
+                            source-code-typescript-punctuation
+
+/* Unterminated comments remain comments through end of input.
+^^
+source-code-typescript-comment-block-comment-block-begin
+  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  source-code-typescript-comment-block-comment-block-content
+still a comment
+^^^^^^^^^^^^^^^
+source-code-typescript-comment-block-comment-block-content

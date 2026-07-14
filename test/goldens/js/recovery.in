@@ -1,0 +1,17 @@
+const single = 'unterminated
+const afterSingle = 1;
+const double = "unterminated
+const afterDouble = true;
+const continued = 'first\
+second';
+const afterContinued = null;
+const continuedOddSingle = 'first\\\
+second';
+const continuedOddDouble = "first\\\
+second";
+const afterOddContinuations = true;
+const escapedBackslash = 'unterminated\\
+const afterEscapedBackslash = 2;
+
+/* Unterminated comments remain comments through end of input.
+still a comment

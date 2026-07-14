@@ -1,0 +1,8 @@
+# Heading with **bold**, _emphasis_, and `code`
+
+> Quote with **bold**, [a link](https://example.com), and `code`
+
+| Name | Description |
+| --- | --- |
+|Compact|No spaces|
+| **Bold** | Visit https://example.com |

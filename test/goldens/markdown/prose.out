@@ -1,0 +1,83 @@
+Plain prose, with punctuation.
+^^^^^
+source-text-markup-markdown-markup-text
+     ^
+     source-text-markup-markdown-whitespace
+      ^^^^^^
+      source-text-markup-markdown-markup-text
+            ^
+            source-text-markup-markdown-whitespace
+             ^^^^
+             source-text-markup-markdown-markup-text
+                 ^
+                 source-text-markup-markdown-whitespace
+                  ^^^^^^^^^^^^
+                  source-text-markup-markdown-markup-text
+
+Text before **bold** and after.
+^^^^
+source-text-markup-markdown-markup-text
+    ^
+    source-text-markup-markdown-whitespace
+     ^^^^^^
+     source-text-markup-markdown-markup-text
+           ^
+           source-text-markup-markdown-whitespace
+            ^^
+            source-text-markup-markdown-tag-strong-punctuation-strong-marker
+              ^^^^
+              source-text-markup-markdown-tag-strong-tag-strong
+                  ^^
+                  source-text-markup-markdown-tag-strong-punctuation-strong-marker
+                    ^
+                    source-text-markup-markdown-whitespace
+                     ^^^
+                     source-text-markup-markdown-markup-text
+                        ^
+                        source-text-markup-markdown-whitespace
+                         ^^^^^^
+                         source-text-markup-markdown-markup-text
+
+Read [the docs](https://dart.dev), then visit https://example.com/path.
+^^^^
+source-text-markup-markdown-markup-text
+    ^
+    source-text-markup-markdown-whitespace
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+     source-text-markup-markdown-link
+                                 ^
+                                 source-text-markup-markdown-markup-text
+                                  ^
+                                  source-text-markup-markdown-whitespace
+                                   ^^^^
+                                   source-text-markup-markdown-markup-text
+                                       ^
+                                       source-text-markup-markdown-whitespace
+                                        ^^^^^
+                                        source-text-markup-markdown-markup-text
+                                             ^
+                                             source-text-markup-markdown-whitespace
+                                              ^^^^^^^^^^^^^^^^^^^^^^^^^
+                                              source-text-markup-markdown-link
+
+Brackets [without a custom reference][] and an exclamation!
+^^^^^^^^
+source-text-markup-markdown-markup-text
+        ^
+        source-text-markup-markdown-whitespace
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+         source-text-markup-markdown-link
+                                       ^
+                                       source-text-markup-markdown-whitespace
+                                        ^^^
+                                        source-text-markup-markdown-markup-text
+                                           ^
+                                           source-text-markup-markdown-whitespace
+                                            ^^
+                                            source-text-markup-markdown-markup-text
+                                              ^
+                                              source-text-markup-markdown-whitespace
+                                               ^^^^^^^^^^^
+                                               source-text-markup-markdown-markup-text
+                                                          ^
+                                                          source-text-markup-markdown-markup-text

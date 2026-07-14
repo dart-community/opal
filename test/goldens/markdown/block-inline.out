@@ -1,0 +1,144 @@
+# Heading with **bold**, _emphasis_, and `code`
+^^
+source-text-markup-markdown-tag-heading
+  ^^^^^^^
+  source-text-markup-markdown-tag-heading-markup-text
+         ^
+         source-text-markup-markdown-tag-heading-whitespace
+          ^^^^
+          source-text-markup-markdown-tag-heading-markup-text
+              ^
+              source-text-markup-markdown-tag-heading-whitespace
+               ^^
+               source-text-markup-markdown-tag-heading-tag-strong-punctuation-strong-marker
+                 ^^^^
+                 source-text-markup-markdown-tag-heading-tag-strong-tag-strong
+                     ^^
+                     source-text-markup-markdown-tag-heading-tag-strong-punctuation-strong-marker
+                       ^
+                       source-text-markup-markdown-tag-heading-markup-text
+                        ^
+                        source-text-markup-markdown-tag-heading-whitespace
+                         ^
+                         source-text-markup-markdown-tag-heading-tag-emphasis-punctuation-emphasis-marker
+                          ^^^^^^^^
+                          source-text-markup-markdown-tag-heading-tag-emphasis-tag-emphasis
+                                  ^
+                                  source-text-markup-markdown-tag-heading-tag-emphasis-punctuation-emphasis-marker
+                                   ^
+                                   source-text-markup-markdown-tag-heading-markup-text
+                                    ^
+                                    source-text-markup-markdown-tag-heading-whitespace
+                                     ^^^
+                                     source-text-markup-markdown-tag-heading-markup-text
+                                        ^
+                                        source-text-markup-markdown-tag-heading-whitespace
+                                         ^
+                                         source-text-markup-markdown-tag-heading-source-source-backtick
+                                          ^^^^
+                                          source-text-markup-markdown-tag-heading-source-source-content
+                                              ^
+                                              source-text-markup-markdown-tag-heading-source-source-backtick
+
+> Quote with **bold**, [a link](https://example.com), and `code`
+^^
+source-text-markup-markdown-punctuation-block-quote
+  ^^^^^
+  source-text-markup-markdown-punctuation-block-quote-markup-text
+       ^
+       source-text-markup-markdown-punctuation-block-quote-whitespace
+        ^^^^
+        source-text-markup-markdown-punctuation-block-quote-markup-text
+            ^
+            source-text-markup-markdown-punctuation-block-quote-whitespace
+             ^^
+             source-text-markup-markdown-punctuation-block-quote-tag-strong-punctuation-strong-marker
+               ^^^^
+               source-text-markup-markdown-punctuation-block-quote-tag-strong-tag-strong
+                   ^^
+                   source-text-markup-markdown-punctuation-block-quote-tag-strong-punctuation-strong-marker
+                     ^
+                     source-text-markup-markdown-punctuation-block-quote-markup-text
+                      ^
+                      source-text-markup-markdown-punctuation-block-quote-whitespace
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                       source-text-markup-markdown-punctuation-block-quote-link
+                                                    ^
+                                                    source-text-markup-markdown-punctuation-block-quote-markup-text
+                                                     ^
+                                                     source-text-markup-markdown-punctuation-block-quote-whitespace
+                                                      ^^^
+                                                      source-text-markup-markdown-punctuation-block-quote-markup-text
+                                                         ^
+                                                         source-text-markup-markdown-punctuation-block-quote-whitespace
+                                                          ^
+                                                          source-text-markup-markdown-punctuation-block-quote-source-source-backtick
+                                                           ^^^^
+                                                           source-text-markup-markdown-punctuation-block-quote-source-source-content
+                                                               ^
+                                                               source-text-markup-markdown-punctuation-block-quote-source-source-backtick
+
+| Name | Description |
+^
+source-text-markup-markdown-tag-table-row
+ ^
+ source-text-markup-markdown-tag-table-row-whitespace
+  ^^^^
+  source-text-markup-markdown-tag-table-row-markup-text
+      ^
+      source-text-markup-markdown-tag-table-row-whitespace
+       ^
+       source-text-markup-markdown-tag-table-row-punctuation-table-separator
+        ^
+        source-text-markup-markdown-tag-table-row-whitespace
+         ^^^^^^^^^^^
+         source-text-markup-markdown-tag-table-row-markup-text
+                    ^
+                    source-text-markup-markdown-tag-table-row-whitespace
+                     ^
+                     source-text-markup-markdown-tag-table-row
+| --- | --- |
+^^^^^^^^^^^^^
+source-text-markup-markdown-punctuation-table-delimiter
+|Compact|No spaces|
+^
+source-text-markup-markdown-tag-table-row
+ ^^^^^^^
+ source-text-markup-markdown-tag-table-row-markup-text
+        ^
+        source-text-markup-markdown-tag-table-row-punctuation-table-separator
+         ^^
+         source-text-markup-markdown-tag-table-row-markup-text
+           ^
+           source-text-markup-markdown-tag-table-row-whitespace
+            ^^^^^^
+            source-text-markup-markdown-tag-table-row-markup-text
+                  ^
+                  source-text-markup-markdown-tag-table-row
+| **Bold** | Visit https://example.com |
+^
+source-text-markup-markdown-tag-table-row
+ ^
+ source-text-markup-markdown-tag-table-row-whitespace
+  ^^
+  source-text-markup-markdown-tag-table-row-tag-strong-punctuation-strong-marker
+    ^^^^
+    source-text-markup-markdown-tag-table-row-tag-strong-tag-strong
+        ^^
+        source-text-markup-markdown-tag-table-row-tag-strong-punctuation-strong-marker
+          ^
+          source-text-markup-markdown-tag-table-row-whitespace
+           ^
+           source-text-markup-markdown-tag-table-row-punctuation-table-separator
+            ^
+            source-text-markup-markdown-tag-table-row-whitespace
+             ^^^^^
+             source-text-markup-markdown-tag-table-row-markup-text
+                  ^
+                  source-text-markup-markdown-tag-table-row-whitespace
+                   ^^^^^^^^^^^^^^^^^^^
+                   source-text-markup-markdown-tag-table-row-link
+                                      ^
+                                      source-text-markup-markdown-tag-table-row-whitespace
+                                       ^
+                                       source-text-markup-markdown-tag-table-row

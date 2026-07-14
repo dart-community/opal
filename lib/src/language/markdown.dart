@@ -13,7 +13,6 @@ final class MarkdownGrammar extends MatcherGrammar {
   ];
 
   Matcher _document() => Matcher.options([
-    Matcher.include(_frontMatter),
     Matcher.include(_heading),
     Matcher.include(_blockQuote),
     Matcher.include(_list),
@@ -24,31 +23,29 @@ final class MarkdownGrammar extends MatcherGrammar {
     Matcher.include(_paragraph),
   ]);
 
-  // Front matter often present in Markdown for site generators.
-  Matcher _frontMatter() => Matcher.regex(
-    r'^---\n[\s\S]*?\n---\n|^\+\+\+\n[\s\S]*?\n\+\+\+\n',
-    tag: const Tag('front-matter', parent: Tags.metadata),
-  );
-
   Matcher _heading() => Matcher.options([
     // ATX-style headings.
-    Matcher.regex(
-      r'^#{1,6}\s+.*$',
-      tag: const Tag('heading', parent: Tags.tag),
-    ),
-    // Setext-style headings.
-    Matcher.regex(
-      r'^.+\n[=\-]+$',
+    Matcher.wrapped(
+      begin: Matcher.regex(r'^#{1,6}\s+'),
+      end: Matcher.regex(r'$'),
+      content: Matcher.include(_paragraph),
       tag: const Tag('heading', parent: Tags.tag),
     ),
   ]);
 
-  Matcher _blockQuote() => Matcher.regex(
-    r'^>\s?.*$',
+  Matcher _blockQuote() => Matcher.wrapped(
+    begin: Matcher.regex(r'^>\s?'),
+    end: Matcher.regex(r'$'),
+    content: Matcher.include(_paragraph),
     tag: const Tag('block-quote', parent: Tags.punctuation),
   );
 
   Matcher _list() => Matcher.options([
+    // Tasks lists in GitHub flavored Markdown.
+    Matcher.regex(
+      r'^(\s*)[-*+]\s+\[[xX\s]\]\s+',
+      tag: const Tag('task-list', parent: Tags.punctuation),
+    ),
     // Unordered lists, usually with items beginning with `-` or `*`.
     Matcher.regex(
       r'^(\s*)[-*+]\s+',
@@ -58,11 +55,6 @@ final class MarkdownGrammar extends MatcherGrammar {
     Matcher.regex(
       r'^(\s*)\d+\.\s+',
       tag: const Tag('list-marker', parent: Tags.punctuation),
-    ),
-    // Tasks lists in GitHub flavored Markdown.
-    Matcher.regex(
-      r'^(\s*)[-*+]\s+\[[xX\s]\]\s+',
-      tag: const Tag('task-list', parent: Tags.punctuation),
     ),
   ]);
 
@@ -100,11 +92,21 @@ final class MarkdownGrammar extends MatcherGrammar {
       r'^\|?[\s\-:|]+\|[\s\-:|]+\|?$',
       tag: const Tag('table-delimiter', parent: Tags.punctuation),
     ),
-    Matcher.regex(
-      r'^\|.*\|$',
-      tag: const Tag('table-row', parent: Tags.tag),
-    ),
+    Matcher.include(_tableRow),
   ]);
+
+  Matcher _tableRow() => Matcher.wrapped(
+    begin: Matcher.regex(r'^\|'),
+    end: Matcher.regex(r'\|$'),
+    content: Matcher.options([
+      Matcher.verbatim(
+        '|',
+        tag: const Tag('table-separator', parent: Tags.punctuation),
+      ),
+      Matcher.include(_paragraph),
+    ]),
+    tag: const Tag('table-row', parent: Tags.tag),
+  );
 
   Matcher _htmlBlock() => Matcher.regex(
     r'^<(\w+)([^>]*)>[\s\S]*?</\1>|^<\w+[^>]*/>',
@@ -122,6 +124,18 @@ final class MarkdownGrammar extends MatcherGrammar {
     Matcher.include(_htmlInline),
     Matcher.include(_lineBreak),
     Matcher.include(_escape),
+    Matcher.include(_text),
+  ]);
+
+  Matcher _text() => Matcher.options([
+    Matcher.regex(
+      r'(?:(?!https?://)[^\\`*_\[!<~|\s])+',
+      tag: MarkupTags.text,
+    ),
+    Matcher.regex(
+      r'\S',
+      tag: MarkupTags.text,
+    ),
   ]);
 
   Matcher _inlineCode() => Matcher.wrapped(

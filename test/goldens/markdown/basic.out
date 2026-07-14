@@ -1,22 +1,20 @@
 # Hello world
-^^^^^^^^^^^^^
+^^
 source-text-markup-markdown-tag-heading
+  ^^^^^
+  source-text-markup-markdown-tag-heading-markup-text
+       ^
+       source-text-markup-markdown-tag-heading-whitespace
+        ^^^^^
+        source-text-markup-markdown-tag-heading-markup-text
 
 This is **bold** text.
-^
-source-text-markup-markdown-unknown
- ^
- source-text-markup-markdown-unknown
-  ^
-  source-text-markup-markdown-unknown
-   ^
-   source-text-markup-markdown-unknown
+^^^^
+source-text-markup-markdown-markup-text
     ^
     source-text-markup-markdown-whitespace
-     ^
-     source-text-markup-markdown-unknown
-      ^
-      source-text-markup-markdown-unknown
+     ^^
+     source-text-markup-markdown-markup-text
        ^
        source-text-markup-markdown-whitespace
         ^^
@@ -27,32 +25,16 @@ source-text-markup-markdown-unknown
               source-text-markup-markdown-tag-strong-punctuation-strong-marker
                 ^
                 source-text-markup-markdown-whitespace
-                 ^
-                 source-text-markup-markdown-unknown
-                  ^
-                  source-text-markup-markdown-unknown
-                   ^
-                   source-text-markup-markdown-unknown
-                    ^
-                    source-text-markup-markdown-unknown
-                     ^
-                     source-text-markup-markdown-unknown
+                 ^^^^^
+                 source-text-markup-markdown-markup-text
 
 This is _italic_ text.
-^
-source-text-markup-markdown-unknown
- ^
- source-text-markup-markdown-unknown
-  ^
-  source-text-markup-markdown-unknown
-   ^
-   source-text-markup-markdown-unknown
+^^^^
+source-text-markup-markdown-markup-text
     ^
     source-text-markup-markdown-whitespace
-     ^
-     source-text-markup-markdown-unknown
-      ^
-      source-text-markup-markdown-unknown
+     ^^
+     source-text-markup-markdown-markup-text
        ^
        source-text-markup-markdown-whitespace
         ^
@@ -63,32 +45,16 @@ source-text-markup-markdown-unknown
                source-text-markup-markdown-tag-emphasis-punctuation-emphasis-marker
                 ^
                 source-text-markup-markdown-whitespace
-                 ^
-                 source-text-markup-markdown-unknown
-                  ^
-                  source-text-markup-markdown-unknown
-                   ^
-                   source-text-markup-markdown-unknown
-                    ^
-                    source-text-markup-markdown-unknown
-                     ^
-                     source-text-markup-markdown-unknown
+                 ^^^^^
+                 source-text-markup-markdown-markup-text
 
 This is `inline code`.
-^
-source-text-markup-markdown-unknown
- ^
- source-text-markup-markdown-unknown
-  ^
-  source-text-markup-markdown-unknown
-   ^
-   source-text-markup-markdown-unknown
+^^^^
+source-text-markup-markdown-markup-text
     ^
     source-text-markup-markdown-whitespace
-     ^
-     source-text-markup-markdown-unknown
-      ^
-      source-text-markup-markdown-unknown
+     ^^
+     source-text-markup-markdown-markup-text
        ^
        source-text-markup-markdown-whitespace
         ^
@@ -98,103 +64,67 @@ source-text-markup-markdown-unknown
                     ^
                     source-text-markup-markdown-source-source-backtick
                      ^
-                     source-text-markup-markdown-unknown
+                     source-text-markup-markdown-markup-text
 
 ## Lists
-^^^^^^^^
+^^^
 source-text-markup-markdown-tag-heading
+   ^^^^^
+   source-text-markup-markdown-tag-heading-markup-text
 
 - Item 1
 ^^
 source-text-markup-markdown-punctuation-list-marker
-  ^
-  source-text-markup-markdown-unknown
-   ^
-   source-text-markup-markdown-unknown
-    ^
-    source-text-markup-markdown-unknown
-     ^
-     source-text-markup-markdown-unknown
+  ^^^^
+  source-text-markup-markdown-markup-text
       ^
       source-text-markup-markdown-whitespace
        ^
-       source-text-markup-markdown-unknown
+       source-text-markup-markdown-markup-text
 - Item 2
 ^^
 source-text-markup-markdown-punctuation-list-marker
-  ^
-  source-text-markup-markdown-unknown
-   ^
-   source-text-markup-markdown-unknown
-    ^
-    source-text-markup-markdown-unknown
-     ^
-     source-text-markup-markdown-unknown
+  ^^^^
+  source-text-markup-markdown-markup-text
       ^
       source-text-markup-markdown-whitespace
        ^
-       source-text-markup-markdown-unknown
+       source-text-markup-markdown-markup-text
 - Item 3
 ^^
 source-text-markup-markdown-punctuation-list-marker
-  ^
-  source-text-markup-markdown-unknown
-   ^
-   source-text-markup-markdown-unknown
-    ^
-    source-text-markup-markdown-unknown
-     ^
-     source-text-markup-markdown-unknown
+  ^^^^
+  source-text-markup-markdown-markup-text
       ^
       source-text-markup-markdown-whitespace
        ^
-       source-text-markup-markdown-unknown
+       source-text-markup-markdown-markup-text
 
 1. First
 ^^^
 source-text-markup-markdown-punctuation-list-marker
-   ^
-   source-text-markup-markdown-unknown
-    ^
-    source-text-markup-markdown-unknown
-     ^
-     source-text-markup-markdown-unknown
-      ^
-      source-text-markup-markdown-unknown
-       ^
-       source-text-markup-markdown-unknown
+   ^^^^^
+   source-text-markup-markdown-markup-text
 2. Second
 ^^^
 source-text-markup-markdown-punctuation-list-marker
-   ^
-   source-text-markup-markdown-unknown
-    ^
-    source-text-markup-markdown-unknown
-     ^
-     source-text-markup-markdown-unknown
-      ^
-      source-text-markup-markdown-unknown
-       ^
-       source-text-markup-markdown-unknown
-        ^
-        source-text-markup-markdown-unknown
+   ^^^^^^
+   source-text-markup-markdown-markup-text
 3. Third
 ^^^
 source-text-markup-markdown-punctuation-list-marker
-   ^
-   source-text-markup-markdown-unknown
-    ^
-    source-text-markup-markdown-unknown
-     ^
-     source-text-markup-markdown-unknown
-      ^
-      source-text-markup-markdown-unknown
-       ^
-       source-text-markup-markdown-unknown
+   ^^^^^
+   source-text-markup-markdown-markup-text
 
 ## Code block
-^^^^^^^^^^^^^
+^^^
 source-text-markup-markdown-tag-heading
+   ^^^^
+   source-text-markup-markdown-tag-heading-markup-text
+       ^
+       source-text-markup-markdown-tag-heading-whitespace
+        ^^^^^
+        source-text-markup-markdown-tag-heading-markup-text
 
 ```dart
 ^^^^^^^
@@ -213,66 +143,74 @@ source-text-markup-markdown-source-source-content
 source-text-markup-markdown-source-source-fence
 
 ## Links
-^^^^^^^^
+^^^
 source-text-markup-markdown-tag-heading
+   ^^^^^
+   source-text-markup-markdown-tag-heading-markup-text
 
 Make sure to read the [Dart documentation](https://dart.dev).
-^
-source-text-markup-markdown-unknown
- ^
- source-text-markup-markdown-unknown
-  ^
-  source-text-markup-markdown-unknown
-   ^
-   source-text-markup-markdown-unknown
+^^^^
+source-text-markup-markdown-markup-text
     ^
     source-text-markup-markdown-whitespace
-     ^
-     source-text-markup-markdown-unknown
-      ^
-      source-text-markup-markdown-unknown
-       ^
-       source-text-markup-markdown-unknown
-        ^
-        source-text-markup-markdown-unknown
+     ^^^^
+     source-text-markup-markdown-markup-text
          ^
          source-text-markup-markdown-whitespace
-          ^
-          source-text-markup-markdown-unknown
-           ^
-           source-text-markup-markdown-unknown
+          ^^
+          source-text-markup-markdown-markup-text
             ^
             source-text-markup-markdown-whitespace
-             ^
-             source-text-markup-markdown-unknown
-              ^
-              source-text-markup-markdown-unknown
-               ^
-               source-text-markup-markdown-unknown
-                ^
-                source-text-markup-markdown-unknown
+             ^^^^
+             source-text-markup-markdown-markup-text
                  ^
                  source-text-markup-markdown-whitespace
-                  ^
-                  source-text-markup-markdown-unknown
-                   ^
-                   source-text-markup-markdown-unknown
-                    ^
-                    source-text-markup-markdown-unknown
+                  ^^^
+                  source-text-markup-markdown-markup-text
                      ^
                      source-text-markup-markdown-whitespace
                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
                       source-text-markup-markdown-link
                                                             ^
-                                                            source-text-markup-markdown-unknown
+                                                            source-text-markup-markdown-markup-text
 
 ## Blockquotes
-^^^^^^^^^^^^^^
+^^^
 source-text-markup-markdown-tag-heading
+   ^^^^^^^^^^^
+   source-text-markup-markdown-tag-heading-markup-text
 
 > This is a blockquote
-^^^^^^^^^^^^^^^^^^^^^^
+^^
 source-text-markup-markdown-punctuation-block-quote
+  ^^^^
+  source-text-markup-markdown-punctuation-block-quote-markup-text
+      ^
+      source-text-markup-markdown-punctuation-block-quote-whitespace
+       ^^
+       source-text-markup-markdown-punctuation-block-quote-markup-text
+         ^
+         source-text-markup-markdown-punctuation-block-quote-whitespace
+          ^
+          source-text-markup-markdown-punctuation-block-quote-markup-text
+           ^
+           source-text-markup-markdown-punctuation-block-quote-whitespace
+            ^^^^^^^^^^
+            source-text-markup-markdown-punctuation-block-quote-markup-text
 > that spans multiple lines.
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^
 source-text-markup-markdown-punctuation-block-quote
+  ^^^^
+  source-text-markup-markdown-punctuation-block-quote-markup-text
+      ^
+      source-text-markup-markdown-punctuation-block-quote-whitespace
+       ^^^^^
+       source-text-markup-markdown-punctuation-block-quote-markup-text
+            ^
+            source-text-markup-markdown-punctuation-block-quote-whitespace
+             ^^^^^^^^
+             source-text-markup-markdown-punctuation-block-quote-markup-text
+                     ^
+                     source-text-markup-markdown-punctuation-block-quote-whitespace
+                      ^^^^^^
+                      source-text-markup-markdown-punctuation-block-quote-markup-text

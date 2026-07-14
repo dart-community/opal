@@ -34,6 +34,12 @@ void main() {
         expect(language?.name, equals('yaml'));
       });
 
+      test('includes go language and fallback', () {
+        expect(registry['go'], same(BuiltInLanguages.go));
+        expect(registry['golang'], same(BuiltInLanguages.go));
+        expect(registry['GO'], same(BuiltInLanguages.go));
+      });
+
       test('returns null for unknown language', () {
         expect(registry['unknown'], isNull);
         expect(registry['perl'], isNull);

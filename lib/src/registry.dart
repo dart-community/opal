@@ -95,6 +95,7 @@ final Map<String, Language> _defaultLanguages = {
 /// A mapping of alternative names for languages to
 /// the standardized names used in [_defaultLanguages].
 final Map<String, String> _defaultFallbackLanguageNames = {
+  'golang': BuiltInLanguages.go.name,
   'xhtml': BuiltInLanguages.xml.name,
   'javascript': BuiltInLanguages.js.name,
   // If a TS-specific grammar is ever implemented,

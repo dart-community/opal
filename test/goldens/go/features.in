@@ -1,0 +1,31 @@
+package sample
+
+import "fmt"
+
+type Pair[T comparable] struct {
+	Left, Right T
+}
+
+const Answer = 0x2a
+var format, trueValue, integer = 1, true, 2
+
+func (p Pair[T]) String() string {
+	go fmt.Println(p.Left, p.Right)
+	ch := make(chan T, 1)
+	defer close(ch)
+	return fmt.Sprintf("%v/%v", p.Left, p.Right)
+}
+
+func generic[T any]() {}
+
+func αβ(値, cap int) int {
+	generic[[]int]()
+	generic[map[string]int]()
+	generic[map[string][]byte]()
+	变量 := 値
+	ifπ := 2
+	true値 := 3
+	x٣ := 4
+	string値 := "identifier, not a built-in type"
+	return cap + 变量 + ifπ + true値 + x٣ + len(string値)
+}

@@ -1,0 +1,535 @@
+package sample
+^^^^^^^
+source-code-go-keyword-declaration-package
+       ^
+       source-code-go-whitespace
+        ^^^^^^
+        source-code-go-identifier
+
+import "fmt"
+^^^^^^
+source-code-go-keyword-declaration-import
+      ^
+      source-code-go-whitespace
+       ^
+       source-code-go-literal-string-quoted-double-literal-string-quoted-double-begin
+        ^^^
+        source-code-go-literal-string-quoted-double-literal-string-unquoted-literal-string-unquoted
+           ^
+           source-code-go-literal-string-quoted-double-literal-string-quoted-double-end
+
+type Pair[T comparable] struct {
+^^^^
+source-code-go-keyword-declaration-type
+    ^
+    source-code-go-whitespace
+     ^^^^
+     source-code-go-identifier
+         ^
+         source-code-go-punctuation
+          ^
+          source-code-go-identifier
+           ^
+           source-code-go-whitespace
+            ^^^^^^^^^^
+            source-code-go-identifier-type-built-in
+                      ^
+                      source-code-go-punctuation
+                       ^
+                       source-code-go-whitespace
+                        ^^^^^^
+                        source-code-go-keyword-declaration-struct
+                              ^
+                              source-code-go-whitespace
+                               ^
+                               source-code-go-punctuation
+	Left, Right T
+^
+source-code-go-whitespace
+ ^^^^
+ source-code-go-identifier
+     ^
+     source-code-go-punctuation
+      ^
+      source-code-go-whitespace
+       ^^^^^
+       source-code-go-identifier
+            ^
+            source-code-go-whitespace
+             ^
+             source-code-go-identifier
+}
+^
+source-code-go-punctuation
+
+const Answer = 0x2a
+^^^^^
+source-code-go-keyword-declaration-const
+     ^
+     source-code-go-whitespace
+      ^^^^^^
+      source-code-go-identifier
+            ^
+            source-code-go-whitespace
+             ^
+             source-code-go-keyword-operator
+              ^
+              source-code-go-whitespace
+               ^^^^
+               source-code-go-literal-number-integer
+var format, trueValue, integer = 1, true, 2
+^^^
+source-code-go-keyword-declaration-var
+   ^
+   source-code-go-whitespace
+    ^^^^^^
+    source-code-go-identifier
+          ^
+          source-code-go-punctuation
+           ^
+           source-code-go-whitespace
+            ^^^^^^^^^
+            source-code-go-identifier
+                     ^
+                     source-code-go-punctuation
+                      ^
+                      source-code-go-whitespace
+                       ^^^^^^^
+                       source-code-go-identifier
+                              ^
+                              source-code-go-whitespace
+                               ^
+                               source-code-go-keyword-operator
+                                ^
+                                source-code-go-whitespace
+                                 ^
+                                 source-code-go-literal-number-integer
+                                  ^
+                                  source-code-go-punctuation
+                                   ^
+                                   source-code-go-whitespace
+                                    ^^^^
+                                    source-code-go-literal-boolean-true
+                                        ^
+                                        source-code-go-punctuation
+                                         ^
+                                         source-code-go-whitespace
+                                          ^
+                                          source-code-go-literal-number-integer
+
+func (p Pair[T]) String() string {
+^^^^
+source-code-go-keyword-declaration-func
+    ^
+    source-code-go-whitespace
+     ^
+     source-code-go-punctuation
+      ^
+      source-code-go-identifier
+       ^
+       source-code-go-whitespace
+        ^^^^
+        source-code-go-identifier
+            ^
+            source-code-go-punctuation
+             ^
+             source-code-go-identifier
+              ^
+              source-code-go-punctuation
+               ^
+               source-code-go-punctuation
+                ^
+                source-code-go-whitespace
+                 ^^^^^^
+                 source-code-go-identifier-function
+                       ^
+                       source-code-go-punctuation
+                        ^
+                        source-code-go-punctuation
+                         ^
+                         source-code-go-whitespace
+                          ^^^^^^
+                          source-code-go-identifier-type-built-in
+                                ^
+                                source-code-go-whitespace
+                                 ^
+                                 source-code-go-punctuation
+	go fmt.Println(p.Left, p.Right)
+^
+source-code-go-whitespace
+ ^^
+ source-code-go-keyword-control-go
+   ^
+   source-code-go-whitespace
+    ^^^
+    source-code-go-identifier
+       ^
+       source-code-go-punctuation-accessor
+        ^^^^^^^
+        source-code-go-identifier-function
+               ^
+               source-code-go-punctuation
+                ^
+                source-code-go-identifier
+                 ^
+                 source-code-go-punctuation-accessor
+                  ^^^^
+                  source-code-go-identifier
+                      ^
+                      source-code-go-punctuation
+                       ^
+                       source-code-go-whitespace
+                        ^
+                        source-code-go-identifier
+                         ^
+                         source-code-go-punctuation-accessor
+                          ^^^^^
+                          source-code-go-identifier
+                               ^
+                               source-code-go-punctuation
+	ch := make(chan T, 1)
+^
+source-code-go-whitespace
+ ^^
+ source-code-go-identifier
+   ^
+   source-code-go-whitespace
+    ^^
+    source-code-go-keyword-operator
+      ^
+      source-code-go-whitespace
+       ^^^^
+       source-code-go-identifier-function
+           ^
+           source-code-go-punctuation
+            ^^^^
+            source-code-go-keyword-declaration-chan
+                ^
+                source-code-go-whitespace
+                 ^
+                 source-code-go-identifier
+                  ^
+                  source-code-go-punctuation
+                   ^
+                   source-code-go-whitespace
+                    ^
+                    source-code-go-literal-number-integer
+                     ^
+                     source-code-go-punctuation
+	defer close(ch)
+^
+source-code-go-whitespace
+ ^^^^^
+ source-code-go-keyword-control-defer
+      ^
+      source-code-go-whitespace
+       ^^^^^
+       source-code-go-identifier-function
+            ^
+            source-code-go-punctuation
+             ^^
+             source-code-go-identifier
+               ^
+               source-code-go-punctuation
+	return fmt.Sprintf("%v/%v", p.Left, p.Right)
+^
+source-code-go-whitespace
+ ^^^^^^
+ source-code-go-keyword-control-return
+       ^
+       source-code-go-whitespace
+        ^^^
+        source-code-go-identifier
+           ^
+           source-code-go-punctuation-accessor
+            ^^^^^^^
+            source-code-go-identifier-function
+                   ^
+                   source-code-go-punctuation
+                    ^
+                    source-code-go-literal-string-quoted-double-literal-string-quoted-double-begin
+                     ^^^^^
+                     source-code-go-literal-string-quoted-double-literal-string-unquoted-literal-string-unquoted
+                          ^
+                          source-code-go-literal-string-quoted-double-literal-string-quoted-double-end
+                           ^
+                           source-code-go-punctuation
+                            ^
+                            source-code-go-whitespace
+                             ^
+                             source-code-go-identifier
+                              ^
+                              source-code-go-punctuation-accessor
+                               ^^^^
+                               source-code-go-identifier
+                                   ^
+                                   source-code-go-punctuation
+                                    ^
+                                    source-code-go-whitespace
+                                     ^
+                                     source-code-go-identifier
+                                      ^
+                                      source-code-go-punctuation-accessor
+                                       ^^^^^
+                                       source-code-go-identifier
+                                            ^
+                                            source-code-go-punctuation
+}
+^
+source-code-go-punctuation
+
+func generic[T any]() {}
+^^^^
+source-code-go-keyword-declaration-func
+    ^
+    source-code-go-whitespace
+     ^^^^^^^
+     source-code-go-identifier-function
+            ^
+            source-code-go-punctuation
+             ^
+             source-code-go-identifier
+              ^
+              source-code-go-whitespace
+               ^^^
+               source-code-go-identifier-type-built-in
+                  ^
+                  source-code-go-punctuation
+                   ^
+                   source-code-go-punctuation
+                    ^
+                    source-code-go-punctuation
+                     ^
+                     source-code-go-whitespace
+                      ^
+                      source-code-go-punctuation
+                       ^
+                       source-code-go-punctuation
+
+func αβ(値, cap int) int {
+^^^^
+source-code-go-keyword-declaration-func
+    ^
+    source-code-go-whitespace
+     ^^
+     source-code-go-identifier-function
+       ^
+       source-code-go-punctuation
+        ^
+        source-code-go-identifier
+         ^
+         source-code-go-punctuation
+          ^
+          source-code-go-whitespace
+           ^^^
+           source-code-go-identifier
+              ^
+              source-code-go-whitespace
+               ^^^
+               source-code-go-identifier-type-built-in
+                  ^
+                  source-code-go-punctuation
+                   ^
+                   source-code-go-whitespace
+                    ^^^
+                    source-code-go-identifier-type-built-in
+                       ^
+                       source-code-go-whitespace
+                        ^
+                        source-code-go-punctuation
+	generic[[]int]()
+^
+source-code-go-whitespace
+ ^^^^^^^
+ source-code-go-identifier-function
+        ^
+        source-code-go-punctuation
+         ^
+         source-code-go-punctuation
+          ^
+          source-code-go-punctuation
+           ^^^
+           source-code-go-identifier-type-built-in
+              ^
+              source-code-go-punctuation
+               ^
+               source-code-go-punctuation
+                ^
+                source-code-go-punctuation
+	generic[map[string]int]()
+^
+source-code-go-whitespace
+ ^^^^^^^
+ source-code-go-identifier-function
+        ^
+        source-code-go-punctuation
+         ^^^
+         source-code-go-keyword-declaration-map
+            ^
+            source-code-go-punctuation
+             ^^^^^^
+             source-code-go-identifier-type-built-in
+                   ^
+                   source-code-go-punctuation
+                    ^^^
+                    source-code-go-identifier-type-built-in
+                       ^
+                       source-code-go-punctuation
+                        ^
+                        source-code-go-punctuation
+                         ^
+                         source-code-go-punctuation
+	generic[map[string][]byte]()
+^
+source-code-go-whitespace
+ ^^^^^^^
+ source-code-go-identifier-function
+        ^
+        source-code-go-punctuation
+         ^^^
+         source-code-go-keyword-declaration-map
+            ^
+            source-code-go-punctuation
+             ^^^^^^
+             source-code-go-identifier-type-built-in
+                   ^
+                   source-code-go-punctuation
+                    ^
+                    source-code-go-punctuation
+                     ^
+                     source-code-go-punctuation
+                      ^^^^
+                      source-code-go-identifier-type-built-in
+                          ^
+                          source-code-go-punctuation
+                           ^
+                           source-code-go-punctuation
+                            ^
+                            source-code-go-punctuation
+	变量 := 値
+^
+source-code-go-whitespace
+ ^^
+ source-code-go-identifier
+   ^
+   source-code-go-whitespace
+    ^^
+    source-code-go-keyword-operator
+      ^
+      source-code-go-whitespace
+       ^
+       source-code-go-identifier
+	ifπ := 2
+^
+source-code-go-whitespace
+ ^^^
+ source-code-go-identifier
+    ^
+    source-code-go-whitespace
+     ^^
+     source-code-go-keyword-operator
+       ^
+       source-code-go-whitespace
+        ^
+        source-code-go-literal-number-integer
+	true値 := 3
+^
+source-code-go-whitespace
+ ^^^^^
+ source-code-go-identifier
+      ^
+      source-code-go-whitespace
+       ^^
+       source-code-go-keyword-operator
+         ^
+         source-code-go-whitespace
+          ^
+          source-code-go-literal-number-integer
+	x٣ := 4
+^
+source-code-go-whitespace
+ ^^
+ source-code-go-identifier
+   ^
+   source-code-go-whitespace
+    ^^
+    source-code-go-keyword-operator
+      ^
+      source-code-go-whitespace
+       ^
+       source-code-go-literal-number-integer
+	string値 := "identifier, not a built-in type"
+^
+source-code-go-whitespace
+ ^^^^^^^
+ source-code-go-identifier
+        ^
+        source-code-go-whitespace
+         ^^
+         source-code-go-keyword-operator
+           ^
+           source-code-go-whitespace
+            ^
+            source-code-go-literal-string-quoted-double-literal-string-quoted-double-begin
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+             source-code-go-literal-string-quoted-double-literal-string-unquoted-literal-string-unquoted
+                                            ^
+                                            source-code-go-literal-string-quoted-double-literal-string-quoted-double-end
+	return cap + 变量 + ifπ + true値 + x٣ + len(string値)
+^
+source-code-go-whitespace
+ ^^^^^^
+ source-code-go-keyword-control-return
+       ^
+       source-code-go-whitespace
+        ^^^
+        source-code-go-identifier
+           ^
+           source-code-go-whitespace
+            ^
+            source-code-go-keyword-operator
+             ^
+             source-code-go-whitespace
+              ^^
+              source-code-go-identifier
+                ^
+                source-code-go-whitespace
+                 ^
+                 source-code-go-keyword-operator
+                  ^
+                  source-code-go-whitespace
+                   ^^^
+                   source-code-go-identifier
+                      ^
+                      source-code-go-whitespace
+                       ^
+                       source-code-go-keyword-operator
+                        ^
+                        source-code-go-whitespace
+                         ^^^^^
+                         source-code-go-identifier
+                              ^
+                              source-code-go-whitespace
+                               ^
+                               source-code-go-keyword-operator
+                                ^
+                                source-code-go-whitespace
+                                 ^^
+                                 source-code-go-identifier
+                                   ^
+                                   source-code-go-whitespace
+                                    ^
+                                    source-code-go-keyword-operator
+                                     ^
+                                     source-code-go-whitespace
+                                      ^^^
+                                      source-code-go-identifier-function
+                                         ^
+                                         source-code-go-punctuation
+                                          ^^^^^^^
+                                          source-code-go-identifier
+                                                 ^
+                                                 source-code-go-punctuation
+}
+^
+source-code-go-punctuation

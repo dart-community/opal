@@ -1,0 +1,200 @@
+package sample
+^^^^^^^
+source-code-go-keyword-declaration-package
+       ^
+       source-code-go-whitespace
+        ^^^^^^
+        source-code-go-identifier
+
+var values = []float64{1_000, .25, 0x1.fp2, 2i}
+^^^
+source-code-go-keyword-declaration-var
+   ^
+   source-code-go-whitespace
+    ^^^^^^
+    source-code-go-identifier
+          ^
+          source-code-go-whitespace
+           ^
+           source-code-go-keyword-operator
+            ^
+            source-code-go-whitespace
+             ^
+             source-code-go-punctuation
+              ^
+              source-code-go-punctuation
+               ^^^^^^^
+               source-code-go-identifier-type-built-in
+                      ^
+                      source-code-go-punctuation
+                       ^^^^^
+                       source-code-go-literal-number-integer
+                            ^
+                            source-code-go-punctuation
+                             ^
+                             source-code-go-whitespace
+                              ^^^
+                              source-code-go-literal-number-float
+                                 ^
+                                 source-code-go-punctuation
+                                  ^
+                                  source-code-go-whitespace
+                                   ^^^^^^^
+                                   source-code-go-literal-number-float
+                                          ^
+                                          source-code-go-punctuation
+                                           ^
+                                           source-code-go-whitespace
+                                            ^^
+                                            source-code-go-literal-number
+                                              ^
+                                              source-code-go-punctuation
+var trailing = []float64{1., 0.}
+^^^
+source-code-go-keyword-declaration-var
+   ^
+   source-code-go-whitespace
+    ^^^^^^^^
+    source-code-go-identifier
+            ^
+            source-code-go-whitespace
+             ^
+             source-code-go-keyword-operator
+              ^
+              source-code-go-whitespace
+               ^
+               source-code-go-punctuation
+                ^
+                source-code-go-punctuation
+                 ^^^^^^^
+                 source-code-go-identifier-type-built-in
+                        ^
+                        source-code-go-punctuation
+                         ^^
+                         source-code-go-literal-number-float
+                           ^
+                           source-code-go-punctuation
+                            ^
+                            source-code-go-whitespace
+                             ^^
+                             source-code-go-literal-number-float
+                               ^
+                               source-code-go-punctuation
+var raw = `raw
+^^^
+source-code-go-keyword-declaration-var
+   ^
+   source-code-go-whitespace
+    ^^^
+    source-code-go-identifier
+       ^
+       source-code-go-whitespace
+        ^
+        source-code-go-keyword-operator
+         ^
+         source-code-go-whitespace
+          ^
+          source-code-go-literal-string-literal-string-begin
+           ^^^
+           source-code-go-literal-string-literal-string-unquoted
+string`
+^^^^^^
+source-code-go-literal-string-literal-string-unquoted
+      ^
+      source-code-go-literal-string-literal-string-end
+var whitespace = []string{" hello", "a\n b", " "}
+^^^
+source-code-go-keyword-declaration-var
+   ^
+   source-code-go-whitespace
+    ^^^^^^^^^^
+    source-code-go-identifier
+              ^
+              source-code-go-whitespace
+               ^
+               source-code-go-keyword-operator
+                ^
+                source-code-go-whitespace
+                 ^
+                 source-code-go-punctuation
+                  ^
+                  source-code-go-punctuation
+                   ^^^^^^
+                   source-code-go-identifier-type-built-in
+                         ^
+                         source-code-go-punctuation
+                          ^
+                          source-code-go-literal-string-quoted-double-literal-string-quoted-double-begin
+                           ^
+                           source-code-go-literal-string-quoted-double-literal-string-unquoted-whitespace
+                            ^^^^^
+                            source-code-go-literal-string-quoted-double-literal-string-unquoted-literal-string-unquoted
+                                 ^
+                                 source-code-go-literal-string-quoted-double-literal-string-quoted-double-end
+                                  ^
+                                  source-code-go-punctuation
+                                   ^
+                                   source-code-go-whitespace
+                                    ^
+                                    source-code-go-literal-string-quoted-double-literal-string-quoted-double-begin
+                                     ^
+                                     source-code-go-literal-string-quoted-double-literal-string-unquoted-literal-string-unquoted
+                                      ^^
+                                      source-code-go-literal-string-quoted-double-literal-string-unquoted-literal-string-escape
+                                        ^
+                                        source-code-go-literal-string-quoted-double-literal-string-unquoted-whitespace
+                                         ^
+                                         source-code-go-literal-string-quoted-double-literal-string-unquoted-literal-string-unquoted
+                                          ^
+                                          source-code-go-literal-string-quoted-double-literal-string-quoted-double-end
+                                           ^
+                                           source-code-go-punctuation
+                                            ^
+                                            source-code-go-whitespace
+                                             ^
+                                             source-code-go-literal-string-quoted-double-literal-string-quoted-double-begin
+                                              ^
+                                              source-code-go-literal-string-quoted-double-literal-string-unquoted-whitespace
+                                               ^
+                                               source-code-go-literal-string-quoted-double-literal-string-quoted-double-end
+                                                ^
+                                                source-code-go-punctuation
+var runes = []rune{'\n', ' '}
+^^^
+source-code-go-keyword-declaration-var
+   ^
+   source-code-go-whitespace
+    ^^^^^
+    source-code-go-identifier
+         ^
+         source-code-go-whitespace
+          ^
+          source-code-go-keyword-operator
+           ^
+           source-code-go-whitespace
+            ^
+            source-code-go-punctuation
+             ^
+             source-code-go-punctuation
+              ^^^^
+              source-code-go-identifier-type-built-in
+                  ^
+                  source-code-go-punctuation
+                   ^
+                   source-code-go-literal-string-character-literal-string-character-begin
+                    ^^
+                    source-code-go-literal-string-character-literal-string-unquoted-literal-string-escape
+                      ^
+                      source-code-go-literal-string-character-literal-string-character-end
+                       ^
+                       source-code-go-punctuation
+                        ^
+                        source-code-go-whitespace
+                         ^
+                         source-code-go-literal-string-character-literal-string-character-begin
+                          ^
+                          source-code-go-literal-string-character-literal-string-unquoted-whitespace
+                           ^
+                           source-code-go-literal-string-character-literal-string-character-end
+                            ^
+                            source-code-go-punctuation

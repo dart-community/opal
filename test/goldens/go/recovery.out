@@ -1,0 +1,91 @@
+package sample
+^^^^^^^
+source-code-go-keyword-declaration-package
+       ^
+       source-code-go-whitespace
+        ^^^^^^
+        source-code-go-identifier
+
+// Incomplete code should still highlight usefully.
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+source-code-go-comment-line
+func unfinished(value int) {
+^^^^
+source-code-go-keyword-declaration-func
+    ^
+    source-code-go-whitespace
+     ^^^^^^^^^^
+     source-code-go-identifier-function
+               ^
+               source-code-go-punctuation
+                ^^^^^
+                source-code-go-identifier
+                     ^
+                     source-code-go-whitespace
+                      ^^^
+                      source-code-go-identifier-type-built-in
+                         ^
+                         source-code-go-punctuation
+                          ^
+                          source-code-go-whitespace
+                           ^
+                           source-code-go-punctuation
+	if value > 0 {
+^
+source-code-go-whitespace
+ ^^
+ source-code-go-keyword-control-if
+   ^
+   source-code-go-whitespace
+    ^^^^^
+    source-code-go-identifier
+         ^
+         source-code-go-whitespace
+          ^
+          source-code-go-keyword-operator
+           ^
+           source-code-go-whitespace
+            ^
+            source-code-go-literal-number-integer
+             ^
+             source-code-go-whitespace
+              ^
+              source-code-go-punctuation
+		brokenRune := 'x
+^^
+source-code-go-whitespace
+  ^^^^^^^^^^
+  source-code-go-identifier
+            ^
+            source-code-go-whitespace
+             ^^
+             source-code-go-keyword-operator
+               ^
+               source-code-go-whitespace
+                ^
+                source-code-go-literal-string-character-literal-string-character-begin
+                 ^
+                 source-code-go-literal-string-character-literal-string-unquoted-literal-string-unquoted
+		// This comment must not be swallowed by the rune.
+^^
+source-code-go-whitespace
+  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  source-code-go-comment-line
+		println("missing end
+^^
+source-code-go-whitespace
+  ^^^^^^^
+  source-code-go-identifier-function
+         ^
+         source-code-go-punctuation
+          ^
+          source-code-go-literal-string-quoted-double-literal-string-quoted-double-begin
+           ^^^^^^^^^^^
+           source-code-go-literal-string-quoted-double-literal-string-unquoted-literal-string-unquoted
+	/* and an unfinished comment
+^
+source-code-go-whitespace
+ ^^
+ source-code-go-comment-block-comment-block-begin
+   ^^^^^^^^^^^^^^^^^^^^^^^^^^
+   source-code-go-comment-block-comment-block-content

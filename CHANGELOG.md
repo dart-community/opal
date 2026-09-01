@@ -1,4 +1,4 @@
-## 0.2.5-wip
+## 0.2.5
 
 - Add initial, basic support for `go`.
 - Add initial, flexible support for `css`.

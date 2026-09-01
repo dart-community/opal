@@ -47,6 +47,13 @@ void main() {
         expect(registry['ts'], isNot(same(BuiltInLanguages.js)));
       });
 
+      test('includes css language', () {
+        expect(registry['css'], same(BuiltInLanguages.css));
+        expect(registry['CSS'], same(BuiltInLanguages.css));
+        expect(registry[' css '], same(BuiltInLanguages.css));
+        expect(BuiltInLanguages.css.name, equals('css'));
+      });
+
       test('returns null for unknown language', () {
         expect(registry['unknown'], isNull);
         expect(registry['perl'], isNull);

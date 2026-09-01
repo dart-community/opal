@@ -1,0 +1,27 @@
+:root {
+  --space-2: 1.25rem;
+  --theme: { foreground: color(display-p3 0.3 0.5 0.9); };
+  --hashes: #123abcx #12foo #fff-red;
+}
+
+.example {
+  -webkit-user-select: none;
+  outline /* declaration trivia */ : 1px solid currentcolor;
+  font-family: system-ui,
+    sans-serif;
+  width: calc(100% - var(--space-2));
+  opacity: 7.5e-1;
+  malformed-numbers: 1. 1..2;
+  rotate: -0.25turn;
+  background: linear-gradient(45deg, #0af8, rgb(10 20 30 / 50%));
+  background-image: linear-gradient(
+    #fff 0%,
+    color(display-p3 0.1 0.2 0.3) 100%
+  );
+  mask-image: url("/assets/mask.svg#shape");
+  cursor: url(cursors/pointer.cur), pointer;
+  content: "line\A break" ' and \26 more';
+  unicode-range: U+0025-00FF, U+4??;
+  color: inherit !important;
+  unknown-prop: future-fn([alpha], --token, selector(.item > #target));
+}

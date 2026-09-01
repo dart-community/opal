@@ -1,0 +1,551 @@
+:root {
+^
+source-code-css-punctuation
+ ^^^^
+ source-code-css-identifier-selector-pseudo-class
+     ^
+     source-code-css-whitespace
+      ^
+      source-code-css-punctuation-begin
+  --space-2: 1.25rem;
+^^
+source-code-css-whitespace
+  ^^^^^^^^^
+  source-code-css-identifier-property-custom
+           ^
+           source-code-css-punctuation-separator
+            ^
+            source-code-css-whitespace
+             ^^^^
+             source-code-css-literal-number
+                 ^^^
+                 source-code-css-keyword-unit
+                    ^
+                    source-code-css-punctuation-separator
+  --theme: { foreground: color(display-p3 0.3 0.5 0.9); };
+^^
+source-code-css-whitespace
+  ^^^^^^^
+  source-code-css-identifier-property-custom
+         ^
+         source-code-css-punctuation-separator
+          ^
+          source-code-css-whitespace
+           ^
+           source-code-css-punctuation-begin
+            ^
+            source-code-css-whitespace
+             ^^^^^^^^^^
+             source-code-css-identifier-property
+                       ^
+                       source-code-css-punctuation-separator
+                        ^
+                        source-code-css-whitespace
+                         ^^^^^
+                         source-code-css-identifier-function
+                              ^
+                              source-code-css-punctuation
+                               ^^^^^^^^^^
+                               source-code-css-identifier
+                                         ^
+                                         source-code-css-whitespace
+                                          ^^^
+                                          source-code-css-literal-number
+                                             ^
+                                             source-code-css-whitespace
+                                              ^^^
+                                              source-code-css-literal-number
+                                                 ^
+                                                 source-code-css-whitespace
+                                                  ^^^
+                                                  source-code-css-literal-number
+                                                     ^
+                                                     source-code-css-punctuation
+                                                      ^
+                                                      source-code-css-punctuation-separator
+                                                       ^
+                                                       source-code-css-whitespace
+                                                        ^
+                                                        source-code-css-punctuation-end
+                                                         ^
+                                                         source-code-css-punctuation-separator
+  --hashes: #123abcx #12foo #fff-red;
+^^
+source-code-css-whitespace
+  ^^^^^^^^
+  source-code-css-identifier-property-custom
+          ^
+          source-code-css-punctuation-separator
+           ^
+           source-code-css-whitespace
+            ^^^^^^^^
+            source-code-css-literal-hash
+                    ^
+                    source-code-css-whitespace
+                     ^^^^^^
+                     source-code-css-literal-hash
+                           ^
+                           source-code-css-whitespace
+                            ^^^^^^^^
+                            source-code-css-literal-hash
+                                    ^
+                                    source-code-css-punctuation-separator
+}
+^
+source-code-css-punctuation-end
+
+.example {
+^
+source-code-css-punctuation
+ ^^^^^^^
+ source-code-css-identifier-selector-class
+        ^
+        source-code-css-whitespace
+         ^
+         source-code-css-punctuation-begin
+  -webkit-user-select: none;
+^^
+source-code-css-whitespace
+  ^^^^^^^^^^^^^^^^^^^
+  source-code-css-identifier-property
+                     ^
+                     source-code-css-punctuation-separator
+                      ^
+                      source-code-css-whitespace
+                       ^^^^
+                       source-code-css-identifier
+                           ^
+                           source-code-css-punctuation-separator
+  outline /* declaration trivia */ : 1px solid currentcolor;
+^^
+source-code-css-whitespace
+  ^^^^^^^
+  source-code-css-identifier-property
+         ^
+         source-code-css-whitespace
+          ^^
+          source-code-css-comment-block-comment-block-begin
+            ^^^^^^^^^^^^^^^^^^^^
+            source-code-css-comment-block-comment-block-content
+                                ^^
+                                source-code-css-comment-block-comment-block-end
+                                  ^
+                                  source-code-css-whitespace
+                                   ^
+                                   source-code-css-punctuation-separator
+                                    ^
+                                    source-code-css-whitespace
+                                     ^
+                                     source-code-css-literal-number
+                                      ^^
+                                      source-code-css-keyword-unit
+                                        ^
+                                        source-code-css-whitespace
+                                         ^^^^^
+                                         source-code-css-identifier
+                                              ^
+                                              source-code-css-whitespace
+                                               ^^^^^^^^^^^^
+                                               source-code-css-identifier
+                                                           ^
+                                                           source-code-css-punctuation-separator
+  font-family: system-ui,
+^^
+source-code-css-whitespace
+  ^^^^^^^^^^^
+  source-code-css-identifier-property
+             ^
+             source-code-css-punctuation-separator
+              ^
+              source-code-css-whitespace
+               ^^^^^^^^^
+               source-code-css-identifier
+                        ^
+                        source-code-css-punctuation-separator
+    sans-serif;
+^^^^
+source-code-css-whitespace
+    ^^^^^^^^^^
+    source-code-css-identifier
+              ^
+              source-code-css-punctuation-separator
+  width: calc(100% - var(--space-2));
+^^
+source-code-css-whitespace
+  ^^^^^
+  source-code-css-identifier-property
+       ^
+       source-code-css-punctuation-separator
+        ^
+        source-code-css-whitespace
+         ^^^^
+         source-code-css-identifier-function
+             ^
+             source-code-css-punctuation
+              ^^^
+              source-code-css-literal-number
+                 ^
+                 source-code-css-keyword-unit
+                  ^
+                  source-code-css-whitespace
+                   ^
+                   source-code-css-keyword-operator
+                    ^
+                    source-code-css-whitespace
+                     ^^^
+                     source-code-css-identifier-function
+                        ^
+                        source-code-css-punctuation
+                         ^^^^^^^^^
+                         source-code-css-identifier-variable-custom
+                                  ^
+                                  source-code-css-punctuation
+                                   ^
+                                   source-code-css-punctuation
+                                    ^
+                                    source-code-css-punctuation-separator
+  opacity: 7.5e-1;
+^^
+source-code-css-whitespace
+  ^^^^^^^
+  source-code-css-identifier-property
+         ^
+         source-code-css-punctuation-separator
+          ^
+          source-code-css-whitespace
+           ^^^^^^
+           source-code-css-literal-number
+                 ^
+                 source-code-css-punctuation-separator
+  malformed-numbers: 1. 1..2;
+^^
+source-code-css-whitespace
+  ^^^^^^^^^^^^^^^^^
+  source-code-css-identifier-property
+                   ^
+                   source-code-css-punctuation-separator
+                    ^
+                    source-code-css-whitespace
+                     ^
+                     source-code-css-literal-number
+                      ^
+                      source-code-css-punctuation-accessor
+                       ^
+                       source-code-css-whitespace
+                        ^
+                        source-code-css-literal-number
+                         ^
+                         source-code-css-punctuation-accessor
+                          ^^
+                          source-code-css-literal-number
+                            ^
+                            source-code-css-punctuation-separator
+  rotate: -0.25turn;
+^^
+source-code-css-whitespace
+  ^^^^^^
+  source-code-css-identifier-property
+        ^
+        source-code-css-punctuation-separator
+         ^
+         source-code-css-whitespace
+          ^^^^^
+          source-code-css-literal-number
+               ^^^^
+               source-code-css-keyword-unit
+                   ^
+                   source-code-css-punctuation-separator
+  background: linear-gradient(45deg, #0af8, rgb(10 20 30 / 50%));
+^^
+source-code-css-whitespace
+  ^^^^^^^^^^
+  source-code-css-identifier-property
+            ^
+            source-code-css-punctuation-separator
+             ^
+             source-code-css-whitespace
+              ^^^^^^^^^^^^^^^
+              source-code-css-identifier-function
+                             ^
+                             source-code-css-punctuation
+                              ^^
+                              source-code-css-literal-number
+                                ^^^
+                                source-code-css-keyword-unit
+                                   ^
+                                   source-code-css-punctuation-separator
+                                    ^
+                                    source-code-css-whitespace
+                                     ^^^^^
+                                     source-code-css-literal-color
+                                          ^
+                                          source-code-css-punctuation-separator
+                                           ^
+                                           source-code-css-whitespace
+                                            ^^^
+                                            source-code-css-identifier-function
+                                               ^
+                                               source-code-css-punctuation
+                                                ^^
+                                                source-code-css-literal-number
+                                                  ^
+                                                  source-code-css-whitespace
+                                                   ^^
+                                                   source-code-css-literal-number
+                                                     ^
+                                                     source-code-css-whitespace
+                                                      ^^
+                                                      source-code-css-literal-number
+                                                        ^
+                                                        source-code-css-whitespace
+                                                         ^
+                                                         source-code-css-keyword-operator
+                                                          ^
+                                                          source-code-css-whitespace
+                                                           ^^
+                                                           source-code-css-literal-number
+                                                             ^
+                                                             source-code-css-keyword-unit
+                                                              ^
+                                                              source-code-css-punctuation
+                                                               ^
+                                                               source-code-css-punctuation
+                                                                ^
+                                                                source-code-css-punctuation-separator
+  background-image: linear-gradient(
+^^
+source-code-css-whitespace
+  ^^^^^^^^^^^^^^^^
+  source-code-css-identifier-property
+                  ^
+                  source-code-css-punctuation-separator
+                   ^
+                   source-code-css-whitespace
+                    ^^^^^^^^^^^^^^^
+                    source-code-css-identifier-function
+                                   ^
+                                   source-code-css-punctuation
+    #fff 0%,
+^^^^
+source-code-css-whitespace
+    ^^^^
+    source-code-css-literal-color
+        ^
+        source-code-css-whitespace
+         ^
+         source-code-css-literal-number
+          ^
+          source-code-css-keyword-unit
+           ^
+           source-code-css-punctuation-separator
+    color(display-p3 0.1 0.2 0.3) 100%
+^^^^
+source-code-css-whitespace
+    ^^^^^
+    source-code-css-identifier-function
+         ^
+         source-code-css-punctuation
+          ^^^^^^^^^^
+          source-code-css-identifier
+                    ^
+                    source-code-css-whitespace
+                     ^^^
+                     source-code-css-literal-number
+                        ^
+                        source-code-css-whitespace
+                         ^^^
+                         source-code-css-literal-number
+                            ^
+                            source-code-css-whitespace
+                             ^^^
+                             source-code-css-literal-number
+                                ^
+                                source-code-css-punctuation
+                                 ^
+                                 source-code-css-whitespace
+                                  ^^^
+                                  source-code-css-literal-number
+                                     ^
+                                     source-code-css-keyword-unit
+  );
+^^
+source-code-css-whitespace
+  ^
+  source-code-css-punctuation
+   ^
+   source-code-css-punctuation-separator
+  mask-image: url("/assets/mask.svg#shape");
+^^
+source-code-css-whitespace
+  ^^^^^^^^^^
+  source-code-css-identifier-property
+            ^
+            source-code-css-punctuation-separator
+             ^
+             source-code-css-whitespace
+              ^^^
+              source-code-css-link-identifier-function
+                 ^
+                 source-code-css-link-punctuation
+                  ^
+                  source-code-css-link-literal-string-quoted-double-literal-string-quoted-double-begin
+                   ^^^^^^^^^^^^^^^^^^^^^^
+                   source-code-css-link-literal-string-quoted-double-literal-string-unquoted
+                                         ^
+                                         source-code-css-link-literal-string-quoted-double-literal-string-quoted-double-end
+                                          ^
+                                          source-code-css-link-punctuation
+                                           ^
+                                           source-code-css-punctuation-separator
+  cursor: url(cursors/pointer.cur), pointer;
+^^
+source-code-css-whitespace
+  ^^^^^^
+  source-code-css-identifier-property
+        ^
+        source-code-css-punctuation-separator
+         ^
+         source-code-css-whitespace
+          ^^^
+          source-code-css-link-identifier-function
+             ^
+             source-code-css-link-punctuation
+              ^^^^^^^^^^^^^^^^^^^
+              source-code-css-link-link-content
+                                 ^
+                                 source-code-css-link-punctuation
+                                  ^
+                                  source-code-css-punctuation-separator
+                                   ^
+                                   source-code-css-whitespace
+                                    ^^^^^^^
+                                    source-code-css-identifier
+                                           ^
+                                           source-code-css-punctuation-separator
+  content: "line\A break" ' and \26 more';
+^^
+source-code-css-whitespace
+  ^^^^^^^
+  source-code-css-identifier-property
+         ^
+         source-code-css-punctuation-separator
+          ^
+          source-code-css-whitespace
+           ^
+           source-code-css-literal-string-quoted-double-literal-string-quoted-double-begin
+            ^^^^
+            source-code-css-literal-string-quoted-double-literal-string-unquoted
+                ^^^
+                source-code-css-literal-string-quoted-double-literal-string-escape
+                   ^^^^^
+                   source-code-css-literal-string-quoted-double-literal-string-unquoted
+                        ^
+                        source-code-css-literal-string-quoted-double-literal-string-quoted-double-end
+                         ^
+                         source-code-css-whitespace
+                          ^
+                          source-code-css-literal-string-quoted-single-literal-string-quoted-single-begin
+                           ^^^^^
+                           source-code-css-literal-string-quoted-single-literal-string-unquoted
+                                ^^^^
+                                source-code-css-literal-string-quoted-single-literal-string-escape
+                                    ^^^^
+                                    source-code-css-literal-string-quoted-single-literal-string-unquoted
+                                        ^
+                                        source-code-css-literal-string-quoted-single-literal-string-quoted-single-end
+                                         ^
+                                         source-code-css-punctuation-separator
+  unicode-range: U+0025-00FF, U+4??;
+^^
+source-code-css-whitespace
+  ^^^^^^^^^^^^^
+  source-code-css-identifier-property
+               ^
+               source-code-css-punctuation-separator
+                ^
+                source-code-css-whitespace
+                 ^^^^^^^^^^^
+                 source-code-css-literal-number
+                            ^
+                            source-code-css-punctuation-separator
+                             ^
+                             source-code-css-whitespace
+                              ^^^^^
+                              source-code-css-literal-number
+                                   ^
+                                   source-code-css-punctuation-separator
+  color: inherit !important;
+^^
+source-code-css-whitespace
+  ^^^^^
+  source-code-css-identifier-property
+       ^
+       source-code-css-punctuation-separator
+        ^
+        source-code-css-whitespace
+         ^^^^^^^
+         source-code-css-keyword-inherit
+                ^
+                source-code-css-whitespace
+                 ^
+                 source-code-css-keyword-operator
+                  ^^^^^^^^^
+                  source-code-css-keyword-modifier-important
+                           ^
+                           source-code-css-punctuation-separator
+  unknown-prop: future-fn([alpha], --token, selector(.item > #target));
+^^
+source-code-css-whitespace
+  ^^^^^^^^^^^^
+  source-code-css-identifier-property
+              ^
+              source-code-css-punctuation-separator
+               ^
+               source-code-css-whitespace
+                ^^^^^^^^^
+                source-code-css-identifier-function
+                         ^
+                         source-code-css-punctuation
+                          ^
+                          source-code-css-punctuation
+                           ^^^^^
+                           source-code-css-identifier
+                                ^
+                                source-code-css-punctuation
+                                 ^
+                                 source-code-css-punctuation-separator
+                                  ^
+                                  source-code-css-whitespace
+                                   ^^^^^^^
+                                   source-code-css-identifier-variable-custom
+                                          ^
+                                          source-code-css-punctuation-separator
+                                           ^
+                                           source-code-css-whitespace
+                                            ^^^^^^^^
+                                            source-code-css-identifier-function
+                                                    ^
+                                                    source-code-css-punctuation
+                                                     ^
+                                                     source-code-css-punctuation
+                                                      ^^^^
+                                                      source-code-css-identifier-selector-class
+                                                          ^
+                                                          source-code-css-whitespace
+                                                           ^
+                                                           source-code-css-keyword-operator
+                                                            ^
+                                                            source-code-css-whitespace
+                                                             ^
+                                                             source-code-css-punctuation
+                                                              ^^^^^^
+                                                              source-code-css-identifier-selector-id
+                                                                    ^
+                                                                    source-code-css-punctuation
+                                                                     ^
+                                                                     source-code-css-punctuation
+                                                                      ^
+                                                                      source-code-css-punctuation-separator
+}
+^
+source-code-css-punctuation-end

@@ -1,0 +1,81 @@
+/* A small card component. */
+^^
+source-code-css-comment-block-comment-block-begin
+  ^^^^^^^^^^^^^^^^^^^^^^^^^
+  source-code-css-comment-block-comment-block-content
+                           ^^
+                           source-code-css-comment-block-comment-block-end
+.card {
+^
+source-code-css-punctuation
+ ^^^^
+ source-code-css-identifier-selector-class
+     ^
+     source-code-css-whitespace
+      ^
+      source-code-css-punctuation-begin
+  color: rebeccapurple;
+^^
+source-code-css-whitespace
+  ^^^^^
+  source-code-css-identifier-property
+       ^
+       source-code-css-punctuation-separator
+        ^
+        source-code-css-whitespace
+         ^^^^^^^^^^^^^
+         source-code-css-identifier
+                      ^
+                      source-code-css-punctuation-separator
+  padding: 0.75rem 1rem;
+^^
+source-code-css-whitespace
+  ^^^^^^^
+  source-code-css-identifier-property
+         ^
+         source-code-css-punctuation-separator
+          ^
+          source-code-css-whitespace
+           ^^^^
+           source-code-css-literal-number
+               ^^^
+               source-code-css-keyword-unit
+                  ^
+                  source-code-css-whitespace
+                   ^
+                   source-code-css-literal-number
+                    ^^^
+                    source-code-css-keyword-unit
+                       ^
+                       source-code-css-punctuation-separator
+  background: #fff;
+^^
+source-code-css-whitespace
+  ^^^^^^^^^^
+  source-code-css-identifier-property
+            ^
+            source-code-css-punctuation-separator
+             ^
+             source-code-css-whitespace
+              ^^^^
+              source-code-css-literal-color
+                  ^
+                  source-code-css-punctuation-separator
+  border-radius: 0.5rem;
+^^
+source-code-css-whitespace
+  ^^^^^^^^^^^^^
+  source-code-css-identifier-property
+               ^
+               source-code-css-punctuation-separator
+                ^
+                source-code-css-whitespace
+                 ^^^
+                 source-code-css-literal-number
+                    ^^^
+                    source-code-css-keyword-unit
+                       ^
+                       source-code-css-punctuation-separator
+}
+^
+source-code-css-punctuation-end

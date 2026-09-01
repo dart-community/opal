@@ -1,0 +1,308 @@
+html, body, * {
+^^^^
+source-code-css-identifier-selector-type
+    ^
+    source-code-css-punctuation-separator
+     ^
+     source-code-css-whitespace
+      ^^^^
+      source-code-css-identifier-selector-type
+          ^
+          source-code-css-punctuation-separator
+           ^
+           source-code-css-whitespace
+            ^
+            source-code-css-identifier-selector-universal
+             ^
+             source-code-css-whitespace
+              ^
+              source-code-css-punctuation-begin
+  box-sizing: border-box;
+^^
+source-code-css-whitespace
+  ^^^^^^^^^^
+  source-code-css-identifier-property
+            ^
+            source-code-css-punctuation-separator
+             ^
+             source-code-css-whitespace
+              ^^^^^^^^^^
+              source-code-css-identifier
+                        ^
+                        source-code-css-punctuation-separator
+}
+^
+source-code-css-punctuation-end
+
+svg|a.button#fff[data-state^="open" i]:is(:hover, :focus)::before {
+^^^
+source-code-css-identifier-selector-type
+   ^
+   source-code-css-punctuation
+    ^
+    source-code-css-identifier-selector-type
+     ^
+     source-code-css-punctuation
+      ^^^^^^
+      source-code-css-identifier-selector-class
+            ^
+            source-code-css-punctuation
+             ^^^
+             source-code-css-identifier-selector-id
+                ^
+                source-code-css-identifier-selector-attribute-punctuation-begin
+                 ^^^^^^^^^^
+                 source-code-css-identifier-selector-attribute-identifier-property
+                           ^^
+                           source-code-css-identifier-selector-attribute-keyword-operator
+                             ^
+                             source-code-css-identifier-selector-attribute-literal-string-quoted-double-literal-string-quoted-double-begin
+                              ^^^^
+                              source-code-css-identifier-selector-attribute-literal-string-quoted-double-literal-string-unquoted
+                                  ^
+                                  source-code-css-identifier-selector-attribute-literal-string-quoted-double-literal-string-quoted-double-end
+                                   ^
+                                   source-code-css-identifier-selector-attribute-whitespace
+                                    ^
+                                    source-code-css-identifier-selector-attribute-keyword-modifier-flag
+                                     ^
+                                     source-code-css-identifier-selector-attribute-punctuation-end
+                                      ^
+                                      source-code-css-punctuation
+                                       ^^
+                                       source-code-css-identifier-selector-pseudo-class
+                                         ^
+                                         source-code-css-punctuation
+                                          ^
+                                          source-code-css-punctuation
+                                           ^^^^^
+                                           source-code-css-identifier-selector-pseudo-class
+                                                ^
+                                                source-code-css-punctuation-separator
+                                                 ^
+                                                 source-code-css-whitespace
+                                                  ^
+                                                  source-code-css-punctuation
+                                                   ^^^^^
+                                                   source-code-css-identifier-selector-pseudo-class
+                                                        ^
+                                                        source-code-css-punctuation
+                                                         ^^
+                                                         source-code-css-punctuation
+                                                           ^^^^^^
+                                                           source-code-css-identifier-selector-pseudo-element
+                                                                 ^
+                                                                 source-code-css-whitespace
+                                                                  ^
+                                                                  source-code-css-punctuation-begin
+  content: "→";
+^^
+source-code-css-whitespace
+  ^^^^^^^
+  source-code-css-identifier-property
+         ^
+         source-code-css-punctuation-separator
+          ^
+          source-code-css-whitespace
+           ^
+           source-code-css-literal-string-quoted-double-literal-string-quoted-double-begin
+            ^
+            source-code-css-literal-string-quoted-double-literal-string-unquoted
+             ^
+             source-code-css-literal-string-quoted-double-literal-string-quoted-double-end
+              ^
+              source-code-css-punctuation-separator
+}
+^
+source-code-css-punctuation-end
+
+main > article + aside ~ footer,
+^^^^
+source-code-css-identifier-selector-type
+    ^
+    source-code-css-whitespace
+     ^
+     source-code-css-keyword-operator
+      ^
+      source-code-css-whitespace
+       ^^^^^^^
+       source-code-css-identifier-selector-type
+              ^
+              source-code-css-whitespace
+               ^
+               source-code-css-keyword-operator
+                ^
+                source-code-css-whitespace
+                 ^^^^^
+                 source-code-css-identifier-selector-type
+                      ^
+                      source-code-css-whitespace
+                       ^
+                       source-code-css-keyword-operator
+                        ^
+                        source-code-css-whitespace
+                         ^^^^^^
+                         source-code-css-identifier-selector-type
+                               ^
+                               source-code-css-punctuation-separator
+:where(section, .panel) .\31 23-café {
+^
+source-code-css-punctuation
+ ^^^^^
+ source-code-css-identifier-selector-pseudo-class
+      ^
+      source-code-css-punctuation
+       ^^^^^^^
+       source-code-css-identifier-selector-type
+              ^
+              source-code-css-punctuation-separator
+               ^
+               source-code-css-whitespace
+                ^
+                source-code-css-punctuation
+                 ^^^^^
+                 source-code-css-identifier-selector-class
+                      ^
+                      source-code-css-punctuation
+                       ^
+                       source-code-css-whitespace
+                        ^
+                        source-code-css-punctuation
+                         ^^^^^^^^^^^
+                         source-code-css-identifier-selector-class
+                                    ^
+                                    source-code-css-whitespace
+                                     ^
+                                     source-code-css-punctuation-begin
+  display: block;
+^^
+source-code-css-whitespace
+  ^^^^^^^
+  source-code-css-identifier-property
+         ^
+         source-code-css-punctuation-separator
+          ^
+          source-code-css-whitespace
+           ^^^^^
+           source-code-css-identifier
+                ^
+                source-code-css-punctuation-separator
+
+  & > .title {
+^^
+source-code-css-whitespace
+  ^
+  source-code-css-identifier-selector-nesting
+   ^
+   source-code-css-whitespace
+    ^
+    source-code-css-keyword-operator
+     ^
+     source-code-css-whitespace
+      ^
+      source-code-css-punctuation
+       ^^^^^
+       source-code-css-identifier-selector-class
+            ^
+            source-code-css-whitespace
+             ^
+             source-code-css-punctuation-begin
+    color: #fff;
+^^^^
+source-code-css-whitespace
+    ^^^^^
+    source-code-css-identifier-property
+         ^
+         source-code-css-punctuation-separator
+          ^
+          source-code-css-whitespace
+           ^^^^
+           source-code-css-literal-color
+               ^
+               source-code-css-punctuation-separator
+  }
+^^
+source-code-css-whitespace
+  ^
+  source-code-css-punctuation-end
+}
+^
+source-code-css-punctuation-end
+
+[hidden], [data-state=open], [lang=i], [title~="a" s] {
+^
+source-code-css-identifier-selector-attribute-punctuation-begin
+ ^^^^^^
+ source-code-css-identifier-selector-attribute-identifier-property
+       ^
+       source-code-css-identifier-selector-attribute-punctuation-end
+        ^
+        source-code-css-punctuation-separator
+         ^
+         source-code-css-whitespace
+          ^
+          source-code-css-identifier-selector-attribute-punctuation-begin
+           ^^^^^^^^^^
+           source-code-css-identifier-selector-attribute-identifier-property
+                     ^
+                     source-code-css-identifier-selector-attribute-keyword-operator
+                      ^^^^
+                      source-code-css-identifier-selector-attribute-literal-string-unquoted
+                          ^
+                          source-code-css-identifier-selector-attribute-punctuation-end
+                           ^
+                           source-code-css-punctuation-separator
+                            ^
+                            source-code-css-whitespace
+                             ^
+                             source-code-css-identifier-selector-attribute-punctuation-begin
+                              ^^^^
+                              source-code-css-identifier-selector-attribute-identifier-property
+                                  ^
+                                  source-code-css-identifier-selector-attribute-keyword-operator
+                                   ^
+                                   source-code-css-identifier-selector-attribute-literal-string-unquoted
+                                    ^
+                                    source-code-css-identifier-selector-attribute-punctuation-end
+                                     ^
+                                     source-code-css-punctuation-separator
+                                      ^
+                                      source-code-css-whitespace
+                                       ^
+                                       source-code-css-identifier-selector-attribute-punctuation-begin
+                                        ^^^^^
+                                        source-code-css-identifier-selector-attribute-identifier-property
+                                             ^^
+                                             source-code-css-identifier-selector-attribute-keyword-operator
+                                               ^
+                                               source-code-css-identifier-selector-attribute-literal-string-quoted-double-literal-string-quoted-double-begin
+                                                ^
+                                                source-code-css-identifier-selector-attribute-literal-string-quoted-double-literal-string-unquoted
+                                                 ^
+                                                 source-code-css-identifier-selector-attribute-literal-string-quoted-double-literal-string-quoted-double-end
+                                                  ^
+                                                  source-code-css-identifier-selector-attribute-whitespace
+                                                   ^
+                                                   source-code-css-identifier-selector-attribute-keyword-modifier-flag
+                                                    ^
+                                                    source-code-css-identifier-selector-attribute-punctuation-end
+                                                     ^
+                                                     source-code-css-whitespace
+                                                      ^
+                                                      source-code-css-punctuation-begin
+  opacity: 0;
+^^
+source-code-css-whitespace
+  ^^^^^^^
+  source-code-css-identifier-property
+         ^
+         source-code-css-punctuation-separator
+          ^
+          source-code-css-whitespace
+           ^
+           source-code-css-literal-number
+            ^
+            source-code-css-punctuation-separator
+}
+^
+source-code-css-punctuation-end

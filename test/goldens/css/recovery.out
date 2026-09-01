@@ -1,0 +1,353 @@
+.broken {
+^
+source-code-css-punctuation
+ ^^^^^^
+ source-code-css-identifier-selector-class
+       ^
+       source-code-css-whitespace
+        ^
+        source-code-css-punctuation-begin
+  color: "unterminated
+^^
+source-code-css-whitespace
+  ^^^^^
+  source-code-css-identifier-property
+       ^
+       source-code-css-punctuation-separator
+        ^
+        source-code-css-whitespace
+         ^
+         source-code-css-literal-string-quoted-double-literal-string-quoted-double-begin
+          ^^^^^^^^^^^^
+          source-code-css-literal-string-quoted-double-literal-string-unquoted
+  background: #123456;
+^^
+source-code-css-whitespace
+  ^^^^^^^^^^
+  source-code-css-identifier
+            ^
+            source-code-css-punctuation-separator
+             ^
+             source-code-css-whitespace
+              ^^^^^^^
+              source-code-css-literal-color
+                     ^
+                     source-code-css-punctuation-separator
+  content: 'continued\
+^^
+source-code-css-whitespace
+  ^^^^^^^
+  source-code-css-identifier-property
+         ^
+         source-code-css-punctuation-separator
+          ^
+          source-code-css-whitespace
+           ^
+           source-code-css-literal-string-quoted-single-literal-string-quoted-single-begin
+            ^^^^^^^^^
+            source-code-css-literal-string-quoted-single-literal-string-unquoted
+                     ^
+                     source-code-css-literal-string-quoted-single-literal-string-escape
+string';
+^^^^^^
+source-code-css-literal-string-quoted-single-literal-string-unquoted
+      ^
+      source-code-css-literal-string-quoted-single-literal-string-quoted-single-end
+       ^
+       source-code-css-punctuation-separator
+  transform: translate(10px;
+^^
+source-code-css-whitespace
+  ^^^^^^^^^
+  source-code-css-identifier-property
+           ^
+           source-code-css-punctuation-separator
+            ^
+            source-code-css-whitespace
+             ^^^^^^^^^
+             source-code-css-identifier-function
+                      ^
+                      source-code-css-punctuation
+                       ^^
+                       source-code-css-literal-number
+                         ^^
+                         source-code-css-keyword-unit
+                           ^
+                           source-code-css-punctuation-separator
+  opacity: 0.5;
+^^
+source-code-css-whitespace
+  ^^^^^^^
+  source-code-css-identifier-property
+         ^
+         source-code-css-punctuation-separator
+          ^
+          source-code-css-whitespace
+           ^^^
+           source-code-css-literal-number
+              ^
+              source-code-css-punctuation-separator
+  unknown: future-fn(
+^^
+source-code-css-whitespace
+  ^^^^^^^
+  source-code-css-identifier-property
+         ^
+         source-code-css-punctuation-separator
+          ^
+          source-code-css-whitespace
+           ^^^^^^^^^
+           source-code-css-identifier-function
+                    ^
+                    source-code-css-punctuation
+  recovered-argument: 2rem;
+^^
+source-code-css-whitespace
+  ^^^^^^^^^^^^^^^^^^
+  source-code-css-identifier
+                    ^
+                    source-code-css-punctuation-separator
+                     ^
+                     source-code-css-whitespace
+                      ^
+                      source-code-css-literal-number
+                       ^^^
+                       source-code-css-keyword-unit
+                          ^
+                          source-code-css-punctuation-separator
+  next-property: 3rem;
+^^
+source-code-css-whitespace
+  ^^^^^^^^^^^^^
+  source-code-css-identifier-property
+               ^
+               source-code-css-punctuation-separator
+                ^
+                source-code-css-whitespace
+                 ^
+                 source-code-css-literal-number
+                  ^^^
+                  source-code-css-keyword-unit
+                     ^
+                     source-code-css-punctuation-separator
+  invalid: `token;
+^^
+source-code-css-whitespace
+  ^^^^^^^
+  source-code-css-identifier-property
+         ^
+         source-code-css-punctuation-separator
+          ^
+          source-code-css-whitespace
+           ^
+           source-code-css-unknown
+            ^^^^^
+            source-code-css-identifier
+                 ^
+                 source-code-css-punctuation-separator
+}
+^
+source-code-css-punctuation-end
+
+.url-recovery { background: url(missing-paren.png }
+^
+source-code-css-punctuation
+ ^^^^^^^^^^^^
+ source-code-css-identifier-selector-class
+             ^
+             source-code-css-whitespace
+              ^
+              source-code-css-punctuation-begin
+               ^
+               source-code-css-whitespace
+                ^^^^^^^^^^
+                source-code-css-identifier-property
+                          ^
+                          source-code-css-punctuation-separator
+                           ^
+                           source-code-css-whitespace
+                            ^^^
+                            source-code-css-link-identifier-function
+                               ^
+                               source-code-css-link-punctuation
+                                ^^^^^^^^^^^^^^^^^
+                                source-code-css-link-link-content
+                                                 ^
+                                                 source-code-css-link-whitespace
+                                                  ^
+                                                  source-code-css-punctuation-end
+.after-url { color: #123; }
+^
+source-code-css-punctuation
+ ^^^^^^^^^
+ source-code-css-identifier-selector-class
+          ^
+          source-code-css-whitespace
+           ^
+           source-code-css-punctuation-begin
+            ^
+            source-code-css-whitespace
+             ^^^^^
+             source-code-css-identifier-property
+                  ^
+                  source-code-css-punctuation-separator
+                   ^
+                   source-code-css-whitespace
+                    ^^^^
+                    source-code-css-literal-color
+                        ^
+                        source-code-css-punctuation-separator
+                         ^
+                         source-code-css-whitespace
+                          ^
+                          source-code-css-punctuation-end
+
+@import "missing-semicolon.css"
+^
+source-code-css-punctuation
+ ^^^^^^
+ source-code-css-keyword-at-rule
+       ^
+       source-code-css-whitespace
+        ^
+        source-code-css-literal-string-quoted-double-literal-string-quoted-double-begin
+         ^^^^^^^^^^^^^^^^^^^^^
+         source-code-css-literal-string-quoted-double-literal-string-unquoted
+                              ^
+                              source-code-css-literal-string-quoted-double-literal-string-quoted-double-end
+@import "recovered.css";
+^
+source-code-css-punctuation
+ ^^^^^^
+ source-code-css-keyword-at-rule
+       ^
+       source-code-css-whitespace
+        ^
+        source-code-css-literal-string-quoted-double-literal-string-quoted-double-begin
+         ^^^^^^^^^^^^^
+         source-code-css-literal-string-quoted-double-literal-string-unquoted
+                      ^
+                      source-code-css-literal-string-quoted-double-literal-string-quoted-double-end
+                       ^
+                       source-code-css-punctuation-separator
+
+.nested-rule { color: red;
+^
+source-code-css-punctuation
+ ^^^^^^^^^^^
+ source-code-css-identifier-selector-class
+            ^
+            source-code-css-whitespace
+             ^
+             source-code-css-punctuation-begin
+              ^
+              source-code-css-whitespace
+               ^^^^^
+               source-code-css-identifier-property
+                    ^
+                    source-code-css-punctuation-separator
+                     ^
+                     source-code-css-whitespace
+                      ^^^
+                      source-code-css-identifier
+                         ^
+                         source-code-css-punctuation-separator
+  li:hover,
+^^
+source-code-css-whitespace
+  ^^
+  source-code-css-identifier-property
+    ^
+    source-code-css-punctuation-separator
+     ^^^^^
+     source-code-css-identifier
+          ^
+          source-code-css-punctuation-separator
+  span {
+^^
+source-code-css-whitespace
+  ^^^^
+  source-code-css-identifier
+      ^
+      source-code-css-whitespace
+       ^
+       source-code-css-punctuation-begin
+    color: blue;
+^^^^
+source-code-css-whitespace
+    ^^^^^
+    source-code-css-identifier-property
+         ^
+         source-code-css-punctuation-separator
+          ^
+          source-code-css-whitespace
+           ^^^^
+           source-code-css-identifier
+               ^
+               source-code-css-punctuation-separator
+  }
+^^
+source-code-css-whitespace
+  ^
+  source-code-css-punctuation-end
+  padding: 0;
+^^
+source-code-css-whitespace
+  ^^^^^^^
+  source-code-css-identifier-property
+         ^
+         source-code-css-punctuation-separator
+          ^
+          source-code-css-whitespace
+           ^
+           source-code-css-literal-number
+            ^
+            source-code-css-punctuation-separator
+}
+^
+source-code-css-punctuation-end
+
+@future unfinished
+^
+source-code-css-punctuation
+ ^^^^^^
+ source-code-css-keyword-at-rule
+       ^
+       source-code-css-whitespace
+        ^^^^^^^^^^
+        source-code-css-identifier
+
+.unclosed {
+^
+source-code-css-punctuation
+ ^^^^^^^^
+ source-code-css-identifier-selector-class
+         ^
+         source-code-css-whitespace
+          ^
+          source-code-css-punctuation-begin
+  padding: 1rem;
+^^
+source-code-css-whitespace
+  ^^^^^^^
+  source-code-css-identifier-property
+         ^
+         source-code-css-punctuation-separator
+          ^
+          source-code-css-whitespace
+           ^
+           source-code-css-literal-number
+            ^^^
+            source-code-css-keyword-unit
+               ^
+               source-code-css-punctuation-separator
+  /* Unterminated comments remain comments through the end.
+^^
+source-code-css-whitespace
+  ^^
+  source-code-css-comment-block-comment-block-begin
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    source-code-css-comment-block-comment-block-content
+  still a comment
+^^^^^^^^^^^^^^^^^
+source-code-css-comment-block-comment-block-content

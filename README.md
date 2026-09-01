@@ -52,6 +52,7 @@ the specified default and alternative IDs:
 - BNF (`bnf`)
 - C (`c`)
 - C++ (`cpp`)
+- CSS (`css`)
 - Dart (`dart`)
 - EBNF (`ebnf`)
 - GLSL (`glsl`, `frag`, `vert`, `geom`, `comp`)

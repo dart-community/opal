@@ -5,6 +5,7 @@ import 'language/abnf.dart';
 import 'language/bnf.dart';
 import 'language/c.dart';
 import 'language/c_plus_plus.dart';
+import 'language/css.dart';
 import 'language/dart.dart';
 import 'language/ebnf.dart';
 import 'language/glsl.dart';
@@ -37,6 +38,7 @@ abstract final class BuiltInLanguages {
     bnf,
     c,
     cPlusPlus,
+    css,
     dart,
     ebnf,
     glsl,
@@ -88,6 +90,13 @@ abstract final class BuiltInLanguages {
     name: 'cpp',
     grammar: const CPlusPlusGrammar(),
     baseTag: const Tag('cpp', parent: Tags.codeSource),
+  );
+
+  /// A tokenizing language implementation for CSS (Cascading Style Sheets).
+  static final Language css = MatcherLanguage(
+    name: 'css',
+    grammar: const CssGrammar(),
+    baseTag: const Tag('css', parent: Tags.codeSource),
   );
 
   /// A tokenizing language implementation for the Dart programming language.

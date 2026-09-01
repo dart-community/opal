@@ -1,0 +1,33 @@
+.broken {
+  color: "unterminated
+  background: #123456;
+  content: 'continued\
+string';
+  transform: translate(10px;
+  opacity: 0.5;
+  unknown: future-fn(
+  recovered-argument: 2rem;
+  next-property: 3rem;
+  invalid: `token;
+}
+
+.url-recovery { background: url(missing-paren.png }
+.after-url { color: #123; }
+
+@import "missing-semicolon.css"
+@import "recovered.css";
+
+.nested-rule { color: red;
+  li:hover,
+  span {
+    color: blue;
+  }
+  padding: 0;
+}
+
+@future unfinished
+
+.unclosed {
+  padding: 1rem;
+  /* Unterminated comments remain comments through the end.
+  still a comment

@@ -1,0 +1,20 @@
+html, body, * {
+  box-sizing: border-box;
+}
+
+svg|a.button#fff[data-state^="open" i]:is(:hover, :focus)::before {
+  content: "→";
+}
+
+main > article + aside ~ footer,
+:where(section, .panel) .\31 23-café {
+  display: block;
+
+  & > .title {
+    color: #fff;
+  }
+}
+
+[hidden], [data-state=open], [lang=i], [title~="a" s] {
+  opacity: 0;
+}

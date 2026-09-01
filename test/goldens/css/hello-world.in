@@ -1,0 +1,7 @@
+/* A small card component. */
+.card {
+  color: rebeccapurple;
+  padding: 0.75rem 1rem;
+  background: #fff;
+  border-radius: 0.5rem;
+}

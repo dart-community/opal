@@ -1,0 +1,29 @@
+%% Common nodes, links, and directions
+flowchart LR
+  start-node[Start here]-->decision{Continue?}
+  decision-->|yes|process(Run job)
+  decision-- no -->finish((Done))
+  process-. retry .->decision
+  process== success ==>finish
+  A -- text --- B --> C
+  D == thick === E --> F
+  G -. dotted .- H --> I
+  J -- "text --- inside" --- K
+  A---B & C<-->D
+  E o--o F & G x--x H
+  I~~~J & K---->L
+  x-->y & o-->p
+  M o-- pair --o N
+  O <-- both --> P
+  Q --> R #35;
+  subgraph group[Background work]
+    direction TB
+    task[Don't highlight end or %% inside labels] --> next
+  end
+  classDef ready fill:#aabbcc,stroke:#333,stroke-width:2px;
+  class process,finish ready;
+  style decision fill:#fff;
+  linkStyle 0 stroke:#f00;
+  process:::ready
+  click process href "https://example.com" "Run task"
+  modern@{ shape: rect, label: "end %% is text", width: 80, animate: true }

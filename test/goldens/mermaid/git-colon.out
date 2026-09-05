@@ -1,0 +1,56 @@
+gitGraph:
+^^^^^^^^
+source-text-markup-mermaid-keyword-declaration
+        ^
+        source-text-markup-mermaid-punctuation
+  commit id: "initial"
+^^
+source-text-markup-mermaid-whitespace
+  ^^^^^^
+  source-text-markup-mermaid-keyword
+        ^
+        source-text-markup-mermaid-whitespace
+         ^^
+         source-text-markup-mermaid-identifier-property
+           ^
+           source-text-markup-mermaid-punctuation
+            ^
+            source-text-markup-mermaid-whitespace
+             ^
+             source-text-markup-mermaid-literal-string-quoted-double-literal-string-quoted-double-begin
+              ^^^^^^^
+              source-text-markup-mermaid-literal-string-quoted-double-literal-string-unquoted
+                     ^
+                     source-text-markup-mermaid-literal-string-quoted-double-literal-string-quoted-double-end
+  branch develop
+^^
+source-text-markup-mermaid-whitespace
+  ^^^^^^
+  source-text-markup-mermaid-keyword
+        ^
+        source-text-markup-mermaid-whitespace
+         ^^^^^^^
+         source-text-markup-mermaid-identifier
+  commit
+^^
+source-text-markup-mermaid-whitespace
+  ^^^^^^
+  source-text-markup-mermaid-keyword
+  checkout main
+^^
+source-text-markup-mermaid-whitespace
+  ^^^^^^^^
+  source-text-markup-mermaid-keyword
+          ^
+          source-text-markup-mermaid-whitespace
+           ^^^^
+           source-text-markup-mermaid-identifier
+  merge develop
+^^
+source-text-markup-mermaid-whitespace
+  ^^^^^
+  source-text-markup-mermaid-keyword
+       ^
+       source-text-markup-mermaid-whitespace
+        ^^^^^^^
+        source-text-markup-mermaid-identifier

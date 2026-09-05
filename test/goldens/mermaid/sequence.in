@@ -1,0 +1,23 @@
+sequenceDiagram
+  autonumber
+  participant Alice as Customer
+  actor Bob
+  Alice->>+Bob: Hello end %% is message text
+  Bob-->>-Alice: Response
+  Alice<<-->>Bob: Bidirectional
+  Alice-xBob: Failure
+  Alice--)Bob: Async
+  activate Bob
+  Note over Alice,Bob: Don't parse loop or %% here
+  loop Retry while end is pending
+    alt Successful request
+      Bob->>Alice: A literal " in a message
+      Alice-->>Bob: It stays on one line
+    else Failure
+      Bob-->>Alice: Retry
+    end
+  end
+  deactivate Bob
+  create participant Carol
+  destroy Carol
+  %% This is a comment

@@ -1,0 +1,17 @@
+---
+title: A diagram
+config:
+  theme: dark
+---
+%%{init: {"theme": "forest"}}%%
+flowchart TB
+  accTitle: A helpful title
+  accDescr {
+    Description with end and %% as text.
+  }
+  A --> B
+  %%{init:
+    {"theme": "dark"}
+  }%%
+  B --- C
+---

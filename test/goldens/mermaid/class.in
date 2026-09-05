@@ -1,0 +1,20 @@
+classDiagram
+  direction LR
+  namespace Animals {
+    class Animal {
+      <<abstract>>
+      +String name
+      -int age
+      +eat(food) void
+      #sleep()
+    }
+    class Duck
+  }
+  Animal <|-- Duck
+  Pond "1" o-- "many" Duck : contains
+  Duck ..> Food
+  Zebra --|> Animal : is a class of note
+  Duck ..|> Swimmer:::aquatic
+  Duck : +swim()
+  note "Class notes"
+  style Duck fill:#fff

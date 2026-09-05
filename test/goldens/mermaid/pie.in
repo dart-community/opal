@@ -1,0 +1,5 @@
+pie showData
+  title Project effort
+  "Development" : 70
+  "Documentation %% is text" : 20.5
+  "Testing" : 9.5

@@ -1,0 +1,51 @@
+unknownDiagram
+^^^^^^^^^^^^^^
+source-text-markup-mermaid-identifier
+  actor-name "A label %% stays text"
+^^
+source-text-markup-mermaid-whitespace
+  ^^^^^^^^^^
+  source-text-markup-mermaid-identifier
+            ^
+            source-text-markup-mermaid-whitespace
+             ^
+             source-text-markup-mermaid-literal-string-quoted-double-literal-string-quoted-double-begin
+              ^^^^^^^^^^^^^^^^^^^^^
+              source-text-markup-mermaid-literal-string-quoted-double-literal-string-unquoted
+                                   ^
+                                   source-text-markup-mermaid-literal-string-quoted-double-literal-string-quoted-double-end
+  count = 12.5
+^^
+source-text-markup-mermaid-whitespace
+  ^^^^^
+  source-text-markup-mermaid-identifier
+       ^
+       source-text-markup-mermaid-whitespace
+        ^
+        source-text-markup-mermaid-keyword-operator
+         ^
+         source-text-markup-mermaid-whitespace
+          ^^^^
+          source-text-markup-mermaid-literal-number
+  %% Ordinary comment
+^^
+source-text-markup-mermaid-whitespace
+  ^^^^^^^^^^^^^^^^^^^
+  source-text-markup-mermaid-comment-line
+  A --> B
+^^
+source-text-markup-mermaid-whitespace
+  ^
+  source-text-markup-mermaid-identifier
+   ^
+   source-text-markup-mermaid-whitespace
+    ^
+    source-text-markup-mermaid-keyword-operator
+     ^
+     source-text-markup-mermaid-keyword-operator
+      ^
+      source-text-markup-mermaid-keyword-operator
+       ^
+       source-text-markup-mermaid-whitespace
+        ^
+        source-text-markup-mermaid-identifier

@@ -1,0 +1,186 @@
+stateDiagram-v2
+^^^^^^^^^^^^^^^
+source-text-markup-mermaid-keyword-declaration
+  [*] --> Idle
+^^
+source-text-markup-mermaid-whitespace
+  ^^^
+  source-text-markup-mermaid-identifier-special
+     ^
+     source-text-markup-mermaid-whitespace
+      ^^^
+      source-text-markup-mermaid-keyword-operator
+         ^
+         source-text-markup-mermaid-whitespace
+          ^^^^
+          source-text-markup-mermaid-identifier
+  state "Waiting for work" as Idle
+^^
+source-text-markup-mermaid-whitespace
+  ^^^^^
+  source-text-markup-mermaid-keyword-declaration
+       ^
+       source-text-markup-mermaid-whitespace
+        ^
+        source-text-markup-mermaid-literal-string-quoted-double-literal-string-quoted-double-begin
+         ^^^^^^^^^^^^^^^^
+         source-text-markup-mermaid-literal-string-quoted-double-literal-string-unquoted
+                         ^
+                         source-text-markup-mermaid-literal-string-quoted-double-literal-string-quoted-double-end
+                          ^
+                          source-text-markup-mermaid-whitespace
+                           ^^
+                           source-text-markup-mermaid-keyword
+                             ^
+                             source-text-markup-mermaid-whitespace
+                              ^^^^
+                              source-text-markup-mermaid-identifier
+  Idle --> Running: start %% is label text
+^^
+source-text-markup-mermaid-whitespace
+  ^^^^
+  source-text-markup-mermaid-identifier
+      ^
+      source-text-markup-mermaid-whitespace
+       ^^^
+       source-text-markup-mermaid-keyword-operator
+          ^
+          source-text-markup-mermaid-whitespace
+           ^^^^^^^
+           source-text-markup-mermaid-identifier
+                  ^
+                  source-text-markup-mermaid-punctuation
+                   ^
+                   source-text-markup-mermaid-whitespace
+                    ^^^^^^^^^^^^^^^^^^^^^^
+                    source-text-markup-mermaid-literal-string-unquoted
+  state Running {
+^^
+source-text-markup-mermaid-whitespace
+  ^^^^^
+  source-text-markup-mermaid-keyword-declaration
+       ^
+       source-text-markup-mermaid-whitespace
+        ^^^^^^^
+        source-text-markup-mermaid-identifier
+               ^
+               source-text-markup-mermaid-whitespace
+                ^
+                source-text-markup-mermaid-punctuation
+    [*] --> Working
+^^^^
+source-text-markup-mermaid-whitespace
+    ^^^
+    source-text-markup-mermaid-identifier-special
+       ^
+       source-text-markup-mermaid-whitespace
+        ^^^
+        source-text-markup-mermaid-keyword-operator
+           ^
+           source-text-markup-mermaid-whitespace
+            ^^^^^^^
+            source-text-markup-mermaid-identifier
+    Working --> [*]
+^^^^
+source-text-markup-mermaid-whitespace
+    ^^^^^^^
+    source-text-markup-mermaid-identifier
+           ^
+           source-text-markup-mermaid-whitespace
+            ^^^
+            source-text-markup-mermaid-keyword-operator
+               ^
+               source-text-markup-mermaid-whitespace
+                ^^^
+                source-text-markup-mermaid-identifier-special
+    --
+^^^^
+source-text-markup-mermaid-whitespace
+    ^^
+    source-text-markup-mermaid-punctuation
+    [*] --> Listening
+^^^^
+source-text-markup-mermaid-whitespace
+    ^^^
+    source-text-markup-mermaid-identifier-special
+       ^
+       source-text-markup-mermaid-whitespace
+        ^^^
+        source-text-markup-mermaid-keyword-operator
+           ^
+           source-text-markup-mermaid-whitespace
+            ^^^^^^^^^
+            source-text-markup-mermaid-identifier
+  }
+^^
+source-text-markup-mermaid-whitespace
+  ^
+  source-text-markup-mermaid-punctuation
+  state Choice <<choice>>
+^^
+source-text-markup-mermaid-whitespace
+  ^^^^^
+  source-text-markup-mermaid-keyword-declaration
+       ^
+       source-text-markup-mermaid-whitespace
+        ^^^^^^
+        source-text-markup-mermaid-identifier
+              ^
+              source-text-markup-mermaid-whitespace
+               ^^^^^^^^^^
+               source-text-markup-mermaid-metadata-annotation
+  Running --> Choice
+^^
+source-text-markup-mermaid-whitespace
+  ^^^^^^^
+  source-text-markup-mermaid-identifier
+         ^
+         source-text-markup-mermaid-whitespace
+          ^^^
+          source-text-markup-mermaid-keyword-operator
+             ^
+             source-text-markup-mermaid-whitespace
+              ^^^^^^
+              source-text-markup-mermaid-identifier
+  Choice --> [*]: finish
+^^
+source-text-markup-mermaid-whitespace
+  ^^^^^^
+  source-text-markup-mermaid-identifier
+        ^
+        source-text-markup-mermaid-whitespace
+         ^^^
+         source-text-markup-mermaid-keyword-operator
+            ^
+            source-text-markup-mermaid-whitespace
+             ^^^
+             source-text-markup-mermaid-identifier-special
+                ^
+                source-text-markup-mermaid-punctuation
+                 ^
+                 source-text-markup-mermaid-whitespace
+                  ^^^^^^
+                  source-text-markup-mermaid-literal-string-unquoted
+  note right of Idle: end is text here
+^^
+source-text-markup-mermaid-whitespace
+  ^^^^
+  source-text-markup-mermaid-keyword-control
+      ^
+      source-text-markup-mermaid-whitespace
+       ^^^^^
+       source-text-markup-mermaid-keyword
+            ^
+            source-text-markup-mermaid-whitespace
+             ^^
+             source-text-markup-mermaid-keyword
+               ^
+               source-text-markup-mermaid-whitespace
+                ^^^^
+                source-text-markup-mermaid-identifier
+                    ^
+                    source-text-markup-mermaid-punctuation
+                     ^
+                     source-text-markup-mermaid-whitespace
+                      ^^^^^^^^^^^^^^^^
+                      source-text-markup-mermaid-literal-string-unquoted

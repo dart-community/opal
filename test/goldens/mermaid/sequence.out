@@ -1,0 +1,259 @@
+sequenceDiagram
+^^^^^^^^^^^^^^^
+source-text-markup-mermaid-keyword-declaration
+  autonumber
+^^
+source-text-markup-mermaid-whitespace
+  ^^^^^^^^^^
+  source-text-markup-mermaid-keyword
+  participant Alice as Customer
+^^
+source-text-markup-mermaid-whitespace
+  ^^^^^^^^^^^
+  source-text-markup-mermaid-keyword-declaration
+             ^
+             source-text-markup-mermaid-whitespace
+              ^^^^^
+              source-text-markup-mermaid-identifier
+                   ^
+                   source-text-markup-mermaid-whitespace
+                    ^^
+                    source-text-markup-mermaid-keyword
+                      ^
+                      source-text-markup-mermaid-whitespace
+                       ^^^^^^^^
+                       source-text-markup-mermaid-literal-string-unquoted
+  actor Bob
+^^
+source-text-markup-mermaid-whitespace
+  ^^^^^
+  source-text-markup-mermaid-keyword-declaration
+       ^
+       source-text-markup-mermaid-whitespace
+        ^^^
+        source-text-markup-mermaid-identifier
+  Alice->>+Bob: Hello end %% is message text
+^^
+source-text-markup-mermaid-whitespace
+  ^^^^^
+  source-text-markup-mermaid-identifier
+       ^^^^
+       source-text-markup-mermaid-keyword-operator
+           ^^^
+           source-text-markup-mermaid-identifier
+              ^
+              source-text-markup-mermaid-punctuation
+               ^
+               source-text-markup-mermaid-whitespace
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                source-text-markup-mermaid-literal-string-unquoted
+  Bob-->>-Alice: Response
+^^
+source-text-markup-mermaid-whitespace
+  ^^^
+  source-text-markup-mermaid-identifier
+     ^^^^^
+     source-text-markup-mermaid-keyword-operator
+          ^^^^^
+          source-text-markup-mermaid-identifier
+               ^
+               source-text-markup-mermaid-punctuation
+                ^
+                source-text-markup-mermaid-whitespace
+                 ^^^^^^^^
+                 source-text-markup-mermaid-literal-string-unquoted
+  Alice<<-->>Bob: Bidirectional
+^^
+source-text-markup-mermaid-whitespace
+  ^^^^^
+  source-text-markup-mermaid-identifier
+       ^^^^^^
+       source-text-markup-mermaid-keyword-operator
+             ^^^
+             source-text-markup-mermaid-identifier
+                ^
+                source-text-markup-mermaid-punctuation
+                 ^
+                 source-text-markup-mermaid-whitespace
+                  ^^^^^^^^^^^^^
+                  source-text-markup-mermaid-literal-string-unquoted
+  Alice-xBob: Failure
+^^
+source-text-markup-mermaid-whitespace
+  ^^^^^
+  source-text-markup-mermaid-identifier
+       ^^
+       source-text-markup-mermaid-keyword-operator
+         ^^^
+         source-text-markup-mermaid-identifier
+            ^
+            source-text-markup-mermaid-punctuation
+             ^
+             source-text-markup-mermaid-whitespace
+              ^^^^^^^
+              source-text-markup-mermaid-literal-string-unquoted
+  Alice--)Bob: Async
+^^
+source-text-markup-mermaid-whitespace
+  ^^^^^
+  source-text-markup-mermaid-identifier
+       ^^^
+       source-text-markup-mermaid-keyword-operator
+          ^^^
+          source-text-markup-mermaid-identifier
+             ^
+             source-text-markup-mermaid-punctuation
+              ^
+              source-text-markup-mermaid-whitespace
+               ^^^^^
+               source-text-markup-mermaid-literal-string-unquoted
+  activate Bob
+^^
+source-text-markup-mermaid-whitespace
+  ^^^^^^^^
+  source-text-markup-mermaid-keyword
+          ^
+          source-text-markup-mermaid-whitespace
+           ^^^
+           source-text-markup-mermaid-identifier
+  Note over Alice,Bob: Don't parse loop or %% here
+^^
+source-text-markup-mermaid-whitespace
+  ^^^^
+  source-text-markup-mermaid-keyword
+      ^
+      source-text-markup-mermaid-whitespace
+       ^^^^
+       source-text-markup-mermaid-keyword
+           ^
+           source-text-markup-mermaid-whitespace
+            ^^^^^
+            source-text-markup-mermaid-identifier
+                 ^
+                 source-text-markup-mermaid-punctuation
+                  ^^^
+                  source-text-markup-mermaid-identifier
+                     ^
+                     source-text-markup-mermaid-punctuation
+                      ^
+                      source-text-markup-mermaid-whitespace
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                       source-text-markup-mermaid-literal-string-unquoted
+  loop Retry while end is pending
+^^
+source-text-markup-mermaid-whitespace
+  ^^^^
+  source-text-markup-mermaid-keyword-control
+      ^
+      source-text-markup-mermaid-whitespace
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+       source-text-markup-mermaid-literal-string-unquoted
+    alt Successful request
+^^^^
+source-text-markup-mermaid-whitespace
+    ^^^
+    source-text-markup-mermaid-keyword-control
+       ^
+       source-text-markup-mermaid-whitespace
+        ^^^^^^^^^^^^^^^^^^
+        source-text-markup-mermaid-literal-string-unquoted
+      Bob->>Alice: A literal " in a message
+^^^^^^
+source-text-markup-mermaid-whitespace
+      ^^^
+      source-text-markup-mermaid-identifier
+         ^^^
+         source-text-markup-mermaid-keyword-operator
+            ^^^^^
+            source-text-markup-mermaid-identifier
+                 ^
+                 source-text-markup-mermaid-punctuation
+                  ^
+                  source-text-markup-mermaid-whitespace
+                   ^^^^^^^^^^^^^^^^^^^^^^^^
+                   source-text-markup-mermaid-literal-string-unquoted
+      Alice-->>Bob: It stays on one line
+^^^^^^
+source-text-markup-mermaid-whitespace
+      ^^^^^
+      source-text-markup-mermaid-identifier
+           ^^^^
+           source-text-markup-mermaid-keyword-operator
+               ^^^
+               source-text-markup-mermaid-identifier
+                  ^
+                  source-text-markup-mermaid-punctuation
+                   ^
+                   source-text-markup-mermaid-whitespace
+                    ^^^^^^^^^^^^^^^^^^^^
+                    source-text-markup-mermaid-literal-string-unquoted
+    else Failure
+^^^^
+source-text-markup-mermaid-whitespace
+    ^^^^
+    source-text-markup-mermaid-keyword-control
+        ^
+        source-text-markup-mermaid-whitespace
+         ^^^^^^^
+         source-text-markup-mermaid-literal-string-unquoted
+      Bob-->>Alice: Retry
+^^^^^^
+source-text-markup-mermaid-whitespace
+      ^^^
+      source-text-markup-mermaid-identifier
+         ^^^^
+         source-text-markup-mermaid-keyword-operator
+             ^^^^^
+             source-text-markup-mermaid-identifier
+                  ^
+                  source-text-markup-mermaid-punctuation
+                   ^
+                   source-text-markup-mermaid-whitespace
+                    ^^^^^
+                    source-text-markup-mermaid-literal-string-unquoted
+    end
+^^^^
+source-text-markup-mermaid-whitespace
+    ^^^
+    source-text-markup-mermaid-keyword-control
+  end
+^^
+source-text-markup-mermaid-whitespace
+  ^^^
+  source-text-markup-mermaid-keyword-control
+  deactivate Bob
+^^
+source-text-markup-mermaid-whitespace
+  ^^^^^^^^^^
+  source-text-markup-mermaid-keyword
+            ^
+            source-text-markup-mermaid-whitespace
+             ^^^
+             source-text-markup-mermaid-identifier
+  create participant Carol
+^^
+source-text-markup-mermaid-whitespace
+  ^^^^^^
+  source-text-markup-mermaid-keyword-declaration
+        ^
+        source-text-markup-mermaid-whitespace
+         ^^^^^^^^^^^
+         source-text-markup-mermaid-keyword-declaration
+                    ^
+                    source-text-markup-mermaid-whitespace
+                     ^^^^^
+                     source-text-markup-mermaid-identifier
+  destroy Carol
+^^
+source-text-markup-mermaid-whitespace
+  ^^^^^^^
+  source-text-markup-mermaid-keyword-declaration
+         ^
+         source-text-markup-mermaid-whitespace
+          ^^^^^
+          source-text-markup-mermaid-identifier
+  %% This is a comment
+^^
+source-text-markup-mermaid-whitespace
+  ^^^^^^^^^^^^^^^^^^^^
+  source-text-markup-mermaid-comment-line

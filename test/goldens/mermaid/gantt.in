@@ -1,0 +1,9 @@
+gantt
+  title Release plan
+  dateFormat YYYY-MM-DD
+  axisFormat %m/%d
+  excludes weekends
+  section Development
+  Design work :done, design, 2026-09-01, 3d
+  Implementation :active, crit, build, after design, 1.5w
+  Release :milestone, after build, 0d

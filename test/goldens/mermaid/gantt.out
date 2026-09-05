@@ -1,0 +1,143 @@
+gantt
+^^^^^
+source-text-markup-mermaid-keyword-declaration
+  title Release plan
+^^
+source-text-markup-mermaid-whitespace
+  ^^^^^
+  source-text-markup-mermaid-keyword
+       ^
+       source-text-markup-mermaid-whitespace
+        ^^^^^^^^^^^^
+        source-text-markup-mermaid-literal-string-unquoted
+  dateFormat YYYY-MM-DD
+^^
+source-text-markup-mermaid-whitespace
+  ^^^^^^^^^^
+  source-text-markup-mermaid-keyword
+            ^
+            source-text-markup-mermaid-whitespace
+             ^^^^^^^^^^
+             source-text-markup-mermaid-literal-string-unquoted
+  axisFormat %m/%d
+^^
+source-text-markup-mermaid-whitespace
+  ^^^^^^^^^^
+  source-text-markup-mermaid-keyword
+            ^
+            source-text-markup-mermaid-whitespace
+             ^^^^^
+             source-text-markup-mermaid-literal-string-unquoted
+  excludes weekends
+^^
+source-text-markup-mermaid-whitespace
+  ^^^^^^^^
+  source-text-markup-mermaid-keyword
+          ^
+          source-text-markup-mermaid-whitespace
+           ^^^^^^^^
+           source-text-markup-mermaid-literal-string-unquoted
+  section Development
+^^
+source-text-markup-mermaid-whitespace
+  ^^^^^^^
+  source-text-markup-mermaid-keyword
+         ^
+         source-text-markup-mermaid-whitespace
+          ^^^^^^^^^^^
+          source-text-markup-mermaid-literal-string-unquoted
+  Design work :done, design, 2026-09-01, 3d
+^^
+source-text-markup-mermaid-whitespace
+  ^^^^^^^^^^^
+  source-text-markup-mermaid-literal-string-unquoted
+             ^
+             source-text-markup-mermaid-whitespace
+              ^
+              source-text-markup-mermaid-punctuation
+               ^^^^
+               source-text-markup-mermaid-keyword
+                   ^
+                   source-text-markup-mermaid-punctuation
+                    ^
+                    source-text-markup-mermaid-whitespace
+                     ^^^^^^
+                     source-text-markup-mermaid-identifier
+                           ^
+                           source-text-markup-mermaid-punctuation
+                            ^
+                            source-text-markup-mermaid-whitespace
+                             ^^^^^^^^^^
+                             source-text-markup-mermaid-literal
+                                       ^
+                                       source-text-markup-mermaid-punctuation
+                                        ^
+                                        source-text-markup-mermaid-whitespace
+                                         ^^
+                                         source-text-markup-mermaid-literal-number
+  Implementation :active, crit, build, after design, 1.5w
+^^
+source-text-markup-mermaid-whitespace
+  ^^^^^^^^^^^^^^
+  source-text-markup-mermaid-literal-string-unquoted
+                ^
+                source-text-markup-mermaid-whitespace
+                 ^
+                 source-text-markup-mermaid-punctuation
+                  ^^^^^^
+                  source-text-markup-mermaid-keyword
+                        ^
+                        source-text-markup-mermaid-punctuation
+                         ^
+                         source-text-markup-mermaid-whitespace
+                          ^^^^
+                          source-text-markup-mermaid-keyword
+                              ^
+                              source-text-markup-mermaid-punctuation
+                               ^
+                               source-text-markup-mermaid-whitespace
+                                ^^^^^
+                                source-text-markup-mermaid-identifier
+                                     ^
+                                     source-text-markup-mermaid-punctuation
+                                      ^
+                                      source-text-markup-mermaid-whitespace
+                                       ^^^^^
+                                       source-text-markup-mermaid-keyword
+                                            ^
+                                            source-text-markup-mermaid-whitespace
+                                             ^^^^^^
+                                             source-text-markup-mermaid-identifier
+                                                   ^
+                                                   source-text-markup-mermaid-punctuation
+                                                    ^
+                                                    source-text-markup-mermaid-whitespace
+                                                     ^^^^
+                                                     source-text-markup-mermaid-literal-number
+  Release :milestone, after build, 0d
+^^
+source-text-markup-mermaid-whitespace
+  ^^^^^^^
+  source-text-markup-mermaid-literal-string-unquoted
+         ^
+         source-text-markup-mermaid-whitespace
+          ^
+          source-text-markup-mermaid-punctuation
+           ^^^^^^^^^
+           source-text-markup-mermaid-keyword
+                    ^
+                    source-text-markup-mermaid-punctuation
+                     ^
+                     source-text-markup-mermaid-whitespace
+                      ^^^^^
+                      source-text-markup-mermaid-keyword
+                           ^
+                           source-text-markup-mermaid-whitespace
+                            ^^^^^
+                            source-text-markup-mermaid-identifier
+                                 ^
+                                 source-text-markup-mermaid-punctuation
+                                  ^
+                                  source-text-markup-mermaid-whitespace
+                                   ^^
+                                   source-text-markup-mermaid-literal-number

@@ -1,0 +1,11 @@
+mindmap
+  root((Project))
+    Planning
+      [Requirements]
+      Research
+    Development
+      (Implementation)
+      Testing
+      Deploy :::ready
+      ::icon(fa fa-check)
+      :::ready

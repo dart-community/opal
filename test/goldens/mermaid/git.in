@@ -1,0 +1,8 @@
+gitGraph LR:
+  commit id: "initial"
+  branch develop order: 1
+  checkout develop
+  commit id: "feature" type: HIGHLIGHT
+  switch main
+  merge develop tag: "v1.0"
+  cherry-pick id: "feature" parent: "initial"

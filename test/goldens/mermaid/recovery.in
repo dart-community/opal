@@ -1,0 +1,10 @@
+flowchart TD
+  A[unfinished label
+  B-->C
+  D-->|unfinished edge label
+  E-->F
+  odd_name-end --> unicode世界
+  ??? unsupported $ characters
+  J-.dotted.->K
+  Q["Unfinished quoted
+  label runs to EOF

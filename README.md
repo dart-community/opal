@@ -64,6 +64,7 @@ the specified default and alternative IDs:
 - JSON (`json`)
 - Kotlin (`kotlin`, `kt`)
 - Markdown (`markdown`, `md`)
+- Mermaid (`mermaid`, `mmd`)
 - Objective-C (`objective-c`, `objectivec`, `obj-c`, `objc`)
 - Python (`python`, `py`)
 - Ruby (`ruby`, `rb`)

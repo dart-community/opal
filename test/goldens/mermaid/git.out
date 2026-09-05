@@ -1,0 +1,150 @@
+gitGraph LR:
+^^^^^^^^
+source-text-markup-mermaid-keyword-declaration
+        ^
+        source-text-markup-mermaid-whitespace
+         ^^
+         source-text-markup-mermaid-keyword
+           ^
+           source-text-markup-mermaid-punctuation
+  commit id: "initial"
+^^
+source-text-markup-mermaid-whitespace
+  ^^^^^^
+  source-text-markup-mermaid-keyword
+        ^
+        source-text-markup-mermaid-whitespace
+         ^^
+         source-text-markup-mermaid-identifier-property
+           ^
+           source-text-markup-mermaid-punctuation
+            ^
+            source-text-markup-mermaid-whitespace
+             ^
+             source-text-markup-mermaid-literal-string-quoted-double-literal-string-quoted-double-begin
+              ^^^^^^^
+              source-text-markup-mermaid-literal-string-quoted-double-literal-string-unquoted
+                     ^
+                     source-text-markup-mermaid-literal-string-quoted-double-literal-string-quoted-double-end
+  branch develop order: 1
+^^
+source-text-markup-mermaid-whitespace
+  ^^^^^^
+  source-text-markup-mermaid-keyword
+        ^
+        source-text-markup-mermaid-whitespace
+         ^^^^^^^
+         source-text-markup-mermaid-identifier
+                ^
+                source-text-markup-mermaid-whitespace
+                 ^^^^^
+                 source-text-markup-mermaid-identifier-property
+                      ^
+                      source-text-markup-mermaid-punctuation
+                       ^
+                       source-text-markup-mermaid-whitespace
+                        ^
+                        source-text-markup-mermaid-literal-number
+  checkout develop
+^^
+source-text-markup-mermaid-whitespace
+  ^^^^^^^^
+  source-text-markup-mermaid-keyword
+          ^
+          source-text-markup-mermaid-whitespace
+           ^^^^^^^
+           source-text-markup-mermaid-identifier
+  commit id: "feature" type: HIGHLIGHT
+^^
+source-text-markup-mermaid-whitespace
+  ^^^^^^
+  source-text-markup-mermaid-keyword
+        ^
+        source-text-markup-mermaid-whitespace
+         ^^
+         source-text-markup-mermaid-identifier-property
+           ^
+           source-text-markup-mermaid-punctuation
+            ^
+            source-text-markup-mermaid-whitespace
+             ^
+             source-text-markup-mermaid-literal-string-quoted-double-literal-string-quoted-double-begin
+              ^^^^^^^
+              source-text-markup-mermaid-literal-string-quoted-double-literal-string-unquoted
+                     ^
+                     source-text-markup-mermaid-literal-string-quoted-double-literal-string-quoted-double-end
+                      ^
+                      source-text-markup-mermaid-whitespace
+                       ^^^^
+                       source-text-markup-mermaid-identifier-property
+                           ^
+                           source-text-markup-mermaid-punctuation
+                            ^
+                            source-text-markup-mermaid-whitespace
+                             ^^^^^^^^^
+                             source-text-markup-mermaid-keyword-modifier
+  switch main
+^^
+source-text-markup-mermaid-whitespace
+  ^^^^^^
+  source-text-markup-mermaid-keyword
+        ^
+        source-text-markup-mermaid-whitespace
+         ^^^^
+         source-text-markup-mermaid-identifier
+  merge develop tag: "v1.0"
+^^
+source-text-markup-mermaid-whitespace
+  ^^^^^
+  source-text-markup-mermaid-keyword
+       ^
+       source-text-markup-mermaid-whitespace
+        ^^^^^^^
+        source-text-markup-mermaid-identifier
+               ^
+               source-text-markup-mermaid-whitespace
+                ^^^
+                source-text-markup-mermaid-identifier-property
+                   ^
+                   source-text-markup-mermaid-punctuation
+                    ^
+                    source-text-markup-mermaid-whitespace
+                     ^
+                     source-text-markup-mermaid-literal-string-quoted-double-literal-string-quoted-double-begin
+                      ^^^^
+                      source-text-markup-mermaid-literal-string-quoted-double-literal-string-unquoted
+                          ^
+                          source-text-markup-mermaid-literal-string-quoted-double-literal-string-quoted-double-end
+  cherry-pick id: "feature" parent: "initial"
+^^
+source-text-markup-mermaid-whitespace
+  ^^^^^^^^^^^
+  source-text-markup-mermaid-keyword
+             ^
+             source-text-markup-mermaid-whitespace
+              ^^
+              source-text-markup-mermaid-identifier-property
+                ^
+                source-text-markup-mermaid-punctuation
+                 ^
+                 source-text-markup-mermaid-whitespace
+                  ^
+                  source-text-markup-mermaid-literal-string-quoted-double-literal-string-quoted-double-begin
+                   ^^^^^^^
+                   source-text-markup-mermaid-literal-string-quoted-double-literal-string-unquoted
+                          ^
+                          source-text-markup-mermaid-literal-string-quoted-double-literal-string-quoted-double-end
+                           ^
+                           source-text-markup-mermaid-whitespace
+                            ^^^^^^
+                            source-text-markup-mermaid-identifier-property
+                                  ^
+                                  source-text-markup-mermaid-punctuation
+                                   ^
+                                   source-text-markup-mermaid-whitespace
+                                    ^
+                                    source-text-markup-mermaid-literal-string-quoted-double-literal-string-quoted-double-begin
+                                     ^^^^^^^
+                                     source-text-markup-mermaid-literal-string-quoted-double-literal-string-unquoted
+                                            ^
+                                            source-text-markup-mermaid-literal-string-quoted-double-literal-string-quoted-double-end

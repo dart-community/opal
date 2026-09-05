@@ -1,0 +1,611 @@
+%% Common nodes, links, and directions
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+source-text-markup-mermaid-comment-line
+flowchart LR
+^^^^^^^^^
+source-text-markup-mermaid-keyword-declaration
+         ^
+         source-text-markup-mermaid-whitespace
+          ^^
+          source-text-markup-mermaid-keyword
+  start-node[Start here]-->decision{Continue?}
+^^
+source-text-markup-mermaid-whitespace
+  ^^^^^^^^^^
+  source-text-markup-mermaid-identifier
+            ^
+            source-text-markup-mermaid-punctuation
+             ^^^^^^^^^^
+             source-text-markup-mermaid-literal-string-unquoted
+                       ^
+                       source-text-markup-mermaid-punctuation
+                        ^^^
+                        source-text-markup-mermaid-keyword-operator
+                           ^^^^^^^^
+                           source-text-markup-mermaid-identifier
+                                   ^
+                                   source-text-markup-mermaid-punctuation
+                                    ^^^^^^^^^
+                                    source-text-markup-mermaid-literal-string-unquoted
+                                             ^
+                                             source-text-markup-mermaid-punctuation
+  decision-->|yes|process(Run job)
+^^
+source-text-markup-mermaid-whitespace
+  ^^^^^^^^
+  source-text-markup-mermaid-identifier
+          ^^^
+          source-text-markup-mermaid-keyword-operator
+             ^
+             source-text-markup-mermaid-punctuation
+              ^^^
+              source-text-markup-mermaid-literal-string-unquoted
+                 ^
+                 source-text-markup-mermaid-punctuation
+                  ^^^^^^^
+                  source-text-markup-mermaid-identifier
+                         ^
+                         source-text-markup-mermaid-punctuation
+                          ^^^^^^^
+                          source-text-markup-mermaid-literal-string-unquoted
+                                 ^
+                                 source-text-markup-mermaid-punctuation
+  decision-- no -->finish((Done))
+^^
+source-text-markup-mermaid-whitespace
+  ^^^^^^^^
+  source-text-markup-mermaid-identifier
+          ^^
+          source-text-markup-mermaid-keyword-operator
+            ^
+            source-text-markup-mermaid-whitespace
+             ^^
+             source-text-markup-mermaid-literal-string-unquoted
+               ^
+               source-text-markup-mermaid-whitespace
+                ^^^
+                source-text-markup-mermaid-keyword-operator
+                   ^^^^^^
+                   source-text-markup-mermaid-identifier
+                         ^^
+                         source-text-markup-mermaid-punctuation
+                           ^^^^
+                           source-text-markup-mermaid-literal-string-unquoted
+                               ^^
+                               source-text-markup-mermaid-punctuation
+  process-. retry .->decision
+^^
+source-text-markup-mermaid-whitespace
+  ^^^^^^^
+  source-text-markup-mermaid-identifier
+         ^^
+         source-text-markup-mermaid-keyword-operator
+           ^
+           source-text-markup-mermaid-whitespace
+            ^^^^^
+            source-text-markup-mermaid-literal-string-unquoted
+                 ^
+                 source-text-markup-mermaid-whitespace
+                  ^^^
+                  source-text-markup-mermaid-keyword-operator
+                     ^^^^^^^^
+                     source-text-markup-mermaid-identifier
+  process== success ==>finish
+^^
+source-text-markup-mermaid-whitespace
+  ^^^^^^^
+  source-text-markup-mermaid-identifier
+         ^^
+         source-text-markup-mermaid-keyword-operator
+           ^
+           source-text-markup-mermaid-whitespace
+            ^^^^^^^
+            source-text-markup-mermaid-literal-string-unquoted
+                   ^
+                   source-text-markup-mermaid-whitespace
+                    ^^^
+                    source-text-markup-mermaid-keyword-operator
+                       ^^^^^^
+                       source-text-markup-mermaid-identifier
+  A -- text --- B --> C
+^^
+source-text-markup-mermaid-whitespace
+  ^
+  source-text-markup-mermaid-identifier
+   ^
+   source-text-markup-mermaid-whitespace
+    ^^
+    source-text-markup-mermaid-keyword-operator
+      ^
+      source-text-markup-mermaid-whitespace
+       ^^^^
+       source-text-markup-mermaid-literal-string-unquoted
+           ^
+           source-text-markup-mermaid-whitespace
+            ^^^
+            source-text-markup-mermaid-keyword-operator
+               ^
+               source-text-markup-mermaid-whitespace
+                ^
+                source-text-markup-mermaid-identifier
+                 ^
+                 source-text-markup-mermaid-whitespace
+                  ^^^
+                  source-text-markup-mermaid-keyword-operator
+                     ^
+                     source-text-markup-mermaid-whitespace
+                      ^
+                      source-text-markup-mermaid-identifier
+  D == thick === E --> F
+^^
+source-text-markup-mermaid-whitespace
+  ^
+  source-text-markup-mermaid-identifier
+   ^
+   source-text-markup-mermaid-whitespace
+    ^^
+    source-text-markup-mermaid-keyword-operator
+      ^
+      source-text-markup-mermaid-whitespace
+       ^^^^^
+       source-text-markup-mermaid-literal-string-unquoted
+            ^
+            source-text-markup-mermaid-whitespace
+             ^^^
+             source-text-markup-mermaid-keyword-operator
+                ^
+                source-text-markup-mermaid-whitespace
+                 ^
+                 source-text-markup-mermaid-identifier
+                  ^
+                  source-text-markup-mermaid-whitespace
+                   ^^^
+                   source-text-markup-mermaid-keyword-operator
+                      ^
+                      source-text-markup-mermaid-whitespace
+                       ^
+                       source-text-markup-mermaid-identifier
+  G -. dotted .- H --> I
+^^
+source-text-markup-mermaid-whitespace
+  ^
+  source-text-markup-mermaid-identifier
+   ^
+   source-text-markup-mermaid-whitespace
+    ^^
+    source-text-markup-mermaid-keyword-operator
+      ^
+      source-text-markup-mermaid-whitespace
+       ^^^^^^
+       source-text-markup-mermaid-literal-string-unquoted
+             ^
+             source-text-markup-mermaid-whitespace
+              ^^
+              source-text-markup-mermaid-keyword-operator
+                ^
+                source-text-markup-mermaid-whitespace
+                 ^
+                 source-text-markup-mermaid-identifier
+                  ^
+                  source-text-markup-mermaid-whitespace
+                   ^^^
+                   source-text-markup-mermaid-keyword-operator
+                      ^
+                      source-text-markup-mermaid-whitespace
+                       ^
+                       source-text-markup-mermaid-identifier
+  J -- "text --- inside" --- K
+^^
+source-text-markup-mermaid-whitespace
+  ^
+  source-text-markup-mermaid-identifier
+   ^
+   source-text-markup-mermaid-whitespace
+    ^^
+    source-text-markup-mermaid-keyword-operator
+      ^
+      source-text-markup-mermaid-whitespace
+       ^
+       source-text-markup-mermaid-literal-string-quoted-double-literal-string-quoted-double-begin
+        ^^^^^^^^^^^^^^^
+        source-text-markup-mermaid-literal-string-quoted-double-literal-string-unquoted
+                       ^
+                       source-text-markup-mermaid-literal-string-quoted-double-literal-string-quoted-double-end
+                        ^
+                        source-text-markup-mermaid-whitespace
+                         ^^^
+                         source-text-markup-mermaid-keyword-operator
+                            ^
+                            source-text-markup-mermaid-whitespace
+                             ^
+                             source-text-markup-mermaid-identifier
+  A---B & C<-->D
+^^
+source-text-markup-mermaid-whitespace
+  ^
+  source-text-markup-mermaid-identifier
+   ^^^
+   source-text-markup-mermaid-keyword-operator
+      ^
+      source-text-markup-mermaid-identifier
+       ^
+       source-text-markup-mermaid-whitespace
+        ^
+        source-text-markup-mermaid-keyword-operator
+         ^
+         source-text-markup-mermaid-whitespace
+          ^
+          source-text-markup-mermaid-identifier
+           ^^^^
+           source-text-markup-mermaid-keyword-operator
+               ^
+               source-text-markup-mermaid-identifier
+  E o--o F & G x--x H
+^^
+source-text-markup-mermaid-whitespace
+  ^
+  source-text-markup-mermaid-identifier
+   ^
+   source-text-markup-mermaid-whitespace
+    ^^^^
+    source-text-markup-mermaid-keyword-operator
+        ^
+        source-text-markup-mermaid-whitespace
+         ^
+         source-text-markup-mermaid-identifier
+          ^
+          source-text-markup-mermaid-whitespace
+           ^
+           source-text-markup-mermaid-keyword-operator
+            ^
+            source-text-markup-mermaid-whitespace
+             ^
+             source-text-markup-mermaid-identifier
+              ^
+              source-text-markup-mermaid-whitespace
+               ^^^^
+               source-text-markup-mermaid-keyword-operator
+                   ^
+                   source-text-markup-mermaid-whitespace
+                    ^
+                    source-text-markup-mermaid-identifier
+  I~~~J & K---->L
+^^
+source-text-markup-mermaid-whitespace
+  ^
+  source-text-markup-mermaid-identifier
+   ^^^
+   source-text-markup-mermaid-keyword-operator
+      ^
+      source-text-markup-mermaid-identifier
+       ^
+       source-text-markup-mermaid-whitespace
+        ^
+        source-text-markup-mermaid-keyword-operator
+         ^
+         source-text-markup-mermaid-whitespace
+          ^
+          source-text-markup-mermaid-identifier
+           ^^^^^
+           source-text-markup-mermaid-keyword-operator
+                ^
+                source-text-markup-mermaid-identifier
+  x-->y & o-->p
+^^
+source-text-markup-mermaid-whitespace
+  ^
+  source-text-markup-mermaid-identifier
+   ^^^
+   source-text-markup-mermaid-keyword-operator
+      ^
+      source-text-markup-mermaid-identifier
+       ^
+       source-text-markup-mermaid-whitespace
+        ^
+        source-text-markup-mermaid-keyword-operator
+         ^
+         source-text-markup-mermaid-whitespace
+          ^
+          source-text-markup-mermaid-identifier
+           ^^^
+           source-text-markup-mermaid-keyword-operator
+              ^
+              source-text-markup-mermaid-identifier
+  M o-- pair --o N
+^^
+source-text-markup-mermaid-whitespace
+  ^
+  source-text-markup-mermaid-identifier
+   ^
+   source-text-markup-mermaid-whitespace
+    ^^^
+    source-text-markup-mermaid-keyword-operator
+       ^
+       source-text-markup-mermaid-whitespace
+        ^^^^
+        source-text-markup-mermaid-literal-string-unquoted
+            ^
+            source-text-markup-mermaid-whitespace
+             ^^^
+             source-text-markup-mermaid-keyword-operator
+                ^
+                source-text-markup-mermaid-whitespace
+                 ^
+                 source-text-markup-mermaid-identifier
+  O <-- both --> P
+^^
+source-text-markup-mermaid-whitespace
+  ^
+  source-text-markup-mermaid-identifier
+   ^
+   source-text-markup-mermaid-whitespace
+    ^^^
+    source-text-markup-mermaid-keyword-operator
+       ^
+       source-text-markup-mermaid-whitespace
+        ^^^^
+        source-text-markup-mermaid-literal-string-unquoted
+            ^
+            source-text-markup-mermaid-whitespace
+             ^^^
+             source-text-markup-mermaid-keyword-operator
+                ^
+                source-text-markup-mermaid-whitespace
+                 ^
+                 source-text-markup-mermaid-identifier
+  Q --> R #35;
+^^
+source-text-markup-mermaid-whitespace
+  ^
+  source-text-markup-mermaid-identifier
+   ^
+   source-text-markup-mermaid-whitespace
+    ^^^
+    source-text-markup-mermaid-keyword-operator
+       ^
+       source-text-markup-mermaid-whitespace
+        ^
+        source-text-markup-mermaid-identifier
+         ^
+         source-text-markup-mermaid-whitespace
+          ^^^^
+          source-text-markup-mermaid-literal-string-escape
+  subgraph group[Background work]
+^^
+source-text-markup-mermaid-whitespace
+  ^^^^^^^^
+  source-text-markup-mermaid-keyword-declaration
+          ^
+          source-text-markup-mermaid-whitespace
+           ^^^^^
+           source-text-markup-mermaid-identifier
+                ^
+                source-text-markup-mermaid-punctuation
+                 ^^^^^^^^^^^^^^^
+                 source-text-markup-mermaid-literal-string-unquoted
+                                ^
+                                source-text-markup-mermaid-punctuation
+    direction TB
+^^^^
+source-text-markup-mermaid-whitespace
+    ^^^^^^^^^
+    source-text-markup-mermaid-keyword
+             ^
+             source-text-markup-mermaid-whitespace
+              ^^
+              source-text-markup-mermaid-keyword
+    task[Don't highlight end or %% inside labels] --> next
+^^^^
+source-text-markup-mermaid-whitespace
+    ^^^^
+    source-text-markup-mermaid-identifier
+        ^
+        source-text-markup-mermaid-punctuation
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+         source-text-markup-mermaid-literal-string-unquoted
+                                                ^
+                                                source-text-markup-mermaid-punctuation
+                                                 ^
+                                                 source-text-markup-mermaid-whitespace
+                                                  ^^^
+                                                  source-text-markup-mermaid-keyword-operator
+                                                     ^
+                                                     source-text-markup-mermaid-whitespace
+                                                      ^^^^
+                                                      source-text-markup-mermaid-identifier
+  end
+^^
+source-text-markup-mermaid-whitespace
+  ^^^
+  source-text-markup-mermaid-keyword-control
+  classDef ready fill:#aabbcc,stroke:#333,stroke-width:2px;
+^^
+source-text-markup-mermaid-whitespace
+  ^^^^^^^^
+  source-text-markup-mermaid-keyword
+          ^
+          source-text-markup-mermaid-whitespace
+           ^^^^^
+           source-text-markup-mermaid-identifier
+                ^
+                source-text-markup-mermaid-whitespace
+                 ^^^^
+                 source-text-markup-mermaid-identifier-property
+                     ^
+                     source-text-markup-mermaid-punctuation
+                      ^^^^^^^
+                      source-text-markup-mermaid-literal-color
+                             ^
+                             source-text-markup-mermaid-punctuation
+                              ^^^^^^
+                              source-text-markup-mermaid-identifier-property
+                                    ^
+                                    source-text-markup-mermaid-punctuation
+                                     ^^^^
+                                     source-text-markup-mermaid-literal-color
+                                         ^
+                                         source-text-markup-mermaid-punctuation
+                                          ^^^^^^^^^^^^
+                                          source-text-markup-mermaid-identifier-property
+                                                      ^
+                                                      source-text-markup-mermaid-punctuation
+                                                       ^^^
+                                                       source-text-markup-mermaid-literal-number
+                                                          ^
+                                                          source-text-markup-mermaid-punctuation
+  class process,finish ready;
+^^
+source-text-markup-mermaid-whitespace
+  ^^^^^
+  source-text-markup-mermaid-keyword
+       ^
+       source-text-markup-mermaid-whitespace
+        ^^^^^^^
+        source-text-markup-mermaid-identifier
+               ^
+               source-text-markup-mermaid-punctuation
+                ^^^^^^
+                source-text-markup-mermaid-identifier
+                      ^
+                      source-text-markup-mermaid-whitespace
+                       ^^^^^
+                       source-text-markup-mermaid-identifier
+                            ^
+                            source-text-markup-mermaid-punctuation
+  style decision fill:#fff;
+^^
+source-text-markup-mermaid-whitespace
+  ^^^^^
+  source-text-markup-mermaid-keyword
+       ^
+       source-text-markup-mermaid-whitespace
+        ^^^^^^^^
+        source-text-markup-mermaid-identifier
+                ^
+                source-text-markup-mermaid-whitespace
+                 ^^^^
+                 source-text-markup-mermaid-identifier-property
+                     ^
+                     source-text-markup-mermaid-punctuation
+                      ^^^^
+                      source-text-markup-mermaid-literal-color
+                          ^
+                          source-text-markup-mermaid-punctuation
+  linkStyle 0 stroke:#f00;
+^^
+source-text-markup-mermaid-whitespace
+  ^^^^^^^^^
+  source-text-markup-mermaid-keyword
+           ^
+           source-text-markup-mermaid-whitespace
+            ^
+            source-text-markup-mermaid-literal-number
+             ^
+             source-text-markup-mermaid-whitespace
+              ^^^^^^
+              source-text-markup-mermaid-identifier-property
+                    ^
+                    source-text-markup-mermaid-punctuation
+                     ^^^^
+                     source-text-markup-mermaid-literal-color
+                         ^
+                         source-text-markup-mermaid-punctuation
+  process:::ready
+^^
+source-text-markup-mermaid-whitespace
+  ^^^^^^^
+  source-text-markup-mermaid-identifier
+         ^^^
+         source-text-markup-mermaid-punctuation
+            ^^^^^
+            source-text-markup-mermaid-identifier
+  click process href "https://example.com" "Run task"
+^^
+source-text-markup-mermaid-whitespace
+  ^^^^^
+  source-text-markup-mermaid-keyword
+       ^
+       source-text-markup-mermaid-whitespace
+        ^^^^^^^
+        source-text-markup-mermaid-identifier
+               ^
+               source-text-markup-mermaid-whitespace
+                ^^^^
+                source-text-markup-mermaid-keyword
+                    ^
+                    source-text-markup-mermaid-whitespace
+                     ^
+                     source-text-markup-mermaid-literal-string-quoted-double-literal-string-quoted-double-begin
+                      ^^^^^^^^^^^^^^^^^^^
+                      source-text-markup-mermaid-literal-string-quoted-double-literal-string-unquoted
+                                         ^
+                                         source-text-markup-mermaid-literal-string-quoted-double-literal-string-quoted-double-end
+                                          ^
+                                          source-text-markup-mermaid-whitespace
+                                           ^
+                                           source-text-markup-mermaid-literal-string-quoted-double-literal-string-quoted-double-begin
+                                            ^^^^^^^^
+                                            source-text-markup-mermaid-literal-string-quoted-double-literal-string-unquoted
+                                                    ^
+                                                    source-text-markup-mermaid-literal-string-quoted-double-literal-string-quoted-double-end
+  modern@{ shape: rect, label: "end %% is text", width: 80, animate: true }
+^^
+source-text-markup-mermaid-whitespace
+  ^^^^^^
+  source-text-markup-mermaid-identifier
+        ^^
+        source-text-markup-mermaid-punctuation
+          ^
+          source-text-markup-mermaid-whitespace
+           ^^^^^
+           source-text-markup-mermaid-identifier-property
+                ^
+                source-text-markup-mermaid-punctuation
+                 ^
+                 source-text-markup-mermaid-whitespace
+                  ^^^^
+                  source-text-markup-mermaid-identifier
+                      ^
+                      source-text-markup-mermaid-punctuation
+                       ^
+                       source-text-markup-mermaid-whitespace
+                        ^^^^^
+                        source-text-markup-mermaid-identifier-property
+                             ^
+                             source-text-markup-mermaid-punctuation
+                              ^
+                              source-text-markup-mermaid-whitespace
+                               ^
+                               source-text-markup-mermaid-literal-string-quoted-double-literal-string-quoted-double-begin
+                                ^^^^^^^^^^^^^^
+                                source-text-markup-mermaid-literal-string-quoted-double-literal-string-unquoted
+                                              ^
+                                              source-text-markup-mermaid-literal-string-quoted-double-literal-string-quoted-double-end
+                                               ^
+                                               source-text-markup-mermaid-punctuation
+                                                ^
+                                                source-text-markup-mermaid-whitespace
+                                                 ^^^^^
+                                                 source-text-markup-mermaid-identifier-property
+                                                      ^
+                                                      source-text-markup-mermaid-punctuation
+                                                       ^
+                                                       source-text-markup-mermaid-whitespace
+                                                        ^^
+                                                        source-text-markup-mermaid-literal-number
+                                                          ^
+                                                          source-text-markup-mermaid-punctuation
+                                                           ^
+                                                           source-text-markup-mermaid-whitespace
+                                                            ^^^^^^^
+                                                            source-text-markup-mermaid-identifier-property
+                                                                   ^
+                                                                   source-text-markup-mermaid-punctuation
+                                                                    ^
+                                                                    source-text-markup-mermaid-whitespace
+                                                                     ^^^^
+                                                                     source-text-markup-mermaid-literal-boolean-true
+                                                                         ^
+                                                                         source-text-markup-mermaid-whitespace
+                                                                          ^
+                                                                          source-text-markup-mermaid-punctuation

@@ -1,0 +1,274 @@
+graph TD
+^^^^^
+source-text-markup-mermaid-keyword-declaration
+     ^
+     source-text-markup-mermaid-whitespace
+      ^^
+      source-text-markup-mermaid-keyword
+  A[rectangle] B(round) C([stadium]) D[[subroutine]]
+^^
+source-text-markup-mermaid-whitespace
+  ^
+  source-text-markup-mermaid-identifier
+   ^
+   source-text-markup-mermaid-punctuation
+    ^^^^^^^^^
+    source-text-markup-mermaid-literal-string-unquoted
+             ^
+             source-text-markup-mermaid-punctuation
+              ^
+              source-text-markup-mermaid-whitespace
+               ^
+               source-text-markup-mermaid-identifier
+                ^
+                source-text-markup-mermaid-punctuation
+                 ^^^^^
+                 source-text-markup-mermaid-literal-string-unquoted
+                      ^
+                      source-text-markup-mermaid-punctuation
+                       ^
+                       source-text-markup-mermaid-whitespace
+                        ^
+                        source-text-markup-mermaid-identifier
+                         ^^
+                         source-text-markup-mermaid-punctuation
+                           ^^^^^^^
+                           source-text-markup-mermaid-literal-string-unquoted
+                                  ^^
+                                  source-text-markup-mermaid-punctuation
+                                    ^
+                                    source-text-markup-mermaid-whitespace
+                                     ^
+                                     source-text-markup-mermaid-identifier
+                                      ^^
+                                      source-text-markup-mermaid-punctuation
+                                        ^^^^^^^^^^
+                                        source-text-markup-mermaid-literal-string-unquoted
+                                                  ^^
+                                                  source-text-markup-mermaid-punctuation
+  E[(database)] F((circle)) G>asymmetric] H{decision}
+^^
+source-text-markup-mermaid-whitespace
+  ^
+  source-text-markup-mermaid-identifier
+   ^^
+   source-text-markup-mermaid-punctuation
+     ^^^^^^^^
+     source-text-markup-mermaid-literal-string-unquoted
+             ^^
+             source-text-markup-mermaid-punctuation
+               ^
+               source-text-markup-mermaid-whitespace
+                ^
+                source-text-markup-mermaid-identifier
+                 ^^
+                 source-text-markup-mermaid-punctuation
+                   ^^^^^^
+                   source-text-markup-mermaid-literal-string-unquoted
+                         ^^
+                         source-text-markup-mermaid-punctuation
+                           ^
+                           source-text-markup-mermaid-whitespace
+                            ^
+                            source-text-markup-mermaid-identifier
+                             ^
+                             source-text-markup-mermaid-punctuation
+                              ^^^^^^^^^^
+                              source-text-markup-mermaid-literal-string-unquoted
+                                        ^
+                                        source-text-markup-mermaid-punctuation
+                                         ^
+                                         source-text-markup-mermaid-whitespace
+                                          ^
+                                          source-text-markup-mermaid-identifier
+                                           ^
+                                           source-text-markup-mermaid-punctuation
+                                            ^^^^^^^^
+                                            source-text-markup-mermaid-literal-string-unquoted
+                                                    ^
+                                                    source-text-markup-mermaid-punctuation
+  I{{hexagon}} J[/parallel/] K[\parallel\]
+^^
+source-text-markup-mermaid-whitespace
+  ^
+  source-text-markup-mermaid-identifier
+   ^^
+   source-text-markup-mermaid-punctuation
+     ^^^^^^^
+     source-text-markup-mermaid-literal-string-unquoted
+            ^^
+            source-text-markup-mermaid-punctuation
+              ^
+              source-text-markup-mermaid-whitespace
+               ^
+               source-text-markup-mermaid-identifier
+                ^^
+                source-text-markup-mermaid-punctuation
+                  ^^^^^^^^
+                  source-text-markup-mermaid-literal-string-unquoted
+                          ^^
+                          source-text-markup-mermaid-punctuation
+                            ^
+                            source-text-markup-mermaid-whitespace
+                             ^
+                             source-text-markup-mermaid-identifier
+                              ^^
+                              source-text-markup-mermaid-punctuation
+                                ^^^^^^^^
+                                source-text-markup-mermaid-literal-string-unquoted
+                                        ^^
+                                        source-text-markup-mermaid-punctuation
+  L[/trapezoid\] M[\trapezoid/] N(((double circle)))
+^^
+source-text-markup-mermaid-whitespace
+  ^
+  source-text-markup-mermaid-identifier
+   ^^
+   source-text-markup-mermaid-punctuation
+     ^^^^^^^^^
+     source-text-markup-mermaid-literal-string-unquoted
+              ^^
+              source-text-markup-mermaid-punctuation
+                ^
+                source-text-markup-mermaid-whitespace
+                 ^
+                 source-text-markup-mermaid-identifier
+                  ^^
+                  source-text-markup-mermaid-punctuation
+                    ^^^^^^^^^
+                    source-text-markup-mermaid-literal-string-unquoted
+                             ^^
+                             source-text-markup-mermaid-punctuation
+                               ^
+                               source-text-markup-mermaid-whitespace
+                                ^
+                                source-text-markup-mermaid-identifier
+                                 ^^^
+                                 source-text-markup-mermaid-punctuation
+                                    ^^^^^^^^^^^^^
+                                    source-text-markup-mermaid-literal-string-unquoted
+                                                 ^^^
+                                                 source-text-markup-mermaid-punctuation
+  quoted["Square ] and brace } remain text"]
+^^
+source-text-markup-mermaid-whitespace
+  ^^^^^^
+  source-text-markup-mermaid-identifier
+        ^
+        source-text-markup-mermaid-punctuation
+         ^
+         source-text-markup-mermaid-literal-string-quoted-double-literal-string-quoted-double-begin
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+          source-text-markup-mermaid-literal-string-quoted-double-literal-string-unquoted
+                                          ^
+                                          source-text-markup-mermaid-literal-string-quoted-double-literal-string-quoted-double-end
+                                           ^
+                                           source-text-markup-mermaid-punctuation
+  escaped["A #quot;quote#quot; and #9829; entity"]
+^^
+source-text-markup-mermaid-whitespace
+  ^^^^^^^
+  source-text-markup-mermaid-identifier
+         ^
+         source-text-markup-mermaid-punctuation
+          ^
+          source-text-markup-mermaid-literal-string-quoted-double-literal-string-quoted-double-begin
+           ^^
+           source-text-markup-mermaid-literal-string-quoted-double-literal-string-unquoted
+             ^^^^^^
+             source-text-markup-mermaid-literal-string-quoted-double-literal-string-escape
+                   ^^^^^
+                   source-text-markup-mermaid-literal-string-quoted-double-literal-string-unquoted
+                        ^^^^^^
+                        source-text-markup-mermaid-literal-string-quoted-double-literal-string-escape
+                              ^^^^^
+                              source-text-markup-mermaid-literal-string-quoted-double-literal-string-unquoted
+                                   ^^^^^^
+                                   source-text-markup-mermaid-literal-string-quoted-double-literal-string-escape
+                                         ^^^^^^^
+                                         source-text-markup-mermaid-literal-string-quoted-double-literal-string-unquoted
+                                                ^
+                                                source-text-markup-mermaid-literal-string-quoted-double-literal-string-quoted-double-end
+                                                 ^
+                                                 source-text-markup-mermaid-punctuation
+  unicode["Héllo 世界 🌍"] --> node-end[endless]
+^^
+source-text-markup-mermaid-whitespace
+  ^^^^^^^
+  source-text-markup-mermaid-identifier
+         ^
+         source-text-markup-mermaid-punctuation
+          ^
+          source-text-markup-mermaid-literal-string-quoted-double-literal-string-quoted-double-begin
+           ^^^^^^^^^^^
+           source-text-markup-mermaid-literal-string-quoted-double-literal-string-unquoted
+                      ^
+                      source-text-markup-mermaid-literal-string-quoted-double-literal-string-quoted-double-end
+                       ^
+                       source-text-markup-mermaid-punctuation
+                        ^
+                        source-text-markup-mermaid-whitespace
+                         ^^^
+                         source-text-markup-mermaid-keyword-operator
+                            ^
+                            source-text-markup-mermaid-whitespace
+                             ^^^^^^^^
+                             source-text-markup-mermaid-identifier
+                                     ^
+                                     source-text-markup-mermaid-punctuation
+                                      ^^^^^^^
+                                      source-text-markup-mermaid-literal-string-unquoted
+                                             ^
+                                             source-text-markup-mermaid-punctuation
+  markdown["`**Bold** and _italic_
+^^
+source-text-markup-mermaid-whitespace
+  ^^^^^^^^
+  source-text-markup-mermaid-identifier
+          ^
+          source-text-markup-mermaid-punctuation
+           ^
+           source-text-markup-mermaid-literal-string-quoted-double-literal-string-quoted-double-begin
+            ^^^^^^^^^^^^^^^^^^^^^^
+            source-text-markup-mermaid-literal-string-quoted-double-literal-string-unquoted
+  on another line with end and %%`"] --> done
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+source-text-markup-mermaid-literal-string-quoted-double-literal-string-unquoted
+                                  ^
+                                  source-text-markup-mermaid-literal-string-quoted-double-literal-string-quoted-double-end
+                                   ^
+                                   source-text-markup-mermaid-punctuation
+                                    ^
+                                    source-text-markup-mermaid-whitespace
+                                     ^^^
+                                     source-text-markup-mermaid-keyword-operator
+                                        ^
+                                        source-text-markup-mermaid-whitespace
+                                         ^^^^
+                                         source-text-markup-mermaid-identifier
+  multiline["First line
+^^
+source-text-markup-mermaid-whitespace
+  ^^^^^^^^^
+  source-text-markup-mermaid-identifier
+           ^
+           source-text-markup-mermaid-punctuation
+            ^
+            source-text-markup-mermaid-literal-string-quoted-double-literal-string-quoted-double-begin
+             ^^^^^^^^^^
+             source-text-markup-mermaid-literal-string-quoted-double-literal-string-unquoted
+  second line"] --> last
+^^^^^^^^^^^^^
+source-text-markup-mermaid-literal-string-quoted-double-literal-string-unquoted
+             ^
+             source-text-markup-mermaid-literal-string-quoted-double-literal-string-quoted-double-end
+              ^
+              source-text-markup-mermaid-punctuation
+               ^
+               source-text-markup-mermaid-whitespace
+                ^^^
+                source-text-markup-mermaid-keyword-operator
+                   ^
+                   source-text-markup-mermaid-whitespace
+                    ^^^^
+                    source-text-markup-mermaid-identifier

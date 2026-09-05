@@ -1,6 +1,9 @@
 ## 0.2.6-wip
 
 - Require Dart 3.10 or later.
+- Add basic support for Mermaid (`mermaid`, `mmd`),
+  prioritizing flowcharts and sequence diagrams with
+  partial support for other common diagram types.
 - Improve the accuracy of `json` highlighting.
 - Handle potential inline and block comments in `json`.
 

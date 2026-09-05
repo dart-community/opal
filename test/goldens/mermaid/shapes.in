@@ -1,0 +1,12 @@
+graph TD
+  A[rectangle] B(round) C([stadium]) D[[subroutine]]
+  E[(database)] F((circle)) G>asymmetric] H{decision}
+  I{{hexagon}} J[/parallel/] K[\parallel\]
+  L[/trapezoid\] M[\trapezoid/] N(((double circle)))
+  quoted["Square ] and brace } remain text"]
+  escaped["A #quot;quote#quot; and #9829; entity"]
+  unicode["Héllo 世界 🌍"] --> node-end[endless]
+  markdown["`**Bold** and _italic_
+  on another line with end and %%`"] --> done
+  multiline["First line
+  second line"] --> last

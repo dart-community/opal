@@ -1,0 +1,77 @@
+timeline
+^^^^^^^^
+source-text-markup-mermaid-keyword-declaration
+  title Project history
+^^
+source-text-markup-mermaid-whitespace
+  ^^^^^
+  source-text-markup-mermaid-keyword
+       ^
+       source-text-markup-mermaid-whitespace
+        ^^^^^^^^^^^^^^^
+        source-text-markup-mermaid-literal-string-unquoted
+  section First phase
+^^
+source-text-markup-mermaid-whitespace
+  ^^^^^^^
+  source-text-markup-mermaid-keyword
+         ^
+         source-text-markup-mermaid-whitespace
+          ^^^^^^^^^^^
+          source-text-markup-mermaid-literal-string-unquoted
+  2024 : Planning : Research
+^^
+source-text-markup-mermaid-whitespace
+  ^^^^
+  source-text-markup-mermaid-literal-string-unquoted
+      ^
+      source-text-markup-mermaid-whitespace
+       ^
+       source-text-markup-mermaid-punctuation
+        ^
+        source-text-markup-mermaid-whitespace
+         ^^^^^^^^
+         source-text-markup-mermaid-literal-string-unquoted
+                 ^
+                 source-text-markup-mermaid-whitespace
+                  ^
+                  source-text-markup-mermaid-punctuation
+                   ^
+                   source-text-markup-mermaid-whitespace
+                    ^^^^^^^^
+                    source-text-markup-mermaid-literal-string-unquoted
+  2025 : Implementation
+^^
+source-text-markup-mermaid-whitespace
+  ^^^^
+  source-text-markup-mermaid-literal-string-unquoted
+      ^
+      source-text-markup-mermaid-whitespace
+       ^
+       source-text-markup-mermaid-punctuation
+        ^
+        source-text-markup-mermaid-whitespace
+         ^^^^^^^^^^^^^^
+         source-text-markup-mermaid-literal-string-unquoted
+       : Testing
+^^^^^^^
+source-text-markup-mermaid-whitespace
+       ^
+       source-text-markup-mermaid-punctuation
+        ^
+        source-text-markup-mermaid-whitespace
+         ^^^^^^^
+         source-text-markup-mermaid-literal-string-unquoted
+  2026 : Release
+^^
+source-text-markup-mermaid-whitespace
+  ^^^^
+  source-text-markup-mermaid-literal-string-unquoted
+      ^
+      source-text-markup-mermaid-whitespace
+       ^
+       source-text-markup-mermaid-punctuation
+        ^
+        source-text-markup-mermaid-whitespace
+         ^^^^^^^
+         source-text-markup-mermaid-literal-string-unquoted

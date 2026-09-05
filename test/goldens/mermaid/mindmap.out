@@ -1,0 +1,71 @@
+mindmap
+^^^^^^^
+source-text-markup-mermaid-keyword-declaration
+  root((Project))
+^^
+source-text-markup-mermaid-whitespace
+  ^^^^
+  source-text-markup-mermaid-literal-string-unquoted
+      ^^
+      source-text-markup-mermaid-punctuation
+        ^^^^^^^
+        source-text-markup-mermaid-literal-string-unquoted
+               ^^
+               source-text-markup-mermaid-punctuation
+    Planning
+^^^^
+source-text-markup-mermaid-whitespace
+    ^^^^^^^^
+    source-text-markup-mermaid-literal-string-unquoted
+      [Requirements]
+^^^^^^
+source-text-markup-mermaid-whitespace
+      ^
+      source-text-markup-mermaid-punctuation
+       ^^^^^^^^^^^^
+       source-text-markup-mermaid-literal-string-unquoted
+                   ^
+                   source-text-markup-mermaid-punctuation
+      Research
+^^^^^^
+source-text-markup-mermaid-whitespace
+      ^^^^^^^^
+      source-text-markup-mermaid-literal-string-unquoted
+    Development
+^^^^
+source-text-markup-mermaid-whitespace
+    ^^^^^^^^^^^
+    source-text-markup-mermaid-literal-string-unquoted
+      (Implementation)
+^^^^^^
+source-text-markup-mermaid-whitespace
+      ^
+      source-text-markup-mermaid-punctuation
+       ^^^^^^^^^^^^^^
+       source-text-markup-mermaid-literal-string-unquoted
+                     ^
+                     source-text-markup-mermaid-punctuation
+      Testing
+^^^^^^
+source-text-markup-mermaid-whitespace
+      ^^^^^^^
+      source-text-markup-mermaid-literal-string-unquoted
+      Deploy :::ready
+^^^^^^
+source-text-markup-mermaid-whitespace
+      ^^^^^^
+      source-text-markup-mermaid-literal-string-unquoted
+            ^
+            source-text-markup-mermaid-whitespace
+             ^^^^^^^^
+             source-text-markup-mermaid-metadata-annotation
+      ::icon(fa fa-check)
+^^^^^^
+source-text-markup-mermaid-whitespace
+      ^^^^^^^^^^^^^^^^^^^
+      source-text-markup-mermaid-metadata-annotation
+      :::ready
+^^^^^^
+source-text-markup-mermaid-whitespace
+      ^^^^^^^^
+      source-text-markup-mermaid-metadata-annotation

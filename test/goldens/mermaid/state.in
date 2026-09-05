@@ -1,0 +1,14 @@
+stateDiagram-v2
+  [*] --> Idle
+  state "Waiting for work" as Idle
+  Idle --> Running: start %% is label text
+  state Running {
+    [*] --> Working
+    Working --> [*]
+    --
+    [*] --> Listening
+  }
+  state Choice <<choice>>
+  Running --> Choice
+  Choice --> [*]: finish
+  note right of Idle: end is text here

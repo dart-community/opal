@@ -1,0 +1,61 @@
+journey
+^^^^^^^
+source-text-markup-mermaid-keyword-declaration
+  title Morning routine
+^^
+source-text-markup-mermaid-whitespace
+  ^^^^^
+  source-text-markup-mermaid-keyword
+       ^
+       source-text-markup-mermaid-whitespace
+        ^^^^^^^^^^^^^^^
+        source-text-markup-mermaid-literal-string-unquoted
+  section Getting ready
+^^
+source-text-markup-mermaid-whitespace
+  ^^^^^^^
+  source-text-markup-mermaid-keyword
+         ^
+         source-text-markup-mermaid-whitespace
+          ^^^^^^^^^^^^^
+          source-text-markup-mermaid-literal-string-unquoted
+  Make coffee: 5: Me
+^^
+source-text-markup-mermaid-whitespace
+  ^^^^^^^^^^^
+  source-text-markup-mermaid-literal-string-unquoted
+             ^
+             source-text-markup-mermaid-punctuation
+              ^
+              source-text-markup-mermaid-whitespace
+               ^
+               source-text-markup-mermaid-literal-number
+                ^
+                source-text-markup-mermaid-punctuation
+                 ^
+                 source-text-markup-mermaid-whitespace
+                  ^^
+                  source-text-markup-mermaid-identifier
+  Read news: 3: Me, Cat
+^^
+source-text-markup-mermaid-whitespace
+  ^^^^^^^^^
+  source-text-markup-mermaid-literal-string-unquoted
+           ^
+           source-text-markup-mermaid-punctuation
+            ^
+            source-text-markup-mermaid-whitespace
+             ^
+             source-text-markup-mermaid-literal-number
+              ^
+              source-text-markup-mermaid-punctuation
+               ^
+               source-text-markup-mermaid-whitespace
+                ^^
+                source-text-markup-mermaid-identifier
+                  ^
+                  source-text-markup-mermaid-punctuation
+                   ^
+                   source-text-markup-mermaid-whitespace
+                    ^^^
+                    source-text-markup-mermaid-identifier

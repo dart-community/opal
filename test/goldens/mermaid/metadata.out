@@ -1,0 +1,95 @@
+---
+^^^
+source-text-markup-mermaid-metadata
+title: A diagram
+^^^^^^^^^^^^^^^^
+source-text-markup-mermaid-metadata
+config:
+^^^^^^^
+source-text-markup-mermaid-metadata
+  theme: dark
+^^^^^^^^^^^^^
+source-text-markup-mermaid-metadata
+---
+^^^
+source-text-markup-mermaid-metadata
+%%{init: {"theme": "forest"}}%%
+^^^
+source-text-markup-mermaid-metadata
+   ^^^^^^^^^^^^^^^^^^^^^^^^^
+   source-text-markup-mermaid-metadata
+                            ^^^
+                            source-text-markup-mermaid-metadata
+flowchart TB
+^^^^^^^^^
+source-text-markup-mermaid-keyword-declaration
+         ^
+         source-text-markup-mermaid-whitespace
+          ^^
+          source-text-markup-mermaid-keyword
+  accTitle: A helpful title
+^^
+source-text-markup-mermaid-whitespace
+  ^^^^^^^^
+  source-text-markup-mermaid-keyword
+          ^^
+          source-text-markup-mermaid-punctuation
+            ^^^^^^^^^^^^^^^
+            source-text-markup-mermaid-literal-string-unquoted
+  accDescr {
+^^
+source-text-markup-mermaid-whitespace
+  ^^^^^^^^^^
+  source-text-markup-mermaid-metadata
+    Description with end and %% as text.
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+source-text-markup-mermaid-literal-string-unquoted
+  }
+^^
+source-text-markup-mermaid-literal-string-unquoted
+  ^
+  source-text-markup-mermaid-metadata
+  A --> B
+^^
+source-text-markup-mermaid-whitespace
+  ^
+  source-text-markup-mermaid-identifier
+   ^
+   source-text-markup-mermaid-whitespace
+    ^^^
+    source-text-markup-mermaid-keyword-operator
+       ^
+       source-text-markup-mermaid-whitespace
+        ^
+        source-text-markup-mermaid-identifier
+  %%{init:
+^^
+source-text-markup-mermaid-whitespace
+  ^^^
+  source-text-markup-mermaid-metadata
+     ^^^^^
+     source-text-markup-mermaid-metadata
+    {"theme": "dark"}
+^^^^^^^^^^^^^^^^^^^^^
+source-text-markup-mermaid-metadata
+  }%%
+^^
+source-text-markup-mermaid-metadata
+  ^^^
+  source-text-markup-mermaid-metadata
+  B --- C
+^^
+source-text-markup-mermaid-whitespace
+  ^
+  source-text-markup-mermaid-identifier
+   ^
+   source-text-markup-mermaid-whitespace
+    ^^^
+    source-text-markup-mermaid-keyword-operator
+       ^
+       source-text-markup-mermaid-whitespace
+        ^
+        source-text-markup-mermaid-identifier
+---
+^^^
+source-text-markup-mermaid-keyword-operator

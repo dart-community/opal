@@ -1,0 +1,5 @@
+unknownDiagram
+  actor-name "A label %% stays text"
+  count = 12.5
+  %% Ordinary comment
+  A --> B

@@ -17,6 +17,7 @@ import 'language/js.dart';
 import 'language/json.dart';
 import 'language/kotlin.dart';
 import 'language/markdown.dart';
+import 'language/mermaid.dart';
 import 'language/objective_c.dart';
 import 'language/python.dart';
 import 'language/ruby.dart';
@@ -50,6 +51,7 @@ abstract final class BuiltInLanguages {
     json,
     kotlin,
     markdown,
+    mermaid,
     python,
     objectiveC,
     ruby,
@@ -175,6 +177,13 @@ abstract final class BuiltInLanguages {
     name: 'markdown',
     grammar: const MarkdownGrammar(),
     baseTag: const Tag('markdown', parent: Tags.markupSource),
+  );
+
+  /// A tokenizing language implementation for common Mermaid diagrams.
+  static final Language mermaid = MatcherLanguage(
+    name: 'mermaid',
+    grammar: const MermaidGrammar(),
+    baseTag: const Tag('mermaid', parent: Tags.markupSource),
   );
 
   /// A tokenizing language implementation for Objective-C.

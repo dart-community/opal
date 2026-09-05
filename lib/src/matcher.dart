@@ -169,6 +169,11 @@ sealed class Matcher {
   /// The [content] matcher defines how to
   /// match the text between the delimiters.
   ///
+  /// If [end] is `null`, the construct has no closing delimiter and
+  /// [content] is matched through to the end of the input. This suits
+  /// formats where an opening token selects the rules for
+  /// everything that follows, such as a leading mode or section marker.
+  ///
   /// The optional [tag] applies to the entire wrapped construct.
   ///
   /// Usage example:
@@ -184,7 +189,7 @@ sealed class Matcher {
   /// ```
   factory Matcher.wrapped({
     required Matcher begin,
-    required Matcher end,
+    required Matcher? end,
     required Matcher content,
     Tag? tag,
   }) => WrappedMatcher._(begin: begin, end: end, content: content, tag: tag);
@@ -307,7 +312,10 @@ final class CaptureMatcher extends Matcher {
 @internal
 final class WrappedMatcher extends Matcher {
   final Matcher begin;
-  final Matcher end;
+
+  /// The closing delimiter, or `null` if the
+  /// content runs through to the end of the input.
+  final Matcher? end;
 
   final Matcher content;
 

@@ -1,0 +1,6 @@
+gitGraph:
+  commit id: "initial"
+  branch develop
+  commit
+  checkout main
+  merge develop

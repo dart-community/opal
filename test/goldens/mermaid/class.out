@@ -1,0 +1,262 @@
+classDiagram
+^^^^^^^^^^^^
+source-text-markup-mermaid-keyword-declaration
+  direction LR
+^^
+source-text-markup-mermaid-whitespace
+  ^^^^^^^^^
+  source-text-markup-mermaid-keyword
+           ^
+           source-text-markup-mermaid-whitespace
+            ^^
+            source-text-markup-mermaid-keyword
+  namespace Animals {
+^^
+source-text-markup-mermaid-whitespace
+  ^^^^^^^^^
+  source-text-markup-mermaid-keyword-declaration
+           ^
+           source-text-markup-mermaid-whitespace
+            ^^^^^^^
+            source-text-markup-mermaid-identifier
+                   ^
+                   source-text-markup-mermaid-whitespace
+                    ^
+                    source-text-markup-mermaid-punctuation
+    class Animal {
+^^^^
+source-text-markup-mermaid-whitespace
+    ^^^^^
+    source-text-markup-mermaid-keyword-declaration
+         ^
+         source-text-markup-mermaid-whitespace
+          ^^^^^^
+          source-text-markup-mermaid-identifier
+                ^
+                source-text-markup-mermaid-whitespace
+                 ^
+                 source-text-markup-mermaid-punctuation
+      <<abstract>>
+^^^^^^
+source-text-markup-mermaid-whitespace
+      ^^^^^^^^^^^^
+      source-text-markup-mermaid-metadata-annotation
+      +String name
+^^^^^^
+source-text-markup-mermaid-whitespace
+      ^
+      source-text-markup-mermaid-keyword-modifier
+       ^^^^^^
+       source-text-markup-mermaid-identifier-type-built-in
+             ^
+             source-text-markup-mermaid-whitespace
+              ^^^^
+              source-text-markup-mermaid-identifier
+      -int age
+^^^^^^
+source-text-markup-mermaid-whitespace
+      ^
+      source-text-markup-mermaid-keyword-modifier
+       ^^^
+       source-text-markup-mermaid-identifier-type-built-in
+          ^
+          source-text-markup-mermaid-whitespace
+           ^^^
+           source-text-markup-mermaid-identifier
+      +eat(food) void
+^^^^^^
+source-text-markup-mermaid-whitespace
+      ^
+      source-text-markup-mermaid-keyword-modifier
+       ^^^
+       source-text-markup-mermaid-identifier-function
+          ^
+          source-text-markup-mermaid-punctuation
+           ^^^^
+           source-text-markup-mermaid-identifier
+               ^
+               source-text-markup-mermaid-punctuation
+                ^
+                source-text-markup-mermaid-whitespace
+                 ^^^^
+                 source-text-markup-mermaid-identifier-type-built-in
+      #sleep()
+^^^^^^
+source-text-markup-mermaid-whitespace
+      ^
+      source-text-markup-mermaid-keyword-modifier
+       ^^^^^
+       source-text-markup-mermaid-identifier-function
+            ^
+            source-text-markup-mermaid-punctuation
+             ^
+             source-text-markup-mermaid-punctuation
+    }
+^^^^
+source-text-markup-mermaid-whitespace
+    ^
+    source-text-markup-mermaid-punctuation
+    class Duck
+^^^^
+source-text-markup-mermaid-whitespace
+    ^^^^^
+    source-text-markup-mermaid-keyword-declaration
+         ^
+         source-text-markup-mermaid-whitespace
+          ^^^^
+          source-text-markup-mermaid-identifier
+  }
+^^
+source-text-markup-mermaid-whitespace
+  ^
+  source-text-markup-mermaid-punctuation
+  Animal <|-- Duck
+^^
+source-text-markup-mermaid-whitespace
+  ^^^^^^
+  source-text-markup-mermaid-identifier
+        ^
+        source-text-markup-mermaid-whitespace
+         ^^^^
+         source-text-markup-mermaid-keyword-operator
+             ^
+             source-text-markup-mermaid-whitespace
+              ^^^^
+              source-text-markup-mermaid-identifier
+  Pond "1" o-- "many" Duck : contains
+^^
+source-text-markup-mermaid-whitespace
+  ^^^^
+  source-text-markup-mermaid-identifier
+      ^
+      source-text-markup-mermaid-whitespace
+       ^
+       source-text-markup-mermaid-literal-string-quoted-double-literal-string-quoted-double-begin
+        ^
+        source-text-markup-mermaid-literal-string-quoted-double-literal-string-unquoted
+         ^
+         source-text-markup-mermaid-literal-string-quoted-double-literal-string-quoted-double-end
+          ^
+          source-text-markup-mermaid-whitespace
+           ^^^
+           source-text-markup-mermaid-keyword-operator
+              ^
+              source-text-markup-mermaid-whitespace
+               ^
+               source-text-markup-mermaid-literal-string-quoted-double-literal-string-quoted-double-begin
+                ^^^^
+                source-text-markup-mermaid-literal-string-quoted-double-literal-string-unquoted
+                    ^
+                    source-text-markup-mermaid-literal-string-quoted-double-literal-string-quoted-double-end
+                     ^
+                     source-text-markup-mermaid-whitespace
+                      ^^^^
+                      source-text-markup-mermaid-identifier
+                          ^
+                          source-text-markup-mermaid-whitespace
+                           ^
+                           source-text-markup-mermaid-punctuation
+                            ^
+                            source-text-markup-mermaid-whitespace
+                             ^^^^^^^^
+                             source-text-markup-mermaid-literal-string-unquoted
+  Duck ..> Food
+^^
+source-text-markup-mermaid-whitespace
+  ^^^^
+  source-text-markup-mermaid-identifier
+      ^
+      source-text-markup-mermaid-whitespace
+       ^^^
+       source-text-markup-mermaid-keyword-operator
+          ^
+          source-text-markup-mermaid-whitespace
+           ^^^^
+           source-text-markup-mermaid-identifier
+  Zebra --|> Animal : is a class of note
+^^
+source-text-markup-mermaid-whitespace
+  ^^^^^
+  source-text-markup-mermaid-identifier
+       ^
+       source-text-markup-mermaid-whitespace
+        ^^^^
+        source-text-markup-mermaid-keyword-operator
+            ^
+            source-text-markup-mermaid-whitespace
+             ^^^^^^
+             source-text-markup-mermaid-identifier
+                   ^
+                   source-text-markup-mermaid-whitespace
+                    ^
+                    source-text-markup-mermaid-punctuation
+                     ^
+                     source-text-markup-mermaid-whitespace
+                      ^^^^^^^^^^^^^^^^^^
+                      source-text-markup-mermaid-literal-string-unquoted
+  Duck ..|> Swimmer:::aquatic
+^^
+source-text-markup-mermaid-whitespace
+  ^^^^
+  source-text-markup-mermaid-identifier
+      ^
+      source-text-markup-mermaid-whitespace
+       ^^^^
+       source-text-markup-mermaid-keyword-operator
+           ^
+           source-text-markup-mermaid-whitespace
+            ^^^^^^^
+            source-text-markup-mermaid-identifier
+                   ^^^
+                   source-text-markup-mermaid-punctuation
+                      ^^^^^^^
+                      source-text-markup-mermaid-identifier
+  Duck : +swim()
+^^
+source-text-markup-mermaid-whitespace
+  ^^^^
+  source-text-markup-mermaid-identifier
+      ^
+      source-text-markup-mermaid-whitespace
+       ^
+       source-text-markup-mermaid-punctuation
+        ^
+        source-text-markup-mermaid-whitespace
+         ^
+         source-text-markup-mermaid-keyword-modifier
+          ^^^^
+          source-text-markup-mermaid-identifier-function
+              ^
+              source-text-markup-mermaid-punctuation
+               ^
+               source-text-markup-mermaid-punctuation
+  note "Class notes"
+^^
+source-text-markup-mermaid-whitespace
+  ^^^^
+  source-text-markup-mermaid-keyword
+      ^
+      source-text-markup-mermaid-whitespace
+       ^
+       source-text-markup-mermaid-literal-string-quoted-double-literal-string-quoted-double-begin
+        ^^^^^^^^^^^
+        source-text-markup-mermaid-literal-string-quoted-double-literal-string-unquoted
+                   ^
+                   source-text-markup-mermaid-literal-string-quoted-double-literal-string-quoted-double-end
+  style Duck fill:#fff
+^^
+source-text-markup-mermaid-whitespace
+  ^^^^^
+  source-text-markup-mermaid-keyword
+       ^
+       source-text-markup-mermaid-whitespace
+        ^^^^
+        source-text-markup-mermaid-identifier
+            ^
+            source-text-markup-mermaid-whitespace
+             ^^^^
+             source-text-markup-mermaid-identifier-property
+                 ^
+                 source-text-markup-mermaid-punctuation
+                  ^^^^
+                  source-text-markup-mermaid-literal-color

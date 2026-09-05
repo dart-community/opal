@@ -1,0 +1,110 @@
+flowchart TD
+^^^^^^^^^
+source-text-markup-mermaid-keyword-declaration
+         ^
+         source-text-markup-mermaid-whitespace
+          ^^
+          source-text-markup-mermaid-keyword
+  A[unfinished label
+^^
+source-text-markup-mermaid-whitespace
+  ^
+  source-text-markup-mermaid-identifier
+   ^
+   source-text-markup-mermaid-punctuation
+    ^^^^^^^^^^^^^^^^
+    source-text-markup-mermaid-literal-string-unquoted
+  B-->C
+^^
+source-text-markup-mermaid-whitespace
+  ^
+  source-text-markup-mermaid-identifier
+   ^^^
+   source-text-markup-mermaid-keyword-operator
+      ^
+      source-text-markup-mermaid-identifier
+  D-->|unfinished edge label
+^^
+source-text-markup-mermaid-whitespace
+  ^
+  source-text-markup-mermaid-identifier
+   ^^^
+   source-text-markup-mermaid-keyword-operator
+      ^
+      source-text-markup-mermaid-punctuation
+       ^^^^^^^^^^^^^^^^^^^^^
+       source-text-markup-mermaid-literal-string-unquoted
+  E-->F
+^^
+source-text-markup-mermaid-whitespace
+  ^
+  source-text-markup-mermaid-identifier
+   ^^^
+   source-text-markup-mermaid-keyword-operator
+      ^
+      source-text-markup-mermaid-identifier
+  odd_name-end --> unicode世界
+^^
+source-text-markup-mermaid-whitespace
+  ^^^^^^^^^^^^
+  source-text-markup-mermaid-identifier
+              ^
+              source-text-markup-mermaid-whitespace
+               ^^^
+               source-text-markup-mermaid-keyword-operator
+                  ^
+                  source-text-markup-mermaid-whitespace
+                   ^^^^^^^^^
+                   source-text-markup-mermaid-identifier
+  ??? unsupported $ characters
+^^
+source-text-markup-mermaid-whitespace
+  ^
+  source-text-markup-mermaid-unknown
+   ^
+   source-text-markup-mermaid-unknown
+    ^
+    source-text-markup-mermaid-unknown
+     ^
+     source-text-markup-mermaid-whitespace
+      ^^^^^^^^^^^
+      source-text-markup-mermaid-identifier
+                 ^
+                 source-text-markup-mermaid-whitespace
+                  ^
+                  source-text-markup-mermaid-unknown
+                   ^
+                   source-text-markup-mermaid-whitespace
+                    ^^^^^^^^^^
+                    source-text-markup-mermaid-identifier
+  J-.dotted.->K
+^^
+source-text-markup-mermaid-whitespace
+  ^
+  source-text-markup-mermaid-identifier
+   ^^
+   source-text-markup-mermaid-keyword-operator
+     ^^^^^^
+     source-text-markup-mermaid-identifier
+           ^
+           source-text-markup-mermaid-punctuation
+            ^
+            source-text-markup-mermaid-keyword-operator
+             ^
+             source-text-markup-mermaid-keyword-operator
+              ^
+              source-text-markup-mermaid-identifier
+  Q["Unfinished quoted
+^^
+source-text-markup-mermaid-whitespace
+  ^
+  source-text-markup-mermaid-identifier
+   ^
+   source-text-markup-mermaid-punctuation
+    ^
+    source-text-markup-mermaid-literal-string-quoted-double-literal-string-quoted-double-begin
+     ^^^^^^^^^^^^^^^^^
+     source-text-markup-mermaid-literal-string-quoted-double-literal-string-unquoted
+  label runs to EOF
+^^^^^^^^^^^^^^^^^^^
+source-text-markup-mermaid-literal-string-quoted-double-literal-string-unquoted

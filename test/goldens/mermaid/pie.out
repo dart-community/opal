@@ -1,0 +1,67 @@
+pie showData
+^^^
+source-text-markup-mermaid-keyword-declaration
+   ^
+   source-text-markup-mermaid-whitespace
+    ^^^^^^^^
+    source-text-markup-mermaid-keyword
+  title Project effort
+^^
+source-text-markup-mermaid-whitespace
+  ^^^^^
+  source-text-markup-mermaid-keyword
+       ^
+       source-text-markup-mermaid-whitespace
+        ^^^^^^^^^^^^^^
+        source-text-markup-mermaid-literal-string-unquoted
+  "Development" : 70
+^^
+source-text-markup-mermaid-whitespace
+  ^
+  source-text-markup-mermaid-literal-string-quoted-double-literal-string-quoted-double-begin
+   ^^^^^^^^^^^
+   source-text-markup-mermaid-literal-string-quoted-double-literal-string-unquoted
+              ^
+              source-text-markup-mermaid-literal-string-quoted-double-literal-string-quoted-double-end
+               ^
+               source-text-markup-mermaid-whitespace
+                ^
+                source-text-markup-mermaid-punctuation
+                 ^
+                 source-text-markup-mermaid-whitespace
+                  ^^
+                  source-text-markup-mermaid-literal-number
+  "Documentation %% is text" : 20.5
+^^
+source-text-markup-mermaid-whitespace
+  ^
+  source-text-markup-mermaid-literal-string-quoted-double-literal-string-quoted-double-begin
+   ^^^^^^^^^^^^^^^^^^^^^^^^
+   source-text-markup-mermaid-literal-string-quoted-double-literal-string-unquoted
+                           ^
+                           source-text-markup-mermaid-literal-string-quoted-double-literal-string-quoted-double-end
+                            ^
+                            source-text-markup-mermaid-whitespace
+                             ^
+                             source-text-markup-mermaid-punctuation
+                              ^
+                              source-text-markup-mermaid-whitespace
+                               ^^^^
+                               source-text-markup-mermaid-literal-number
+  "Testing" : 9.5
+^^
+source-text-markup-mermaid-whitespace
+  ^
+  source-text-markup-mermaid-literal-string-quoted-double-literal-string-quoted-double-begin
+   ^^^^^^^
+   source-text-markup-mermaid-literal-string-quoted-double-literal-string-unquoted
+          ^
+          source-text-markup-mermaid-literal-string-quoted-double-literal-string-quoted-double-end
+           ^
+           source-text-markup-mermaid-whitespace
+            ^
+            source-text-markup-mermaid-punctuation
+             ^
+             source-text-markup-mermaid-whitespace
+              ^^^
+              source-text-markup-mermaid-literal-number

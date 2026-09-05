@@ -128,7 +128,7 @@ final class MatcherLanguage extends Language {
 
             if (tryMatcher(begin)) {
               while (!scanner.isDone &&
-                  !tryMatcher(end, allowZeroLength: true)) {
+                  !(end != null && tryMatcher(end, allowZeroLength: true))) {
                 if (!tryMatcher(content)) {
                   handleUnknownToken();
                 }

@@ -1,0 +1,181 @@
+erDiagram
+^^^^^^^^^
+source-text-markup-mermaid-keyword-declaration
+  direction LR
+^^
+source-text-markup-mermaid-whitespace
+  ^^^^^^^^^
+  source-text-markup-mermaid-keyword
+           ^
+           source-text-markup-mermaid-whitespace
+            ^^
+            source-text-markup-mermaid-keyword
+  CUSTOMER ||--o{ ORDER : places
+^^
+source-text-markup-mermaid-whitespace
+  ^^^^^^^^
+  source-text-markup-mermaid-identifier
+          ^
+          source-text-markup-mermaid-whitespace
+           ^^^^^^
+           source-text-markup-mermaid-keyword-operator
+                 ^
+                 source-text-markup-mermaid-whitespace
+                  ^^^^^
+                  source-text-markup-mermaid-identifier
+                       ^
+                       source-text-markup-mermaid-whitespace
+                        ^
+                        source-text-markup-mermaid-punctuation
+                         ^
+                         source-text-markup-mermaid-whitespace
+                          ^^^^^^
+                          source-text-markup-mermaid-literal-string-unquoted
+  ORDER }o..o{ PRODUCT : contains
+^^
+source-text-markup-mermaid-whitespace
+  ^^^^^
+  source-text-markup-mermaid-identifier
+       ^
+       source-text-markup-mermaid-whitespace
+        ^^^^^^
+        source-text-markup-mermaid-keyword-operator
+              ^
+              source-text-markup-mermaid-whitespace
+               ^^^^^^^
+               source-text-markup-mermaid-identifier
+                      ^
+                      source-text-markup-mermaid-whitespace
+                       ^
+                       source-text-markup-mermaid-punctuation
+                        ^
+                        source-text-markup-mermaid-whitespace
+                         ^^^^^^^^
+                         source-text-markup-mermaid-literal-string-unquoted
+  PERSON |o--|| ADDRESS : lives_at
+^^
+source-text-markup-mermaid-whitespace
+  ^^^^^^
+  source-text-markup-mermaid-identifier
+        ^
+        source-text-markup-mermaid-whitespace
+         ^^^^^^
+         source-text-markup-mermaid-keyword-operator
+               ^
+               source-text-markup-mermaid-whitespace
+                ^^^^^^^
+                source-text-markup-mermaid-identifier
+                       ^
+                       source-text-markup-mermaid-whitespace
+                        ^
+                        source-text-markup-mermaid-punctuation
+                         ^
+                         source-text-markup-mermaid-whitespace
+                          ^^^^^^^^
+                          source-text-markup-mermaid-literal-string-unquoted
+  CUSTOMER {
+^^
+source-text-markup-mermaid-whitespace
+  ^^^^^^^^
+  source-text-markup-mermaid-identifier
+          ^
+          source-text-markup-mermaid-whitespace
+           ^
+           source-text-markup-mermaid-punctuation
+    int id PK
+^^^^
+source-text-markup-mermaid-whitespace
+    ^^^
+    source-text-markup-mermaid-identifier-type-built-in
+       ^
+       source-text-markup-mermaid-whitespace
+        ^^
+        source-text-markup-mermaid-identifier
+          ^
+          source-text-markup-mermaid-whitespace
+           ^^
+           source-text-markup-mermaid-keyword-modifier
+    string name "Full name"
+^^^^
+source-text-markup-mermaid-whitespace
+    ^^^^^^
+    source-text-markup-mermaid-identifier-type-built-in
+          ^
+          source-text-markup-mermaid-whitespace
+           ^^^^
+           source-text-markup-mermaid-identifier
+               ^
+               source-text-markup-mermaid-whitespace
+                ^
+                source-text-markup-mermaid-literal-string-quoted-double-literal-string-quoted-double-begin
+                 ^^^^^^^^^
+                 source-text-markup-mermaid-literal-string-quoted-double-literal-string-unquoted
+                          ^
+                          source-text-markup-mermaid-literal-string-quoted-double-literal-string-quoted-double-end
+    string email UK
+^^^^
+source-text-markup-mermaid-whitespace
+    ^^^^^^
+    source-text-markup-mermaid-identifier-type-built-in
+          ^
+          source-text-markup-mermaid-whitespace
+           ^^^^^
+           source-text-markup-mermaid-identifier
+                ^
+                source-text-markup-mermaid-whitespace
+                 ^^
+                 source-text-markup-mermaid-keyword-modifier
+  }
+^^
+source-text-markup-mermaid-whitespace
+  ^
+  source-text-markup-mermaid-punctuation
+  ORDER {
+^^
+source-text-markup-mermaid-whitespace
+  ^^^^^
+  source-text-markup-mermaid-identifier
+       ^
+       source-text-markup-mermaid-whitespace
+        ^
+        source-text-markup-mermaid-punctuation
+    int id PK
+^^^^
+source-text-markup-mermaid-whitespace
+    ^^^
+    source-text-markup-mermaid-identifier-type-built-in
+       ^
+       source-text-markup-mermaid-whitespace
+        ^^
+        source-text-markup-mermaid-identifier
+          ^
+          source-text-markup-mermaid-whitespace
+           ^^
+           source-text-markup-mermaid-keyword-modifier
+    int customer_id FK
+^^^^
+source-text-markup-mermaid-whitespace
+    ^^^
+    source-text-markup-mermaid-identifier-type-built-in
+       ^
+       source-text-markup-mermaid-whitespace
+        ^^^^^^^^^^^
+        source-text-markup-mermaid-identifier
+                   ^
+                   source-text-markup-mermaid-whitespace
+                    ^^
+                    source-text-markup-mermaid-keyword-modifier
+    date created
+^^^^
+source-text-markup-mermaid-whitespace
+    ^^^^
+    source-text-markup-mermaid-identifier-type-built-in
+        ^
+        source-text-markup-mermaid-whitespace
+         ^^^^^^^
+         source-text-markup-mermaid-identifier
+  }
+^^
+source-text-markup-mermaid-whitespace
+  ^
+  source-text-markup-mermaid-punctuation

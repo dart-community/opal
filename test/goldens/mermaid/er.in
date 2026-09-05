@@ -1,0 +1,15 @@
+erDiagram
+  direction LR
+  CUSTOMER ||--o{ ORDER : places
+  ORDER }o..o{ PRODUCT : contains
+  PERSON |o--|| ADDRESS : lives_at
+  CUSTOMER {
+    int id PK
+    string name "Full name"
+    string email UK
+  }
+  ORDER {
+    int id PK
+    int customer_id FK
+    date created
+  }

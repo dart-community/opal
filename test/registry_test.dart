@@ -54,6 +54,14 @@ void main() {
         expect(BuiltInLanguages.css.name, equals('css'));
       });
 
+      test('includes mermaid language and fallback', () {
+        for (final name in ['mermaid', 'mmd', 'MERMAID', ' MMD ']) {
+          expect(registry[name], same(BuiltInLanguages.mermaid));
+        }
+        expect(BuiltInLanguages.mermaid.name, 'mermaid');
+        expect(BuiltInLanguages.all, contains(BuiltInLanguages.mermaid));
+      });
+
       test('returns null for unknown language', () {
         expect(registry['unknown'], isNull);
         expect(registry['perl'], isNull);

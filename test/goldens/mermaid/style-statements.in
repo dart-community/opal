@@ -1,0 +1,2 @@
+flowchart LR; A-->style; style A fill:#fff;classDef ready fill:#0f0;
+  class A ready; linkStyle 0 stroke:#333;

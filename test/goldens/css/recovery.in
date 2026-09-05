@@ -25,6 +25,22 @@ string';
   padding: 0;
 }
 
+.incomplete-at-rules {
+  @unknown missing-semicolon
+}
+button:hover { color: red; }
+
+.incomplete-priority {
+  color: red ! /* no keyword */;
+  padding: 1rem;
+  color: blue !
+}
+a:focus { color: blue; }
+
+.empty-url { background: url(
+}
+nav:hover { color: green; }
+
 @future unfinished
 
 .unclosed {

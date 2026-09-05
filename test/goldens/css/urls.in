@@ -1,0 +1,27 @@
+.urls {
+  background-image: url(
+    images/hero.svg#mark
+  );
+  mask-image: URL(
+    "/images/mask.svg#shape"
+  );
+  cursor: url(icons/pointer\(dark\).cur), pointer;
+  background: url(;icon.svg);
+  background: url(foo\);bar.svg);
+  background: url(;icon.svg  );
+  background: url(;icon.svg
+  );
+  background: url(foo\);bar.svg
+  );
+  background: url(data:image/png;base64,aGVsbG8=);
+  background: url(
+
+    data:image/png;base64,aGVsbG8=);
+  background: url(missing-paren.png
+  color: red;
+  padding: 1rem;
+}
+
+.unfinished-url { background: url(
+  ; color: red; padding: 1rem; }
+.after-url { display: block; }

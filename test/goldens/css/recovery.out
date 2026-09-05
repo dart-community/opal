@@ -307,6 +307,204 @@ source-code-css-whitespace
 ^
 source-code-css-punctuation-end
 
+.incomplete-at-rules {
+^
+source-code-css-punctuation
+ ^^^^^^^^^^^^^^^^^^^
+ source-code-css-identifier-selector-class
+                    ^
+                    source-code-css-whitespace
+                     ^
+                     source-code-css-punctuation-begin
+  @unknown missing-semicolon
+^^
+source-code-css-whitespace
+  ^
+  source-code-css-punctuation
+   ^^^^^^^
+   source-code-css-keyword-at-rule
+          ^
+          source-code-css-whitespace
+           ^^^^^^^^^^^^^^^^^
+           source-code-css-identifier
+}
+^
+source-code-css-punctuation-end
+button:hover { color: red; }
+^^^^^^
+source-code-css-identifier-selector-type
+      ^
+      source-code-css-punctuation
+       ^^^^^
+       source-code-css-identifier-selector-pseudo-class
+            ^
+            source-code-css-whitespace
+             ^
+             source-code-css-punctuation-begin
+              ^
+              source-code-css-whitespace
+               ^^^^^
+               source-code-css-identifier-property
+                    ^
+                    source-code-css-punctuation-separator
+                     ^
+                     source-code-css-whitespace
+                      ^^^
+                      source-code-css-identifier
+                         ^
+                         source-code-css-punctuation-separator
+                          ^
+                          source-code-css-whitespace
+                           ^
+                           source-code-css-punctuation-end
+
+.incomplete-priority {
+^
+source-code-css-punctuation
+ ^^^^^^^^^^^^^^^^^^^
+ source-code-css-identifier-selector-class
+                    ^
+                    source-code-css-whitespace
+                     ^
+                     source-code-css-punctuation-begin
+  color: red ! /* no keyword */;
+^^
+source-code-css-whitespace
+  ^^^^^
+  source-code-css-identifier-property
+       ^
+       source-code-css-punctuation-separator
+        ^
+        source-code-css-whitespace
+         ^^^
+         source-code-css-identifier
+            ^
+            source-code-css-whitespace
+             ^
+             source-code-css-keyword-operator
+              ^
+              source-code-css-whitespace
+               ^^
+               source-code-css-comment-block-comment-block-begin
+                 ^^^^^^^^^^^^
+                 source-code-css-comment-block-comment-block-content
+                             ^^
+                             source-code-css-comment-block-comment-block-end
+                               ^
+                               source-code-css-punctuation-separator
+  padding: 1rem;
+^^
+source-code-css-whitespace
+  ^^^^^^^
+  source-code-css-identifier-property
+         ^
+         source-code-css-punctuation-separator
+          ^
+          source-code-css-whitespace
+           ^
+           source-code-css-literal-number
+            ^^^
+            source-code-css-keyword-unit
+               ^
+               source-code-css-punctuation-separator
+  color: blue !
+^^
+source-code-css-whitespace
+  ^^^^^
+  source-code-css-identifier-property
+       ^
+       source-code-css-punctuation-separator
+        ^
+        source-code-css-whitespace
+         ^^^^
+         source-code-css-identifier
+             ^
+             source-code-css-whitespace
+              ^
+              source-code-css-keyword-operator
+}
+^
+source-code-css-punctuation-end
+a:focus { color: blue; }
+^
+source-code-css-identifier-selector-type
+ ^
+ source-code-css-punctuation
+  ^^^^^
+  source-code-css-identifier-selector-pseudo-class
+       ^
+       source-code-css-whitespace
+        ^
+        source-code-css-punctuation-begin
+         ^
+         source-code-css-whitespace
+          ^^^^^
+          source-code-css-identifier-property
+               ^
+               source-code-css-punctuation-separator
+                ^
+                source-code-css-whitespace
+                 ^^^^
+                 source-code-css-identifier
+                     ^
+                     source-code-css-punctuation-separator
+                      ^
+                      source-code-css-whitespace
+                       ^
+                       source-code-css-punctuation-end
+
+.empty-url { background: url(
+^
+source-code-css-punctuation
+ ^^^^^^^^^
+ source-code-css-identifier-selector-class
+          ^
+          source-code-css-whitespace
+           ^
+           source-code-css-punctuation-begin
+            ^
+            source-code-css-whitespace
+             ^^^^^^^^^^
+             source-code-css-identifier-property
+                       ^
+                       source-code-css-punctuation-separator
+                        ^
+                        source-code-css-whitespace
+                         ^^^
+                         source-code-css-link-identifier-function
+                            ^
+                            source-code-css-link-punctuation
+}
+^
+source-code-css-punctuation-end
+nav:hover { color: green; }
+^^^
+source-code-css-identifier-selector-type
+   ^
+   source-code-css-punctuation
+    ^^^^^
+    source-code-css-identifier-selector-pseudo-class
+         ^
+         source-code-css-whitespace
+          ^
+          source-code-css-punctuation-begin
+           ^
+           source-code-css-whitespace
+            ^^^^^
+            source-code-css-identifier-property
+                 ^
+                 source-code-css-punctuation-separator
+                  ^
+                  source-code-css-whitespace
+                   ^^^^^
+                   source-code-css-identifier
+                        ^
+                        source-code-css-punctuation-separator
+                         ^
+                         source-code-css-whitespace
+                          ^
+                          source-code-css-punctuation-end
+
 @future unfinished
 ^
 source-code-css-punctuation

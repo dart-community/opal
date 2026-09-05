@@ -6,6 +6,7 @@
   partial support for other common diagram types.
 - Improve the accuracy of `json` highlighting.
 - Handle potential inline and block comments in `json`.
+- Improve handling of `css` edge cases.
 
 ## 0.2.5
 

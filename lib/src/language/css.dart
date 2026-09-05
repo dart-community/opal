@@ -10,8 +10,13 @@ final class CssGrammar extends MatcherGrammar {
 
   // Keep reusable patterns non-capturing so they can safely be interpolated
   // into `Matcher.capture` expressions.
+  // Hex escapes must consume up to six digits and
+  // their optional whitespace terminator greedily.
+  // Allowing either to backtrack makes declaration lookaheads slow on
+  // incomplete escaped names or strings.
   static const String _escapePattern =
-      r'\\(?:[0-9a-fA-F]{1,6}[ \t\f]?|[^\r\n0-9a-fA-F])';
+      r'\\(?:(?:[0-9a-fA-F]{6}|[0-9a-fA-F]{1,5}(?![0-9a-fA-F]))'
+      r'(?:[ \t\f]|(?![ \t\f]))|[^\r\n0-9a-fA-F])';
   static const String _nonAsciiPattern = r'[^\x00-\x7f]';
   static const String _nameStartPattern =
       '(?:[_a-zA-Z]|$_nonAsciiPattern|$_escapePattern)';
@@ -40,8 +45,9 @@ final class CssGrammar extends MatcherGrammar {
   // outside of a string or comment,
   // so it stays within the current declaration.
   //
-  // This lookahead is line-local and can't roll back, so newlines before a
-  // declaration colon or ambiguous rule brace get best-effort highlighting.
+  // This lookahead is line-local and can't roll back,
+  // so newlines before a declaration colon or ambiguous rule brace
+  // get best-effort highlighting.
   static const String _declarationValueGuard =
       '(?!$_declarationValueItemPattern*\\{)';
 
@@ -86,8 +92,8 @@ final class CssGrammar extends MatcherGrammar {
   Matcher _blockContent() => Matcher.options([
     Matcher.include(_comment),
     Matcher.include(_atRule),
-    // Declarations must precede selectors because `color: red` and
-    // `a:hover` have the same initial token shape.
+    // Declarations must precede selectors because
+    // `color: red` and `a:hover` have the same initial token shape.
     Matcher.include(_declarations),
     Matcher.include(_block),
     Matcher.include(_selectorContent),
@@ -133,15 +139,16 @@ final class CssGrammar extends MatcherGrammar {
       captures: [Tags.punctuation, _atRuleTag],
       caseSensitive: false,
     ),
-    // A missing `;` would otherwise let the prelude swallow
-    // the name of the at-rule that follows it.
-    end: Matcher.regex(r'(?=[;{@])'),
+    // A missing `;` must not swallow the enclosing block's closing brace
+    // or the name of the at-rule that follows it.
+    end: Matcher.regex(r'(?=[;{}@])'),
     content: Matcher.include(_componentValues),
   );
 
   Matcher _declarations() => Matcher.options([
-    // Custom-property values can contain arbitrary blocks, so match them
-    // before applying the nested-rule guard used by normal declarations.
+    // Custom-property values can contain arbitrary blocks,
+    // so match them before applying the nested-rule guard
+    // used by normal declarations.
     _declaration(
       namePattern: _customIdentifierPattern,
       nameTag: _customPropertyTag,
@@ -194,10 +201,12 @@ final class CssGrammar extends MatcherGrammar {
     Matcher.include(_dimension),
     Matcher.include(_percentage),
     Matcher.include(_numberLiteral),
-    Matcher.include(_customPropertyReference),
-    Matcher.include(_cssWideKeywords),
+    // A following `(` takes precedence over identifier classifications,
+    // including custom names such as `--spacing()`.
     Matcher.include(_selectorFunction),
     Matcher.include(_function),
+    Matcher.include(_customPropertyReference),
+    Matcher.include(_cssWideKeywords),
     Matcher.include(_parenthesizedComponent),
     Matcher.include(_bracketedComponent),
     Matcher.include(_block),
@@ -287,15 +296,27 @@ final class CssGrammar extends MatcherGrammar {
   );
 
   Matcher _url() => Matcher.wrapped(
-    begin: Matcher.capture(
-      r'(url)(\()',
-      captures: [Tags.function, Tags.punctuation],
-      caseSensitive: false,
+    // Let the value start on a later line while
+    // retaining line-end recovery once it begins,
+    // so an unfinished URL doesn't swallow later declarations.
+    begin: Matcher.wrapped(
+      begin: Matcher.capture(
+        r'(url)(\()',
+        captures: [Tags.function, Tags.punctuation],
+        caseSensitive: false,
+      ),
+      end: Matcher.regex(r'(?=\S)'),
+      content: Matcher.regex(r'\s+', tag: Tags.whitespace),
     ),
-    // Recovering at `}` keeps a missing `)` from swallowing the rules that
-    // follow. A `;` stays part of the URL so unquoted data URLs keep working.
+    // Recover at `;` only when the remaining unquoted URL
+    // can't reach `)` or the line ending.
+    // A semicolon can start URL text or follow an escape,
+    // where the end matcher runs before the content matcher.
+    // Continue recovering at `}` and line endings.
     end: Matcher.regex(
-      r'\)|(?=\})|$',
+      r'\)|(?=\})|(?=;)(?!'
+      '(?:$_escapePattern|'
+      r'''[^"'()}\\\s])*[ \t\f]*(?:\)|$))|$''',
       tag: Tags.punctuation,
     ),
     content: Matcher.options([
@@ -309,28 +330,21 @@ final class CssGrammar extends MatcherGrammar {
     tag: MarkupTags.link,
   );
 
-  // Kept as two alternatives rather than one `([ \t]*)` group:
-  // every capture group is emitted as a token, so an optional group
-  // would tag an empty whitespace token when no space is present.
-  Matcher _important() => Matcher.options([
-    Matcher.capture(
-      '(!)([ \\t]+)(important)(?!$_nameContinuePattern)',
-      captures: [
-        Tags.operator,
-        Tags.whitespace,
-        _importantTag,
-      ],
+  Matcher _important() => Matcher.wrapped(
+    begin: Matcher.regex(r'!(?!=)', tag: Tags.operator),
+    // Give anything other than whitespace or a comment
+    // back to the value grammar.
+    // The wrapper can cross lines without searching past a token.
+    end: Matcher.regex(
+      'important(?!$_nameContinuePattern)|'
+      r'(?=[^\s/]|/(?!\*))',
+      tag: _importantTag,
       caseSensitive: false,
     ),
-    Matcher.capture(
-      '(!)(important)(?!$_nameContinuePattern)',
-      captures: [
-        Tags.operator,
-        _importantTag,
-      ],
-      caseSensitive: false,
-    ),
-  ]);
+    content: Matcher.options([
+      Matcher.include(_comment),
+    ]),
+  );
 
   Matcher _unicodeRange() => Matcher.regex(
     r'[uU]\+[0-9a-fA-F?]{1,6}(?:-[0-9a-fA-F]{1,6})?',
@@ -463,9 +477,10 @@ final class CssGrammar extends MatcherGrammar {
     tag: _attributeTag,
   );
 
-  // Wrapping everything after the matcher operator separates the value from
-  // the attribute name and gives the trailing case-sensitivity flag a
-  // position it can be recognized in.
+  // Wrapping everything after the matcher operator
+  // separates the value from the attribute name and
+  // gives the trailing case-sensitivity flag
+  // a position it can be recognized in.
   Matcher _attributeValue() => Matcher.wrapped(
     begin: Matcher.regex(r'[~|^$*]?=', tag: Tags.operator),
     end: Matcher.regex(r'(?=[\]{;}])'),

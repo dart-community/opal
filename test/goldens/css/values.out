@@ -549,3 +549,212 @@ source-code-css-whitespace
 }
 ^
 source-code-css-punctuation-end
+
+.priority {
+^
+source-code-css-punctuation
+ ^^^^^^^^
+ source-code-css-identifier-selector-class
+         ^
+         source-code-css-whitespace
+          ^
+          source-code-css-punctuation-begin
+  color: red ! /* override */ IMPORTANT;
+^^
+source-code-css-whitespace
+  ^^^^^
+  source-code-css-identifier-property
+       ^
+       source-code-css-punctuation-separator
+        ^
+        source-code-css-whitespace
+         ^^^
+         source-code-css-identifier
+            ^
+            source-code-css-whitespace
+             ^
+             source-code-css-keyword-operator
+              ^
+              source-code-css-whitespace
+               ^^
+               source-code-css-comment-block-comment-block-begin
+                 ^^^^^^^^^^
+                 source-code-css-comment-block-comment-block-content
+                           ^^
+                           source-code-css-comment-block-comment-block-end
+                             ^
+                             source-code-css-whitespace
+                              ^^^^^^^^^
+                              source-code-css-keyword-modifier-important
+                                       ^
+                                       source-code-css-punctuation-separator
+  color: blue !
+^^
+source-code-css-whitespace
+  ^^^^^
+  source-code-css-identifier-property
+       ^
+       source-code-css-punctuation-separator
+        ^
+        source-code-css-whitespace
+         ^^^^
+         source-code-css-identifier
+             ^
+             source-code-css-whitespace
+              ^
+              source-code-css-keyword-operator
+    /* split
+^^^^
+source-code-css-whitespace
+    ^^
+    source-code-css-comment-block-comment-block-begin
+      ^^^^^^
+      source-code-css-comment-block-comment-block-content
+       comment */ important;
+^^^^^^^^^^^^^^^
+source-code-css-comment-block-comment-block-content
+               ^^
+               source-code-css-comment-block-comment-block-end
+                 ^
+                 source-code-css-whitespace
+                  ^^^^^^^^^
+                  source-code-css-keyword-modifier-important
+                           ^
+                           source-code-css-punctuation-separator
+  --tokens: !important-ish !importanté !important\31 !unknown / important;
+^^
+source-code-css-whitespace
+  ^^^^^^^^
+  source-code-css-identifier-property-custom
+          ^
+          source-code-css-punctuation-separator
+           ^
+           source-code-css-whitespace
+            ^
+            source-code-css-keyword-operator
+             ^^^^^^^^^^^^^
+             source-code-css-identifier
+                          ^
+                          source-code-css-whitespace
+                           ^
+                           source-code-css-keyword-operator
+                            ^^^^^^^^^^
+                            source-code-css-identifier
+                                      ^
+                                      source-code-css-whitespace
+                                       ^
+                                       source-code-css-keyword-operator
+                                        ^^^^^^^^^^^^^
+                                        source-code-css-identifier
+                                                     ^
+                                                     source-code-css-keyword-operator
+                                                      ^^^^^^^
+                                                      source-code-css-identifier
+                                                             ^
+                                                             source-code-css-whitespace
+                                                              ^
+                                                              source-code-css-keyword-operator
+                                                               ^
+                                                               source-code-css-whitespace
+                                                                ^^^^^^^^^
+                                                                source-code-css-identifier
+                                                                         ^
+                                                                         source-code-css-punctuation-separator
+  --tokens: ! important\(;
+^^
+source-code-css-whitespace
+  ^^^^^^^^
+  source-code-css-identifier-property-custom
+          ^
+          source-code-css-punctuation-separator
+           ^
+           source-code-css-whitespace
+            ^
+            source-code-css-keyword-operator
+             ^
+             source-code-css-whitespace
+              ^^^^^^^^^^^
+              source-code-css-identifier
+                         ^
+                         source-code-css-punctuation-separator
+  --tokens: ! / important;
+^^
+source-code-css-whitespace
+  ^^^^^^^^
+  source-code-css-identifier-property-custom
+          ^
+          source-code-css-punctuation-separator
+           ^
+           source-code-css-whitespace
+            ^
+            source-code-css-keyword-operator
+             ^
+             source-code-css-whitespace
+              ^
+              source-code-css-keyword-operator
+               ^
+               source-code-css-whitespace
+                ^^^^^^^^^
+                source-code-css-identifier
+                         ^
+                         source-code-css-punctuation-separator
+  --size: --scale(2);
+^^
+source-code-css-whitespace
+  ^^^^^^
+  source-code-css-identifier-property-custom
+        ^
+        source-code-css-punctuation-separator
+         ^
+         source-code-css-whitespace
+          ^^^^^^^
+          source-code-css-identifier-function
+                 ^
+                 source-code-css-punctuation
+                  ^
+                  source-code-css-literal-number
+                   ^
+                   source-code-css-punctuation
+                    ^
+                    source-code-css-punctuation-separator
+  gap: var(--size);
+^^
+source-code-css-whitespace
+  ^^^
+  source-code-css-identifier-property
+     ^
+     source-code-css-punctuation-separator
+      ^
+      source-code-css-whitespace
+       ^^^
+       source-code-css-identifier-function
+          ^
+          source-code-css-punctuation
+           ^^^^^^
+           source-code-css-identifier-variable-custom
+                 ^
+                 source-code-css-punctuation
+                  ^
+                  source-code-css-punctuation-separator
+  future: initial(1);
+^^
+source-code-css-whitespace
+  ^^^^^^
+  source-code-css-identifier-property
+        ^
+        source-code-css-punctuation-separator
+         ^
+         source-code-css-whitespace
+          ^^^^^^^
+          source-code-css-identifier-function
+                 ^
+                 source-code-css-punctuation
+                  ^
+                  source-code-css-literal-number
+                   ^
+                   source-code-css-punctuation
+                    ^
+                    source-code-css-punctuation-separator
+}
+^
+source-code-css-punctuation-end

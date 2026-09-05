@@ -1,0 +1,377 @@
+.urls {
+^
+source-code-css-punctuation
+ ^^^^
+ source-code-css-identifier-selector-class
+     ^
+     source-code-css-whitespace
+      ^
+      source-code-css-punctuation-begin
+  background-image: url(
+^^
+source-code-css-whitespace
+  ^^^^^^^^^^^^^^^^
+  source-code-css-identifier-property
+                  ^
+                  source-code-css-punctuation-separator
+                   ^
+                   source-code-css-whitespace
+                    ^^^
+                    source-code-css-link-identifier-function
+                       ^
+                       source-code-css-link-punctuation
+    images/hero.svg#mark
+^^^^
+source-code-css-link-whitespace
+    ^^^^^^^^^^^^^^^^^^^^
+    source-code-css-link-link-content
+  );
+^^
+source-code-css-whitespace
+  ^
+  source-code-css-punctuation
+   ^
+   source-code-css-punctuation-separator
+  mask-image: URL(
+^^
+source-code-css-whitespace
+  ^^^^^^^^^^
+  source-code-css-identifier-property
+            ^
+            source-code-css-punctuation-separator
+             ^
+             source-code-css-whitespace
+              ^^^
+              source-code-css-link-identifier-function
+                 ^
+                 source-code-css-link-punctuation
+    "/images/mask.svg#shape"
+^^^^
+source-code-css-link-whitespace
+    ^
+    source-code-css-link-literal-string-quoted-double-literal-string-quoted-double-begin
+     ^^^^^^^^^^^^^^^^^^^^^^
+     source-code-css-link-literal-string-quoted-double-literal-string-unquoted
+                           ^
+                           source-code-css-link-literal-string-quoted-double-literal-string-quoted-double-end
+  );
+^^
+source-code-css-whitespace
+  ^
+  source-code-css-punctuation
+   ^
+   source-code-css-punctuation-separator
+  cursor: url(icons/pointer\(dark\).cur), pointer;
+^^
+source-code-css-whitespace
+  ^^^^^^
+  source-code-css-identifier-property
+        ^
+        source-code-css-punctuation-separator
+         ^
+         source-code-css-whitespace
+          ^^^
+          source-code-css-link-identifier-function
+             ^
+             source-code-css-link-punctuation
+              ^^^^^^^^^^^^^
+              source-code-css-link-link-content
+                           ^^
+                           source-code-css-link-literal-string-escape
+                             ^^^^
+                             source-code-css-link-link-content
+                                 ^^
+                                 source-code-css-link-literal-string-escape
+                                   ^^^^
+                                   source-code-css-link-link-content
+                                       ^
+                                       source-code-css-link-punctuation
+                                        ^
+                                        source-code-css-punctuation-separator
+                                         ^
+                                         source-code-css-whitespace
+                                          ^^^^^^^
+                                          source-code-css-identifier
+                                                 ^
+                                                 source-code-css-punctuation-separator
+  background: url(;icon.svg);
+^^
+source-code-css-whitespace
+  ^^^^^^^^^^
+  source-code-css-identifier-property
+            ^
+            source-code-css-punctuation-separator
+             ^
+             source-code-css-whitespace
+              ^^^
+              source-code-css-link-identifier-function
+                 ^
+                 source-code-css-link-punctuation
+                  ^^^^^^^^^
+                  source-code-css-link-link-content
+                           ^
+                           source-code-css-link-punctuation
+                            ^
+                            source-code-css-punctuation-separator
+  background: url(foo\);bar.svg);
+^^
+source-code-css-whitespace
+  ^^^^^^^^^^
+  source-code-css-identifier-property
+            ^
+            source-code-css-punctuation-separator
+             ^
+             source-code-css-whitespace
+              ^^^
+              source-code-css-link-identifier-function
+                 ^
+                 source-code-css-link-punctuation
+                  ^^^
+                  source-code-css-link-link-content
+                     ^^
+                     source-code-css-link-literal-string-escape
+                       ^^^^^^^^
+                       source-code-css-link-link-content
+                               ^
+                               source-code-css-link-punctuation
+                                ^
+                                source-code-css-punctuation-separator
+  background: url(;icon.svg  );
+^^
+source-code-css-whitespace
+  ^^^^^^^^^^
+  source-code-css-identifier-property
+            ^
+            source-code-css-punctuation-separator
+             ^
+             source-code-css-whitespace
+              ^^^
+              source-code-css-link-identifier-function
+                 ^
+                 source-code-css-link-punctuation
+                  ^^^^^^^^^
+                  source-code-css-link-link-content
+                           ^^
+                           source-code-css-link-whitespace
+                             ^
+                             source-code-css-link-punctuation
+                              ^
+                              source-code-css-punctuation-separator
+  background: url(;icon.svg
+^^
+source-code-css-whitespace
+  ^^^^^^^^^^
+  source-code-css-identifier-property
+            ^
+            source-code-css-punctuation-separator
+             ^
+             source-code-css-whitespace
+              ^^^
+              source-code-css-link-identifier-function
+                 ^
+                 source-code-css-link-punctuation
+                  ^^^^^^^^^
+                  source-code-css-link-link-content
+  );
+^^
+source-code-css-whitespace
+  ^
+  source-code-css-punctuation
+   ^
+   source-code-css-punctuation-separator
+  background: url(foo\);bar.svg
+^^
+source-code-css-whitespace
+  ^^^^^^^^^^
+  source-code-css-identifier-property
+            ^
+            source-code-css-punctuation-separator
+             ^
+             source-code-css-whitespace
+              ^^^
+              source-code-css-link-identifier-function
+                 ^
+                 source-code-css-link-punctuation
+                  ^^^
+                  source-code-css-link-link-content
+                     ^^
+                     source-code-css-link-literal-string-escape
+                       ^^^^^^^^
+                       source-code-css-link-link-content
+  );
+^^
+source-code-css-whitespace
+  ^
+  source-code-css-punctuation
+   ^
+   source-code-css-punctuation-separator
+  background: url(data:image/png;base64,aGVsbG8=);
+^^
+source-code-css-whitespace
+  ^^^^^^^^^^
+  source-code-css-identifier-property
+            ^
+            source-code-css-punctuation-separator
+             ^
+             source-code-css-whitespace
+              ^^^
+              source-code-css-link-identifier-function
+                 ^
+                 source-code-css-link-punctuation
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                  source-code-css-link-link-content
+                                                ^
+                                                source-code-css-link-punctuation
+                                                 ^
+                                                 source-code-css-punctuation-separator
+  background: url(
+^^
+source-code-css-whitespace
+  ^^^^^^^^^^
+  source-code-css-identifier-property
+            ^
+            source-code-css-punctuation-separator
+             ^
+             source-code-css-whitespace
+              ^^^
+              source-code-css-link-identifier-function
+                 ^
+                 source-code-css-link-punctuation
+
+    data:image/png;base64,aGVsbG8=);
+^^^^
+source-code-css-link-whitespace
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    source-code-css-link-link-content
+                                  ^
+                                  source-code-css-link-punctuation
+                                   ^
+                                   source-code-css-punctuation-separator
+  background: url(missing-paren.png
+^^
+source-code-css-whitespace
+  ^^^^^^^^^^
+  source-code-css-identifier-property
+            ^
+            source-code-css-punctuation-separator
+             ^
+             source-code-css-whitespace
+              ^^^
+              source-code-css-link-identifier-function
+                 ^
+                 source-code-css-link-punctuation
+                  ^^^^^^^^^^^^^^^^^
+                  source-code-css-link-link-content
+  color: red;
+^^
+source-code-css-whitespace
+  ^^^^^
+  source-code-css-identifier
+       ^
+       source-code-css-punctuation-separator
+        ^
+        source-code-css-whitespace
+         ^^^
+         source-code-css-identifier
+            ^
+            source-code-css-punctuation-separator
+  padding: 1rem;
+^^
+source-code-css-whitespace
+  ^^^^^^^
+  source-code-css-identifier-property
+         ^
+         source-code-css-punctuation-separator
+          ^
+          source-code-css-whitespace
+           ^
+           source-code-css-literal-number
+            ^^^
+            source-code-css-keyword-unit
+               ^
+               source-code-css-punctuation-separator
+}
+^
+source-code-css-punctuation-end
+
+.unfinished-url { background: url(
+^
+source-code-css-punctuation
+ ^^^^^^^^^^^^^^
+ source-code-css-identifier-selector-class
+               ^
+               source-code-css-whitespace
+                ^
+                source-code-css-punctuation-begin
+                 ^
+                 source-code-css-whitespace
+                  ^^^^^^^^^^
+                  source-code-css-identifier-property
+                            ^
+                            source-code-css-punctuation-separator
+                             ^
+                             source-code-css-whitespace
+                              ^^^
+                              source-code-css-link-identifier-function
+                                 ^
+                                 source-code-css-link-punctuation
+  ; color: red; padding: 1rem; }
+^^
+source-code-css-link-whitespace
+  ^
+  source-code-css-punctuation-separator
+   ^
+   source-code-css-whitespace
+    ^^^^^
+    source-code-css-identifier-property
+         ^
+         source-code-css-punctuation-separator
+          ^
+          source-code-css-whitespace
+           ^^^
+           source-code-css-identifier
+              ^
+              source-code-css-punctuation-separator
+               ^
+               source-code-css-whitespace
+                ^^^^^^^
+                source-code-css-identifier-property
+                       ^
+                       source-code-css-punctuation-separator
+                        ^
+                        source-code-css-whitespace
+                         ^
+                         source-code-css-literal-number
+                          ^^^
+                          source-code-css-keyword-unit
+                             ^
+                             source-code-css-punctuation-separator
+                              ^
+                              source-code-css-whitespace
+                               ^
+                               source-code-css-punctuation-end
+.after-url { display: block; }
+^
+source-code-css-punctuation
+ ^^^^^^^^^
+ source-code-css-identifier-selector-class
+          ^
+          source-code-css-whitespace
+           ^
+           source-code-css-punctuation-begin
+            ^
+            source-code-css-whitespace
+             ^^^^^^^
+             source-code-css-identifier-property
+                    ^
+                    source-code-css-punctuation-separator
+                     ^
+                     source-code-css-whitespace
+                      ^^^^^
+                      source-code-css-identifier
+                           ^
+                           source-code-css-punctuation-separator
+                            ^
+                            source-code-css-whitespace
+                             ^
+                             source-code-css-punctuation-end

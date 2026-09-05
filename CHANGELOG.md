@@ -1,5 +1,6 @@
 ## 0.2.6-wip
 
+- Require Dart 3.10 or later.
 - Improve the accuracy of `json` highlighting.
 - Handle potential inline and block comments in `json`.
 

@@ -11,7 +11,7 @@ topics:
   - syntax-highlighting
 
 environment:
-  sdk: ^3.9.0
+  sdk: ^3.10.0
 
 dependencies:
   meta: ^1.16.0

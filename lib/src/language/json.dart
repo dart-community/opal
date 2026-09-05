@@ -13,6 +13,7 @@ final class JsonGrammar extends MatcherGrammar {
   ];
 
   Matcher _value() => Matcher.options([
+    Matcher.include(_comments),
     Matcher.include(_object),
     Matcher.include(_array),
     Matcher.include(_string),
@@ -26,11 +27,15 @@ final class JsonGrammar extends MatcherGrammar {
       '{',
       tag: const Tag('begin', parent: Tags.mapLiteral),
     ),
-    end: Matcher.verbatim(
-      '}',
+    // Give way to an enclosing array's `]` so an object missing its `}`
+    // doesn't swallow the rest of the document. The zero-width alternative
+    // emits no closing brace and leaves the `]` to the array.
+    end: Matcher.regex(
+      r'\}|(?=\])',
       tag: const Tag('end', parent: Tags.mapLiteral),
     ),
     content: Matcher.options([
+      Matcher.include(_comments),
       Matcher.include(_objectKey),
       Matcher.verbatim(':', tag: Tags.separator),
       Matcher.include(_value),
@@ -39,20 +44,10 @@ final class JsonGrammar extends MatcherGrammar {
     tag: Tags.mapLiteral,
   );
 
-  Matcher _objectKey() => Matcher.wrapped(
-    begin: Matcher.verbatim(
-      '"',
-      tag: const Tag('begin', parent: Tags.property),
-    ),
-    end: Matcher.verbatim(
-      '"',
-      tag: const Tag('end', parent: Tags.property),
-    ),
-    content: Matcher.options([
-      Matcher.regex(r'\\["\\/bfnrt]', tag: Tags.stringEscape),
-      Matcher.regex(r'\\u[0-9a-fA-F]{4}', tag: Tags.stringEscape),
-      Matcher.regex(r'[^"\\]+'),
-    ], tag: Tags.stringContent),
+  Matcher _objectKey() => _string(
+    begin:
+        r'"(?=(?:[^"\\]|\\.)*"'
+        r'(?:\s|/\*(?:[^*]|\*(?!/))*\*/)*:)',
     tag: Tags.property,
   );
 
@@ -61,8 +56,10 @@ final class JsonGrammar extends MatcherGrammar {
       '[',
       tag: const Tag('begin', parent: Tags.arrayLiteral),
     ),
-    end: Matcher.verbatim(
-      ']',
+    // Mirrors the object's recovery: an array missing its `]` gives way to
+    // an enclosing object's `}` instead of running to the end of the input.
+    end: Matcher.regex(
+      r'\]|(?=\})',
       tag: const Tag('end', parent: Tags.arrayLiteral),
     ),
     content: Matcher.options([
@@ -72,25 +69,35 @@ final class JsonGrammar extends MatcherGrammar {
     tag: Tags.arrayLiteral,
   );
 
-  Matcher _string() => Matcher.wrapped(
-    begin: Matcher.verbatim(
-      '"',
-      tag: const Tag('begin', parent: Tags.doubleQuoteString),
+  Matcher _string({
+    String begin = '"',
+    Tag tag = Tags.doubleQuoteString,
+  }) => Matcher.wrapped(
+    begin: Matcher.regex(
+      begin,
+      tag: Tag('begin', parent: tag),
     ),
-    end: Matcher.verbatim(
-      '"',
-      tag: const Tag('end', parent: Tags.doubleQuoteString),
+    // Recover at the line end so an unfinished string doesn't
+    // swallow later properties or values.
+    // The zero-width alternative emits no closing quote.
+    end: Matcher.regex(
+      r'"|$',
+      tag: Tag('end', parent: tag),
     ),
     content: Matcher.options([
       Matcher.regex(r'\\["\\/bfnrt]', tag: Tags.stringEscape),
       Matcher.regex(r'\\u[0-9a-fA-F]{4}', tag: Tags.stringEscape),
       Matcher.regex(r'[^"\\]+'),
+      // Keep invalid or incomplete escapes as string content.
+      Matcher.regex(r'\\(?:.|$)'),
     ], tag: Tags.stringContent),
-    tag: Tags.doubleQuoteString,
+    tag: tag,
   );
 
+  // Accept leading zeros and unfinished fractions/exponents while editing,
+  // but avoid highlighting numeric fragments within bare words.
   Matcher _number() => Matcher.regex(
-    r'-?(0|[1-9]\d*)(\.\d+)?([eE][+-]?\d+)?',
+    r'(?<![\w.])-?\d+(?:\.\d*)?(?:[eE][+-]?\d*)?(?![\w.])',
     tag: Tags.numberLiteral,
   );
 
@@ -100,4 +107,24 @@ final class JsonGrammar extends MatcherGrammar {
   ]);
 
   Matcher _null() => Matcher.regex(r'\bnull\b', tag: Tags.nullLiteral);
+
+  // While not supported in standard JSON, comments are common in some formats.
+  Matcher _comments() => Matcher.options([
+    Matcher.regex(r'//.*$', tag: Tags.lineComment),
+    Matcher.wrapped(
+      begin: Matcher.verbatim(
+        '/*',
+        tag: const Tag('begin', parent: Tags.blockComment),
+      ),
+      end: Matcher.verbatim(
+        '*/',
+        tag: const Tag('end', parent: Tags.blockComment),
+      ),
+      content: Matcher.regex(
+        r'.+?(?=\*/|$)',
+        tag: const Tag('content', parent: Tags.blockComment),
+      ),
+      tag: Tags.blockComment,
+    ),
+  ]);
 }

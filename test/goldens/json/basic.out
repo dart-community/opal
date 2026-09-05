@@ -15,11 +15,11 @@ source-text-data-json-literal-collection-map-whitespace
          ^
          source-text-data-json-literal-collection-map-whitespace
           ^
-          source-text-data-json-literal-collection-map-identifier-property-identifier-property-begin
+          source-text-data-json-literal-collection-map-literal-string-quoted-double-literal-string-quoted-double-begin
            ^^^^
-           source-text-data-json-literal-collection-map-identifier-property-literal-string-unquoted
+           source-text-data-json-literal-collection-map-literal-string-quoted-double-literal-string-unquoted
                ^
-               source-text-data-json-literal-collection-map-identifier-property-identifier-property-end
+               source-text-data-json-literal-collection-map-literal-string-quoted-double-literal-string-quoted-double-end
                 ^
                 source-text-data-json-literal-collection-map-punctuation-separator
   "version": 3,
@@ -70,11 +70,11 @@ source-text-data-json-literal-collection-map-whitespace
          ^
          source-text-data-json-literal-collection-map-whitespace
           ^
-          source-text-data-json-literal-collection-map-identifier-property-identifier-property-begin
+          source-text-data-json-literal-collection-map-literal-string-quoted-double-literal-string-quoted-double-begin
            ^^^^^^^^^^^^^^^^^^^^
-           source-text-data-json-literal-collection-map-identifier-property-literal-string-unquoted
+           source-text-data-json-literal-collection-map-literal-string-quoted-double-literal-string-unquoted
                                ^
-                               source-text-data-json-literal-collection-map-identifier-property-identifier-property-end
+                               source-text-data-json-literal-collection-map-literal-string-quoted-double-literal-string-quoted-double-end
                                 ^
                                 source-text-data-json-literal-collection-map-punctuation-separator
   "tags": ["object-oriented", "functional"],

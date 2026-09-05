@@ -1,0 +1,116 @@
+// Configuration
+^^^^^^^^^^^^^^^^
+source-text-data-json-comment-line
+{
+^
+source-text-data-json-literal-collection-map-literal-collection-map-begin
+  /* Object comment */
+^^
+source-text-data-json-literal-collection-map-whitespace
+  ^^
+  source-text-data-json-literal-collection-map-comment-block-comment-block-begin
+    ^^^^^^^^^^^^^^^^
+    source-text-data-json-literal-collection-map-comment-block-comment-block-content
+                    ^^
+                    source-text-data-json-literal-collection-map-comment-block-comment-block-end
+  "enabled": /* Value comment */ true, // Trailing comment
+^^
+source-text-data-json-literal-collection-map-whitespace
+  ^
+  source-text-data-json-literal-collection-map-identifier-property-identifier-property-begin
+   ^^^^^^^
+   source-text-data-json-literal-collection-map-identifier-property-literal-string-unquoted
+          ^
+          source-text-data-json-literal-collection-map-identifier-property-identifier-property-end
+           ^
+           source-text-data-json-literal-collection-map-punctuation-separator
+            ^
+            source-text-data-json-literal-collection-map-whitespace
+             ^^
+             source-text-data-json-literal-collection-map-comment-block-comment-block-begin
+               ^^^^^^^^^^^^^^^
+               source-text-data-json-literal-collection-map-comment-block-comment-block-content
+                              ^^
+                              source-text-data-json-literal-collection-map-comment-block-comment-block-end
+                                ^
+                                source-text-data-json-literal-collection-map-whitespace
+                                 ^^^^
+                                 source-text-data-json-literal-collection-map-literal-boolean-true
+                                     ^
+                                     source-text-data-json-literal-collection-map-punctuation-separator
+                                      ^
+                                      source-text-data-json-literal-collection-map-whitespace
+                                       ^^^^^^^^^^^^^^^^^^^
+                                       source-text-data-json-literal-collection-map-comment-line
+  "items": [1, /* Array comment */ 2],
+^^
+source-text-data-json-literal-collection-map-whitespace
+  ^
+  source-text-data-json-literal-collection-map-identifier-property-identifier-property-begin
+   ^^^^^
+   source-text-data-json-literal-collection-map-identifier-property-literal-string-unquoted
+        ^
+        source-text-data-json-literal-collection-map-identifier-property-identifier-property-end
+         ^
+         source-text-data-json-literal-collection-map-punctuation-separator
+          ^
+          source-text-data-json-literal-collection-map-whitespace
+           ^
+           source-text-data-json-literal-collection-map-literal-collection-array-literal-collection-array-begin
+            ^
+            source-text-data-json-literal-collection-map-literal-collection-array-literal-number
+             ^
+             source-text-data-json-literal-collection-map-literal-collection-array-punctuation-separator
+              ^
+              source-text-data-json-literal-collection-map-literal-collection-array-whitespace
+               ^^
+               source-text-data-json-literal-collection-map-literal-collection-array-comment-block-comment-block-begin
+                 ^^^^^^^^^^^^^^^
+                 source-text-data-json-literal-collection-map-literal-collection-array-comment-block-comment-block-content
+                                ^^
+                                source-text-data-json-literal-collection-map-literal-collection-array-comment-block-comment-block-end
+                                  ^
+                                  source-text-data-json-literal-collection-map-literal-collection-array-whitespace
+                                   ^
+                                   source-text-data-json-literal-collection-map-literal-collection-array-literal-number
+                                    ^
+                                    source-text-data-json-literal-collection-map-literal-collection-array-literal-collection-array-end
+                                     ^
+                                     source-text-data-json-literal-collection-map-punctuation-separator
+  /* Multiline comment:
+^^
+source-text-data-json-literal-collection-map-whitespace
+  ^^
+  source-text-data-json-literal-collection-map-comment-block-comment-block-begin
+    ^^^^^^^^^^^^^^^^^^^
+    source-text-data-json-literal-collection-map-comment-block-comment-block-content
+     "ignored": [false, null]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+source-text-data-json-literal-collection-map-comment-block-comment-block-content
+  */
+^^
+source-text-data-json-literal-collection-map-comment-block-comment-block-content
+  ^^
+  source-text-data-json-literal-collection-map-comment-block-comment-block-end
+  "url": "https://example.com/*path*/"
+^^
+source-text-data-json-literal-collection-map-whitespace
+  ^
+  source-text-data-json-literal-collection-map-identifier-property-identifier-property-begin
+   ^^^
+   source-text-data-json-literal-collection-map-identifier-property-literal-string-unquoted
+      ^
+      source-text-data-json-literal-collection-map-identifier-property-identifier-property-end
+       ^
+       source-text-data-json-literal-collection-map-punctuation-separator
+        ^
+        source-text-data-json-literal-collection-map-whitespace
+         ^
+         source-text-data-json-literal-collection-map-literal-string-quoted-double-literal-string-quoted-double-begin
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+          source-text-data-json-literal-collection-map-literal-string-quoted-double-literal-string-unquoted
+                                     ^
+                                     source-text-data-json-literal-collection-map-literal-string-quoted-double-literal-string-quoted-double-end
+}
+^
+source-text-data-json-literal-collection-map-literal-collection-map-end

@@ -1,3 +1,8 @@
+## 0.2.6-wip
+
+- Improve the accuracy of `json` highlighting.
+- Handle potential inline and block comments in `json`.
+
 ## 0.2.5
 
 - Add initial, basic support for `go`.

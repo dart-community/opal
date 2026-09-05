@@ -1,0 +1,13 @@
+{
+  "missingComma": 1 "stillAKey": 2,
+  "unterminated": "runs to the line end
+  "afterUnterminated": [1, 2],
+  "colonInValue": "see \"nested\": here",
+  "url": "https://example.com",
+  "commentBeforeColon" /* why */: 1,
+  "commentAfterValue": "v" /* not a key */, "keyAfterComment": 2,
+  "ownLine":
+    "still a value",
+  "unclosedArray": [1, 2
+}
+[{"unclosedObject": 1]

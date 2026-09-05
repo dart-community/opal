@@ -1,0 +1,10 @@
+// Configuration
+{
+  /* Object comment */
+  "enabled": /* Value comment */ true, // Trailing comment
+  "items": [1, /* Array comment */ 2],
+  /* Multiline comment:
+     "ignored": [false, null]
+  */
+  "url": "https://example.com/*path*/"
+}

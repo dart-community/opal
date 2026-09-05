@@ -1,4 +1,4 @@
-## 0.2.6-wip
+## 0.2.6
 
 - Require Dart 3.10 or later.
 - Add basic support for Mermaid (`mermaid`, `mmd`),

@@ -1,6 +1,6 @@
 const String message = 'Hello, world!';
 ^^^^^
-source-code-dart-keyword-const
+source-code-dart-keyword-modifier-const
      ^
      source-code-dart-whitespace
       ^^^^^^
@@ -16,11 +16,11 @@ source-code-dart-keyword-const
                       ^
                       source-code-dart-whitespace
                        ^
-                       source-code-dart-literal-string-literal-string-begin
+                       source-code-dart-literal-string-quoted-single-literal-string-quoted-single-begin
                         ^^^^^^^^^^^^^
-                        source-code-dart-literal-string-literal-string-unquoted
+                        source-code-dart-literal-string-quoted-single-literal-string-unquoted
                                      ^
-                                     source-code-dart-literal-string-literal-string-end
+                                     source-code-dart-literal-string-quoted-single-literal-string-quoted-single-end
                                       ^
                                       source-code-dart-punctuation
 
@@ -52,13 +52,13 @@ source-code-dart-whitespace
        ^
        source-code-dart-punctuation
         ^
-        source-code-dart-literal-string-literal-string-begin
+        source-code-dart-literal-string-quoted-single-literal-string-quoted-single-begin
          ^^^^^^^^^^^^^^^^
-         source-code-dart-literal-string-literal-string-unquoted
+         source-code-dart-literal-string-quoted-single-literal-string-unquoted
                          ^^^^^^^^
-                         source-code-dart-literal-string-literal-string-unquoted-literal-string-interpolation
+                         source-code-dart-literal-string-quoted-single-literal-string-interpolation
                                  ^
-                                 source-code-dart-literal-string-literal-string-end
+                                 source-code-dart-literal-string-quoted-single-literal-string-quoted-single-end
                                   ^
                                   source-code-dart-punctuation
                                    ^

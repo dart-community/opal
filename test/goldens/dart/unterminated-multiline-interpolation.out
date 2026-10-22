@@ -1,0 +1,26 @@
+final multiline = '''${value''';
+^^^^^
+source-code-dart-keyword-modifier-final
+     ^
+     source-code-dart-whitespace
+      ^^^^^^^^^
+      source-code-dart-identifier
+               ^
+               source-code-dart-whitespace
+                ^
+                source-code-dart-keyword-operator
+                 ^
+                 source-code-dart-whitespace
+                  ^^^
+                  source-code-dart-literal-string-quoted-triple-literal-string-quoted-triple-begin
+                     ^^
+                     source-code-dart-literal-string-quoted-triple-literal-string-interpolation-literal-string-interpolation-begin
+                       ^^^^^
+                       source-code-dart-literal-string-quoted-triple-literal-string-interpolation-identifier
+                            ^^^
+                            source-code-dart-literal-string-quoted-triple-literal-string-interpolation-literal-string-quoted-triple-literal-string-quoted-triple-begin
+                               ^
+                               source-code-dart-literal-string-quoted-triple-literal-string-interpolation-literal-string-quoted-triple-literal-string-unquoted
+final afterMultiline = 4;
+^^^^^^^^^^^^^^^^^^^^^^^^^
+source-code-dart-literal-string-quoted-triple-literal-string-interpolation-literal-string-quoted-triple-literal-string-unquoted

@@ -1,0 +1,29 @@
+#!/usr/bin/env dart
+
+// A line comment.
+//// Not a doc comment.
+
+/// A doc comment referencing [List], [List.of], and [List.new]
+/// with `inline[code]`, a [Markdown link](https://dart.dev),
+/// and a [reference link][ref].
+///
+/// ```dart
+/// final value = map[key];
+/// ```
+void main() {}
+
+/* A block comment. */
+/* An outer /* nested */ block comment. */
+/**/
+
+/**
+ * A block doc comment for [Foo].
+ */
+class Foo {}
+
+/*
+ * A multi-line block comment
+ * /* with a nested comment */
+ * and more content.
+ */
+final x = 1; /* trailing */ // comment

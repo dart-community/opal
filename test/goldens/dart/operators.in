@@ -1,0 +1,21 @@
+void operators() {
+  a = b + c - d * e / f ~/ g % h;
+  a += 1; a -= 1; a *= 2; a /= 2; a ~/= 2; a %= 2;
+  a &= b; a |= b; a ^= b; a <<= 1; a >>= 1; a >>>= 1;
+  a = b << 1 | c >> 2 & d >>> 3 ^ ~e;
+  final cmp = a < b && c > d || a <= b && c >= d;
+  final eq = a == b || a != b;
+  final nullAware = a ?? b ?.c ?..d;
+  a ??= b;
+  final value = condition ? first : second;
+  final map = <String, int>{'key': 1};
+  final nested = Map<String, List<List<int>>>();
+  final generic = identity<int>(1);
+  object
+    ..first = 1
+    ..second = 2;
+  final notNull = maybe!;
+  final negated = !flag;
+  i++;
+  --j;
+}

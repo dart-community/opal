@@ -1,0 +1,30 @@
+final single = 'It\'s a "single" string';
+final doubleQuoted = "It's a \"double\" string";
+final escapes = '\n\r\t\b\f\v\\ \x41 \u0041 \u{1F600} \$';
+final simple = 'Hello, $name and $_private and $first$second!';
+final expression = '${user.name.toUpperCase()} has ${items.length + 1} items';
+final nested = '${map['key']} and ${list.map((e) => '$e').join(', ')}';
+final braces = '${{'a': 1}['a']} and ${() { return 1; }()}';
+final raw = r'Not $interpolated or \n escaped';
+final rawDouble = r"C:\path\to\file";
+final multiline = '''
+  Multi-line with 'quotes' and "quotes" and $interpolation
+  and ${expression} and an escaped \''' delimiter.
+''';
+final rawMultiline = r"""
+  Raw with $dollar and \backslash.
+""";
+final adjacent = 'one ' "two " '''three''';
+final empty = '' + "" + '''''' + r'';
+final dollar = 'Costs $5 or ${price}';
+final closure = '[${items.map((item) {
+  return item.name;
+}).join(', ')}]';
+final multilineExpression = 'Hello ${
+  123
+} world'; print(multilineExpression);
+final multilineDoubleExpression = "Hello ${
+  123
+} world"; print(multilineDoubleExpression);
+final nestedTripleSingle = '''${'''inner'''.toUpperCase()} tail'''; print(nestedTripleSingle);
+final nestedTripleDouble = """${"""inner""".toUpperCase()} tail"""; print(nestedTripleDouble);

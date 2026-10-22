@@ -1,0 +1,8 @@
+final integers = [0, 42, 1_000_000, 0xFF, 0XAB_CD, 0x1F];
+final doubles = [1.0, .5, 3.14e10, 1e-5, 2E+3, 1_000.000_1];
+final methodOnInt = 1.toString() + 2.5.toStringAsFixed(1);
+final booleans = [true, false, null];
+final symbols = [#foo, #foo.bar, #_private, #+, #[]=, #unary-, #==];
+final record = (1, name: 'two');
+final first = record.$1;
+final shorthand = $value + _$generated;

@@ -1,0 +1,155 @@
+final unterminated = 'This string never ends
+^^^^^
+source-code-dart-keyword-modifier-final
+     ^
+     source-code-dart-whitespace
+      ^^^^^^^^^^^^
+      source-code-dart-identifier
+                  ^
+                  source-code-dart-whitespace
+                   ^
+                   source-code-dart-keyword-operator
+                    ^
+                    source-code-dart-whitespace
+                     ^
+                     source-code-dart-literal-string-quoted-single-literal-string-quoted-single-begin
+                      ^^^^^^^^^^^^^^^^^^^^^^
+                      source-code-dart-literal-string-quoted-single-literal-string-unquoted
+final next = 1;
+^^^^^
+source-code-dart-keyword-modifier-final
+     ^
+     source-code-dart-whitespace
+      ^^^^
+      source-code-dart-identifier
+          ^
+          source-code-dart-whitespace
+           ^
+           source-code-dart-keyword-operator
+            ^
+            source-code-dart-whitespace
+             ^
+             source-code-dart-literal-number-integer
+              ^
+              source-code-dart-punctuation
+final alsoUnterminated = "Neither does this one
+^^^^^
+source-code-dart-keyword-modifier-final
+     ^
+     source-code-dart-whitespace
+      ^^^^^^^^^^^^^^^^
+      source-code-dart-identifier
+                      ^
+                      source-code-dart-whitespace
+                       ^
+                       source-code-dart-keyword-operator
+                        ^
+                        source-code-dart-whitespace
+                         ^
+                         source-code-dart-literal-string-quoted-double-literal-string-quoted-double-begin
+                          ^^^^^^^^^^^^^^^^^^^^^
+                          source-code-dart-literal-string-quoted-double-literal-string-unquoted
+final afterwards = 2;
+^^^^^
+source-code-dart-keyword-modifier-final
+     ^
+     source-code-dart-whitespace
+      ^^^^^^^^^^
+      source-code-dart-identifier
+                ^
+                source-code-dart-whitespace
+                 ^
+                 source-code-dart-keyword-operator
+                  ^
+                  source-code-dart-whitespace
+                   ^
+                   source-code-dart-literal-number-integer
+                    ^
+                    source-code-dart-punctuation
+final invalidEscape = '\x and \u{} and \u12';
+^^^^^
+source-code-dart-keyword-modifier-final
+     ^
+     source-code-dart-whitespace
+      ^^^^^^^^^^^^^
+      source-code-dart-identifier
+                   ^
+                   source-code-dart-whitespace
+                    ^
+                    source-code-dart-keyword-operator
+                     ^
+                     source-code-dart-whitespace
+                      ^
+                      source-code-dart-literal-string-quoted-single-literal-string-quoted-single-begin
+                       ^^
+                       source-code-dart-literal-string-quoted-single-literal-string-escape
+                         ^^^^^
+                         source-code-dart-literal-string-quoted-single-literal-string-unquoted
+                              ^^
+                              source-code-dart-literal-string-quoted-single-literal-string-escape
+                                ^^^^^^^
+                                source-code-dart-literal-string-quoted-single-literal-string-unquoted
+                                       ^^
+                                       source-code-dart-literal-string-quoted-single-literal-string-escape
+                                         ^^
+                                         source-code-dart-literal-string-quoted-single-literal-string-unquoted
+                                           ^
+                                           source-code-dart-literal-string-quoted-single-literal-string-quoted-single-end
+                                            ^
+                                            source-code-dart-punctuation
+final lonely = '$ and ${}';
+^^^^^
+source-code-dart-keyword-modifier-final
+     ^
+     source-code-dart-whitespace
+      ^^^^^^
+      source-code-dart-identifier
+            ^
+            source-code-dart-whitespace
+             ^
+             source-code-dart-keyword-operator
+              ^
+              source-code-dart-whitespace
+               ^
+               source-code-dart-literal-string-quoted-single-literal-string-quoted-single-begin
+                ^
+                source-code-dart-literal-string-quoted-single-literal-string-unquoted
+                 ^^^^^
+                 source-code-dart-literal-string-quoted-single-literal-string-unquoted
+                      ^^
+                      source-code-dart-literal-string-quoted-single-literal-string-interpolation-literal-string-interpolation-begin
+                        ^
+                        source-code-dart-literal-string-quoted-single-literal-string-interpolation-literal-string-interpolation-end
+                         ^
+                         source-code-dart-literal-string-quoted-single-literal-string-quoted-single-end
+                          ^
+                          source-code-dart-punctuation
+final unformatted = a<b&&c>d;
+^^^^^
+source-code-dart-keyword-modifier-final
+     ^
+     source-code-dart-whitespace
+      ^^^^^^^^^^^
+      source-code-dart-identifier
+                 ^
+                 source-code-dart-whitespace
+                  ^
+                  source-code-dart-keyword-operator
+                   ^
+                   source-code-dart-whitespace
+                    ^
+                    source-code-dart-identifier
+                     ^
+                     source-code-dart-punctuation
+                      ^
+                      source-code-dart-identifier
+                       ^^
+                       source-code-dart-keyword-operator
+                         ^
+                         source-code-dart-identifier
+                          ^
+                          source-code-dart-punctuation
+                           ^
+                           source-code-dart-identifier
+                            ^
+                            source-code-dart-punctuation

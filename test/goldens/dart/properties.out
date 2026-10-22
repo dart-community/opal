@@ -1,6 +1,6 @@
 class Test {
 ^^^^^
-source-code-dart-keyword-class
+source-code-dart-keyword-declaration-class
      ^
      source-code-dart-whitespace
       ^^^^
@@ -13,11 +13,11 @@ source-code-dart-keyword-class
 ^^
 source-code-dart-whitespace
   ^^^^^^
-  source-code-dart-keyword-static
+  source-code-dart-keyword-modifier-static
         ^
         source-code-dart-whitespace
          ^^^^^
-         source-code-dart-keyword-const
+         source-code-dart-keyword-modifier-const
               ^
               source-code-dart-whitespace
                ^^^^^^
@@ -33,11 +33,11 @@ source-code-dart-whitespace
                                    ^
                                    source-code-dart-whitespace
                                     ^
-                                    source-code-dart-literal-string-literal-string-begin
+                                    source-code-dart-literal-string-quoted-single-literal-string-quoted-single-begin
                                      ^^^^
-                                     source-code-dart-literal-string-literal-string-unquoted
+                                     source-code-dart-literal-string-quoted-single-literal-string-unquoted
                                          ^
-                                         source-code-dart-literal-string-literal-string-end
+                                         source-code-dart-literal-string-quoted-single-literal-string-quoted-single-end
                                           ^
                                           source-code-dart-punctuation
 
@@ -49,7 +49,7 @@ source-code-dart-whitespace
         ^
         source-code-dart-whitespace
          ^^^
-         source-code-dart-keyword-get
+         source-code-dart-keyword-declaration-get
             ^
             source-code-dart-whitespace
              ^^^^
@@ -61,18 +61,18 @@ source-code-dart-whitespace
                     ^
                     source-code-dart-whitespace
                      ^
-                     source-code-dart-literal-string-literal-string-begin
+                     source-code-dart-literal-string-quoted-single-literal-string-quoted-single-begin
                       ^^^^
-                      source-code-dart-literal-string-literal-string-unquoted
+                      source-code-dart-literal-string-quoted-single-literal-string-unquoted
                           ^
-                          source-code-dart-literal-string-literal-string-end
+                          source-code-dart-literal-string-quoted-single-literal-string-quoted-single-end
                            ^
                            source-code-dart-punctuation
   final int _age = 10;
 ^^
 source-code-dart-whitespace
   ^^^^^
-  source-code-dart-keyword-final
+  source-code-dart-keyword-modifier-final
        ^
        source-code-dart-whitespace
         ^^^
@@ -88,7 +88,7 @@ source-code-dart-whitespace
                   ^
                   source-code-dart-whitespace
                    ^^
-                   source-code-dart-literal-number
+                   source-code-dart-literal-number-integer
                      ^
                      source-code-dart-punctuation
 }

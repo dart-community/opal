@@ -1,0 +1,1299 @@
+import 'dart:async' as async show Future, Stream hide Timer;
+^^^^^^
+source-code-dart-keyword-declaration-import
+      ^
+      source-code-dart-whitespace
+       ^
+       source-code-dart-literal-string-quoted-single-literal-string-quoted-single-begin
+        ^^^^^^^^^^
+        source-code-dart-literal-string-quoted-single-literal-string-unquoted
+                  ^
+                  source-code-dart-literal-string-quoted-single-literal-string-quoted-single-end
+                   ^
+                   source-code-dart-whitespace
+                    ^^
+                    source-code-dart-keyword-as
+                      ^
+                      source-code-dart-whitespace
+                       ^^^^^
+                       source-code-dart-keyword-modifier-async
+                            ^
+                            source-code-dart-whitespace
+                             ^^^^
+                             source-code-dart-keyword-show
+                                 ^
+                                 source-code-dart-whitespace
+                                  ^^^^^^
+                                  source-code-dart-identifier-type-built-in
+                                        ^
+                                        source-code-dart-punctuation-separator
+                                         ^
+                                         source-code-dart-whitespace
+                                          ^^^^^^
+                                          source-code-dart-identifier-type-built-in
+                                                ^
+                                                source-code-dart-whitespace
+                                                 ^^^^
+                                                 source-code-dart-keyword-hide
+                                                     ^
+                                                     source-code-dart-whitespace
+                                                      ^^^^^
+                                                      source-code-dart-identifier-type
+                                                           ^
+                                                           source-code-dart-punctuation
+import 'package:foo/foo.dart'
+^^^^^^
+source-code-dart-keyword-declaration-import
+      ^
+      source-code-dart-whitespace
+       ^
+       source-code-dart-literal-string-quoted-single-literal-string-quoted-single-begin
+        ^^^^^^^^^^^^^^^^^^^^
+        source-code-dart-literal-string-quoted-single-literal-string-unquoted
+                            ^
+                            source-code-dart-literal-string-quoted-single-literal-string-quoted-single-end
+    show
+^^^^
+source-code-dart-whitespace
+    ^^^^
+    source-code-dart-keyword-show
+        Bar,
+^^^^^^^^
+source-code-dart-whitespace
+        ^^^
+        source-code-dart-identifier-type
+           ^
+           source-code-dart-punctuation-separator
+        Baz;
+^^^^^^^^
+source-code-dart-whitespace
+        ^^^
+        source-code-dart-identifier-type
+           ^
+           source-code-dart-punctuation
+export 'src/foo.dart';
+^^^^^^
+source-code-dart-keyword-declaration-export
+      ^
+      source-code-dart-whitespace
+       ^
+       source-code-dart-literal-string-quoted-single-literal-string-quoted-single-begin
+        ^^^^^^^^^^^^
+        source-code-dart-literal-string-quoted-single-literal-string-unquoted
+                    ^
+                    source-code-dart-literal-string-quoted-single-literal-string-quoted-single-end
+                     ^
+                     source-code-dart-punctuation
+part 'bar.dart';
+^^^^
+source-code-dart-keyword-declaration-part
+    ^
+    source-code-dart-whitespace
+     ^
+     source-code-dart-literal-string-quoted-single-literal-string-quoted-single-begin
+      ^^^^^^^^
+      source-code-dart-literal-string-quoted-single-literal-string-unquoted
+              ^
+              source-code-dart-literal-string-quoted-single-literal-string-quoted-single-end
+               ^
+               source-code-dart-punctuation
+part of 'baz.dart';
+^^^^
+source-code-dart-keyword-declaration-part
+    ^
+    source-code-dart-whitespace
+     ^^
+     source-code-dart-keyword-of
+       ^
+       source-code-dart-whitespace
+        ^
+        source-code-dart-literal-string-quoted-single-literal-string-quoted-single-begin
+         ^^^^^^^^
+         source-code-dart-literal-string-quoted-single-literal-string-unquoted
+                 ^
+                 source-code-dart-literal-string-quoted-single-literal-string-quoted-single-end
+                  ^
+                  source-code-dart-punctuation
+
+@override
+^^^^^^^^^
+source-code-dart-metadata-annotation
+@JsonKey(name: 'id')
+^^^^^^^^
+source-code-dart-metadata-annotation
+        ^
+        source-code-dart-punctuation
+         ^^^^
+         source-code-dart-identifier
+             ^
+             source-code-dart-punctuation-separator
+              ^
+              source-code-dart-whitespace
+               ^
+               source-code-dart-literal-string-quoted-single-literal-string-quoted-single-begin
+                ^^
+                source-code-dart-literal-string-quoted-single-literal-string-unquoted
+                  ^
+                  source-code-dart-literal-string-quoted-single-literal-string-quoted-single-end
+                   ^
+                   source-code-dart-punctuation
+@pkg.Annotation.named()
+^^^^^^^^^^^^^^^^^^^^^
+source-code-dart-metadata-annotation
+                     ^
+                     source-code-dart-punctuation
+                      ^
+                      source-code-dart-punctuation
+sealed class Shape {}
+^^^^^^
+source-code-dart-keyword-modifier-sealed
+      ^
+      source-code-dart-whitespace
+       ^^^^^
+       source-code-dart-keyword-declaration-class
+            ^
+            source-code-dart-whitespace
+             ^^^^^
+             source-code-dart-identifier-type
+                  ^
+                  source-code-dart-whitespace
+                   ^
+                   source-code-dart-punctuation
+                    ^
+                    source-code-dart-punctuation
+
+final class Circle extends Shape with Mixin implements Comparable<Circle> {
+^^^^^
+source-code-dart-keyword-modifier-final
+     ^
+     source-code-dart-whitespace
+      ^^^^^
+      source-code-dart-keyword-declaration-class
+           ^
+           source-code-dart-whitespace
+            ^^^^^^
+            source-code-dart-identifier-type
+                  ^
+                  source-code-dart-whitespace
+                   ^^^^^^^
+                   source-code-dart-keyword-extends
+                          ^
+                          source-code-dart-whitespace
+                           ^^^^^
+                           source-code-dart-identifier-type
+                                ^
+                                source-code-dart-whitespace
+                                 ^^^^
+                                 source-code-dart-keyword-with
+                                     ^
+                                     source-code-dart-whitespace
+                                      ^^^^^
+                                      source-code-dart-identifier-type
+                                           ^
+                                           source-code-dart-whitespace
+                                            ^^^^^^^^^^
+                                            source-code-dart-keyword-implements
+                                                      ^
+                                                      source-code-dart-whitespace
+                                                       ^^^^^^^^^^
+                                                       source-code-dart-identifier-type-built-in
+                                                                 ^
+                                                                 source-code-dart-punctuation
+                                                                  ^^^^^^
+                                                                  source-code-dart-identifier-type
+                                                                        ^
+                                                                        source-code-dart-punctuation
+                                                                         ^
+                                                                         source-code-dart-whitespace
+                                                                          ^
+                                                                          source-code-dart-punctuation
+  Circle(this.radius) : super();
+^^
+source-code-dart-whitespace
+  ^^^^^^
+  source-code-dart-identifier-type
+        ^
+        source-code-dart-punctuation
+         ^^^^
+         source-code-dart-identifier-special
+             ^
+             source-code-dart-punctuation-accessor
+              ^^^^^^
+              source-code-dart-identifier
+                    ^
+                    source-code-dart-punctuation
+                     ^
+                     source-code-dart-whitespace
+                      ^
+                      source-code-dart-keyword-operator
+                       ^
+                       source-code-dart-whitespace
+                        ^^^^^
+                        source-code-dart-identifier-special
+                             ^
+                             source-code-dart-punctuation
+                              ^
+                              source-code-dart-punctuation
+                               ^
+                               source-code-dart-punctuation
+
+  factory Circle.unit() => Circle(1);
+^^
+source-code-dart-whitespace
+  ^^^^^^^
+  source-code-dart-keyword-modifier-factory
+         ^
+         source-code-dart-whitespace
+          ^^^^^^
+          source-code-dart-identifier-type
+                ^
+                source-code-dart-punctuation-accessor
+                 ^^^^
+                 source-code-dart-identifier-function
+                     ^
+                     source-code-dart-punctuation
+                      ^
+                      source-code-dart-punctuation
+                       ^
+                       source-code-dart-whitespace
+                        ^^
+                        source-code-dart-keyword-operator
+                          ^
+                          source-code-dart-whitespace
+                           ^^^^^^
+                           source-code-dart-identifier-type
+                                 ^
+                                 source-code-dart-punctuation
+                                  ^
+                                  source-code-dart-literal-number-integer
+                                   ^
+                                   source-code-dart-punctuation
+                                    ^
+                                    source-code-dart-punctuation
+
+  final double radius;
+^^
+source-code-dart-whitespace
+  ^^^^^
+  source-code-dart-keyword-modifier-final
+       ^
+       source-code-dart-whitespace
+        ^^^^^^
+        source-code-dart-identifier-type-built-in
+              ^
+              source-code-dart-whitespace
+               ^^^^^^
+               source-code-dart-identifier
+                     ^
+                     source-code-dart-punctuation
+
+  double get area => radius * radius;
+^^
+source-code-dart-whitespace
+  ^^^^^^
+  source-code-dart-identifier-type-built-in
+        ^
+        source-code-dart-whitespace
+         ^^^
+         source-code-dart-keyword-declaration-get
+            ^
+            source-code-dart-whitespace
+             ^^^^
+             source-code-dart-identifier
+                 ^
+                 source-code-dart-whitespace
+                  ^^
+                  source-code-dart-keyword-operator
+                    ^
+                    source-code-dart-whitespace
+                     ^^^^^^
+                     source-code-dart-identifier
+                           ^
+                           source-code-dart-whitespace
+                            ^
+                            source-code-dart-keyword-operator
+                             ^
+                             source-code-dart-whitespace
+                              ^^^^^^
+                              source-code-dart-identifier
+                                    ^
+                                    source-code-dart-punctuation
+  set area(double value) {}
+^^
+source-code-dart-whitespace
+  ^^^
+  source-code-dart-keyword-declaration-set
+     ^
+     source-code-dart-whitespace
+      ^^^^
+      source-code-dart-identifier-function
+          ^
+          source-code-dart-punctuation
+           ^^^^^^
+           source-code-dart-identifier-type-built-in
+                 ^
+                 source-code-dart-whitespace
+                  ^^^^^
+                  source-code-dart-identifier
+                       ^
+                       source-code-dart-punctuation
+                        ^
+                        source-code-dart-whitespace
+                         ^
+                         source-code-dart-punctuation
+                          ^
+                          source-code-dart-punctuation
+
+  bool operator ==(Object other) => other is Circle && other.radius == radius;
+^^
+source-code-dart-whitespace
+  ^^^^
+  source-code-dart-identifier-type-built-in
+      ^
+      source-code-dart-whitespace
+       ^^^^^^^^
+       source-code-dart-keyword-declaration-operator
+               ^
+               source-code-dart-whitespace
+                ^^
+                source-code-dart-keyword-operator
+                  ^
+                  source-code-dart-punctuation
+                   ^^^^^^
+                   source-code-dart-identifier-type-built-in
+                         ^
+                         source-code-dart-whitespace
+                          ^^^^^
+                          source-code-dart-identifier
+                               ^
+                               source-code-dart-punctuation
+                                ^
+                                source-code-dart-whitespace
+                                 ^^
+                                 source-code-dart-keyword-operator
+                                   ^
+                                   source-code-dart-whitespace
+                                    ^^^^^
+                                    source-code-dart-identifier
+                                         ^
+                                         source-code-dart-whitespace
+                                          ^^
+                                          source-code-dart-keyword-is
+                                            ^
+                                            source-code-dart-whitespace
+                                             ^^^^^^
+                                             source-code-dart-identifier-type
+                                                   ^
+                                                   source-code-dart-whitespace
+                                                    ^^
+                                                    source-code-dart-keyword-operator
+                                                      ^
+                                                      source-code-dart-whitespace
+                                                       ^^^^^
+                                                       source-code-dart-identifier
+                                                            ^
+                                                            source-code-dart-punctuation-accessor
+                                                             ^^^^^^
+                                                             source-code-dart-identifier
+                                                                   ^
+                                                                   source-code-dart-whitespace
+                                                                    ^^
+                                                                    source-code-dart-keyword-operator
+                                                                      ^
+                                                                      source-code-dart-whitespace
+                                                                       ^^^^^^
+                                                                       source-code-dart-identifier
+                                                                             ^
+                                                                             source-code-dart-punctuation
+}
+^
+source-code-dart-punctuation
+
+base mixin class Mixin {}
+^^^^
+source-code-dart-keyword-modifier-base
+    ^
+    source-code-dart-whitespace
+     ^^^^^
+     source-code-dart-keyword-declaration-mixin
+          ^
+          source-code-dart-whitespace
+           ^^^^^
+           source-code-dart-keyword-declaration-class
+                ^
+                source-code-dart-whitespace
+                 ^^^^^
+                 source-code-dart-identifier-type
+                      ^
+                      source-code-dart-whitespace
+                       ^
+                       source-code-dart-punctuation
+                        ^
+                        source-code-dart-punctuation
+abstract interface class Interface {}
+^^^^^^^^
+source-code-dart-keyword-modifier-abstract
+        ^
+        source-code-dart-whitespace
+         ^^^^^^^^^
+         source-code-dart-keyword-modifier-interface
+                  ^
+                  source-code-dart-whitespace
+                   ^^^^^
+                   source-code-dart-keyword-declaration-class
+                        ^
+                        source-code-dart-whitespace
+                         ^^^^^^^^^
+                         source-code-dart-identifier-type
+                                  ^
+                                  source-code-dart-whitespace
+                                   ^
+                                   source-code-dart-punctuation
+                                    ^
+                                    source-code-dart-punctuation
+
+extension type const Id._(int value) implements Object {}
+^^^^^^^^^
+source-code-dart-keyword-declaration-extension
+         ^
+         source-code-dart-whitespace
+          ^^^^
+          source-code-dart-keyword-declaration-type
+              ^
+              source-code-dart-whitespace
+               ^^^^^
+               source-code-dart-keyword-modifier-const
+                    ^
+                    source-code-dart-whitespace
+                     ^^
+                     source-code-dart-identifier-type
+                       ^
+                       source-code-dart-punctuation-accessor
+                        ^
+                        source-code-dart-identifier-function
+                         ^
+                         source-code-dart-punctuation
+                          ^^^
+                          source-code-dart-identifier-type-built-in
+                             ^
+                             source-code-dart-whitespace
+                              ^^^^^
+                              source-code-dart-identifier
+                                   ^
+                                   source-code-dart-punctuation
+                                    ^
+                                    source-code-dart-whitespace
+                                     ^^^^^^^^^^
+                                     source-code-dart-keyword-implements
+                                               ^
+                                               source-code-dart-whitespace
+                                                ^^^^^^
+                                                source-code-dart-identifier-type-built-in
+                                                      ^
+                                                      source-code-dart-whitespace
+                                                       ^
+                                                       source-code-dart-punctuation
+                                                        ^
+                                                        source-code-dart-punctuation
+extension StringExtension on String {}
+^^^^^^^^^
+source-code-dart-keyword-declaration-extension
+         ^
+         source-code-dart-whitespace
+          ^^^^^^^^^^^^^^^
+          source-code-dart-identifier-type
+                         ^
+                         source-code-dart-whitespace
+                          ^^
+                          source-code-dart-keyword-on
+                            ^
+                            source-code-dart-whitespace
+                             ^^^^^^
+                             source-code-dart-identifier-type-built-in
+                                   ^
+                                   source-code-dart-whitespace
+                                    ^
+                                    source-code-dart-punctuation
+                                     ^
+                                     source-code-dart-punctuation
+
+typedef Callback<T> = void Function(T value);
+^^^^^^^
+source-code-dart-keyword-declaration-typedef
+       ^
+       source-code-dart-whitespace
+        ^^^^^^^^
+        source-code-dart-identifier-type
+                ^
+                source-code-dart-punctuation
+                 ^
+                 source-code-dart-identifier-type
+                  ^
+                  source-code-dart-punctuation
+                   ^
+                   source-code-dart-whitespace
+                    ^
+                    source-code-dart-keyword-operator
+                     ^
+                     source-code-dart-whitespace
+                      ^^^^
+                      source-code-dart-identifier-type-built-in
+                          ^
+                          source-code-dart-whitespace
+                           ^^^^^^^^
+                           source-code-dart-identifier-type-built-in
+                                   ^
+                                   source-code-dart-punctuation
+                                    ^
+                                    source-code-dart-identifier-type
+                                     ^
+                                     source-code-dart-whitespace
+                                      ^^^^^
+                                      source-code-dart-identifier
+                                           ^
+                                           source-code-dart-punctuation
+                                            ^
+                                            source-code-dart-punctuation
+
+Future<void> process(List<Map<String, List<int>>> data) async {
+^^^^^^
+source-code-dart-identifier-type-built-in
+      ^
+      source-code-dart-punctuation
+       ^^^^
+       source-code-dart-identifier-type-built-in
+           ^
+           source-code-dart-punctuation
+            ^
+            source-code-dart-whitespace
+             ^^^^^^^
+             source-code-dart-identifier-function
+                    ^
+                    source-code-dart-punctuation
+                     ^^^^
+                     source-code-dart-identifier-type-built-in
+                         ^
+                         source-code-dart-punctuation
+                          ^^^
+                          source-code-dart-identifier-type-built-in
+                             ^
+                             source-code-dart-punctuation
+                              ^^^^^^
+                              source-code-dart-identifier-type-built-in
+                                    ^
+                                    source-code-dart-punctuation-separator
+                                     ^
+                                     source-code-dart-whitespace
+                                      ^^^^
+                                      source-code-dart-identifier-type-built-in
+                                          ^
+                                          source-code-dart-punctuation
+                                           ^^^
+                                           source-code-dart-identifier-type-built-in
+                                              ^
+                                              source-code-dart-punctuation
+                                               ^
+                                               source-code-dart-punctuation
+                                                ^
+                                                source-code-dart-punctuation
+                                                 ^
+                                                 source-code-dart-whitespace
+                                                  ^^^^
+                                                  source-code-dart-identifier
+                                                      ^
+                                                      source-code-dart-punctuation
+                                                       ^
+                                                       source-code-dart-whitespace
+                                                        ^^^^^
+                                                        source-code-dart-keyword-modifier-async
+                                                             ^
+                                                             source-code-dart-whitespace
+                                                              ^
+                                                              source-code-dart-punctuation
+  late final int count;
+^^
+source-code-dart-whitespace
+  ^^^^
+  source-code-dart-keyword-modifier-late
+      ^
+      source-code-dart-whitespace
+       ^^^^^
+       source-code-dart-keyword-modifier-final
+            ^
+            source-code-dart-whitespace
+             ^^^
+             source-code-dart-identifier-type-built-in
+                ^
+                source-code-dart-whitespace
+                 ^^^^^
+                 source-code-dart-identifier
+                      ^
+                      source-code-dart-punctuation
+  await for (final item in stream) {
+^^
+source-code-dart-whitespace
+  ^^^^^
+  source-code-dart-keyword-control-await
+       ^
+       source-code-dart-whitespace
+        ^^^
+        source-code-dart-keyword-control-for
+           ^
+           source-code-dart-whitespace
+            ^
+            source-code-dart-punctuation
+             ^^^^^
+             source-code-dart-keyword-modifier-final
+                  ^
+                  source-code-dart-whitespace
+                   ^^^^
+                   source-code-dart-identifier
+                       ^
+                       source-code-dart-whitespace
+                        ^^
+                        source-code-dart-keyword-in
+                          ^
+                          source-code-dart-whitespace
+                           ^^^^^^
+                           source-code-dart-identifier
+                                 ^
+                                 source-code-dart-punctuation
+                                  ^
+                                  source-code-dart-whitespace
+                                   ^
+                                   source-code-dart-punctuation
+    yield* other;
+^^^^
+source-code-dart-whitespace
+    ^^^^^
+    source-code-dart-keyword-control-yield
+         ^
+         source-code-dart-keyword-operator
+          ^
+          source-code-dart-whitespace
+           ^^^^^
+           source-code-dart-identifier
+                ^
+                source-code-dart-punctuation
+  }
+^^
+source-code-dart-whitespace
+  ^
+  source-code-dart-punctuation
+  outer:
+^^
+source-code-dart-whitespace
+  ^^^^^
+  source-code-dart-identifier
+       ^
+       source-code-dart-punctuation-separator
+  for (var i = 0; i < 10; i++) {
+^^
+source-code-dart-whitespace
+  ^^^
+  source-code-dart-keyword-control-for
+     ^
+     source-code-dart-whitespace
+      ^
+      source-code-dart-punctuation
+       ^^^
+       source-code-dart-keyword-declaration-var
+          ^
+          source-code-dart-whitespace
+           ^
+           source-code-dart-identifier
+            ^
+            source-code-dart-whitespace
+             ^
+             source-code-dart-keyword-operator
+              ^
+              source-code-dart-whitespace
+               ^
+               source-code-dart-literal-number-integer
+                ^
+                source-code-dart-punctuation
+                 ^
+                 source-code-dart-whitespace
+                  ^
+                  source-code-dart-identifier
+                   ^
+                   source-code-dart-whitespace
+                    ^
+                    source-code-dart-keyword-operator
+                     ^
+                     source-code-dart-whitespace
+                      ^^
+                      source-code-dart-literal-number-integer
+                        ^
+                        source-code-dart-punctuation
+                         ^
+                         source-code-dart-whitespace
+                          ^
+                          source-code-dart-identifier
+                           ^^
+                           source-code-dart-keyword-operator
+                             ^
+                             source-code-dart-punctuation
+                              ^
+                              source-code-dart-whitespace
+                               ^
+                               source-code-dart-punctuation
+    if (i > 5) break outer;
+^^^^
+source-code-dart-whitespace
+    ^^
+    source-code-dart-keyword-control-if
+      ^
+      source-code-dart-whitespace
+       ^
+       source-code-dart-punctuation
+        ^
+        source-code-dart-identifier
+         ^
+         source-code-dart-whitespace
+          ^
+          source-code-dart-keyword-operator
+           ^
+           source-code-dart-whitespace
+            ^
+            source-code-dart-literal-number-integer
+             ^
+             source-code-dart-punctuation
+              ^
+              source-code-dart-whitespace
+               ^^^^^
+               source-code-dart-keyword-control-break
+                    ^
+                    source-code-dart-whitespace
+                     ^^^^^
+                     source-code-dart-identifier-label
+                          ^
+                          source-code-dart-punctuation
+    continue outer;
+^^^^
+source-code-dart-whitespace
+    ^^^^^^^^
+    source-code-dart-keyword-control-continue
+            ^
+            source-code-dart-whitespace
+             ^^^^^
+             source-code-dart-identifier-label
+                  ^
+                  source-code-dart-punctuation
+  }
+^^
+source-code-dart-whitespace
+  ^
+  source-code-dart-punctuation
+  final result = switch (shape) {
+^^
+source-code-dart-whitespace
+  ^^^^^
+  source-code-dart-keyword-modifier-final
+       ^
+       source-code-dart-whitespace
+        ^^^^^^
+        source-code-dart-identifier
+              ^
+              source-code-dart-whitespace
+               ^
+               source-code-dart-keyword-operator
+                ^
+                source-code-dart-whitespace
+                 ^^^^^^
+                 source-code-dart-keyword-control-switch
+                       ^
+                       source-code-dart-whitespace
+                        ^
+                        source-code-dart-punctuation
+                         ^^^^^
+                         source-code-dart-identifier
+                              ^
+                              source-code-dart-punctuation
+                               ^
+                               source-code-dart-whitespace
+                                ^
+                                source-code-dart-punctuation
+    Circle(radius: final r) when r > 0 => r,
+^^^^
+source-code-dart-whitespace
+    ^^^^^^
+    source-code-dart-identifier-type
+          ^
+          source-code-dart-punctuation
+           ^^^^^^
+           source-code-dart-identifier
+                 ^
+                 source-code-dart-punctuation-separator
+                  ^
+                  source-code-dart-whitespace
+                   ^^^^^
+                   source-code-dart-keyword-modifier-final
+                        ^
+                        source-code-dart-whitespace
+                         ^
+                         source-code-dart-identifier
+                          ^
+                          source-code-dart-punctuation
+                           ^
+                           source-code-dart-whitespace
+                            ^^^^
+                            source-code-dart-keyword-control-when
+                                ^
+                                source-code-dart-whitespace
+                                 ^
+                                 source-code-dart-identifier
+                                  ^
+                                  source-code-dart-whitespace
+                                   ^
+                                   source-code-dart-keyword-operator
+                                    ^
+                                    source-code-dart-whitespace
+                                     ^
+                                     source-code-dart-literal-number-integer
+                                      ^
+                                      source-code-dart-whitespace
+                                       ^^
+                                       source-code-dart-keyword-operator
+                                         ^
+                                         source-code-dart-whitespace
+                                          ^
+                                          source-code-dart-identifier
+                                           ^
+                                           source-code-dart-punctuation-separator
+    Circle() => 0,
+^^^^
+source-code-dart-whitespace
+    ^^^^^^
+    source-code-dart-identifier-type
+          ^
+          source-code-dart-punctuation
+           ^
+           source-code-dart-punctuation
+            ^
+            source-code-dart-whitespace
+             ^^
+             source-code-dart-keyword-operator
+               ^
+               source-code-dart-whitespace
+                ^
+                source-code-dart-literal-number-integer
+                 ^
+                 source-code-dart-punctuation-separator
+    _ => -1,
+^^^^
+source-code-dart-whitespace
+    ^
+    source-code-dart-identifier
+     ^
+     source-code-dart-whitespace
+      ^^
+      source-code-dart-keyword-operator
+        ^
+        source-code-dart-whitespace
+         ^
+         source-code-dart-keyword-operator
+          ^
+          source-code-dart-literal-number-integer
+           ^
+           source-code-dart-punctuation-separator
+  };
+^^
+source-code-dart-whitespace
+  ^
+  source-code-dart-punctuation
+   ^
+   source-code-dart-punctuation
+  final Color color = .red;
+^^
+source-code-dart-whitespace
+  ^^^^^
+  source-code-dart-keyword-modifier-final
+       ^
+       source-code-dart-whitespace
+        ^^^^^
+        source-code-dart-identifier-type
+             ^
+             source-code-dart-whitespace
+              ^^^^^
+              source-code-dart-identifier
+                   ^
+                   source-code-dart-whitespace
+                    ^
+                    source-code-dart-keyword-operator
+                     ^
+                     source-code-dart-whitespace
+                      ^
+                      source-code-dart-punctuation-accessor
+                       ^^^
+                       source-code-dart-identifier
+                          ^
+                          source-code-dart-punctuation
+  final list = [?maybeNull, ...items, ...?other];
+^^
+source-code-dart-whitespace
+  ^^^^^
+  source-code-dart-keyword-modifier-final
+       ^
+       source-code-dart-whitespace
+        ^^^^
+        source-code-dart-identifier
+            ^
+            source-code-dart-whitespace
+             ^
+             source-code-dart-keyword-operator
+              ^
+              source-code-dart-whitespace
+               ^
+               source-code-dart-punctuation
+                ^
+                source-code-dart-keyword-operator
+                 ^^^^^^^^^
+                 source-code-dart-identifier
+                          ^
+                          source-code-dart-punctuation-separator
+                           ^
+                           source-code-dart-whitespace
+                            ^^^
+                            source-code-dart-keyword-operator
+                               ^^^^^
+                               source-code-dart-identifier
+                                    ^
+                                    source-code-dart-punctuation-separator
+                                     ^
+                                     source-code-dart-whitespace
+                                      ^^^^
+                                      source-code-dart-keyword-operator
+                                          ^^^^^
+                                          source-code-dart-identifier
+                                               ^
+                                               source-code-dart-punctuation
+                                                ^
+                                                source-code-dart-punctuation
+}
+^
+source-code-dart-punctuation
+
+void contextualNames() {
+^^^^
+source-code-dart-identifier-type-built-in
+    ^
+    source-code-dart-whitespace
+     ^^^^^^^^^^^^^^^
+     source-code-dart-identifier-function
+                    ^
+                    source-code-dart-punctuation
+                     ^
+                     source-code-dart-punctuation
+                      ^
+                      source-code-dart-whitespace
+                       ^
+                       source-code-dart-punctuation
+  final response = await http.get(uri);
+^^
+source-code-dart-whitespace
+  ^^^^^
+  source-code-dart-keyword-modifier-final
+       ^
+       source-code-dart-whitespace
+        ^^^^^^^^
+        source-code-dart-identifier
+                ^
+                source-code-dart-whitespace
+                 ^
+                 source-code-dart-keyword-operator
+                  ^
+                  source-code-dart-whitespace
+                   ^^^^^
+                   source-code-dart-keyword-control-await
+                        ^
+                        source-code-dart-whitespace
+                         ^^^^
+                         source-code-dart-identifier
+                             ^
+                             source-code-dart-punctuation-accessor
+                              ^^^
+                              source-code-dart-identifier-function
+                                 ^
+                                 source-code-dart-punctuation
+                                  ^^^
+                                  source-code-dart-identifier
+                                     ^
+                                     source-code-dart-punctuation
+                                      ^
+                                      source-code-dart-punctuation
+  final copy = List.of(items, growable: false);
+^^
+source-code-dart-whitespace
+  ^^^^^
+  source-code-dart-keyword-modifier-final
+       ^
+       source-code-dart-whitespace
+        ^^^^
+        source-code-dart-identifier
+            ^
+            source-code-dart-whitespace
+             ^
+             source-code-dart-keyword-operator
+              ^
+              source-code-dart-whitespace
+               ^^^^
+               source-code-dart-identifier-type-built-in
+                   ^
+                   source-code-dart-punctuation-accessor
+                    ^^
+                    source-code-dart-identifier-function
+                      ^
+                      source-code-dart-punctuation
+                       ^^^^^
+                       source-code-dart-identifier
+                            ^
+                            source-code-dart-punctuation-separator
+                             ^
+                             source-code-dart-whitespace
+                              ^^^^^^^^
+                              source-code-dart-identifier
+                                      ^
+                                      source-code-dart-punctuation-separator
+                                       ^
+                                       source-code-dart-whitespace
+                                        ^^^^^
+                                        source-code-dart-literal-boolean-false
+                                             ^
+                                             source-code-dart-punctuation
+                                              ^
+                                              source-code-dart-punctuation
+  when(mock.method()).thenReturn(null);
+^^
+source-code-dart-whitespace
+  ^^^^
+  source-code-dart-identifier-function
+      ^
+      source-code-dart-punctuation
+       ^^^^
+       source-code-dart-identifier
+           ^
+           source-code-dart-punctuation-accessor
+            ^^^^^^
+            source-code-dart-identifier-function
+                  ^
+                  source-code-dart-punctuation
+                   ^
+                   source-code-dart-punctuation
+                    ^
+                    source-code-dart-punctuation
+                     ^
+                     source-code-dart-punctuation-accessor
+                      ^^^^^^^^^^
+                      source-code-dart-identifier-function
+                                ^
+                                source-code-dart-punctuation
+                                 ^^^^
+                                 source-code-dart-literal-null
+                                     ^
+                                     source-code-dart-punctuation
+                                      ^
+                                      source-code-dart-punctuation
+  on<Event>((event, emit) {});
+^^
+source-code-dart-whitespace
+  ^^
+  source-code-dart-identifier-function
+    ^
+    source-code-dart-punctuation
+     ^^^^^
+     source-code-dart-identifier-type
+          ^
+          source-code-dart-punctuation
+           ^
+           source-code-dart-punctuation
+            ^
+            source-code-dart-punctuation
+             ^^^^^
+             source-code-dart-identifier
+                  ^
+                  source-code-dart-punctuation-separator
+                   ^
+                   source-code-dart-whitespace
+                    ^^^^
+                    source-code-dart-identifier
+                        ^
+                        source-code-dart-punctuation
+                         ^
+                         source-code-dart-whitespace
+                          ^
+                          source-code-dart-punctuation
+                           ^
+                           source-code-dart-punctuation
+                            ^
+                            source-code-dart-punctuation
+                             ^
+                             source-code-dart-punctuation
+  final show = true;
+^^
+source-code-dart-whitespace
+  ^^^^^
+  source-code-dart-keyword-modifier-final
+       ^
+       source-code-dart-whitespace
+        ^^^^
+        source-code-dart-identifier
+            ^
+            source-code-dart-whitespace
+             ^
+             source-code-dart-keyword-operator
+              ^
+              source-code-dart-whitespace
+               ^^^^
+               source-code-dart-literal-boolean-true
+                   ^
+                   source-code-dart-punctuation
+  final type = node.type;
+^^
+source-code-dart-whitespace
+  ^^^^^
+  source-code-dart-keyword-modifier-final
+       ^
+       source-code-dart-whitespace
+        ^^^^
+        source-code-dart-identifier
+            ^
+            source-code-dart-whitespace
+             ^
+             source-code-dart-keyword-operator
+              ^
+              source-code-dart-whitespace
+               ^^^^
+               source-code-dart-identifier
+                   ^
+                   source-code-dart-punctuation-accessor
+                    ^^^^
+                    source-code-dart-identifier
+                        ^
+                        source-code-dart-punctuation
+  dialog.show(context);
+^^
+source-code-dart-whitespace
+  ^^^^^^
+  source-code-dart-identifier
+        ^
+        source-code-dart-punctuation-accessor
+         ^^^^
+         source-code-dart-identifier-function
+             ^
+             source-code-dart-punctuation
+              ^^^^^^^
+              source-code-dart-identifier
+                     ^
+                     source-code-dart-punctuation
+                      ^
+                      source-code-dart-punctuation
+  final library = element.library;
+^^
+source-code-dart-whitespace
+  ^^^^^
+  source-code-dart-keyword-modifier-final
+       ^
+       source-code-dart-whitespace
+        ^^^^^^^
+        source-code-dart-identifier
+               ^
+               source-code-dart-whitespace
+                ^
+                source-code-dart-keyword-operator
+                 ^
+                 source-code-dart-whitespace
+                  ^^^^^^^
+                  source-code-dart-identifier
+                         ^
+                         source-code-dart-punctuation-accessor
+                          ^^^^^^^
+                          source-code-dart-identifier
+                                 ^
+                                 source-code-dart-punctuation
+  final operator = token.operator;
+^^
+source-code-dart-whitespace
+  ^^^^^
+  source-code-dart-keyword-modifier-final
+       ^
+       source-code-dart-whitespace
+        ^^^^^^^^
+        source-code-dart-identifier
+                ^
+                source-code-dart-whitespace
+                 ^
+                 source-code-dart-keyword-operator
+                  ^
+                  source-code-dart-whitespace
+                   ^^^^^
+                   source-code-dart-identifier
+                        ^
+                        source-code-dart-punctuation-accessor
+                         ^^^^^^^^
+                         source-code-dart-identifier
+                                 ^
+                                 source-code-dart-punctuation
+  foo(required: true, async: false);
+^^
+source-code-dart-whitespace
+  ^^^
+  source-code-dart-identifier-function
+     ^
+     source-code-dart-punctuation
+      ^^^^^^^^
+      source-code-dart-identifier
+              ^
+              source-code-dart-punctuation-separator
+               ^
+               source-code-dart-whitespace
+                ^^^^
+                source-code-dart-literal-boolean-true
+                    ^
+                    source-code-dart-punctuation-separator
+                     ^
+                     source-code-dart-whitespace
+                      ^^^^^
+                      source-code-dart-identifier
+                           ^
+                           source-code-dart-punctuation-separator
+                            ^
+                            source-code-dart-whitespace
+                             ^^^^^
+                             source-code-dart-literal-boolean-false
+                                  ^
+                                  source-code-dart-punctuation
+                                   ^
+                                   source-code-dart-punctuation
+  print(this.value + super.value);
+^^
+source-code-dart-whitespace
+  ^^^^^
+  source-code-dart-identifier-function
+       ^
+       source-code-dart-punctuation
+        ^^^^
+        source-code-dart-identifier-special
+            ^
+            source-code-dart-punctuation-accessor
+             ^^^^^
+             source-code-dart-identifier
+                  ^
+                  source-code-dart-whitespace
+                   ^
+                   source-code-dart-keyword-operator
+                    ^
+                    source-code-dart-whitespace
+                     ^^^^^
+                     source-code-dart-identifier-special
+                          ^
+                          source-code-dart-punctuation-accessor
+                           ^^^^^
+                           source-code-dart-identifier
+                                ^
+                                source-code-dart-punctuation
+                                 ^
+                                 source-code-dart-punctuation
+}
+^
+source-code-dart-punctuation

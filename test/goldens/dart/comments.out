@@ -1,0 +1,195 @@
+#!/usr/bin/env dart
+^^^^^^^^^^^^^^^^^^^
+source-code-dart-comment-line
+
+// A line comment.
+^^^^^^^^^^^^^^^^^^
+source-code-dart-comment-line
+//// Not a doc comment.
+^^^^^^^^^^^^^^^^^^^^^^^
+source-code-dart-comment-line
+
+/// A doc comment referencing [List], [List.of], and [List.new]
+^^^
+source-code-dart-comment-block-doc-comment-block-doc-begin
+   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   source-code-dart-comment-block-doc-comment-block-doc-content
+                              ^^^^^^
+                              source-code-dart-comment-block-doc-comment-reference
+                                    ^^
+                                    source-code-dart-comment-block-doc-comment-block-doc-content
+                                      ^^^^^^^^^
+                                      source-code-dart-comment-block-doc-comment-reference
+                                               ^^^^^^
+                                               source-code-dart-comment-block-doc-comment-block-doc-content
+                                                     ^^^^^^^^^^
+                                                     source-code-dart-comment-block-doc-comment-reference
+/// with `inline[code]`, a [Markdown link](https://dart.dev),
+^^^
+source-code-dart-comment-block-doc-comment-block-doc-begin
+   ^^^^^^
+   source-code-dart-comment-block-doc-comment-block-doc-content
+         ^^^^^^^^^^^^^^
+         source-code-dart-comment-block-doc-markup-format-code
+                       ^^^^
+                       source-code-dart-comment-block-doc-comment-block-doc-content
+                           ^
+                           source-code-dart-comment-block-doc-comment-block-doc-content
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                            source-code-dart-comment-block-doc-comment-block-doc-content
+/// and a [reference link][ref].
+^^^
+source-code-dart-comment-block-doc-comment-block-doc-begin
+   ^^^^^^^
+   source-code-dart-comment-block-doc-comment-block-doc-content
+          ^
+          source-code-dart-comment-block-doc-comment-block-doc-content
+           ^^^^^^^^^^^^^^^
+           source-code-dart-comment-block-doc-comment-block-doc-content
+                          ^^^^^
+                          source-code-dart-comment-block-doc-comment-reference
+                               ^
+                               source-code-dart-comment-block-doc-comment-block-doc-content
+///
+^^^
+source-code-dart-comment-block-doc-comment-block-doc-begin
+/// ```dart
+^^^
+source-code-dart-comment-block-doc-comment-block-doc-begin
+   ^^^^^^^^
+   source-code-dart-comment-block-doc-markup-block-code
+/// final value = map[key];
+^^^
+source-code-dart-comment-block-doc-comment-block-doc-begin
+   ^^^^^^^^^^^^^^^^^^^^^^^^
+   source-code-dart-comment-block-doc-markup-block-code
+/// ```
+^^^
+source-code-dart-comment-block-doc-comment-block-doc-begin
+   ^^^^
+   source-code-dart-comment-block-doc-markup-block-code
+void main() {}
+^^^^
+source-code-dart-identifier-type-built-in
+    ^
+    source-code-dart-whitespace
+     ^^^^
+     source-code-dart-identifier-function
+         ^
+         source-code-dart-punctuation
+          ^
+          source-code-dart-punctuation
+           ^
+           source-code-dart-whitespace
+            ^
+            source-code-dart-punctuation
+             ^
+             source-code-dart-punctuation
+
+/* A block comment. */
+^^
+source-code-dart-comment-block-comment-block-begin
+  ^^^^^^^^^^^^^^^^^^
+  source-code-dart-comment-block-comment-block-content
+                    ^^
+                    source-code-dart-comment-block-comment-block-end
+/* An outer /* nested */ block comment. */
+^^
+source-code-dart-comment-block-comment-block-begin
+  ^^^^^^^^^^
+  source-code-dart-comment-block-comment-block-content
+            ^^
+            source-code-dart-comment-block-comment-block-content
+              ^^^^^^^^
+              source-code-dart-comment-block-comment-block-content
+                      ^^
+                      source-code-dart-comment-block-comment-block-content
+                        ^^^^^^^^^^^^^^^^
+                        source-code-dart-comment-block-comment-block-content
+                                        ^^
+                                        source-code-dart-comment-block-comment-block-end
+/**/
+^^^^
+source-code-dart-comment-block
+
+/**
+^^^
+source-code-dart-comment-block-doc-comment-block-doc-begin
+ * A block doc comment for [Foo].
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+source-code-dart-comment-block-doc-comment-block-doc-content
+                           ^^^^^
+                           source-code-dart-comment-block-doc-comment-reference
+                                ^
+                                source-code-dart-comment-block-doc-comment-block-doc-content
+ */
+^
+source-code-dart-comment-block-doc-comment-block-doc-content
+ ^^
+ source-code-dart-comment-block-doc-comment-block-doc-end
+class Foo {}
+^^^^^
+source-code-dart-keyword-declaration-class
+     ^
+     source-code-dart-whitespace
+      ^^^
+      source-code-dart-identifier-type
+         ^
+         source-code-dart-whitespace
+          ^
+          source-code-dart-punctuation
+           ^
+           source-code-dart-punctuation
+
+/*
+^^
+source-code-dart-comment-block-comment-block-begin
+ * A multi-line block comment
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+source-code-dart-comment-block-comment-block-content
+ * /* with a nested comment */
+^^^
+source-code-dart-comment-block-comment-block-content
+   ^^
+   source-code-dart-comment-block-comment-block-content
+     ^^^^^^^^^^^^^^^^^^^^^^^
+     source-code-dart-comment-block-comment-block-content
+                            ^^
+                            source-code-dart-comment-block-comment-block-content
+ * and more content.
+^^^^^^^^^^^^^^^^^^^^
+source-code-dart-comment-block-comment-block-content
+ */
+^
+source-code-dart-comment-block-comment-block-content
+ ^^
+ source-code-dart-comment-block-comment-block-end
+final x = 1; /* trailing */ // comment
+^^^^^
+source-code-dart-keyword-modifier-final
+     ^
+     source-code-dart-whitespace
+      ^
+      source-code-dart-identifier
+       ^
+       source-code-dart-whitespace
+        ^
+        source-code-dart-keyword-operator
+         ^
+         source-code-dart-whitespace
+          ^
+          source-code-dart-literal-number-integer
+           ^
+           source-code-dart-punctuation
+            ^
+            source-code-dart-whitespace
+             ^^
+             source-code-dart-comment-block-comment-block-begin
+               ^^^^^^^^^^
+               source-code-dart-comment-block-comment-block-content
+                         ^^
+                         source-code-dart-comment-block-comment-block-end
+                           ^
+                           source-code-dart-whitespace
+                            ^^^^^^^^^^
+                            source-code-dart-comment-line

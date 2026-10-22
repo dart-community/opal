@@ -1,3 +1,12 @@
+## 0.2.7-wip
+
+- Improve the accuracy of `dart` highlighting, including for
+  doc comments, string interpolation, contextual keywords, and generics.
+- Recover from unterminated `dart` strings at the end of their line.
+- Handle nested block comments and multi-line raw strings in `dart`.
+- Use more specific tags for `dart` keywords, strings, and numbers.
+- Improve the performance of `dart` tokenization.
+
 ## 0.2.6
 
 - Require Dart 3.10 or later.

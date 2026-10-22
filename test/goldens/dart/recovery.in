@@ -1,0 +1,7 @@
+final unterminated = 'This string never ends
+final next = 1;
+final alsoUnterminated = "Neither does this one
+final afterwards = 2;
+final invalidEscape = '\x and \u{} and \u12';
+final lonely = '$ and ${}';
+final unformatted = a<b&&c>d;

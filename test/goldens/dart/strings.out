@@ -1,0 +1,854 @@
+final single = 'It\'s a "single" string';
+^^^^^
+source-code-dart-keyword-modifier-final
+     ^
+     source-code-dart-whitespace
+      ^^^^^^
+      source-code-dart-identifier
+            ^
+            source-code-dart-whitespace
+             ^
+             source-code-dart-keyword-operator
+              ^
+              source-code-dart-whitespace
+               ^
+               source-code-dart-literal-string-quoted-single-literal-string-quoted-single-begin
+                ^^
+                source-code-dart-literal-string-quoted-single-literal-string-unquoted
+                  ^^
+                  source-code-dart-literal-string-quoted-single-literal-string-escape
+                    ^^^^^^^^^^^^^^^^^^^
+                    source-code-dart-literal-string-quoted-single-literal-string-unquoted
+                                       ^
+                                       source-code-dart-literal-string-quoted-single-literal-string-quoted-single-end
+                                        ^
+                                        source-code-dart-punctuation
+final doubleQuoted = "It's a \"double\" string";
+^^^^^
+source-code-dart-keyword-modifier-final
+     ^
+     source-code-dart-whitespace
+      ^^^^^^^^^^^^
+      source-code-dart-identifier
+                  ^
+                  source-code-dart-whitespace
+                   ^
+                   source-code-dart-keyword-operator
+                    ^
+                    source-code-dart-whitespace
+                     ^
+                     source-code-dart-literal-string-quoted-double-literal-string-quoted-double-begin
+                      ^^^^^^^
+                      source-code-dart-literal-string-quoted-double-literal-string-unquoted
+                             ^^
+                             source-code-dart-literal-string-quoted-double-literal-string-escape
+                               ^^^^^^
+                               source-code-dart-literal-string-quoted-double-literal-string-unquoted
+                                     ^^
+                                     source-code-dart-literal-string-quoted-double-literal-string-escape
+                                       ^^^^^^^
+                                       source-code-dart-literal-string-quoted-double-literal-string-unquoted
+                                              ^
+                                              source-code-dart-literal-string-quoted-double-literal-string-quoted-double-end
+                                               ^
+                                               source-code-dart-punctuation
+final escapes = '\n\r\t\b\f\v\\ \x41 \u0041 \u{1F600} \$';
+^^^^^
+source-code-dart-keyword-modifier-final
+     ^
+     source-code-dart-whitespace
+      ^^^^^^^
+      source-code-dart-identifier
+             ^
+             source-code-dart-whitespace
+              ^
+              source-code-dart-keyword-operator
+               ^
+               source-code-dart-whitespace
+                ^
+                source-code-dart-literal-string-quoted-single-literal-string-quoted-single-begin
+                 ^^
+                 source-code-dart-literal-string-quoted-single-literal-string-escape
+                   ^^
+                   source-code-dart-literal-string-quoted-single-literal-string-escape
+                     ^^
+                     source-code-dart-literal-string-quoted-single-literal-string-escape
+                       ^^
+                       source-code-dart-literal-string-quoted-single-literal-string-escape
+                         ^^
+                         source-code-dart-literal-string-quoted-single-literal-string-escape
+                           ^^
+                           source-code-dart-literal-string-quoted-single-literal-string-escape
+                             ^^
+                             source-code-dart-literal-string-quoted-single-literal-string-escape
+                               ^
+                               source-code-dart-literal-string-quoted-single-literal-string-unquoted
+                                ^^^^
+                                source-code-dart-literal-string-quoted-single-literal-string-escape
+                                    ^
+                                    source-code-dart-literal-string-quoted-single-literal-string-unquoted
+                                     ^^^^^^
+                                     source-code-dart-literal-string-quoted-single-literal-string-escape
+                                           ^
+                                           source-code-dart-literal-string-quoted-single-literal-string-unquoted
+                                            ^^^^^^^^^
+                                            source-code-dart-literal-string-quoted-single-literal-string-escape
+                                                     ^
+                                                     source-code-dart-literal-string-quoted-single-literal-string-unquoted
+                                                      ^^
+                                                      source-code-dart-literal-string-quoted-single-literal-string-escape
+                                                        ^
+                                                        source-code-dart-literal-string-quoted-single-literal-string-quoted-single-end
+                                                         ^
+                                                         source-code-dart-punctuation
+final simple = 'Hello, $name and $_private and $first$second!';
+^^^^^
+source-code-dart-keyword-modifier-final
+     ^
+     source-code-dart-whitespace
+      ^^^^^^
+      source-code-dart-identifier
+            ^
+            source-code-dart-whitespace
+             ^
+             source-code-dart-keyword-operator
+              ^
+              source-code-dart-whitespace
+               ^
+               source-code-dart-literal-string-quoted-single-literal-string-quoted-single-begin
+                ^^^^^^^
+                source-code-dart-literal-string-quoted-single-literal-string-unquoted
+                       ^^^^^
+                       source-code-dart-literal-string-quoted-single-literal-string-interpolation
+                            ^^^^^
+                            source-code-dart-literal-string-quoted-single-literal-string-unquoted
+                                 ^^^^^^^^^
+                                 source-code-dart-literal-string-quoted-single-literal-string-interpolation
+                                          ^^^^^
+                                          source-code-dart-literal-string-quoted-single-literal-string-unquoted
+                                               ^^^^^^
+                                               source-code-dart-literal-string-quoted-single-literal-string-interpolation
+                                                     ^^^^^^^
+                                                     source-code-dart-literal-string-quoted-single-literal-string-interpolation
+                                                            ^
+                                                            source-code-dart-literal-string-quoted-single-literal-string-unquoted
+                                                             ^
+                                                             source-code-dart-literal-string-quoted-single-literal-string-quoted-single-end
+                                                              ^
+                                                              source-code-dart-punctuation
+final expression = '${user.name.toUpperCase()} has ${items.length + 1} items';
+^^^^^
+source-code-dart-keyword-modifier-final
+     ^
+     source-code-dart-whitespace
+      ^^^^^^^^^^
+      source-code-dart-identifier
+                ^
+                source-code-dart-whitespace
+                 ^
+                 source-code-dart-keyword-operator
+                  ^
+                  source-code-dart-whitespace
+                   ^
+                   source-code-dart-literal-string-quoted-single-literal-string-quoted-single-begin
+                    ^^
+                    source-code-dart-literal-string-quoted-single-literal-string-interpolation-literal-string-interpolation-begin
+                      ^^^^
+                      source-code-dart-literal-string-quoted-single-literal-string-interpolation-identifier
+                          ^
+                          source-code-dart-literal-string-quoted-single-literal-string-interpolation-punctuation-accessor
+                           ^^^^
+                           source-code-dart-literal-string-quoted-single-literal-string-interpolation-identifier
+                               ^
+                               source-code-dart-literal-string-quoted-single-literal-string-interpolation-punctuation-accessor
+                                ^^^^^^^^^^^
+                                source-code-dart-literal-string-quoted-single-literal-string-interpolation-identifier-function
+                                           ^
+                                           source-code-dart-literal-string-quoted-single-literal-string-interpolation-punctuation
+                                            ^
+                                            source-code-dart-literal-string-quoted-single-literal-string-interpolation-punctuation
+                                             ^
+                                             source-code-dart-literal-string-quoted-single-literal-string-interpolation-literal-string-interpolation-end
+                                              ^^^^^
+                                              source-code-dart-literal-string-quoted-single-literal-string-unquoted
+                                                   ^^
+                                                   source-code-dart-literal-string-quoted-single-literal-string-interpolation-literal-string-interpolation-begin
+                                                     ^^^^^
+                                                     source-code-dart-literal-string-quoted-single-literal-string-interpolation-identifier
+                                                          ^
+                                                          source-code-dart-literal-string-quoted-single-literal-string-interpolation-punctuation-accessor
+                                                           ^^^^^^
+                                                           source-code-dart-literal-string-quoted-single-literal-string-interpolation-identifier
+                                                                 ^
+                                                                 source-code-dart-literal-string-quoted-single-literal-string-interpolation-whitespace
+                                                                  ^
+                                                                  source-code-dart-literal-string-quoted-single-literal-string-interpolation-keyword-operator
+                                                                   ^
+                                                                   source-code-dart-literal-string-quoted-single-literal-string-interpolation-whitespace
+                                                                    ^
+                                                                    source-code-dart-literal-string-quoted-single-literal-string-interpolation-literal-number-integer
+                                                                     ^
+                                                                     source-code-dart-literal-string-quoted-single-literal-string-interpolation-literal-string-interpolation-end
+                                                                      ^^^^^^
+                                                                      source-code-dart-literal-string-quoted-single-literal-string-unquoted
+                                                                            ^
+                                                                            source-code-dart-literal-string-quoted-single-literal-string-quoted-single-end
+                                                                             ^
+                                                                             source-code-dart-punctuation
+final nested = '${map['key']} and ${list.map((e) => '$e').join(', ')}';
+^^^^^
+source-code-dart-keyword-modifier-final
+     ^
+     source-code-dart-whitespace
+      ^^^^^^
+      source-code-dart-identifier
+            ^
+            source-code-dart-whitespace
+             ^
+             source-code-dart-keyword-operator
+              ^
+              source-code-dart-whitespace
+               ^
+               source-code-dart-literal-string-quoted-single-literal-string-quoted-single-begin
+                ^^
+                source-code-dart-literal-string-quoted-single-literal-string-interpolation-literal-string-interpolation-begin
+                  ^^^
+                  source-code-dart-literal-string-quoted-single-literal-string-interpolation-identifier
+                     ^
+                     source-code-dart-literal-string-quoted-single-literal-string-interpolation-punctuation
+                      ^
+                      source-code-dart-literal-string-quoted-single-literal-string-interpolation-literal-string-quoted-single-literal-string-quoted-single-begin
+                       ^^^
+                       source-code-dart-literal-string-quoted-single-literal-string-interpolation-literal-string-quoted-single-literal-string-unquoted
+                          ^
+                          source-code-dart-literal-string-quoted-single-literal-string-interpolation-literal-string-quoted-single-literal-string-quoted-single-end
+                           ^
+                           source-code-dart-literal-string-quoted-single-literal-string-interpolation-punctuation
+                            ^
+                            source-code-dart-literal-string-quoted-single-literal-string-interpolation-literal-string-interpolation-end
+                             ^^^^^
+                             source-code-dart-literal-string-quoted-single-literal-string-unquoted
+                                  ^^
+                                  source-code-dart-literal-string-quoted-single-literal-string-interpolation-literal-string-interpolation-begin
+                                    ^^^^
+                                    source-code-dart-literal-string-quoted-single-literal-string-interpolation-identifier
+                                        ^
+                                        source-code-dart-literal-string-quoted-single-literal-string-interpolation-punctuation-accessor
+                                         ^^^
+                                         source-code-dart-literal-string-quoted-single-literal-string-interpolation-identifier-function
+                                            ^
+                                            source-code-dart-literal-string-quoted-single-literal-string-interpolation-punctuation
+                                             ^
+                                             source-code-dart-literal-string-quoted-single-literal-string-interpolation-punctuation
+                                              ^
+                                              source-code-dart-literal-string-quoted-single-literal-string-interpolation-identifier
+                                               ^
+                                               source-code-dart-literal-string-quoted-single-literal-string-interpolation-punctuation
+                                                ^
+                                                source-code-dart-literal-string-quoted-single-literal-string-interpolation-whitespace
+                                                 ^^
+                                                 source-code-dart-literal-string-quoted-single-literal-string-interpolation-keyword-operator
+                                                   ^
+                                                   source-code-dart-literal-string-quoted-single-literal-string-interpolation-whitespace
+                                                    ^
+                                                    source-code-dart-literal-string-quoted-single-literal-string-interpolation-literal-string-quoted-single-literal-string-quoted-single-begin
+                                                     ^^
+                                                     source-code-dart-literal-string-quoted-single-literal-string-interpolation-literal-string-quoted-single-literal-string-interpolation
+                                                       ^
+                                                       source-code-dart-literal-string-quoted-single-literal-string-interpolation-literal-string-quoted-single-literal-string-quoted-single-end
+                                                        ^
+                                                        source-code-dart-literal-string-quoted-single-literal-string-interpolation-punctuation
+                                                         ^
+                                                         source-code-dart-literal-string-quoted-single-literal-string-interpolation-punctuation-accessor
+                                                          ^^^^
+                                                          source-code-dart-literal-string-quoted-single-literal-string-interpolation-identifier-function
+                                                              ^
+                                                              source-code-dart-literal-string-quoted-single-literal-string-interpolation-punctuation
+                                                               ^
+                                                               source-code-dart-literal-string-quoted-single-literal-string-interpolation-literal-string-quoted-single-literal-string-quoted-single-begin
+                                                                ^^
+                                                                source-code-dart-literal-string-quoted-single-literal-string-interpolation-literal-string-quoted-single-literal-string-unquoted
+                                                                  ^
+                                                                  source-code-dart-literal-string-quoted-single-literal-string-interpolation-literal-string-quoted-single-literal-string-quoted-single-end
+                                                                   ^
+                                                                   source-code-dart-literal-string-quoted-single-literal-string-interpolation-punctuation
+                                                                    ^
+                                                                    source-code-dart-literal-string-quoted-single-literal-string-interpolation-literal-string-interpolation-end
+                                                                     ^
+                                                                     source-code-dart-literal-string-quoted-single-literal-string-quoted-single-end
+                                                                      ^
+                                                                      source-code-dart-punctuation
+final braces = '${{'a': 1}['a']} and ${() { return 1; }()}';
+^^^^^
+source-code-dart-keyword-modifier-final
+     ^
+     source-code-dart-whitespace
+      ^^^^^^
+      source-code-dart-identifier
+            ^
+            source-code-dart-whitespace
+             ^
+             source-code-dart-keyword-operator
+              ^
+              source-code-dart-whitespace
+               ^
+               source-code-dart-literal-string-quoted-single-literal-string-quoted-single-begin
+                ^^
+                source-code-dart-literal-string-quoted-single-literal-string-interpolation-literal-string-interpolation-begin
+                  ^
+                  source-code-dart-literal-string-quoted-single-literal-string-interpolation-punctuation
+                   ^
+                   source-code-dart-literal-string-quoted-single-literal-string-interpolation-literal-string-quoted-single-literal-string-quoted-single-begin
+                    ^
+                    source-code-dart-literal-string-quoted-single-literal-string-interpolation-literal-string-quoted-single-literal-string-unquoted
+                     ^
+                     source-code-dart-literal-string-quoted-single-literal-string-interpolation-literal-string-quoted-single-literal-string-quoted-single-end
+                      ^
+                      source-code-dart-literal-string-quoted-single-literal-string-interpolation-punctuation-separator
+                       ^
+                       source-code-dart-literal-string-quoted-single-literal-string-interpolation-whitespace
+                        ^
+                        source-code-dart-literal-string-quoted-single-literal-string-interpolation-literal-number-integer
+                         ^
+                         source-code-dart-literal-string-quoted-single-literal-string-interpolation-punctuation
+                          ^
+                          source-code-dart-literal-string-quoted-single-literal-string-interpolation-punctuation
+                           ^
+                           source-code-dart-literal-string-quoted-single-literal-string-interpolation-literal-string-quoted-single-literal-string-quoted-single-begin
+                            ^
+                            source-code-dart-literal-string-quoted-single-literal-string-interpolation-literal-string-quoted-single-literal-string-unquoted
+                             ^
+                             source-code-dart-literal-string-quoted-single-literal-string-interpolation-literal-string-quoted-single-literal-string-quoted-single-end
+                              ^
+                              source-code-dart-literal-string-quoted-single-literal-string-interpolation-punctuation
+                               ^
+                               source-code-dart-literal-string-quoted-single-literal-string-interpolation-literal-string-interpolation-end
+                                ^^^^^
+                                source-code-dart-literal-string-quoted-single-literal-string-unquoted
+                                     ^^
+                                     source-code-dart-literal-string-quoted-single-literal-string-interpolation-literal-string-interpolation-begin
+                                       ^
+                                       source-code-dart-literal-string-quoted-single-literal-string-interpolation-punctuation
+                                        ^
+                                        source-code-dart-literal-string-quoted-single-literal-string-interpolation-punctuation
+                                         ^
+                                         source-code-dart-literal-string-quoted-single-literal-string-interpolation-whitespace
+                                          ^
+                                          source-code-dart-literal-string-quoted-single-literal-string-interpolation-punctuation
+                                           ^
+                                           source-code-dart-literal-string-quoted-single-literal-string-interpolation-whitespace
+                                            ^^^^^^
+                                            source-code-dart-literal-string-quoted-single-literal-string-interpolation-keyword-control-return
+                                                  ^
+                                                  source-code-dart-literal-string-quoted-single-literal-string-interpolation-whitespace
+                                                   ^
+                                                   source-code-dart-literal-string-quoted-single-literal-string-interpolation-literal-number-integer
+                                                    ^
+                                                    source-code-dart-literal-string-quoted-single-literal-string-interpolation-punctuation
+                                                     ^
+                                                     source-code-dart-literal-string-quoted-single-literal-string-interpolation-whitespace
+                                                      ^
+                                                      source-code-dart-literal-string-quoted-single-literal-string-interpolation-punctuation
+                                                       ^
+                                                       source-code-dart-literal-string-quoted-single-literal-string-interpolation-punctuation
+                                                        ^
+                                                        source-code-dart-literal-string-quoted-single-literal-string-interpolation-punctuation
+                                                         ^
+                                                         source-code-dart-literal-string-quoted-single-literal-string-interpolation-literal-string-interpolation-end
+                                                          ^
+                                                          source-code-dart-literal-string-quoted-single-literal-string-quoted-single-end
+                                                           ^
+                                                           source-code-dart-punctuation
+final raw = r'Not $interpolated or \n escaped';
+^^^^^
+source-code-dart-keyword-modifier-final
+     ^
+     source-code-dart-whitespace
+      ^^^
+      source-code-dart-identifier
+         ^
+         source-code-dart-whitespace
+          ^
+          source-code-dart-keyword-operator
+           ^
+           source-code-dart-whitespace
+            ^^
+            source-code-dart-literal-string-quoted-single-literal-string-quoted-single-begin
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+              source-code-dart-literal-string-quoted-single-literal-string-unquoted
+                                             ^
+                                             source-code-dart-literal-string-quoted-single-literal-string-quoted-single-end
+                                              ^
+                                              source-code-dart-punctuation
+final rawDouble = r"C:\path\to\file";
+^^^^^
+source-code-dart-keyword-modifier-final
+     ^
+     source-code-dart-whitespace
+      ^^^^^^^^^
+      source-code-dart-identifier
+               ^
+               source-code-dart-whitespace
+                ^
+                source-code-dart-keyword-operator
+                 ^
+                 source-code-dart-whitespace
+                  ^^
+                  source-code-dart-literal-string-quoted-double-literal-string-quoted-double-begin
+                    ^^^^^^^^^^^^^^^
+                    source-code-dart-literal-string-quoted-double-literal-string-unquoted
+                                   ^
+                                   source-code-dart-literal-string-quoted-double-literal-string-quoted-double-end
+                                    ^
+                                    source-code-dart-punctuation
+final multiline = '''
+^^^^^
+source-code-dart-keyword-modifier-final
+     ^
+     source-code-dart-whitespace
+      ^^^^^^^^^
+      source-code-dart-identifier
+               ^
+               source-code-dart-whitespace
+                ^
+                source-code-dart-keyword-operator
+                 ^
+                 source-code-dart-whitespace
+                  ^^^
+                  source-code-dart-literal-string-quoted-triple-literal-string-quoted-triple-begin
+  Multi-line with 'quotes' and "quotes" and $interpolation
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+source-code-dart-literal-string-quoted-triple-literal-string-unquoted
+                                            ^^^^^^^^^^^^^^
+                                            source-code-dart-literal-string-quoted-triple-literal-string-interpolation
+  and ${expression} and an escaped \''' delimiter.
+^^^^^^
+source-code-dart-literal-string-quoted-triple-literal-string-unquoted
+      ^^
+      source-code-dart-literal-string-quoted-triple-literal-string-interpolation-literal-string-interpolation-begin
+        ^^^^^^^^^^
+        source-code-dart-literal-string-quoted-triple-literal-string-interpolation-identifier
+                  ^
+                  source-code-dart-literal-string-quoted-triple-literal-string-interpolation-literal-string-interpolation-end
+                   ^^^^^^^^^^^^^^^^
+                   source-code-dart-literal-string-quoted-triple-literal-string-unquoted
+                                   ^^
+                                   source-code-dart-literal-string-quoted-triple-literal-string-escape
+                                     ^^^^^^^^^^^^^
+                                     source-code-dart-literal-string-quoted-triple-literal-string-unquoted
+''';
+^^^
+source-code-dart-literal-string-quoted-triple-literal-string-quoted-triple-end
+   ^
+   source-code-dart-punctuation
+final rawMultiline = r"""
+^^^^^
+source-code-dart-keyword-modifier-final
+     ^
+     source-code-dart-whitespace
+      ^^^^^^^^^^^^
+      source-code-dart-identifier
+                  ^
+                  source-code-dart-whitespace
+                   ^
+                   source-code-dart-keyword-operator
+                    ^
+                    source-code-dart-whitespace
+                     ^^^^
+                     source-code-dart-literal-string-quoted-triple-literal-string-quoted-triple-begin
+  Raw with $dollar and \backslash.
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+source-code-dart-literal-string-quoted-triple-literal-string-unquoted
+""";
+^^^
+source-code-dart-literal-string-quoted-triple-literal-string-quoted-triple-end
+   ^
+   source-code-dart-punctuation
+final adjacent = 'one ' "two " '''three''';
+^^^^^
+source-code-dart-keyword-modifier-final
+     ^
+     source-code-dart-whitespace
+      ^^^^^^^^
+      source-code-dart-identifier
+              ^
+              source-code-dart-whitespace
+               ^
+               source-code-dart-keyword-operator
+                ^
+                source-code-dart-whitespace
+                 ^
+                 source-code-dart-literal-string-quoted-single-literal-string-quoted-single-begin
+                  ^^^^
+                  source-code-dart-literal-string-quoted-single-literal-string-unquoted
+                      ^
+                      source-code-dart-literal-string-quoted-single-literal-string-quoted-single-end
+                       ^
+                       source-code-dart-whitespace
+                        ^
+                        source-code-dart-literal-string-quoted-double-literal-string-quoted-double-begin
+                         ^^^^
+                         source-code-dart-literal-string-quoted-double-literal-string-unquoted
+                             ^
+                             source-code-dart-literal-string-quoted-double-literal-string-quoted-double-end
+                              ^
+                              source-code-dart-whitespace
+                               ^^^
+                               source-code-dart-literal-string-quoted-triple-literal-string-quoted-triple-begin
+                                  ^^^^^
+                                  source-code-dart-literal-string-quoted-triple-literal-string-unquoted
+                                       ^^^
+                                       source-code-dart-literal-string-quoted-triple-literal-string-quoted-triple-end
+                                          ^
+                                          source-code-dart-punctuation
+final empty = '' + "" + '''''' + r'';
+^^^^^
+source-code-dart-keyword-modifier-final
+     ^
+     source-code-dart-whitespace
+      ^^^^^
+      source-code-dart-identifier
+           ^
+           source-code-dart-whitespace
+            ^
+            source-code-dart-keyword-operator
+             ^
+             source-code-dart-whitespace
+              ^
+              source-code-dart-literal-string-quoted-single-literal-string-quoted-single-begin
+               ^
+               source-code-dart-literal-string-quoted-single-literal-string-quoted-single-end
+                ^
+                source-code-dart-whitespace
+                 ^
+                 source-code-dart-keyword-operator
+                  ^
+                  source-code-dart-whitespace
+                   ^
+                   source-code-dart-literal-string-quoted-double-literal-string-quoted-double-begin
+                    ^
+                    source-code-dart-literal-string-quoted-double-literal-string-quoted-double-end
+                     ^
+                     source-code-dart-whitespace
+                      ^
+                      source-code-dart-keyword-operator
+                       ^
+                       source-code-dart-whitespace
+                        ^^^
+                        source-code-dart-literal-string-quoted-triple-literal-string-quoted-triple-begin
+                           ^^^
+                           source-code-dart-literal-string-quoted-triple-literal-string-quoted-triple-end
+                              ^
+                              source-code-dart-whitespace
+                               ^
+                               source-code-dart-keyword-operator
+                                ^
+                                source-code-dart-whitespace
+                                 ^^
+                                 source-code-dart-literal-string-quoted-single-literal-string-quoted-single-begin
+                                   ^
+                                   source-code-dart-literal-string-quoted-single-literal-string-quoted-single-end
+                                    ^
+                                    source-code-dart-punctuation
+final dollar = 'Costs $5 or ${price}';
+^^^^^
+source-code-dart-keyword-modifier-final
+     ^
+     source-code-dart-whitespace
+      ^^^^^^
+      source-code-dart-identifier
+            ^
+            source-code-dart-whitespace
+             ^
+             source-code-dart-keyword-operator
+              ^
+              source-code-dart-whitespace
+               ^
+               source-code-dart-literal-string-quoted-single-literal-string-quoted-single-begin
+                ^^^^^^
+                source-code-dart-literal-string-quoted-single-literal-string-unquoted
+                      ^
+                      source-code-dart-literal-string-quoted-single-literal-string-unquoted
+                       ^^^^^
+                       source-code-dart-literal-string-quoted-single-literal-string-unquoted
+                            ^^
+                            source-code-dart-literal-string-quoted-single-literal-string-interpolation-literal-string-interpolation-begin
+                              ^^^^^
+                              source-code-dart-literal-string-quoted-single-literal-string-interpolation-identifier
+                                   ^
+                                   source-code-dart-literal-string-quoted-single-literal-string-interpolation-literal-string-interpolation-end
+                                    ^
+                                    source-code-dart-literal-string-quoted-single-literal-string-quoted-single-end
+                                     ^
+                                     source-code-dart-punctuation
+final closure = '[${items.map((item) {
+^^^^^
+source-code-dart-keyword-modifier-final
+     ^
+     source-code-dart-whitespace
+      ^^^^^^^
+      source-code-dart-identifier
+             ^
+             source-code-dart-whitespace
+              ^
+              source-code-dart-keyword-operator
+               ^
+               source-code-dart-whitespace
+                ^
+                source-code-dart-literal-string-quoted-single-literal-string-quoted-single-begin
+                 ^
+                 source-code-dart-literal-string-quoted-single-literal-string-unquoted
+                  ^^
+                  source-code-dart-literal-string-quoted-single-literal-string-interpolation-literal-string-interpolation-begin
+                    ^^^^^
+                    source-code-dart-literal-string-quoted-single-literal-string-interpolation-identifier
+                         ^
+                         source-code-dart-literal-string-quoted-single-literal-string-interpolation-punctuation-accessor
+                          ^^^
+                          source-code-dart-literal-string-quoted-single-literal-string-interpolation-identifier-function
+                             ^
+                             source-code-dart-literal-string-quoted-single-literal-string-interpolation-punctuation
+                              ^
+                              source-code-dart-literal-string-quoted-single-literal-string-interpolation-punctuation
+                               ^^^^
+                               source-code-dart-literal-string-quoted-single-literal-string-interpolation-identifier
+                                   ^
+                                   source-code-dart-literal-string-quoted-single-literal-string-interpolation-punctuation
+                                    ^
+                                    source-code-dart-literal-string-quoted-single-literal-string-interpolation-whitespace
+                                     ^
+                                     source-code-dart-literal-string-quoted-single-literal-string-interpolation-punctuation
+  return item.name;
+^^
+source-code-dart-literal-string-quoted-single-literal-string-interpolation-whitespace
+  ^^^^^^
+  source-code-dart-literal-string-quoted-single-literal-string-interpolation-keyword-control-return
+        ^
+        source-code-dart-literal-string-quoted-single-literal-string-interpolation-whitespace
+         ^^^^
+         source-code-dart-literal-string-quoted-single-literal-string-interpolation-identifier
+             ^
+             source-code-dart-literal-string-quoted-single-literal-string-interpolation-punctuation-accessor
+              ^^^^
+              source-code-dart-literal-string-quoted-single-literal-string-interpolation-identifier
+                  ^
+                  source-code-dart-literal-string-quoted-single-literal-string-interpolation-punctuation
+}).join(', ')}]';
+^
+source-code-dart-literal-string-quoted-single-literal-string-interpolation-punctuation
+ ^
+ source-code-dart-literal-string-quoted-single-literal-string-interpolation-punctuation
+  ^
+  source-code-dart-literal-string-quoted-single-literal-string-interpolation-punctuation-accessor
+   ^^^^
+   source-code-dart-literal-string-quoted-single-literal-string-interpolation-identifier-function
+       ^
+       source-code-dart-literal-string-quoted-single-literal-string-interpolation-punctuation
+        ^
+        source-code-dart-literal-string-quoted-single-literal-string-interpolation-literal-string-quoted-single-literal-string-quoted-single-begin
+         ^^
+         source-code-dart-literal-string-quoted-single-literal-string-interpolation-literal-string-quoted-single-literal-string-unquoted
+           ^
+           source-code-dart-literal-string-quoted-single-literal-string-interpolation-literal-string-quoted-single-literal-string-quoted-single-end
+            ^
+            source-code-dart-literal-string-quoted-single-literal-string-interpolation-punctuation
+             ^
+             source-code-dart-literal-string-quoted-single-literal-string-interpolation-literal-string-interpolation-end
+              ^
+              source-code-dart-literal-string-quoted-single-literal-string-unquoted
+               ^
+               source-code-dart-literal-string-quoted-single-literal-string-quoted-single-end
+                ^
+                source-code-dart-punctuation
+final multilineExpression = 'Hello ${
+^^^^^
+source-code-dart-keyword-modifier-final
+     ^
+     source-code-dart-whitespace
+      ^^^^^^^^^^^^^^^^^^^
+      source-code-dart-identifier
+                         ^
+                         source-code-dart-whitespace
+                          ^
+                          source-code-dart-keyword-operator
+                           ^
+                           source-code-dart-whitespace
+                            ^
+                            source-code-dart-literal-string-quoted-single-literal-string-quoted-single-begin
+                             ^^^^^^
+                             source-code-dart-literal-string-quoted-single-literal-string-unquoted
+                                   ^^
+                                   source-code-dart-literal-string-quoted-single-literal-string-interpolation-literal-string-interpolation-begin
+  123
+^^
+source-code-dart-literal-string-quoted-single-literal-string-interpolation-whitespace
+  ^^^
+  source-code-dart-literal-string-quoted-single-literal-string-interpolation-literal-number-integer
+} world'; print(multilineExpression);
+^
+source-code-dart-literal-string-quoted-single-literal-string-interpolation-literal-string-interpolation-end
+ ^^^^^^
+ source-code-dart-literal-string-quoted-single-literal-string-unquoted
+       ^
+       source-code-dart-literal-string-quoted-single-literal-string-quoted-single-end
+        ^
+        source-code-dart-punctuation
+         ^
+         source-code-dart-whitespace
+          ^^^^^
+          source-code-dart-identifier-function
+               ^
+               source-code-dart-punctuation
+                ^^^^^^^^^^^^^^^^^^^
+                source-code-dart-identifier
+                                   ^
+                                   source-code-dart-punctuation
+                                    ^
+                                    source-code-dart-punctuation
+final multilineDoubleExpression = "Hello ${
+^^^^^
+source-code-dart-keyword-modifier-final
+     ^
+     source-code-dart-whitespace
+      ^^^^^^^^^^^^^^^^^^^^^^^^^
+      source-code-dart-identifier
+                               ^
+                               source-code-dart-whitespace
+                                ^
+                                source-code-dart-keyword-operator
+                                 ^
+                                 source-code-dart-whitespace
+                                  ^
+                                  source-code-dart-literal-string-quoted-double-literal-string-quoted-double-begin
+                                   ^^^^^^
+                                   source-code-dart-literal-string-quoted-double-literal-string-unquoted
+                                         ^^
+                                         source-code-dart-literal-string-quoted-double-literal-string-interpolation-literal-string-interpolation-begin
+  123
+^^
+source-code-dart-literal-string-quoted-double-literal-string-interpolation-whitespace
+  ^^^
+  source-code-dart-literal-string-quoted-double-literal-string-interpolation-literal-number-integer
+} world"; print(multilineDoubleExpression);
+^
+source-code-dart-literal-string-quoted-double-literal-string-interpolation-literal-string-interpolation-end
+ ^^^^^^
+ source-code-dart-literal-string-quoted-double-literal-string-unquoted
+       ^
+       source-code-dart-literal-string-quoted-double-literal-string-quoted-double-end
+        ^
+        source-code-dart-punctuation
+         ^
+         source-code-dart-whitespace
+          ^^^^^
+          source-code-dart-identifier-function
+               ^
+               source-code-dart-punctuation
+                ^^^^^^^^^^^^^^^^^^^^^^^^^
+                source-code-dart-identifier
+                                         ^
+                                         source-code-dart-punctuation
+                                          ^
+                                          source-code-dart-punctuation
+final nestedTripleSingle = '''${'''inner'''.toUpperCase()} tail'''; print(nestedTripleSingle);
+^^^^^
+source-code-dart-keyword-modifier-final
+     ^
+     source-code-dart-whitespace
+      ^^^^^^^^^^^^^^^^^^
+      source-code-dart-identifier
+                        ^
+                        source-code-dart-whitespace
+                         ^
+                         source-code-dart-keyword-operator
+                          ^
+                          source-code-dart-whitespace
+                           ^^^
+                           source-code-dart-literal-string-quoted-triple-literal-string-quoted-triple-begin
+                              ^^
+                              source-code-dart-literal-string-quoted-triple-literal-string-interpolation-literal-string-interpolation-begin
+                                ^^^
+                                source-code-dart-literal-string-quoted-triple-literal-string-interpolation-literal-string-quoted-triple-literal-string-quoted-triple-begin
+                                   ^^^^^
+                                   source-code-dart-literal-string-quoted-triple-literal-string-interpolation-literal-string-quoted-triple-literal-string-unquoted
+                                        ^^^
+                                        source-code-dart-literal-string-quoted-triple-literal-string-interpolation-literal-string-quoted-triple-literal-string-quoted-triple-end
+                                           ^
+                                           source-code-dart-literal-string-quoted-triple-literal-string-interpolation-punctuation-accessor
+                                            ^^^^^^^^^^^
+                                            source-code-dart-literal-string-quoted-triple-literal-string-interpolation-identifier-function
+                                                       ^
+                                                       source-code-dart-literal-string-quoted-triple-literal-string-interpolation-punctuation
+                                                        ^
+                                                        source-code-dart-literal-string-quoted-triple-literal-string-interpolation-punctuation
+                                                         ^
+                                                         source-code-dart-literal-string-quoted-triple-literal-string-interpolation-literal-string-interpolation-end
+                                                          ^^^^^
+                                                          source-code-dart-literal-string-quoted-triple-literal-string-unquoted
+                                                               ^^^
+                                                               source-code-dart-literal-string-quoted-triple-literal-string-quoted-triple-end
+                                                                  ^
+                                                                  source-code-dart-punctuation
+                                                                   ^
+                                                                   source-code-dart-whitespace
+                                                                    ^^^^^
+                                                                    source-code-dart-identifier-function
+                                                                         ^
+                                                                         source-code-dart-punctuation
+                                                                          ^^^^^^^^^^^^^^^^^^
+                                                                          source-code-dart-identifier
+                                                                                            ^
+                                                                                            source-code-dart-punctuation
+                                                                                             ^
+                                                                                             source-code-dart-punctuation
+final nestedTripleDouble = """${"""inner""".toUpperCase()} tail"""; print(nestedTripleDouble);
+^^^^^
+source-code-dart-keyword-modifier-final
+     ^
+     source-code-dart-whitespace
+      ^^^^^^^^^^^^^^^^^^
+      source-code-dart-identifier
+                        ^
+                        source-code-dart-whitespace
+                         ^
+                         source-code-dart-keyword-operator
+                          ^
+                          source-code-dart-whitespace
+                           ^^^
+                           source-code-dart-literal-string-quoted-triple-literal-string-quoted-triple-begin
+                              ^^
+                              source-code-dart-literal-string-quoted-triple-literal-string-interpolation-literal-string-interpolation-begin
+                                ^^^
+                                source-code-dart-literal-string-quoted-triple-literal-string-interpolation-literal-string-quoted-triple-literal-string-quoted-triple-begin
+                                   ^^^^^
+                                   source-code-dart-literal-string-quoted-triple-literal-string-interpolation-literal-string-quoted-triple-literal-string-unquoted
+                                        ^^^
+                                        source-code-dart-literal-string-quoted-triple-literal-string-interpolation-literal-string-quoted-triple-literal-string-quoted-triple-end
+                                           ^
+                                           source-code-dart-literal-string-quoted-triple-literal-string-interpolation-punctuation-accessor
+                                            ^^^^^^^^^^^
+                                            source-code-dart-literal-string-quoted-triple-literal-string-interpolation-identifier-function
+                                                       ^
+                                                       source-code-dart-literal-string-quoted-triple-literal-string-interpolation-punctuation
+                                                        ^
+                                                        source-code-dart-literal-string-quoted-triple-literal-string-interpolation-punctuation
+                                                         ^
+                                                         source-code-dart-literal-string-quoted-triple-literal-string-interpolation-literal-string-interpolation-end
+                                                          ^^^^^
+                                                          source-code-dart-literal-string-quoted-triple-literal-string-unquoted
+                                                               ^^^
+                                                               source-code-dart-literal-string-quoted-triple-literal-string-quoted-triple-end
+                                                                  ^
+                                                                  source-code-dart-punctuation
+                                                                   ^
+                                                                   source-code-dart-whitespace
+                                                                    ^^^^^
+                                                                    source-code-dart-identifier-function
+                                                                         ^
+                                                                         source-code-dart-punctuation
+                                                                          ^^^^^^^^^^^^^^^^^^
+                                                                          source-code-dart-identifier
+                                                                                            ^
+                                                                                            source-code-dart-punctuation
+                                                                                             ^
+                                                                                             source-code-dart-punctuation

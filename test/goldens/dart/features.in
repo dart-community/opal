@@ -1,0 +1,67 @@
+import 'dart:async' as async show Future, Stream hide Timer;
+import 'package:foo/foo.dart'
+    show
+        Bar,
+        Baz;
+export 'src/foo.dart';
+part 'bar.dart';
+part of 'baz.dart';
+
+@override
+@JsonKey(name: 'id')
+@pkg.Annotation.named()
+sealed class Shape {}
+
+final class Circle extends Shape with Mixin implements Comparable<Circle> {
+  Circle(this.radius) : super();
+
+  factory Circle.unit() => Circle(1);
+
+  final double radius;
+
+  double get area => radius * radius;
+  set area(double value) {}
+
+  bool operator ==(Object other) => other is Circle && other.radius == radius;
+}
+
+base mixin class Mixin {}
+abstract interface class Interface {}
+
+extension type const Id._(int value) implements Object {}
+extension StringExtension on String {}
+
+typedef Callback<T> = void Function(T value);
+
+Future<void> process(List<Map<String, List<int>>> data) async {
+  late final int count;
+  await for (final item in stream) {
+    yield* other;
+  }
+  outer:
+  for (var i = 0; i < 10; i++) {
+    if (i > 5) break outer;
+    continue outer;
+  }
+  final result = switch (shape) {
+    Circle(radius: final r) when r > 0 => r,
+    Circle() => 0,
+    _ => -1,
+  };
+  final Color color = .red;
+  final list = [?maybeNull, ...items, ...?other];
+}
+
+void contextualNames() {
+  final response = await http.get(uri);
+  final copy = List.of(items, growable: false);
+  when(mock.method()).thenReturn(null);
+  on<Event>((event, emit) {});
+  final show = true;
+  final type = node.type;
+  dialog.show(context);
+  final library = element.library;
+  final operator = token.operator;
+  foo(required: true, async: false);
+  print(this.value + super.value);
+}

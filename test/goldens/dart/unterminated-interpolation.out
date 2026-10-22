@@ -1,0 +1,40 @@
+final interpolation = '${value';
+^^^^^
+source-code-dart-keyword-modifier-final
+     ^
+     source-code-dart-whitespace
+      ^^^^^^^^^^^^^
+      source-code-dart-identifier
+                   ^
+                   source-code-dart-whitespace
+                    ^
+                    source-code-dart-keyword-operator
+                     ^
+                     source-code-dart-whitespace
+                      ^
+                      source-code-dart-literal-string-quoted-single-literal-string-quoted-single-begin
+                       ^^
+                       source-code-dart-literal-string-quoted-single-literal-string-interpolation-literal-string-interpolation-begin
+                         ^^^^^
+                         source-code-dart-literal-string-quoted-single-literal-string-interpolation-identifier
+                              ^
+                              source-code-dart-literal-string-quoted-single-literal-string-interpolation-literal-string-quoted-single-literal-string-quoted-single-begin
+                               ^
+                               source-code-dart-literal-string-quoted-single-literal-string-interpolation-literal-string-quoted-single-literal-string-unquoted
+final trailing = 3;
+^^^^^
+source-code-dart-literal-string-quoted-single-literal-string-interpolation-keyword-modifier-final
+     ^
+     source-code-dart-literal-string-quoted-single-literal-string-interpolation-whitespace
+      ^^^^^^^^
+      source-code-dart-literal-string-quoted-single-literal-string-interpolation-identifier
+              ^
+              source-code-dart-literal-string-quoted-single-literal-string-interpolation-whitespace
+               ^
+               source-code-dart-literal-string-quoted-single-literal-string-interpolation-keyword-operator
+                ^
+                source-code-dart-literal-string-quoted-single-literal-string-interpolation-whitespace
+                 ^
+                 source-code-dart-literal-string-quoted-single-literal-string-interpolation-literal-number-integer
+                  ^
+                  source-code-dart-literal-string-quoted-single-literal-string-interpolation-punctuation

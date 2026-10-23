@@ -1,14 +1,8 @@
 ## 0.2.7-wip
 
 - Add support for TOML 1.1 (`toml`).
-- Add support for textual LLVM IR (`llvm`, `ll`, `llvm-ir`),
-  including metadata, debug records, and common older syntax.
-- Improve the accuracy of `dart` highlighting, including for
-  doc comments, string interpolation, contextual keywords, and generics.
-- Recover from unterminated `dart` strings at the end of their line.
-- Handle nested block comments and multi-line raw strings in `dart`.
-- Use more specific tags for `dart` keywords, strings, and numbers.
-- Improve the performance of `dart` tokenization.
+- Add support for textual LLVM IR (`llvm`, `ll`, `llvm-ir`).
+- Improve the accuracy and performance of `dart` highlighting.
 
 ## 0.2.6
 

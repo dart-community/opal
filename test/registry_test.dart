@@ -62,6 +62,16 @@ void main() {
         expect(BuiltInLanguages.all, contains(BuiltInLanguages.mermaid));
       });
 
+      test('includes llvm language and fallbacks', () {
+        for (final name in ['llvm', 'll', 'llvm-ir', 'LLVM', ' LL ']) {
+          expect(registry[name], same(BuiltInLanguages.llvm));
+        }
+        expect(BuiltInLanguages.llvm.name, 'llvm');
+        expect(BuiltInLanguages.all, contains(BuiltInLanguages.llvm));
+        expect(registry['bc'], isNull);
+        expect(registry['bitcode'], isNull);
+      });
+
       test('returns null for unknown language', () {
         expect(registry['unknown'], isNull);
         expect(registry['perl'], isNull);

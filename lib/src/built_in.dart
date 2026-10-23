@@ -16,6 +16,7 @@ import 'language/java.dart';
 import 'language/js.dart';
 import 'language/json.dart';
 import 'language/kotlin.dart';
+import 'language/llvm.dart';
 import 'language/markdown.dart';
 import 'language/mermaid.dart';
 import 'language/objective_c.dart';
@@ -50,6 +51,7 @@ abstract final class BuiltInLanguages {
     js,
     json,
     kotlin,
+    llvm,
     markdown,
     mermaid,
     python,
@@ -170,6 +172,13 @@ abstract final class BuiltInLanguages {
     name: 'kotlin',
     grammar: const KotlinGrammar(),
     baseTag: const Tag('kotlin', parent: Tags.codeSource),
+  );
+
+  /// A tokenizing language implementation for textual LLVM IR (`.ll`).
+  static final Language llvm = MatcherLanguage(
+    name: 'llvm',
+    grammar: const LlvmGrammar(),
+    baseTag: const Tag('llvm', parent: Tags.codeSource),
   );
 
   /// A tokenizing language implementation for Markdown.

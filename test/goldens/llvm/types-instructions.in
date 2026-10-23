@@ -1,0 +1,19 @@
+%Types = type { i1, i123, b8, half, bfloat, float, double, x86_fp80, fp128, ppc_fp128, x86_amx, token, metadata, ptr }
+%Vectors = type { [4 x i8], <2 x float>, <vscale x 4 x i32>, <{ i8, ptr }> }
+%Extension = type target("spirv.Image", void, 1, 0)
+%a = alloca i32, align 4
+%b = getelementptr inbounds nusw i32, ptr %a, i64 1
+%c = load atomic volatile i32, ptr %a syncscope("singlethread") acquire, align 4
+%d = atomicrmw add ptr %a, i32 1 acq_rel
+%e = cmpxchg weak ptr %a, i32 0, i32 1 seq_cst monotonic
+%f = fadd fast float 1.0, 2.0
+%g = fcmp uno float %f, 0.0
+%h = freeze i32 poison
+%i = select i1 true, i32 undef, i32 0
+%j = ptrtoaddr ptr %a to i64
+%k = extractelement <2 x i32> splat (i32 1), i32 0
+fence syncscope("system") seq_cst
+invoke void @f() to label %normal unwind label %exception
+%pad = landingpad { ptr, i32 } cleanup catch ptr null
+catchswitch within none [label %handler] unwind to caller
+unreachable

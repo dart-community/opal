@@ -1,0 +1,20 @@
+!llvm.module.flags = !{!0}
+!escaped\20name = !{!"text", i32 1, ptr @global}
+!0 = !{i32 2, !"Debug Info Version", i32 3}
+!1 = distinct !DICompileUnit(
+  language: DW_LANG_C,
+  file: !DIFile(filename: "demo.c", directory: "."),
+  producer: "opal", isOptimized: false,
+  emissionKind: FullDebug)
+!2 = !DIBasicType(name: "int", size: 32, encoding: DW_ATE_signed)
+!3 = !DISubprogram(name: "f", flags: DIFlagPrototyped | DIFlagPublic,
+  spFlags: DISPFlagDefinition, unit: !1)
+!4 = !DIExpression(DW_OP_LLVM_fragment, 0, 32)
+!5 = !DIFile(filename: "demo.c", directory: ".", checksumkind: CSK_MD5)
+#dbg_value(i32 %x, !2, !DIExpression(), !6)
+#dbg_declare(ptr %p, !2, !DIExpression(), !6)
+#dbg_assign(i32 %x, !2, !DIExpression(), !7, ptr %p, !DIExpression(), !6)
+#dbg_label(!8, !6)
+#dbg_declare_value(i32 %x, !2, !DIExpression(), !6)
+entry:
+  %x = add i32 1, 2, !dbg !6

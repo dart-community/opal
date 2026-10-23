@@ -1,0 +1,182 @@
+0x 0xH u0x f0x 0xG123 123abc 1.2e 1.2e- i32suffix
+^^
+source-code-llvm-identifier
+  ^
+  source-code-llvm-whitespace
+   ^^^
+   source-code-llvm-identifier
+      ^
+      source-code-llvm-whitespace
+       ^^^
+       source-code-llvm-keyword-modifier
+          ^
+          source-code-llvm-whitespace
+           ^^^
+           source-code-llvm-keyword-modifier
+              ^
+              source-code-llvm-whitespace
+               ^^^^^^
+               source-code-llvm-identifier
+                     ^
+                     source-code-llvm-whitespace
+                      ^^^^^^
+                      source-code-llvm-identifier
+                            ^
+                            source-code-llvm-whitespace
+                             ^^^^
+                             source-code-llvm-identifier
+                                 ^
+                                 source-code-llvm-whitespace
+                                  ^^^^^
+                                  source-code-llvm-identifier
+                                       ^
+                                       source-code-llvm-whitespace
+                                        ^^^^^^^^^
+                                        source-code-llvm-keyword-modifier
+s0x u0xG s0x12G 0x1.fp 0x1.fp- 0x1.2 0x1.fp3suffix
+^^^
+source-code-llvm-keyword-modifier
+   ^
+   source-code-llvm-whitespace
+    ^^^^
+    source-code-llvm-keyword-modifier
+        ^
+        source-code-llvm-whitespace
+         ^^^^^^
+         source-code-llvm-keyword-modifier
+               ^
+               source-code-llvm-whitespace
+                ^^^^^^
+                source-code-llvm-identifier
+                      ^
+                      source-code-llvm-whitespace
+                       ^^^^^^^
+                       source-code-llvm-identifier
+                              ^
+                              source-code-llvm-whitespace
+                               ^^^^^
+                               source-code-llvm-identifier
+                                    ^
+                                    source-code-llvm-whitespace
+                                     ^^^^^^^^^^^^^
+                                     source-code-llvm-identifier
+% @ ! # ^ $ \ ?
+^
+source-code-llvm-unknown
+ ^
+ source-code-llvm-whitespace
+  ^
+  source-code-llvm-unknown
+   ^
+   source-code-llvm-whitespace
+    ^
+    source-code-llvm-metadata
+     ^
+     source-code-llvm-whitespace
+      ^
+      source-code-llvm-unknown
+       ^
+       source-code-llvm-whitespace
+        ^
+        source-code-llvm-unknown
+         ^
+         source-code-llvm-whitespace
+          ^
+          source-code-llvm-identifier
+           ^
+           source-code-llvm-whitespace
+            ^
+            source-code-llvm-unknown
+             ^
+             source-code-llvm-whitespace
+              ^
+              source-code-llvm-unknown
+@still_a_name = future_instruction i32 1
+^^^^^^^^^^^^^
+source-code-llvm-identifier-variable
+             ^
+             source-code-llvm-whitespace
+              ^
+              source-code-llvm-keyword-operator
+               ^
+               source-code-llvm-whitespace
+                ^^^^^^^^^^^^^^^^^^
+                source-code-llvm-keyword-modifier
+                                  ^
+                                  source-code-llvm-whitespace
+                                   ^^^
+                                   source-code-llvm-identifier-type-built-in
+                                      ^
+                                      source-code-llvm-whitespace
+                                       ^
+                                       source-code-llvm-literal-number-integer
+"bad\qescape\" ret void
+^
+source-code-llvm-literal-string-quoted-double-literal-string-quoted-double-begin
+ ^^^
+ source-code-llvm-literal-string-quoted-double-literal-string-unquoted
+    ^
+    source-code-llvm-literal-string-quoted-double-literal-string-unquoted
+     ^^^^^^^
+     source-code-llvm-literal-string-quoted-double-literal-string-unquoted
+            ^
+            source-code-llvm-literal-string-quoted-double-literal-string-unquoted
+             ^
+             source-code-llvm-literal-string-quoted-double-literal-string-quoted-double-end
+              ^
+              source-code-llvm-whitespace
+               ^^^
+               source-code-llvm-keyword-control
+                  ^
+                  source-code-llvm-whitespace
+                   ^^^^
+                   source-code-llvm-identifier-type-built-in
+!0 = !DIFile(filename: "closed")
+^^
+source-code-llvm-metadata
+  ^
+  source-code-llvm-whitespace
+   ^
+   source-code-llvm-keyword-operator
+    ^
+    source-code-llvm-whitespace
+     ^^^^^^^
+     source-code-llvm-metadata
+            ^
+            source-code-llvm-punctuation
+             ^^^^^^^^
+             source-code-llvm-identifier-property
+                     ^
+                     source-code-llvm-punctuation
+                      ^
+                      source-code-llvm-whitespace
+                       ^
+                       source-code-llvm-literal-string-quoted-double-literal-string-quoted-double-begin
+                        ^^^^^^
+                        source-code-llvm-literal-string-quoted-double-literal-string-unquoted
+                              ^
+                              source-code-llvm-literal-string-quoted-double-literal-string-quoted-double-end
+                               ^
+                               source-code-llvm-punctuation
+entry:
+^^^^^
+source-code-llvm-identifier-label
+     ^
+     source-code-llvm-punctuation
+  ret void
+^^
+source-code-llvm-whitespace
+  ^^^
+  source-code-llvm-keyword-control
+     ^
+     source-code-llvm-whitespace
+      ^^^^
+      source-code-llvm-identifier-type-built-in
+"unterminated
+^
+source-code-llvm-literal-string-quoted-double-literal-string-quoted-double-begin
+ ^^^^^^^^^^^^
+ source-code-llvm-literal-string-quoted-double-literal-string-unquoted
+  %still = string content
+^^^^^^^^^^^^^^^^^^^^^^^^^
+source-code-llvm-literal-string-quoted-double-literal-string-unquoted

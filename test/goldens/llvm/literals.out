@@ -1,0 +1,465 @@
+i32 0, -42
+^^^
+source-code-llvm-identifier-type-built-in
+   ^
+   source-code-llvm-whitespace
+    ^
+    source-code-llvm-literal-number-integer
+     ^
+     source-code-llvm-punctuation
+      ^
+      source-code-llvm-whitespace
+       ^^^
+       source-code-llvm-literal-number-integer
+i32 u0x8000, s0x8000, u0xABcd, s0x0
+^^^
+source-code-llvm-identifier-type-built-in
+   ^
+   source-code-llvm-whitespace
+    ^^^^^^^
+    source-code-llvm-literal-number-integer
+           ^
+           source-code-llvm-punctuation
+            ^
+            source-code-llvm-whitespace
+             ^^^^^^^
+             source-code-llvm-literal-number-integer
+                    ^
+                    source-code-llvm-punctuation
+                     ^
+                     source-code-llvm-whitespace
+                      ^^^^^^^
+                      source-code-llvm-literal-number-integer
+                             ^
+                             source-code-llvm-punctuation
+                              ^
+                              source-code-llvm-whitespace
+                               ^^^^
+                               source-code-llvm-literal-number-integer
+float 0.0, 1., -1.25E+2, +4.5e-13
+^^^^^
+source-code-llvm-identifier-type-built-in
+     ^
+     source-code-llvm-whitespace
+      ^^^
+      source-code-llvm-literal-number-float
+         ^
+         source-code-llvm-punctuation
+          ^
+          source-code-llvm-whitespace
+           ^^
+           source-code-llvm-literal-number-float
+             ^
+             source-code-llvm-punctuation
+              ^
+              source-code-llvm-whitespace
+               ^^^^^^^^
+               source-code-llvm-literal-number-float
+                       ^
+                       source-code-llvm-punctuation
+                        ^
+                        source-code-llvm-whitespace
+                         ^^^^^^^^
+                         source-code-llvm-literal-number-float
+double 0x1.3effp-43, -0x1.fp13, +0xA.BCp+2, 0x1.P0, 0x1p+2, -0x1P-3, 0x.8p1
+^^^^^^
+source-code-llvm-identifier-type-built-in
+      ^
+      source-code-llvm-whitespace
+       ^^^^^^^^^^^^
+       source-code-llvm-literal-number-float
+                   ^
+                   source-code-llvm-punctuation
+                    ^
+                    source-code-llvm-whitespace
+                     ^^^^^^^^^
+                     source-code-llvm-literal-number-float
+                              ^
+                              source-code-llvm-punctuation
+                               ^
+                               source-code-llvm-whitespace
+                                ^^^^^^^^^^
+                                source-code-llvm-literal-number-float
+                                          ^
+                                          source-code-llvm-punctuation
+                                           ^
+                                           source-code-llvm-whitespace
+                                            ^^^^^^
+                                            source-code-llvm-literal-number-float
+                                                  ^
+                                                  source-code-llvm-punctuation
+                                                   ^
+                                                   source-code-llvm-whitespace
+                                                    ^^^^^^
+                                                    source-code-llvm-literal-number-float
+                                                          ^
+                                                          source-code-llvm-punctuation
+                                                           ^
+                                                           source-code-llvm-whitespace
+                                                            ^^^^^^^
+                                                            source-code-llvm-literal-number-float
+                                                                   ^
+                                                                   source-code-llvm-punctuation
+                                                                    ^
+                                                                    source-code-llvm-whitespace
+                                                                     ^^^^^^
+                                                                     source-code-llvm-literal-number-float
+double 0x3FF0000000000000
+^^^^^^
+source-code-llvm-identifier-type-built-in
+      ^
+      source-code-llvm-whitespace
+       ^^^^^^^^^^^^^^^^^^
+       source-code-llvm-literal-number-float
+half 0xH3C00, f0x3c00
+^^^^
+source-code-llvm-identifier-type-built-in
+    ^
+    source-code-llvm-whitespace
+     ^^^^^^^
+     source-code-llvm-literal-number-float
+            ^
+            source-code-llvm-punctuation
+             ^
+             source-code-llvm-whitespace
+              ^^^^^^^
+              source-code-llvm-literal-number-float
+bfloat 0xR3F80
+^^^^^^
+source-code-llvm-identifier-type-built-in
+      ^
+      source-code-llvm-whitespace
+       ^^^^^^^
+       source-code-llvm-literal-number-float
+x86_fp80 0xK3FFF8000000000000000
+^^^^^^^^
+source-code-llvm-identifier-type-built-in
+        ^
+        source-code-llvm-whitespace
+         ^^^^^^^^^^^^^^^^^^^^^^^
+         source-code-llvm-literal-number-float
+fp128 0xL00000000000000003FFF0000000000000
+^^^^^
+source-code-llvm-identifier-type-built-in
+     ^
+     source-code-llvm-whitespace
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      source-code-llvm-literal-number-float
+ppc_fp128 0xM3FF00000000000000000000000000000
+^^^^^^^^^
+source-code-llvm-identifier-type-built-in
+         ^
+         source-code-llvm-whitespace
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+          source-code-llvm-literal-number-float
+double +inf, -inf, +qnan, -nan(0x1), +snan(0x123)
+^^^^^^
+source-code-llvm-identifier-type-built-in
+      ^
+      source-code-llvm-whitespace
+       ^^^^
+       source-code-llvm-literal-number-float
+           ^
+           source-code-llvm-punctuation
+            ^
+            source-code-llvm-whitespace
+             ^^^^
+             source-code-llvm-literal-number-float
+                 ^
+                 source-code-llvm-punctuation
+                  ^
+                  source-code-llvm-whitespace
+                   ^^^^^
+                   source-code-llvm-literal-number-float
+                        ^
+                        source-code-llvm-punctuation
+                         ^
+                         source-code-llvm-whitespace
+                          ^^^^^^^^^
+                          source-code-llvm-literal-number-float
+                                   ^
+                                   source-code-llvm-punctuation
+                                    ^
+                                    source-code-llvm-whitespace
+                                     ^^^^^^^^^^^^
+                                     source-code-llvm-literal-number-float
+i1 true, false
+^^
+source-code-llvm-identifier-type-built-in
+  ^
+  source-code-llvm-whitespace
+   ^^^^
+   source-code-llvm-literal-boolean-true
+       ^
+       source-code-llvm-punctuation
+        ^
+        source-code-llvm-whitespace
+         ^^^^^
+         source-code-llvm-literal-boolean-false
+ptr null
+^^^
+source-code-llvm-identifier-type-built-in
+   ^
+   source-code-llvm-whitespace
+    ^^^^
+    source-code-llvm-literal-null
+token none
+^^^^^
+source-code-llvm-identifier-type-built-in
+     ^
+     source-code-llvm-whitespace
+      ^^^^
+      source-code-llvm-literal
+i32 zeroinitializer, undef, poison
+^^^
+source-code-llvm-identifier-type-built-in
+   ^
+   source-code-llvm-whitespace
+    ^^^^^^^^^^^^^^^
+    source-code-llvm-literal
+                   ^
+                   source-code-llvm-punctuation
+                    ^
+                    source-code-llvm-whitespace
+                     ^^^^^
+                     source-code-llvm-literal
+                          ^
+                          source-code-llvm-punctuation
+                           ^
+                           source-code-llvm-whitespace
+                            ^^^^^^
+                            source-code-llvm-literal
+@message = constant [8 x i8] c"hi\0A\22\\\00"
+^^^^^^^^
+source-code-llvm-identifier-variable
+        ^
+        source-code-llvm-whitespace
+         ^
+         source-code-llvm-keyword-operator
+          ^
+          source-code-llvm-whitespace
+           ^^^^^^^^
+           source-code-llvm-keyword-declaration
+                   ^
+                   source-code-llvm-whitespace
+                    ^
+                    source-code-llvm-punctuation
+                     ^
+                     source-code-llvm-literal-number-integer
+                      ^
+                      source-code-llvm-whitespace
+                       ^
+                       source-code-llvm-keyword
+                        ^
+                        source-code-llvm-whitespace
+                         ^^
+                         source-code-llvm-identifier-type-built-in
+                           ^
+                           source-code-llvm-punctuation
+                            ^
+                            source-code-llvm-whitespace
+                             ^^
+                             source-code-llvm-literal-string-quoted-double-literal-string-quoted-double-begin
+                               ^^
+                               source-code-llvm-literal-string-quoted-double-literal-string-unquoted
+                                 ^^^
+                                 source-code-llvm-literal-string-quoted-double-literal-string-unquoted-literal-string-escape
+                                    ^^^
+                                    source-code-llvm-literal-string-quoted-double-literal-string-unquoted-literal-string-escape
+                                       ^^
+                                       source-code-llvm-literal-string-quoted-double-literal-string-unquoted-literal-string-escape
+                                         ^^^
+                                         source-code-llvm-literal-string-quoted-double-literal-string-unquoted-literal-string-escape
+                                            ^
+                                            source-code-llvm-literal-string-quoted-double-literal-string-quoted-double-end
+@";/*name*/" = global ptr null
+^^
+source-code-llvm-identifier-variable-identifier-variable-begin
+  ^^^^^^^^^
+  source-code-llvm-identifier-variable
+           ^
+           source-code-llvm-identifier-variable-identifier-variable-end
+            ^
+            source-code-llvm-whitespace
+             ^
+             source-code-llvm-keyword-operator
+              ^
+              source-code-llvm-whitespace
+               ^^^^^^
+               source-code-llvm-keyword-declaration
+                     ^
+                     source-code-llvm-whitespace
+                      ^^^
+                      source-code-llvm-identifier-type-built-in
+                         ^
+                         source-code-llvm-whitespace
+                          ^^^^
+                          source-code-llvm-literal-null
+!"metadata\20string"
+^^
+source-code-llvm-metadata-literal-string-quoted-double-literal-string-quoted-double-begin
+  ^^^^^^^^
+  source-code-llvm-metadata-literal-string-quoted-double-literal-string-unquoted
+          ^^^
+          source-code-llvm-metadata-literal-string-quoted-double-literal-string-unquoted-literal-string-escape
+             ^^^^^^
+             source-code-llvm-metadata-literal-string-quoted-double-literal-string-unquoted
+                   ^
+                   source-code-llvm-metadata-literal-string-quoted-double-literal-string-quoted-double-end
+module asm "mov x0, x0 ; assembly stays a string"
+^^^^^^
+source-code-llvm-keyword-declaration
+      ^
+      source-code-llvm-whitespace
+       ^^^
+       source-code-llvm-keyword
+          ^
+          source-code-llvm-whitespace
+           ^
+           source-code-llvm-literal-string-quoted-double-literal-string-quoted-double-begin
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+            source-code-llvm-literal-string-quoted-double-literal-string-unquoted
+                                                ^
+                                                source-code-llvm-literal-string-quoted-double-literal-string-quoted-double-end
+module asm "first line
+^^^^^^
+source-code-llvm-keyword-declaration
+      ^
+      source-code-llvm-whitespace
+       ^^^
+       source-code-llvm-keyword
+          ^
+          source-code-llvm-whitespace
+           ^
+           source-code-llvm-literal-string-quoted-double-literal-string-quoted-double-begin
+            ^^^^^^^^^^
+            source-code-llvm-literal-string-quoted-double-literal-string-unquoted
+second line"
+^^^^^^^^^^^
+source-code-llvm-literal-string-quoted-double-literal-string-unquoted
+           ^
+           source-code-llvm-literal-string-quoted-double-literal-string-quoted-double-end
+%"multiline
+^^
+source-code-llvm-identifier-variable-identifier-variable-begin
+  ^^^^^^^^^
+  source-code-llvm-identifier-variable
+name" = add i32 1, 2
+^^^^
+source-code-llvm-identifier-variable
+    ^
+    source-code-llvm-identifier-variable-identifier-variable-end
+     ^
+     source-code-llvm-whitespace
+      ^
+      source-code-llvm-keyword-operator
+       ^
+       source-code-llvm-whitespace
+        ^^^
+        source-code-llvm-keyword
+           ^
+           source-code-llvm-whitespace
+            ^^^
+            source-code-llvm-identifier-type-built-in
+               ^
+               source-code-llvm-whitespace
+                ^
+                source-code-llvm-literal-number-integer
+                 ^
+                 source-code-llvm-punctuation
+                  ^
+                  source-code-llvm-whitespace
+                   ^
+                   source-code-llvm-literal-number-integer
+"bad\qescape\" ret void
+^
+source-code-llvm-literal-string-quoted-double-literal-string-quoted-double-begin
+ ^^^
+ source-code-llvm-literal-string-quoted-double-literal-string-unquoted
+    ^
+    source-code-llvm-literal-string-quoted-double-literal-string-unquoted
+     ^^^^^^^
+     source-code-llvm-literal-string-quoted-double-literal-string-unquoted
+            ^
+            source-code-llvm-literal-string-quoted-double-literal-string-unquoted
+             ^
+             source-code-llvm-literal-string-quoted-double-literal-string-quoted-double-end
+              ^
+              source-code-llvm-whitespace
+               ^^^
+               source-code-llvm-keyword-control
+                  ^
+                  source-code-llvm-whitespace
+                   ^^^^
+                   source-code-llvm-identifier-type-built-in
+; RUN: opt %s
+^^^^^^^^^^^^^
+source-code-llvm-comment-line
+; CHECK-LABEL: @f
+^^^^^^^^^^^^^^^^^
+source-code-llvm-comment-line
+/* block comment
+^^
+source-code-llvm-comment-block-comment-block-begin
+  ^^^^^^^^^^^^^^
+  source-code-llvm-comment-block-comment-block-content
+   ; "quotes" and /* openers stay comment text
+^^^^^^^^^^^^^^^^^^^
+source-code-llvm-comment-block-comment-block-content
+                   ^
+                   source-code-llvm-comment-block-comment-block-content
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+                    source-code-llvm-comment-block-comment-block-content
+*/ ret void
+^^
+source-code-llvm-comment-block-comment-block-end
+  ^
+  source-code-llvm-whitespace
+   ^^^
+   source-code-llvm-keyword-control
+      ^
+      source-code-llvm-whitespace
+       ^^^^
+       source-code-llvm-identifier-type-built-in
+/**/ ret void
+^^
+source-code-llvm-comment-block-comment-block-begin
+  ^^
+  source-code-llvm-comment-block-comment-block-end
+    ^
+    source-code-llvm-whitespace
+     ^^^
+     source-code-llvm-keyword-control
+        ^
+        source-code-llvm-whitespace
+         ^^^^
+         source-code-llvm-identifier-type-built-in
+/****/ ret void
+^^
+source-code-llvm-comment-block-comment-block-begin
+  ^^
+  source-code-llvm-comment-block-comment-block-content
+    ^^
+    source-code-llvm-comment-block-comment-block-end
+      ^
+      source-code-llvm-whitespace
+       ^^^
+       source-code-llvm-keyword-control
+          ^
+          source-code-llvm-whitespace
+           ^^^^
+           source-code-llvm-identifier-type-built-in
+/* unterminated
+^^
+source-code-llvm-comment-block-comment-block-begin
+  ^^^^^^^^^^^^^
+  source-code-llvm-comment-block-comment-block-content
+define void @inside_comment() {
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+source-code-llvm-comment-block-comment-block-content
+  ret void
+^^^^^^^^^^
+source-code-llvm-comment-block-comment-block-content
+}
+^
+source-code-llvm-comment-block-comment-block-content

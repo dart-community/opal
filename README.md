@@ -71,6 +71,7 @@ the specified default and alternative IDs:
 - Ruby (`ruby`, `rb`)
 - Swift (`swift`)
 - Text (`text`, `plaintext`, `none`, `txt`)
+- TOML (`toml`; TOML 1.1)
 - TypeScript (`typescript`, `ts`; excluding TSX/JSX)
 - XML (`xml`, `xhtml`)
 - YAML (`yaml`, `yml`)

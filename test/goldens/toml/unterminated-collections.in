@@ -1,0 +1,9 @@
+unclosed_table = { a = 1, b = [2, 3]
+[table]
+unclosed_array = [
+  1, [2, 3], 3.14,
+  "four", { five = 5 },
+  # comment = not a key
+next = "recovered"
+bad$key=1
+dotted.bad@key='value'

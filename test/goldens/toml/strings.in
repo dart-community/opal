@@ -1,0 +1,19 @@
+basic = "quote: \" slash: \\ tab: \t escape: \e hex: \xE9 \u03B1 \U0001F600"
+literal = 'C:\Users\opal\'
+hash = "# text" # comment
+empty = ["", '', """""", '''''']
+multi = """
+# still string content
+one " or two "" quotes
+escaped triple: ""\"
+"""
+continuation = """\
+  first \
+
+    second\
+  """
+literal_multi = '''
+unescaped \xHH and a ' or two ''
+'''
+four = """"quoted text""""
+five = '''''two quotes at either side'''''

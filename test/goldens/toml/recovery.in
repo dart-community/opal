@@ -1,0 +1,13 @@
+bad_numbers = [01, 1__2, 0x_1, +0x1, 0o8, 0b2, .7, 7., 3.e+20, 1e+, 1.2.3]
+bad_words = [True, null, INF, trueish, false-true, 123abc, 1=2]
+bad_dates = [1979-05-27T07:32:00Zsuffix, 07:32Z, 07:32.5]
+bad_escapes = "\q \xGG \uD800 \U00110000"
+unfinished = "text
+after = true
+[unfinished
+next = 42
+[[unfinished
+again = false
+broken_array = { x = [1, 2 }
+broken_table = [{ x = 1]
+last = "still recognized"

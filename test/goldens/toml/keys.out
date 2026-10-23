@@ -1,0 +1,244 @@
+bare-key_1 = 1
+^^^^^^^^^^
+source-text-data-toml-identifier-property
+          ^
+          source-text-data-toml-whitespace
+           ^
+           source-text-data-toml-punctuation-separator
+            ^
+            source-text-data-toml-whitespace
+             ^
+             source-text-data-toml-literal-number-integer
+1234 = 1234
+^^^^
+source-text-data-toml-identifier-property
+    ^
+    source-text-data-toml-whitespace
+     ^
+     source-text-data-toml-punctuation-separator
+      ^
+      source-text-data-toml-whitespace
+       ^^^^
+       source-text-data-toml-literal-number-integer
+true.false = true
+^^^^
+source-text-data-toml-identifier-property
+    ^
+    source-text-data-toml-punctuation-accessor
+     ^^^^^
+     source-text-data-toml-identifier-property
+          ^
+          source-text-data-toml-whitespace
+           ^
+           source-text-data-toml-punctuation-separator
+            ^
+            source-text-data-toml-whitespace
+             ^^^^
+             source-text-data-toml-literal-boolean-true
+3.14159 = 3.14159
+^
+source-text-data-toml-identifier-property
+ ^
+ source-text-data-toml-punctuation-accessor
+  ^^^^^
+  source-text-data-toml-identifier-property
+       ^
+       source-text-data-toml-whitespace
+        ^
+        source-text-data-toml-punctuation-separator
+         ^
+         source-text-data-toml-whitespace
+          ^^^^^^^
+          source-text-data-toml-literal-number-float
+"" = "empty key"
+^
+source-text-data-toml-identifier-property-identifier-property-begin
+ ^
+ source-text-data-toml-identifier-property-identifier-property-end
+  ^
+  source-text-data-toml-whitespace
+   ^
+   source-text-data-toml-punctuation-separator
+    ^
+    source-text-data-toml-whitespace
+     ^
+     source-text-data-toml-literal-string-quoted-double-literal-string-quoted-double-begin
+      ^^^^^^^^^
+      source-text-data-toml-literal-string-quoted-double-literal-string-unquoted
+               ^
+               source-text-data-toml-literal-string-quoted-double-literal-string-quoted-double-end
+'' = 'another empty key'
+^
+source-text-data-toml-identifier-property-identifier-property-begin
+ ^
+ source-text-data-toml-identifier-property-identifier-property-end
+  ^
+  source-text-data-toml-whitespace
+   ^
+   source-text-data-toml-punctuation-separator
+    ^
+    source-text-data-toml-whitespace
+     ^
+     source-text-data-toml-literal-string-quoted-single-literal-string-quoted-single-begin
+      ^^^^^^^^^^^^^^^^^
+      source-text-data-toml-literal-string-quoted-single-literal-string-unquoted
+                       ^
+                       source-text-data-toml-literal-string-quoted-single-literal-string-quoted-single-end
+site . "example.com" . 'port' = 443
+^^^^
+source-text-data-toml-identifier-property
+    ^
+    source-text-data-toml-whitespace
+     ^
+     source-text-data-toml-punctuation-accessor
+      ^
+      source-text-data-toml-whitespace
+       ^
+       source-text-data-toml-identifier-property-identifier-property-begin
+        ^^^^^^^^^^^
+        source-text-data-toml-identifier-property-literal-string-unquoted
+                   ^
+                   source-text-data-toml-identifier-property-identifier-property-end
+                    ^
+                    source-text-data-toml-whitespace
+                     ^
+                     source-text-data-toml-punctuation-accessor
+                      ^
+                      source-text-data-toml-whitespace
+                       ^
+                       source-text-data-toml-identifier-property-identifier-property-begin
+                        ^^^^
+                        source-text-data-toml-identifier-property-literal-string-unquoted
+                            ^
+                            source-text-data-toml-identifier-property-identifier-property-end
+                             ^
+                             source-text-data-toml-whitespace
+                              ^
+                              source-text-data-toml-punctuation-separator
+                               ^
+                               source-text-data-toml-whitespace
+                                ^^^
+                                source-text-data-toml-literal-number-integer
+"escaped\x20key".'literal\key' = "value"
+^
+source-text-data-toml-identifier-property-identifier-property-begin
+ ^^^^^^^
+ source-text-data-toml-identifier-property-literal-string-unquoted
+        ^^^^
+        source-text-data-toml-identifier-property-literal-string-escape
+            ^^^
+            source-text-data-toml-identifier-property-literal-string-unquoted
+               ^
+               source-text-data-toml-identifier-property-identifier-property-end
+                ^
+                source-text-data-toml-punctuation-accessor
+                 ^
+                 source-text-data-toml-identifier-property-identifier-property-begin
+                  ^^^^^^^^^^^
+                  source-text-data-toml-identifier-property-literal-string-unquoted
+                             ^
+                             source-text-data-toml-identifier-property-identifier-property-end
+                              ^
+                              source-text-data-toml-whitespace
+                               ^
+                               source-text-data-toml-punctuation-separator
+                                ^
+                                source-text-data-toml-whitespace
+                                 ^
+                                 source-text-data-toml-literal-string-quoted-double-literal-string-quoted-double-begin
+                                  ^^^^^
+                                  source-text-data-toml-literal-string-quoted-double-literal-string-unquoted
+                                       ^
+                                       source-text-data-toml-literal-string-quoted-double-literal-string-quoted-double-end
+"表😀" = "Unicode"
+^
+source-text-data-toml-identifier-property-identifier-property-begin
+ ^^^
+ source-text-data-toml-identifier-property-literal-string-unquoted
+    ^
+    source-text-data-toml-identifier-property-identifier-property-end
+     ^
+     source-text-data-toml-whitespace
+      ^
+      source-text-data-toml-punctuation-separator
+       ^
+       source-text-data-toml-whitespace
+        ^
+        source-text-data-toml-literal-string-quoted-double-literal-string-quoted-double-begin
+         ^^^^^^^
+         source-text-data-toml-literal-string-quoted-double-literal-string-unquoted
+                ^
+                source-text-data-toml-literal-string-quoted-double-literal-string-quoted-double-end
+
+  [ physical . "shape.with.dots" . 'name' ]
+^^
+source-text-data-toml-whitespace
+  ^
+  source-text-data-toml-punctuation
+   ^
+   source-text-data-toml-whitespace
+    ^^^^^^^^
+    source-text-data-toml-identifier-property
+            ^
+            source-text-data-toml-whitespace
+             ^
+             source-text-data-toml-punctuation-accessor
+              ^
+              source-text-data-toml-whitespace
+               ^
+               source-text-data-toml-identifier-property-identifier-property-begin
+                ^^^^^^^^^^^^^^^
+                source-text-data-toml-identifier-property-literal-string-unquoted
+                               ^
+                               source-text-data-toml-identifier-property-identifier-property-end
+                                ^
+                                source-text-data-toml-whitespace
+                                 ^
+                                 source-text-data-toml-punctuation-accessor
+                                  ^
+                                  source-text-data-toml-whitespace
+                                   ^
+                                   source-text-data-toml-identifier-property-identifier-property-begin
+                                    ^^^^
+                                    source-text-data-toml-identifier-property-literal-string-unquoted
+                                        ^
+                                        source-text-data-toml-identifier-property-identifier-property-end
+                                         ^
+                                         source-text-data-toml-whitespace
+                                          ^
+                                          source-text-data-toml-punctuation
+[[ 1234 . true . "quoted\"key" ]]
+^^
+source-text-data-toml-punctuation
+  ^
+  source-text-data-toml-whitespace
+   ^^^^
+   source-text-data-toml-identifier-property
+       ^
+       source-text-data-toml-whitespace
+        ^
+        source-text-data-toml-punctuation-accessor
+         ^
+         source-text-data-toml-whitespace
+          ^^^^
+          source-text-data-toml-identifier-property
+              ^
+              source-text-data-toml-whitespace
+               ^
+               source-text-data-toml-punctuation-accessor
+                ^
+                source-text-data-toml-whitespace
+                 ^
+                 source-text-data-toml-identifier-property-identifier-property-begin
+                  ^^^^^^
+                  source-text-data-toml-identifier-property-literal-string-unquoted
+                        ^^
+                        source-text-data-toml-identifier-property-literal-string-escape
+                          ^^^
+                          source-text-data-toml-identifier-property-literal-string-unquoted
+                             ^
+                             source-text-data-toml-identifier-property-identifier-property-end
+                              ^
+                              source-text-data-toml-whitespace
+                               ^^
+                               source-text-data-toml-punctuation

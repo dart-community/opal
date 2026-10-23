@@ -1,0 +1,17 @@
+# Application configuration
+title = "Opal"
+enabled = true
+
+[owner]
+name = "Example"
+joined = 2026-10-24T09:30+08:00
+
+[server]
+ports = [8000, 8001, 8002]
+limits = { requests = 1_000, timeout = 0.5 }
+
+[[plugins]]
+name = 'syntax'
+active = false # optional plugin
+[[plugins]]
+name = "preview"

@@ -1,0 +1,394 @@
+matrix = [
+^^^^^^
+source-text-data-toml-identifier-property
+      ^
+      source-text-data-toml-whitespace
+       ^
+       source-text-data-toml-punctuation-separator
+        ^
+        source-text-data-toml-whitespace
+         ^
+         source-text-data-toml-literal-collection-array-literal-collection-array-begin
+  [1, 2],
+^^
+source-text-data-toml-literal-collection-array-whitespace
+  ^
+  source-text-data-toml-literal-collection-array-literal-collection-array-literal-collection-array-begin
+   ^
+   source-text-data-toml-literal-collection-array-literal-collection-array-literal-number-integer
+    ^
+    source-text-data-toml-literal-collection-array-literal-collection-array-punctuation-separator
+     ^
+     source-text-data-toml-literal-collection-array-literal-collection-array-whitespace
+      ^
+      source-text-data-toml-literal-collection-array-literal-collection-array-literal-number-integer
+       ^
+       source-text-data-toml-literal-collection-array-literal-collection-array-literal-collection-array-end
+        ^
+        source-text-data-toml-literal-collection-array-punctuation-separator
+  [[3], [4]],
+^^
+source-text-data-toml-literal-collection-array-whitespace
+  ^
+  source-text-data-toml-literal-collection-array-literal-collection-array-literal-collection-array-begin
+   ^
+   source-text-data-toml-literal-collection-array-literal-collection-array-literal-collection-array-literal-collection-array-begin
+    ^
+    source-text-data-toml-literal-collection-array-literal-collection-array-literal-collection-array-literal-number-integer
+     ^
+     source-text-data-toml-literal-collection-array-literal-collection-array-literal-collection-array-literal-collection-array-end
+      ^
+      source-text-data-toml-literal-collection-array-literal-collection-array-punctuation-separator
+       ^
+       source-text-data-toml-literal-collection-array-literal-collection-array-whitespace
+        ^
+        source-text-data-toml-literal-collection-array-literal-collection-array-literal-collection-array-literal-collection-array-begin
+         ^
+         source-text-data-toml-literal-collection-array-literal-collection-array-literal-collection-array-literal-number-integer
+          ^
+          source-text-data-toml-literal-collection-array-literal-collection-array-literal-collection-array-literal-collection-array-end
+           ^
+           source-text-data-toml-literal-collection-array-literal-collection-array-literal-collection-array-end
+            ^
+            source-text-data-toml-literal-collection-array-punctuation-separator
+  # Comments can precede commas and closers.
+^^
+source-text-data-toml-literal-collection-array-whitespace
+  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  source-text-data-toml-literal-collection-array-comment-line
+]
+^
+source-text-data-toml-literal-collection-array-literal-collection-array-end
+contact = {
+^^^^^^^
+source-text-data-toml-identifier-property
+       ^
+       source-text-data-toml-whitespace
+        ^
+        source-text-data-toml-punctuation-separator
+         ^
+         source-text-data-toml-whitespace
+          ^
+          source-text-data-toml-literal-collection-map-literal-collection-map-begin
+  personal = {
+^^
+source-text-data-toml-literal-collection-map-whitespace
+  ^^^^^^^^
+  source-text-data-toml-literal-collection-map-identifier-property
+          ^
+          source-text-data-toml-literal-collection-map-whitespace
+           ^
+           source-text-data-toml-literal-collection-map-punctuation-separator
+            ^
+            source-text-data-toml-literal-collection-map-whitespace
+             ^
+             source-text-data-toml-literal-collection-map-literal-collection-map-literal-collection-map-begin
+    name = "Example",
+^^^^
+source-text-data-toml-literal-collection-map-literal-collection-map-whitespace
+    ^^^^
+    source-text-data-toml-literal-collection-map-literal-collection-map-identifier-property
+        ^
+        source-text-data-toml-literal-collection-map-literal-collection-map-whitespace
+         ^
+         source-text-data-toml-literal-collection-map-literal-collection-map-punctuation-separator
+          ^
+          source-text-data-toml-literal-collection-map-literal-collection-map-whitespace
+           ^
+           source-text-data-toml-literal-collection-map-literal-collection-map-literal-string-quoted-double-literal-string-quoted-double-begin
+            ^^^^^^^
+            source-text-data-toml-literal-collection-map-literal-collection-map-literal-string-quoted-double-literal-string-unquoted
+                   ^
+                   source-text-data-toml-literal-collection-map-literal-collection-map-literal-string-quoted-double-literal-string-quoted-double-end
+                    ^
+                    source-text-data-toml-literal-collection-map-literal-collection-map-punctuation-separator
+    available = true,
+^^^^
+source-text-data-toml-literal-collection-map-literal-collection-map-whitespace
+    ^^^^^^^^^
+    source-text-data-toml-literal-collection-map-literal-collection-map-identifier-property
+             ^
+             source-text-data-toml-literal-collection-map-literal-collection-map-whitespace
+              ^
+              source-text-data-toml-literal-collection-map-literal-collection-map-punctuation-separator
+               ^
+               source-text-data-toml-literal-collection-map-literal-collection-map-whitespace
+                ^^^^
+                source-text-data-toml-literal-collection-map-literal-collection-map-literal-boolean-true
+                    ^
+                    source-text-data-toml-literal-collection-map-literal-collection-map-punctuation-separator
+  },
+^^
+source-text-data-toml-literal-collection-map-literal-collection-map-whitespace
+  ^
+  source-text-data-toml-literal-collection-map-literal-collection-map-literal-collection-map-end
+   ^
+   source-text-data-toml-literal-collection-map-punctuation-separator
+  work = { role.name = 'Developer', },
+^^
+source-text-data-toml-literal-collection-map-whitespace
+  ^^^^
+  source-text-data-toml-literal-collection-map-identifier-property
+      ^
+      source-text-data-toml-literal-collection-map-whitespace
+       ^
+       source-text-data-toml-literal-collection-map-punctuation-separator
+        ^
+        source-text-data-toml-literal-collection-map-whitespace
+         ^
+         source-text-data-toml-literal-collection-map-literal-collection-map-literal-collection-map-begin
+          ^
+          source-text-data-toml-literal-collection-map-literal-collection-map-whitespace
+           ^^^^
+           source-text-data-toml-literal-collection-map-literal-collection-map-identifier-property
+               ^
+               source-text-data-toml-literal-collection-map-literal-collection-map-punctuation-accessor
+                ^^^^
+                source-text-data-toml-literal-collection-map-literal-collection-map-identifier-property
+                    ^
+                    source-text-data-toml-literal-collection-map-literal-collection-map-whitespace
+                     ^
+                     source-text-data-toml-literal-collection-map-literal-collection-map-punctuation-separator
+                      ^
+                      source-text-data-toml-literal-collection-map-literal-collection-map-whitespace
+                       ^
+                       source-text-data-toml-literal-collection-map-literal-collection-map-literal-string-quoted-single-literal-string-quoted-single-begin
+                        ^^^^^^^^^
+                        source-text-data-toml-literal-collection-map-literal-collection-map-literal-string-quoted-single-literal-string-unquoted
+                                 ^
+                                 source-text-data-toml-literal-collection-map-literal-collection-map-literal-string-quoted-single-literal-string-quoted-single-end
+                                  ^
+                                  source-text-data-toml-literal-collection-map-literal-collection-map-punctuation-separator
+                                   ^
+                                   source-text-data-toml-literal-collection-map-literal-collection-map-whitespace
+                                    ^
+                                    source-text-data-toml-literal-collection-map-literal-collection-map-literal-collection-map-end
+                                     ^
+                                     source-text-data-toml-literal-collection-map-punctuation-separator
+  1234 = [
+^^
+source-text-data-toml-literal-collection-map-whitespace
+  ^^^^
+  source-text-data-toml-literal-collection-map-identifier-property
+      ^
+      source-text-data-toml-literal-collection-map-whitespace
+       ^
+       source-text-data-toml-literal-collection-map-punctuation-separator
+        ^
+        source-text-data-toml-literal-collection-map-whitespace
+         ^
+         source-text-data-toml-literal-collection-map-literal-collection-array-literal-collection-array-begin
+    { true = false, "" = "empty", },
+^^^^
+source-text-data-toml-literal-collection-map-literal-collection-array-whitespace
+    ^
+    source-text-data-toml-literal-collection-map-literal-collection-array-literal-collection-map-literal-collection-map-begin
+     ^
+     source-text-data-toml-literal-collection-map-literal-collection-array-literal-collection-map-whitespace
+      ^^^^
+      source-text-data-toml-literal-collection-map-literal-collection-array-literal-collection-map-identifier-property
+          ^
+          source-text-data-toml-literal-collection-map-literal-collection-array-literal-collection-map-whitespace
+           ^
+           source-text-data-toml-literal-collection-map-literal-collection-array-literal-collection-map-punctuation-separator
+            ^
+            source-text-data-toml-literal-collection-map-literal-collection-array-literal-collection-map-whitespace
+             ^^^^^
+             source-text-data-toml-literal-collection-map-literal-collection-array-literal-collection-map-literal-boolean-false
+                  ^
+                  source-text-data-toml-literal-collection-map-literal-collection-array-literal-collection-map-punctuation-separator
+                   ^
+                   source-text-data-toml-literal-collection-map-literal-collection-array-literal-collection-map-whitespace
+                    ^
+                    source-text-data-toml-literal-collection-map-literal-collection-array-literal-collection-map-identifier-property-identifier-property-begin
+                     ^
+                     source-text-data-toml-literal-collection-map-literal-collection-array-literal-collection-map-identifier-property-identifier-property-end
+                      ^
+                      source-text-data-toml-literal-collection-map-literal-collection-array-literal-collection-map-whitespace
+                       ^
+                       source-text-data-toml-literal-collection-map-literal-collection-array-literal-collection-map-punctuation-separator
+                        ^
+                        source-text-data-toml-literal-collection-map-literal-collection-array-literal-collection-map-whitespace
+                         ^
+                         source-text-data-toml-literal-collection-map-literal-collection-array-literal-collection-map-literal-string-quoted-double-literal-string-quoted-double-begin
+                          ^^^^^
+                          source-text-data-toml-literal-collection-map-literal-collection-array-literal-collection-map-literal-string-quoted-double-literal-string-unquoted
+                               ^
+                               source-text-data-toml-literal-collection-map-literal-collection-array-literal-collection-map-literal-string-quoted-double-literal-string-quoted-double-end
+                                ^
+                                source-text-data-toml-literal-collection-map-literal-collection-array-literal-collection-map-punctuation-separator
+                                 ^
+                                 source-text-data-toml-literal-collection-map-literal-collection-array-literal-collection-map-whitespace
+                                  ^
+                                  source-text-data-toml-literal-collection-map-literal-collection-array-literal-collection-map-literal-collection-map-end
+                                   ^
+                                   source-text-data-toml-literal-collection-map-literal-collection-array-punctuation-separator
+    { when = 2026-10-24 09:30Z },
+^^^^
+source-text-data-toml-literal-collection-map-literal-collection-array-whitespace
+    ^
+    source-text-data-toml-literal-collection-map-literal-collection-array-literal-collection-map-literal-collection-map-begin
+     ^
+     source-text-data-toml-literal-collection-map-literal-collection-array-literal-collection-map-whitespace
+      ^^^^
+      source-text-data-toml-literal-collection-map-literal-collection-array-literal-collection-map-identifier-property
+          ^
+          source-text-data-toml-literal-collection-map-literal-collection-array-literal-collection-map-whitespace
+           ^
+           source-text-data-toml-literal-collection-map-literal-collection-array-literal-collection-map-punctuation-separator
+            ^
+            source-text-data-toml-literal-collection-map-literal-collection-array-literal-collection-map-whitespace
+             ^^^^^^^^^^^^^^^^^
+             source-text-data-toml-literal-collection-map-literal-collection-array-literal-collection-map-literal-datetime
+                              ^
+                              source-text-data-toml-literal-collection-map-literal-collection-array-literal-collection-map-whitespace
+                               ^
+                               source-text-data-toml-literal-collection-map-literal-collection-array-literal-collection-map-literal-collection-map-end
+                                ^
+                                source-text-data-toml-literal-collection-map-literal-collection-array-punctuation-separator
+  ],
+^^
+source-text-data-toml-literal-collection-map-literal-collection-array-whitespace
+  ^
+  source-text-data-toml-literal-collection-map-literal-collection-array-literal-collection-array-end
+   ^
+   source-text-data-toml-literal-collection-map-punctuation-separator
+}
+^
+source-text-data-toml-literal-collection-map-literal-collection-map-end
+[[products]]
+^^
+source-text-data-toml-punctuation
+  ^^^^^^^^
+  source-text-data-toml-identifier-property
+          ^^
+          source-text-data-toml-punctuation
+name = "First"
+^^^^
+source-text-data-toml-identifier-property
+    ^
+    source-text-data-toml-whitespace
+     ^
+     source-text-data-toml-punctuation-separator
+      ^
+      source-text-data-toml-whitespace
+       ^
+       source-text-data-toml-literal-string-quoted-double-literal-string-quoted-double-begin
+        ^^^^^
+        source-text-data-toml-literal-string-quoted-double-literal-string-unquoted
+             ^
+             source-text-data-toml-literal-string-quoted-double-literal-string-quoted-double-end
+[products.details]
+^
+source-text-data-toml-punctuation
+ ^^^^^^^^
+ source-text-data-toml-identifier-property
+         ^
+         source-text-data-toml-punctuation-accessor
+          ^^^^^^^
+          source-text-data-toml-identifier-property
+                 ^
+                 source-text-data-toml-punctuation
+sizes = [{ width = 1, height = 2 }, { width = 3, height = 4 }]
+^^^^^
+source-text-data-toml-identifier-property
+     ^
+     source-text-data-toml-whitespace
+      ^
+      source-text-data-toml-punctuation-separator
+       ^
+       source-text-data-toml-whitespace
+        ^
+        source-text-data-toml-literal-collection-array-literal-collection-array-begin
+         ^
+         source-text-data-toml-literal-collection-array-literal-collection-map-literal-collection-map-begin
+          ^
+          source-text-data-toml-literal-collection-array-literal-collection-map-whitespace
+           ^^^^^
+           source-text-data-toml-literal-collection-array-literal-collection-map-identifier-property
+                ^
+                source-text-data-toml-literal-collection-array-literal-collection-map-whitespace
+                 ^
+                 source-text-data-toml-literal-collection-array-literal-collection-map-punctuation-separator
+                  ^
+                  source-text-data-toml-literal-collection-array-literal-collection-map-whitespace
+                   ^
+                   source-text-data-toml-literal-collection-array-literal-collection-map-literal-number-integer
+                    ^
+                    source-text-data-toml-literal-collection-array-literal-collection-map-punctuation-separator
+                     ^
+                     source-text-data-toml-literal-collection-array-literal-collection-map-whitespace
+                      ^^^^^^
+                      source-text-data-toml-literal-collection-array-literal-collection-map-identifier-property
+                            ^
+                            source-text-data-toml-literal-collection-array-literal-collection-map-whitespace
+                             ^
+                             source-text-data-toml-literal-collection-array-literal-collection-map-punctuation-separator
+                              ^
+                              source-text-data-toml-literal-collection-array-literal-collection-map-whitespace
+                               ^
+                               source-text-data-toml-literal-collection-array-literal-collection-map-literal-number-integer
+                                ^
+                                source-text-data-toml-literal-collection-array-literal-collection-map-whitespace
+                                 ^
+                                 source-text-data-toml-literal-collection-array-literal-collection-map-literal-collection-map-end
+                                  ^
+                                  source-text-data-toml-literal-collection-array-punctuation-separator
+                                   ^
+                                   source-text-data-toml-literal-collection-array-whitespace
+                                    ^
+                                    source-text-data-toml-literal-collection-array-literal-collection-map-literal-collection-map-begin
+                                     ^
+                                     source-text-data-toml-literal-collection-array-literal-collection-map-whitespace
+                                      ^^^^^
+                                      source-text-data-toml-literal-collection-array-literal-collection-map-identifier-property
+                                           ^
+                                           source-text-data-toml-literal-collection-array-literal-collection-map-whitespace
+                                            ^
+                                            source-text-data-toml-literal-collection-array-literal-collection-map-punctuation-separator
+                                             ^
+                                             source-text-data-toml-literal-collection-array-literal-collection-map-whitespace
+                                              ^
+                                              source-text-data-toml-literal-collection-array-literal-collection-map-literal-number-integer
+                                               ^
+                                               source-text-data-toml-literal-collection-array-literal-collection-map-punctuation-separator
+                                                ^
+                                                source-text-data-toml-literal-collection-array-literal-collection-map-whitespace
+                                                 ^^^^^^
+                                                 source-text-data-toml-literal-collection-array-literal-collection-map-identifier-property
+                                                       ^
+                                                       source-text-data-toml-literal-collection-array-literal-collection-map-whitespace
+                                                        ^
+                                                        source-text-data-toml-literal-collection-array-literal-collection-map-punctuation-separator
+                                                         ^
+                                                         source-text-data-toml-literal-collection-array-literal-collection-map-whitespace
+                                                          ^
+                                                          source-text-data-toml-literal-collection-array-literal-collection-map-literal-number-integer
+                                                           ^
+                                                           source-text-data-toml-literal-collection-array-literal-collection-map-whitespace
+                                                            ^
+                                                            source-text-data-toml-literal-collection-array-literal-collection-map-literal-collection-map-end
+                                                             ^
+                                                             source-text-data-toml-literal-collection-array-literal-collection-array-end
+[[products]]
+^^
+source-text-data-toml-punctuation
+  ^^^^^^^^
+  source-text-data-toml-identifier-property
+          ^^
+          source-text-data-toml-punctuation
+name = "Second"
+^^^^
+source-text-data-toml-identifier-property
+    ^
+    source-text-data-toml-whitespace
+     ^
+     source-text-data-toml-punctuation-separator
+      ^
+      source-text-data-toml-whitespace
+       ^
+       source-text-data-toml-literal-string-quoted-double-literal-string-quoted-double-begin
+        ^^^^^^
+        source-text-data-toml-literal-string-quoted-double-literal-string-unquoted
+              ^
+              source-text-data-toml-literal-string-quoted-double-literal-string-quoted-double-end

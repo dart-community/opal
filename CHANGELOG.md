@@ -1,5 +1,6 @@
 ## 0.2.7-wip
 
+- Add support for TOML 1.1 (`toml`).
 - Add support for textual LLVM IR (`llvm`, `ll`, `llvm-ir`),
   including metadata, debug records, and common older syntax.
 - Improve the accuracy of `dart` highlighting, including for

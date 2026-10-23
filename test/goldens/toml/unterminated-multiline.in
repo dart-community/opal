@@ -1,0 +1,4 @@
+message = """
+This snippet ends inside a multiline string.
+[not.a.header]
+key = true # neither a boolean nor a comment

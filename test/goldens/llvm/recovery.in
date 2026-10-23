@@ -1,0 +1,10 @@
+0x 0xH u0x f0x 0xG123 123abc 1.2e 1.2e- i32suffix
+s0x u0xG s0x12G 0x1.fp 0x1.fp- 0x1.2 0x1.fp3suffix
+% @ ! # ^ $ \ ?
+@still_a_name = future_instruction i32 1
+"bad\qescape\" ret void
+!0 = !DIFile(filename: "closed")
+entry:
+  ret void
+"unterminated
+  %still = string content

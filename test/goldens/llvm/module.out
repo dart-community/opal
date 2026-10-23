@@ -1,0 +1,507 @@
+; A small module with a loop and a direct call.
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+source-code-llvm-comment-line
+source_filename = "sum.c"
+^^^^^^^^^^^^^^^
+source-code-llvm-keyword-declaration
+               ^
+               source-code-llvm-whitespace
+                ^
+                source-code-llvm-keyword-operator
+                 ^
+                 source-code-llvm-whitespace
+                  ^
+                  source-code-llvm-literal-string-quoted-double-literal-string-quoted-double-begin
+                   ^^^^^
+                   source-code-llvm-literal-string-quoted-double-literal-string-unquoted
+                        ^
+                        source-code-llvm-literal-string-quoted-double-literal-string-quoted-double-end
+target triple = "aarch64-unknown-linux-gnu"
+^^^^^^
+source-code-llvm-keyword-declaration
+      ^
+      source-code-llvm-whitespace
+       ^^^^^^
+       source-code-llvm-keyword-declaration
+             ^
+             source-code-llvm-whitespace
+              ^
+              source-code-llvm-keyword-operator
+               ^
+               source-code-llvm-whitespace
+                ^
+                source-code-llvm-literal-string-quoted-double-literal-string-quoted-double-begin
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+                 source-code-llvm-literal-string-quoted-double-literal-string-unquoted
+                                          ^
+                                          source-code-llvm-literal-string-quoted-double-literal-string-quoted-double-end
+target datalayout = "e-m:e-i64:64-n32:64-S128"
+^^^^^^
+source-code-llvm-keyword-declaration
+      ^
+      source-code-llvm-whitespace
+       ^^^^^^^^^^
+       source-code-llvm-keyword-declaration
+                 ^
+                 source-code-llvm-whitespace
+                  ^
+                  source-code-llvm-keyword-operator
+                   ^
+                   source-code-llvm-whitespace
+                    ^
+                    source-code-llvm-literal-string-quoted-double-literal-string-quoted-double-begin
+                     ^^^^^^^^^^^^^^^^^^^^^^^^
+                     source-code-llvm-literal-string-quoted-double-literal-string-unquoted
+                                             ^
+                                             source-code-llvm-literal-string-quoted-double-literal-string-quoted-double-end
+
+@total = internal global i32 0, align 4
+^^^^^^
+source-code-llvm-identifier-variable
+      ^
+      source-code-llvm-whitespace
+       ^
+       source-code-llvm-keyword-operator
+        ^
+        source-code-llvm-whitespace
+         ^^^^^^^^
+         source-code-llvm-keyword-modifier
+                 ^
+                 source-code-llvm-whitespace
+                  ^^^^^^
+                  source-code-llvm-keyword-declaration
+                        ^
+                        source-code-llvm-whitespace
+                         ^^^
+                         source-code-llvm-identifier-type-built-in
+                            ^
+                            source-code-llvm-whitespace
+                             ^
+                             source-code-llvm-literal-number-integer
+                              ^
+                              source-code-llvm-punctuation
+                               ^
+                               source-code-llvm-whitespace
+                                ^^^^^
+                                source-code-llvm-keyword-modifier
+                                     ^
+                                     source-code-llvm-whitespace
+                                      ^
+                                      source-code-llvm-literal-number-integer
+declare void @report(i32)
+^^^^^^^
+source-code-llvm-keyword-declaration
+       ^
+       source-code-llvm-whitespace
+        ^^^^
+        source-code-llvm-identifier-type-built-in
+            ^
+            source-code-llvm-whitespace
+             ^^^^^^^
+             source-code-llvm-identifier-function
+                    ^
+                    source-code-llvm-punctuation
+                     ^^^
+                     source-code-llvm-identifier-type-built-in
+                        ^
+                        source-code-llvm-punctuation
+
+define i32 @sum(i32 %limit) #0 {
+^^^^^^
+source-code-llvm-keyword-declaration
+      ^
+      source-code-llvm-whitespace
+       ^^^
+       source-code-llvm-identifier-type-built-in
+          ^
+          source-code-llvm-whitespace
+           ^^^^
+           source-code-llvm-identifier-function
+               ^
+               source-code-llvm-punctuation
+                ^^^
+                source-code-llvm-identifier-type-built-in
+                   ^
+                   source-code-llvm-whitespace
+                    ^^^^^^
+                    source-code-llvm-identifier-variable
+                          ^
+                          source-code-llvm-punctuation
+                           ^
+                           source-code-llvm-whitespace
+                            ^^
+                            source-code-llvm-metadata
+                              ^
+                              source-code-llvm-whitespace
+                               ^
+                               source-code-llvm-punctuation
+entry:
+^^^^^
+source-code-llvm-identifier-label
+     ^
+     source-code-llvm-punctuation
+  br label %loop
+^^
+source-code-llvm-whitespace
+  ^^
+  source-code-llvm-keyword-control
+    ^
+    source-code-llvm-whitespace
+     ^^^^^
+     source-code-llvm-identifier-type-built-in
+          ^
+          source-code-llvm-whitespace
+           ^^^^^
+           source-code-llvm-identifier-label
+
+loop:
+^^^^
+source-code-llvm-identifier-label
+    ^
+    source-code-llvm-punctuation
+  %i = phi i32 [ 0, %entry ], [ %next, %loop ]
+^^
+source-code-llvm-whitespace
+  ^^
+  source-code-llvm-identifier-variable
+    ^
+    source-code-llvm-whitespace
+     ^
+     source-code-llvm-keyword-operator
+      ^
+      source-code-llvm-whitespace
+       ^^^
+       source-code-llvm-keyword
+          ^
+          source-code-llvm-whitespace
+           ^^^
+           source-code-llvm-identifier-type-built-in
+              ^
+              source-code-llvm-whitespace
+               ^
+               source-code-llvm-punctuation
+                ^
+                source-code-llvm-whitespace
+                 ^
+                 source-code-llvm-literal-number-integer
+                  ^
+                  source-code-llvm-punctuation
+                   ^
+                   source-code-llvm-whitespace
+                    ^^^^^^
+                    source-code-llvm-identifier-variable
+                          ^
+                          source-code-llvm-whitespace
+                           ^
+                           source-code-llvm-punctuation
+                            ^
+                            source-code-llvm-punctuation
+                             ^
+                             source-code-llvm-whitespace
+                              ^
+                              source-code-llvm-punctuation
+                               ^
+                               source-code-llvm-whitespace
+                                ^^^^^
+                                source-code-llvm-identifier-variable
+                                     ^
+                                     source-code-llvm-punctuation
+                                      ^
+                                      source-code-llvm-whitespace
+                                       ^^^^^
+                                       source-code-llvm-identifier-variable
+                                            ^
+                                            source-code-llvm-whitespace
+                                             ^
+                                             source-code-llvm-punctuation
+  %next = add nuw nsw i32 %i, 1
+^^
+source-code-llvm-whitespace
+  ^^^^^
+  source-code-llvm-identifier-variable
+       ^
+       source-code-llvm-whitespace
+        ^
+        source-code-llvm-keyword-operator
+         ^
+         source-code-llvm-whitespace
+          ^^^
+          source-code-llvm-keyword
+             ^
+             source-code-llvm-whitespace
+              ^^^
+              source-code-llvm-keyword-modifier
+                 ^
+                 source-code-llvm-whitespace
+                  ^^^
+                  source-code-llvm-keyword-modifier
+                     ^
+                     source-code-llvm-whitespace
+                      ^^^
+                      source-code-llvm-identifier-type-built-in
+                         ^
+                         source-code-llvm-whitespace
+                          ^^
+                          source-code-llvm-identifier-variable
+                            ^
+                            source-code-llvm-punctuation
+                             ^
+                             source-code-llvm-whitespace
+                              ^
+                              source-code-llvm-literal-number-integer
+  %done = icmp eq i32 %next, %limit
+^^
+source-code-llvm-whitespace
+  ^^^^^
+  source-code-llvm-identifier-variable
+       ^
+       source-code-llvm-whitespace
+        ^
+        source-code-llvm-keyword-operator
+         ^
+         source-code-llvm-whitespace
+          ^^^^
+          source-code-llvm-keyword
+              ^
+              source-code-llvm-whitespace
+               ^^
+               source-code-llvm-keyword-operator
+                 ^
+                 source-code-llvm-whitespace
+                  ^^^
+                  source-code-llvm-identifier-type-built-in
+                     ^
+                     source-code-llvm-whitespace
+                      ^^^^^
+                      source-code-llvm-identifier-variable
+                           ^
+                           source-code-llvm-punctuation
+                            ^
+                            source-code-llvm-whitespace
+                             ^^^^^^
+                             source-code-llvm-identifier-variable
+  br i1 %done, label %exit, label %loop
+^^
+source-code-llvm-whitespace
+  ^^
+  source-code-llvm-keyword-control
+    ^
+    source-code-llvm-whitespace
+     ^^
+     source-code-llvm-identifier-type-built-in
+       ^
+       source-code-llvm-whitespace
+        ^^^^^
+        source-code-llvm-identifier-variable
+             ^
+             source-code-llvm-punctuation
+              ^
+              source-code-llvm-whitespace
+               ^^^^^
+               source-code-llvm-identifier-type-built-in
+                    ^
+                    source-code-llvm-whitespace
+                     ^^^^^
+                     source-code-llvm-identifier-label
+                          ^
+                          source-code-llvm-punctuation
+                           ^
+                           source-code-llvm-whitespace
+                            ^^^^^
+                            source-code-llvm-identifier-type-built-in
+                                 ^
+                                 source-code-llvm-whitespace
+                                  ^^^^^
+                                  source-code-llvm-identifier-label
+
+exit:
+^^^^
+source-code-llvm-identifier-label
+    ^
+    source-code-llvm-punctuation
+  store i32 %next, ptr @total, align 4
+^^
+source-code-llvm-whitespace
+  ^^^^^
+  source-code-llvm-keyword
+       ^
+       source-code-llvm-whitespace
+        ^^^
+        source-code-llvm-identifier-type-built-in
+           ^
+           source-code-llvm-whitespace
+            ^^^^^
+            source-code-llvm-identifier-variable
+                 ^
+                 source-code-llvm-punctuation
+                  ^
+                  source-code-llvm-whitespace
+                   ^^^
+                   source-code-llvm-identifier-type-built-in
+                      ^
+                      source-code-llvm-whitespace
+                       ^^^^^^
+                       source-code-llvm-identifier-variable
+                             ^
+                             source-code-llvm-punctuation
+                              ^
+                              source-code-llvm-whitespace
+                               ^^^^^
+                               source-code-llvm-keyword-modifier
+                                    ^
+                                    source-code-llvm-whitespace
+                                     ^
+                                     source-code-llvm-literal-number-integer
+  call void @report(i32 %next)
+^^
+source-code-llvm-whitespace
+  ^^^^
+  source-code-llvm-keyword-control
+      ^
+      source-code-llvm-whitespace
+       ^^^^
+       source-code-llvm-identifier-type-built-in
+           ^
+           source-code-llvm-whitespace
+            ^^^^^^^
+            source-code-llvm-identifier-function
+                   ^
+                   source-code-llvm-punctuation
+                    ^^^
+                    source-code-llvm-identifier-type-built-in
+                       ^
+                       source-code-llvm-whitespace
+                        ^^^^^
+                        source-code-llvm-identifier-variable
+                             ^
+                             source-code-llvm-punctuation
+  ret i32 %next
+^^
+source-code-llvm-whitespace
+  ^^^
+  source-code-llvm-keyword-control
+     ^
+     source-code-llvm-whitespace
+      ^^^
+      source-code-llvm-identifier-type-built-in
+         ^
+         source-code-llvm-whitespace
+          ^^^^^
+          source-code-llvm-identifier-variable
+}
+^
+source-code-llvm-punctuation
+
+attributes #0 = { nounwind memory(readwrite) }
+^^^^^^^^^^
+source-code-llvm-keyword-declaration
+          ^
+          source-code-llvm-whitespace
+           ^^
+           source-code-llvm-metadata
+             ^
+             source-code-llvm-whitespace
+              ^
+              source-code-llvm-keyword-operator
+               ^
+               source-code-llvm-whitespace
+                ^
+                source-code-llvm-punctuation
+                 ^
+                 source-code-llvm-whitespace
+                  ^^^^^^^^
+                  source-code-llvm-keyword-modifier
+                          ^
+                          source-code-llvm-whitespace
+                           ^^^^^^
+                           source-code-llvm-keyword-modifier
+                                 ^
+                                 source-code-llvm-punctuation
+                                  ^^^^^^^^^
+                                  source-code-llvm-keyword-modifier
+                                           ^
+                                           source-code-llvm-punctuation
+                                            ^
+                                            source-code-llvm-whitespace
+                                             ^
+                                             source-code-llvm-punctuation
+
+module asm "nop"
+^^^^^^
+source-code-llvm-keyword-declaration
+      ^
+      source-code-llvm-whitespace
+       ^^^
+       source-code-llvm-keyword
+          ^
+          source-code-llvm-whitespace
+           ^
+           source-code-llvm-literal-string-quoted-double-literal-string-quoted-double-begin
+            ^^^
+            source-code-llvm-literal-string-quoted-double-literal-string-unquoted
+               ^
+               source-code-llvm-literal-string-quoted-double-literal-string-quoted-double-end
+uselistorder ptr @total, { 1, 0 }
+^^^^^^^^^^^^
+source-code-llvm-keyword-declaration
+            ^
+            source-code-llvm-whitespace
+             ^^^
+             source-code-llvm-identifier-type-built-in
+                ^
+                source-code-llvm-whitespace
+                 ^^^^^^
+                 source-code-llvm-identifier-variable
+                       ^
+                       source-code-llvm-punctuation
+                        ^
+                        source-code-llvm-whitespace
+                         ^
+                         source-code-llvm-punctuation
+                          ^
+                          source-code-llvm-whitespace
+                           ^
+                           source-code-llvm-literal-number-integer
+                            ^
+                            source-code-llvm-punctuation
+                             ^
+                             source-code-llvm-whitespace
+                              ^
+                              source-code-llvm-literal-number-integer
+                               ^
+                               source-code-llvm-whitespace
+                                ^
+                                source-code-llvm-punctuation
+uselistorder_bb @sum, %loop, { 1, 0 }
+^^^^^^^^^^^^^^^
+source-code-llvm-keyword-declaration
+               ^
+               source-code-llvm-whitespace
+                ^^^^
+                source-code-llvm-identifier-variable
+                    ^
+                    source-code-llvm-punctuation
+                     ^
+                     source-code-llvm-whitespace
+                      ^^^^^
+                      source-code-llvm-identifier-variable
+                           ^
+                           source-code-llvm-punctuation
+                            ^
+                            source-code-llvm-whitespace
+                             ^
+                             source-code-llvm-punctuation
+                              ^
+                              source-code-llvm-whitespace
+                               ^
+                               source-code-llvm-literal-number-integer
+                                ^
+                                source-code-llvm-punctuation
+                                 ^
+                                 source-code-llvm-whitespace
+                                  ^
+                                  source-code-llvm-literal-number-integer
+                                   ^
+                                   source-code-llvm-whitespace
+                                    ^
+                                    source-code-llvm-punctuation

@@ -1,0 +1,260 @@
+%Old = type opaque
+^^^^
+source-code-llvm-identifier-type
+    ^
+    source-code-llvm-whitespace
+     ^
+     source-code-llvm-keyword-operator
+      ^
+      source-code-llvm-whitespace
+       ^^^^
+       source-code-llvm-keyword-declaration
+           ^
+           source-code-llvm-whitespace
+            ^^^^^^
+            source-code-llvm-identifier-type-built-in
+@bytes = external global i8*
+^^^^^^
+source-code-llvm-identifier-variable
+      ^
+      source-code-llvm-whitespace
+       ^
+       source-code-llvm-keyword-operator
+        ^
+        source-code-llvm-whitespace
+         ^^^^^^^^
+         source-code-llvm-keyword-modifier
+                 ^
+                 source-code-llvm-whitespace
+                  ^^^^^^
+                  source-code-llvm-keyword-declaration
+                        ^
+                        source-code-llvm-whitespace
+                         ^^
+                         source-code-llvm-identifier-type-built-in
+                           ^
+                           source-code-llvm-keyword-operator
+declare x86_stdcallcc i32 @old(i8* nocapture) readonly
+^^^^^^^
+source-code-llvm-keyword-declaration
+       ^
+       source-code-llvm-whitespace
+        ^^^^^^^^^^^^^
+        source-code-llvm-keyword-modifier
+                     ^
+                     source-code-llvm-whitespace
+                      ^^^
+                      source-code-llvm-identifier-type-built-in
+                         ^
+                         source-code-llvm-whitespace
+                          ^^^^
+                          source-code-llvm-identifier-function
+                              ^
+                              source-code-llvm-punctuation
+                               ^^
+                               source-code-llvm-identifier-type-built-in
+                                 ^
+                                 source-code-llvm-keyword-operator
+                                  ^
+                                  source-code-llvm-whitespace
+                                   ^^^^^^^^^
+                                   source-code-llvm-keyword-modifier
+                                            ^
+                                            source-code-llvm-punctuation
+                                             ^
+                                             source-code-llvm-whitespace
+                                              ^^^^^^^^
+                                              source-code-llvm-keyword-modifier
+declare x86_mmx @mmx(x86_mmx)
+^^^^^^^
+source-code-llvm-keyword-declaration
+       ^
+       source-code-llvm-whitespace
+        ^^^^^^^
+        source-code-llvm-identifier-type-built-in
+               ^
+               source-code-llvm-whitespace
+                ^^^^
+                source-code-llvm-identifier-function
+                    ^
+                    source-code-llvm-punctuation
+                     ^^^^^^^
+                     source-code-llvm-identifier-type-built-in
+                            ^
+                            source-code-llvm-punctuation
+define void @legacy(i32* %p) #0 {
+^^^^^^
+source-code-llvm-keyword-declaration
+      ^
+      source-code-llvm-whitespace
+       ^^^^
+       source-code-llvm-identifier-type-built-in
+           ^
+           source-code-llvm-whitespace
+            ^^^^^^^
+            source-code-llvm-identifier-function
+                   ^
+                   source-code-llvm-punctuation
+                    ^^^
+                    source-code-llvm-identifier-type-built-in
+                       ^
+                       source-code-llvm-keyword-operator
+                        ^
+                        source-code-llvm-whitespace
+                         ^^
+                         source-code-llvm-identifier-variable
+                           ^
+                           source-code-llvm-punctuation
+                            ^
+                            source-code-llvm-whitespace
+                             ^^
+                             source-code-llvm-metadata
+                               ^
+                               source-code-llvm-whitespace
+                                ^
+                                source-code-llvm-punctuation
+entry:
+^^^^^
+source-code-llvm-identifier-label
+     ^
+     source-code-llvm-punctuation
+  %x = load i32, i32* %p
+^^
+source-code-llvm-whitespace
+  ^^
+  source-code-llvm-identifier-variable
+    ^
+    source-code-llvm-whitespace
+     ^
+     source-code-llvm-keyword-operator
+      ^
+      source-code-llvm-whitespace
+       ^^^^
+       source-code-llvm-keyword
+           ^
+           source-code-llvm-whitespace
+            ^^^
+            source-code-llvm-identifier-type-built-in
+               ^
+               source-code-llvm-punctuation
+                ^
+                source-code-llvm-whitespace
+                 ^^^
+                 source-code-llvm-identifier-type-built-in
+                    ^
+                    source-code-llvm-keyword-operator
+                     ^
+                     source-code-llvm-whitespace
+                      ^^
+                      source-code-llvm-identifier-variable
+  %cast = bitcast i32* %p to i8*
+^^
+source-code-llvm-whitespace
+  ^^^^^
+  source-code-llvm-identifier-variable
+       ^
+       source-code-llvm-whitespace
+        ^
+        source-code-llvm-keyword-operator
+         ^
+         source-code-llvm-whitespace
+          ^^^^^^^
+          source-code-llvm-keyword
+                 ^
+                 source-code-llvm-whitespace
+                  ^^^
+                  source-code-llvm-identifier-type-built-in
+                     ^
+                     source-code-llvm-keyword-operator
+                      ^
+                      source-code-llvm-whitespace
+                       ^^
+                       source-code-llvm-identifier-variable
+                         ^
+                         source-code-llvm-whitespace
+                          ^^
+                          source-code-llvm-keyword
+                            ^
+                            source-code-llvm-whitespace
+                             ^^
+                             source-code-llvm-identifier-type-built-in
+                               ^
+                               source-code-llvm-keyword-operator
+  %slot = getelementptr i8, i8* %cast, i64 1
+^^
+source-code-llvm-whitespace
+  ^^^^^
+  source-code-llvm-identifier-variable
+       ^
+       source-code-llvm-whitespace
+        ^
+        source-code-llvm-keyword-operator
+         ^
+         source-code-llvm-whitespace
+          ^^^^^^^^^^^^^
+          source-code-llvm-keyword
+                       ^
+                       source-code-llvm-whitespace
+                        ^^
+                        source-code-llvm-identifier-type-built-in
+                          ^
+                          source-code-llvm-punctuation
+                           ^
+                           source-code-llvm-whitespace
+                            ^^
+                            source-code-llvm-identifier-type-built-in
+                              ^
+                              source-code-llvm-keyword-operator
+                               ^
+                               source-code-llvm-whitespace
+                                ^^^^^
+                                source-code-llvm-identifier-variable
+                                     ^
+                                     source-code-llvm-punctuation
+                                      ^
+                                      source-code-llvm-whitespace
+                                       ^^^
+                                       source-code-llvm-identifier-type-built-in
+                                          ^
+                                          source-code-llvm-whitespace
+                                           ^
+                                           source-code-llvm-literal-number-integer
+  ret void
+^^
+source-code-llvm-whitespace
+  ^^^
+  source-code-llvm-keyword-control
+     ^
+     source-code-llvm-whitespace
+      ^^^^
+      source-code-llvm-identifier-type-built-in
+}
+^
+source-code-llvm-punctuation
+attributes #0 = { argmemonly readnone }
+^^^^^^^^^^
+source-code-llvm-keyword-declaration
+          ^
+          source-code-llvm-whitespace
+           ^^
+           source-code-llvm-metadata
+             ^
+             source-code-llvm-whitespace
+              ^
+              source-code-llvm-keyword-operator
+               ^
+               source-code-llvm-whitespace
+                ^
+                source-code-llvm-punctuation
+                 ^
+                 source-code-llvm-whitespace
+                  ^^^^^^^^^^
+                  source-code-llvm-keyword-modifier
+                            ^
+                            source-code-llvm-whitespace
+                             ^^^^^^^^
+                             source-code-llvm-keyword-modifier
+                                     ^
+                                     source-code-llvm-whitespace
+                                      ^
+                                      source-code-llvm-punctuation

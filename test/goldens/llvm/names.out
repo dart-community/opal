@@ -1,0 +1,376 @@
+%Pair = type { i32, ptr }
+^^^^^
+source-code-llvm-identifier-type
+     ^
+     source-code-llvm-whitespace
+      ^
+      source-code-llvm-keyword-operator
+       ^
+       source-code-llvm-whitespace
+        ^^^^
+        source-code-llvm-keyword-declaration
+            ^
+            source-code-llvm-whitespace
+             ^
+             source-code-llvm-punctuation
+              ^
+              source-code-llvm-whitespace
+               ^^^
+               source-code-llvm-identifier-type-built-in
+                  ^
+                  source-code-llvm-punctuation
+                   ^
+                   source-code-llvm-whitespace
+                    ^^^
+                    source-code-llvm-identifier-type-built-in
+                       ^
+                       source-code-llvm-whitespace
+                        ^
+                        source-code-llvm-punctuation
+%"odd type" = type opaque
+^^
+source-code-llvm-identifier-type-identifier-type-begin
+  ^^^^^^^^
+  source-code-llvm-identifier-type
+          ^
+          source-code-llvm-identifier-type-identifier-type-end
+           ^
+           source-code-llvm-whitespace
+            ^
+            source-code-llvm-keyword-operator
+             ^
+             source-code-llvm-whitespace
+              ^^^^
+              source-code-llvm-keyword-declaration
+                  ^
+                  source-code-llvm-whitespace
+                   ^^^^^^
+                   source-code-llvm-identifier-type-built-in
+@llvm.global_ctors = appending global [0 x ptr] zeroinitializer
+^^^^^^^^^^^^^^^^^^
+source-code-llvm-identifier-variable
+                  ^
+                  source-code-llvm-whitespace
+                   ^
+                   source-code-llvm-keyword-operator
+                    ^
+                    source-code-llvm-whitespace
+                     ^^^^^^^^^
+                     source-code-llvm-keyword-modifier
+                              ^
+                              source-code-llvm-whitespace
+                               ^^^^^^
+                               source-code-llvm-keyword-declaration
+                                     ^
+                                     source-code-llvm-whitespace
+                                      ^
+                                      source-code-llvm-punctuation
+                                       ^
+                                       source-code-llvm-literal-number-integer
+                                        ^
+                                        source-code-llvm-whitespace
+                                         ^
+                                         source-code-llvm-keyword
+                                          ^
+                                          source-code-llvm-whitespace
+                                           ^^^
+                                           source-code-llvm-identifier-type-built-in
+                                              ^
+                                              source-code-llvm-punctuation
+                                               ^
+                                               source-code-llvm-whitespace
+                                                ^^^^^^^^^^^^^^^
+                                                source-code-llvm-literal
+@0 = global ptr null
+^^
+source-code-llvm-identifier-variable
+  ^
+  source-code-llvm-whitespace
+   ^
+   source-code-llvm-keyword-operator
+    ^
+    source-code-llvm-whitespace
+     ^^^^^^
+     source-code-llvm-keyword-declaration
+           ^
+           source-code-llvm-whitespace
+            ^^^
+            source-code-llvm-identifier-type-built-in
+               ^
+               source-code-llvm-whitespace
+                ^^^^
+                source-code-llvm-literal-null
+@"\01quoted\20global" = global i8 0
+^^
+source-code-llvm-identifier-variable-identifier-variable-begin
+  ^^^
+  source-code-llvm-identifier-variable-literal-string-escape
+     ^^^^^^
+     source-code-llvm-identifier-variable
+           ^^^
+           source-code-llvm-identifier-variable-literal-string-escape
+              ^^^^^^
+              source-code-llvm-identifier-variable
+                    ^
+                    source-code-llvm-identifier-variable-identifier-variable-end
+                     ^
+                     source-code-llvm-whitespace
+                      ^
+                      source-code-llvm-keyword-operator
+                       ^
+                       source-code-llvm-whitespace
+                        ^^^^^^
+                        source-code-llvm-keyword-declaration
+                              ^
+                              source-code-llvm-whitespace
+                               ^^
+                               source-code-llvm-identifier-type-built-in
+                                 ^
+                                 source-code-llvm-whitespace
+                                  ^
+                                  source-code-llvm-literal-number-integer
+$group = comdat any
+^^^^^^
+source-code-llvm-identifier
+      ^
+      source-code-llvm-whitespace
+       ^
+       source-code-llvm-keyword-operator
+        ^
+        source-code-llvm-whitespace
+         ^^^^^^
+         source-code-llvm-keyword-declaration
+               ^
+               source-code-llvm-whitespace
+                ^^^
+                source-code-llvm-keyword-modifier
+$"quoted group" = comdat exactmatch
+^^
+source-code-llvm-identifier-identifier-begin
+  ^^^^^^^^^^^^
+  source-code-llvm-identifier
+              ^
+              source-code-llvm-identifier-identifier-end
+               ^
+               source-code-llvm-whitespace
+                ^
+                source-code-llvm-keyword-operator
+                 ^
+                 source-code-llvm-whitespace
+                  ^^^^^^
+                  source-code-llvm-keyword-declaration
+                        ^
+                        source-code-llvm-whitespace
+                         ^^^^^^^^^^
+                         source-code-llvm-keyword-modifier
+define void @"quoted function"(ptr %add, i32 %i32, i8 %123) {
+^^^^^^
+source-code-llvm-keyword-declaration
+      ^
+      source-code-llvm-whitespace
+       ^^^^
+       source-code-llvm-identifier-type-built-in
+           ^
+           source-code-llvm-whitespace
+            ^^
+            source-code-llvm-identifier-function-identifier-function-begin
+              ^^^^^^^^^^^^^^^
+              source-code-llvm-identifier-function
+                             ^
+                             source-code-llvm-identifier-function-identifier-function-end
+                              ^
+                              source-code-llvm-punctuation
+                               ^^^
+                               source-code-llvm-identifier-type-built-in
+                                  ^
+                                  source-code-llvm-whitespace
+                                   ^^^^
+                                   source-code-llvm-identifier-variable
+                                       ^
+                                       source-code-llvm-punctuation
+                                        ^
+                                        source-code-llvm-whitespace
+                                         ^^^
+                                         source-code-llvm-identifier-type-built-in
+                                            ^
+                                            source-code-llvm-whitespace
+                                             ^^^^
+                                             source-code-llvm-identifier-variable
+                                                 ^
+                                                 source-code-llvm-punctuation
+                                                  ^
+                                                  source-code-llvm-whitespace
+                                                   ^^
+                                                   source-code-llvm-identifier-type-built-in
+                                                     ^
+                                                     source-code-llvm-whitespace
+                                                      ^^^^
+                                                      source-code-llvm-identifier-variable
+                                                          ^
+                                                          source-code-llvm-punctuation
+                                                           ^
+                                                           source-code-llvm-whitespace
+                                                            ^
+                                                            source-code-llvm-punctuation
+"quoted label":
+^
+source-code-llvm-identifier-label-identifier-label-begin
+ ^^^^^^^^^^^^
+ source-code-llvm-identifier-label
+             ^
+             source-code-llvm-identifier-label-identifier-label-end
+              ^
+              source-code-llvm-punctuation
+  %foo-bar.baz$1 = load %Pair, ptr %add
+^^
+source-code-llvm-whitespace
+  ^^^^^^^^^^^^^^
+  source-code-llvm-identifier-variable
+                ^
+                source-code-llvm-whitespace
+                 ^
+                 source-code-llvm-keyword-operator
+                  ^
+                  source-code-llvm-whitespace
+                   ^^^^
+                   source-code-llvm-keyword
+                       ^
+                       source-code-llvm-whitespace
+                        ^^^^^
+                        source-code-llvm-identifier-variable
+                             ^
+                             source-code-llvm-punctuation
+                              ^
+                              source-code-llvm-whitespace
+                               ^^^
+                               source-code-llvm-identifier-type-built-in
+                                  ^
+                                  source-code-llvm-whitespace
+                                   ^^^^
+                                   source-code-llvm-identifier-variable
+  call void @llvm.assume(i1 true)
+^^
+source-code-llvm-whitespace
+  ^^^^
+  source-code-llvm-keyword-control
+      ^
+      source-code-llvm-whitespace
+       ^^^^
+       source-code-llvm-identifier-type-built-in
+           ^
+           source-code-llvm-whitespace
+            ^^^^^^^^^^^^
+            source-code-llvm-identifier-function
+                        ^
+                        source-code-llvm-punctuation
+                         ^^
+                         source-code-llvm-identifier-type-built-in
+                           ^
+                           source-code-llvm-whitespace
+                            ^^^^
+                            source-code-llvm-literal-boolean-true
+                                ^
+                                source-code-llvm-punctuation
+  call void @"quoted function"(ptr %add, i32 0, i8 1)
+^^
+source-code-llvm-whitespace
+  ^^^^
+  source-code-llvm-keyword-control
+      ^
+      source-code-llvm-whitespace
+       ^^^^
+       source-code-llvm-identifier-type-built-in
+           ^
+           source-code-llvm-whitespace
+            ^^
+            source-code-llvm-identifier-function-identifier-function-begin
+              ^^^^^^^^^^^^^^^
+              source-code-llvm-identifier-function
+                             ^
+                             source-code-llvm-identifier-function-identifier-function-end
+                              ^
+                              source-code-llvm-punctuation
+                               ^^^
+                               source-code-llvm-identifier-type-built-in
+                                  ^
+                                  source-code-llvm-whitespace
+                                   ^^^^
+                                   source-code-llvm-identifier-variable
+                                       ^
+                                       source-code-llvm-punctuation
+                                        ^
+                                        source-code-llvm-whitespace
+                                         ^^^
+                                         source-code-llvm-identifier-type-built-in
+                                            ^
+                                            source-code-llvm-whitespace
+                                             ^
+                                             source-code-llvm-literal-number-integer
+                                              ^
+                                              source-code-llvm-punctuation
+                                               ^
+                                               source-code-llvm-whitespace
+                                                ^^
+                                                source-code-llvm-identifier-type-built-in
+                                                  ^
+                                                  source-code-llvm-whitespace
+                                                   ^
+                                                   source-code-llvm-literal-number-integer
+                                                    ^
+                                                    source-code-llvm-punctuation
+  br label %"quoted label"
+^^
+source-code-llvm-whitespace
+  ^^
+  source-code-llvm-keyword-control
+    ^
+    source-code-llvm-whitespace
+     ^^^^^
+     source-code-llvm-identifier-type-built-in
+          ^
+          source-code-llvm-whitespace
+           ^^
+           source-code-llvm-identifier-label-identifier-label-begin
+             ^^^^^^^^^^^^
+             source-code-llvm-identifier-label
+                         ^
+                         source-code-llvm-identifier-label-identifier-label-end
+12:
+^^
+source-code-llvm-identifier-label
+  ^
+  source-code-llvm-punctuation
+  ret void
+^^
+source-code-llvm-whitespace
+  ^^^
+  source-code-llvm-keyword-control
+     ^
+     source-code-llvm-whitespace
+      ^^^^
+      source-code-llvm-identifier-type-built-in
+}
+^
+source-code-llvm-punctuation
+; These whole words must not be split into smaller tokens.
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+source-code-llvm-comment-line
+additional i32suffix float.foo ret-value 123abc
+^^^^^^^^^^
+source-code-llvm-keyword-modifier
+          ^
+          source-code-llvm-whitespace
+           ^^^^^^^^^
+           source-code-llvm-keyword-modifier
+                    ^
+                    source-code-llvm-whitespace
+                     ^^^^^^^^^
+                     source-code-llvm-identifier
+                              ^
+                              source-code-llvm-whitespace
+                               ^^^^^^^^^
+                               source-code-llvm-identifier
+                                        ^
+                                        source-code-llvm-whitespace
+                                         ^^^^^^
+                                         source-code-llvm-identifier

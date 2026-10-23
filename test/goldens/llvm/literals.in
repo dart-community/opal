@@ -1,0 +1,35 @@
+i32 0, -42
+i32 u0x8000, s0x8000, u0xABcd, s0x0
+float 0.0, 1., -1.25E+2, +4.5e-13
+double 0x1.3effp-43, -0x1.fp13, +0xA.BCp+2, 0x1.P0, 0x1p+2, -0x1P-3, 0x.8p1
+double 0x3FF0000000000000
+half 0xH3C00, f0x3c00
+bfloat 0xR3F80
+x86_fp80 0xK3FFF8000000000000000
+fp128 0xL00000000000000003FFF0000000000000
+ppc_fp128 0xM3FF00000000000000000000000000000
+double +inf, -inf, +qnan, -nan(0x1), +snan(0x123)
+i1 true, false
+ptr null
+token none
+i32 zeroinitializer, undef, poison
+@message = constant [8 x i8] c"hi\0A\22\\\00"
+@";/*name*/" = global ptr null
+!"metadata\20string"
+module asm "mov x0, x0 ; assembly stays a string"
+module asm "first line
+second line"
+%"multiline
+name" = add i32 1, 2
+"bad\qescape\" ret void
+; RUN: opt %s
+; CHECK-LABEL: @f
+/* block comment
+   ; "quotes" and /* openers stay comment text
+*/ ret void
+/**/ ret void
+/****/ ret void
+/* unterminated
+define void @inside_comment() {
+  ret void
+}

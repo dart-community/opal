@@ -1,0 +1,9 @@
+$f = comdat any
+@alias = alias i32, ptr @data
+@resolver = ifunc i32 (), ptr @resolve
+define dso_local fastcc noundef i32 @f(ptr captures(none) nonnull %p) local_unnamed_addr #0 comdat($f) {
+  ret i32 0
+}
+attributes #0 = { noinline nounwind memory(argmem: read, inaccessiblemem: readwrite) }
+attributes #1 = { nofpclass(nan inf) denormal_fpenv(ieee, preservesign) "target-cpu"="generic" }
+declare cc123 void @other()

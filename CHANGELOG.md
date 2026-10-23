@@ -1,5 +1,7 @@
 ## 0.2.7-wip
 
+- Add support for textual LLVM IR (`llvm`, `ll`, `llvm-ir`),
+  including metadata, debug records, and common older syntax.
 - Improve the accuracy of `dart` highlighting, including for
   doc comments, string interpolation, contextual keywords, and generics.
 - Recover from unterminated `dart` strings at the end of their line.

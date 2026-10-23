@@ -100,6 +100,8 @@ final Map<String, String> _defaultFallbackLanguageNames = {
   'javascript': BuiltInLanguages.js.name,
   'ts': BuiltInLanguages.typescript.name,
   'kt': BuiltInLanguages.kotlin.name,
+  'll': BuiltInLanguages.llvm.name,
+  'llvm-ir': BuiltInLanguages.llvm.name,
   'md': BuiltInLanguages.markdown.name,
   'mmd': BuiltInLanguages.mermaid.name,
   'py': BuiltInLanguages.python.name,

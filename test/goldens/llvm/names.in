@@ -1,0 +1,18 @@
+%Pair = type { i32, ptr }
+%"odd type" = type opaque
+@llvm.global_ctors = appending global [0 x ptr] zeroinitializer
+@0 = global ptr null
+@"\01quoted\20global" = global i8 0
+$group = comdat any
+$"quoted group" = comdat exactmatch
+define void @"quoted function"(ptr %add, i32 %i32, i8 %123) {
+"quoted label":
+  %foo-bar.baz$1 = load %Pair, ptr %add
+  call void @llvm.assume(i1 true)
+  call void @"quoted function"(ptr %add, i32 0, i8 1)
+  br label %"quoted label"
+12:
+  ret void
+}
+; These whole words must not be split into smaller tokens.
+additional i32suffix float.foo ret-value 123abc

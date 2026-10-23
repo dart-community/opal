@@ -63,6 +63,7 @@ the specified default and alternative IDs:
 - JavaScript (`javascript`, `js`)
 - JSON (`json`)
 - Kotlin (`kotlin`, `kt`)
+- LLVM IR (`llvm`, `ll`, `llvm-ir`; textual `.ll` format, excluding binary bitcode)
 - Markdown (`markdown`, `md`)
 - Mermaid (`mermaid`, `mmd`)
 - Objective-C (`objective-c`, `objectivec`, `obj-c`, `objc`)

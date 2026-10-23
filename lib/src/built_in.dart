@@ -24,6 +24,7 @@ import 'language/python.dart';
 import 'language/ruby.dart';
 import 'language/swift.dart';
 import 'language/text.dart';
+import 'language/toml.dart';
 import 'language/typescript.dart';
 import 'language/xml.dart';
 import 'language/yaml.dart';
@@ -59,6 +60,7 @@ abstract final class BuiltInLanguages {
     ruby,
     swift,
     text,
+    toml,
     typescript,
     xml,
     yaml,
@@ -226,6 +228,13 @@ abstract final class BuiltInLanguages {
   /// A [Language] for textual content that
   /// passes through each line as a single token.
   static const Language text = TextLanguage();
+
+  /// A tokenizing language implementation for the TOML 1.1 data format.
+  static final Language toml = MatcherLanguage(
+    name: 'toml',
+    grammar: const TomlGrammar(),
+    baseTag: const Tag('toml', parent: Tags.dataSource),
+  );
 
   /// A tokenizing language implementation for TypeScript.
   static final Language typescript = MatcherLanguage(

@@ -1,0 +1,12 @@
+bare-key_1 = 1
+1234 = 1234
+true.false = true
+3.14159 = 3.14159
+"" = "empty key"
+'' = 'another empty key'
+site . "example.com" . 'port' = 443
+"escaped\x20key".'literal\key' = "value"
+"表😀" = "Unicode"
+
+  [ physical . "shape.with.dots" . 'name' ]
+[[ 1234 . true . "quoted\"key" ]]

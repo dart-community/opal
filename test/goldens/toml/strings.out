@@ -1,0 +1,221 @@
+basic = "quote: \" slash: \\ tab: \t escape: \e hex: \xE9 \u03B1 \U0001F600"
+^^^^^
+source-text-data-toml-identifier-property
+     ^
+     source-text-data-toml-whitespace
+      ^
+      source-text-data-toml-punctuation-separator
+       ^
+       source-text-data-toml-whitespace
+        ^
+        source-text-data-toml-literal-string-quoted-double-literal-string-quoted-double-begin
+         ^^^^^^^
+         source-text-data-toml-literal-string-quoted-double-literal-string-unquoted
+                ^^
+                source-text-data-toml-literal-string-quoted-double-literal-string-escape
+                  ^^^^^^^^
+                  source-text-data-toml-literal-string-quoted-double-literal-string-unquoted
+                          ^^
+                          source-text-data-toml-literal-string-quoted-double-literal-string-escape
+                            ^^^^^^
+                            source-text-data-toml-literal-string-quoted-double-literal-string-unquoted
+                                  ^^
+                                  source-text-data-toml-literal-string-quoted-double-literal-string-escape
+                                    ^^^^^^^^^
+                                    source-text-data-toml-literal-string-quoted-double-literal-string-unquoted
+                                             ^^
+                                             source-text-data-toml-literal-string-quoted-double-literal-string-escape
+                                               ^^^^^^
+                                               source-text-data-toml-literal-string-quoted-double-literal-string-unquoted
+                                                     ^^^^
+                                                     source-text-data-toml-literal-string-quoted-double-literal-string-escape
+                                                         ^
+                                                         source-text-data-toml-literal-string-quoted-double-literal-string-unquoted
+                                                          ^^^^^^
+                                                          source-text-data-toml-literal-string-quoted-double-literal-string-escape
+                                                                ^
+                                                                source-text-data-toml-literal-string-quoted-double-literal-string-unquoted
+                                                                 ^^^^^^^^^^
+                                                                 source-text-data-toml-literal-string-quoted-double-literal-string-escape
+                                                                           ^
+                                                                           source-text-data-toml-literal-string-quoted-double-literal-string-quoted-double-end
+literal = 'C:\Users\opal\'
+^^^^^^^
+source-text-data-toml-identifier-property
+       ^
+       source-text-data-toml-whitespace
+        ^
+        source-text-data-toml-punctuation-separator
+         ^
+         source-text-data-toml-whitespace
+          ^
+          source-text-data-toml-literal-string-quoted-single-literal-string-quoted-single-begin
+           ^^^^^^^^^^^^^^
+           source-text-data-toml-literal-string-quoted-single-literal-string-unquoted
+                         ^
+                         source-text-data-toml-literal-string-quoted-single-literal-string-quoted-single-end
+hash = "# text" # comment
+^^^^
+source-text-data-toml-identifier-property
+    ^
+    source-text-data-toml-whitespace
+     ^
+     source-text-data-toml-punctuation-separator
+      ^
+      source-text-data-toml-whitespace
+       ^
+       source-text-data-toml-literal-string-quoted-double-literal-string-quoted-double-begin
+        ^^^^^^
+        source-text-data-toml-literal-string-quoted-double-literal-string-unquoted
+              ^
+              source-text-data-toml-literal-string-quoted-double-literal-string-quoted-double-end
+               ^
+               source-text-data-toml-whitespace
+                ^^^^^^^^^
+                source-text-data-toml-comment-line
+empty = ["", '', """""", '''''']
+^^^^^
+source-text-data-toml-identifier-property
+     ^
+     source-text-data-toml-whitespace
+      ^
+      source-text-data-toml-punctuation-separator
+       ^
+       source-text-data-toml-whitespace
+        ^
+        source-text-data-toml-literal-collection-array-literal-collection-array-begin
+         ^
+         source-text-data-toml-literal-collection-array-literal-string-quoted-double-literal-string-quoted-double-begin
+          ^
+          source-text-data-toml-literal-collection-array-literal-string-quoted-double-literal-string-quoted-double-end
+           ^
+           source-text-data-toml-literal-collection-array-punctuation-separator
+            ^
+            source-text-data-toml-literal-collection-array-whitespace
+             ^
+             source-text-data-toml-literal-collection-array-literal-string-quoted-single-literal-string-quoted-single-begin
+              ^
+              source-text-data-toml-literal-collection-array-literal-string-quoted-single-literal-string-quoted-single-end
+               ^
+               source-text-data-toml-literal-collection-array-punctuation-separator
+                ^
+                source-text-data-toml-literal-collection-array-whitespace
+                 ^^^
+                 source-text-data-toml-literal-collection-array-literal-string-quoted-triple-literal-string-quoted-triple-begin
+                    ^^^
+                    source-text-data-toml-literal-collection-array-literal-string-quoted-triple-literal-string-quoted-triple-end
+                       ^
+                       source-text-data-toml-literal-collection-array-punctuation-separator
+                        ^
+                        source-text-data-toml-literal-collection-array-whitespace
+                         ^^^
+                         source-text-data-toml-literal-collection-array-literal-string-quoted-triple-literal-string-quoted-triple-begin
+                            ^^^
+                            source-text-data-toml-literal-collection-array-literal-string-quoted-triple-literal-string-quoted-triple-end
+                               ^
+                               source-text-data-toml-literal-collection-array-literal-collection-array-end
+multi = """
+^^^^^
+source-text-data-toml-identifier-property
+     ^
+     source-text-data-toml-whitespace
+      ^
+      source-text-data-toml-punctuation-separator
+       ^
+       source-text-data-toml-whitespace
+        ^^^
+        source-text-data-toml-literal-string-quoted-triple-literal-string-quoted-triple-begin
+# still string content
+^^^^^^^^^^^^^^^^^^^^^^
+source-text-data-toml-literal-string-quoted-triple-literal-string-unquoted
+one " or two "" quotes
+^^^^^^^^^^^^^^^^^^^^^^
+source-text-data-toml-literal-string-quoted-triple-literal-string-unquoted
+escaped triple: ""\"
+^^^^^^^^^^^^^^^^^^
+source-text-data-toml-literal-string-quoted-triple-literal-string-unquoted
+                  ^^
+                  source-text-data-toml-literal-string-quoted-triple-literal-string-escape
+"""
+^^^
+source-text-data-toml-literal-string-quoted-triple-literal-string-quoted-triple-end
+continuation = """\
+^^^^^^^^^^^^
+source-text-data-toml-identifier-property
+            ^
+            source-text-data-toml-whitespace
+             ^
+             source-text-data-toml-punctuation-separator
+              ^
+              source-text-data-toml-whitespace
+               ^^^
+               source-text-data-toml-literal-string-quoted-triple-literal-string-quoted-triple-begin
+                  ^
+                  source-text-data-toml-literal-string-quoted-triple-literal-string-escape
+  first \
+^^^^^^^^
+source-text-data-toml-literal-string-quoted-triple-literal-string-unquoted
+        ^
+        source-text-data-toml-literal-string-quoted-triple-literal-string-escape
+
+    second\
+^^^^^^^^^^
+source-text-data-toml-literal-string-quoted-triple-literal-string-unquoted
+          ^
+          source-text-data-toml-literal-string-quoted-triple-literal-string-escape
+  """
+^^
+source-text-data-toml-literal-string-quoted-triple-literal-string-unquoted
+  ^^^
+  source-text-data-toml-literal-string-quoted-triple-literal-string-quoted-triple-end
+literal_multi = '''
+^^^^^^^^^^^^^
+source-text-data-toml-identifier-property
+             ^
+             source-text-data-toml-whitespace
+              ^
+              source-text-data-toml-punctuation-separator
+               ^
+               source-text-data-toml-whitespace
+                ^^^
+                source-text-data-toml-literal-string-quoted-triple-literal-string-quoted-triple-begin
+unescaped \xHH and a ' or two ''
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+source-text-data-toml-literal-string-quoted-triple-literal-string-unquoted
+'''
+^^^
+source-text-data-toml-literal-string-quoted-triple-literal-string-quoted-triple-end
+four = """"quoted text""""
+^^^^
+source-text-data-toml-identifier-property
+    ^
+    source-text-data-toml-whitespace
+     ^
+     source-text-data-toml-punctuation-separator
+      ^
+      source-text-data-toml-whitespace
+       ^^^
+       source-text-data-toml-literal-string-quoted-triple-literal-string-quoted-triple-begin
+          ^^^^^^^^^^^^
+          source-text-data-toml-literal-string-quoted-triple-literal-string-unquoted
+                      ^
+                      source-text-data-toml-literal-string-quoted-triple-literal-string-unquoted
+                       ^^^
+                       source-text-data-toml-literal-string-quoted-triple-literal-string-quoted-triple-end
+five = '''''two quotes at either side'''''
+^^^^
+source-text-data-toml-identifier-property
+    ^
+    source-text-data-toml-whitespace
+     ^
+     source-text-data-toml-punctuation-separator
+      ^
+      source-text-data-toml-whitespace
+       ^^^
+       source-text-data-toml-literal-string-quoted-triple-literal-string-quoted-triple-begin
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+          source-text-data-toml-literal-string-quoted-triple-literal-string-unquoted
+                                     ^^
+                                     source-text-data-toml-literal-string-quoted-triple-literal-string-unquoted
+                                       ^^^
+                                       source-text-data-toml-literal-string-quoted-triple-literal-string-quoted-triple-end

@@ -1,0 +1,22 @@
+matrix = [
+  [1, 2],
+  [[3], [4]],
+  # Comments can precede commas and closers.
+]
+contact = {
+  personal = {
+    name = "Example",
+    available = true,
+  },
+  work = { role.name = 'Developer', },
+  1234 = [
+    { true = false, "" = "empty", },
+    { when = 2026-10-24 09:30Z },
+  ],
+}
+[[products]]
+name = "First"
+[products.details]
+sizes = [{ width = 1, height = 2 }, { width = 3, height = 4 }]
+[[products]]
+name = "Second"

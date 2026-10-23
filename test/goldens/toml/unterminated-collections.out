@@ -1,0 +1,173 @@
+unclosed_table = { a = 1, b = [2, 3]
+^^^^^^^^^^^^^^
+source-text-data-toml-identifier-property
+              ^
+              source-text-data-toml-whitespace
+               ^
+               source-text-data-toml-punctuation-separator
+                ^
+                source-text-data-toml-whitespace
+                 ^
+                 source-text-data-toml-literal-collection-map-literal-collection-map-begin
+                  ^
+                  source-text-data-toml-literal-collection-map-whitespace
+                   ^
+                   source-text-data-toml-literal-collection-map-identifier-property
+                    ^
+                    source-text-data-toml-literal-collection-map-whitespace
+                     ^
+                     source-text-data-toml-literal-collection-map-punctuation-separator
+                      ^
+                      source-text-data-toml-literal-collection-map-whitespace
+                       ^
+                       source-text-data-toml-literal-collection-map-literal-number-integer
+                        ^
+                        source-text-data-toml-literal-collection-map-punctuation-separator
+                         ^
+                         source-text-data-toml-literal-collection-map-whitespace
+                          ^
+                          source-text-data-toml-literal-collection-map-identifier-property
+                           ^
+                           source-text-data-toml-literal-collection-map-whitespace
+                            ^
+                            source-text-data-toml-literal-collection-map-punctuation-separator
+                             ^
+                             source-text-data-toml-literal-collection-map-whitespace
+                              ^
+                              source-text-data-toml-literal-collection-map-literal-collection-array-literal-collection-array-begin
+                               ^
+                               source-text-data-toml-literal-collection-map-literal-collection-array-literal-number-integer
+                                ^
+                                source-text-data-toml-literal-collection-map-literal-collection-array-punctuation-separator
+                                 ^
+                                 source-text-data-toml-literal-collection-map-literal-collection-array-whitespace
+                                  ^
+                                  source-text-data-toml-literal-collection-map-literal-collection-array-literal-number-integer
+                                   ^
+                                   source-text-data-toml-literal-collection-map-literal-collection-array-literal-collection-array-end
+[table]
+^
+source-text-data-toml-punctuation
+ ^^^^^
+ source-text-data-toml-identifier-property
+      ^
+      source-text-data-toml-punctuation
+unclosed_array = [
+^^^^^^^^^^^^^^
+source-text-data-toml-identifier-property
+              ^
+              source-text-data-toml-whitespace
+               ^
+               source-text-data-toml-punctuation-separator
+                ^
+                source-text-data-toml-whitespace
+                 ^
+                 source-text-data-toml-literal-collection-array-literal-collection-array-begin
+  1, [2, 3], 3.14,
+^^
+source-text-data-toml-literal-collection-array-whitespace
+  ^
+  source-text-data-toml-literal-collection-array-literal-number-integer
+   ^
+   source-text-data-toml-literal-collection-array-punctuation-separator
+    ^
+    source-text-data-toml-literal-collection-array-whitespace
+     ^
+     source-text-data-toml-literal-collection-array-literal-collection-array-literal-collection-array-begin
+      ^
+      source-text-data-toml-literal-collection-array-literal-collection-array-literal-number-integer
+       ^
+       source-text-data-toml-literal-collection-array-literal-collection-array-punctuation-separator
+        ^
+        source-text-data-toml-literal-collection-array-literal-collection-array-whitespace
+         ^
+         source-text-data-toml-literal-collection-array-literal-collection-array-literal-number-integer
+          ^
+          source-text-data-toml-literal-collection-array-literal-collection-array-literal-collection-array-end
+           ^
+           source-text-data-toml-literal-collection-array-punctuation-separator
+            ^
+            source-text-data-toml-literal-collection-array-whitespace
+             ^^^^
+             source-text-data-toml-literal-collection-array-literal-number-float
+                 ^
+                 source-text-data-toml-literal-collection-array-punctuation-separator
+  "four", { five = 5 },
+^^
+source-text-data-toml-literal-collection-array-whitespace
+  ^
+  source-text-data-toml-literal-collection-array-literal-string-quoted-double-literal-string-quoted-double-begin
+   ^^^^
+   source-text-data-toml-literal-collection-array-literal-string-quoted-double-literal-string-unquoted
+       ^
+       source-text-data-toml-literal-collection-array-literal-string-quoted-double-literal-string-quoted-double-end
+        ^
+        source-text-data-toml-literal-collection-array-punctuation-separator
+         ^
+         source-text-data-toml-literal-collection-array-whitespace
+          ^
+          source-text-data-toml-literal-collection-array-literal-collection-map-literal-collection-map-begin
+           ^
+           source-text-data-toml-literal-collection-array-literal-collection-map-whitespace
+            ^^^^
+            source-text-data-toml-literal-collection-array-literal-collection-map-identifier-property
+                ^
+                source-text-data-toml-literal-collection-array-literal-collection-map-whitespace
+                 ^
+                 source-text-data-toml-literal-collection-array-literal-collection-map-punctuation-separator
+                  ^
+                  source-text-data-toml-literal-collection-array-literal-collection-map-whitespace
+                   ^
+                   source-text-data-toml-literal-collection-array-literal-collection-map-literal-number-integer
+                    ^
+                    source-text-data-toml-literal-collection-array-literal-collection-map-whitespace
+                     ^
+                     source-text-data-toml-literal-collection-array-literal-collection-map-literal-collection-map-end
+                      ^
+                      source-text-data-toml-literal-collection-array-punctuation-separator
+  # comment = not a key
+^^
+source-text-data-toml-literal-collection-array-whitespace
+  ^^^^^^^^^^^^^^^^^^^^^
+  source-text-data-toml-literal-collection-array-comment-line
+next = "recovered"
+^^^^
+source-text-data-toml-identifier-property
+    ^
+    source-text-data-toml-whitespace
+     ^
+     source-text-data-toml-punctuation-separator
+      ^
+      source-text-data-toml-whitespace
+       ^
+       source-text-data-toml-literal-string-quoted-double-literal-string-quoted-double-begin
+        ^^^^^^^^^
+        source-text-data-toml-literal-string-quoted-double-literal-string-unquoted
+                 ^
+                 source-text-data-toml-literal-string-quoted-double-literal-string-quoted-double-end
+bad$key=1
+^^^
+source-text-data-toml-identifier-property
+   ^^^^
+   source-text-data-toml-unknown
+       ^
+       source-text-data-toml-punctuation-separator
+        ^
+        source-text-data-toml-literal-number-integer
+dotted.bad@key='value'
+^^^^^^
+source-text-data-toml-identifier-property
+      ^
+      source-text-data-toml-punctuation-accessor
+       ^^^
+       source-text-data-toml-identifier-property
+          ^^^^
+          source-text-data-toml-unknown
+              ^
+              source-text-data-toml-punctuation-separator
+               ^
+               source-text-data-toml-literal-string-quoted-single-literal-string-quoted-single-begin
+                ^^^^^
+                source-text-data-toml-literal-string-quoted-single-literal-string-unquoted
+                     ^
+                     source-text-data-toml-literal-string-quoted-single-literal-string-quoted-single-end

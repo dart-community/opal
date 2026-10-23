@@ -1,0 +1,20 @@
+message = """
+^^^^^^^
+source-text-data-toml-identifier-property
+       ^
+       source-text-data-toml-whitespace
+        ^
+        source-text-data-toml-punctuation-separator
+         ^
+         source-text-data-toml-whitespace
+          ^^^
+          source-text-data-toml-literal-string-quoted-triple-literal-string-quoted-triple-begin
+This snippet ends inside a multiline string.
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+source-text-data-toml-literal-string-quoted-triple-literal-string-unquoted
+[not.a.header]
+^^^^^^^^^^^^^^
+source-text-data-toml-literal-string-quoted-triple-literal-string-unquoted
+key = true # neither a boolean nor a comment
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+source-text-data-toml-literal-string-quoted-triple-literal-string-unquoted

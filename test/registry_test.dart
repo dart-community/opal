@@ -72,6 +72,14 @@ void main() {
         expect(registry['bitcode'], isNull);
       });
 
+      test('includes toml language', () {
+        for (final name in ['toml', 'TOML', ' toml ']) {
+          expect(registry[name], same(BuiltInLanguages.toml));
+        }
+        expect(BuiltInLanguages.toml.name, 'toml');
+        expect(BuiltInLanguages.all, contains(BuiltInLanguages.toml));
+      });
+
       test('returns null for unknown language', () {
         expect(registry['unknown'], isNull);
         expect(registry['perl'], isNull);

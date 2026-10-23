@@ -1,4 +1,4 @@
-## 0.2.7-wip
+## 0.3.0
 
 - Add support for TOML 1.1 (`toml`).
 - Add support for textual LLVM IR (`llvm`, `ll`, `llvm-ir`).

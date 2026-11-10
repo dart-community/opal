@@ -1,0 +1,14 @@
+/* unterminated /* nested */
+^^
+source-code-rust-comment-block-comment-block-begin
+  ^^^^^^^^^^^^^^
+  source-code-rust-comment-block-comment-block-content
+                ^^
+                source-code-rust-comment-block-comment-block-begin
+                  ^^^^^^^^
+                  source-code-rust-comment-block-comment-block-content
+                          ^^
+                          source-code-rust-comment-block-comment-block-end
+fn after() {}
+^^^^^^^^^^^^^
+source-code-rust-comment-block-comment-block-content

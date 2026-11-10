@@ -1,3 +1,7 @@
+## 0.3.1-wip
+
+- Add support for Rust (`rust`, `rs`).
+
 ## 0.3.0
 
 - Add support for TOML 1.1 (`toml`).

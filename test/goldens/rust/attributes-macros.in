@@ -1,0 +1,22 @@
+#![allow(dead_code)]
+
+#[derive(
+    Debug,
+    serde::Serialize,
+)]
+struct Config { name: String }
+
+#[unsafe(no_mangle)]
+pub extern "C" fn exported() {}
+
+#[diagnostic::on_unimplemented(message = "missing")]
+trait Marker {}
+
+macro_rules! r#try {
+    ($($item:ident),*) => { $crate::helper($($item),*) };
+}
+r#try!(first, second);
+macro_rules!square { ($x:expr) => { $x * $x }; }
+
+let flags = vec![Example!(1), bool!(false), MAX!()];
+let tokens = quote! { #name };

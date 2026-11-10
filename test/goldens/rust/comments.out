@@ -1,0 +1,220 @@
+#!/usr/bin/env rust-script
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+source-code-rust-comment-line
+//! See [`Parser`], [guide](https://example.com), and [reference][guide].
+^^^
+source-code-rust-comment-block-doc-comment-block-doc-begin
+   ^^^^^
+   source-code-rust-comment-block-doc-comment-block-doc-content
+        ^^^^^^^^^^
+        source-code-rust-comment-block-doc-comment-reference
+                  ^^
+                  source-code-rust-comment-block-doc-comment-block-doc-content
+                    ^
+                    source-code-rust-comment-block-doc-comment-block-doc-content
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                     source-code-rust-comment-block-doc-comment-block-doc-content
+                                                      ^
+                                                      source-code-rust-comment-block-doc-comment-block-doc-content
+                                                       ^^^^^^^^^^
+                                                       source-code-rust-comment-block-doc-comment-block-doc-content
+                                                                 ^
+                                                                 source-code-rust-comment-block-doc-comment-block-doc-content
+                                                                  ^^^^^^^
+                                                                  source-code-rust-comment-block-doc-comment-block-doc-content
+//! [guide]: https://example.com/reference
+^^^
+source-code-rust-comment-block-doc-comment-block-doc-begin
+   ^
+   source-code-rust-comment-block-doc-comment-block-doc-content
+    ^
+    source-code-rust-comment-block-doc-comment-block-doc-content
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+     source-code-rust-comment-block-doc-comment-block-doc-content
+//// An ordinary line comment.
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+source-code-rust-comment-line
+
+/// Uses [Vec::new], [vec!], [struct@Parser], and `list[index]`.
+^^^
+source-code-rust-comment-block-doc-comment-block-doc-begin
+   ^^^^^^
+   source-code-rust-comment-block-doc-comment-block-doc-content
+         ^^^^^^^^^^
+         source-code-rust-comment-block-doc-comment-reference
+                   ^^
+                   source-code-rust-comment-block-doc-comment-block-doc-content
+                     ^^^^^^
+                     source-code-rust-comment-block-doc-comment-reference
+                           ^^
+                           source-code-rust-comment-block-doc-comment-block-doc-content
+                             ^^^^^^^^^^^^^^^
+                             source-code-rust-comment-block-doc-comment-reference
+                                            ^^^^^^
+                                            source-code-rust-comment-block-doc-comment-block-doc-content
+                                                  ^^^^^^^^^^^^^
+                                                  source-code-rust-comment-block-doc-markup-format-code
+                                                               ^
+                                                               source-code-rust-comment-block-doc-comment-block-doc-content
+/// ```rust
+^^^
+source-code-rust-comment-block-doc-comment-block-doc-begin
+   ^^^^^^^^
+   source-code-rust-comment-block-doc-markup-block-code
+/// tokens[index]
+^^^
+source-code-rust-comment-block-doc-comment-block-doc-begin
+   ^^^^^^^^^^^^^^
+   source-code-rust-comment-block-doc-markup-block-code
+/// ```
+^^^
+source-code-rust-comment-block-doc-comment-block-doc-begin
+   ^^^^
+   source-code-rust-comment-block-doc-markup-block-code
+/// See [Token].
+^^^
+source-code-rust-comment-block-doc-comment-block-doc-begin
+   ^^^^^
+   source-code-rust-comment-block-doc-comment-block-doc-content
+        ^^^^^^^
+        source-code-rust-comment-block-doc-comment-reference
+               ^
+               source-code-rust-comment-block-doc-comment-block-doc-content
+///
+^^^
+source-code-rust-comment-block-doc-comment-block-doc-begin
+/// ```rust,ignore
+^^^
+source-code-rust-comment-block-doc-comment-block-doc-begin
+   ^^^^^^^^^^^^^^^
+   source-code-rust-comment-block-doc-markup-block-code
+/// [still_code]
+^^^
+source-code-rust-comment-block-doc-comment-block-doc-begin
+   ^^^^^^^^^^^^^
+   source-code-rust-comment-block-doc-markup-block-code
+fn parse() {} // An unclosed doc fence ends before this item.
+^^
+source-code-rust-keyword-declaration-fn
+  ^
+  source-code-rust-whitespace
+   ^^^^^
+   source-code-rust-identifier-function
+        ^
+        source-code-rust-punctuation
+         ^
+         source-code-rust-punctuation
+          ^
+          source-code-rust-whitespace
+           ^
+           source-code-rust-punctuation
+            ^
+            source-code-rust-punctuation
+             ^
+             source-code-rust-whitespace
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+              source-code-rust-comment-line
+
+/* Outer /* nested */ outer again */ let done = true;
+^^
+source-code-rust-comment-block-comment-block-begin
+  ^^^^^^^
+  source-code-rust-comment-block-comment-block-content
+         ^^
+         source-code-rust-comment-block-comment-block-begin
+           ^^^^^^^^
+           source-code-rust-comment-block-comment-block-content
+                   ^^
+                   source-code-rust-comment-block-comment-block-end
+                     ^^^^^^^^^^^^^
+                     source-code-rust-comment-block-comment-block-content
+                                  ^^
+                                  source-code-rust-comment-block-comment-block-end
+                                    ^
+                                    source-code-rust-whitespace
+                                     ^^^
+                                     source-code-rust-keyword-declaration-let
+                                        ^
+                                        source-code-rust-whitespace
+                                         ^^^^
+                                         source-code-rust-identifier
+                                             ^
+                                             source-code-rust-whitespace
+                                              ^
+                                              source-code-rust-keyword-operator
+                                               ^
+                                               source-code-rust-whitespace
+                                                ^^^^
+                                                source-code-rust-literal-boolean-true
+                                                    ^
+                                                    source-code-rust-punctuation
+/**/ /***/
+^^
+source-code-rust-comment-block-comment-block-begin
+  ^^
+  source-code-rust-comment-block-comment-block-end
+    ^
+    source-code-rust-whitespace
+     ^^
+     source-code-rust-comment-block-comment-block-begin
+       ^
+       source-code-rust-comment-block-comment-block-content
+        ^^
+        source-code-rust-comment-block-comment-block-end
+/*! An inner block doc comment with [`Token`]. */
+^^^
+source-code-rust-comment-block-doc-comment-block-doc-begin
+   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   source-code-rust-comment-block-doc-comment-block-doc-content
+                                    ^^^^^^^^^
+                                    source-code-rust-comment-block-doc-comment-reference
+                                             ^^
+                                             source-code-rust-comment-block-doc-comment-block-doc-content
+                                               ^^
+                                               source-code-rust-comment-block-doc-comment-block-doc-end
+
+/** Nested `/*` still comment */ let still_comment = 1; */
+^^^
+source-code-rust-comment-block-doc-comment-block-doc-begin
+   ^^^^^^^^
+   source-code-rust-comment-block-doc-comment-block-doc-content
+           ^
+           source-code-rust-comment-block-doc-comment-block-doc-content
+            ^^
+            source-code-rust-comment-block-doc-comment-block-comment-block-begin
+              ^^^^^^^^^^^^^^^^
+              source-code-rust-comment-block-doc-comment-block-comment-block-content
+                              ^^
+                              source-code-rust-comment-block-doc-comment-block-comment-block-end
+                                ^^^^^^^^^^^^^^^^^^^^^^^^
+                                source-code-rust-comment-block-doc-comment-block-doc-content
+                                                        ^^
+                                                        source-code-rust-comment-block-doc-comment-block-doc-end
+/** Paths like `a/b` and `*ptr` stay code spans. */
+^^^
+source-code-rust-comment-block-doc-comment-block-doc-begin
+   ^^^^^^^^^^^^
+   source-code-rust-comment-block-doc-comment-block-doc-content
+               ^^^^^
+               source-code-rust-comment-block-doc-markup-format-code
+                    ^^^^^
+                    source-code-rust-comment-block-doc-comment-block-doc-content
+                         ^^^^^^
+                         source-code-rust-comment-block-doc-markup-format-code
+                               ^^^^^^^^^^^^^^^^^^
+                               source-code-rust-comment-block-doc-comment-block-doc-content
+                                                 ^^
+                                                 source-code-rust-comment-block-doc-comment-block-doc-end
+/// A span with `a */ b` before [`Vec::new()`].
+^^^
+source-code-rust-comment-block-doc-comment-block-doc-begin
+   ^^^^^^^^^^^^^
+   source-code-rust-comment-block-doc-comment-block-doc-content
+                ^^^^^^^^
+                source-code-rust-comment-block-doc-markup-format-code
+                        ^^^^^^^^
+                        source-code-rust-comment-block-doc-comment-block-doc-content
+                                ^^^^^^^^^^^^^^
+                                source-code-rust-comment-block-doc-comment-reference
+                                              ^
+                                              source-code-rust-comment-block-doc-comment-block-doc-content

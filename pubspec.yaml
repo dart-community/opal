@@ -2,7 +2,7 @@ name: opal
 description: >-
   Tokenization and syntax highlighting support for
   various programming languages and data formats.
-version: 0.3.0
+version: 0.3.1-wip
 repository: https://github.com/dart-community/opal
 
 topics:

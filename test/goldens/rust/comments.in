@@ -1,0 +1,22 @@
+#!/usr/bin/env rust-script
+//! See [`Parser`], [guide](https://example.com), and [reference][guide].
+//! [guide]: https://example.com/reference
+//// An ordinary line comment.
+
+/// Uses [Vec::new], [vec!], [struct@Parser], and `list[index]`.
+/// ```rust
+/// tokens[index]
+/// ```
+/// See [Token].
+///
+/// ```rust,ignore
+/// [still_code]
+fn parse() {} // An unclosed doc fence ends before this item.
+
+/* Outer /* nested */ outer again */ let done = true;
+/**/ /***/
+/*! An inner block doc comment with [`Token`]. */
+
+/** Nested `/*` still comment */ let still_comment = 1; */
+/** Paths like `a/b` and `*ptr` stay code spans. */
+/// A span with `a */ b` before [`Vec::new()`].

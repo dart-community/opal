@@ -1,0 +1,2 @@
+let name = "unterminated
+fn main() {}

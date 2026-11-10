@@ -1,0 +1,62 @@
+fn main() {
+^^
+source-code-rust-keyword-declaration-fn
+  ^
+  source-code-rust-whitespace
+   ^^^^
+   source-code-rust-identifier-function
+       ^
+       source-code-rust-punctuation
+        ^
+        source-code-rust-punctuation
+         ^
+         source-code-rust-whitespace
+          ^
+          source-code-rust-punctuation
+    let name = "world";
+^^^^
+source-code-rust-whitespace
+    ^^^
+    source-code-rust-keyword-declaration-let
+       ^
+       source-code-rust-whitespace
+        ^^^^
+        source-code-rust-identifier
+            ^
+            source-code-rust-whitespace
+             ^
+             source-code-rust-keyword-operator
+              ^
+              source-code-rust-whitespace
+               ^
+               source-code-rust-literal-string-quoted-double-literal-string-quoted-double-begin
+                ^^^^^
+                source-code-rust-literal-string-quoted-double-literal-string-unquoted
+                     ^
+                     source-code-rust-literal-string-quoted-double-literal-string-quoted-double-end
+                      ^
+                      source-code-rust-punctuation
+    println!("Hello, {name}!");
+^^^^
+source-code-rust-whitespace
+    ^^^^^^^^
+    source-code-rust-identifier-function-macro
+            ^
+            source-code-rust-punctuation
+             ^
+             source-code-rust-literal-string-quoted-double-literal-string-quoted-double-begin
+              ^^^^^^^
+              source-code-rust-literal-string-quoted-double-literal-string-unquoted
+                     ^^^^^^
+                     source-code-rust-literal-string-quoted-double-literal-string-interpolation
+                           ^
+                           source-code-rust-literal-string-quoted-double-literal-string-unquoted
+                            ^
+                            source-code-rust-literal-string-quoted-double-literal-string-quoted-double-end
+                             ^
+                             source-code-rust-punctuation
+                              ^
+                              source-code-rust-punctuation
+}
+^
+source-code-rust-punctuation

@@ -116,10 +116,18 @@ final class MatcherLanguage extends Language {
               }
               return true;
             }
+          case SelectMatcher(:final pattern, :final select):
+            if (scanner.peek(pattern) case final match?) {
+              return tryMatcher(
+                select(match),
+                allowZeroLength: allowZeroLength,
+              );
+            }
           case WrappedMatcher(
             :final begin,
             :final end,
             :final content,
+            :final nestable,
             :final tag,
           ):
             if (tag != null) {
@@ -127,9 +135,13 @@ final class MatcherLanguage extends Language {
             }
 
             if (tryMatcher(begin)) {
-              while (!scanner.isDone &&
-                  !(end != null && tryMatcher(end, allowZeroLength: true))) {
-                if (!tryMatcher(content)) {
+              var depth = 1;
+              while (depth > 0 && !scanner.isDone) {
+                if (end != null && tryMatcher(end, allowZeroLength: true)) {
+                  depth--;
+                } else if (nestable && tryMatcher(begin)) {
+                  depth++;
+                } else if (!tryMatcher(content)) {
                   handleUnknownToken();
                 }
               }
@@ -238,14 +250,17 @@ final class _LineScanner {
   /// The index of the current column within the current line being scanned.
   int get columnIndex => _positionInLine;
 
+  /// Attempts to match the given pattern at the current position
+  /// without advancing the position.
+  Match? peek(Pattern pattern) =>
+      isDone ? null : pattern.matchAsPrefix(_currentLineText, _positionInLine);
+
   /// Attempts to match the given pattern at the current position.
   ///
   /// If a match is found, advances the position past it then
   /// returns the corresponding [Match], otherwise returns `null`.
   Match? match(Pattern pattern) {
-    if (isDone) return null;
-
-    final match = pattern.matchAsPrefix(_currentLineText, _positionInLine);
+    final match = peek(pattern);
     if (match != null) {
       _positionInLine = match.end;
     }

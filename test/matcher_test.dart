@@ -74,6 +74,21 @@ void main() {
         expect(wrappedMatcher.begin, equals(beginMatcher));
         expect(wrappedMatcher.end, equals(endMatcher));
         expect(wrappedMatcher.content, equals(contentMatcher));
+        expect(wrappedMatcher.nestable, isFalse);
+      });
+
+      test('select creates SelectMatcher with RegExp', () {
+        Matcher select(Match match) => Matcher.verbatim(match[0]!);
+
+        final matcher = Matcher.select(r'#+', select);
+
+        expect(matcher, isA<SelectMatcher>());
+        expect(matcher.tag, isNull);
+
+        final selectMatcher = matcher as SelectMatcher;
+        expect(selectMatcher.pattern.pattern, equals(r'#+'));
+        expect(selectMatcher.pattern.isUnicode, isTrue);
+        expect(selectMatcher.select, equals(select));
       });
 
       test('options creates OptionsMatcher', () {

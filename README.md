@@ -69,6 +69,7 @@ the specified default and alternative IDs:
 - Objective-C (`objective-c`, `objectivec`, `obj-c`, `objc`)
 - Python (`python`, `py`)
 - Ruby (`ruby`, `rb`)
+- Rust (`rust`, `rs`)
 - Swift (`swift`)
 - Text (`text`, `plaintext`, `none`, `txt`)
 - TOML (`toml`; TOML 1.1)

@@ -1,0 +1,27 @@
+use std::fmt::Display;
+pub mod config;
+pub(crate) const MAX_RETRIES: u32 = 3;
+
+pub struct Entry<'a, T> { value: &'a T }
+enum State<T> { Ready(T), Failed(Box<dyn Display>) }
+
+trait View {
+    type Item;
+    fn get(&self) -> &Self::Item;
+}
+
+impl<T> View for Entry<'_, T>
+where
+    T: Display,
+{
+    type Item = T;
+    fn get(&self) -> &T { self.value }
+}
+
+type Items<T> = Vec<<T as IntoIterator>::Item>;
+union IntOrFloat { i: u32, f: f32 }
+
+unsafe extern "C" {
+    pub safe fn sqrt(x: f64) -> f64;
+    safe static ERRNO: i32;
+}

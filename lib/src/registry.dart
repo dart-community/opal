@@ -115,6 +115,7 @@ final Map<String, String> _defaultFallbackLanguageNames = {
   'obj-c': BuiltInLanguages.objectiveC.name,
   'objective-c': BuiltInLanguages.objectiveC.name,
   'rb': BuiltInLanguages.ruby.name,
+  'rs': BuiltInLanguages.rust.name,
   'clang': BuiltInLanguages.c.name,
   'c++': BuiltInLanguages.cPlusPlus.name,
   'cplusplus': BuiltInLanguages.cPlusPlus.name,

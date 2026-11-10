@@ -55,6 +55,7 @@ abstract base class MatcherGrammar {
 /// - [Matcher.regex]
 /// - [Matcher.verbatim]
 /// - [Matcher.capture]
+/// - [Matcher.select]
 /// - [Matcher.wrapped]
 /// - [Matcher.options]
 /// - [Matcher.include]
@@ -161,6 +162,28 @@ sealed class Matcher {
     tag: tag,
   );
 
+  /// Uses [pattern] to select a matcher for the current position.
+  ///
+  /// The selected matcher starts at the same position as the match.
+  /// This lets an opening delimiter determine how its content ends.
+  ///
+  /// Usage example:
+  ///
+  /// ```dart
+  /// // Match strings that end with as many `#` as they start with.
+  /// Matcher.select('(#*)"', (match) => Matcher.wrapped(
+  ///   begin: Matcher.verbatim(match[0]!),
+  ///   end: Matcher.verbatim('"${match[1]}'),
+  ///   content: Matcher.regex('[^"]+|"'),
+  ///   tag: Tags.doubleQuoteString,
+  /// ));
+  /// ```
+  factory Matcher.select(String pattern, Matcher Function(Match) select) =>
+      SelectMatcher._(
+        pattern: RegExp(pattern, unicode: true, multiLine: true),
+        select: select,
+      );
+
   /// Creates a matcher for content wrapped between [begin] and [end] matchers.
   ///
   /// This is useful for matching constructs such as strings or comments that
@@ -174,6 +197,9 @@ sealed class Matcher {
   /// formats where an opening token selects the rules for
   /// everything that follows, such as a leading mode or section marker.
   ///
+  /// If [nestable] is true, additional [begin] delimiters within the
+  /// content must each be closed by [end] before the region ends.
+  ///
   /// The optional [tag] applies to the entire wrapped construct.
   ///
   /// Usage example:
@@ -184,15 +210,22 @@ sealed class Matcher {
   ///   begin: Matcher.verbatim('"'),
   ///   end: Matcher.verbatim('"'),
   ///   content: Matcher.regex(r'[^"]*'),
-  ///   tag: Tags.string,
-  /// )
+  ///   tag: Tags.doubleQuoteString,
+  /// );
   /// ```
   factory Matcher.wrapped({
     required Matcher begin,
     required Matcher? end,
     required Matcher content,
+    bool nestable = false,
     Tag? tag,
-  }) => WrappedMatcher._(begin: begin, end: end, content: content, tag: tag);
+  }) => WrappedMatcher._(
+    begin: begin,
+    end: end,
+    content: content,
+    nestable: nestable,
+    tag: tag,
+  );
 
   /// Creates a matcher that tries multiple alternative [matchers].
   ///
@@ -310,6 +343,14 @@ final class CaptureMatcher extends Matcher {
 }
 
 @internal
+final class SelectMatcher extends Matcher {
+  final RegExp pattern;
+  final Matcher Function(Match) select;
+
+  SelectMatcher._({required this.pattern, required this.select});
+}
+
+@internal
 final class WrappedMatcher extends Matcher {
   final Matcher begin;
 
@@ -318,11 +359,13 @@ final class WrappedMatcher extends Matcher {
   final Matcher? end;
 
   final Matcher content;
+  final bool nestable;
 
   WrappedMatcher._({
     required this.begin,
     required this.end,
     required this.content,
+    required this.nestable,
     super.tag,
   });
 }

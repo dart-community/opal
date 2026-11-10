@@ -1,0 +1,507 @@
+use std::fmt::Display;
+^^^
+source-code-rust-keyword-declaration-use
+   ^
+   source-code-rust-whitespace
+    ^^^
+    source-code-rust-identifier
+       ^^
+       source-code-rust-punctuation-accessor
+         ^^^
+         source-code-rust-identifier
+            ^^
+            source-code-rust-punctuation-accessor
+              ^^^^^^^
+              source-code-rust-identifier-type-built-in
+                     ^
+                     source-code-rust-punctuation
+pub mod config;
+^^^
+source-code-rust-keyword-modifier-pub
+   ^
+   source-code-rust-whitespace
+    ^^^
+    source-code-rust-keyword-declaration-mod
+       ^
+       source-code-rust-whitespace
+        ^^^^^^
+        source-code-rust-identifier
+              ^
+              source-code-rust-punctuation
+pub(crate) const MAX_RETRIES: u32 = 3;
+^^^
+source-code-rust-keyword-modifier-pub
+   ^
+   source-code-rust-punctuation
+    ^^^^^
+    source-code-rust-identifier-special
+         ^
+         source-code-rust-punctuation
+          ^
+          source-code-rust-whitespace
+           ^^^^^
+           source-code-rust-keyword-modifier-const
+                ^
+                source-code-rust-whitespace
+                 ^^^^^^^^^^^
+                 source-code-rust-identifier-special-constant
+                            ^
+                            source-code-rust-punctuation-separator
+                             ^
+                             source-code-rust-whitespace
+                              ^^^
+                              source-code-rust-identifier-type-built-in
+                                 ^
+                                 source-code-rust-whitespace
+                                  ^
+                                  source-code-rust-keyword-operator
+                                   ^
+                                   source-code-rust-whitespace
+                                    ^
+                                    source-code-rust-literal-number-integer
+                                     ^
+                                     source-code-rust-punctuation
+
+pub struct Entry<'a, T> { value: &'a T }
+^^^
+source-code-rust-keyword-modifier-pub
+   ^
+   source-code-rust-whitespace
+    ^^^^^^
+    source-code-rust-keyword-declaration-struct
+          ^
+          source-code-rust-whitespace
+           ^^^^^
+           source-code-rust-identifier-type
+                ^
+                source-code-rust-punctuation
+                 ^^
+                 source-code-rust-identifier-type-lifetime
+                   ^
+                   source-code-rust-punctuation-separator
+                    ^
+                    source-code-rust-whitespace
+                     ^
+                     source-code-rust-identifier-type
+                      ^
+                      source-code-rust-punctuation
+                       ^
+                       source-code-rust-whitespace
+                        ^
+                        source-code-rust-punctuation
+                         ^
+                         source-code-rust-whitespace
+                          ^^^^^
+                          source-code-rust-identifier
+                               ^
+                               source-code-rust-punctuation-separator
+                                ^
+                                source-code-rust-whitespace
+                                 ^
+                                 source-code-rust-keyword-operator
+                                  ^^
+                                  source-code-rust-identifier-type-lifetime
+                                    ^
+                                    source-code-rust-whitespace
+                                     ^
+                                     source-code-rust-identifier-type
+                                      ^
+                                      source-code-rust-whitespace
+                                       ^
+                                       source-code-rust-punctuation
+enum State<T> { Ready(T), Failed(Box<dyn Display>) }
+^^^^
+source-code-rust-keyword-declaration-enum
+    ^
+    source-code-rust-whitespace
+     ^^^^^
+     source-code-rust-identifier-type
+          ^
+          source-code-rust-punctuation
+           ^
+           source-code-rust-identifier-type
+            ^
+            source-code-rust-punctuation
+             ^
+             source-code-rust-whitespace
+              ^
+              source-code-rust-punctuation
+               ^
+               source-code-rust-whitespace
+                ^^^^^
+                source-code-rust-identifier-type
+                     ^
+                     source-code-rust-punctuation
+                      ^
+                      source-code-rust-identifier-type
+                       ^
+                       source-code-rust-punctuation
+                        ^
+                        source-code-rust-punctuation-separator
+                         ^
+                         source-code-rust-whitespace
+                          ^^^^^^
+                          source-code-rust-identifier-type
+                                ^
+                                source-code-rust-punctuation
+                                 ^^^
+                                 source-code-rust-identifier-type-built-in
+                                    ^
+                                    source-code-rust-punctuation
+                                     ^^^
+                                     source-code-rust-keyword-modifier-dyn
+                                        ^
+                                        source-code-rust-whitespace
+                                         ^^^^^^^
+                                         source-code-rust-identifier-type-built-in
+                                                ^
+                                                source-code-rust-punctuation
+                                                 ^
+                                                 source-code-rust-punctuation
+                                                  ^
+                                                  source-code-rust-whitespace
+                                                   ^
+                                                   source-code-rust-punctuation
+
+trait View {
+^^^^^
+source-code-rust-keyword-declaration-trait
+     ^
+     source-code-rust-whitespace
+      ^^^^
+      source-code-rust-identifier-type
+          ^
+          source-code-rust-whitespace
+           ^
+           source-code-rust-punctuation
+    type Item;
+^^^^
+source-code-rust-whitespace
+    ^^^^
+    source-code-rust-keyword-declaration-type
+        ^
+        source-code-rust-whitespace
+         ^^^^
+         source-code-rust-identifier-type
+             ^
+             source-code-rust-punctuation
+    fn get(&self) -> &Self::Item;
+^^^^
+source-code-rust-whitespace
+    ^^
+    source-code-rust-keyword-declaration-fn
+      ^
+      source-code-rust-whitespace
+       ^^^
+       source-code-rust-identifier-function
+          ^
+          source-code-rust-punctuation
+           ^
+           source-code-rust-keyword-operator
+            ^^^^
+            source-code-rust-identifier-special
+                ^
+                source-code-rust-punctuation
+                 ^
+                 source-code-rust-whitespace
+                  ^^
+                  source-code-rust-keyword-operator
+                    ^
+                    source-code-rust-whitespace
+                     ^
+                     source-code-rust-keyword-operator
+                      ^^^^
+                      source-code-rust-identifier-special
+                          ^^
+                          source-code-rust-punctuation-accessor
+                            ^^^^
+                            source-code-rust-identifier-type
+                                ^
+                                source-code-rust-punctuation
+}
+^
+source-code-rust-punctuation
+
+impl<T> View for Entry<'_, T>
+^^^^
+source-code-rust-keyword-declaration-impl
+    ^
+    source-code-rust-punctuation
+     ^
+     source-code-rust-identifier-type
+      ^
+      source-code-rust-punctuation
+       ^
+       source-code-rust-whitespace
+        ^^^^
+        source-code-rust-identifier-type
+            ^
+            source-code-rust-whitespace
+             ^^^
+             source-code-rust-keyword-control-for
+                ^
+                source-code-rust-whitespace
+                 ^^^^^
+                 source-code-rust-identifier-type
+                      ^
+                      source-code-rust-punctuation
+                       ^^
+                       source-code-rust-identifier-type-lifetime
+                         ^
+                         source-code-rust-punctuation-separator
+                          ^
+                          source-code-rust-whitespace
+                           ^
+                           source-code-rust-identifier-type
+                            ^
+                            source-code-rust-punctuation
+where
+^^^^^
+source-code-rust-keyword-where
+    T: Display,
+^^^^
+source-code-rust-whitespace
+    ^
+    source-code-rust-identifier-type
+     ^
+     source-code-rust-punctuation-separator
+      ^
+      source-code-rust-whitespace
+       ^^^^^^^
+       source-code-rust-identifier-type-built-in
+              ^
+              source-code-rust-punctuation-separator
+{
+^
+source-code-rust-punctuation
+    type Item = T;
+^^^^
+source-code-rust-whitespace
+    ^^^^
+    source-code-rust-keyword-declaration-type
+        ^
+        source-code-rust-whitespace
+         ^^^^
+         source-code-rust-identifier-type
+             ^
+             source-code-rust-whitespace
+              ^
+              source-code-rust-keyword-operator
+               ^
+               source-code-rust-whitespace
+                ^
+                source-code-rust-identifier-type
+                 ^
+                 source-code-rust-punctuation
+    fn get(&self) -> &T { self.value }
+^^^^
+source-code-rust-whitespace
+    ^^
+    source-code-rust-keyword-declaration-fn
+      ^
+      source-code-rust-whitespace
+       ^^^
+       source-code-rust-identifier-function
+          ^
+          source-code-rust-punctuation
+           ^
+           source-code-rust-keyword-operator
+            ^^^^
+            source-code-rust-identifier-special
+                ^
+                source-code-rust-punctuation
+                 ^
+                 source-code-rust-whitespace
+                  ^^
+                  source-code-rust-keyword-operator
+                    ^
+                    source-code-rust-whitespace
+                     ^
+                     source-code-rust-keyword-operator
+                      ^
+                      source-code-rust-identifier-type
+                       ^
+                       source-code-rust-whitespace
+                        ^
+                        source-code-rust-punctuation
+                         ^
+                         source-code-rust-whitespace
+                          ^^^^
+                          source-code-rust-identifier-special
+                              ^
+                              source-code-rust-punctuation-accessor
+                               ^^^^^
+                               source-code-rust-identifier
+                                    ^
+                                    source-code-rust-whitespace
+                                     ^
+                                     source-code-rust-punctuation
+}
+^
+source-code-rust-punctuation
+
+type Items<T> = Vec<<T as IntoIterator>::Item>;
+^^^^
+source-code-rust-keyword-declaration-type
+    ^
+    source-code-rust-whitespace
+     ^^^^^
+     source-code-rust-identifier-type
+          ^
+          source-code-rust-punctuation
+           ^
+           source-code-rust-identifier-type
+            ^
+            source-code-rust-punctuation
+             ^
+             source-code-rust-whitespace
+              ^
+              source-code-rust-keyword-operator
+               ^
+               source-code-rust-whitespace
+                ^^^
+                source-code-rust-identifier-type-built-in
+                   ^
+                   source-code-rust-punctuation
+                    ^
+                    source-code-rust-punctuation
+                     ^
+                     source-code-rust-identifier-type
+                      ^
+                      source-code-rust-whitespace
+                       ^^
+                       source-code-rust-keyword-as
+                         ^
+                         source-code-rust-whitespace
+                          ^^^^^^^^^^^^
+                          source-code-rust-identifier-type-built-in
+                                      ^
+                                      source-code-rust-punctuation
+                                       ^^
+                                       source-code-rust-punctuation-accessor
+                                         ^^^^
+                                         source-code-rust-identifier-type
+                                             ^
+                                             source-code-rust-punctuation
+                                              ^
+                                              source-code-rust-punctuation
+union IntOrFloat { i: u32, f: f32 }
+^^^^^
+source-code-rust-keyword-declaration-union
+     ^
+     source-code-rust-whitespace
+      ^^^^^^^^^^
+      source-code-rust-identifier-type
+                ^
+                source-code-rust-whitespace
+                 ^
+                 source-code-rust-punctuation
+                  ^
+                  source-code-rust-whitespace
+                   ^
+                   source-code-rust-identifier
+                    ^
+                    source-code-rust-punctuation-separator
+                     ^
+                     source-code-rust-whitespace
+                      ^^^
+                      source-code-rust-identifier-type-built-in
+                         ^
+                         source-code-rust-punctuation-separator
+                          ^
+                          source-code-rust-whitespace
+                           ^
+                           source-code-rust-identifier
+                            ^
+                            source-code-rust-punctuation-separator
+                             ^
+                             source-code-rust-whitespace
+                              ^^^
+                              source-code-rust-identifier-type-built-in
+                                 ^
+                                 source-code-rust-whitespace
+                                  ^
+                                  source-code-rust-punctuation
+
+unsafe extern "C" {
+^^^^^^
+source-code-rust-keyword-modifier-unsafe
+      ^
+      source-code-rust-whitespace
+       ^^^^^^
+       source-code-rust-keyword-declaration-extern
+             ^
+             source-code-rust-whitespace
+              ^
+              source-code-rust-literal-string-quoted-double-literal-string-quoted-double-begin
+               ^
+               source-code-rust-literal-string-quoted-double-literal-string-unquoted
+                ^
+                source-code-rust-literal-string-quoted-double-literal-string-quoted-double-end
+                 ^
+                 source-code-rust-whitespace
+                  ^
+                  source-code-rust-punctuation
+    pub safe fn sqrt(x: f64) -> f64;
+^^^^
+source-code-rust-whitespace
+    ^^^
+    source-code-rust-keyword-modifier-pub
+       ^
+       source-code-rust-whitespace
+        ^^^^
+        source-code-rust-keyword-modifier-safe
+            ^
+            source-code-rust-whitespace
+             ^^
+             source-code-rust-keyword-declaration-fn
+               ^
+               source-code-rust-whitespace
+                ^^^^
+                source-code-rust-identifier-function
+                    ^
+                    source-code-rust-punctuation
+                     ^
+                     source-code-rust-identifier
+                      ^
+                      source-code-rust-punctuation-separator
+                       ^
+                       source-code-rust-whitespace
+                        ^^^
+                        source-code-rust-identifier-type-built-in
+                           ^
+                           source-code-rust-punctuation
+                            ^
+                            source-code-rust-whitespace
+                             ^^
+                             source-code-rust-keyword-operator
+                               ^
+                               source-code-rust-whitespace
+                                ^^^
+                                source-code-rust-identifier-type-built-in
+                                   ^
+                                   source-code-rust-punctuation
+    safe static ERRNO: i32;
+^^^^
+source-code-rust-whitespace
+    ^^^^
+    source-code-rust-keyword-modifier-safe
+        ^
+        source-code-rust-whitespace
+         ^^^^^^
+         source-code-rust-keyword-modifier-static
+               ^
+               source-code-rust-whitespace
+                ^^^^^
+                source-code-rust-identifier-special-constant
+                     ^
+                     source-code-rust-punctuation-separator
+                      ^
+                      source-code-rust-whitespace
+                       ^^^
+                       source-code-rust-identifier-type-built-in
+                          ^
+                          source-code-rust-punctuation
+}
+^
+source-code-rust-punctuation

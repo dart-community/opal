@@ -1,0 +1,17 @@
+let escapes = "tab\t quote\" backslash\\ hex\x41 unicode\u{1F600}";
+let invalid_escape = "a \q b";
+let lines = "first
+second \
+    third";
+let raw = r"C:\path\file";
+let raw_multiline = r##"
+    "# is still inside the string
+"##;
+let bytes = b"bytes\xff";
+let raw_bytes = br#"raw "bytes""#;
+let c_string = c"hello";
+let raw_c_string = cr"raw\c";
+
+let plain = "{not} a placeholder";
+log::info!("{name:>3} {0:?} {{escaped}}", id);
+writeln!(out, "{:.2}", ratio)?;

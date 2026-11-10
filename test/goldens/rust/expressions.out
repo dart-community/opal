@@ -1,0 +1,622 @@
+let evens = values.into_iter()
+^^^
+source-code-rust-keyword-declaration-let
+   ^
+   source-code-rust-whitespace
+    ^^^^^
+    source-code-rust-identifier
+         ^
+         source-code-rust-whitespace
+          ^
+          source-code-rust-keyword-operator
+           ^
+           source-code-rust-whitespace
+            ^^^^^^
+            source-code-rust-identifier
+                  ^
+                  source-code-rust-punctuation-accessor
+                   ^^^^^^^^^
+                   source-code-rust-identifier-function
+                            ^
+                            source-code-rust-punctuation
+                             ^
+                             source-code-rust-punctuation
+    .filter(move |n| n % 2 == 0)
+^^^^
+source-code-rust-whitespace
+    ^
+    source-code-rust-punctuation-accessor
+     ^^^^^^
+     source-code-rust-identifier-function
+           ^
+           source-code-rust-punctuation
+            ^^^^
+            source-code-rust-keyword-modifier-move
+                ^
+                source-code-rust-whitespace
+                 ^
+                 source-code-rust-keyword-operator
+                  ^
+                  source-code-rust-identifier
+                   ^
+                   source-code-rust-keyword-operator
+                    ^
+                    source-code-rust-whitespace
+                     ^
+                     source-code-rust-identifier
+                      ^
+                      source-code-rust-whitespace
+                       ^
+                       source-code-rust-keyword-operator
+                        ^
+                        source-code-rust-whitespace
+                         ^
+                         source-code-rust-literal-number-integer
+                          ^
+                          source-code-rust-whitespace
+                           ^^
+                           source-code-rust-keyword-operator
+                             ^
+                             source-code-rust-whitespace
+                              ^
+                              source-code-rust-literal-number-integer
+                               ^
+                               source-code-rust-punctuation
+    .collect::<
+^^^^
+source-code-rust-whitespace
+    ^
+    source-code-rust-punctuation-accessor
+     ^^^^^^^
+     source-code-rust-identifier-function
+            ^^
+            source-code-rust-punctuation-accessor
+              ^
+              source-code-rust-punctuation
+        Vec<_>,
+^^^^^^^^
+source-code-rust-whitespace
+        ^^^
+        source-code-rust-identifier-type-built-in
+           ^
+           source-code-rust-punctuation
+            ^
+            source-code-rust-identifier-special
+             ^
+             source-code-rust-punctuation
+              ^
+              source-code-rust-punctuation-separator
+    >();
+^^^^
+source-code-rust-whitespace
+    ^
+    source-code-rust-punctuation
+     ^
+     source-code-rust-punctuation
+      ^
+      source-code-rust-punctuation
+       ^
+       source-code-rust-punctuation
+
+match evens.first().copied() {
+^^^^^
+source-code-rust-keyword-control-match
+     ^
+     source-code-rust-whitespace
+      ^^^^^
+      source-code-rust-identifier
+           ^
+           source-code-rust-punctuation-accessor
+            ^^^^^
+            source-code-rust-identifier-function
+                 ^
+                 source-code-rust-punctuation
+                  ^
+                  source-code-rust-punctuation
+                   ^
+                   source-code-rust-punctuation-accessor
+                    ^^^^^^
+                    source-code-rust-identifier-function
+                          ^
+                          source-code-rust-punctuation
+                           ^
+                           source-code-rust-punctuation
+                            ^
+                            source-code-rust-whitespace
+                             ^
+                             source-code-rust-punctuation
+    Some(n @ 1..=9) => Some(n),
+^^^^
+source-code-rust-whitespace
+    ^^^^
+    source-code-rust-identifier-function-constructor
+        ^
+        source-code-rust-punctuation
+         ^
+         source-code-rust-identifier
+          ^
+          source-code-rust-whitespace
+           ^
+           source-code-rust-keyword-operator
+            ^
+            source-code-rust-whitespace
+             ^
+             source-code-rust-literal-number-integer
+              ^^^
+              source-code-rust-keyword-operator
+                 ^
+                 source-code-rust-literal-number-integer
+                  ^
+                  source-code-rust-punctuation
+                   ^
+                   source-code-rust-whitespace
+                    ^^
+                    source-code-rust-keyword-operator
+                      ^
+                      source-code-rust-whitespace
+                       ^^^^
+                       source-code-rust-identifier-function-constructor
+                           ^
+                           source-code-rust-punctuation
+                            ^
+                            source-code-rust-identifier
+                             ^
+                             source-code-rust-punctuation
+                              ^
+                              source-code-rust-punctuation-separator
+    _ => None,
+^^^^
+source-code-rust-whitespace
+    ^
+    source-code-rust-identifier-special
+     ^
+     source-code-rust-whitespace
+      ^^
+      source-code-rust-keyword-operator
+        ^
+        source-code-rust-whitespace
+         ^^^^
+         source-code-rust-identifier-special-constant
+             ^
+             source-code-rust-punctuation-separator
+}
+^
+source-code-rust-punctuation
+
+'outer: for union in sets {
+^^^^^^
+source-code-rust-identifier-type-lifetime
+      ^
+      source-code-rust-punctuation-separator
+       ^
+       source-code-rust-whitespace
+        ^^^
+        source-code-rust-keyword-control-for
+           ^
+           source-code-rust-whitespace
+            ^^^^^
+            source-code-rust-identifier
+                 ^
+                 source-code-rust-whitespace
+                  ^^
+                  source-code-rust-keyword-in
+                    ^
+                    source-code-rust-whitespace
+                     ^^^^
+                     source-code-rust-identifier
+                         ^
+                         source-code-rust-whitespace
+                          ^
+                          source-code-rust-punctuation
+    let mut mask = union as u32;
+^^^^
+source-code-rust-whitespace
+    ^^^
+    source-code-rust-keyword-declaration-let
+       ^
+       source-code-rust-whitespace
+        ^^^
+        source-code-rust-keyword-modifier-mut
+           ^
+           source-code-rust-whitespace
+            ^^^^
+            source-code-rust-identifier
+                ^
+                source-code-rust-whitespace
+                 ^
+                 source-code-rust-keyword-operator
+                  ^
+                  source-code-rust-whitespace
+                   ^^^^^
+                   source-code-rust-identifier
+                        ^
+                        source-code-rust-whitespace
+                         ^^
+                         source-code-rust-keyword-as
+                           ^
+                           source-code-rust-whitespace
+                            ^^^
+                            source-code-rust-identifier-type-built-in
+                               ^
+                               source-code-rust-punctuation
+    while mask > 0 {
+^^^^
+source-code-rust-whitespace
+    ^^^^^
+    source-code-rust-keyword-control-while
+         ^
+         source-code-rust-whitespace
+          ^^^^
+          source-code-rust-identifier
+              ^
+              source-code-rust-whitespace
+               ^
+               source-code-rust-keyword-operator
+                ^
+                source-code-rust-whitespace
+                 ^
+                 source-code-rust-literal-number-integer
+                  ^
+                  source-code-rust-whitespace
+                   ^
+                   source-code-rust-punctuation
+        if mask & (1 << bit) != 0 { break 'outer; }
+^^^^^^^^
+source-code-rust-whitespace
+        ^^
+        source-code-rust-keyword-control-if
+          ^
+          source-code-rust-whitespace
+           ^^^^
+           source-code-rust-identifier
+               ^
+               source-code-rust-whitespace
+                ^
+                source-code-rust-keyword-operator
+                 ^
+                 source-code-rust-whitespace
+                  ^
+                  source-code-rust-punctuation
+                   ^
+                   source-code-rust-literal-number-integer
+                    ^
+                    source-code-rust-whitespace
+                     ^^
+                     source-code-rust-keyword-operator
+                       ^
+                       source-code-rust-whitespace
+                        ^^^
+                        source-code-rust-identifier
+                           ^
+                           source-code-rust-punctuation
+                            ^
+                            source-code-rust-whitespace
+                             ^^
+                             source-code-rust-keyword-operator
+                               ^
+                               source-code-rust-whitespace
+                                ^
+                                source-code-rust-literal-number-integer
+                                 ^
+                                 source-code-rust-whitespace
+                                  ^
+                                  source-code-rust-punctuation
+                                   ^
+                                   source-code-rust-whitespace
+                                    ^^^^^
+                                    source-code-rust-keyword-control-break
+                                         ^
+                                         source-code-rust-whitespace
+                                          ^^^^^^
+                                          source-code-rust-identifier-type-lifetime
+                                                ^
+                                                source-code-rust-punctuation
+                                                 ^
+                                                 source-code-rust-whitespace
+                                                  ^
+                                                  source-code-rust-punctuation
+        mask >>= 1;
+^^^^^^^^
+source-code-rust-whitespace
+        ^^^^
+        source-code-rust-identifier
+            ^
+            source-code-rust-whitespace
+             ^^^
+             source-code-rust-keyword-operator
+                ^
+                source-code-rust-whitespace
+                 ^
+                 source-code-rust-literal-number-integer
+                  ^
+                  source-code-rust-punctuation
+    }
+^^^^
+source-code-rust-whitespace
+    ^
+    source-code-rust-punctuation
+}
+^
+source-code-rust-punctuation
+
+async fn read(rx: &mut Receiver<Vec<u8>>) -> Result<String, Error> {
+^^^^^
+source-code-rust-keyword-modifier-async
+     ^
+     source-code-rust-whitespace
+      ^^
+      source-code-rust-keyword-declaration-fn
+        ^
+        source-code-rust-whitespace
+         ^^^^
+         source-code-rust-identifier-function
+             ^
+             source-code-rust-punctuation
+              ^^
+              source-code-rust-identifier
+                ^
+                source-code-rust-punctuation-separator
+                 ^
+                 source-code-rust-whitespace
+                  ^
+                  source-code-rust-keyword-operator
+                   ^^^
+                   source-code-rust-keyword-modifier-mut
+                      ^
+                      source-code-rust-whitespace
+                       ^^^^^^^^
+                       source-code-rust-identifier-type
+                               ^
+                               source-code-rust-punctuation
+                                ^^^
+                                source-code-rust-identifier-type-built-in
+                                   ^
+                                   source-code-rust-punctuation
+                                    ^^
+                                    source-code-rust-identifier-type-built-in
+                                      ^
+                                      source-code-rust-punctuation
+                                       ^
+                                       source-code-rust-punctuation
+                                        ^
+                                        source-code-rust-punctuation
+                                         ^
+                                         source-code-rust-whitespace
+                                          ^^
+                                          source-code-rust-keyword-operator
+                                            ^
+                                            source-code-rust-whitespace
+                                             ^^^^^^
+                                             source-code-rust-identifier-type-built-in
+                                                   ^
+                                                   source-code-rust-punctuation
+                                                    ^^^^^^
+                                                    source-code-rust-identifier-type-built-in
+                                                          ^
+                                                          source-code-rust-punctuation-separator
+                                                           ^
+                                                           source-code-rust-whitespace
+                                                            ^^^^^
+                                                            source-code-rust-identifier-type
+                                                                 ^
+                                                                 source-code-rust-punctuation
+                                                                  ^
+                                                                  source-code-rust-whitespace
+                                                                   ^
+                                                                   source-code-rust-punctuation
+    loop {
+^^^^
+source-code-rust-whitespace
+    ^^^^
+    source-code-rust-keyword-control-loop
+        ^
+        source-code-rust-whitespace
+         ^
+         source-code-rust-punctuation
+        let Some(bytes) = rx.recv().await else {
+^^^^^^^^
+source-code-rust-whitespace
+        ^^^
+        source-code-rust-keyword-declaration-let
+           ^
+           source-code-rust-whitespace
+            ^^^^
+            source-code-rust-identifier-function-constructor
+                ^
+                source-code-rust-punctuation
+                 ^^^^^
+                 source-code-rust-identifier
+                      ^
+                      source-code-rust-punctuation
+                       ^
+                       source-code-rust-whitespace
+                        ^
+                        source-code-rust-keyword-operator
+                         ^
+                         source-code-rust-whitespace
+                          ^^
+                          source-code-rust-identifier
+                            ^
+                            source-code-rust-punctuation-accessor
+                             ^^^^
+                             source-code-rust-identifier-function
+                                 ^
+                                 source-code-rust-punctuation
+                                  ^
+                                  source-code-rust-punctuation
+                                   ^
+                                   source-code-rust-punctuation-accessor
+                                    ^^^^^
+                                    source-code-rust-keyword-control-await
+                                         ^
+                                         source-code-rust-whitespace
+                                          ^^^^
+                                          source-code-rust-keyword-control-else
+                                              ^
+                                              source-code-rust-whitespace
+                                               ^
+                                               source-code-rust-punctuation
+            return Err(Error::Closed);
+^^^^^^^^^^^^
+source-code-rust-whitespace
+            ^^^^^^
+            source-code-rust-keyword-control-return
+                  ^
+                  source-code-rust-whitespace
+                   ^^^
+                   source-code-rust-identifier-function-constructor
+                      ^
+                      source-code-rust-punctuation
+                       ^^^^^
+                       source-code-rust-identifier-type
+                            ^^
+                            source-code-rust-punctuation-accessor
+                              ^^^^^^
+                              source-code-rust-identifier-type
+                                    ^
+                                    source-code-rust-punctuation
+                                     ^
+                                     source-code-rust-punctuation
+        };
+^^^^^^^^
+source-code-rust-whitespace
+        ^
+        source-code-rust-punctuation
+         ^
+         source-code-rust-punctuation
+        if bytes.is_empty() { continue; }
+^^^^^^^^
+source-code-rust-whitespace
+        ^^
+        source-code-rust-keyword-control-if
+          ^
+          source-code-rust-whitespace
+           ^^^^^
+           source-code-rust-identifier
+                ^
+                source-code-rust-punctuation-accessor
+                 ^^^^^^^^
+                 source-code-rust-identifier-function
+                         ^
+                         source-code-rust-punctuation
+                          ^
+                          source-code-rust-punctuation
+                           ^
+                           source-code-rust-whitespace
+                            ^
+                            source-code-rust-punctuation
+                             ^
+                             source-code-rust-whitespace
+                              ^^^^^^^^
+                              source-code-rust-keyword-control-continue
+                                      ^
+                                      source-code-rust-punctuation
+                                       ^
+                                       source-code-rust-whitespace
+                                        ^
+                                        source-code-rust-punctuation
+        return Ok(String::from_utf8(bytes)?);
+^^^^^^^^
+source-code-rust-whitespace
+        ^^^^^^
+        source-code-rust-keyword-control-return
+              ^
+              source-code-rust-whitespace
+               ^^
+               source-code-rust-identifier-function-constructor
+                 ^
+                 source-code-rust-punctuation
+                  ^^^^^^
+                  source-code-rust-identifier-type-built-in
+                        ^^
+                        source-code-rust-punctuation-accessor
+                          ^^^^^^^^^
+                          source-code-rust-identifier-function
+                                   ^
+                                   source-code-rust-punctuation
+                                    ^^^^^
+                                    source-code-rust-identifier
+                                         ^
+                                         source-code-rust-punctuation
+                                          ^
+                                          source-code-rust-keyword-operator
+                                           ^
+                                           source-code-rust-punctuation
+                                            ^
+                                            source-code-rust-punctuation
+    }
+^^^^
+source-code-rust-whitespace
+    ^
+    source-code-rust-punctuation
+}
+^
+source-code-rust-punctuation
+
+let raw = &raw const value;
+^^^
+source-code-rust-keyword-declaration-let
+   ^
+   source-code-rust-whitespace
+    ^^^
+    source-code-rust-identifier
+       ^
+       source-code-rust-whitespace
+        ^
+        source-code-rust-keyword-operator
+         ^
+         source-code-rust-whitespace
+          ^
+          source-code-rust-keyword-operator
+           ^^^
+           source-code-rust-keyword-modifier-raw
+              ^
+              source-code-rust-whitespace
+               ^^^^^
+               source-code-rust-keyword-modifier-const
+                    ^
+                    source-code-rust-whitespace
+                     ^^^^^
+                     source-code-rust-identifier
+                          ^
+                          source-code-rust-punctuation
+let r#match = r#try(r#type);
+^^^
+source-code-rust-keyword-declaration-let
+   ^
+   source-code-rust-whitespace
+    ^^^^^^^
+    source-code-rust-identifier
+           ^
+           source-code-rust-whitespace
+            ^
+            source-code-rust-keyword-operator
+             ^
+             source-code-rust-whitespace
+              ^^^^^
+              source-code-rust-identifier-function
+                   ^
+                   source-code-rust-punctuation
+                    ^^^^^^
+                    source-code-rust-identifier
+                          ^
+                          source-code-rust-punctuation
+                           ^
+                           source-code-rust-punctuation
+let x·if = 名前;
+^^^
+source-code-rust-keyword-declaration-let
+   ^
+   source-code-rust-whitespace
+    ^^^^
+    source-code-rust-identifier
+        ^
+        source-code-rust-whitespace
+         ^
+         source-code-rust-keyword-operator
+          ^
+          source-code-rust-whitespace
+           ^^
+           source-code-rust-identifier
+             ^
+             source-code-rust-punctuation

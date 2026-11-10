@@ -22,6 +22,7 @@ import 'language/mermaid.dart';
 import 'language/objective_c.dart';
 import 'language/python.dart';
 import 'language/ruby.dart';
+import 'language/rust.dart';
 import 'language/swift.dart';
 import 'language/text.dart';
 import 'language/toml.dart';
@@ -58,6 +59,7 @@ abstract final class BuiltInLanguages {
     python,
     objectiveC,
     ruby,
+    rust,
     swift,
     text,
     toml,
@@ -216,6 +218,13 @@ abstract final class BuiltInLanguages {
     name: 'ruby',
     grammar: const RubyGrammar(),
     baseTag: const Tag('ruby', parent: Tags.codeSource),
+  );
+
+  /// A tokenizing language implementation for the Rust programming language.
+  static final Language rust = MatcherLanguage(
+    name: 'rust',
+    grammar: const RustGrammar(),
+    baseTag: const Tag('rust', parent: Tags.codeSource),
   );
 
   /// A tokenizing language implementation for the Swift programming language.

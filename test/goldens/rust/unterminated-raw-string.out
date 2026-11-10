@@ -1,0 +1,20 @@
+let raw = r#"never closed "
+^^^
+source-code-rust-keyword-declaration-let
+   ^
+   source-code-rust-whitespace
+    ^^^
+    source-code-rust-identifier
+       ^
+       source-code-rust-whitespace
+        ^
+        source-code-rust-keyword-operator
+         ^
+         source-code-rust-whitespace
+          ^^^
+          source-code-rust-literal-string-quoted-double-literal-string-quoted-double-begin
+             ^^^^^^^^^^^^^^
+             source-code-rust-literal-string-quoted-double-literal-string-unquoted
+fn main() {}
+^^^^^^^^^^^^
+source-code-rust-literal-string-quoted-double-literal-string-unquoted

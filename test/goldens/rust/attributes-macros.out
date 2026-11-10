@@ -1,0 +1,370 @@
+#![allow(dead_code)]
+^^^^^^^^
+source-code-rust-metadata-annotation
+        ^
+        source-code-rust-punctuation
+         ^^^^^^^^^
+         source-code-rust-identifier
+                  ^
+                  source-code-rust-punctuation
+                   ^
+                   source-code-rust-punctuation
+
+#[derive(
+^^^^^^^^
+source-code-rust-metadata-annotation
+        ^
+        source-code-rust-punctuation
+    Debug,
+^^^^
+source-code-rust-whitespace
+    ^^^^^
+    source-code-rust-identifier-type-built-in
+         ^
+         source-code-rust-punctuation-separator
+    serde::Serialize,
+^^^^
+source-code-rust-whitespace
+    ^^^^^
+    source-code-rust-identifier
+         ^^
+         source-code-rust-punctuation-accessor
+           ^^^^^^^^^
+           source-code-rust-identifier-type
+                    ^
+                    source-code-rust-punctuation-separator
+)]
+^
+source-code-rust-punctuation
+ ^
+ source-code-rust-punctuation
+struct Config { name: String }
+^^^^^^
+source-code-rust-keyword-declaration-struct
+      ^
+      source-code-rust-whitespace
+       ^^^^^^
+       source-code-rust-identifier-type
+             ^
+             source-code-rust-whitespace
+              ^
+              source-code-rust-punctuation
+               ^
+               source-code-rust-whitespace
+                ^^^^
+                source-code-rust-identifier
+                    ^
+                    source-code-rust-punctuation-separator
+                     ^
+                     source-code-rust-whitespace
+                      ^^^^^^
+                      source-code-rust-identifier-type-built-in
+                            ^
+                            source-code-rust-whitespace
+                             ^
+                             source-code-rust-punctuation
+
+#[unsafe(no_mangle)]
+^^^^^^^^^^^^^^^^^^
+source-code-rust-metadata-annotation
+                  ^
+                  source-code-rust-punctuation
+                   ^
+                   source-code-rust-punctuation
+pub extern "C" fn exported() {}
+^^^
+source-code-rust-keyword-modifier-pub
+   ^
+   source-code-rust-whitespace
+    ^^^^^^
+    source-code-rust-keyword-declaration-extern
+          ^
+          source-code-rust-whitespace
+           ^
+           source-code-rust-literal-string-quoted-double-literal-string-quoted-double-begin
+            ^
+            source-code-rust-literal-string-quoted-double-literal-string-unquoted
+             ^
+             source-code-rust-literal-string-quoted-double-literal-string-quoted-double-end
+              ^
+              source-code-rust-whitespace
+               ^^
+               source-code-rust-keyword-declaration-fn
+                 ^
+                 source-code-rust-whitespace
+                  ^^^^^^^^
+                  source-code-rust-identifier-function
+                          ^
+                          source-code-rust-punctuation
+                           ^
+                           source-code-rust-punctuation
+                            ^
+                            source-code-rust-whitespace
+                             ^
+                             source-code-rust-punctuation
+                              ^
+                              source-code-rust-punctuation
+
+#[diagnostic::on_unimplemented(message = "missing")]
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+source-code-rust-metadata-annotation
+                              ^
+                              source-code-rust-punctuation
+                               ^^^^^^^
+                               source-code-rust-identifier
+                                      ^
+                                      source-code-rust-whitespace
+                                       ^
+                                       source-code-rust-keyword-operator
+                                        ^
+                                        source-code-rust-whitespace
+                                         ^
+                                         source-code-rust-literal-string-quoted-double-literal-string-quoted-double-begin
+                                          ^^^^^^^
+                                          source-code-rust-literal-string-quoted-double-literal-string-unquoted
+                                                 ^
+                                                 source-code-rust-literal-string-quoted-double-literal-string-quoted-double-end
+                                                  ^
+                                                  source-code-rust-punctuation
+                                                   ^
+                                                   source-code-rust-punctuation
+trait Marker {}
+^^^^^
+source-code-rust-keyword-declaration-trait
+     ^
+     source-code-rust-whitespace
+      ^^^^^^
+      source-code-rust-identifier-type
+            ^
+            source-code-rust-whitespace
+             ^
+             source-code-rust-punctuation
+              ^
+              source-code-rust-punctuation
+
+macro_rules! r#try {
+^^^^^^^^^^^^
+source-code-rust-keyword-declaration-macro_rules
+            ^
+            source-code-rust-whitespace
+             ^^^^^
+             source-code-rust-identifier-function-macro
+                  ^
+                  source-code-rust-whitespace
+                   ^
+                   source-code-rust-punctuation
+    ($($item:ident),*) => { $crate::helper($($item),*) };
+^^^^
+source-code-rust-whitespace
+    ^
+    source-code-rust-punctuation
+     ^
+     source-code-rust-punctuation
+      ^
+      source-code-rust-punctuation
+       ^^^^^
+       source-code-rust-identifier-variable-metavariable
+            ^
+            source-code-rust-punctuation-separator
+             ^^^^^
+             source-code-rust-identifier-type-built-in
+                  ^
+                  source-code-rust-punctuation
+                   ^
+                   source-code-rust-punctuation-separator
+                    ^
+                    source-code-rust-keyword-operator
+                     ^
+                     source-code-rust-punctuation
+                      ^
+                      source-code-rust-whitespace
+                       ^^
+                       source-code-rust-keyword-operator
+                         ^
+                         source-code-rust-whitespace
+                          ^
+                          source-code-rust-punctuation
+                           ^
+                           source-code-rust-whitespace
+                            ^^^^^^
+                            source-code-rust-identifier-special
+                                  ^^
+                                  source-code-rust-punctuation-accessor
+                                    ^^^^^^
+                                    source-code-rust-identifier-function
+                                          ^
+                                          source-code-rust-punctuation
+                                           ^
+                                           source-code-rust-punctuation
+                                            ^
+                                            source-code-rust-punctuation
+                                             ^^^^^
+                                             source-code-rust-identifier-variable-metavariable
+                                                  ^
+                                                  source-code-rust-punctuation
+                                                   ^
+                                                   source-code-rust-punctuation-separator
+                                                    ^
+                                                    source-code-rust-keyword-operator
+                                                     ^
+                                                     source-code-rust-punctuation
+                                                      ^
+                                                      source-code-rust-whitespace
+                                                       ^
+                                                       source-code-rust-punctuation
+                                                        ^
+                                                        source-code-rust-punctuation
+}
+^
+source-code-rust-punctuation
+r#try!(first, second);
+^^^^^^
+source-code-rust-identifier-function-macro
+      ^
+      source-code-rust-punctuation
+       ^^^^^
+       source-code-rust-identifier
+            ^
+            source-code-rust-punctuation-separator
+             ^
+             source-code-rust-whitespace
+              ^^^^^^
+              source-code-rust-identifier
+                    ^
+                    source-code-rust-punctuation
+                     ^
+                     source-code-rust-punctuation
+macro_rules!square { ($x:expr) => { $x * $x }; }
+^^^^^^^^^^^^
+source-code-rust-keyword-declaration-macro_rules
+            ^^^^^^
+            source-code-rust-identifier
+                  ^
+                  source-code-rust-whitespace
+                   ^
+                   source-code-rust-punctuation
+                    ^
+                    source-code-rust-whitespace
+                     ^
+                     source-code-rust-punctuation
+                      ^^
+                      source-code-rust-identifier-variable-metavariable
+                        ^
+                        source-code-rust-punctuation-separator
+                         ^^^^
+                         source-code-rust-identifier-type-built-in
+                             ^
+                             source-code-rust-punctuation
+                              ^
+                              source-code-rust-whitespace
+                               ^^
+                               source-code-rust-keyword-operator
+                                 ^
+                                 source-code-rust-whitespace
+                                  ^
+                                  source-code-rust-punctuation
+                                   ^
+                                   source-code-rust-whitespace
+                                    ^^
+                                    source-code-rust-identifier-variable-metavariable
+                                      ^
+                                      source-code-rust-whitespace
+                                       ^
+                                       source-code-rust-keyword-operator
+                                        ^
+                                        source-code-rust-whitespace
+                                         ^^
+                                         source-code-rust-identifier-variable-metavariable
+                                           ^
+                                           source-code-rust-whitespace
+                                            ^
+                                            source-code-rust-punctuation
+                                             ^
+                                             source-code-rust-punctuation
+                                              ^
+                                              source-code-rust-whitespace
+                                               ^
+                                               source-code-rust-punctuation
+
+let flags = vec![Example!(1), bool!(false), MAX!()];
+^^^
+source-code-rust-keyword-declaration-let
+   ^
+   source-code-rust-whitespace
+    ^^^^^
+    source-code-rust-identifier
+         ^
+         source-code-rust-whitespace
+          ^
+          source-code-rust-keyword-operator
+           ^
+           source-code-rust-whitespace
+            ^^^^
+            source-code-rust-identifier-function-macro
+                ^
+                source-code-rust-punctuation
+                 ^^^^^^^^
+                 source-code-rust-identifier-function-macro
+                         ^
+                         source-code-rust-punctuation
+                          ^
+                          source-code-rust-literal-number-integer
+                           ^
+                           source-code-rust-punctuation
+                            ^
+                            source-code-rust-punctuation-separator
+                             ^
+                             source-code-rust-whitespace
+                              ^^^^^
+                              source-code-rust-identifier-function-macro
+                                   ^
+                                   source-code-rust-punctuation
+                                    ^^^^^
+                                    source-code-rust-literal-boolean-false
+                                         ^
+                                         source-code-rust-punctuation
+                                          ^
+                                          source-code-rust-punctuation-separator
+                                           ^
+                                           source-code-rust-whitespace
+                                            ^^^^
+                                            source-code-rust-identifier-function-macro
+                                                ^
+                                                source-code-rust-punctuation
+                                                 ^
+                                                 source-code-rust-punctuation
+                                                  ^
+                                                  source-code-rust-punctuation
+                                                   ^
+                                                   source-code-rust-punctuation
+let tokens = quote! { #name };
+^^^
+source-code-rust-keyword-declaration-let
+   ^
+   source-code-rust-whitespace
+    ^^^^^^
+    source-code-rust-identifier
+          ^
+          source-code-rust-whitespace
+           ^
+           source-code-rust-keyword-operator
+            ^
+            source-code-rust-whitespace
+             ^^^^^^
+             source-code-rust-identifier-function-macro
+                   ^
+                   source-code-rust-whitespace
+                    ^
+                    source-code-rust-punctuation
+                     ^
+                     source-code-rust-whitespace
+                      ^
+                      source-code-rust-punctuation
+                       ^^^^
+                       source-code-rust-identifier
+                           ^
+                           source-code-rust-whitespace
+                            ^
+                            source-code-rust-punctuation
+                             ^
+                             source-code-rust-punctuation

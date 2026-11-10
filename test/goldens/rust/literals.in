@@ -1,0 +1,6 @@
+let integers = (1_000, 42usize, 0xFF_u8, 0o77, 0b1010);
+let floats = (1., 0.5, 2.5e-3, 1e10, 1f32);
+let range = 0..1.5;
+let fields = (nested.0.1, 1.max(2));
+let invalid = (1foo, 0b102);
+let chars = ('a', '\'', '\u{1F980}', b'\x7f');

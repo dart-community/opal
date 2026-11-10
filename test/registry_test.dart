@@ -80,6 +80,14 @@ void main() {
         expect(BuiltInLanguages.all, contains(BuiltInLanguages.toml));
       });
 
+      test('includes rust language and fallback', () {
+        for (final name in ['rust', 'rs', 'RUST', ' RS ']) {
+          expect(registry[name], same(BuiltInLanguages.rust));
+        }
+        expect(BuiltInLanguages.rust.name, 'rust');
+        expect(BuiltInLanguages.all, contains(BuiltInLanguages.rust));
+      });
+
       test('returns null for unknown language', () {
         expect(registry['unknown'], isNull);
         expect(registry['perl'], isNull);

@@ -1,0 +1,139 @@
+let stray = ' ;
+^^^
+source-code-rust-keyword-declaration-let
+   ^
+   source-code-rust-whitespace
+    ^^^^^
+    source-code-rust-identifier
+         ^
+         source-code-rust-whitespace
+          ^
+          source-code-rust-keyword-operator
+           ^
+           source-code-rust-whitespace
+            ^
+            source-code-rust-punctuation
+             ^
+             source-code-rust-whitespace
+              ^
+              source-code-rust-punctuation
+let lifetime_like = 'r#type;
+^^^
+source-code-rust-keyword-declaration-let
+   ^
+   source-code-rust-whitespace
+    ^^^^^^^^^^^^^
+    source-code-rust-identifier
+                 ^
+                 source-code-rust-whitespace
+                  ^
+                  source-code-rust-keyword-operator
+                   ^
+                   source-code-rust-whitespace
+                    ^^^^^^^
+                    source-code-rust-identifier-type-lifetime
+                           ^
+                           source-code-rust-punctuation
+#[derive(Debug
+^^^^^^^^
+source-code-rust-metadata-annotation
+        ^
+        source-code-rust-punctuation
+         ^^^^^
+         source-code-rust-identifier-type-built-in
+struct After;
+^^^^^^
+source-code-rust-keyword-declaration-struct
+      ^
+      source-code-rust-whitespace
+       ^^^^^
+       source-code-rust-identifier-type
+            ^
+            source-code-rust-punctuation
+
+# fn main() {
+^
+source-code-rust-punctuation
+ ^
+ source-code-rust-whitespace
+  ^^
+  source-code-rust-keyword-declaration-fn
+    ^
+    source-code-rust-whitespace
+     ^^^^
+     source-code-rust-identifier-function
+         ^
+         source-code-rust-punctuation
+          ^
+          source-code-rust-punctuation
+           ^
+           source-code-rust-whitespace
+            ^
+            source-code-rust-punctuation
+    fn example() { ... }
+^^^^
+source-code-rust-whitespace
+    ^^
+    source-code-rust-keyword-declaration-fn
+      ^
+      source-code-rust-whitespace
+       ^^^^^^^
+       source-code-rust-identifier-function
+              ^
+              source-code-rust-punctuation
+               ^
+               source-code-rust-punctuation
+                ^
+                source-code-rust-whitespace
+                 ^
+                 source-code-rust-punctuation
+                  ^
+                  source-code-rust-whitespace
+                   ^^^
+                   source-code-rust-keyword-operator
+                      ^
+                      source-code-rust-whitespace
+                       ^
+                       source-code-rust-punctuation
+    let different = x!=y;
+^^^^
+source-code-rust-whitespace
+    ^^^
+    source-code-rust-keyword-declaration-let
+       ^
+       source-code-rust-whitespace
+        ^^^^^^^^^
+        source-code-rust-identifier
+                 ^
+                 source-code-rust-whitespace
+                  ^
+                  source-code-rust-keyword-operator
+                   ^
+                   source-code-rust-whitespace
+                    ^
+                    source-code-rust-identifier
+                     ^^
+                     source-code-rust-keyword-operator
+                       ^
+                       source-code-rust-identifier
+                        ^
+                        source-code-rust-punctuation
+    let backslash = \;
+^^^^
+source-code-rust-whitespace
+    ^^^
+    source-code-rust-keyword-declaration-let
+       ^
+       source-code-rust-whitespace
+        ^^^^^^^^^
+        source-code-rust-identifier
+                 ^
+                 source-code-rust-whitespace
+                  ^
+                  source-code-rust-keyword-operator
+                   ^
+                   source-code-rust-whitespace
+                    ^
+                    source-code-rust-unknown
+                     ^
+                     source-code-rust-punctuation

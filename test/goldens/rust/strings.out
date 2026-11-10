@@ -1,0 +1,311 @@
+let escapes = "tab\t quote\" backslash\\ hex\x41 unicode\u{1F600}";
+^^^
+source-code-rust-keyword-declaration-let
+   ^
+   source-code-rust-whitespace
+    ^^^^^^^
+    source-code-rust-identifier
+           ^
+           source-code-rust-whitespace
+            ^
+            source-code-rust-keyword-operator
+             ^
+             source-code-rust-whitespace
+              ^
+              source-code-rust-literal-string-quoted-double-literal-string-quoted-double-begin
+               ^^^
+               source-code-rust-literal-string-quoted-double-literal-string-unquoted
+                  ^^
+                  source-code-rust-literal-string-quoted-double-literal-string-escape
+                    ^^^^^^
+                    source-code-rust-literal-string-quoted-double-literal-string-unquoted
+                          ^^
+                          source-code-rust-literal-string-quoted-double-literal-string-escape
+                            ^^^^^^^^^^
+                            source-code-rust-literal-string-quoted-double-literal-string-unquoted
+                                      ^^
+                                      source-code-rust-literal-string-quoted-double-literal-string-escape
+                                        ^^^^
+                                        source-code-rust-literal-string-quoted-double-literal-string-unquoted
+                                            ^^^^
+                                            source-code-rust-literal-string-quoted-double-literal-string-escape
+                                                ^^^^^^^^
+                                                source-code-rust-literal-string-quoted-double-literal-string-unquoted
+                                                        ^^^^^^^^^
+                                                        source-code-rust-literal-string-quoted-double-literal-string-escape
+                                                                 ^
+                                                                 source-code-rust-literal-string-quoted-double-literal-string-quoted-double-end
+                                                                  ^
+                                                                  source-code-rust-punctuation
+let invalid_escape = "a \q b";
+^^^
+source-code-rust-keyword-declaration-let
+   ^
+   source-code-rust-whitespace
+    ^^^^^^^^^^^^^^
+    source-code-rust-identifier
+                  ^
+                  source-code-rust-whitespace
+                   ^
+                   source-code-rust-keyword-operator
+                    ^
+                    source-code-rust-whitespace
+                     ^
+                     source-code-rust-literal-string-quoted-double-literal-string-quoted-double-begin
+                      ^^
+                      source-code-rust-literal-string-quoted-double-literal-string-unquoted
+                        ^^
+                        source-code-rust-literal-string-quoted-double-literal-string-unquoted
+                          ^^
+                          source-code-rust-literal-string-quoted-double-literal-string-unquoted
+                            ^
+                            source-code-rust-literal-string-quoted-double-literal-string-quoted-double-end
+                             ^
+                             source-code-rust-punctuation
+let lines = "first
+^^^
+source-code-rust-keyword-declaration-let
+   ^
+   source-code-rust-whitespace
+    ^^^^^
+    source-code-rust-identifier
+         ^
+         source-code-rust-whitespace
+          ^
+          source-code-rust-keyword-operator
+           ^
+           source-code-rust-whitespace
+            ^
+            source-code-rust-literal-string-quoted-double-literal-string-quoted-double-begin
+             ^^^^^
+             source-code-rust-literal-string-quoted-double-literal-string-unquoted
+second \
+^^^^^^^
+source-code-rust-literal-string-quoted-double-literal-string-unquoted
+       ^
+       source-code-rust-literal-string-quoted-double-literal-string-escape
+    third";
+^^^^^^^^^
+source-code-rust-literal-string-quoted-double-literal-string-unquoted
+         ^
+         source-code-rust-literal-string-quoted-double-literal-string-quoted-double-end
+          ^
+          source-code-rust-punctuation
+let raw = r"C:\path\file";
+^^^
+source-code-rust-keyword-declaration-let
+   ^
+   source-code-rust-whitespace
+    ^^^
+    source-code-rust-identifier
+       ^
+       source-code-rust-whitespace
+        ^
+        source-code-rust-keyword-operator
+         ^
+         source-code-rust-whitespace
+          ^^
+          source-code-rust-literal-string-quoted-double-literal-string-quoted-double-begin
+            ^^^^^^^^^^^^
+            source-code-rust-literal-string-quoted-double-literal-string-unquoted
+                        ^
+                        source-code-rust-literal-string-quoted-double-literal-string-quoted-double-end
+                         ^
+                         source-code-rust-punctuation
+let raw_multiline = r##"
+^^^
+source-code-rust-keyword-declaration-let
+   ^
+   source-code-rust-whitespace
+    ^^^^^^^^^^^^^
+    source-code-rust-identifier
+                 ^
+                 source-code-rust-whitespace
+                  ^
+                  source-code-rust-keyword-operator
+                   ^
+                   source-code-rust-whitespace
+                    ^^^^
+                    source-code-rust-literal-string-quoted-double-literal-string-quoted-double-begin
+    "# is still inside the string
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+source-code-rust-literal-string-quoted-double-literal-string-unquoted
+"##;
+^^^
+source-code-rust-literal-string-quoted-double-literal-string-quoted-double-end
+   ^
+   source-code-rust-punctuation
+let bytes = b"bytes\xff";
+^^^
+source-code-rust-keyword-declaration-let
+   ^
+   source-code-rust-whitespace
+    ^^^^^
+    source-code-rust-identifier
+         ^
+         source-code-rust-whitespace
+          ^
+          source-code-rust-keyword-operator
+           ^
+           source-code-rust-whitespace
+            ^^
+            source-code-rust-literal-string-quoted-double-literal-string-quoted-double-begin
+              ^^^^^
+              source-code-rust-literal-string-quoted-double-literal-string-unquoted
+                   ^^^^
+                   source-code-rust-literal-string-quoted-double-literal-string-escape
+                       ^
+                       source-code-rust-literal-string-quoted-double-literal-string-quoted-double-end
+                        ^
+                        source-code-rust-punctuation
+let raw_bytes = br#"raw "bytes""#;
+^^^
+source-code-rust-keyword-declaration-let
+   ^
+   source-code-rust-whitespace
+    ^^^^^^^^^
+    source-code-rust-identifier
+             ^
+             source-code-rust-whitespace
+              ^
+              source-code-rust-keyword-operator
+               ^
+               source-code-rust-whitespace
+                ^^^^
+                source-code-rust-literal-string-quoted-double-literal-string-quoted-double-begin
+                    ^^^^^^^^^^^
+                    source-code-rust-literal-string-quoted-double-literal-string-unquoted
+                               ^^
+                               source-code-rust-literal-string-quoted-double-literal-string-quoted-double-end
+                                 ^
+                                 source-code-rust-punctuation
+let c_string = c"hello";
+^^^
+source-code-rust-keyword-declaration-let
+   ^
+   source-code-rust-whitespace
+    ^^^^^^^^
+    source-code-rust-identifier
+            ^
+            source-code-rust-whitespace
+             ^
+             source-code-rust-keyword-operator
+              ^
+              source-code-rust-whitespace
+               ^^
+               source-code-rust-literal-string-quoted-double-literal-string-quoted-double-begin
+                 ^^^^^
+                 source-code-rust-literal-string-quoted-double-literal-string-unquoted
+                      ^
+                      source-code-rust-literal-string-quoted-double-literal-string-quoted-double-end
+                       ^
+                       source-code-rust-punctuation
+let raw_c_string = cr"raw\c";
+^^^
+source-code-rust-keyword-declaration-let
+   ^
+   source-code-rust-whitespace
+    ^^^^^^^^^^^^
+    source-code-rust-identifier
+                ^
+                source-code-rust-whitespace
+                 ^
+                 source-code-rust-keyword-operator
+                  ^
+                  source-code-rust-whitespace
+                   ^^^
+                   source-code-rust-literal-string-quoted-double-literal-string-quoted-double-begin
+                      ^^^^^
+                      source-code-rust-literal-string-quoted-double-literal-string-unquoted
+                           ^
+                           source-code-rust-literal-string-quoted-double-literal-string-quoted-double-end
+                            ^
+                            source-code-rust-punctuation
+
+let plain = "{not} a placeholder";
+^^^
+source-code-rust-keyword-declaration-let
+   ^
+   source-code-rust-whitespace
+    ^^^^^
+    source-code-rust-identifier
+         ^
+         source-code-rust-whitespace
+          ^
+          source-code-rust-keyword-operator
+           ^
+           source-code-rust-whitespace
+            ^
+            source-code-rust-literal-string-quoted-double-literal-string-quoted-double-begin
+             ^^^^^^^^^^^^^^^^^^^
+             source-code-rust-literal-string-quoted-double-literal-string-unquoted
+                                ^
+                                source-code-rust-literal-string-quoted-double-literal-string-quoted-double-end
+                                 ^
+                                 source-code-rust-punctuation
+log::info!("{name:>3} {0:?} {{escaped}}", id);
+^^^
+source-code-rust-identifier
+   ^^
+   source-code-rust-punctuation-accessor
+     ^^^^^
+     source-code-rust-identifier-function-macro
+          ^
+          source-code-rust-punctuation
+           ^
+           source-code-rust-literal-string-quoted-double-literal-string-quoted-double-begin
+            ^^^^^^^^^
+            source-code-rust-literal-string-quoted-double-literal-string-interpolation
+                     ^
+                     source-code-rust-literal-string-quoted-double-literal-string-unquoted
+                      ^^^^^
+                      source-code-rust-literal-string-quoted-double-literal-string-interpolation
+                           ^
+                           source-code-rust-literal-string-quoted-double-literal-string-unquoted
+                            ^^
+                            source-code-rust-literal-string-quoted-double-literal-string-escape
+                              ^^^^^^^
+                              source-code-rust-literal-string-quoted-double-literal-string-unquoted
+                                     ^^
+                                     source-code-rust-literal-string-quoted-double-literal-string-escape
+                                       ^
+                                       source-code-rust-literal-string-quoted-double-literal-string-quoted-double-end
+                                        ^
+                                        source-code-rust-punctuation-separator
+                                         ^
+                                         source-code-rust-whitespace
+                                          ^^
+                                          source-code-rust-identifier
+                                            ^
+                                            source-code-rust-punctuation
+                                             ^
+                                             source-code-rust-punctuation
+writeln!(out, "{:.2}", ratio)?;
+^^^^^^^^
+source-code-rust-identifier-function-macro
+        ^
+        source-code-rust-punctuation
+         ^^^
+         source-code-rust-identifier
+            ^
+            source-code-rust-punctuation-separator
+             ^
+             source-code-rust-whitespace
+              ^
+              source-code-rust-literal-string-quoted-double-literal-string-quoted-double-begin
+               ^^^^^
+               source-code-rust-literal-string-quoted-double-literal-string-interpolation
+                    ^
+                    source-code-rust-literal-string-quoted-double-literal-string-quoted-double-end
+                     ^
+                     source-code-rust-punctuation-separator
+                      ^
+                      source-code-rust-whitespace
+                       ^^^^^
+                       source-code-rust-identifier
+                            ^
+                            source-code-rust-punctuation
+                             ^
+                             source-code-rust-keyword-operator
+                              ^
+                              source-code-rust-punctuation

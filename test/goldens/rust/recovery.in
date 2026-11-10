@@ -1,0 +1,9 @@
+let stray = ' ;
+let lifetime_like = 'r#type;
+#[derive(Debug
+struct After;
+
+# fn main() {
+    fn example() { ... }
+    let different = x!=y;
+    let backslash = \;

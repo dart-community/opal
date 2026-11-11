@@ -1,0 +1,82 @@
+--- greeting.dart	2026-11-10 09:14:02.000000000 -0800
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+source-text-diff-markup-heading-from-file
++++ greeting.dart.new	2026-11-11 16:40:51.000000000 -0800
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+source-text-diff-markup-heading-to-file
+@@ -1,6 +1,7 @@
+^^^^^^^^^^^^^^^
+source-text-diff-metadata-range
+ /// Prints a greeting.
+^
+source-text-diff-markup-format-diff-unchanged-marker
+ ^^^^^^^^^^^^^^^^^^^^^^
+ source-text-diff-markup-format-diff-unchanged
+-void greet() {
+^
+source-text-diff-markup-format-diff-removed-marker
+ ^^^^^^^^^^^^^^
+ source-text-diff-markup-format-diff-removed
+-  print('Hello!');
+^
+source-text-diff-markup-format-diff-removed-marker
+ ^^^^^^^^^^^^^^^^^^
+ source-text-diff-markup-format-diff-removed
++void greet(String name) {
+^
+source-text-diff-markup-format-diff-inserted-marker
+ ^^^^^^^^^^^^^^^^^^^^^^^^^
+ source-text-diff-markup-format-diff-inserted
++  final greeting = 'Hello, $name!';
+^
+source-text-diff-markup-format-diff-inserted-marker
+ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ source-text-diff-markup-format-diff-inserted
++  print(greeting);
+^
+source-text-diff-markup-format-diff-inserted-marker
+ ^^^^^^^^^^^^^^^^^^
+ source-text-diff-markup-format-diff-inserted
+ }
+^
+source-text-diff-markup-format-diff-unchanged-marker
+ ^
+ source-text-diff-markup-format-diff-unchanged
+ 
+^
+source-text-diff-markup-format-diff-unchanged-marker
+ void main() {
+^
+source-text-diff-markup-format-diff-unchanged-marker
+ ^^^^^^^^^^^^^
+ source-text-diff-markup-format-diff-unchanged
+@@ -7,3 +8,3 @@ void main() {
+^^^^^^^^^^^^^^^
+source-text-diff-metadata-range
+               ^
+               source-text-diff-whitespace
+                ^^^^^^^^^^^^^
+                source-text-diff-markup-heading-section
+   greet();
+^
+source-text-diff-markup-format-diff-unchanged-marker
+ ^^^^^^^^^^
+ source-text-diff-markup-format-diff-unchanged
+-  print('Done');
+^
+source-text-diff-markup-format-diff-removed-marker
+ ^^^^^^^^^^^^^^^^
+ source-text-diff-markup-format-diff-removed
++  print('Done.');
+^
+source-text-diff-markup-format-diff-inserted-marker
+ ^^^^^^^^^^^^^^^^^
+ source-text-diff-markup-format-diff-inserted
+ }
+^
+source-text-diff-markup-format-diff-unchanged-marker
+ ^
+ source-text-diff-markup-format-diff-unchanged
+\ No newline at end of file
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+source-text-diff-comment

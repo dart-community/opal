@@ -1,0 +1,34 @@
+--- only a removed line
+unrelated text
++++ only an added line
+@@ broken hunk header
+@@ -1,2 @@
+@@ -1,2 +1,2 @@trailing
+*** a/context.txt
+***************
+*** 1,2 ****
+! changed
+1c1
+< old
+> new
+\ No newline at end of file
+\not a marker
+index of a book
+Index: lib/file.dart
+===================================================================
+Only in lib: extra.dart
+diff -ru a/lib/file.dart b/lib/file.dart
+commit to the plan
+commit cafe menu
++ not a preamble
+From here on
+--- a/short.txt
++++ b/short.txt
+@@ -1,3 +1,3 @@
+-old
++new
+--- a/next.txt
++++ b/next.txt
+@@ -1 +1 @@
+ same
+--- trailing header without a pair

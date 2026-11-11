@@ -2,6 +2,9 @@
 
 - Add support for C# (`csharp`, `cs`, `c#`, `c-sharp`).
 - Add support for Rust (`rust`, `rs`).
+- Add support for unified diffs and patches (`diff`, `patch`, `udiff`).
+- Add a `MarkupTags.unchanged` tag for
+  the unchanged context lines of diffs.
 - Improve the accuracy and recovery of `xml` highlighting.
 
 ## 0.3.0

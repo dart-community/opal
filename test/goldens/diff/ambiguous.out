@@ -1,0 +1,134 @@
+--- a/schema.sql
+^^^^^^^^^^^^^^^^
+source-text-diff-markup-heading-from-file
++++ b/schema.sql
+^^^^^^^^^^^^^^^^
+source-text-diff-markup-heading-to-file
+@@ -1,6 +1,8 @@
+^^^^^^^^^^^^^^^
+source-text-diff-metadata-range
+--- The users table.
+^
+source-text-diff-markup-format-diff-removed-marker
+ ^^^^^^^^^^^^^^^^^^^
+ source-text-diff-markup-format-diff-removed
++-- The accounts table.
+^
+source-text-diff-markup-format-diff-inserted-marker
+ ^^^^^^^^^^^^^^^^^^^^^^
+ source-text-diff-markup-format-diff-inserted
+ CREATE TABLE users (
+^
+source-text-diff-markup-format-diff-unchanged-marker
+ ^^^^^^^^^^^^^^^^^^^^
+ source-text-diff-markup-format-diff-unchanged
+----
+^
+source-text-diff-markup-format-diff-removed-marker
+ ^^^
+ source-text-diff-markup-format-diff-removed
++---
+^
+source-text-diff-markup-format-diff-inserted-marker
+ ^^^
+ source-text-diff-markup-format-diff-inserted
++++count;
+^
+source-text-diff-markup-format-diff-inserted-marker
+ ^^^^^^^^
+ source-text-diff-markup-format-diff-inserted
++++ not a header
+^
+source-text-diff-markup-format-diff-inserted-marker
+ ^^^^^^^^^^^^^^^
+ source-text-diff-markup-format-diff-inserted
+--- A removed comment.
+^
+source-text-diff-markup-format-diff-removed-marker
+ ^^^^^^^^^^^^^^^^^^^^^
+ source-text-diff-markup-format-diff-removed
++++ An added line.
+^
+source-text-diff-markup-format-diff-inserted-marker
+ ^^^^^^^^^^^^^^^^^
+ source-text-diff-markup-format-diff-inserted
+
+ );
+^
+source-text-diff-markup-format-diff-unchanged-marker
+ ^^
+ source-text-diff-markup-format-diff-unchanged
+--- a/next.txt
+^^^^^^^^^^^^^^
+source-text-diff-markup-heading-from-file
++++ b/next.txt
+^^^^^^^^^^^^^^
+source-text-diff-markup-heading-to-file
+@@ -1 +1 @@
+^^^^^^^^^^^
+source-text-diff-metadata-range
+-old
+^
+source-text-diff-markup-format-diff-removed-marker
+ ^^^
+ source-text-diff-markup-format-diff-removed
++new
+^
+source-text-diff-markup-format-diff-inserted-marker
+ ^^^
+ source-text-diff-markup-format-diff-inserted
+--- a/zero-context.sql
+^^^^^^^^^^^^^^^^^^^^^^
+source-text-diff-markup-heading-from-file
++++ b/zero-context.sql
+^^^^^^^^^^^^^^^^^^^^^^
+source-text-diff-markup-heading-to-file
+@@ -1 +1 @@
+^^^^^^^^^^^
+source-text-diff-metadata-range
+--- Completes the hunk.
+^
+source-text-diff-markup-format-diff-removed-marker
+ ^^^^^^^^^^^^^^^^^^^^^^
+ source-text-diff-markup-format-diff-removed
++++ Also completes the hunk.
+^
+source-text-diff-markup-format-diff-inserted-marker
+ ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ source-text-diff-markup-format-diff-inserted
+@@ -6 +0,0 @@ d
+^^^^^^^^^^^^^
+source-text-diff-metadata-range
+             ^
+             source-text-diff-whitespace
+              ^
+              source-text-diff-markup-heading-section
+--- A removed comment before file headers.
+^
+source-text-diff-markup-format-diff-removed-marker
+ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ source-text-diff-markup-format-diff-removed
+--- a/after.txt
+^^^^^^^^^^^^^^^
+source-text-diff-markup-heading-from-file
++++ b/after.txt
+^^^^^^^^^^^^^^^
+source-text-diff-markup-heading-to-file
+@@ -1 +1 @@
+^^^^^^^^^^^
+source-text-diff-metadata-range
+-old
+^
+source-text-diff-markup-format-diff-removed-marker
+ ^^^
+ source-text-diff-markup-format-diff-removed
++new
+^
+source-text-diff-markup-format-diff-inserted-marker
+ ^^^
+ source-text-diff-markup-format-diff-inserted
+-- 
+^
+source-text-diff-markup-format-diff-removed-marker
+ ^^
+ source-text-diff-markup-format-diff-removed

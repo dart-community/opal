@@ -1,0 +1,20 @@
+ notes.txt | 2 +-
+^
+source-text-diff-markup-format-diff-unchanged-marker
+ ^^^^^^^^^^^^^^^^
+ source-text-diff-markup-format-diff-unchanged
+ 1 file changed
+^
+source-text-diff-markup-format-diff-unchanged-marker
+ ^^^^^^^^^^^^^^
+ source-text-diff-markup-format-diff-unchanged
+-old
+^
+source-text-diff-markup-format-diff-removed-marker
+ ^^^
+ source-text-diff-markup-format-diff-removed
++new
+^
+source-text-diff-markup-format-diff-inserted-marker
+ ^^^
+ source-text-diff-markup-format-diff-inserted

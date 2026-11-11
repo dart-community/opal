@@ -95,6 +95,8 @@ final Map<String, Language> _defaultLanguages = {
 /// A mapping of alternative names for languages to
 /// the standardized names used in [_defaultLanguages].
 final Map<String, String> _defaultFallbackLanguageNames = {
+  'patch': BuiltInLanguages.diff.name,
+  'udiff': BuiltInLanguages.diff.name,
   'golang': BuiltInLanguages.go.name,
   'xhtml': BuiltInLanguages.xml.name,
   'javascript': BuiltInLanguages.js.name,

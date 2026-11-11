@@ -1,0 +1,32 @@
+--- a/schema.sql
++++ b/schema.sql
+@@ -1,6 +1,8 @@
+--- The users table.
++-- The accounts table.
+ CREATE TABLE users (
+----
++---
++++count;
++++ not a header
+--- A removed comment.
++++ An added line.
+
+ );
+--- a/next.txt
++++ b/next.txt
+@@ -1 +1 @@
+-old
++new
+--- a/zero-context.sql
++++ b/zero-context.sql
+@@ -1 +1 @@
+--- Completes the hunk.
++++ Also completes the hunk.
+@@ -6 +0,0 @@ d
+--- A removed comment before file headers.
+--- a/after.txt
++++ b/after.txt
+@@ -1 +1 @@
+-old
++new
+-- 

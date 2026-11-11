@@ -63,6 +63,14 @@ void main() {
         expect(BuiltInLanguages.all, contains(BuiltInLanguages.cSharp));
       });
 
+      test('includes diff language and fallbacks', () {
+        for (final name in ['diff', 'patch', 'udiff', 'DIFF', ' Patch ']) {
+          expect(registry[name], same(BuiltInLanguages.diff));
+        }
+        expect(BuiltInLanguages.diff.name, 'diff');
+        expect(BuiltInLanguages.all, contains(BuiltInLanguages.diff));
+      });
+
       test('includes css language', () {
         expect(registry['css'], same(BuiltInLanguages.css));
         expect(registry['CSS'], same(BuiltInLanguages.css));

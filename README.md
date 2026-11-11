@@ -55,6 +55,7 @@ the specified default and alternative IDs:
 - C# (`csharp`, `cs`, `c#`, `c-sharp`)
 - CSS (`css`)
 - Dart (`dart`)
+- Diff (`diff`, `patch`, `udiff`)
 - EBNF (`ebnf`)
 - GLSL (`glsl`, `frag`, `vert`, `geom`, `comp`)
 - Go (`go`, `golang`)

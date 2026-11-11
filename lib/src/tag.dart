@@ -397,8 +397,8 @@ abstract final class MarkupTags {
 
   /// A tag for diff formatting and change indicators.
   ///
-  /// If the type of change is known,
-  /// prefer the more specific [MarkupTags.inserted] and [MarkupTags.removed].
+  /// If the type of change is known, prefer the more specific
+  /// [MarkupTags.inserted], [MarkupTags.removed], and [MarkupTags.unchanged].
   static const Tag diff = Tag('diff', parent: format);
 
   /// A tag for inserted/added content in diffs,
@@ -408,6 +408,10 @@ abstract final class MarkupTags {
   /// A tag for removed/deleted content in diffs,
   /// such as often delineated by `-` in unified diffs.
   static const Tag removed = Tag('removed', parent: diff);
+
+  /// A tag for unchanged content in diffs that gives context to changes,
+  /// such as often delineated by a leading space in unified diffs.
+  static const Tag unchanged = Tag('unchanged', parent: diff);
 
   /// A tag for heading elements, such as `# Heading` in Markdown.
   static const Tag heading = Tag('heading', parent: Tags.markup);

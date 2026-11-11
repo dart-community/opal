@@ -1,0 +1,34 @@
+ notes.txt | 2 +-
+^^^^^^^^^^^^^^^^^
+source-text-diff
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+source-text-diff
+
+diff --git a/notes.txt b/notes.txt
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+source-text-diff-metadata
+--- a/notes.txt
+^^^^^^^^^^^^^^^
+source-text-diff-markup-heading-from-file
++++ b/notes.txt
+^^^^^^^^^^^^^^^
+source-text-diff-markup-heading-to-file
+@@ -1,2 +1,2 @@
+^^^^^^^^^^^^^^^
+source-text-diff-metadata-range
+ notes.txt | 2 +-
+^
+source-text-diff-markup-format-diff-unchanged-marker
+ ^^^^^^^^^^^^^^^^
+ source-text-diff-markup-format-diff-unchanged
+-old
+^
+source-text-diff-markup-format-diff-removed-marker
+ ^^^
+ source-text-diff-markup-format-diff-removed
++new
+^
+source-text-diff-markup-format-diff-inserted-marker
+ ^^^
+ source-text-diff-markup-format-diff-inserted

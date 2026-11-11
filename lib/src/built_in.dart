@@ -8,6 +8,7 @@ import 'language/c_plus_plus.dart';
 import 'language/c_sharp.dart';
 import 'language/css.dart';
 import 'language/dart.dart';
+import 'language/diff.dart';
 import 'language/ebnf.dart';
 import 'language/glsl.dart';
 import 'language/go.dart';
@@ -46,6 +47,7 @@ abstract final class BuiltInLanguages {
     cSharp,
     css,
     dart,
+    diff,
     ebnf,
     glsl,
     go,
@@ -122,6 +124,10 @@ abstract final class BuiltInLanguages {
     grammar: const DartGrammar(),
     baseTag: const Tag('dart', parent: Tags.codeSource),
   );
+
+  /// A tokenizing language implementation for unified diffs and patches,
+  /// including those created by `git diff` and `git format-patch`.
+  static const Language diff = DiffLanguage();
 
   /// A tokenizing language implementation for the
   /// Extended Backus-Naur Form (EBNF) syntactic metalanguage.

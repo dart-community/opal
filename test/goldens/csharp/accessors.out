@@ -1,0 +1,341 @@
+public int Count
+^^^^^^
+source-code-csharp-keyword-modifier-public
+      ^
+      source-code-csharp-whitespace
+       ^^^
+       source-code-csharp-identifier-type-built-in
+          ^
+          source-code-csharp-whitespace
+           ^^^^^
+           source-code-csharp-identifier-property
+{
+^
+source-code-csharp-punctuation
+    get => field;
+^^^^
+source-code-csharp-whitespace
+    ^^^
+    source-code-csharp-keyword-declaration-get
+       ^
+       source-code-csharp-whitespace
+        ^^
+        source-code-csharp-keyword-operator
+          ^
+          source-code-csharp-whitespace
+           ^^^^^
+           source-code-csharp-identifier-special
+                ^
+                source-code-csharp-punctuation
+    private set
+^^^^
+source-code-csharp-whitespace
+    ^^^^^^^
+    source-code-csharp-keyword-modifier-private
+           ^
+           source-code-csharp-whitespace
+            ^^^
+            source-code-csharp-keyword-declaration-set
+    {
+^^^^
+source-code-csharp-whitespace
+    ^
+    source-code-csharp-punctuation
+        if (value < 0) { throw new ArgumentException(nameof(value)); }
+^^^^^^^^
+source-code-csharp-whitespace
+        ^^
+        source-code-csharp-keyword-control-if
+          ^
+          source-code-csharp-whitespace
+           ^
+           source-code-csharp-punctuation
+            ^^^^^
+            source-code-csharp-identifier-special
+                 ^
+                 source-code-csharp-whitespace
+                  ^
+                  source-code-csharp-keyword-operator
+                   ^
+                   source-code-csharp-whitespace
+                    ^
+                    source-code-csharp-literal-number-integer
+                     ^
+                     source-code-csharp-punctuation
+                      ^
+                      source-code-csharp-whitespace
+                       ^
+                       source-code-csharp-punctuation
+                        ^
+                        source-code-csharp-whitespace
+                         ^^^^^
+                         source-code-csharp-keyword-control-throw
+                              ^
+                              source-code-csharp-whitespace
+                               ^^^
+                               source-code-csharp-keyword-new
+                                  ^
+                                  source-code-csharp-whitespace
+                                   ^^^^^^^^^^^^^^^^^
+                                   source-code-csharp-identifier-function-constructor
+                                                    ^
+                                                    source-code-csharp-punctuation
+                                                     ^^^^^^
+                                                     source-code-csharp-keyword-nameof
+                                                           ^
+                                                           source-code-csharp-punctuation
+                                                            ^^^^^
+                                                            source-code-csharp-identifier-special
+                                                                 ^
+                                                                 source-code-csharp-punctuation
+                                                                  ^
+                                                                  source-code-csharp-punctuation
+                                                                   ^
+                                                                   source-code-csharp-punctuation
+                                                                    ^
+                                                                    source-code-csharp-whitespace
+                                                                     ^
+                                                                     source-code-csharp-punctuation
+        Log($"{field}: {value}");
+^^^^^^^^
+source-code-csharp-whitespace
+        ^^^
+        source-code-csharp-identifier-function
+           ^
+           source-code-csharp-punctuation
+            ^^
+            source-code-csharp-literal-string-quoted-double-literal-string-quoted-double-begin
+              ^
+              source-code-csharp-literal-string-quoted-double-literal-string-interpolation-literal-string-interpolation-begin
+               ^^^^^
+               source-code-csharp-literal-string-quoted-double-literal-string-interpolation-identifier-special
+                    ^
+                    source-code-csharp-literal-string-quoted-double-literal-string-interpolation-literal-string-interpolation-end
+                     ^^
+                     source-code-csharp-literal-string-quoted-double-literal-string-unquoted
+                       ^
+                       source-code-csharp-literal-string-quoted-double-literal-string-interpolation-literal-string-interpolation-begin
+                        ^^^^^
+                        source-code-csharp-literal-string-quoted-double-literal-string-interpolation-identifier-special
+                             ^
+                             source-code-csharp-literal-string-quoted-double-literal-string-interpolation-literal-string-interpolation-end
+                              ^
+                              source-code-csharp-literal-string-quoted-double-literal-string-quoted-double-end
+                               ^
+                               source-code-csharp-punctuation
+                                ^
+                                source-code-csharp-punctuation
+        field = value;
+^^^^^^^^
+source-code-csharp-whitespace
+        ^^^^^
+        source-code-csharp-identifier-special
+             ^
+             source-code-csharp-whitespace
+              ^
+              source-code-csharp-keyword-operator
+               ^
+               source-code-csharp-whitespace
+                ^^^^^
+                source-code-csharp-identifier-special
+                     ^
+                     source-code-csharp-punctuation
+    }
+^^^^
+source-code-csharp-whitespace
+    ^
+    source-code-csharp-punctuation
+}
+^
+source-code-csharp-punctuation
+public string Name { get; init => field = value ?? this.value; }
+^^^^^^
+source-code-csharp-keyword-modifier-public
+      ^
+      source-code-csharp-whitespace
+       ^^^^^^
+       source-code-csharp-identifier-type-built-in
+             ^
+             source-code-csharp-whitespace
+              ^^^^
+              source-code-csharp-identifier-property
+                  ^
+                  source-code-csharp-whitespace
+                   ^
+                   source-code-csharp-punctuation
+                    ^
+                    source-code-csharp-whitespace
+                     ^^^
+                     source-code-csharp-keyword-declaration-get
+                        ^
+                        source-code-csharp-punctuation
+                         ^
+                         source-code-csharp-whitespace
+                          ^^^^
+                          source-code-csharp-keyword-declaration-init
+                              ^
+                              source-code-csharp-whitespace
+                               ^^
+                               source-code-csharp-keyword-operator
+                                 ^
+                                 source-code-csharp-whitespace
+                                  ^^^^^
+                                  source-code-csharp-identifier-special
+                                       ^
+                                       source-code-csharp-whitespace
+                                        ^
+                                        source-code-csharp-keyword-operator
+                                         ^
+                                         source-code-csharp-whitespace
+                                          ^^^^^
+                                          source-code-csharp-identifier-special
+                                               ^
+                                               source-code-csharp-whitespace
+                                                ^^
+                                                source-code-csharp-keyword-operator
+                                                  ^
+                                                  source-code-csharp-whitespace
+                                                   ^^^^
+                                                   source-code-csharp-identifier-special
+                                                       ^
+                                                       source-code-csharp-punctuation-accessor
+                                                        ^^^^^
+                                                        source-code-csharp-identifier-property
+                                                             ^
+                                                             source-code-csharp-punctuation
+                                                              ^
+                                                              source-code-csharp-whitespace
+                                                               ^
+                                                               source-code-csharp-punctuation
+public event Action Changed { add { handlers += value; } remove { handlers -= value; } }
+^^^^^^
+source-code-csharp-keyword-modifier-public
+      ^
+      source-code-csharp-whitespace
+       ^^^^^
+       source-code-csharp-keyword-declaration-event
+            ^
+            source-code-csharp-whitespace
+             ^^^^^^
+             source-code-csharp-identifier-type
+                   ^
+                   source-code-csharp-whitespace
+                    ^^^^^^^
+                    source-code-csharp-identifier-property
+                           ^
+                           source-code-csharp-whitespace
+                            ^
+                            source-code-csharp-punctuation
+                             ^
+                             source-code-csharp-whitespace
+                              ^^^
+                              source-code-csharp-keyword-declaration-add
+                                 ^
+                                 source-code-csharp-whitespace
+                                  ^
+                                  source-code-csharp-punctuation
+                                   ^
+                                   source-code-csharp-whitespace
+                                    ^^^^^^^^
+                                    source-code-csharp-identifier
+                                            ^
+                                            source-code-csharp-whitespace
+                                             ^^
+                                             source-code-csharp-keyword-operator
+                                               ^
+                                               source-code-csharp-whitespace
+                                                ^^^^^
+                                                source-code-csharp-identifier-special
+                                                     ^
+                                                     source-code-csharp-punctuation
+                                                      ^
+                                                      source-code-csharp-whitespace
+                                                       ^
+                                                       source-code-csharp-punctuation
+                                                        ^
+                                                        source-code-csharp-whitespace
+                                                         ^^^^^^
+                                                         source-code-csharp-keyword-declaration-remove
+                                                               ^
+                                                               source-code-csharp-whitespace
+                                                                ^
+                                                                source-code-csharp-punctuation
+                                                                 ^
+                                                                 source-code-csharp-whitespace
+                                                                  ^^^^^^^^
+                                                                  source-code-csharp-identifier
+                                                                          ^
+                                                                          source-code-csharp-whitespace
+                                                                           ^^
+                                                                           source-code-csharp-keyword-operator
+                                                                             ^
+                                                                             source-code-csharp-whitespace
+                                                                              ^^^^^
+                                                                              source-code-csharp-identifier-special
+                                                                                   ^
+                                                                                   source-code-csharp-punctuation
+                                                                                    ^
+                                                                                    source-code-csharp-whitespace
+                                                                                     ^
+                                                                                     source-code-csharp-punctuation
+                                                                                      ^
+                                                                                      source-code-csharp-whitespace
+                                                                                       ^
+                                                                                       source-code-csharp-punctuation
+[Obsolete] get { return field + value; }
+^
+source-code-csharp-punctuation
+ ^^^^^^^^
+ source-code-csharp-metadata-annotation
+         ^
+         source-code-csharp-punctuation
+          ^
+          source-code-csharp-whitespace
+           ^^^
+           source-code-csharp-keyword-declaration-get
+              ^
+              source-code-csharp-whitespace
+               ^
+               source-code-csharp-punctuation
+                ^
+                source-code-csharp-whitespace
+                 ^^^^^^
+                 source-code-csharp-keyword-control-return
+                       ^
+                       source-code-csharp-whitespace
+                        ^^^^^
+                        source-code-csharp-identifier-special
+                             ^
+                             source-code-csharp-whitespace
+                              ^
+                              source-code-csharp-keyword-operator
+                               ^
+                               source-code-csharp-whitespace
+                                ^^^^^
+                                source-code-csharp-identifier
+                                     ^
+                                     source-code-csharp-punctuation
+                                      ^
+                                      source-code-csharp-whitespace
+                                       ^
+                                       source-code-csharp-punctuation
+var value = field;
+^^^
+source-code-csharp-keyword-declaration-var
+   ^
+   source-code-csharp-whitespace
+    ^^^^^
+    source-code-csharp-identifier
+         ^
+         source-code-csharp-whitespace
+          ^
+          source-code-csharp-keyword-operator
+           ^
+           source-code-csharp-whitespace
+            ^^^^^
+            source-code-csharp-identifier
+                 ^
+                 source-code-csharp-punctuation
+set
+^^^
+source-code-csharp-keyword-declaration-set

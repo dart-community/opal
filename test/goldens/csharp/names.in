@@ -1,0 +1,20 @@
+extern alias Legacy;
+using Pairs = Dictionary<string, List<Person>>;
+namespace App {
+[Validator<Person>]
+class Box<T> : Base, IDisposable where T : notnull, IComparable, allows ref struct { }
+public union Shape(
+    Circle,
+    Square);
+var p = new Person { Name = "x" };
+if (shape is Circle or Square { Side: > 0 } or not Empty) { }
+public string Label => Kind switch { Circle or Square => "round", _ => "" };
+var copy = record with { Name = "y" };
+if (required is true && index < 0 || index > (count - 1)) { }
+if (union is (> 0, < 10) && dynamic != nint - 1) { }
+try { _ = typeof(Person); } catch (IOException) when (Ready) { _ = (Person)obj; }
+var open = from item in Items where item.Ok select (nint)item.Handle;
+retry: goto retry;
+case Kind.Round: while (true) { }
+var bad = 0x + 12abc;
+var m\u0061sk = bits<<2>>1>>>3;

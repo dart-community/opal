@@ -1,0 +1,17 @@
+#nullable enable
+/// <summary>A contact.</summary>
+[Obsolete("Use Contact", false), System.Serializable]
+public record Person(string Name)
+{
+    public string? Alias { get; set => field = value?.Trim(); }
+    public static async Task PrintAsync(Person[] people)
+    {
+        await Task.Yield();
+        var names = from p in people where p.Alias is not null select p.Name;
+#if DEBUG
+        var @class = people[1..3].FirstOrDefault()?.Name;
+        @class ??= "Guest"; // Debug fallback.
+#endif
+        Console.WriteLine(names.Count());
+    }
+}

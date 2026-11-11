@@ -1,5 +1,6 @@
 ## 0.3.1-wip
 
+- Add support for C# (`csharp`, `cs`, `c#`, `c-sharp`).
 - Add support for Rust (`rust`, `rs`).
 
 ## 0.3.0

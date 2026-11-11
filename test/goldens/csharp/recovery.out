@@ -1,0 +1,149 @@
+#:package Example@1.0.0
+^^^^^^^^^^^^^^^^^^^^^^^
+source-code-csharp-metadata-preprocessor-directive
+var broken = "missing
+^^^
+source-code-csharp-keyword-declaration-var
+   ^
+   source-code-csharp-whitespace
+    ^^^^^^
+    source-code-csharp-identifier
+          ^
+          source-code-csharp-whitespace
+           ^
+           source-code-csharp-keyword-operator
+            ^
+            source-code-csharp-whitespace
+             ^
+             source-code-csharp-literal-string-quoted-double-literal-string-quoted-double-begin
+              ^^^^^^^
+              source-code-csharp-literal-string-quoted-double-literal-string-unquoted
+Console.WriteLine(0xFF_FFuL);
+^^^^^^^
+source-code-csharp-identifier
+       ^
+       source-code-csharp-punctuation-accessor
+        ^^^^^^^^^
+        source-code-csharp-identifier-function
+                 ^
+                 source-code-csharp-punctuation
+                  ^^^^^^^^^
+                  source-code-csharp-literal-number-integer
+                           ^
+                           source-code-csharp-punctuation
+                            ^
+                            source-code-csharp-punctuation
+var ch = 'x
+^^^
+source-code-csharp-keyword-declaration-var
+   ^
+   source-code-csharp-whitespace
+    ^^
+    source-code-csharp-identifier
+      ^
+      source-code-csharp-whitespace
+       ^
+       source-code-csharp-keyword-operator
+        ^
+        source-code-csharp-whitespace
+         ^
+         source-code-csharp-literal-string-character-literal-string-character-begin
+          ^
+          source-code-csharp-literal-string-character-literal-string-unquoted
+var hole = $"{Call(1}";
+^^^
+source-code-csharp-keyword-declaration-var
+   ^
+   source-code-csharp-whitespace
+    ^^^^
+    source-code-csharp-identifier
+        ^
+        source-code-csharp-whitespace
+         ^
+         source-code-csharp-keyword-operator
+          ^
+          source-code-csharp-whitespace
+           ^^
+           source-code-csharp-literal-string-quoted-double-literal-string-quoted-double-begin
+             ^
+             source-code-csharp-literal-string-quoted-double-literal-string-interpolation-literal-string-interpolation-begin
+              ^^^^
+              source-code-csharp-literal-string-quoted-double-literal-string-interpolation-identifier-function
+                  ^
+                  source-code-csharp-literal-string-quoted-double-literal-string-interpolation-punctuation
+                   ^
+                   source-code-csharp-literal-string-quoted-double-literal-string-interpolation-literal-number-integer
+                    ^
+                    source-code-csharp-literal-string-quoted-double-literal-string-interpolation-literal-string-interpolation-end
+                     ^
+                     source-code-csharp-literal-string-quoted-double-literal-string-quoted-double-end
+                      ^
+                      source-code-csharp-punctuation
+var ok = 0b_1010 + 1_000u;
+^^^
+source-code-csharp-keyword-declaration-var
+   ^
+   source-code-csharp-whitespace
+    ^^
+    source-code-csharp-identifier
+      ^
+      source-code-csharp-whitespace
+       ^
+       source-code-csharp-keyword-operator
+        ^
+        source-code-csharp-whitespace
+         ^^^^^^^
+         source-code-csharp-literal-number-integer
+                ^
+                source-code-csharp-whitespace
+                 ^
+                 source-code-csharp-keyword-operator
+                  ^
+                  source-code-csharp-whitespace
+                   ^^^^^^
+                   source-code-csharp-literal-number-integer
+                         ^
+                         source-code-csharp-punctuation
+var scale = .5m + 1.25e-2f;
+^^^
+source-code-csharp-keyword-declaration-var
+   ^
+   source-code-csharp-whitespace
+    ^^^^^
+    source-code-csharp-identifier
+         ^
+         source-code-csharp-whitespace
+          ^
+          source-code-csharp-keyword-operator
+           ^
+           source-code-csharp-whitespace
+            ^^^
+            source-code-csharp-literal-number-float
+               ^
+               source-code-csharp-whitespace
+                ^
+                source-code-csharp-keyword-operator
+                 ^
+                 source-code-csharp-whitespace
+                  ^^^^^^^^
+                  source-code-csharp-literal-number-float
+                          ^
+                          source-code-csharp-punctuation
+/** <summary>Across
+^^^
+source-code-csharp-comment-block-doc-comment-block-doc-begin
+   ^^^^^^^^^^^^^^^^
+   source-code-csharp-comment-block-doc-comment-block-doc-content
+    two lines.</summary> */
+^^^^^^^^^^^^^^^^^^^^^^^^^
+source-code-csharp-comment-block-doc-comment-block-doc-content
+                         ^^
+                         source-code-csharp-comment-block-doc-comment-block-doc-end
+/* Open until EOF.
+^^
+source-code-csharp-comment-block-comment-block-begin
+  ^^^^^^^^^^^^^^^^
+  source-code-csharp-comment-block-comment-block-content
+// Still in the block.
+^^^^^^^^^^^^^^^^^^^^^^
+source-code-csharp-comment-block-comment-block-content

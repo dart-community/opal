@@ -47,6 +47,22 @@ void main() {
         expect(registry['ts'], isNot(same(BuiltInLanguages.js)));
       });
 
+      test('includes C# language and fallbacks', () {
+        for (final name in [
+          'csharp',
+          'cs',
+          'c#',
+          'c-sharp',
+          'CSharp',
+          ' CS ',
+          ' C# ',
+        ]) {
+          expect(registry[name], same(BuiltInLanguages.cSharp));
+        }
+        expect(BuiltInLanguages.cSharp.name, 'csharp');
+        expect(BuiltInLanguages.all, contains(BuiltInLanguages.cSharp));
+      });
+
       test('includes css language', () {
         expect(registry['css'], same(BuiltInLanguages.css));
         expect(registry['CSS'], same(BuiltInLanguages.css));

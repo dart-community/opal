@@ -1,0 +1,347 @@
+#nullable enable
+^^^^^^^^^^^^^^^^
+source-code-csharp-metadata-preprocessor-directive
+/// <summary>A contact.</summary>
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+source-code-csharp-comment-block-doc
+[Obsolete("Use Contact", false), System.Serializable]
+^
+source-code-csharp-punctuation
+ ^^^^^^^^
+ source-code-csharp-metadata-annotation
+         ^
+         source-code-csharp-punctuation
+          ^
+          source-code-csharp-literal-string-quoted-double-literal-string-quoted-double-begin
+           ^^^^^^^^^^^
+           source-code-csharp-literal-string-quoted-double-literal-string-unquoted
+                      ^
+                      source-code-csharp-literal-string-quoted-double-literal-string-quoted-double-end
+                       ^
+                       source-code-csharp-punctuation-separator
+                        ^
+                        source-code-csharp-whitespace
+                         ^^^^^
+                         source-code-csharp-literal-boolean-false
+                              ^
+                              source-code-csharp-punctuation
+                               ^
+                               source-code-csharp-punctuation-separator
+                                ^
+                                source-code-csharp-whitespace
+                                 ^^^^^^^^^^^^^^^^^^^
+                                 source-code-csharp-metadata-annotation
+                                                    ^
+                                                    source-code-csharp-punctuation
+public record Person(string Name)
+^^^^^^
+source-code-csharp-keyword-modifier-public
+      ^
+      source-code-csharp-whitespace
+       ^^^^^^
+       source-code-csharp-keyword-declaration-record
+             ^
+             source-code-csharp-whitespace
+              ^^^^^^
+              source-code-csharp-identifier-type
+                    ^
+                    source-code-csharp-punctuation
+                     ^^^^^^
+                     source-code-csharp-identifier-type-built-in
+                           ^
+                           source-code-csharp-whitespace
+                            ^^^^
+                            source-code-csharp-identifier
+                                ^
+                                source-code-csharp-punctuation
+{
+^
+source-code-csharp-punctuation
+    public string? Alias { get; set => field = value?.Trim(); }
+^^^^
+source-code-csharp-whitespace
+    ^^^^^^
+    source-code-csharp-keyword-modifier-public
+          ^
+          source-code-csharp-whitespace
+           ^^^^^^
+           source-code-csharp-identifier-type-built-in
+                 ^
+                 source-code-csharp-keyword-operator
+                  ^
+                  source-code-csharp-whitespace
+                   ^^^^^
+                   source-code-csharp-identifier-property
+                        ^
+                        source-code-csharp-whitespace
+                         ^
+                         source-code-csharp-punctuation
+                          ^
+                          source-code-csharp-whitespace
+                           ^^^
+                           source-code-csharp-keyword-declaration-get
+                              ^
+                              source-code-csharp-punctuation
+                               ^
+                               source-code-csharp-whitespace
+                                ^^^
+                                source-code-csharp-keyword-declaration-set
+                                   ^
+                                   source-code-csharp-whitespace
+                                    ^^
+                                    source-code-csharp-keyword-operator
+                                      ^
+                                      source-code-csharp-whitespace
+                                       ^^^^^
+                                       source-code-csharp-identifier-special
+                                            ^
+                                            source-code-csharp-whitespace
+                                             ^
+                                             source-code-csharp-keyword-operator
+                                              ^
+                                              source-code-csharp-whitespace
+                                               ^^^^^
+                                               source-code-csharp-identifier-special
+                                                    ^^
+                                                    source-code-csharp-punctuation-accessor
+                                                      ^^^^
+                                                      source-code-csharp-identifier-function
+                                                          ^
+                                                          source-code-csharp-punctuation
+                                                           ^
+                                                           source-code-csharp-punctuation
+                                                            ^
+                                                            source-code-csharp-punctuation
+                                                             ^
+                                                             source-code-csharp-whitespace
+                                                              ^
+                                                              source-code-csharp-punctuation
+    public static async Task PrintAsync(Person[] people)
+^^^^
+source-code-csharp-whitespace
+    ^^^^^^
+    source-code-csharp-keyword-modifier-public
+          ^
+          source-code-csharp-whitespace
+           ^^^^^^
+           source-code-csharp-keyword-modifier-static
+                 ^
+                 source-code-csharp-whitespace
+                  ^^^^^
+                  source-code-csharp-keyword-modifier-async
+                       ^
+                       source-code-csharp-whitespace
+                        ^^^^
+                        source-code-csharp-identifier-type
+                            ^
+                            source-code-csharp-whitespace
+                             ^^^^^^^^^^
+                             source-code-csharp-identifier-function
+                                       ^
+                                       source-code-csharp-punctuation
+                                        ^^^^^^
+                                        source-code-csharp-identifier-type
+                                              ^
+                                              source-code-csharp-punctuation
+                                               ^
+                                               source-code-csharp-punctuation
+                                                ^
+                                                source-code-csharp-whitespace
+                                                 ^^^^^^
+                                                 source-code-csharp-identifier
+                                                       ^
+                                                       source-code-csharp-punctuation
+    {
+^^^^
+source-code-csharp-whitespace
+    ^
+    source-code-csharp-punctuation
+        await Task.Yield();
+^^^^^^^^
+source-code-csharp-whitespace
+        ^^^^^
+        source-code-csharp-keyword-control-await
+             ^
+             source-code-csharp-whitespace
+              ^^^^
+              source-code-csharp-identifier
+                  ^
+                  source-code-csharp-punctuation-accessor
+                   ^^^^^
+                   source-code-csharp-identifier-function
+                        ^
+                        source-code-csharp-punctuation
+                         ^
+                         source-code-csharp-punctuation
+                          ^
+                          source-code-csharp-punctuation
+        var names = from p in people where p.Alias is not null select p.Name;
+^^^^^^^^
+source-code-csharp-whitespace
+        ^^^
+        source-code-csharp-keyword-declaration-var
+           ^
+           source-code-csharp-whitespace
+            ^^^^^
+            source-code-csharp-identifier
+                 ^
+                 source-code-csharp-whitespace
+                  ^
+                  source-code-csharp-keyword-operator
+                   ^
+                   source-code-csharp-whitespace
+                    ^^^^
+                    source-code-csharp-keyword-from
+                        ^
+                        source-code-csharp-whitespace
+                         ^
+                         source-code-csharp-identifier
+                          ^
+                          source-code-csharp-whitespace
+                           ^^
+                           source-code-csharp-keyword-in
+                             ^
+                             source-code-csharp-whitespace
+                              ^^^^^^
+                              source-code-csharp-identifier
+                                    ^
+                                    source-code-csharp-whitespace
+                                     ^^^^^
+                                     source-code-csharp-keyword-where
+                                          ^
+                                          source-code-csharp-whitespace
+                                           ^
+                                           source-code-csharp-identifier
+                                            ^
+                                            source-code-csharp-punctuation-accessor
+                                             ^^^^^
+                                             source-code-csharp-identifier-property
+                                                  ^
+                                                  source-code-csharp-whitespace
+                                                   ^^
+                                                   source-code-csharp-keyword-is
+                                                     ^
+                                                     source-code-csharp-whitespace
+                                                      ^^^
+                                                      source-code-csharp-keyword-not
+                                                         ^
+                                                         source-code-csharp-whitespace
+                                                          ^^^^
+                                                          source-code-csharp-literal-null
+                                                              ^
+                                                              source-code-csharp-whitespace
+                                                               ^^^^^^
+                                                               source-code-csharp-keyword-select
+                                                                     ^
+                                                                     source-code-csharp-whitespace
+                                                                      ^
+                                                                      source-code-csharp-identifier
+                                                                       ^
+                                                                       source-code-csharp-punctuation-accessor
+                                                                        ^^^^
+                                                                        source-code-csharp-identifier-property
+                                                                            ^
+                                                                            source-code-csharp-punctuation
+#if DEBUG
+^^^^^^^^^
+source-code-csharp-metadata-preprocessor-directive
+        var @class = people[1..3].FirstOrDefault()?.Name;
+^^^^^^^^
+source-code-csharp-whitespace
+        ^^^
+        source-code-csharp-keyword-declaration-var
+           ^
+           source-code-csharp-whitespace
+            ^^^^^^
+            source-code-csharp-identifier
+                  ^
+                  source-code-csharp-whitespace
+                   ^
+                   source-code-csharp-keyword-operator
+                    ^
+                    source-code-csharp-whitespace
+                     ^^^^^^
+                     source-code-csharp-identifier
+                           ^
+                           source-code-csharp-punctuation
+                            ^
+                            source-code-csharp-literal-number-integer
+                             ^^
+                             source-code-csharp-keyword-operator
+                               ^
+                               source-code-csharp-literal-number-integer
+                                ^
+                                source-code-csharp-punctuation
+                                 ^
+                                 source-code-csharp-punctuation-accessor
+                                  ^^^^^^^^^^^^^^
+                                  source-code-csharp-identifier-function
+                                                ^
+                                                source-code-csharp-punctuation
+                                                 ^
+                                                 source-code-csharp-punctuation
+                                                  ^^
+                                                  source-code-csharp-punctuation-accessor
+                                                    ^^^^
+                                                    source-code-csharp-identifier-property
+                                                        ^
+                                                        source-code-csharp-punctuation
+        @class ??= "Guest"; // Debug fallback.
+^^^^^^^^
+source-code-csharp-whitespace
+        ^^^^^^
+        source-code-csharp-identifier
+              ^
+              source-code-csharp-whitespace
+               ^^^
+               source-code-csharp-keyword-operator
+                  ^
+                  source-code-csharp-whitespace
+                   ^
+                   source-code-csharp-literal-string-quoted-double-literal-string-quoted-double-begin
+                    ^^^^^
+                    source-code-csharp-literal-string-quoted-double-literal-string-unquoted
+                         ^
+                         source-code-csharp-literal-string-quoted-double-literal-string-quoted-double-end
+                          ^
+                          source-code-csharp-punctuation
+                           ^
+                           source-code-csharp-whitespace
+                            ^^^^^^^^^^^^^^^^^^
+                            source-code-csharp-comment-line
+#endif
+^^^^^^
+source-code-csharp-metadata-preprocessor-directive
+        Console.WriteLine(names.Count());
+^^^^^^^^
+source-code-csharp-whitespace
+        ^^^^^^^
+        source-code-csharp-identifier
+               ^
+               source-code-csharp-punctuation-accessor
+                ^^^^^^^^^
+                source-code-csharp-identifier-function
+                         ^
+                         source-code-csharp-punctuation
+                          ^^^^^
+                          source-code-csharp-identifier
+                               ^
+                               source-code-csharp-punctuation-accessor
+                                ^^^^^
+                                source-code-csharp-identifier-function
+                                     ^
+                                     source-code-csharp-punctuation
+                                      ^
+                                      source-code-csharp-punctuation
+                                       ^
+                                       source-code-csharp-punctuation
+                                        ^
+                                        source-code-csharp-punctuation
+    }
+^^^^
+source-code-csharp-whitespace
+    ^
+    source-code-csharp-punctuation
+}
+^
+source-code-csharp-punctuation

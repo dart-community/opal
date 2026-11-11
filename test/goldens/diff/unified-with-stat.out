@@ -1,0 +1,26 @@
+ file.c | 2 +-
+^^^^^^^^^^^^^^
+source-text-diff
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+source-text-diff
+
+--- a/file.c
+^^^^^^^^^^^^
+source-text-diff-markup-heading-from-file
++++ b/file.c
+^^^^^^^^^^^^
+source-text-diff-markup-heading-to-file
+@@ -1 +1 @@
+^^^^^^^^^^^
+source-text-diff-metadata-range
+-a
+^
+source-text-diff-markup-format-diff-removed-marker
+ ^
+ source-text-diff-markup-format-diff-removed
++b
+^
+source-text-diff-markup-format-diff-inserted-marker
+ ^
+ source-text-diff-markup-format-diff-inserted

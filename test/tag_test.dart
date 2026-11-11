@@ -420,6 +420,9 @@ void main() {
 
       expect(MarkupTags.removed.id, equals('removed'));
       expect(MarkupTags.removed.parent, equals(MarkupTags.diff));
+
+      expect(MarkupTags.unchanged.id, equals('unchanged'));
+      expect(MarkupTags.unchanged.parent, equals(MarkupTags.diff));
     });
 
     test('other markup tags have correct values', () {

@@ -1,0 +1,31 @@
+  void main() {
+^
+source-text-diff-markup-format-diff-unchanged-marker
+ ^^^^^^^^^^^^^^
+ source-text-diff-markup-format-diff-unchanged
+-   print('Hello');
+^
+source-text-diff-markup-format-diff-removed-marker
+ ^^^^^^^^^^^^^^^^^^
+ source-text-diff-markup-format-diff-removed
++   print('Hello, world!');
+^
+source-text-diff-markup-format-diff-inserted-marker
+ ^^^^^^^^^^^^^^^^^^^^^^^^^^
+ source-text-diff-markup-format-diff-inserted
++
+^
+source-text-diff-markup-format-diff-inserted-marker
+    runApp();
+^
+source-text-diff-markup-format-diff-unchanged-marker
+ ^^^^^^^^^^^^
+ source-text-diff-markup-format-diff-unchanged
+-
+^
+source-text-diff-markup-format-diff-removed-marker
+  }
+^
+source-text-diff-markup-format-diff-unchanged-marker
+ ^^
+ source-text-diff-markup-format-diff-unchanged

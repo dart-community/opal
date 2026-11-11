@@ -1,0 +1,18 @@
+--- greeting.dart	2026-11-10 09:14:02.000000000 -0800
++++ greeting.dart.new	2026-11-11 16:40:51.000000000 -0800
+@@ -1,6 +1,7 @@
+ /// Prints a greeting.
+-void greet() {
+-  print('Hello!');
++void greet(String name) {
++  final greeting = 'Hello, $name!';
++  print(greeting);
+ }
+ 
+ void main() {
+@@ -7,3 +8,3 @@ void main() {
+   greet();
+-  print('Done');
++  print('Done.');
+ }
+\ No newline at end of file

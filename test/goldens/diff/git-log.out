@@ -1,0 +1,54 @@
+commit 7c4e1b9a2d3f5a6b8c0d1e2f3a4b5c6d7e8f9a0b
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+source-text-diff
+Author: A Developer <dev@example.com>
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+source-text-diff
+Date:   Tue Nov 10 21:39:07 2026 -0800
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+source-text-diff
+
+    Improve the greeting
+^^^^^^^^^^^^^^^^^^^^^^^^
+source-text-diff
+
+    - Rename the helper.
+^^^^^^^^^^^^^^^^^^^^^^^^
+source-text-diff
+
+diff --git a/lib/greeting.dart b/lib/greeting.dart
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+source-text-diff-metadata
+index 83db48f..bf2a3c1 100644
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+source-text-diff-metadata
+--- a/lib/greeting.dart
+^^^^^^^^^^^^^^^^^^^^^^^
+source-text-diff-markup-heading-from-file
++++ b/lib/greeting.dart
+^^^^^^^^^^^^^^^^^^^^^^^
+source-text-diff-markup-heading-to-file
+@@ -1 +1 @@
+^^^^^^^^^^^
+source-text-diff-metadata-range
+-void hello() {}
+^
+source-text-diff-markup-format-diff-removed-marker
+ ^^^^^^^^^^^^^^^
+ source-text-diff-markup-format-diff-removed
++void greet() {}
+^
+source-text-diff-markup-format-diff-inserted-marker
+ ^^^^^^^^^^^^^^^
+ source-text-diff-markup-format-diff-inserted
+
+commit 2a3b
+^^^^^^^^^^^
+source-text-diff
+Author: A Developer <dev@example.com>
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+source-text-diff
+
+    Initial commit
+^^^^^^^^^^^^^^^^^^
+source-text-diff

@@ -1,0 +1,242 @@
+diff --git a/lib/new.dart b/lib/new.dart
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+source-text-diff-metadata
+new file mode 100644
+^^^^^^^^^^^^^^^^^^^^
+source-text-diff-metadata
+index 0000000..4c1d9a7
+^^^^^^^^^^^^^^^^^^^^^^
+source-text-diff-metadata
+--- /dev/null
+^^^^^^^^^^^^^
+source-text-diff-markup-heading-from-file
++++ b/lib/new.dart
+^^^^^^^^^^^^^^^^^^
+source-text-diff-markup-heading-to-file
+@@ -0,0 +1,2 @@
+^^^^^^^^^^^^^^^
+source-text-diff-metadata-range
++/// A new library.
+^
+source-text-diff-markup-format-diff-inserted-marker
+ ^^^^^^^^^^^^^^^^^^
+ source-text-diff-markup-format-diff-inserted
++library;
+^
+source-text-diff-markup-format-diff-inserted-marker
+ ^^^^^^^^
+ source-text-diff-markup-format-diff-inserted
+diff --git a/lib/old.dart b/lib/old.dart
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+source-text-diff-metadata
+deleted file mode 100644
+^^^^^^^^^^^^^^^^^^^^^^^^
+source-text-diff-metadata
+index 3b18e51..0000000
+^^^^^^^^^^^^^^^^^^^^^^
+source-text-diff-metadata
+--- a/lib/old.dart
+^^^^^^^^^^^^^^^^^^
+source-text-diff-markup-heading-from-file
++++ /dev/null
+^^^^^^^^^^^^^
+source-text-diff-markup-heading-to-file
+@@ -1 +0,0 @@
+^^^^^^^^^^^^^
+source-text-diff-metadata-range
+-// Nothing here.
+^
+source-text-diff-markup-format-diff-removed-marker
+ ^^^^^^^^^^^^^^^^
+ source-text-diff-markup-format-diff-removed
+diff --git a/lib/a.dart b/lib/b.dart
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+source-text-diff-metadata
+similarity index 92%
+^^^^^^^^^^^^^^^^^^^^
+source-text-diff-metadata
+rename from lib/a.dart
+^^^^^^^^^^^^^^^^^^^^^^
+source-text-diff-metadata
+rename to lib/b.dart
+^^^^^^^^^^^^^^^^^^^^
+source-text-diff-metadata
+index 83db48f..bf2a3c1 100644
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+source-text-diff-metadata
+--- a/lib/a.dart
+^^^^^^^^^^^^^^^^
+source-text-diff-markup-heading-from-file
++++ b/lib/b.dart
+^^^^^^^^^^^^^^^^
+source-text-diff-markup-heading-to-file
+@@ -3,3 +3,3 @@ class Example {
+^^^^^^^^^^^^^^^
+source-text-diff-metadata-range
+               ^
+               source-text-diff-whitespace
+                ^^^^^^^^^^^^^^^
+                source-text-diff-markup-heading-section
+   final int value;
+^
+source-text-diff-markup-format-diff-unchanged-marker
+ ^^^^^^^^^^^^^^^^^^
+ source-text-diff-markup-format-diff-unchanged
+-  const Example(this.value);
+^
+source-text-diff-markup-format-diff-removed-marker
+ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ source-text-diff-markup-format-diff-removed
++  const Example({required this.value});
+^
+source-text-diff-markup-format-diff-inserted-marker
+ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ source-text-diff-markup-format-diff-inserted
+ }
+^
+source-text-diff-markup-format-diff-unchanged-marker
+ ^
+ source-text-diff-markup-format-diff-unchanged
+diff --git a/tool/run.sh b/tool/run.sh
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+source-text-diff-metadata
+old mode 100644
+^^^^^^^^^^^^^^^
+source-text-diff-metadata
+new mode 100755
+^^^^^^^^^^^^^^^
+source-text-diff-metadata
+diff --git a/assets/logo.png b/assets/logo.png
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+source-text-diff-metadata
+index 1d2f3a4..5b6c7d8 100644
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+source-text-diff-metadata
+Binary files a/assets/logo.png and b/assets/logo.png differ
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+source-text-diff-metadata
+diff --git a/notes.txt b/copied.txt
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+source-text-diff-metadata
+dissimilarity index 4%
+^^^^^^^^^^^^^^^^^^^^^^
+source-text-diff-metadata
+copy from notes.txt
+^^^^^^^^^^^^^^^^^^^
+source-text-diff-metadata
+copy to copied.txt
+^^^^^^^^^^^^^^^^^^
+source-text-diff-metadata
+diff --cc lib/merged.dart
+^^^^^^^^^^^^^^^^^^^^^^^^^
+source-text-diff-metadata
+index 1d2f3a4,5b6c7d8..9e8f7a6
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+source-text-diff-metadata
+mode 100644,100644..100755
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+source-text-diff-metadata
+--- a/lib/merged.dart
+^^^^^^^^^^^^^^^^^^^^^
+source-text-diff-markup-heading-from-file
++++ b/lib/merged.dart
+^^^^^^^^^^^^^^^^^^^^^
+source-text-diff-markup-heading-to-file
+@@@ -1,3 -1,3 +1,3 @@@ void main() {
+^^^^^^^^^^^^^^^^^^^^^^
+source-text-diff-metadata-range
+                      ^
+                      source-text-diff-whitespace
+                       ^^^^^^^^^^^^^
+                       source-text-diff-markup-heading-section
+  unchanged();
+^^
+source-text-diff-markup-format-diff-unchanged-marker
+  ^^^^^^^^^^^^
+  source-text-diff-markup-format-diff-unchanged
+- ours();
+^^
+source-text-diff-markup-format-diff-removed-marker
+  ^^^^^^^
+  source-text-diff-markup-format-diff-removed
+ -theirs();
+^^
+source-text-diff-markup-format-diff-removed-marker
+  ^^^^^^^^^
+  source-text-diff-markup-format-diff-removed
+++merged();
+^^
+source-text-diff-markup-format-diff-inserted-marker
+  ^^^^^^^^^
+  source-text-diff-markup-format-diff-inserted
+  done();
+^^
+source-text-diff-markup-format-diff-unchanged-marker
+  ^^^^^^^
+  source-text-diff-markup-format-diff-unchanged
+diff --cc lib/renamed.dart
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+source-text-diff-metadata
+index 6718ff9,0ad53bd..9c96957
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+source-text-diff-metadata
+--- a/lib/ours.dart
+^^^^^^^^^^^^^^^^^^^
+source-text-diff-markup-heading-from-file
+--- a/lib/theirs.dart
+^^^^^^^^^^^^^^^^^^^^^
+source-text-diff-markup-heading-from-file
++++ b/lib/renamed.dart
+^^^^^^^^^^^^^^^^^^^^^^
+source-text-diff-markup-heading-to-file
+@@@ -1,2 -1,2 +1,2 @@@
+^^^^^^^^^^^^^^^^^^^^^^
+source-text-diff-metadata-range
+  unchanged();
+^^
+source-text-diff-markup-format-diff-unchanged-marker
+  ^^^^^^^^^^^^
+  source-text-diff-markup-format-diff-unchanged
+- ours();
+^^
+source-text-diff-markup-format-diff-removed-marker
+  ^^^^^^^
+  source-text-diff-markup-format-diff-removed
+ -theirs();
+^^
+source-text-diff-markup-format-diff-removed-marker
+  ^^^^^^^^^
+  source-text-diff-markup-format-diff-removed
+++merged();
+^^
+source-text-diff-markup-format-diff-inserted-marker
+  ^^^^^^^^^
+  source-text-diff-markup-format-diff-inserted
+diff --cc lib/added.dart
+^^^^^^^^^^^^^^^^^^^^^^^^
+source-text-diff-metadata
+index 0000000,0ad53bd..9c96957
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+source-text-diff-metadata
+--- /dev/null
+^^^^^^^^^^^^^
+source-text-diff-markup-heading-from-file
+--- a/lib/added.dart
+^^^^^^^^^^^^^^^^^^^^
+source-text-diff-markup-heading-from-file
++++ b/lib/added.dart
+^^^^^^^^^^^^^^^^^^^^
+source-text-diff-markup-heading-to-file
+@@@ -1,0 -1,1 +1,1 @@@
+^^^^^^^^^^^^^^^^^^^^^^
+source-text-diff-metadata-range
+ -theirs();
+^^
+source-text-diff-markup-format-diff-removed-marker
+  ^^^^^^^^^
+  source-text-diff-markup-format-diff-removed
+++merged();
+^^
+source-text-diff-markup-format-diff-inserted-marker
+  ^^^^^^^^^
+  source-text-diff-markup-format-diff-inserted

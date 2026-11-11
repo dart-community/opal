@@ -1,0 +1,118 @@
+--- only a removed line
+^
+source-text-diff-markup-format-diff-removed-marker
+ ^^^^^^^^^^^^^^^^^^^^^^
+ source-text-diff-markup-format-diff-removed
+unrelated text
+^^^^^^^^^^^^^^
+source-text-diff
++++ only an added line
+^
+source-text-diff-markup-format-diff-inserted-marker
+ ^^^^^^^^^^^^^^^^^^^^^
+ source-text-diff-markup-format-diff-inserted
+@@ broken hunk header
+^^^^^^^^^^^^^^^^^^^^^
+source-text-diff
+@@ -1,2 @@
+^^^^^^^^^^
+source-text-diff-metadata-range
+@@ -1,2 +1,2 @@trailing
+^^^^^^^^^^^^^^^
+source-text-diff-metadata-range
+               ^^^^^^^^
+               source-text-diff-markup-heading-section
+*** a/context.txt
+^^^^^^^^^^^^^^^^^
+source-text-diff
+***************
+^^^^^^^^^^^^^^^
+source-text-diff
+*** 1,2 ****
+^^^^^^^^^^^^
+source-text-diff
+! changed
+^^^^^^^^^
+source-text-diff
+1c1
+^^^
+source-text-diff
+< old
+^^^^^
+source-text-diff
+> new
+^^^^^
+source-text-diff
+\ No newline at end of file
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+source-text-diff-comment
+\not a marker
+^^^^^^^^^^^^^
+source-text-diff
+index of a book
+^^^^^^^^^^^^^^^
+source-text-diff
+Index: lib/file.dart
+^^^^^^^^^^^^^^^^^^^^
+source-text-diff-metadata
+===================================================================
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+source-text-diff-metadata
+Only in lib: extra.dart
+^^^^^^^^^^^^^^^^^^^^^^^
+source-text-diff-metadata
+diff -ru a/lib/file.dart b/lib/file.dart
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+source-text-diff-metadata
+commit to the plan
+^^^^^^^^^^^^^^^^^^
+source-text-diff
+commit cafe menu
+^^^^^^^^^^^^^^^^
+source-text-diff
++ not a preamble
+^
+source-text-diff-markup-format-diff-inserted-marker
+ ^^^^^^^^^^^^^^^
+ source-text-diff-markup-format-diff-inserted
+From here on
+^^^^^^^^^^^^
+source-text-diff
+--- a/short.txt
+^^^^^^^^^^^^^^^
+source-text-diff-markup-heading-from-file
++++ b/short.txt
+^^^^^^^^^^^^^^^
+source-text-diff-markup-heading-to-file
+@@ -1,3 +1,3 @@
+^^^^^^^^^^^^^^^
+source-text-diff-metadata-range
+-old
+^
+source-text-diff-markup-format-diff-removed-marker
+ ^^^
+ source-text-diff-markup-format-diff-removed
++new
+^
+source-text-diff-markup-format-diff-inserted-marker
+ ^^^
+ source-text-diff-markup-format-diff-inserted
+--- a/next.txt
+^^^^^^^^^^^^^^
+source-text-diff-markup-heading-from-file
++++ b/next.txt
+^^^^^^^^^^^^^^
+source-text-diff-markup-heading-to-file
+@@ -1 +1 @@
+^^^^^^^^^^^
+source-text-diff-metadata-range
+ same
+^
+source-text-diff-markup-format-diff-unchanged-marker
+ ^^^^
+ source-text-diff-markup-format-diff-unchanged
+--- trailing header without a pair
+^
+source-text-diff-markup-format-diff-removed-marker
+ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ source-text-diff-markup-format-diff-removed

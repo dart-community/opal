@@ -1,0 +1,155 @@
+From 3f2a9c1d8e7b6a5f4e3d2c1b0a9f8e7d6c5b4a39 Mon Sep 17 00:00:00 2001
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+source-text-diff
+From: A Developer <dev@example.com>
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+source-text-diff
+Date: Tue, 10 Nov 2026 18:02:03 -0800
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+source-text-diff
+Subject: [PATCH 1/2] Tidy the greeting
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+source-text-diff
+
+- Rename the helper.
+^^^^^^^^^^^^^^^^^^^^
+source-text-diff
++ Add a parameter.
+^^^^^^^^^^^^^^^^^^
+source-text-diff
+--- Not a file header.
+^^^^^^^^^^^^^^^^^^^^^^
+source-text-diff
+ Indented text.
+^^^^^^^^^^^^^^^
+source-text-diff
+
+---
+^^^
+source-text-diff
+ lib/greeting.dart | 4 ++--
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+source-text-diff
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+source-text-diff
+
+diff --git a/lib/greeting.dart b/lib/greeting.dart
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+source-text-diff-metadata
+index 83db48f..bf2a3c1 100644
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+source-text-diff-metadata
+--- a/lib/greeting.dart
+^^^^^^^^^^^^^^^^^^^^^^^
+source-text-diff-markup-heading-from-file
++++ b/lib/greeting.dart
+^^^^^^^^^^^^^^^^^^^^^^^
+source-text-diff-markup-heading-to-file
+@@ -1,3 +1,3 @@
+^^^^^^^^^^^^^^^
+source-text-diff-metadata-range
+-void hello() {
+^
+source-text-diff-markup-format-diff-removed-marker
+ ^^^^^^^^^^^^^^
+ source-text-diff-markup-format-diff-removed
++void greet(String name) {
+^
+source-text-diff-markup-format-diff-inserted-marker
+ ^^^^^^^^^^^^^^^^^^^^^^^^^
+ source-text-diff-markup-format-diff-inserted
+   print('Hello!');
+^
+source-text-diff-markup-format-diff-unchanged-marker
+ ^^^^^^^^^^^^^^^^^^
+ source-text-diff-markup-format-diff-unchanged
+ }
+^
+source-text-diff-markup-format-diff-unchanged-marker
+ ^
+ source-text-diff-markup-format-diff-unchanged
+-- 
+^^^
+source-text-diff
+- Build Team
+^^^^^^^^^^^^
+source-text-diff
+
+From 9b8c7d6e5f4a3b2c1d0e9f8a7b6c5d4e3f2a1b0c Mon Sep 17 00:00:00 2001
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+source-text-diff
+From: A Developer <dev@example.com>
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+source-text-diff
+Subject: [PATCH 2/2] Remove empty list items
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+source-text-diff
+
+- One more bullet.
+^^^^^^^^^^^^^^^^^^
+source-text-diff
+---
+^^^
+source-text-diff
+diff --git a/NOTES.md b/NOTES.md
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+source-text-diff-metadata
+--- a/NOTES.md
+^^^^^^^^^^^^^^
+source-text-diff-markup-heading-from-file
++++ b/NOTES.md
+^^^^^^^^^^^^^^
+source-text-diff-markup-heading-to-file
+@@ -1,4 +1,2 @@
+^^^^^^^^^^^^^^^
+source-text-diff-metadata-range
+-- 
+^
+source-text-diff-markup-format-diff-removed-marker
+ ^^
+ source-text-diff-markup-format-diff-removed
+
+ Thanks!
+^
+source-text-diff-markup-format-diff-unchanged-marker
+ ^^^^^^^
+ source-text-diff-markup-format-diff-unchanged
+-- 
+^
+source-text-diff-markup-format-diff-removed-marker
+ ^^
+ source-text-diff-markup-format-diff-removed
+diff --git a/README.md b/README.md
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+source-text-diff-metadata
+--- a/README.md
+^^^^^^^^^^^^^^^
+source-text-diff-markup-heading-from-file
++++ b/README.md
+^^^^^^^^^^^^^^^
+source-text-diff-markup-heading-to-file
+@@ -1,3 +1,2 @@
+^^^^^^^^^^^^^^^
+source-text-diff-metadata-range
+ - First
+^
+source-text-diff-markup-format-diff-unchanged-marker
+ ^^^^^^^
+ source-text-diff-markup-format-diff-unchanged
+-- 
+^
+source-text-diff-markup-format-diff-removed-marker
+ ^^
+ source-text-diff-markup-format-diff-removed
+ - Last
+^
+source-text-diff-markup-format-diff-unchanged-marker
+ ^^^^^^
+ source-text-diff-markup-format-diff-unchanged
+-- 
+^^^
+source-text-diff
+2.51.0
+^^^^^^
+source-text-diff

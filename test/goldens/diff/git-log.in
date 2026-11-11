@@ -1,0 +1,20 @@
+commit 7c4e1b9a2d3f5a6b8c0d1e2f3a4b5c6d7e8f9a0b
+Author: A Developer <dev@example.com>
+Date:   Tue Nov 10 21:39:07 2026 -0800
+
+    Improve the greeting
+
+    - Rename the helper.
+
+diff --git a/lib/greeting.dart b/lib/greeting.dart
+index 83db48f..bf2a3c1 100644
+--- a/lib/greeting.dart
++++ b/lib/greeting.dart
+@@ -1 +1 @@
+-void hello() {}
++void greet() {}
+
+commit 2a3b
+Author: A Developer <dev@example.com>
+
+    Initial commit

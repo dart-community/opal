@@ -1,0 +1,66 @@
+diff --git a/lib/new.dart b/lib/new.dart
+new file mode 100644
+index 0000000..4c1d9a7
+--- /dev/null
++++ b/lib/new.dart
+@@ -0,0 +1,2 @@
++/// A new library.
++library;
+diff --git a/lib/old.dart b/lib/old.dart
+deleted file mode 100644
+index 3b18e51..0000000
+--- a/lib/old.dart
++++ /dev/null
+@@ -1 +0,0 @@
+-// Nothing here.
+diff --git a/lib/a.dart b/lib/b.dart
+similarity index 92%
+rename from lib/a.dart
+rename to lib/b.dart
+index 83db48f..bf2a3c1 100644
+--- a/lib/a.dart
++++ b/lib/b.dart
+@@ -3,3 +3,3 @@ class Example {
+   final int value;
+-  const Example(this.value);
++  const Example({required this.value});
+ }
+diff --git a/tool/run.sh b/tool/run.sh
+old mode 100644
+new mode 100755
+diff --git a/assets/logo.png b/assets/logo.png
+index 1d2f3a4..5b6c7d8 100644
+Binary files a/assets/logo.png and b/assets/logo.png differ
+diff --git a/notes.txt b/copied.txt
+dissimilarity index 4%
+copy from notes.txt
+copy to copied.txt
+diff --cc lib/merged.dart
+index 1d2f3a4,5b6c7d8..9e8f7a6
+mode 100644,100644..100755
+--- a/lib/merged.dart
++++ b/lib/merged.dart
+@@@ -1,3 -1,3 +1,3 @@@ void main() {
+  unchanged();
+- ours();
+ -theirs();
+++merged();
+  done();
+diff --cc lib/renamed.dart
+index 6718ff9,0ad53bd..9c96957
+--- a/lib/ours.dart
+--- a/lib/theirs.dart
++++ b/lib/renamed.dart
+@@@ -1,2 -1,2 +1,2 @@@
+  unchanged();
+- ours();
+ -theirs();
+++merged();
+diff --cc lib/added.dart
+index 0000000,0ad53bd..9c96957
+--- /dev/null
+--- a/lib/added.dart
++++ b/lib/added.dart
+@@@ -1,0 -1,1 +1,1 @@@
+ -theirs();
+++merged();

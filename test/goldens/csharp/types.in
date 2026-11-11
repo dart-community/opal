@@ -1,0 +1,15 @@
+class Service<T>(int size) : Base(size), IService, System.IDisposable where T : notnull, IComparable<T> { }
+Task<(bool Ok, Dictionary<string, List<Person>> Found)> pending;
+System.Exception error;
+if (Ready) return; while (Get(Key) is null) { }
+var service = provider.GetService(Type)!; var kind = (Kind)value;
+Assert.True(GetValue<int>(Key) > 0); if (i<Count) return j>0;
+var colors = new Dictionary<Color, int> { [Color.Red] = 1 };
+    [Color.Green] = 2,
+var first = items switch { [First, ..] => 1, _ => 0 };
+public int Size { [DebuggerStepThrough] get; }
+var pair = (Name: "x", Age: 3);
+with(items[0]);
+if (kind is Kind.Small or Kind.Large) { }
+public partial System.Text.StringBuilder? Builder
+public static Result

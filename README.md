@@ -52,6 +52,7 @@ the specified default and alternative IDs:
 - BNF (`bnf`)
 - C (`c`)
 - C++ (`cpp`)
+- C# (`csharp`, `cs`, `c#`, `c-sharp`)
 - CSS (`css`)
 - Dart (`dart`)
 - EBNF (`ebnf`)

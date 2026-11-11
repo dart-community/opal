@@ -1,0 +1,295 @@
+var tab = '\t';
+^^^
+source-code-csharp-keyword-declaration-var
+   ^
+   source-code-csharp-whitespace
+    ^^^
+    source-code-csharp-identifier
+       ^
+       source-code-csharp-whitespace
+        ^
+        source-code-csharp-keyword-operator
+         ^
+         source-code-csharp-whitespace
+          ^
+          source-code-csharp-literal-string-character-literal-string-character-begin
+           ^^
+           source-code-csharp-literal-string-character-literal-string-escape
+             ^
+             source-code-csharp-literal-string-character-literal-string-character-end
+              ^
+              source-code-csharp-punctuation
+var bytes = "OK\n"u8;
+^^^
+source-code-csharp-keyword-declaration-var
+   ^
+   source-code-csharp-whitespace
+    ^^^^^
+    source-code-csharp-identifier
+         ^
+         source-code-csharp-whitespace
+          ^
+          source-code-csharp-keyword-operator
+           ^
+           source-code-csharp-whitespace
+            ^
+            source-code-csharp-literal-string-quoted-double-literal-string-quoted-double-begin
+             ^^
+             source-code-csharp-literal-string-quoted-double-literal-string-unquoted
+               ^^
+               source-code-csharp-literal-string-quoted-double-literal-string-escape
+                 ^^^
+                 source-code-csharp-literal-string-quoted-double-literal-string-quoted-double-end
+                    ^
+                    source-code-csharp-punctuation
+var path = @"C:\temp\say ""hi""";
+^^^
+source-code-csharp-keyword-declaration-var
+   ^
+   source-code-csharp-whitespace
+    ^^^^
+    source-code-csharp-identifier
+        ^
+        source-code-csharp-whitespace
+         ^
+         source-code-csharp-keyword-operator
+          ^
+          source-code-csharp-whitespace
+           ^^
+           source-code-csharp-literal-string-quoted-double-literal-string-quoted-double-begin
+             ^^^^^^^^^^^^
+             source-code-csharp-literal-string-quoted-double-literal-string-unquoted
+                         ^^
+                         source-code-csharp-literal-string-quoted-double-literal-string-escape
+                           ^^
+                           source-code-csharp-literal-string-quoted-double-literal-string-unquoted
+                             ^^
+                             source-code-csharp-literal-string-quoted-double-literal-string-escape
+                               ^
+                               source-code-csharp-literal-string-quoted-double-literal-string-quoted-double-end
+                                ^
+                                source-code-csharp-punctuation
+var total = $"{{total}} {user.Get("net"),8:N2}";
+^^^
+source-code-csharp-keyword-declaration-var
+   ^
+   source-code-csharp-whitespace
+    ^^^^^
+    source-code-csharp-identifier
+         ^
+         source-code-csharp-whitespace
+          ^
+          source-code-csharp-keyword-operator
+           ^
+           source-code-csharp-whitespace
+            ^^
+            source-code-csharp-literal-string-quoted-double-literal-string-quoted-double-begin
+              ^^
+              source-code-csharp-literal-string-quoted-double-literal-string-escape
+                ^^^^^
+                source-code-csharp-literal-string-quoted-double-literal-string-unquoted
+                     ^^
+                     source-code-csharp-literal-string-quoted-double-literal-string-escape
+                       ^
+                       source-code-csharp-literal-string-quoted-double-literal-string-unquoted
+                        ^
+                        source-code-csharp-literal-string-quoted-double-literal-string-interpolation-literal-string-interpolation-begin
+                         ^^^^
+                         source-code-csharp-literal-string-quoted-double-literal-string-interpolation-identifier
+                             ^
+                             source-code-csharp-literal-string-quoted-double-literal-string-interpolation-punctuation-accessor
+                              ^^^
+                              source-code-csharp-literal-string-quoted-double-literal-string-interpolation-identifier-function
+                                 ^
+                                 source-code-csharp-literal-string-quoted-double-literal-string-interpolation-punctuation
+                                  ^
+                                  source-code-csharp-literal-string-quoted-double-literal-string-interpolation-literal-string-quoted-double-literal-string-quoted-double-begin
+                                   ^^^
+                                   source-code-csharp-literal-string-quoted-double-literal-string-interpolation-literal-string-quoted-double-literal-string-unquoted
+                                      ^
+                                      source-code-csharp-literal-string-quoted-double-literal-string-interpolation-literal-string-quoted-double-literal-string-quoted-double-end
+                                       ^
+                                       source-code-csharp-literal-string-quoted-double-literal-string-interpolation-punctuation
+                                        ^
+                                        source-code-csharp-literal-string-quoted-double-literal-string-interpolation-punctuation-separator
+                                         ^
+                                         source-code-csharp-literal-string-quoted-double-literal-string-interpolation-literal-number-integer
+                                          ^^^
+                                          source-code-csharp-literal-string-quoted-double-literal-string-interpolation-literal-string-unquoted
+                                             ^
+                                             source-code-csharp-literal-string-quoted-double-literal-string-interpolation-literal-string-interpolation-end
+                                              ^
+                                              source-code-csharp-literal-string-quoted-double-literal-string-quoted-double-end
+                                               ^
+                                               source-code-csharp-punctuation
+var nested = $@"{new { Text = "x" }.Text}";
+^^^
+source-code-csharp-keyword-declaration-var
+   ^
+   source-code-csharp-whitespace
+    ^^^^^^
+    source-code-csharp-identifier
+          ^
+          source-code-csharp-whitespace
+           ^
+           source-code-csharp-keyword-operator
+            ^
+            source-code-csharp-whitespace
+             ^^^
+             source-code-csharp-literal-string-quoted-double-literal-string-quoted-double-begin
+                ^
+                source-code-csharp-literal-string-quoted-double-literal-string-interpolation-literal-string-interpolation-begin
+                 ^^^
+                 source-code-csharp-literal-string-quoted-double-literal-string-interpolation-keyword-new
+                    ^
+                    source-code-csharp-literal-string-quoted-double-literal-string-interpolation-whitespace
+                     ^
+                     source-code-csharp-literal-string-quoted-double-literal-string-interpolation-punctuation
+                      ^
+                      source-code-csharp-literal-string-quoted-double-literal-string-interpolation-whitespace
+                       ^^^^
+                       source-code-csharp-literal-string-quoted-double-literal-string-interpolation-identifier-property
+                           ^
+                           source-code-csharp-literal-string-quoted-double-literal-string-interpolation-whitespace
+                            ^
+                            source-code-csharp-literal-string-quoted-double-literal-string-interpolation-keyword-operator
+                             ^
+                             source-code-csharp-literal-string-quoted-double-literal-string-interpolation-whitespace
+                              ^
+                              source-code-csharp-literal-string-quoted-double-literal-string-interpolation-literal-string-quoted-double-literal-string-quoted-double-begin
+                               ^
+                               source-code-csharp-literal-string-quoted-double-literal-string-interpolation-literal-string-quoted-double-literal-string-unquoted
+                                ^
+                                source-code-csharp-literal-string-quoted-double-literal-string-interpolation-literal-string-quoted-double-literal-string-quoted-double-end
+                                 ^
+                                 source-code-csharp-literal-string-quoted-double-literal-string-interpolation-whitespace
+                                  ^
+                                  source-code-csharp-literal-string-quoted-double-literal-string-interpolation-punctuation
+                                   ^
+                                   source-code-csharp-literal-string-quoted-double-literal-string-interpolation-punctuation-accessor
+                                    ^^^^
+                                    source-code-csharp-literal-string-quoted-double-literal-string-interpolation-identifier-property
+                                        ^
+                                        source-code-csharp-literal-string-quoted-double-literal-string-interpolation-literal-string-interpolation-end
+                                         ^
+                                         source-code-csharp-literal-string-quoted-double-literal-string-quoted-double-end
+                                          ^
+                                          source-code-csharp-punctuation
+var choice = @$"{(ready ? left : right)}";
+^^^
+source-code-csharp-keyword-declaration-var
+   ^
+   source-code-csharp-whitespace
+    ^^^^^^
+    source-code-csharp-identifier
+          ^
+          source-code-csharp-whitespace
+           ^
+           source-code-csharp-keyword-operator
+            ^
+            source-code-csharp-whitespace
+             ^^^
+             source-code-csharp-literal-string-quoted-double-literal-string-quoted-double-begin
+                ^
+                source-code-csharp-literal-string-quoted-double-literal-string-interpolation-literal-string-interpolation-begin
+                 ^
+                 source-code-csharp-literal-string-quoted-double-literal-string-interpolation-punctuation
+                  ^^^^^
+                  source-code-csharp-literal-string-quoted-double-literal-string-interpolation-identifier
+                       ^
+                       source-code-csharp-literal-string-quoted-double-literal-string-interpolation-whitespace
+                        ^
+                        source-code-csharp-literal-string-quoted-double-literal-string-interpolation-keyword-operator
+                         ^
+                         source-code-csharp-literal-string-quoted-double-literal-string-interpolation-whitespace
+                          ^^^^
+                          source-code-csharp-literal-string-quoted-double-literal-string-interpolation-identifier
+                              ^
+                              source-code-csharp-literal-string-quoted-double-literal-string-interpolation-whitespace
+                               ^
+                               source-code-csharp-literal-string-quoted-double-literal-string-interpolation-punctuation-separator
+                                ^
+                                source-code-csharp-literal-string-quoted-double-literal-string-interpolation-whitespace
+                                 ^^^^^
+                                 source-code-csharp-literal-string-quoted-double-literal-string-interpolation-identifier
+                                      ^
+                                      source-code-csharp-literal-string-quoted-double-literal-string-interpolation-punctuation
+                                       ^
+                                       source-code-csharp-literal-string-quoted-double-literal-string-interpolation-literal-string-interpolation-end
+                                        ^
+                                        source-code-csharp-literal-string-quoted-double-literal-string-quoted-double-end
+                                         ^
+                                         source-code-csharp-punctuation
+var quotes = """"three """ quotes""""u8;
+^^^
+source-code-csharp-keyword-declaration-var
+   ^
+   source-code-csharp-whitespace
+    ^^^^^^
+    source-code-csharp-identifier
+          ^
+          source-code-csharp-whitespace
+           ^
+           source-code-csharp-keyword-operator
+            ^
+            source-code-csharp-whitespace
+             ^^^^
+             source-code-csharp-literal-string-quoted-triple-literal-string-quoted-triple-begin
+                 ^^^^^^^^^^^^^^^^
+                 source-code-csharp-literal-string-quoted-triple-literal-string-unquoted
+                                 ^^^^^^
+                                 source-code-csharp-literal-string-quoted-triple-literal-string-quoted-triple-end
+                                       ^
+                                       source-code-csharp-punctuation
+var json = $$"""
+^^^
+source-code-csharp-keyword-declaration-var
+   ^
+   source-code-csharp-whitespace
+    ^^^^
+    source-code-csharp-identifier
+        ^
+        source-code-csharp-whitespace
+         ^
+         source-code-csharp-keyword-operator
+          ^
+          source-code-csharp-whitespace
+           ^^^^^
+           source-code-csharp-literal-string-quoted-triple-literal-string-quoted-triple-begin
+    {"name": "{{user.Name}}"}
+^^^^^^^^^^^^^^
+source-code-csharp-literal-string-quoted-triple-literal-string-unquoted
+              ^^
+              source-code-csharp-literal-string-quoted-triple-literal-string-interpolation-literal-string-interpolation-begin
+                ^^^^
+                source-code-csharp-literal-string-quoted-triple-literal-string-interpolation-identifier
+                    ^
+                    source-code-csharp-literal-string-quoted-triple-literal-string-interpolation-punctuation-accessor
+                     ^^^^
+                     source-code-csharp-literal-string-quoted-triple-literal-string-interpolation-identifier-property
+                         ^^
+                         source-code-csharp-literal-string-quoted-triple-literal-string-interpolation-literal-string-interpolation-end
+                           ^^
+                           source-code-csharp-literal-string-quoted-triple-literal-string-unquoted
+    """;
+^^^^
+source-code-csharp-literal-string-quoted-triple-literal-string-unquoted
+    ^^^
+    source-code-csharp-literal-string-quoted-triple-literal-string-quoted-triple-end
+       ^
+       source-code-csharp-punctuation
+Console.WriteLine(json);
+^^^^^^^
+source-code-csharp-identifier
+       ^
+       source-code-csharp-punctuation-accessor
+        ^^^^^^^^^
+        source-code-csharp-identifier-function
+                 ^
+                 source-code-csharp-punctuation
+                  ^^^^
+                  source-code-csharp-identifier
+                      ^
+                      source-code-csharp-punctuation
+                       ^
+                       source-code-csharp-punctuation

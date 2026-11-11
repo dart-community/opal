@@ -1,0 +1,11 @@
+var tab = '\t';
+var bytes = "OK\n"u8;
+var path = @"C:\temp\say ""hi""";
+var total = $"{{total}} {user.Get("net"),8:N2}";
+var nested = $@"{new { Text = "x" }.Text}";
+var choice = @$"{(ready ? left : right)}";
+var quotes = """"three """ quotes""""u8;
+var json = $$"""
+    {"name": "{{user.Name}}"}
+    """;
+Console.WriteLine(json);

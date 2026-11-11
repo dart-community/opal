@@ -1,0 +1,15 @@
+public int Count
+{
+    get => field;
+    private set
+    {
+        if (value < 0) { throw new ArgumentException(nameof(value)); }
+        Log($"{field}: {value}");
+        field = value;
+    }
+}
+public string Name { get; init => field = value ?? this.value; }
+public event Action Changed { add { handlers += value; } remove { handlers -= value; } }
+[Obsolete] get { return field + value; }
+var value = field;
+set

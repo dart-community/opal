@@ -1,0 +1,27 @@
+public union Result(int, Reply);
+public closed record class Reply;
+public static class Extensions
+{
+    extension(string text)
+    {
+        public char this[Index i] => text[i.GetOffset(text.Length)];
+    }
+    extension<T>(IEnumerable<T> source) where T : notnull
+    {
+        public bool IsEmpty => !source.Any();
+    }
+}
+public interface IExample
+{
+    static void Run(int[] items)
+    {
+        int union = 0, closed = 1, safe = 2;
+        int with() => union;
+        List<int> values = [
+            with(capacity: 8), ..items];
+        outer: foreach (var x in values) {
+            if (x == values[with()]) continue outer;
+            break outer;
+        }
+    }
+}

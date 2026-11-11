@@ -1,0 +1,11 @@
+#:package Example@1.0.0
+var broken = "missing
+Console.WriteLine(0xFF_FFuL);
+var ch = 'x
+var hole = $"{Call(1}";
+var ok = 0b_1010 + 1_000u;
+var scale = .5m + 1.25e-2f;
+/** <summary>Across
+    two lines.</summary> */
+/* Open until EOF.
+// Still in the block.

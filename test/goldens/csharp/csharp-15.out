@@ -1,0 +1,499 @@
+public union Result(int, Reply);
+^^^^^^
+source-code-csharp-keyword-modifier-public
+      ^
+      source-code-csharp-whitespace
+       ^^^^^
+       source-code-csharp-keyword-declaration-union
+            ^
+            source-code-csharp-whitespace
+             ^^^^^^
+             source-code-csharp-identifier-type
+                   ^
+                   source-code-csharp-punctuation
+                    ^^^
+                    source-code-csharp-identifier-type-built-in
+                       ^
+                       source-code-csharp-punctuation-separator
+                        ^
+                        source-code-csharp-whitespace
+                         ^^^^^
+                         source-code-csharp-identifier-type
+                              ^
+                              source-code-csharp-punctuation
+                               ^
+                               source-code-csharp-punctuation
+public closed record class Reply;
+^^^^^^
+source-code-csharp-keyword-modifier-public
+      ^
+      source-code-csharp-whitespace
+       ^^^^^^
+       source-code-csharp-keyword-modifier-closed
+             ^
+             source-code-csharp-whitespace
+              ^^^^^^
+              source-code-csharp-keyword-declaration-record
+                    ^
+                    source-code-csharp-whitespace
+                     ^^^^^
+                     source-code-csharp-keyword-declaration-class
+                          ^
+                          source-code-csharp-whitespace
+                           ^^^^^
+                           source-code-csharp-identifier-type
+                                ^
+                                source-code-csharp-punctuation
+public static class Extensions
+^^^^^^
+source-code-csharp-keyword-modifier-public
+      ^
+      source-code-csharp-whitespace
+       ^^^^^^
+       source-code-csharp-keyword-modifier-static
+             ^
+             source-code-csharp-whitespace
+              ^^^^^
+              source-code-csharp-keyword-declaration-class
+                   ^
+                   source-code-csharp-whitespace
+                    ^^^^^^^^^^
+                    source-code-csharp-identifier-type
+{
+^
+source-code-csharp-punctuation
+    extension(string text)
+^^^^
+source-code-csharp-whitespace
+    ^^^^^^^^^
+    source-code-csharp-keyword-declaration-extension
+             ^
+             source-code-csharp-punctuation
+              ^^^^^^
+              source-code-csharp-identifier-type-built-in
+                    ^
+                    source-code-csharp-whitespace
+                     ^^^^
+                     source-code-csharp-identifier
+                         ^
+                         source-code-csharp-punctuation
+    {
+^^^^
+source-code-csharp-whitespace
+    ^
+    source-code-csharp-punctuation
+        public char this[Index i] => text[i.GetOffset(text.Length)];
+^^^^^^^^
+source-code-csharp-whitespace
+        ^^^^^^
+        source-code-csharp-keyword-modifier-public
+              ^
+              source-code-csharp-whitespace
+               ^^^^
+               source-code-csharp-identifier-type-built-in
+                   ^
+                   source-code-csharp-whitespace
+                    ^^^^
+                    source-code-csharp-identifier-special
+                        ^
+                        source-code-csharp-punctuation
+                         ^^^^^
+                         source-code-csharp-identifier-type
+                              ^
+                              source-code-csharp-whitespace
+                               ^
+                               source-code-csharp-identifier
+                                ^
+                                source-code-csharp-punctuation
+                                 ^
+                                 source-code-csharp-whitespace
+                                  ^^
+                                  source-code-csharp-keyword-operator
+                                    ^
+                                    source-code-csharp-whitespace
+                                     ^^^^
+                                     source-code-csharp-identifier
+                                         ^
+                                         source-code-csharp-punctuation
+                                          ^
+                                          source-code-csharp-identifier
+                                           ^
+                                           source-code-csharp-punctuation-accessor
+                                            ^^^^^^^^^
+                                            source-code-csharp-identifier-function
+                                                     ^
+                                                     source-code-csharp-punctuation
+                                                      ^^^^
+                                                      source-code-csharp-identifier
+                                                          ^
+                                                          source-code-csharp-punctuation-accessor
+                                                           ^^^^^^
+                                                           source-code-csharp-identifier-property
+                                                                 ^
+                                                                 source-code-csharp-punctuation
+                                                                  ^
+                                                                  source-code-csharp-punctuation
+                                                                   ^
+                                                                   source-code-csharp-punctuation
+    }
+^^^^
+source-code-csharp-whitespace
+    ^
+    source-code-csharp-punctuation
+    extension<T>(IEnumerable<T> source) where T : notnull
+^^^^
+source-code-csharp-whitespace
+    ^^^^^^^^^
+    source-code-csharp-keyword-declaration-extension
+             ^
+             source-code-csharp-punctuation
+              ^
+              source-code-csharp-identifier-type
+               ^
+               source-code-csharp-punctuation
+                ^
+                source-code-csharp-punctuation
+                 ^^^^^^^^^^^
+                 source-code-csharp-identifier-type
+                            ^
+                            source-code-csharp-punctuation
+                             ^
+                             source-code-csharp-identifier-type
+                              ^
+                              source-code-csharp-punctuation
+                               ^
+                               source-code-csharp-whitespace
+                                ^^^^^^
+                                source-code-csharp-identifier
+                                      ^
+                                      source-code-csharp-punctuation
+                                       ^
+                                       source-code-csharp-whitespace
+                                        ^^^^^
+                                        source-code-csharp-keyword-where
+                                             ^
+                                             source-code-csharp-whitespace
+                                              ^
+                                              source-code-csharp-identifier-type
+                                               ^
+                                               source-code-csharp-whitespace
+                                                ^
+                                                source-code-csharp-punctuation-separator
+                                                 ^
+                                                 source-code-csharp-whitespace
+                                                  ^^^^^^^
+                                                  source-code-csharp-keyword-notnull
+    {
+^^^^
+source-code-csharp-whitespace
+    ^
+    source-code-csharp-punctuation
+        public bool IsEmpty => !source.Any();
+^^^^^^^^
+source-code-csharp-whitespace
+        ^^^^^^
+        source-code-csharp-keyword-modifier-public
+              ^
+              source-code-csharp-whitespace
+               ^^^^
+               source-code-csharp-identifier-type-built-in
+                   ^
+                   source-code-csharp-whitespace
+                    ^^^^^^^
+                    source-code-csharp-identifier-property
+                           ^
+                           source-code-csharp-whitespace
+                            ^^
+                            source-code-csharp-keyword-operator
+                              ^
+                              source-code-csharp-whitespace
+                               ^
+                               source-code-csharp-keyword-operator
+                                ^^^^^^
+                                source-code-csharp-identifier
+                                      ^
+                                      source-code-csharp-punctuation-accessor
+                                       ^^^
+                                       source-code-csharp-identifier-function
+                                          ^
+                                          source-code-csharp-punctuation
+                                           ^
+                                           source-code-csharp-punctuation
+                                            ^
+                                            source-code-csharp-punctuation
+    }
+^^^^
+source-code-csharp-whitespace
+    ^
+    source-code-csharp-punctuation
+}
+^
+source-code-csharp-punctuation
+public interface IExample
+^^^^^^
+source-code-csharp-keyword-modifier-public
+      ^
+      source-code-csharp-whitespace
+       ^^^^^^^^^
+       source-code-csharp-keyword-declaration-interface
+                ^
+                source-code-csharp-whitespace
+                 ^^^^^^^^
+                 source-code-csharp-identifier-type
+{
+^
+source-code-csharp-punctuation
+    static void Run(int[] items)
+^^^^
+source-code-csharp-whitespace
+    ^^^^^^
+    source-code-csharp-keyword-modifier-static
+          ^
+          source-code-csharp-whitespace
+           ^^^^
+           source-code-csharp-identifier-type-built-in
+               ^
+               source-code-csharp-whitespace
+                ^^^
+                source-code-csharp-identifier-function
+                   ^
+                   source-code-csharp-punctuation
+                    ^^^
+                    source-code-csharp-identifier-type-built-in
+                       ^
+                       source-code-csharp-punctuation
+                        ^
+                        source-code-csharp-punctuation
+                         ^
+                         source-code-csharp-whitespace
+                          ^^^^^
+                          source-code-csharp-identifier
+                               ^
+                               source-code-csharp-punctuation
+    {
+^^^^
+source-code-csharp-whitespace
+    ^
+    source-code-csharp-punctuation
+        int union = 0, closed = 1, safe = 2;
+^^^^^^^^
+source-code-csharp-whitespace
+        ^^^
+        source-code-csharp-identifier-type-built-in
+           ^
+           source-code-csharp-whitespace
+            ^^^^^
+            source-code-csharp-identifier
+                 ^
+                 source-code-csharp-whitespace
+                  ^
+                  source-code-csharp-keyword-operator
+                   ^
+                   source-code-csharp-whitespace
+                    ^
+                    source-code-csharp-literal-number-integer
+                     ^
+                     source-code-csharp-punctuation-separator
+                      ^
+                      source-code-csharp-whitespace
+                       ^^^^^^
+                       source-code-csharp-identifier
+                             ^
+                             source-code-csharp-whitespace
+                              ^
+                              source-code-csharp-keyword-operator
+                               ^
+                               source-code-csharp-whitespace
+                                ^
+                                source-code-csharp-literal-number-integer
+                                 ^
+                                 source-code-csharp-punctuation-separator
+                                  ^
+                                  source-code-csharp-whitespace
+                                   ^^^^
+                                   source-code-csharp-identifier
+                                       ^
+                                       source-code-csharp-whitespace
+                                        ^
+                                        source-code-csharp-keyword-operator
+                                         ^
+                                         source-code-csharp-whitespace
+                                          ^
+                                          source-code-csharp-literal-number-integer
+                                           ^
+                                           source-code-csharp-punctuation
+        int with() => union;
+^^^^^^^^
+source-code-csharp-whitespace
+        ^^^
+        source-code-csharp-identifier-type-built-in
+           ^
+           source-code-csharp-whitespace
+            ^^^^
+            source-code-csharp-identifier-function
+                ^
+                source-code-csharp-punctuation
+                 ^
+                 source-code-csharp-punctuation
+                  ^
+                  source-code-csharp-whitespace
+                   ^^
+                   source-code-csharp-keyword-operator
+                     ^
+                     source-code-csharp-whitespace
+                      ^^^^^
+                      source-code-csharp-identifier
+                           ^
+                           source-code-csharp-punctuation
+        List<int> values = [
+^^^^^^^^
+source-code-csharp-whitespace
+        ^^^^
+        source-code-csharp-identifier-type
+            ^
+            source-code-csharp-punctuation
+             ^^^
+             source-code-csharp-identifier-type-built-in
+                ^
+                source-code-csharp-punctuation
+                 ^
+                 source-code-csharp-whitespace
+                  ^^^^^^
+                  source-code-csharp-identifier
+                        ^
+                        source-code-csharp-whitespace
+                         ^
+                         source-code-csharp-keyword-operator
+                          ^
+                          source-code-csharp-whitespace
+                           ^
+                           source-code-csharp-punctuation
+            with(capacity: 8), ..items];
+^^^^^^^^^^^^
+source-code-csharp-whitespace
+            ^^^^
+            source-code-csharp-keyword-with
+                ^
+                source-code-csharp-punctuation
+                 ^^^^^^^^
+                 source-code-csharp-identifier
+                         ^
+                         source-code-csharp-punctuation-separator
+                          ^
+                          source-code-csharp-whitespace
+                           ^
+                           source-code-csharp-literal-number-integer
+                            ^
+                            source-code-csharp-punctuation
+                             ^
+                             source-code-csharp-punctuation-separator
+                              ^
+                              source-code-csharp-whitespace
+                               ^^
+                               source-code-csharp-keyword-operator
+                                 ^^^^^
+                                 source-code-csharp-identifier
+                                      ^
+                                      source-code-csharp-punctuation
+                                       ^
+                                       source-code-csharp-punctuation
+        outer: foreach (var x in values) {
+^^^^^^^^
+source-code-csharp-whitespace
+        ^^^^^
+        source-code-csharp-identifier-label
+             ^
+             source-code-csharp-punctuation-separator
+              ^
+              source-code-csharp-whitespace
+               ^^^^^^^
+               source-code-csharp-keyword-control-foreach
+                      ^
+                      source-code-csharp-whitespace
+                       ^
+                       source-code-csharp-punctuation
+                        ^^^
+                        source-code-csharp-keyword-declaration-var
+                           ^
+                           source-code-csharp-whitespace
+                            ^
+                            source-code-csharp-identifier
+                             ^
+                             source-code-csharp-whitespace
+                              ^^
+                              source-code-csharp-keyword-in
+                                ^
+                                source-code-csharp-whitespace
+                                 ^^^^^^
+                                 source-code-csharp-identifier
+                                       ^
+                                       source-code-csharp-punctuation
+                                        ^
+                                        source-code-csharp-whitespace
+                                         ^
+                                         source-code-csharp-punctuation
+            if (x == values[with()]) continue outer;
+^^^^^^^^^^^^
+source-code-csharp-whitespace
+            ^^
+            source-code-csharp-keyword-control-if
+              ^
+              source-code-csharp-whitespace
+               ^
+               source-code-csharp-punctuation
+                ^
+                source-code-csharp-identifier
+                 ^
+                 source-code-csharp-whitespace
+                  ^^
+                  source-code-csharp-keyword-operator
+                    ^
+                    source-code-csharp-whitespace
+                     ^^^^^^
+                     source-code-csharp-identifier
+                           ^
+                           source-code-csharp-punctuation
+                            ^^^^
+                            source-code-csharp-identifier-function
+                                ^
+                                source-code-csharp-punctuation
+                                 ^
+                                 source-code-csharp-punctuation
+                                  ^
+                                  source-code-csharp-punctuation
+                                   ^
+                                   source-code-csharp-punctuation
+                                    ^
+                                    source-code-csharp-whitespace
+                                     ^^^^^^^^
+                                     source-code-csharp-keyword-control-continue
+                                             ^
+                                             source-code-csharp-whitespace
+                                              ^^^^^
+                                              source-code-csharp-identifier-label
+                                                   ^
+                                                   source-code-csharp-punctuation
+            break outer;
+^^^^^^^^^^^^
+source-code-csharp-whitespace
+            ^^^^^
+            source-code-csharp-keyword-control-break
+                 ^
+                 source-code-csharp-whitespace
+                  ^^^^^
+                  source-code-csharp-identifier-label
+                       ^
+                       source-code-csharp-punctuation
+        }
+^^^^^^^^
+source-code-csharp-whitespace
+        ^
+        source-code-csharp-punctuation
+    }
+^^^^
+source-code-csharp-whitespace
+    ^
+    source-code-csharp-punctuation
+}
+^
+source-code-csharp-punctuation

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Book catalog -->
+<!---->
+<!-- Multi-line - comment
+  ending with extra dash --->
+<catalog>
+  <book
+    id="b1"
+    available='true'
+    check = "a > b &amp; c"
+  >
+    <title>Opal &amp; XML &#x2014; 5 > 3 &#38; &custom;</title>
+    <empty alt=""/>
+    <spaced />
+    <![CDATA[]]>
+    <![CDATA[<raw attr="1"> & [[items[0]]]]]]>
+    <![CDATA[
+      line 1 < line 2
+    ]]>
+  </book>
+</catalog >

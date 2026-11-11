@@ -1,0 +1,10 @@
+<!-- Declarations outside of a DOCTYPE, as in an external subset. -->
+<!ENTITY % inline "#PCDATA | em | strong">
+<!ELEMENT para (%inline;)*>
+<!ATTLIST para
+  %common.attrs;
+  align (left | right) 'left'>
+<!NOTATION gif PUBLIC "-//CompuServe//NOTATION GIF 89a//EN">
+<!ENTITY logo SYSTEM "logo.gif" NDATA gif>
+<!ELEMENT unclosed (para
+<!ELEMENT br EMPTY>

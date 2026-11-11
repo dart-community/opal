@@ -1,0 +1,237 @@
+<?xml
+^^
+source-text-markup-xml-metadata-xml-declaration-punctuation-begin
+  ^^^
+  source-text-markup-xml-metadata-xml-declaration-keyword
+  version="1.0"
+^^
+source-text-markup-xml-metadata-xml-declaration-whitespace
+  ^^^^^^^
+  source-text-markup-xml-metadata-xml-declaration-identifier-property
+         ^
+         source-text-markup-xml-metadata-xml-declaration-punctuation-separator
+          ^
+          source-text-markup-xml-metadata-xml-declaration-literal-string-quoted-double-literal-string-quoted-double-begin
+           ^^^
+           source-text-markup-xml-metadata-xml-declaration-literal-string-quoted-double-literal-string-unquoted
+              ^
+              source-text-markup-xml-metadata-xml-declaration-literal-string-quoted-double-literal-string-quoted-double-end
+  encoding="UTF-8"
+^^
+source-text-markup-xml-metadata-xml-declaration-whitespace
+  ^^^^^^^^
+  source-text-markup-xml-metadata-xml-declaration-identifier-property
+          ^
+          source-text-markup-xml-metadata-xml-declaration-punctuation-separator
+           ^
+           source-text-markup-xml-metadata-xml-declaration-literal-string-quoted-double-literal-string-quoted-double-begin
+            ^^^^^
+            source-text-markup-xml-metadata-xml-declaration-literal-string-quoted-double-literal-string-unquoted
+                 ^
+                 source-text-markup-xml-metadata-xml-declaration-literal-string-quoted-double-literal-string-quoted-double-end
+  standalone="yes"?>
+^^
+source-text-markup-xml-metadata-xml-declaration-whitespace
+  ^^^^^^^^^^
+  source-text-markup-xml-metadata-xml-declaration-identifier-property
+            ^
+            source-text-markup-xml-metadata-xml-declaration-punctuation-separator
+             ^
+             source-text-markup-xml-metadata-xml-declaration-literal-string-quoted-double-literal-string-quoted-double-begin
+              ^^^
+              source-text-markup-xml-metadata-xml-declaration-literal-string-quoted-double-literal-string-unquoted
+                 ^
+                 source-text-markup-xml-metadata-xml-declaration-literal-string-quoted-double-literal-string-quoted-double-end
+                  ^^
+                  source-text-markup-xml-metadata-xml-declaration-punctuation-end
+<?xml-stylesheet type="text/xsl" href="style.xsl?v=1"?>
+^^
+source-text-markup-xml-metadata-processing-instruction-punctuation-begin
+  ^^^^^^^^^^^^^^
+  source-text-markup-xml-metadata-processing-instruction-identifier
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                source-text-markup-xml-metadata-processing-instruction-metadata-processing-instruction-content
+                                                     ^^
+                                                     source-text-markup-xml-metadata-processing-instruction-punctuation-end
+<?pagebreak?>
+^^
+source-text-markup-xml-metadata-processing-instruction-punctuation-begin
+  ^^^^^^^^^
+  source-text-markup-xml-metadata-processing-instruction-identifier
+           ^^
+           source-text-markup-xml-metadata-processing-instruction-punctuation-end
+<?note
+^^
+source-text-markup-xml-metadata-processing-instruction-punctuation-begin
+  ^^^^
+  source-text-markup-xml-metadata-processing-instruction-identifier
+  Don't forget x > 0
+^^^^^^^^^^^^^^^^^^^^
+source-text-markup-xml-metadata-processing-instruction-metadata-processing-instruction-content
+?>
+^^
+source-text-markup-xml-metadata-processing-instruction-punctuation-end
+<svg:svg
+^
+source-text-markup-xml-tag-punctuation-begin
+ ^^^
+ source-text-markup-xml-tag-identifier-namespace
+    ^
+    source-text-markup-xml-tag-punctuation-separator
+     ^^^
+     source-text-markup-xml-tag-tag-name
+  xmlns="http://www.w3.org/2000/svg"
+^^
+source-text-markup-xml-tag-whitespace
+  ^^^^^
+  source-text-markup-xml-tag-identifier-property
+       ^
+       source-text-markup-xml-tag-punctuation-separator
+        ^
+        source-text-markup-xml-tag-literal-string-quoted-double-literal-string-quoted-double-begin
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+         source-text-markup-xml-tag-literal-string-quoted-double-literal-string-unquoted
+                                   ^
+                                   source-text-markup-xml-tag-literal-string-quoted-double-literal-string-quoted-double-end
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+^^
+source-text-markup-xml-tag-whitespace
+  ^^^^^
+  source-text-markup-xml-tag-identifier-namespace
+       ^
+       source-text-markup-xml-tag-punctuation-separator
+        ^^^^^
+        source-text-markup-xml-tag-identifier-property
+             ^
+             source-text-markup-xml-tag-punctuation-separator
+              ^
+              source-text-markup-xml-tag-literal-string-quoted-double-literal-string-quoted-double-begin
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+               source-text-markup-xml-tag-literal-string-quoted-double-literal-string-unquoted
+                                           ^
+                                           source-text-markup-xml-tag-literal-string-quoted-double-literal-string-quoted-double-end
+  xml:lang="en">
+^^
+source-text-markup-xml-tag-whitespace
+  ^^^
+  source-text-markup-xml-tag-identifier-namespace
+     ^
+     source-text-markup-xml-tag-punctuation-separator
+      ^^^^
+      source-text-markup-xml-tag-identifier-property
+          ^
+          source-text-markup-xml-tag-punctuation-separator
+           ^
+           source-text-markup-xml-tag-literal-string-quoted-double-literal-string-quoted-double-begin
+            ^^
+            source-text-markup-xml-tag-literal-string-quoted-double-literal-string-unquoted
+              ^
+              source-text-markup-xml-tag-literal-string-quoted-double-literal-string-quoted-double-end
+               ^
+               source-text-markup-xml-tag-punctuation-end
+  <svg:a xlink:href="https://example.com/a
+^^
+source-text-markup-xml-whitespace
+  ^
+  source-text-markup-xml-tag-punctuation-begin
+   ^^^
+   source-text-markup-xml-tag-identifier-namespace
+      ^
+      source-text-markup-xml-tag-punctuation-separator
+       ^
+       source-text-markup-xml-tag-tag-name
+        ^
+        source-text-markup-xml-tag-whitespace
+         ^^^^^
+         source-text-markup-xml-tag-identifier-namespace
+              ^
+              source-text-markup-xml-tag-punctuation-separator
+               ^^^^
+               source-text-markup-xml-tag-identifier-property
+                   ^
+                   source-text-markup-xml-tag-punctuation-separator
+                    ^
+                    source-text-markup-xml-tag-literal-string-quoted-double-literal-string-quoted-double-begin
+                     ^^^^^^^^^^^^^^^^^^^^^
+                     source-text-markup-xml-tag-literal-string-quoted-double-literal-string-unquoted
+    /b">
+^^^^^^
+source-text-markup-xml-tag-literal-string-quoted-double-literal-string-unquoted
+      ^
+      source-text-markup-xml-tag-literal-string-quoted-double-literal-string-quoted-double-end
+       ^
+       source-text-markup-xml-tag-punctuation-end
+    <ns:données ns:clé="valeur"/>
+^^^^
+source-text-markup-xml-whitespace
+    ^
+    source-text-markup-xml-tag-punctuation-begin
+     ^^
+     source-text-markup-xml-tag-identifier-namespace
+       ^
+       source-text-markup-xml-tag-punctuation-separator
+        ^^^^^^^
+        source-text-markup-xml-tag-tag-name
+               ^
+               source-text-markup-xml-tag-whitespace
+                ^^
+                source-text-markup-xml-tag-identifier-namespace
+                  ^
+                  source-text-markup-xml-tag-punctuation-separator
+                   ^^^
+                   source-text-markup-xml-tag-identifier-property
+                      ^
+                      source-text-markup-xml-tag-punctuation-separator
+                       ^
+                       source-text-markup-xml-tag-literal-string-quoted-double-literal-string-quoted-double-begin
+                        ^^^^^^
+                        source-text-markup-xml-tag-literal-string-quoted-double-literal-string-unquoted
+                              ^
+                              source-text-markup-xml-tag-literal-string-quoted-double-literal-string-quoted-double-end
+                               ^^
+                               source-text-markup-xml-tag-punctuation-end
+    <col·lecció títol·1="a"/>
+^^^^
+source-text-markup-xml-whitespace
+    ^
+    source-text-markup-xml-tag-punctuation-begin
+     ^^^^^^^^^^
+     source-text-markup-xml-tag-tag-name
+               ^
+               source-text-markup-xml-tag-whitespace
+                ^^^^^^^
+                source-text-markup-xml-tag-identifier-property
+                       ^
+                       source-text-markup-xml-tag-punctuation-separator
+                        ^
+                        source-text-markup-xml-tag-literal-string-quoted-double-literal-string-quoted-double-begin
+                         ^
+                         source-text-markup-xml-tag-literal-string-quoted-double-literal-string-unquoted
+                          ^
+                          source-text-markup-xml-tag-literal-string-quoted-double-literal-string-quoted-double-end
+                           ^^
+                           source-text-markup-xml-tag-punctuation-end
+  </svg:a>
+^^
+source-text-markup-xml-whitespace
+  ^^
+  source-text-markup-xml-tag-punctuation-begin
+    ^^^
+    source-text-markup-xml-tag-identifier-namespace
+       ^
+       source-text-markup-xml-tag-punctuation-separator
+        ^
+        source-text-markup-xml-tag-tag-name
+         ^
+         source-text-markup-xml-tag-punctuation-end
+</svg:svg>
+^^
+source-text-markup-xml-tag-punctuation-begin
+  ^^^
+  source-text-markup-xml-tag-identifier-namespace
+     ^
+     source-text-markup-xml-tag-punctuation-separator
+      ^^^
+      source-text-markup-xml-tag-tag-name
+         ^
+         source-text-markup-xml-tag-punctuation-end

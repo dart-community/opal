@@ -104,6 +104,14 @@ void main() {
         expect(BuiltInLanguages.all, contains(BuiltInLanguages.rust));
       });
 
+      test('includes xml language and fallback', () {
+        for (final name in ['xml', 'xhtml', 'XML', ' XHTML ']) {
+          expect(registry[name], same(BuiltInLanguages.xml));
+        }
+        expect(BuiltInLanguages.xml.name, 'xml');
+        expect(BuiltInLanguages.all, contains(BuiltInLanguages.xml));
+      });
+
       test('returns null for unknown language', () {
         expect(registry['unknown'], isNull);
         expect(registry['perl'], isNull);

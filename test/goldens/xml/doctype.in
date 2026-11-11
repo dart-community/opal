@@ -1,0 +1,22 @@
+<!DOCTYPE html PUBLIC
+  "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd?a=1&b=2">
+<!DOCTYPE note SYSTEM "note.dtd" [
+  <!-- Subset declarations -->
+  <?dtd-pi check?>
+  <!ELEMENT note (to, from, body*)>
+  <!ELEMENT br EMPTY>
+  <!ELEMENT text (#PCDATA | em)+>
+  <!ATTLIST note
+    id ID #REQUIRED
+    kind (memo | 1.0) "memo"
+    width CDATA "100%">
+  <!ENTITY % common SYSTEM "common.ent">
+  %common;
+  <!ENTITY footer "<p>&copy; %year;</p>">
+  <!ENTITY notice "
+    <p>Multi-line</p>
+  ">
+  <!NOTATION png SYSTEM "image/png">
+]>
+<note id="n1"/>

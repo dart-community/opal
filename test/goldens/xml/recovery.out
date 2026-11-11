@@ -1,0 +1,243 @@
+<?xml version="1.0"
+^^
+source-text-markup-xml-metadata-xml-declaration-punctuation-begin
+  ^^^
+  source-text-markup-xml-metadata-xml-declaration-keyword
+     ^
+     source-text-markup-xml-metadata-xml-declaration-whitespace
+      ^^^^^^^
+      source-text-markup-xml-metadata-xml-declaration-identifier-property
+             ^
+             source-text-markup-xml-metadata-xml-declaration-punctuation-separator
+              ^
+              source-text-markup-xml-metadata-xml-declaration-literal-string-quoted-double-literal-string-quoted-double-begin
+               ^^^
+               source-text-markup-xml-metadata-xml-declaration-literal-string-quoted-double-literal-string-unquoted
+                  ^
+                  source-text-markup-xml-metadata-xml-declaration-literal-string-quoted-double-literal-string-quoted-double-end
+<!DOCTYPE root [
+^^
+source-text-markup-xml-metadata-doctype-punctuation-begin
+  ^^^^^^^
+  source-text-markup-xml-metadata-doctype-keyword-declaration
+         ^
+         source-text-markup-xml-metadata-doctype-whitespace
+          ^^^^
+          source-text-markup-xml-metadata-doctype-tag-name
+              ^
+              source-text-markup-xml-metadata-doctype-whitespace
+               ^
+               source-text-markup-xml-metadata-doctype-punctuation-begin
+  <!ENTITY broken SYSTEM
+^^
+source-text-markup-xml-metadata-doctype-whitespace
+  ^^
+  source-text-markup-xml-metadata-doctype-metadata-declaration-punctuation-begin
+    ^^^^^^
+    source-text-markup-xml-metadata-doctype-metadata-declaration-keyword-declaration
+          ^
+          source-text-markup-xml-metadata-doctype-metadata-declaration-whitespace
+           ^^^^^^
+           source-text-markup-xml-metadata-doctype-metadata-declaration-identifier
+                 ^
+                 source-text-markup-xml-metadata-doctype-metadata-declaration-whitespace
+                  ^^^^^^
+                  source-text-markup-xml-metadata-doctype-metadata-declaration-keyword
+<root>
+^
+source-text-markup-xml-tag-punctuation-begin
+ ^^^^
+ source-text-markup-xml-tag-tag-name
+     ^
+     source-text-markup-xml-tag-punctuation-end
+  <unclosed id="1"
+^^
+source-text-markup-xml-whitespace
+  ^
+  source-text-markup-xml-tag-punctuation-begin
+   ^^^^^^^^
+   source-text-markup-xml-tag-tag-name
+           ^
+           source-text-markup-xml-tag-whitespace
+            ^^
+            source-text-markup-xml-tag-identifier-property
+              ^
+              source-text-markup-xml-tag-punctuation-separator
+               ^
+               source-text-markup-xml-tag-literal-string-quoted-double-literal-string-quoted-double-begin
+                ^
+                source-text-markup-xml-tag-literal-string-quoted-double-literal-string-unquoted
+                 ^
+                 source-text-markup-xml-tag-literal-string-quoted-double-literal-string-quoted-double-end
+  <bad title="unclosed
+^^
+source-text-markup-xml-tag-whitespace
+  ^
+  source-text-markup-xml-tag-punctuation-begin
+   ^^^
+   source-text-markup-xml-tag-tag-name
+      ^
+      source-text-markup-xml-tag-whitespace
+       ^^^^^
+       source-text-markup-xml-tag-identifier-property
+            ^
+            source-text-markup-xml-tag-punctuation-separator
+             ^
+             source-text-markup-xml-tag-literal-string-quoted-double-literal-string-quoted-double-begin
+              ^^^^^^^^
+              source-text-markup-xml-tag-literal-string-quoted-double-literal-string-unquoted
+  <same title="unclosed><ok/>
+^^
+source-text-markup-xml-tag-literal-string-quoted-double-literal-string-unquoted
+  ^
+  source-text-markup-xml-tag-punctuation-begin
+   ^^^^
+   source-text-markup-xml-tag-tag-name
+       ^
+       source-text-markup-xml-tag-whitespace
+        ^^^^^
+        source-text-markup-xml-tag-identifier-property
+             ^
+             source-text-markup-xml-tag-punctuation-separator
+              ^
+              source-text-markup-xml-tag-literal-string-quoted-double-literal-string-quoted-double-begin
+               ^^^^^^^^^
+               source-text-markup-xml-tag-literal-string-quoted-double-literal-string-unquoted
+                        ^
+                        source-text-markup-xml-tag-punctuation-begin
+                         ^^
+                         source-text-markup-xml-tag-tag-name
+                           ^^
+                           source-text-markup-xml-tag-punctuation-end
+  <attrs empty= next="1" bare=fast flag ?/>
+^^
+source-text-markup-xml-whitespace
+  ^
+  source-text-markup-xml-tag-punctuation-begin
+   ^^^^^
+   source-text-markup-xml-tag-tag-name
+        ^
+        source-text-markup-xml-tag-whitespace
+         ^^^^^
+         source-text-markup-xml-tag-identifier-property
+              ^
+              source-text-markup-xml-tag-punctuation-separator
+               ^
+               source-text-markup-xml-tag-whitespace
+                ^^^^
+                source-text-markup-xml-tag-identifier-property
+                    ^
+                    source-text-markup-xml-tag-punctuation-separator
+                     ^
+                     source-text-markup-xml-tag-literal-string-quoted-double-literal-string-quoted-double-begin
+                      ^
+                      source-text-markup-xml-tag-literal-string-quoted-double-literal-string-unquoted
+                       ^
+                       source-text-markup-xml-tag-literal-string-quoted-double-literal-string-quoted-double-end
+                        ^
+                        source-text-markup-xml-tag-whitespace
+                         ^^^^
+                         source-text-markup-xml-tag-identifier-property
+                             ^
+                             source-text-markup-xml-tag-punctuation-separator
+                              ^^^^
+                              source-text-markup-xml-tag-identifier-property
+                                  ^
+                                  source-text-markup-xml-tag-whitespace
+                                   ^^^^
+                                   source-text-markup-xml-tag-identifier-property
+                                       ^
+                                       source-text-markup-xml-tag-whitespace
+                                        ^
+                                        source-text-markup-xml-tag-unknown
+                                         ^^
+                                         source-text-markup-xml-tag-punctuation-end
+  <text href="a=1&b=2">x < y & z &incomplete &#x;</text>
+^^
+source-text-markup-xml-whitespace
+  ^
+  source-text-markup-xml-tag-punctuation-begin
+   ^^^^
+   source-text-markup-xml-tag-tag-name
+       ^
+       source-text-markup-xml-tag-whitespace
+        ^^^^
+        source-text-markup-xml-tag-identifier-property
+            ^
+            source-text-markup-xml-tag-punctuation-separator
+             ^
+             source-text-markup-xml-tag-literal-string-quoted-double-literal-string-quoted-double-begin
+              ^^^
+              source-text-markup-xml-tag-literal-string-quoted-double-literal-string-unquoted
+                 ^
+                 source-text-markup-xml-tag-literal-string-quoted-double-literal-string-unquoted
+                  ^^^
+                  source-text-markup-xml-tag-literal-string-quoted-double-literal-string-unquoted
+                     ^
+                     source-text-markup-xml-tag-literal-string-quoted-double-literal-string-quoted-double-end
+                      ^
+                      source-text-markup-xml-tag-punctuation-end
+                       ^
+                       source-text-markup-xml-markup-text
+                        ^
+                        source-text-markup-xml-whitespace
+                         ^
+                         source-text-markup-xml-unknown
+                          ^
+                          source-text-markup-xml-whitespace
+                           ^
+                           source-text-markup-xml-markup-text
+                            ^
+                            source-text-markup-xml-whitespace
+                             ^
+                             source-text-markup-xml-unknown
+                              ^
+                              source-text-markup-xml-whitespace
+                               ^
+                               source-text-markup-xml-markup-text
+                                ^
+                                source-text-markup-xml-whitespace
+                                 ^
+                                 source-text-markup-xml-unknown
+                                  ^^^^^^^^^^
+                                  source-text-markup-xml-markup-text
+                                            ^
+                                            source-text-markup-xml-whitespace
+                                             ^
+                                             source-text-markup-xml-unknown
+                                              ^^^
+                                              source-text-markup-xml-markup-text
+                                                 ^^
+                                                 source-text-markup-xml-tag-punctuation-begin
+                                                   ^^^^
+                                                   source-text-markup-xml-tag-tag-name
+                                                       ^
+                                                       source-text-markup-xml-tag-punctuation-end
+  </item extra>
+^^
+source-text-markup-xml-whitespace
+  ^^
+  source-text-markup-xml-tag-punctuation-begin
+    ^^^^
+    source-text-markup-xml-tag-tag-name
+        ^
+        source-text-markup-xml-tag-whitespace
+         ^^^^^
+         source-text-markup-xml-tag-identifier-property
+              ^
+              source-text-markup-xml-tag-punctuation-end
+</root>
+^^
+source-text-markup-xml-tag-punctuation-begin
+  ^^^^
+  source-text-markup-xml-tag-tag-name
+      ^
+      source-text-markup-xml-tag-punctuation-end
+<!-- unterminated
+^^^^
+source-text-markup-xml-comment-block-comment-block-begin
+    ^^^^^^^^^^^^^
+    source-text-markup-xml-comment-block-comment-block-content
+still comment
+^^^^^^^^^^^^^
+source-text-markup-xml-comment-block-comment-block-content

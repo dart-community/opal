@@ -1,0 +1,13 @@
+<?xml version="1.0"
+<!DOCTYPE root [
+  <!ENTITY broken SYSTEM
+<root>
+  <unclosed id="1"
+  <bad title="unclosed
+  <same title="unclosed><ok/>
+  <attrs empty= next="1" bare=fast flag ?/>
+  <text href="a=1&b=2">x < y & z &incomplete &#x;</text>
+  </item extra>
+</root>
+<!-- unterminated
+still comment

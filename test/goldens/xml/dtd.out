@@ -1,0 +1,180 @@
+<!-- Declarations outside of a DOCTYPE, as in an external subset. -->
+^^^^
+source-text-markup-xml-comment-block-comment-block-begin
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    source-text-markup-xml-comment-block-comment-block-content
+                                                                  ^^^
+                                                                  source-text-markup-xml-comment-block-comment-block-end
+<!ENTITY % inline "#PCDATA | em | strong">
+^^
+source-text-markup-xml-metadata-declaration-punctuation-begin
+  ^^^^^^
+  source-text-markup-xml-metadata-declaration-keyword-declaration
+        ^
+        source-text-markup-xml-metadata-declaration-whitespace
+         ^
+         source-text-markup-xml-metadata-declaration-keyword-operator
+          ^
+          source-text-markup-xml-metadata-declaration-whitespace
+           ^^^^^^
+           source-text-markup-xml-metadata-declaration-identifier
+                 ^
+                 source-text-markup-xml-metadata-declaration-whitespace
+                  ^
+                  source-text-markup-xml-metadata-declaration-literal-string-quoted-double-literal-string-quoted-double-begin
+                   ^^^^^^^^^^^^^^^^^^^^^
+                   source-text-markup-xml-metadata-declaration-literal-string-quoted-double-literal-string-unquoted
+                                        ^
+                                        source-text-markup-xml-metadata-declaration-literal-string-quoted-double-literal-string-quoted-double-end
+                                         ^
+                                         source-text-markup-xml-metadata-declaration-punctuation-end
+<!ELEMENT para (%inline;)*>
+^^
+source-text-markup-xml-metadata-declaration-punctuation-begin
+  ^^^^^^^
+  source-text-markup-xml-metadata-declaration-keyword-declaration
+         ^
+         source-text-markup-xml-metadata-declaration-whitespace
+          ^^^^
+          source-text-markup-xml-metadata-declaration-identifier
+              ^
+              source-text-markup-xml-metadata-declaration-whitespace
+               ^
+               source-text-markup-xml-metadata-declaration-punctuation
+                ^^^^^^^^
+                source-text-markup-xml-metadata-declaration-literal-string-escape
+                        ^
+                        source-text-markup-xml-metadata-declaration-punctuation
+                         ^
+                         source-text-markup-xml-metadata-declaration-keyword-operator
+                          ^
+                          source-text-markup-xml-metadata-declaration-punctuation-end
+<!ATTLIST para
+^^
+source-text-markup-xml-metadata-declaration-punctuation-begin
+  ^^^^^^^
+  source-text-markup-xml-metadata-declaration-keyword-declaration
+         ^
+         source-text-markup-xml-metadata-declaration-whitespace
+          ^^^^
+          source-text-markup-xml-metadata-declaration-identifier
+  %common.attrs;
+^^
+source-text-markup-xml-metadata-declaration-whitespace
+  ^^^^^^^^^^^^^^
+  source-text-markup-xml-metadata-declaration-literal-string-escape
+  align (left | right) 'left'>
+^^
+source-text-markup-xml-metadata-declaration-whitespace
+  ^^^^^
+  source-text-markup-xml-metadata-declaration-identifier
+       ^
+       source-text-markup-xml-metadata-declaration-whitespace
+        ^
+        source-text-markup-xml-metadata-declaration-punctuation
+         ^^^^
+         source-text-markup-xml-metadata-declaration-identifier
+             ^
+             source-text-markup-xml-metadata-declaration-whitespace
+              ^
+              source-text-markup-xml-metadata-declaration-punctuation-separator
+               ^
+               source-text-markup-xml-metadata-declaration-whitespace
+                ^^^^^
+                source-text-markup-xml-metadata-declaration-identifier
+                     ^
+                     source-text-markup-xml-metadata-declaration-punctuation
+                      ^
+                      source-text-markup-xml-metadata-declaration-whitespace
+                       ^
+                       source-text-markup-xml-metadata-declaration-literal-string-quoted-single-literal-string-quoted-single-begin
+                        ^^^^
+                        source-text-markup-xml-metadata-declaration-literal-string-quoted-single-literal-string-unquoted
+                            ^
+                            source-text-markup-xml-metadata-declaration-literal-string-quoted-single-literal-string-quoted-single-end
+                             ^
+                             source-text-markup-xml-metadata-declaration-punctuation-end
+<!NOTATION gif PUBLIC "-//CompuServe//NOTATION GIF 89a//EN">
+^^
+source-text-markup-xml-metadata-declaration-punctuation-begin
+  ^^^^^^^^
+  source-text-markup-xml-metadata-declaration-keyword-declaration
+          ^
+          source-text-markup-xml-metadata-declaration-whitespace
+           ^^^
+           source-text-markup-xml-metadata-declaration-identifier
+              ^
+              source-text-markup-xml-metadata-declaration-whitespace
+               ^^^^^^
+               source-text-markup-xml-metadata-declaration-keyword
+                     ^
+                     source-text-markup-xml-metadata-declaration-whitespace
+                      ^
+                      source-text-markup-xml-metadata-declaration-literal-string-quoted-double-literal-string-quoted-double-begin
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                       source-text-markup-xml-metadata-declaration-literal-string-quoted-double-literal-string-unquoted
+                                                          ^
+                                                          source-text-markup-xml-metadata-declaration-literal-string-quoted-double-literal-string-quoted-double-end
+                                                           ^
+                                                           source-text-markup-xml-metadata-declaration-punctuation-end
+<!ENTITY logo SYSTEM "logo.gif" NDATA gif>
+^^
+source-text-markup-xml-metadata-declaration-punctuation-begin
+  ^^^^^^
+  source-text-markup-xml-metadata-declaration-keyword-declaration
+        ^
+        source-text-markup-xml-metadata-declaration-whitespace
+         ^^^^
+         source-text-markup-xml-metadata-declaration-identifier
+             ^
+             source-text-markup-xml-metadata-declaration-whitespace
+              ^^^^^^
+              source-text-markup-xml-metadata-declaration-keyword
+                    ^
+                    source-text-markup-xml-metadata-declaration-whitespace
+                     ^
+                     source-text-markup-xml-metadata-declaration-literal-string-quoted-double-literal-string-quoted-double-begin
+                      ^^^^^^^^
+                      source-text-markup-xml-metadata-declaration-literal-string-quoted-double-literal-string-unquoted
+                              ^
+                              source-text-markup-xml-metadata-declaration-literal-string-quoted-double-literal-string-quoted-double-end
+                               ^
+                               source-text-markup-xml-metadata-declaration-whitespace
+                                ^^^^^
+                                source-text-markup-xml-metadata-declaration-keyword
+                                     ^
+                                     source-text-markup-xml-metadata-declaration-whitespace
+                                      ^^^
+                                      source-text-markup-xml-metadata-declaration-identifier
+                                         ^
+                                         source-text-markup-xml-metadata-declaration-punctuation-end
+<!ELEMENT unclosed (para
+^^
+source-text-markup-xml-metadata-declaration-punctuation-begin
+  ^^^^^^^
+  source-text-markup-xml-metadata-declaration-keyword-declaration
+         ^
+         source-text-markup-xml-metadata-declaration-whitespace
+          ^^^^^^^^
+          source-text-markup-xml-metadata-declaration-identifier
+                  ^
+                  source-text-markup-xml-metadata-declaration-whitespace
+                   ^
+                   source-text-markup-xml-metadata-declaration-punctuation
+                    ^^^^
+                    source-text-markup-xml-metadata-declaration-identifier
+<!ELEMENT br EMPTY>
+^^
+source-text-markup-xml-metadata-declaration-punctuation-begin
+  ^^^^^^^
+  source-text-markup-xml-metadata-declaration-keyword-declaration
+         ^
+         source-text-markup-xml-metadata-declaration-whitespace
+          ^^
+          source-text-markup-xml-metadata-declaration-identifier
+            ^
+            source-text-markup-xml-metadata-declaration-whitespace
+             ^^^^^
+             source-text-markup-xml-metadata-declaration-keyword
+                  ^
+                  source-text-markup-xml-metadata-declaration-punctuation-end

@@ -1,0 +1,376 @@
+<!DOCTYPE html PUBLIC
+^^
+source-text-markup-xml-metadata-doctype-punctuation-begin
+  ^^^^^^^
+  source-text-markup-xml-metadata-doctype-keyword-declaration
+         ^
+         source-text-markup-xml-metadata-doctype-whitespace
+          ^^^^
+          source-text-markup-xml-metadata-doctype-tag-name
+              ^
+              source-text-markup-xml-metadata-doctype-whitespace
+               ^^^^^^
+               source-text-markup-xml-metadata-doctype-keyword
+  "-//W3C//DTD XHTML 1.0 Strict//EN"
+^^
+source-text-markup-xml-metadata-doctype-whitespace
+  ^
+  source-text-markup-xml-metadata-doctype-literal-string-quoted-double-literal-string-quoted-double-begin
+   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   source-text-markup-xml-metadata-doctype-literal-string-quoted-double-literal-string-unquoted
+                                   ^
+                                   source-text-markup-xml-metadata-doctype-literal-string-quoted-double-literal-string-quoted-double-end
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd?a=1&b=2">
+^^
+source-text-markup-xml-metadata-doctype-whitespace
+  ^
+  source-text-markup-xml-metadata-doctype-literal-string-quoted-double-literal-string-quoted-double-begin
+   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   source-text-markup-xml-metadata-doctype-literal-string-quoted-double-literal-string-unquoted
+                                                        ^
+                                                        source-text-markup-xml-metadata-doctype-literal-string-quoted-double-literal-string-unquoted
+                                                         ^^^
+                                                         source-text-markup-xml-metadata-doctype-literal-string-quoted-double-literal-string-unquoted
+                                                            ^
+                                                            source-text-markup-xml-metadata-doctype-literal-string-quoted-double-literal-string-quoted-double-end
+                                                             ^
+                                                             source-text-markup-xml-metadata-doctype-punctuation-end
+<!DOCTYPE note SYSTEM "note.dtd" [
+^^
+source-text-markup-xml-metadata-doctype-punctuation-begin
+  ^^^^^^^
+  source-text-markup-xml-metadata-doctype-keyword-declaration
+         ^
+         source-text-markup-xml-metadata-doctype-whitespace
+          ^^^^
+          source-text-markup-xml-metadata-doctype-tag-name
+              ^
+              source-text-markup-xml-metadata-doctype-whitespace
+               ^^^^^^
+               source-text-markup-xml-metadata-doctype-keyword
+                     ^
+                     source-text-markup-xml-metadata-doctype-whitespace
+                      ^
+                      source-text-markup-xml-metadata-doctype-literal-string-quoted-double-literal-string-quoted-double-begin
+                       ^^^^^^^^
+                       source-text-markup-xml-metadata-doctype-literal-string-quoted-double-literal-string-unquoted
+                               ^
+                               source-text-markup-xml-metadata-doctype-literal-string-quoted-double-literal-string-quoted-double-end
+                                ^
+                                source-text-markup-xml-metadata-doctype-whitespace
+                                 ^
+                                 source-text-markup-xml-metadata-doctype-punctuation-begin
+  <!-- Subset declarations -->
+^^
+source-text-markup-xml-metadata-doctype-whitespace
+  ^^^^
+  source-text-markup-xml-metadata-doctype-comment-block-comment-block-begin
+      ^^^^^^^^^^^^^^^^^^^^^
+      source-text-markup-xml-metadata-doctype-comment-block-comment-block-content
+                           ^^^
+                           source-text-markup-xml-metadata-doctype-comment-block-comment-block-end
+  <?dtd-pi check?>
+^^
+source-text-markup-xml-metadata-doctype-whitespace
+  ^^
+  source-text-markup-xml-metadata-doctype-metadata-processing-instruction-punctuation-begin
+    ^^^^^^
+    source-text-markup-xml-metadata-doctype-metadata-processing-instruction-identifier
+          ^^^^^^
+          source-text-markup-xml-metadata-doctype-metadata-processing-instruction-metadata-processing-instruction-content
+                ^^
+                source-text-markup-xml-metadata-doctype-metadata-processing-instruction-punctuation-end
+  <!ELEMENT note (to, from, body*)>
+^^
+source-text-markup-xml-metadata-doctype-whitespace
+  ^^
+  source-text-markup-xml-metadata-doctype-metadata-declaration-punctuation-begin
+    ^^^^^^^
+    source-text-markup-xml-metadata-doctype-metadata-declaration-keyword-declaration
+           ^
+           source-text-markup-xml-metadata-doctype-metadata-declaration-whitespace
+            ^^^^
+            source-text-markup-xml-metadata-doctype-metadata-declaration-identifier
+                ^
+                source-text-markup-xml-metadata-doctype-metadata-declaration-whitespace
+                 ^
+                 source-text-markup-xml-metadata-doctype-metadata-declaration-punctuation
+                  ^^
+                  source-text-markup-xml-metadata-doctype-metadata-declaration-identifier
+                    ^
+                    source-text-markup-xml-metadata-doctype-metadata-declaration-punctuation-separator
+                     ^
+                     source-text-markup-xml-metadata-doctype-metadata-declaration-whitespace
+                      ^^^^
+                      source-text-markup-xml-metadata-doctype-metadata-declaration-identifier
+                          ^
+                          source-text-markup-xml-metadata-doctype-metadata-declaration-punctuation-separator
+                           ^
+                           source-text-markup-xml-metadata-doctype-metadata-declaration-whitespace
+                            ^^^^
+                            source-text-markup-xml-metadata-doctype-metadata-declaration-identifier
+                                ^
+                                source-text-markup-xml-metadata-doctype-metadata-declaration-keyword-operator
+                                 ^
+                                 source-text-markup-xml-metadata-doctype-metadata-declaration-punctuation
+                                  ^
+                                  source-text-markup-xml-metadata-doctype-metadata-declaration-punctuation-end
+  <!ELEMENT br EMPTY>
+^^
+source-text-markup-xml-metadata-doctype-whitespace
+  ^^
+  source-text-markup-xml-metadata-doctype-metadata-declaration-punctuation-begin
+    ^^^^^^^
+    source-text-markup-xml-metadata-doctype-metadata-declaration-keyword-declaration
+           ^
+           source-text-markup-xml-metadata-doctype-metadata-declaration-whitespace
+            ^^
+            source-text-markup-xml-metadata-doctype-metadata-declaration-identifier
+              ^
+              source-text-markup-xml-metadata-doctype-metadata-declaration-whitespace
+               ^^^^^
+               source-text-markup-xml-metadata-doctype-metadata-declaration-keyword
+                    ^
+                    source-text-markup-xml-metadata-doctype-metadata-declaration-punctuation-end
+  <!ELEMENT text (#PCDATA | em)+>
+^^
+source-text-markup-xml-metadata-doctype-whitespace
+  ^^
+  source-text-markup-xml-metadata-doctype-metadata-declaration-punctuation-begin
+    ^^^^^^^
+    source-text-markup-xml-metadata-doctype-metadata-declaration-keyword-declaration
+           ^
+           source-text-markup-xml-metadata-doctype-metadata-declaration-whitespace
+            ^^^^
+            source-text-markup-xml-metadata-doctype-metadata-declaration-identifier
+                ^
+                source-text-markup-xml-metadata-doctype-metadata-declaration-whitespace
+                 ^
+                 source-text-markup-xml-metadata-doctype-metadata-declaration-punctuation
+                  ^^^^^^^
+                  source-text-markup-xml-metadata-doctype-metadata-declaration-keyword
+                         ^
+                         source-text-markup-xml-metadata-doctype-metadata-declaration-whitespace
+                          ^
+                          source-text-markup-xml-metadata-doctype-metadata-declaration-punctuation-separator
+                           ^
+                           source-text-markup-xml-metadata-doctype-metadata-declaration-whitespace
+                            ^^
+                            source-text-markup-xml-metadata-doctype-metadata-declaration-identifier
+                              ^
+                              source-text-markup-xml-metadata-doctype-metadata-declaration-punctuation
+                               ^
+                               source-text-markup-xml-metadata-doctype-metadata-declaration-keyword-operator
+                                ^
+                                source-text-markup-xml-metadata-doctype-metadata-declaration-punctuation-end
+  <!ATTLIST note
+^^
+source-text-markup-xml-metadata-doctype-whitespace
+  ^^
+  source-text-markup-xml-metadata-doctype-metadata-declaration-punctuation-begin
+    ^^^^^^^
+    source-text-markup-xml-metadata-doctype-metadata-declaration-keyword-declaration
+           ^
+           source-text-markup-xml-metadata-doctype-metadata-declaration-whitespace
+            ^^^^
+            source-text-markup-xml-metadata-doctype-metadata-declaration-identifier
+    id ID #REQUIRED
+^^^^
+source-text-markup-xml-metadata-doctype-metadata-declaration-whitespace
+    ^^
+    source-text-markup-xml-metadata-doctype-metadata-declaration-identifier
+      ^
+      source-text-markup-xml-metadata-doctype-metadata-declaration-whitespace
+       ^^
+       source-text-markup-xml-metadata-doctype-metadata-declaration-identifier-type-built-in
+         ^
+         source-text-markup-xml-metadata-doctype-metadata-declaration-whitespace
+          ^^^^^^^^^
+          source-text-markup-xml-metadata-doctype-metadata-declaration-keyword
+    kind (memo | 1.0) "memo"
+^^^^
+source-text-markup-xml-metadata-doctype-metadata-declaration-whitespace
+    ^^^^
+    source-text-markup-xml-metadata-doctype-metadata-declaration-identifier
+        ^
+        source-text-markup-xml-metadata-doctype-metadata-declaration-whitespace
+         ^
+         source-text-markup-xml-metadata-doctype-metadata-declaration-punctuation
+          ^^^^
+          source-text-markup-xml-metadata-doctype-metadata-declaration-identifier
+              ^
+              source-text-markup-xml-metadata-doctype-metadata-declaration-whitespace
+               ^
+               source-text-markup-xml-metadata-doctype-metadata-declaration-punctuation-separator
+                ^
+                source-text-markup-xml-metadata-doctype-metadata-declaration-whitespace
+                 ^^^
+                 source-text-markup-xml-metadata-doctype-metadata-declaration-identifier
+                    ^
+                    source-text-markup-xml-metadata-doctype-metadata-declaration-punctuation
+                     ^
+                     source-text-markup-xml-metadata-doctype-metadata-declaration-whitespace
+                      ^
+                      source-text-markup-xml-metadata-doctype-metadata-declaration-literal-string-quoted-double-literal-string-quoted-double-begin
+                       ^^^^
+                       source-text-markup-xml-metadata-doctype-metadata-declaration-literal-string-quoted-double-literal-string-unquoted
+                           ^
+                           source-text-markup-xml-metadata-doctype-metadata-declaration-literal-string-quoted-double-literal-string-quoted-double-end
+    width CDATA "100%">
+^^^^
+source-text-markup-xml-metadata-doctype-metadata-declaration-whitespace
+    ^^^^^
+    source-text-markup-xml-metadata-doctype-metadata-declaration-identifier
+         ^
+         source-text-markup-xml-metadata-doctype-metadata-declaration-whitespace
+          ^^^^^
+          source-text-markup-xml-metadata-doctype-metadata-declaration-identifier-type-built-in
+               ^
+               source-text-markup-xml-metadata-doctype-metadata-declaration-whitespace
+                ^
+                source-text-markup-xml-metadata-doctype-metadata-declaration-literal-string-quoted-double-literal-string-quoted-double-begin
+                 ^^^
+                 source-text-markup-xml-metadata-doctype-metadata-declaration-literal-string-quoted-double-literal-string-unquoted
+                    ^
+                    source-text-markup-xml-metadata-doctype-metadata-declaration-literal-string-quoted-double-literal-string-unquoted
+                     ^
+                     source-text-markup-xml-metadata-doctype-metadata-declaration-literal-string-quoted-double-literal-string-quoted-double-end
+                      ^
+                      source-text-markup-xml-metadata-doctype-metadata-declaration-punctuation-end
+  <!ENTITY % common SYSTEM "common.ent">
+^^
+source-text-markup-xml-metadata-doctype-whitespace
+  ^^
+  source-text-markup-xml-metadata-doctype-metadata-declaration-punctuation-begin
+    ^^^^^^
+    source-text-markup-xml-metadata-doctype-metadata-declaration-keyword-declaration
+          ^
+          source-text-markup-xml-metadata-doctype-metadata-declaration-whitespace
+           ^
+           source-text-markup-xml-metadata-doctype-metadata-declaration-keyword-operator
+            ^
+            source-text-markup-xml-metadata-doctype-metadata-declaration-whitespace
+             ^^^^^^
+             source-text-markup-xml-metadata-doctype-metadata-declaration-identifier
+                   ^
+                   source-text-markup-xml-metadata-doctype-metadata-declaration-whitespace
+                    ^^^^^^
+                    source-text-markup-xml-metadata-doctype-metadata-declaration-keyword
+                          ^
+                          source-text-markup-xml-metadata-doctype-metadata-declaration-whitespace
+                           ^
+                           source-text-markup-xml-metadata-doctype-metadata-declaration-literal-string-quoted-double-literal-string-quoted-double-begin
+                            ^^^^^^^^^^
+                            source-text-markup-xml-metadata-doctype-metadata-declaration-literal-string-quoted-double-literal-string-unquoted
+                                      ^
+                                      source-text-markup-xml-metadata-doctype-metadata-declaration-literal-string-quoted-double-literal-string-quoted-double-end
+                                       ^
+                                       source-text-markup-xml-metadata-doctype-metadata-declaration-punctuation-end
+  %common;
+^^
+source-text-markup-xml-metadata-doctype-whitespace
+  ^^^^^^^^
+  source-text-markup-xml-metadata-doctype-literal-string-escape
+  <!ENTITY footer "<p>&copy; %year;</p>">
+^^
+source-text-markup-xml-metadata-doctype-whitespace
+  ^^
+  source-text-markup-xml-metadata-doctype-metadata-declaration-punctuation-begin
+    ^^^^^^
+    source-text-markup-xml-metadata-doctype-metadata-declaration-keyword-declaration
+          ^
+          source-text-markup-xml-metadata-doctype-metadata-declaration-whitespace
+           ^^^^^^
+           source-text-markup-xml-metadata-doctype-metadata-declaration-identifier
+                 ^
+                 source-text-markup-xml-metadata-doctype-metadata-declaration-whitespace
+                  ^
+                  source-text-markup-xml-metadata-doctype-metadata-declaration-literal-string-quoted-double-literal-string-quoted-double-begin
+                   ^^^
+                   source-text-markup-xml-metadata-doctype-metadata-declaration-literal-string-quoted-double-literal-string-unquoted
+                      ^^^^^^
+                      source-text-markup-xml-metadata-doctype-metadata-declaration-literal-string-quoted-double-literal-string-escape
+                            ^
+                            source-text-markup-xml-metadata-doctype-metadata-declaration-literal-string-quoted-double-literal-string-unquoted
+                             ^^^^^^
+                             source-text-markup-xml-metadata-doctype-metadata-declaration-literal-string-quoted-double-literal-string-escape
+                                   ^^^^
+                                   source-text-markup-xml-metadata-doctype-metadata-declaration-literal-string-quoted-double-literal-string-unquoted
+                                       ^
+                                       source-text-markup-xml-metadata-doctype-metadata-declaration-literal-string-quoted-double-literal-string-quoted-double-end
+                                        ^
+                                        source-text-markup-xml-metadata-doctype-metadata-declaration-punctuation-end
+  <!ENTITY notice "
+^^
+source-text-markup-xml-metadata-doctype-whitespace
+  ^^
+  source-text-markup-xml-metadata-doctype-metadata-declaration-punctuation-begin
+    ^^^^^^
+    source-text-markup-xml-metadata-doctype-metadata-declaration-keyword-declaration
+          ^
+          source-text-markup-xml-metadata-doctype-metadata-declaration-whitespace
+           ^^^^^^
+           source-text-markup-xml-metadata-doctype-metadata-declaration-identifier
+                 ^
+                 source-text-markup-xml-metadata-doctype-metadata-declaration-whitespace
+                  ^
+                  source-text-markup-xml-metadata-doctype-metadata-declaration-literal-string-quoted-double-literal-string-quoted-double-begin
+    <p>Multi-line</p>
+^^^^^^^^^^^^^^^^^^^^^
+source-text-markup-xml-metadata-doctype-metadata-declaration-literal-string-quoted-double-literal-string-unquoted
+  ">
+^^
+source-text-markup-xml-metadata-doctype-metadata-declaration-literal-string-quoted-double-literal-string-unquoted
+  ^
+  source-text-markup-xml-metadata-doctype-metadata-declaration-literal-string-quoted-double-literal-string-quoted-double-end
+   ^
+   source-text-markup-xml-metadata-doctype-metadata-declaration-punctuation-end
+  <!NOTATION png SYSTEM "image/png">
+^^
+source-text-markup-xml-metadata-doctype-whitespace
+  ^^
+  source-text-markup-xml-metadata-doctype-metadata-declaration-punctuation-begin
+    ^^^^^^^^
+    source-text-markup-xml-metadata-doctype-metadata-declaration-keyword-declaration
+            ^
+            source-text-markup-xml-metadata-doctype-metadata-declaration-whitespace
+             ^^^
+             source-text-markup-xml-metadata-doctype-metadata-declaration-identifier
+                ^
+                source-text-markup-xml-metadata-doctype-metadata-declaration-whitespace
+                 ^^^^^^
+                 source-text-markup-xml-metadata-doctype-metadata-declaration-keyword
+                       ^
+                       source-text-markup-xml-metadata-doctype-metadata-declaration-whitespace
+                        ^
+                        source-text-markup-xml-metadata-doctype-metadata-declaration-literal-string-quoted-double-literal-string-quoted-double-begin
+                         ^^^^^^^^^
+                         source-text-markup-xml-metadata-doctype-metadata-declaration-literal-string-quoted-double-literal-string-unquoted
+                                  ^
+                                  source-text-markup-xml-metadata-doctype-metadata-declaration-literal-string-quoted-double-literal-string-quoted-double-end
+                                   ^
+                                   source-text-markup-xml-metadata-doctype-metadata-declaration-punctuation-end
+]>
+^
+source-text-markup-xml-metadata-doctype-punctuation-end
+ ^
+ source-text-markup-xml-metadata-doctype-punctuation-end
+<note id="n1"/>
+^
+source-text-markup-xml-tag-punctuation-begin
+ ^^^^
+ source-text-markup-xml-tag-tag-name
+     ^
+     source-text-markup-xml-tag-whitespace
+      ^^
+      source-text-markup-xml-tag-identifier-property
+        ^
+        source-text-markup-xml-tag-punctuation-separator
+         ^
+         source-text-markup-xml-tag-literal-string-quoted-double-literal-string-quoted-double-begin
+          ^^
+          source-text-markup-xml-tag-literal-string-quoted-double-literal-string-unquoted
+            ^
+            source-text-markup-xml-tag-literal-string-quoted-double-literal-string-quoted-double-end
+             ^^
+             source-text-markup-xml-tag-punctuation-end

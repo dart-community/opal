@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+^^
+source-text-markup-xml-metadata-xml-declaration-punctuation-begin
+  ^^^
+  source-text-markup-xml-metadata-xml-declaration-keyword
+     ^
+     source-text-markup-xml-metadata-xml-declaration-whitespace
+      ^^^^^^^
+      source-text-markup-xml-metadata-xml-declaration-identifier-property
+             ^
+             source-text-markup-xml-metadata-xml-declaration-punctuation-separator
+              ^
+              source-text-markup-xml-metadata-xml-declaration-literal-string-quoted-double-literal-string-quoted-double-begin
+               ^^^
+               source-text-markup-xml-metadata-xml-declaration-literal-string-quoted-double-literal-string-unquoted
+                  ^
+                  source-text-markup-xml-metadata-xml-declaration-literal-string-quoted-double-literal-string-quoted-double-end
+                   ^
+                   source-text-markup-xml-metadata-xml-declaration-whitespace
+                    ^^^^^^^^
+                    source-text-markup-xml-metadata-xml-declaration-identifier-property
+                            ^
+                            source-text-markup-xml-metadata-xml-declaration-punctuation-separator
+                             ^
+                             source-text-markup-xml-metadata-xml-declaration-literal-string-quoted-double-literal-string-quoted-double-begin
+                              ^^^^^
+                              source-text-markup-xml-metadata-xml-declaration-literal-string-quoted-double-literal-string-unquoted
+                                   ^
+                                   source-text-markup-xml-metadata-xml-declaration-literal-string-quoted-double-literal-string-quoted-double-end
+                                    ^^
+                                    source-text-markup-xml-metadata-xml-declaration-punctuation-end
+<!-- Book catalog -->
+^^^^
+source-text-markup-xml-comment-block-comment-block-begin
+    ^^^^^^^^^^^^^^
+    source-text-markup-xml-comment-block-comment-block-content
+                  ^^^
+                  source-text-markup-xml-comment-block-comment-block-end
+<!---->
+^^^^
+source-text-markup-xml-comment-block-comment-block-begin
+    ^^^
+    source-text-markup-xml-comment-block-comment-block-end
+<!-- Multi-line - comment
+^^^^
+source-text-markup-xml-comment-block-comment-block-begin
+    ^^^^^^^^^^^^^^^^^^^^^
+    source-text-markup-xml-comment-block-comment-block-content
+  ending with extra dash --->
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+source-text-markup-xml-comment-block-comment-block-content
+                          ^^^
+                          source-text-markup-xml-comment-block-comment-block-end
+<catalog>
+^
+source-text-markup-xml-tag-punctuation-begin
+ ^^^^^^^
+ source-text-markup-xml-tag-tag-name
+        ^
+        source-text-markup-xml-tag-punctuation-end
+  <book
+^^
+source-text-markup-xml-whitespace
+  ^
+  source-text-markup-xml-tag-punctuation-begin
+   ^^^^
+   source-text-markup-xml-tag-tag-name
+    id="b1"
+^^^^
+source-text-markup-xml-tag-whitespace
+    ^^
+    source-text-markup-xml-tag-identifier-property
+      ^
+      source-text-markup-xml-tag-punctuation-separator
+       ^
+       source-text-markup-xml-tag-literal-string-quoted-double-literal-string-quoted-double-begin
+        ^^
+        source-text-markup-xml-tag-literal-string-quoted-double-literal-string-unquoted
+          ^
+          source-text-markup-xml-tag-literal-string-quoted-double-literal-string-quoted-double-end
+    available='true'
+^^^^
+source-text-markup-xml-tag-whitespace
+    ^^^^^^^^^
+    source-text-markup-xml-tag-identifier-property
+             ^
+             source-text-markup-xml-tag-punctuation-separator
+              ^
+              source-text-markup-xml-tag-literal-string-quoted-single-literal-string-quoted-single-begin
+               ^^^^
+               source-text-markup-xml-tag-literal-string-quoted-single-literal-string-unquoted
+                   ^
+                   source-text-markup-xml-tag-literal-string-quoted-single-literal-string-quoted-single-end
+    check = "a > b &amp; c"
+^^^^
+source-text-markup-xml-tag-whitespace
+    ^^^^^
+    source-text-markup-xml-tag-identifier-property
+         ^
+         source-text-markup-xml-tag-whitespace
+          ^
+          source-text-markup-xml-tag-punctuation-separator
+           ^
+           source-text-markup-xml-tag-whitespace
+            ^
+            source-text-markup-xml-tag-literal-string-quoted-double-literal-string-quoted-double-begin
+             ^^^^^^
+             source-text-markup-xml-tag-literal-string-quoted-double-literal-string-unquoted
+                   ^^^^^
+                   source-text-markup-xml-tag-literal-string-quoted-double-literal-string-escape
+                        ^^
+                        source-text-markup-xml-tag-literal-string-quoted-double-literal-string-unquoted
+                          ^
+                          source-text-markup-xml-tag-literal-string-quoted-double-literal-string-quoted-double-end
+  >
+^^
+source-text-markup-xml-tag-whitespace
+  ^
+  source-text-markup-xml-tag-punctuation-end
+    <title>Opal &amp; XML &#x2014; 5 > 3 &#38; &custom;</title>
+^^^^
+source-text-markup-xml-whitespace
+    ^
+    source-text-markup-xml-tag-punctuation-begin
+     ^^^^^
+     source-text-markup-xml-tag-tag-name
+          ^
+          source-text-markup-xml-tag-punctuation-end
+           ^^^^
+           source-text-markup-xml-markup-text
+               ^
+               source-text-markup-xml-whitespace
+                ^^^^^
+                source-text-markup-xml-literal-string-escape
+                     ^
+                     source-text-markup-xml-whitespace
+                      ^^^
+                      source-text-markup-xml-markup-text
+                         ^
+                         source-text-markup-xml-whitespace
+                          ^^^^^^^^
+                          source-text-markup-xml-literal-string-escape
+                                  ^
+                                  source-text-markup-xml-whitespace
+                                   ^^^^^
+                                   source-text-markup-xml-markup-text
+                                        ^
+                                        source-text-markup-xml-whitespace
+                                         ^^^^^
+                                         source-text-markup-xml-literal-string-escape
+                                              ^
+                                              source-text-markup-xml-whitespace
+                                               ^^^^^^^^
+                                               source-text-markup-xml-literal-string-escape
+                                                       ^^
+                                                       source-text-markup-xml-tag-punctuation-begin
+                                                         ^^^^^
+                                                         source-text-markup-xml-tag-tag-name
+                                                              ^
+                                                              source-text-markup-xml-tag-punctuation-end
+    <empty alt=""/>
+^^^^
+source-text-markup-xml-whitespace
+    ^
+    source-text-markup-xml-tag-punctuation-begin
+     ^^^^^
+     source-text-markup-xml-tag-tag-name
+          ^
+          source-text-markup-xml-tag-whitespace
+           ^^^
+           source-text-markup-xml-tag-identifier-property
+              ^
+              source-text-markup-xml-tag-punctuation-separator
+               ^
+               source-text-markup-xml-tag-literal-string-quoted-double-literal-string-quoted-double-begin
+                ^
+                source-text-markup-xml-tag-literal-string-quoted-double-literal-string-quoted-double-end
+                 ^^
+                 source-text-markup-xml-tag-punctuation-end
+    <spaced />
+^^^^
+source-text-markup-xml-whitespace
+    ^
+    source-text-markup-xml-tag-punctuation-begin
+     ^^^^^^
+     source-text-markup-xml-tag-tag-name
+           ^
+           source-text-markup-xml-tag-whitespace
+            ^^
+            source-text-markup-xml-tag-punctuation-end
+    <![CDATA[]]>
+^^^^
+source-text-markup-xml-whitespace
+    ^^^^^^^^^
+    source-text-markup-xml-literal-string-literal-string-begin
+             ^^^
+             source-text-markup-xml-literal-string-literal-string-end
+    <![CDATA[<raw attr="1"> & [[items[0]]]]]]>
+^^^^
+source-text-markup-xml-whitespace
+    ^^^^^^^^^
+    source-text-markup-xml-literal-string-literal-string-begin
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+             source-text-markup-xml-literal-string-literal-string-unquoted
+                                           ^^^
+                                           source-text-markup-xml-literal-string-literal-string-end
+    <![CDATA[
+^^^^
+source-text-markup-xml-whitespace
+    ^^^^^^^^^
+    source-text-markup-xml-literal-string-literal-string-begin
+      line 1 < line 2
+^^^^^^^^^^^^^^^^^^^^^
+source-text-markup-xml-literal-string-literal-string-unquoted
+    ]]>
+^^^^
+source-text-markup-xml-literal-string-literal-string-unquoted
+    ^^^
+    source-text-markup-xml-literal-string-literal-string-end
+  </book>
+^^
+source-text-markup-xml-whitespace
+  ^^
+  source-text-markup-xml-tag-punctuation-begin
+    ^^^^
+    source-text-markup-xml-tag-tag-name
+        ^
+        source-text-markup-xml-tag-punctuation-end
+</catalog >
+^^
+source-text-markup-xml-tag-punctuation-begin
+  ^^^^^^^
+  source-text-markup-xml-tag-tag-name
+         ^
+         source-text-markup-xml-tag-whitespace
+          ^
+          source-text-markup-xml-tag-punctuation-end

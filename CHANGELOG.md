@@ -2,6 +2,7 @@
 
 - Add support for C# (`csharp`, `cs`, `c#`, `c-sharp`).
 - Add support for Rust (`rust`, `rs`).
+- Improve the accuracy and recovery of `xml` highlighting.
 
 ## 0.3.0
 

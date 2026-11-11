@@ -1,0 +1,19 @@
+<?xml
+  version="1.0"
+  encoding="UTF-8"
+  standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="style.xsl?v=1"?>
+<?pagebreak?>
+<?note
+  Don't forget x > 0
+?>
+<svg:svg
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xml:lang="en">
+  <svg:a xlink:href="https://example.com/a
+    /b">
+    <ns:données ns:clé="valeur"/>
+    <col·lecció títol·1="a"/>
+  </svg:a>
+</svg:svg>

@@ -1,0 +1,15 @@
+# Application settings
+! Legacy header comment
+
+app.name = Opal
+app.version: 0.3.1
+app.tagline Syntax highlighting for Dart
+
+server.host=localhost
+server.port:8080
+feature-flag_1 = true
+1234 = 5678
+
+greeting = Hello, {0}! # not a comment ! neither is this
+endpoint = https://example.com:8443/api? a=1&b=2
+quoted = "quotes are literal characters"

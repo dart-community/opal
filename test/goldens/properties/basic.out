@@ -1,0 +1,105 @@
+# Application settings
+^^^^^^^^^^^^^^^^^^^^^^
+source-text-data-properties-comment-line
+! Legacy header comment
+^^^^^^^^^^^^^^^^^^^^^^^
+source-text-data-properties-comment-line
+
+app.name = Opal
+^^^^^^^^
+source-text-data-properties-identifier-property
+        ^
+        source-text-data-properties-whitespace
+         ^
+         source-text-data-properties-punctuation-separator
+          ^
+          source-text-data-properties-whitespace
+           ^^^^
+           source-text-data-properties-literal-string-unquoted
+app.version: 0.3.1
+^^^^^^^^^^^
+source-text-data-properties-identifier-property
+           ^
+           source-text-data-properties-punctuation-separator
+            ^
+            source-text-data-properties-whitespace
+             ^^^^^
+             source-text-data-properties-literal-string-unquoted
+app.tagline Syntax highlighting for Dart
+^^^^^^^^^^^
+source-text-data-properties-identifier-property
+           ^
+           source-text-data-properties-whitespace
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+            source-text-data-properties-literal-string-unquoted
+
+server.host=localhost
+^^^^^^^^^^^
+source-text-data-properties-identifier-property
+           ^
+           source-text-data-properties-punctuation-separator
+            ^^^^^^^^^
+            source-text-data-properties-literal-string-unquoted
+server.port:8080
+^^^^^^^^^^^
+source-text-data-properties-identifier-property
+           ^
+           source-text-data-properties-punctuation-separator
+            ^^^^
+            source-text-data-properties-literal-string-unquoted
+feature-flag_1 = true
+^^^^^^^^^^^^^^
+source-text-data-properties-identifier-property
+              ^
+              source-text-data-properties-whitespace
+               ^
+               source-text-data-properties-punctuation-separator
+                ^
+                source-text-data-properties-whitespace
+                 ^^^^
+                 source-text-data-properties-literal-string-unquoted
+1234 = 5678
+^^^^
+source-text-data-properties-identifier-property
+    ^
+    source-text-data-properties-whitespace
+     ^
+     source-text-data-properties-punctuation-separator
+      ^
+      source-text-data-properties-whitespace
+       ^^^^
+       source-text-data-properties-literal-string-unquoted
+
+greeting = Hello, {0}! # not a comment ! neither is this
+^^^^^^^^
+source-text-data-properties-identifier-property
+        ^
+        source-text-data-properties-whitespace
+         ^
+         source-text-data-properties-punctuation-separator
+          ^
+          source-text-data-properties-whitespace
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+           source-text-data-properties-literal-string-unquoted
+endpoint = https://example.com:8443/api? a=1&b=2
+^^^^^^^^
+source-text-data-properties-identifier-property
+        ^
+        source-text-data-properties-whitespace
+         ^
+         source-text-data-properties-punctuation-separator
+          ^
+          source-text-data-properties-whitespace
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+           source-text-data-properties-literal-string-unquoted
+quoted = "quotes are literal characters"
+^^^^^^
+source-text-data-properties-identifier-property
+      ^
+      source-text-data-properties-whitespace
+       ^
+       source-text-data-properties-punctuation-separator
+        ^
+        source-text-data-properties-whitespace
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+         source-text-data-properties-literal-string-unquoted

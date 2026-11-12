@@ -112,6 +112,21 @@ void main() {
         expect(BuiltInLanguages.all, contains(BuiltInLanguages.toml));
       });
 
+      test('includes properties language and fallbacks', () {
+        for (final name in [
+          'properties',
+          'java-properties',
+          'javaproperties',
+          'jproperties',
+          'PROPERTIES',
+          ' Java-Properties ',
+        ]) {
+          expect(registry[name], same(BuiltInLanguages.properties));
+        }
+        expect(BuiltInLanguages.properties.name, 'properties');
+        expect(BuiltInLanguages.all, contains(BuiltInLanguages.properties));
+      });
+
       test('includes rust language and fallback', () {
         for (final name in ['rust', 'rs', 'RUST', ' RS ']) {
           expect(registry[name], same(BuiltInLanguages.rust));

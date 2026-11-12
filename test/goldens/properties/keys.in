@@ -1,0 +1,20 @@
+key\ with\ spaces = spaced key
+a\=b\:c = escaped separators
+\ leading.space = starts with space
+\=leading.equals = starts with equals
+\:leading.colon: starts with colon
+escaped.slash\\=value after even slashes
+escaped.colon\\:value after even slashes
+escaped.space\\ value after even slashes
+odd.slashes\\\=still.key = value after odd slashes
+\u006Bey = unicode start
+caf\u00E9 = coffee
+key\u003Dpart = unicode equals stays in key
+日本語.キー = こんにちは 🌍
+valueless
+valueless.trailing   
+empty.equals =
+empty.colon :   
+= empty key with equals
+  : empty key with colon
+=

@@ -1,0 +1,7 @@
+standard = tab:\t newline:\n cr:\r ff:\f slash:\\ quote:\" single:\'
+punctuation = space:\  equals:\= colon:\: hash:\# bang:\!
+dropped.slash = \a \b \s \/ \z
+unicode = \u0041 \u03b1 \uD83D\uDE00
+leading.escaped.space =   \  two leading spaces
+after.escape.spaces =   \n  indented second line
+trailing.spaces = preserved   

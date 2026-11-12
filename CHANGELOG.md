@@ -1,5 +1,7 @@
 ## 0.3.1-wip
 
+- Add support for Java properties files
+  (`properties`, `java-properties`, `javaproperties`, `jproperties`).
 - Add support for C# (`csharp`, `cs`, `c#`, `c-sharp`).
 - Add support for Rust (`rust`, `rs`).
 - Add support for unified diffs and patches (`diff`, `patch`, `udiff`).

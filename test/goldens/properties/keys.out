@@ -1,0 +1,214 @@
+key\ with\ spaces = spaced key
+^^^
+source-text-data-properties-identifier-property
+   ^^
+   source-text-data-properties-identifier-property-literal-string-escape
+     ^^^^
+     source-text-data-properties-identifier-property
+         ^^
+         source-text-data-properties-identifier-property-literal-string-escape
+           ^^^^^^
+           source-text-data-properties-identifier-property
+                 ^
+                 source-text-data-properties-whitespace
+                  ^
+                  source-text-data-properties-punctuation-separator
+                   ^
+                   source-text-data-properties-whitespace
+                    ^^^^^^^^^^
+                    source-text-data-properties-literal-string-unquoted
+a\=b\:c = escaped separators
+^
+source-text-data-properties-identifier-property
+ ^^
+ source-text-data-properties-identifier-property-literal-string-escape
+   ^
+   source-text-data-properties-identifier-property
+    ^^
+    source-text-data-properties-identifier-property-literal-string-escape
+      ^
+      source-text-data-properties-identifier-property
+       ^
+       source-text-data-properties-whitespace
+        ^
+        source-text-data-properties-punctuation-separator
+         ^
+         source-text-data-properties-whitespace
+          ^^^^^^^^^^^^^^^^^^
+          source-text-data-properties-literal-string-unquoted
+\ leading.space = starts with space
+^^
+source-text-data-properties-identifier-property-literal-string-escape
+  ^^^^^^^^^^^^^
+  source-text-data-properties-identifier-property
+               ^
+               source-text-data-properties-whitespace
+                ^
+                source-text-data-properties-punctuation-separator
+                 ^
+                 source-text-data-properties-whitespace
+                  ^^^^^^^^^^^^^^^^^
+                  source-text-data-properties-literal-string-unquoted
+\=leading.equals = starts with equals
+^^
+source-text-data-properties-identifier-property-literal-string-escape
+  ^^^^^^^^^^^^^^
+  source-text-data-properties-identifier-property
+                ^
+                source-text-data-properties-whitespace
+                 ^
+                 source-text-data-properties-punctuation-separator
+                  ^
+                  source-text-data-properties-whitespace
+                   ^^^^^^^^^^^^^^^^^^
+                   source-text-data-properties-literal-string-unquoted
+\:leading.colon: starts with colon
+^^
+source-text-data-properties-identifier-property-literal-string-escape
+  ^^^^^^^^^^^^^
+  source-text-data-properties-identifier-property
+               ^
+               source-text-data-properties-punctuation-separator
+                ^
+                source-text-data-properties-whitespace
+                 ^^^^^^^^^^^^^^^^^
+                 source-text-data-properties-literal-string-unquoted
+escaped.slash\\=value after even slashes
+^^^^^^^^^^^^^
+source-text-data-properties-identifier-property
+             ^^
+             source-text-data-properties-identifier-property-literal-string-escape
+               ^
+               source-text-data-properties-punctuation-separator
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+                source-text-data-properties-literal-string-unquoted
+escaped.colon\\:value after even slashes
+^^^^^^^^^^^^^
+source-text-data-properties-identifier-property
+             ^^
+             source-text-data-properties-identifier-property-literal-string-escape
+               ^
+               source-text-data-properties-punctuation-separator
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+                source-text-data-properties-literal-string-unquoted
+escaped.space\\ value after even slashes
+^^^^^^^^^^^^^
+source-text-data-properties-identifier-property
+             ^^
+             source-text-data-properties-identifier-property-literal-string-escape
+               ^
+               source-text-data-properties-whitespace
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+                source-text-data-properties-literal-string-unquoted
+odd.slashes\\\=still.key = value after odd slashes
+^^^^^^^^^^^
+source-text-data-properties-identifier-property
+           ^^
+           source-text-data-properties-identifier-property-literal-string-escape
+             ^^
+             source-text-data-properties-identifier-property-literal-string-escape
+               ^^^^^^^^^
+               source-text-data-properties-identifier-property
+                        ^
+                        source-text-data-properties-whitespace
+                         ^
+                         source-text-data-properties-punctuation-separator
+                          ^
+                          source-text-data-properties-whitespace
+                           ^^^^^^^^^^^^^^^^^^^^^^^
+                           source-text-data-properties-literal-string-unquoted
+\u006Bey = unicode start
+^^^^^^
+source-text-data-properties-identifier-property-literal-string-escape
+      ^^
+      source-text-data-properties-identifier-property
+        ^
+        source-text-data-properties-whitespace
+         ^
+         source-text-data-properties-punctuation-separator
+          ^
+          source-text-data-properties-whitespace
+           ^^^^^^^^^^^^^
+           source-text-data-properties-literal-string-unquoted
+caf\u00E9 = coffee
+^^^
+source-text-data-properties-identifier-property
+   ^^^^^^
+   source-text-data-properties-identifier-property-literal-string-escape
+         ^
+         source-text-data-properties-whitespace
+          ^
+          source-text-data-properties-punctuation-separator
+           ^
+           source-text-data-properties-whitespace
+            ^^^^^^
+            source-text-data-properties-literal-string-unquoted
+key\u003Dpart = unicode equals stays in key
+^^^
+source-text-data-properties-identifier-property
+   ^^^^^^
+   source-text-data-properties-identifier-property-literal-string-escape
+         ^^^^
+         source-text-data-properties-identifier-property
+             ^
+             source-text-data-properties-whitespace
+              ^
+              source-text-data-properties-punctuation-separator
+               ^
+               source-text-data-properties-whitespace
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                source-text-data-properties-literal-string-unquoted
+日本語.キー = こんにちは 🌍
+^^^^^^
+source-text-data-properties-identifier-property
+      ^
+      source-text-data-properties-whitespace
+       ^
+       source-text-data-properties-punctuation-separator
+        ^
+        source-text-data-properties-whitespace
+         ^^^^^^^^
+         source-text-data-properties-literal-string-unquoted
+valueless
+^^^^^^^^^
+source-text-data-properties-identifier-property
+valueless.trailing   
+^^^^^^^^^^^^^^^^^^
+source-text-data-properties-identifier-property
+                  ^^^
+                  source-text-data-properties-whitespace
+empty.equals =
+^^^^^^^^^^^^
+source-text-data-properties-identifier-property
+            ^
+            source-text-data-properties-whitespace
+             ^
+             source-text-data-properties-punctuation-separator
+empty.colon :   
+^^^^^^^^^^^
+source-text-data-properties-identifier-property
+           ^
+           source-text-data-properties-whitespace
+            ^
+            source-text-data-properties-punctuation-separator
+             ^^^
+             source-text-data-properties-whitespace
+= empty key with equals
+^
+source-text-data-properties-punctuation-separator
+ ^
+ source-text-data-properties-whitespace
+  ^^^^^^^^^^^^^^^^^^^^^
+  source-text-data-properties-literal-string-unquoted
+  : empty key with colon
+^^
+source-text-data-properties-whitespace
+  ^
+  source-text-data-properties-punctuation-separator
+   ^
+   source-text-data-properties-whitespace
+    ^^^^^^^^^^^^^^^^^^^^
+    source-text-data-properties-literal-string-unquoted
+=
+^
+source-text-data-properties-punctuation-separator

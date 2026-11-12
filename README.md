@@ -62,6 +62,7 @@ the specified default and alternative IDs:
 - Groovy (`groovy`, `gradle`)
 - HTML (`html`)
 - Java (`java`)
+- Java Properties (`properties`, `java-properties`, `javaproperties`, `jproperties`)
 - JavaScript (`javascript`, `js`)
 - JSON (`json`)
 - Kotlin (`kotlin`, `kt`)

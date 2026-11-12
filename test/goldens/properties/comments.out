@@ -1,0 +1,87 @@
+# Standard hash comment
+^^^^^^^^^^^^^^^^^^^^^^^
+source-text-data-properties-comment-line
+! Exclamation mark comment
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+source-text-data-properties-comment-line
+  # Indented hash comment
+^^
+source-text-data-properties-whitespace
+  ^^^^^^^^^^^^^^^^^^^^^^^
+  source-text-data-properties-comment-line
+	! Tab-indented bang comment
+^
+source-text-data-properties-whitespace
+ ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ source-text-data-properties-comment-line
+#
+^
+source-text-data-properties-comment-line
+!
+^
+source-text-data-properties-comment-line
+# Trailing backslash does not continue a comment \
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+source-text-data-properties-comment-line
+still.a.key = after hash comment
+^^^^^^^^^^^
+source-text-data-properties-identifier-property
+           ^
+           source-text-data-properties-whitespace
+            ^
+            source-text-data-properties-punctuation-separator
+             ^
+             source-text-data-properties-whitespace
+              ^^^^^^^^^^^^^^^^^^
+              source-text-data-properties-literal-string-unquoted
+! Double backslash in comment \\
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+source-text-data-properties-comment-line
+also.a.key : after bang comment
+^^^^^^^^^^
+source-text-data-properties-identifier-property
+          ^
+          source-text-data-properties-whitespace
+           ^
+           source-text-data-properties-punctuation-separator
+            ^
+            source-text-data-properties-whitespace
+             ^^^^^^^^^^^^^^^^^^
+             source-text-data-properties-literal-string-unquoted
+\#not.a.comment = escaped leading hash
+^^
+source-text-data-properties-identifier-property-literal-string-escape
+  ^^^^^^^^^^^^^
+  source-text-data-properties-identifier-property
+               ^
+               source-text-data-properties-whitespace
+                ^
+                source-text-data-properties-punctuation-separator
+                 ^
+                 source-text-data-properties-whitespace
+                  ^^^^^^^^^^^^^^^^^^^^
+                  source-text-data-properties-literal-string-unquoted
+\!not.a.comment = escaped leading bang
+^^
+source-text-data-properties-identifier-property-literal-string-escape
+  ^^^^^^^^^^^^^
+  source-text-data-properties-identifier-property
+               ^
+               source-text-data-properties-whitespace
+                ^
+                source-text-data-properties-punctuation-separator
+                 ^
+                 source-text-data-properties-whitespace
+                  ^^^^^^^^^^^^^^^^^^^^
+                  source-text-data-properties-literal-string-unquoted
+mid#hash!bang = value # with # hashes ! and ! bangs
+^^^^^^^^^^^^^
+source-text-data-properties-identifier-property
+             ^
+             source-text-data-properties-whitespace
+              ^
+              source-text-data-properties-punctuation-separator
+               ^
+               source-text-data-properties-whitespace
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                source-text-data-properties-literal-string-unquoted

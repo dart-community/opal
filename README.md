@@ -61,6 +61,7 @@ the specified default and alternative IDs:
 - Go (`go`, `golang`)
 - Groovy (`groovy`, `gradle`)
 - HTML (`html`)
+- INI (`ini`)
 - Java (`java`)
 - Java Properties (`properties`, `java-properties`, `javaproperties`, `jproperties`)
 - JavaScript (`javascript`, `js`)

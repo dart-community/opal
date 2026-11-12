@@ -1,0 +1,71 @@
+endpoint=https://example.org:8443/?tab=1#preview
+^^^^^^^^
+source-text-data-ini-identifier-property
+        ^
+        source-text-data-ini-punctuation-separator
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+         source-text-data-ini-literal-string-unquoted
+message = ready ; waiting # still text
+^^^^^^^
+source-text-data-ini-identifier-property
+       ^
+       source-text-data-ini-whitespace
+        ^
+        source-text-data-ini-punctuation-separator
+         ^
+         source-text-data-ini-whitespace
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+          source-text-data-ini-literal-string-unquoted
+color = #ffeecc
+^^^^^
+source-text-data-ini-identifier-property
+     ^
+     source-text-data-ini-whitespace
+      ^
+      source-text-data-ini-punctuation-separator
+       ^
+       source-text-data-ini-whitespace
+        ^^^^^^^
+        source-text-data-ini-literal-string-unquoted
+empty:
+^^^^^
+source-text-data-ini-identifier-property
+     ^
+     source-text-data-ini-punctuation-separator
+quoted empty = ""
+^^^^^^^^^^^^
+source-text-data-ini-identifier-property
+            ^
+            source-text-data-ini-whitespace
+             ^
+             source-text-data-ini-punctuation-separator
+              ^
+              source-text-data-ini-whitespace
+               ^^
+               source-text-data-ini-literal-string-quoted-double
+labels = "draft" and "final"
+^^^^^^
+source-text-data-ini-identifier-property
+      ^
+      source-text-data-ini-whitespace
+       ^
+       source-text-data-ini-punctuation-separator
+        ^
+        source-text-data-ini-whitespace
+         ^^^^^^^^^^^^^^^^^^^
+         source-text-data-ini-literal-string-unquoted
+=missing key
+^^^^^^^^^^^^
+source-text-data-ini-unknown
+[unfinished:section
+^^^^^^^^^^^^^^^^^^^
+source-text-data-ini-unknown
+next: valid
+^^^^
+source-text-data-ini-identifier-property
+    ^
+    source-text-data-ini-punctuation-separator
+     ^
+     source-text-data-ini-whitespace
+      ^^^^^
+      source-text-data-ini-literal-string-unquoted

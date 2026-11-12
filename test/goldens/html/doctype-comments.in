@@ -1,0 +1,15 @@
+<!doctype html>
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<!DOCTYPE HTML PUBLIC
+  "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE svg:svg PUBLIC
+  "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!---->
+<!-->
+<!--->
+<!-- Legacy bang end --!>
+<!-- Multi-line - comment
+  ending with extra dash --->
+<p>Content</p>

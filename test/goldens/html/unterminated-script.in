@@ -1,0 +1,2 @@
+<script type="module">
+  const pending = a < b;

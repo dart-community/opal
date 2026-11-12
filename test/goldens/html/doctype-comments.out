@@ -1,0 +1,151 @@
+<!doctype html>
+^^
+source-text-markup-html-metadata-doctype-punctuation-begin
+  ^^^^^^^
+  source-text-markup-html-metadata-doctype-keyword-declaration
+         ^
+         source-text-markup-html-metadata-doctype-whitespace
+          ^^^^
+          source-text-markup-html-metadata-doctype-tag-name
+              ^
+              source-text-markup-html-metadata-doctype-punctuation-end
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+^^
+source-text-markup-html-metadata-doctype-punctuation-begin
+  ^^^^^^^
+  source-text-markup-html-metadata-doctype-keyword-declaration
+         ^
+         source-text-markup-html-metadata-doctype-whitespace
+          ^^^^
+          source-text-markup-html-metadata-doctype-tag-name
+              ^
+              source-text-markup-html-metadata-doctype-whitespace
+               ^^^^^^
+               source-text-markup-html-metadata-doctype-keyword
+                     ^
+                     source-text-markup-html-metadata-doctype-whitespace
+                      ^
+                      source-text-markup-html-metadata-doctype-literal-string-quoted-double-literal-string-quoted-double-begin
+                       ^^^^^^^^^^^^^^^^^^^
+                       source-text-markup-html-metadata-doctype-literal-string-quoted-double-literal-string-unquoted
+                                          ^
+                                          source-text-markup-html-metadata-doctype-literal-string-quoted-double-literal-string-quoted-double-end
+                                           ^
+                                           source-text-markup-html-metadata-doctype-punctuation-end
+<!DOCTYPE HTML PUBLIC
+^^
+source-text-markup-html-metadata-doctype-punctuation-begin
+  ^^^^^^^
+  source-text-markup-html-metadata-doctype-keyword-declaration
+         ^
+         source-text-markup-html-metadata-doctype-whitespace
+          ^^^^
+          source-text-markup-html-metadata-doctype-tag-name
+              ^
+              source-text-markup-html-metadata-doctype-whitespace
+               ^^^^^^
+               source-text-markup-html-metadata-doctype-keyword
+  "-//W3C//DTD HTML 4.01//EN"
+^^
+source-text-markup-html-metadata-doctype-whitespace
+  ^
+  source-text-markup-html-metadata-doctype-literal-string-quoted-double-literal-string-quoted-double-begin
+   ^^^^^^^^^^^^^^^^^^^^^^^^^
+   source-text-markup-html-metadata-doctype-literal-string-quoted-double-literal-string-unquoted
+                            ^
+                            source-text-markup-html-metadata-doctype-literal-string-quoted-double-literal-string-quoted-double-end
+  "http://www.w3.org/TR/html4/strict.dtd">
+^^
+source-text-markup-html-metadata-doctype-whitespace
+  ^
+  source-text-markup-html-metadata-doctype-literal-string-quoted-double-literal-string-quoted-double-begin
+   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   source-text-markup-html-metadata-doctype-literal-string-quoted-double-literal-string-unquoted
+                                        ^
+                                        source-text-markup-html-metadata-doctype-literal-string-quoted-double-literal-string-quoted-double-end
+                                         ^
+                                         source-text-markup-html-metadata-doctype-punctuation-end
+<!DOCTYPE svg:svg PUBLIC
+^^
+source-text-markup-html-metadata-doctype-punctuation-begin
+  ^^^^^^^
+  source-text-markup-html-metadata-doctype-keyword-declaration
+         ^
+         source-text-markup-html-metadata-doctype-whitespace
+          ^^^
+          source-text-markup-html-metadata-doctype-identifier-namespace
+             ^
+             source-text-markup-html-metadata-doctype-punctuation-separator
+              ^^^
+              source-text-markup-html-metadata-doctype-tag-name
+                 ^
+                 source-text-markup-html-metadata-doctype-whitespace
+                  ^^^^^^
+                  source-text-markup-html-metadata-doctype-keyword
+  "-//W3C//DTD SVG 1.1//EN"
+^^
+source-text-markup-html-metadata-doctype-whitespace
+  ^
+  source-text-markup-html-metadata-doctype-literal-string-quoted-double-literal-string-quoted-double-begin
+   ^^^^^^^^^^^^^^^^^^^^^^^
+   source-text-markup-html-metadata-doctype-literal-string-quoted-double-literal-string-unquoted
+                          ^
+                          source-text-markup-html-metadata-doctype-literal-string-quoted-double-literal-string-quoted-double-end
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+^^
+source-text-markup-html-metadata-doctype-whitespace
+  ^
+  source-text-markup-html-metadata-doctype-literal-string-quoted-double-literal-string-quoted-double-begin
+   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   source-text-markup-html-metadata-doctype-literal-string-quoted-double-literal-string-unquoted
+                                                   ^
+                                                   source-text-markup-html-metadata-doctype-literal-string-quoted-double-literal-string-quoted-double-end
+                                                    ^
+                                                    source-text-markup-html-metadata-doctype-punctuation-end
+<!---->
+^^^^
+source-text-markup-html-comment-block-comment-block-begin
+    ^^^
+    source-text-markup-html-comment-block-comment-block-end
+<!-->
+^^^^
+source-text-markup-html-comment-block-comment-block-begin
+    ^
+    source-text-markup-html-comment-block-comment-block-end
+<!--->
+^^^^
+source-text-markup-html-comment-block-comment-block-begin
+    ^^
+    source-text-markup-html-comment-block-comment-block-end
+<!-- Legacy bang end --!>
+^^^^
+source-text-markup-html-comment-block-comment-block-begin
+    ^^^^^^^^^^^^^^^^^
+    source-text-markup-html-comment-block-comment-block-content
+                     ^^^^
+                     source-text-markup-html-comment-block-comment-block-end
+<!-- Multi-line - comment
+^^^^
+source-text-markup-html-comment-block-comment-block-begin
+    ^^^^^^^^^^^^^^^^^^^^^
+    source-text-markup-html-comment-block-comment-block-content
+  ending with extra dash --->
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+source-text-markup-html-comment-block-comment-block-content
+                          ^^^
+                          source-text-markup-html-comment-block-comment-block-end
+<p>Content</p>
+^
+source-text-markup-html-tag-punctuation-begin
+ ^
+ source-text-markup-html-tag-tag-name
+  ^
+  source-text-markup-html-tag-punctuation-end
+   ^^^^^^^
+   source-text-markup-html-markup-text
+          ^^
+          source-text-markup-html-tag-punctuation-begin
+            ^
+            source-text-markup-html-tag-tag-name
+             ^
+             source-text-markup-html-tag-punctuation-end

@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+^^
+source-text-markup-html-metadata-doctype-punctuation-begin
+  ^^^^^^^
+  source-text-markup-html-metadata-doctype-keyword-declaration
+         ^
+         source-text-markup-html-metadata-doctype-whitespace
+          ^^^^
+          source-text-markup-html-metadata-doctype-tag-name
+              ^
+              source-text-markup-html-metadata-doctype-punctuation-end
+<!-- Main document -->
+^^^^
+source-text-markup-html-comment-block-comment-block-begin
+    ^^^^^^^^^^^^^^^
+    source-text-markup-html-comment-block-comment-block-content
+                   ^^^
+                   source-text-markup-html-comment-block-comment-block-end
+<html lang="en">
+^
+source-text-markup-html-tag-punctuation-begin
+ ^^^^
+ source-text-markup-html-tag-tag-name
+     ^
+     source-text-markup-html-tag-whitespace
+      ^^^^
+      source-text-markup-html-tag-identifier-property
+          ^
+          source-text-markup-html-tag-punctuation-separator
+           ^
+           source-text-markup-html-tag-literal-string-quoted-double-literal-string-quoted-double-begin
+            ^^
+            source-text-markup-html-tag-literal-string-quoted-double-literal-string-unquoted
+              ^
+              source-text-markup-html-tag-literal-string-quoted-double-literal-string-quoted-double-end
+               ^
+               source-text-markup-html-tag-punctuation-end
+  <head>
+^^
+source-text-markup-html-whitespace
+  ^
+  source-text-markup-html-tag-punctuation-begin
+   ^^^^
+   source-text-markup-html-tag-tag-name
+       ^
+       source-text-markup-html-tag-punctuation-end
+    <meta charset="utf-8">
+^^^^
+source-text-markup-html-whitespace
+    ^
+    source-text-markup-html-tag-punctuation-begin
+     ^^^^
+     source-text-markup-html-tag-tag-name
+         ^
+         source-text-markup-html-tag-whitespace
+          ^^^^^^^
+          source-text-markup-html-tag-identifier-property
+                 ^
+                 source-text-markup-html-tag-punctuation-separator
+                  ^
+                  source-text-markup-html-tag-literal-string-quoted-double-literal-string-quoted-double-begin
+                   ^^^^^
+                   source-text-markup-html-tag-literal-string-quoted-double-literal-string-unquoted
+                        ^
+                        source-text-markup-html-tag-literal-string-quoted-double-literal-string-quoted-double-end
+                         ^
+                         source-text-markup-html-tag-punctuation-end
+    <title>Opal &amp; HTML &#x2014; 5 < 10</title>
+^^^^
+source-text-markup-html-whitespace
+    ^
+    source-text-markup-html-tag-punctuation-begin
+     ^^^^^
+     source-text-markup-html-tag-tag-name
+          ^
+          source-text-markup-html-tag-punctuation-end
+           ^^^^
+           source-text-markup-html-markup-text
+               ^
+               source-text-markup-html-whitespace
+                ^^^^^
+                source-text-markup-html-literal-string-escape
+                     ^
+                     source-text-markup-html-whitespace
+                      ^^^^
+                      source-text-markup-html-markup-text
+                          ^
+                          source-text-markup-html-whitespace
+                           ^^^^^^^^
+                           source-text-markup-html-literal-string-escape
+                                   ^
+                                   source-text-markup-html-whitespace
+                                    ^^^^^^
+                                    source-text-markup-html-markup-text
+                                          ^^
+                                          source-text-markup-html-tag-punctuation-begin
+                                            ^^^^^
+                                            source-text-markup-html-tag-tag-name
+                                                 ^
+                                                 source-text-markup-html-tag-punctuation-end
+    <link rel="stylesheet" href="/app.css">
+^^^^
+source-text-markup-html-whitespace
+    ^
+    source-text-markup-html-tag-punctuation-begin
+     ^^^^
+     source-text-markup-html-tag-tag-name
+         ^
+         source-text-markup-html-tag-whitespace
+          ^^^
+          source-text-markup-html-tag-identifier-property
+             ^
+             source-text-markup-html-tag-punctuation-separator
+              ^
+              source-text-markup-html-tag-literal-string-quoted-double-literal-string-quoted-double-begin
+               ^^^^^^^^^^
+               source-text-markup-html-tag-literal-string-quoted-double-literal-string-unquoted
+                         ^
+                         source-text-markup-html-tag-literal-string-quoted-double-literal-string-quoted-double-end
+                          ^
+                          source-text-markup-html-tag-whitespace
+                           ^^^^
+                           source-text-markup-html-tag-identifier-property
+                               ^
+                               source-text-markup-html-tag-punctuation-separator
+                                ^
+                                source-text-markup-html-tag-literal-string-quoted-double-literal-string-quoted-double-begin
+                                 ^^^^^^^^
+                                 source-text-markup-html-tag-literal-string-quoted-double-literal-string-unquoted
+                                         ^
+                                         source-text-markup-html-tag-literal-string-quoted-double-literal-string-quoted-double-end
+                                          ^
+                                          source-text-markup-html-tag-punctuation-end
+  </head>
+^^
+source-text-markup-html-whitespace
+  ^^
+  source-text-markup-html-tag-punctuation-begin
+    ^^^^
+    source-text-markup-html-tag-tag-name
+        ^
+        source-text-markup-html-tag-punctuation-end
+  <body
+^^
+source-text-markup-html-whitespace
+  ^
+  source-text-markup-html-tag-punctuation-begin
+   ^^^^
+   source-text-markup-html-tag-tag-name
+    id="main"
+^^^^
+source-text-markup-html-tag-whitespace
+    ^^
+    source-text-markup-html-tag-identifier-property
+      ^
+      source-text-markup-html-tag-punctuation-separator
+       ^
+       source-text-markup-html-tag-literal-string-quoted-double-literal-string-quoted-double-begin
+        ^^^^
+        source-text-markup-html-tag-literal-string-quoted-double-literal-string-unquoted
+            ^
+            source-text-markup-html-tag-literal-string-quoted-double-literal-string-quoted-double-end
+    class='page'
+^^^^
+source-text-markup-html-tag-whitespace
+    ^^^^^
+    source-text-markup-html-tag-identifier-property
+         ^
+         source-text-markup-html-tag-punctuation-separator
+          ^
+          source-text-markup-html-tag-literal-string-quoted-single-literal-string-quoted-single-begin
+           ^^^^
+           source-text-markup-html-tag-literal-string-quoted-single-literal-string-unquoted
+               ^
+               source-text-markup-html-tag-literal-string-quoted-single-literal-string-quoted-single-end
+    hidden
+^^^^
+source-text-markup-html-tag-whitespace
+    ^^^^^^
+    source-text-markup-html-tag-identifier-property
+    data-check = "a > b &amp; c"
+^^^^
+source-text-markup-html-tag-whitespace
+    ^^^^^^^^^^
+    source-text-markup-html-tag-identifier-property
+              ^
+              source-text-markup-html-tag-whitespace
+               ^
+               source-text-markup-html-tag-punctuation-separator
+                ^
+                source-text-markup-html-tag-whitespace
+                 ^
+                 source-text-markup-html-tag-literal-string-quoted-double-literal-string-quoted-double-begin
+                  ^^^^^^
+                  source-text-markup-html-tag-literal-string-quoted-double-literal-string-unquoted
+                        ^^^^^
+                        source-text-markup-html-tag-literal-string-quoted-double-literal-string-escape
+                             ^^
+                             source-text-markup-html-tag-literal-string-quoted-double-literal-string-unquoted
+                               ^
+                               source-text-markup-html-tag-literal-string-quoted-double-literal-string-quoted-double-end
+  >
+^^
+source-text-markup-html-tag-whitespace
+  ^
+  source-text-markup-html-tag-punctuation-end
+    <h1>Terms & Conditions for AT&T</h1>
+^^^^
+source-text-markup-html-whitespace
+    ^
+    source-text-markup-html-tag-punctuation-begin
+     ^^
+     source-text-markup-html-tag-tag-name
+       ^
+       source-text-markup-html-tag-punctuation-end
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        source-text-markup-html-markup-text
+                                   ^^
+                                   source-text-markup-html-tag-punctuation-begin
+                                     ^^
+                                     source-text-markup-html-tag-tag-name
+                                       ^
+                                       source-text-markup-html-tag-punctuation-end
+    <p>Half: &frac12;&nbsp;&#38; &#X2014; 5 > 3</p>
+^^^^
+source-text-markup-html-whitespace
+    ^
+    source-text-markup-html-tag-punctuation-begin
+     ^
+     source-text-markup-html-tag-tag-name
+      ^
+      source-text-markup-html-tag-punctuation-end
+       ^^^^^
+       source-text-markup-html-markup-text
+            ^
+            source-text-markup-html-whitespace
+             ^^^^^^^^
+             source-text-markup-html-literal-string-escape
+                     ^^^^^^
+                     source-text-markup-html-literal-string-escape
+                           ^^^^^
+                           source-text-markup-html-literal-string-escape
+                                ^
+                                source-text-markup-html-whitespace
+                                 ^^^^^^^^
+                                 source-text-markup-html-literal-string-escape
+                                         ^
+                                         source-text-markup-html-whitespace
+                                          ^^^^^
+                                          source-text-markup-html-markup-text
+                                               ^^
+                                               source-text-markup-html-tag-punctuation-begin
+                                                 ^
+                                                 source-text-markup-html-tag-tag-name
+                                                  ^
+                                                  source-text-markup-html-tag-punctuation-end
+    <br>
+^^^^
+source-text-markup-html-whitespace
+    ^
+    source-text-markup-html-tag-punctuation-begin
+     ^^
+     source-text-markup-html-tag-tag-name
+       ^
+       source-text-markup-html-tag-punctuation-end
+    <img src="logo.png" alt=""/>
+^^^^
+source-text-markup-html-whitespace
+    ^
+    source-text-markup-html-tag-punctuation-begin
+     ^^^
+     source-text-markup-html-tag-tag-name
+        ^
+        source-text-markup-html-tag-whitespace
+         ^^^
+         source-text-markup-html-tag-identifier-property
+            ^
+            source-text-markup-html-tag-punctuation-separator
+             ^
+             source-text-markup-html-tag-literal-string-quoted-double-literal-string-quoted-double-begin
+              ^^^^^^^^
+              source-text-markup-html-tag-literal-string-quoted-double-literal-string-unquoted
+                      ^
+                      source-text-markup-html-tag-literal-string-quoted-double-literal-string-quoted-double-end
+                       ^
+                       source-text-markup-html-tag-whitespace
+                        ^^^
+                        source-text-markup-html-tag-identifier-property
+                           ^
+                           source-text-markup-html-tag-punctuation-separator
+                            ^
+                            source-text-markup-html-tag-literal-string-quoted-double-literal-string-quoted-double-begin
+                             ^
+                             source-text-markup-html-tag-literal-string-quoted-double-literal-string-quoted-double-end
+                              ^^
+                              source-text-markup-html-tag-punctuation-end
+    <my-card data-id="1">Ready</my-card>
+^^^^
+source-text-markup-html-whitespace
+    ^
+    source-text-markup-html-tag-punctuation-begin
+     ^^^^^^^
+     source-text-markup-html-tag-tag-name
+            ^
+            source-text-markup-html-tag-whitespace
+             ^^^^^^^
+             source-text-markup-html-tag-identifier-property
+                    ^
+                    source-text-markup-html-tag-punctuation-separator
+                     ^
+                     source-text-markup-html-tag-literal-string-quoted-double-literal-string-quoted-double-begin
+                      ^
+                      source-text-markup-html-tag-literal-string-quoted-double-literal-string-unquoted
+                       ^
+                       source-text-markup-html-tag-literal-string-quoted-double-literal-string-quoted-double-end
+                        ^
+                        source-text-markup-html-tag-punctuation-end
+                         ^^^^^
+                         source-text-markup-html-markup-text
+                              ^^
+                              source-text-markup-html-tag-punctuation-begin
+                                ^^^^^^^
+                                source-text-markup-html-tag-tag-name
+                                       ^
+                                       source-text-markup-html-tag-punctuation-end
+  </body >
+^^
+source-text-markup-html-whitespace
+  ^^
+  source-text-markup-html-tag-punctuation-begin
+    ^^^^
+    source-text-markup-html-tag-tag-name
+        ^
+        source-text-markup-html-tag-whitespace
+         ^
+         source-text-markup-html-tag-punctuation-end
+</html>
+^^
+source-text-markup-html-tag-punctuation-begin
+  ^^^^
+  source-text-markup-html-tag-tag-name
+      ^
+      source-text-markup-html-tag-punctuation-end

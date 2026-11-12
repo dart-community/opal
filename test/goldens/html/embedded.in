@@ -1,0 +1,20 @@
+<style media="screen">
+  .card > p::before { content: "<b>&amp;</b>"; }
+</style>
+<script src="/vendor.js" defer></script>
+<script
+  type="module"
+  data-check="a > b"
+>
+  const ok = a < b && c > d;
+  const ignore = "</scripting>";
+</SCRIPT >
+<script data-msg=it's>const s = 'a < b';</script>
+<textarea placeholder=don't rows=3>Write <em>markup</em> &amp; x < y</textarea>
+<svg viewBox="0 0 16 16" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <svg:use xlink:href="#icon" />
+  <![CDATA[]]>
+  <![CDATA[<raw attr="1"> & [[items[0]]]]]]>
+</svg>
+<math><mi>x</mi></math>
+<style-card><ui:menu:item>Custom</ui:menu:item></style-card>

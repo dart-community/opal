@@ -78,6 +78,14 @@ void main() {
         expect(BuiltInLanguages.css.name, equals('css'));
       });
 
+      test('includes html language', () {
+        for (final name in ['html', 'HTML', ' html ']) {
+          expect(registry[name], same(BuiltInLanguages.html));
+        }
+        expect(BuiltInLanguages.html.name, 'html');
+        expect(BuiltInLanguages.all, contains(BuiltInLanguages.html));
+      });
+
       test('includes mermaid language and fallback', () {
         for (final name in ['mermaid', 'mmd', 'MERMAID', ' MMD ']) {
           expect(registry[name], same(BuiltInLanguages.mermaid));

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<!-- Main document -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Opal &amp; HTML &#x2014; 5 < 10</title>
+    <link rel="stylesheet" href="/app.css">
+  </head>
+  <body
+    id="main"
+    class='page'
+    hidden
+    data-check = "a > b &amp; c"
+  >
+    <h1>Terms & Conditions for AT&T</h1>
+    <p>Half: &frac12;&nbsp;&#38; &#X2014; 5 > 3</p>
+    <br>
+    <img src="logo.png" alt=""/>
+    <my-card data-id="1">Ready</my-card>
+  </body >
+</html>

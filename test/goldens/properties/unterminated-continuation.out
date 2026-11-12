@@ -1,0 +1,20 @@
+unterminated = first line \
+^^^^^^^^^^^^
+source-text-data-properties-identifier-property
+            ^
+            source-text-data-properties-whitespace
+             ^
+             source-text-data-properties-punctuation-separator
+              ^
+              source-text-data-properties-whitespace
+               ^^^^^^^^^^^
+               source-text-data-properties-literal-string-unquoted
+                          ^
+                          source-text-data-properties-literal-string-escape
+  last line \
+^^
+source-text-data-properties-whitespace
+  ^^^^^^^^^^
+  source-text-data-properties-literal-string-unquoted
+            ^
+            source-text-data-properties-literal-string-escape

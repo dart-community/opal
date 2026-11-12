@@ -1,0 +1,13 @@
+# Standard hash comment
+! Exclamation mark comment
+  # Indented hash comment
+	! Tab-indented bang comment
+#
+!
+# Trailing backslash does not continue a comment \
+still.a.key = after hash comment
+! Double backslash in comment \\
+also.a.key : after bang comment
+\#not.a.comment = escaped leading hash
+\!not.a.comment = escaped leading bang
+mid#hash!bang = value # with # hashes ! and ! bangs

@@ -1,0 +1,224 @@
+fruits = apple, banana, \
+^^^^^^
+source-text-data-properties-identifier-property
+      ^
+      source-text-data-properties-whitespace
+       ^
+       source-text-data-properties-punctuation-separator
+        ^
+        source-text-data-properties-whitespace
+         ^^^^^^^^^^^^^^^
+         source-text-data-properties-literal-string-unquoted
+                        ^
+                        source-text-data-properties-literal-string-escape
+         pear, cantaloupe, \
+^^^^^^^^^
+source-text-data-properties-whitespace
+         ^^^^^^^^^^^^^^^^^^
+         source-text-data-properties-literal-string-unquoted
+                           ^
+                           source-text-data-properties-literal-string-escape
+         # not a comment, \
+^^^^^^^^^
+source-text-data-properties-whitespace
+         ^^^^^^^^^^^^^^^^^
+         source-text-data-properties-literal-string-unquoted
+                          ^
+                          source-text-data-properties-literal-string-escape
+         ! still value = yes
+^^^^^^^^^
+source-text-data-properties-whitespace
+         ^^^^^^^^^^^^^^^^^^^
+         source-text-data-properties-literal-string-unquoted
+
+even.slashes = ends here\\
+^^^^^^^^^^^^
+source-text-data-properties-identifier-property
+            ^
+            source-text-data-properties-whitespace
+             ^
+             source-text-data-properties-punctuation-separator
+              ^
+              source-text-data-properties-whitespace
+               ^^^^^^^^^
+               source-text-data-properties-literal-string-unquoted
+                        ^^
+                        source-text-data-properties-literal-string-unquoted-literal-string-escape
+next.property = separate line
+^^^^^^^^^^^^^
+source-text-data-properties-identifier-property
+             ^
+             source-text-data-properties-whitespace
+              ^
+              source-text-data-properties-punctuation-separator
+               ^
+               source-text-data-properties-whitespace
+                ^^^^^^^^^^^^^
+                source-text-data-properties-literal-string-unquoted
+
+odd.slashes = continues\\\
+^^^^^^^^^^^
+source-text-data-properties-identifier-property
+           ^
+           source-text-data-properties-whitespace
+            ^
+            source-text-data-properties-punctuation-separator
+             ^
+             source-text-data-properties-whitespace
+              ^^^^^^^^^
+              source-text-data-properties-literal-string-unquoted
+                       ^^
+                       source-text-data-properties-literal-string-unquoted-literal-string-escape
+                         ^
+                         source-text-data-properties-literal-string-escape
+  onto next line
+^^
+source-text-data-properties-whitespace
+  ^^^^^^^^^^^^^^
+  source-text-data-properties-literal-string-unquoted
+
+long.\
+^^^^^
+source-text-data-properties-identifier-property
+     ^
+     source-text-data-properties-literal-string-escape
+  continued.\
+^^
+source-text-data-properties-whitespace
+  ^^^^^^^^^^
+  source-text-data-properties-identifier-property
+            ^
+            source-text-data-properties-literal-string-escape
+  #key =assembled key
+^^
+source-text-data-properties-whitespace
+  ^^^^
+  source-text-data-properties-identifier-property
+      ^
+      source-text-data-properties-whitespace
+       ^
+       source-text-data-properties-punctuation-separator
+        ^^^^^^^^^^^^^
+        source-text-data-properties-literal-string-unquoted
+
+split.before.sep \
+^^^^^^^^^^^^^^^^
+source-text-data-properties-identifier-property
+                ^
+                source-text-data-properties-whitespace
+                 ^
+                 source-text-data-properties-literal-string-escape
+  = separator on next line
+^^
+source-text-data-properties-whitespace
+  ^
+  source-text-data-properties-punctuation-separator
+   ^
+   source-text-data-properties-whitespace
+    ^^^^^^^^^^^^^^^^^^^^^^
+    source-text-data-properties-literal-string-unquoted
+
+split.after.sep = \
+^^^^^^^^^^^^^^^
+source-text-data-properties-identifier-property
+               ^
+               source-text-data-properties-whitespace
+                ^
+                source-text-data-properties-punctuation-separator
+                 ^
+                 source-text-data-properties-whitespace
+                  ^
+                  source-text-data-properties-literal-string-escape
+  = equals in value
+^^
+source-text-data-properties-whitespace
+  ^^^^^^^^^^^^^^^^^
+  source-text-data-properties-literal-string-unquoted
+
+space.sep.multiline \
+^^^^^^^^^^^^^^^^^^^
+source-text-data-properties-identifier-property
+                   ^
+                   source-text-data-properties-whitespace
+                    ^
+                    source-text-data-properties-literal-string-escape
+  value on next line = still value
+^^
+source-text-data-properties-whitespace
+  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  source-text-data-properties-literal-string-unquoted
+
+\
+^
+source-text-data-properties-literal-string-escape
+  #not.a.key.after.lone.slash = value
+^^
+source-text-data-properties-whitespace
+  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  source-text-data-properties-comment-line
+
+\
+^
+source-text-data-properties-literal-string-escape
+  = empty key after lone slash
+^^
+source-text-data-properties-whitespace
+  ^
+  source-text-data-properties-punctuation-separator
+   ^
+   source-text-data-properties-whitespace
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    source-text-data-properties-literal-string-unquoted
+
+ended.by.blank = hello \
+^^^^^^^^^^^^^^
+source-text-data-properties-identifier-property
+              ^
+              source-text-data-properties-whitespace
+               ^
+               source-text-data-properties-punctuation-separator
+                ^
+                source-text-data-properties-whitespace
+                 ^^^^^^
+                 source-text-data-properties-literal-string-unquoted
+                       ^
+                       source-text-data-properties-literal-string-escape
+
+after.blank = new property
+^^^^^^^^^^^
+source-text-data-properties-identifier-property
+           ^
+           source-text-data-properties-whitespace
+            ^
+            source-text-data-properties-punctuation-separator
+             ^
+             source-text-data-properties-whitespace
+              ^^^^^^^^^^^^
+              source-text-data-properties-literal-string-unquoted
+ended.by.spaces = world \
+^^^^^^^^^^^^^^^
+source-text-data-properties-identifier-property
+               ^
+               source-text-data-properties-whitespace
+                ^
+                source-text-data-properties-punctuation-separator
+                 ^
+                 source-text-data-properties-whitespace
+                  ^^^^^^
+                  source-text-data-properties-literal-string-unquoted
+                        ^
+                        source-text-data-properties-literal-string-escape
+    
+^^^^
+source-text-data-properties-whitespace
+after.spaces = another property
+^^^^^^^^^^^^
+source-text-data-properties-identifier-property
+            ^
+            source-text-data-properties-whitespace
+             ^
+             source-text-data-properties-punctuation-separator
+              ^
+              source-text-data-properties-whitespace
+               ^^^^^^^^^^^^^^^^
+               source-text-data-properties-literal-string-unquoted

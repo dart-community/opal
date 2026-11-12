@@ -1,0 +1,151 @@
+standard = tab:\t newline:\n cr:\r ff:\f slash:\\ quote:\" single:\'
+^^^^^^^^
+source-text-data-properties-identifier-property
+        ^
+        source-text-data-properties-whitespace
+         ^
+         source-text-data-properties-punctuation-separator
+          ^
+          source-text-data-properties-whitespace
+           ^^^^
+           source-text-data-properties-literal-string-unquoted
+               ^^
+               source-text-data-properties-literal-string-unquoted-literal-string-escape
+                 ^^^^^^^^^
+                 source-text-data-properties-literal-string-unquoted
+                          ^^
+                          source-text-data-properties-literal-string-unquoted-literal-string-escape
+                            ^^^^
+                            source-text-data-properties-literal-string-unquoted
+                                ^^
+                                source-text-data-properties-literal-string-unquoted-literal-string-escape
+                                  ^^^^
+                                  source-text-data-properties-literal-string-unquoted
+                                      ^^
+                                      source-text-data-properties-literal-string-unquoted-literal-string-escape
+                                        ^^^^^^^
+                                        source-text-data-properties-literal-string-unquoted
+                                               ^^
+                                               source-text-data-properties-literal-string-unquoted-literal-string-escape
+                                                 ^^^^^^^
+                                                 source-text-data-properties-literal-string-unquoted
+                                                        ^^
+                                                        source-text-data-properties-literal-string-unquoted-literal-string-escape
+                                                          ^^^^^^^^
+                                                          source-text-data-properties-literal-string-unquoted
+                                                                  ^^
+                                                                  source-text-data-properties-literal-string-unquoted-literal-string-escape
+punctuation = space:\  equals:\= colon:\: hash:\# bang:\!
+^^^^^^^^^^^
+source-text-data-properties-identifier-property
+           ^
+           source-text-data-properties-whitespace
+            ^
+            source-text-data-properties-punctuation-separator
+             ^
+             source-text-data-properties-whitespace
+              ^^^^^^
+              source-text-data-properties-literal-string-unquoted
+                    ^^
+                    source-text-data-properties-literal-string-unquoted-literal-string-escape
+                      ^^^^^^^^
+                      source-text-data-properties-literal-string-unquoted
+                              ^^
+                              source-text-data-properties-literal-string-unquoted-literal-string-escape
+                                ^^^^^^^
+                                source-text-data-properties-literal-string-unquoted
+                                       ^^
+                                       source-text-data-properties-literal-string-unquoted-literal-string-escape
+                                         ^^^^^^
+                                         source-text-data-properties-literal-string-unquoted
+                                               ^^
+                                               source-text-data-properties-literal-string-unquoted-literal-string-escape
+                                                 ^^^^^^
+                                                 source-text-data-properties-literal-string-unquoted
+                                                       ^^
+                                                       source-text-data-properties-literal-string-unquoted-literal-string-escape
+dropped.slash = \a \b \s \/ \z
+^^^^^^^^^^^^^
+source-text-data-properties-identifier-property
+             ^
+             source-text-data-properties-whitespace
+              ^
+              source-text-data-properties-punctuation-separator
+               ^
+               source-text-data-properties-whitespace
+                ^^
+                source-text-data-properties-literal-string-unquoted-literal-string-escape
+                  ^
+                  source-text-data-properties-literal-string-unquoted
+                   ^^
+                   source-text-data-properties-literal-string-unquoted-literal-string-escape
+                     ^
+                     source-text-data-properties-literal-string-unquoted
+                      ^^
+                      source-text-data-properties-literal-string-unquoted-literal-string-escape
+                        ^
+                        source-text-data-properties-literal-string-unquoted
+                         ^^
+                         source-text-data-properties-literal-string-unquoted-literal-string-escape
+                           ^
+                           source-text-data-properties-literal-string-unquoted
+                            ^^
+                            source-text-data-properties-literal-string-unquoted-literal-string-escape
+unicode = \u0041 \u03b1 \uD83D\uDE00
+^^^^^^^
+source-text-data-properties-identifier-property
+       ^
+       source-text-data-properties-whitespace
+        ^
+        source-text-data-properties-punctuation-separator
+         ^
+         source-text-data-properties-whitespace
+          ^^^^^^
+          source-text-data-properties-literal-string-unquoted-literal-string-escape
+                ^
+                source-text-data-properties-literal-string-unquoted
+                 ^^^^^^
+                 source-text-data-properties-literal-string-unquoted-literal-string-escape
+                       ^
+                       source-text-data-properties-literal-string-unquoted
+                        ^^^^^^
+                        source-text-data-properties-literal-string-unquoted-literal-string-escape
+                              ^^^^^^
+                              source-text-data-properties-literal-string-unquoted-literal-string-escape
+leading.escaped.space =   \  two leading spaces
+^^^^^^^^^^^^^^^^^^^^^
+source-text-data-properties-identifier-property
+                     ^
+                     source-text-data-properties-whitespace
+                      ^
+                      source-text-data-properties-punctuation-separator
+                       ^^^
+                       source-text-data-properties-whitespace
+                          ^^
+                          source-text-data-properties-literal-string-unquoted-literal-string-escape
+                            ^^^^^^^^^^^^^^^^^^^
+                            source-text-data-properties-literal-string-unquoted
+after.escape.spaces =   \n  indented second line
+^^^^^^^^^^^^^^^^^^^
+source-text-data-properties-identifier-property
+                   ^
+                   source-text-data-properties-whitespace
+                    ^
+                    source-text-data-properties-punctuation-separator
+                     ^^^
+                     source-text-data-properties-whitespace
+                        ^^
+                        source-text-data-properties-literal-string-unquoted-literal-string-escape
+                          ^^^^^^^^^^^^^^^^^^^^^^
+                          source-text-data-properties-literal-string-unquoted
+trailing.spaces = preserved   
+^^^^^^^^^^^^^^^
+source-text-data-properties-identifier-property
+               ^
+               source-text-data-properties-whitespace
+                ^
+                source-text-data-properties-punctuation-separator
+                 ^
+                 source-text-data-properties-whitespace
+                  ^^^^^^^^^^^^
+                  source-text-data-properties-literal-string-unquoted

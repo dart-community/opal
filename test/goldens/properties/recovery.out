@@ -1,0 +1,76 @@
+bad.unicode = \u123G \u00 \u1 \u \uu0041
+^^^^^^^^^^^
+source-text-data-properties-identifier-property
+           ^
+           source-text-data-properties-whitespace
+            ^
+            source-text-data-properties-punctuation-separator
+             ^
+             source-text-data-properties-whitespace
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+              source-text-data-properties-literal-string-unquoted
+bad.at.end = \u12
+^^^^^^^^^^
+source-text-data-properties-identifier-property
+          ^
+          source-text-data-properties-whitespace
+           ^
+           source-text-data-properties-punctuation-separator
+            ^
+            source-text-data-properties-whitespace
+             ^^^^
+             source-text-data-properties-literal-string-unquoted
+bad.lone.u = \u
+^^^^^^^^^^
+source-text-data-properties-identifier-property
+          ^
+          source-text-data-properties-whitespace
+           ^
+           source-text-data-properties-punctuation-separator
+            ^
+            source-text-data-properties-whitespace
+             ^^
+             source-text-data-properties-literal-string-unquoted
+bad\u12key = recovered value
+^^^^^^^^^^
+source-text-data-properties-identifier-property
+          ^
+          source-text-data-properties-whitespace
+           ^
+           source-text-data-properties-punctuation-separator
+            ^
+            source-text-data-properties-whitespace
+             ^^^^^^^^^^^^^^^
+             source-text-data-properties-literal-string-unquoted
+bad\u=after malformed u
+^^^^^
+source-text-data-properties-identifier-property
+     ^
+     source-text-data-properties-punctuation-separator
+      ^^^^^^^^^^^^^^^^^
+      source-text-data-properties-literal-string-unquoted
+bad\u after malformed u with space
+^^^^^
+source-text-data-properties-identifier-property
+     ^
+     source-text-data-properties-whitespace
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      source-text-data-properties-literal-string-unquoted
+split.key\u\
+^^^^^^^^^^^
+source-text-data-properties-identifier-property
+           ^
+           source-text-data-properties-literal-string-escape
+  rest = recovered multiline key
+^^
+source-text-data-properties-whitespace
+  ^^^^
+  source-text-data-properties-identifier-property
+      ^
+      source-text-data-properties-whitespace
+       ^
+       source-text-data-properties-punctuation-separator
+        ^
+        source-text-data-properties-whitespace
+         ^^^^^^^^^^^^^^^^^^^^^^^
+         source-text-data-properties-literal-string-unquoted

@@ -1,0 +1,36 @@
+fruits = apple, banana, \
+         pear, cantaloupe, \
+         # not a comment, \
+         ! still value = yes
+
+even.slashes = ends here\\
+next.property = separate line
+
+odd.slashes = continues\\\
+  onto next line
+
+long.\
+  continued.\
+  #key =assembled key
+
+split.before.sep \
+  = separator on next line
+
+split.after.sep = \
+  = equals in value
+
+space.sep.multiline \
+  value on next line = still value
+
+\
+  #not.a.key.after.lone.slash = value
+
+\
+  = empty key after lone slash
+
+ended.by.blank = hello \
+
+after.blank = new property
+ended.by.spaces = world \
+    
+after.spaces = another property

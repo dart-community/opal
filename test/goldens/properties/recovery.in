@@ -1,0 +1,8 @@
+bad.unicode = \u123G \u00 \u1 \u \uu0041
+bad.at.end = \u12
+bad.lone.u = \u
+bad\u12key = recovered value
+bad\u=after malformed u
+bad\u after malformed u with space
+split.key\u\
+  rest = recovered multiline key

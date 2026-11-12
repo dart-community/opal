@@ -22,6 +22,7 @@ import 'language/llvm.dart';
 import 'language/markdown.dart';
 import 'language/mermaid.dart';
 import 'language/objective_c.dart';
+import 'language/properties.dart';
 import 'language/python.dart';
 import 'language/ruby.dart';
 import 'language/rust.dart';
@@ -60,8 +61,9 @@ abstract final class BuiltInLanguages {
     llvm,
     markdown,
     mermaid,
-    python,
     objectiveC,
+    properties,
+    python,
     ruby,
     rust,
     swift,
@@ -220,6 +222,9 @@ abstract final class BuiltInLanguages {
     grammar: const ObjectiveCGrammar(),
     baseTag: const Tag('objective-c', parent: Tags.codeSource),
   );
+
+  /// A tokenizing language implementation for Java `.properties` files.
+  static const Language properties = PropertiesLanguage();
 
   /// A tokenizing language implementation for the Python programming language.
   static final Language python = MatcherLanguage(

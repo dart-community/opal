@@ -1,0 +1,24 @@
+<script type="module">
+^
+source-text-markup-html-tag-punctuation-begin
+ ^^^^^^
+ source-text-markup-html-tag-tag-name
+       ^
+       source-text-markup-html-tag-whitespace
+        ^^^^
+        source-text-markup-html-tag-identifier-property
+            ^
+            source-text-markup-html-tag-punctuation-separator
+             ^
+             source-text-markup-html-tag-literal-string-quoted-double-literal-string-quoted-double-begin
+              ^^^^^^
+              source-text-markup-html-tag-literal-string-quoted-double-literal-string-unquoted
+                    ^
+                    source-text-markup-html-tag-literal-string-quoted-double-literal-string-quoted-double-end
+                     ^
+                     source-text-markup-html-tag-punctuation-end
+  const pending = a < b;
+^^
+source-text-markup-html-whitespace
+  ^^^^^^^^^^^^^^^^^^^^^^
+  source-text-markup-html-source-code-script

@@ -1,0 +1,131 @@
+set(y 2)
+^^^
+source-code-cmake-identifier-function
+   ^
+   source-code-cmake-punctuation
+    ^
+    source-code-cmake-literal-string-unquoted
+     ^
+     source-code-cmake-whitespace
+      ^
+      source-code-cmake-literal-number-integer
+       ^
+       source-code-cmake-punctuation
+foreach(n RANGE 3)
+^^^^^^^
+source-code-cmake-keyword-control
+       ^
+       source-code-cmake-punctuation
+        ^
+        source-code-cmake-literal-string-unquoted
+         ^
+         source-code-cmake-whitespace
+          ^^^^^
+          source-code-cmake-literal-string-unquoted
+               ^
+               source-code-cmake-whitespace
+                ^
+                source-code-cmake-literal-number-integer
+                 ^
+                 source-code-cmake-punctuation
+set(true_values ON yes TRUE)
+^^^
+source-code-cmake-identifier-function
+   ^
+   source-code-cmake-punctuation
+    ^^^^^^^^^^^
+    source-code-cmake-literal-string-unquoted
+               ^
+               source-code-cmake-whitespace
+                ^^
+                source-code-cmake-literal-boolean-true
+                  ^
+                  source-code-cmake-whitespace
+                   ^^^
+                   source-code-cmake-literal-boolean-true
+                      ^
+                      source-code-cmake-whitespace
+                       ^^^^
+                       source-code-cmake-literal-boolean-true
+                           ^
+                           source-code-cmake-punctuation
+set(false_values OFF no FALSE IGNORE NOTFOUND Foo_LIBRARY-NOTFOUND -NOTFOUND)
+^^^
+source-code-cmake-identifier-function
+   ^
+   source-code-cmake-punctuation
+    ^^^^^^^^^^^^
+    source-code-cmake-literal-string-unquoted
+                ^
+                source-code-cmake-whitespace
+                 ^^^
+                 source-code-cmake-literal-boolean-false
+                    ^
+                    source-code-cmake-whitespace
+                     ^^
+                     source-code-cmake-literal-boolean-false
+                       ^
+                       source-code-cmake-whitespace
+                        ^^^^^
+                        source-code-cmake-literal-boolean-false
+                             ^
+                             source-code-cmake-whitespace
+                              ^^^^^^
+                              source-code-cmake-literal-boolean-false
+                                    ^
+                                    source-code-cmake-whitespace
+                                     ^^^^^^^^
+                                     source-code-cmake-literal-boolean-false
+                                             ^
+                                             source-code-cmake-whitespace
+                                              ^^^^^^^^^^^^^^^^^^^^
+                                              source-code-cmake-literal-boolean-false
+                                                                  ^
+                                                                  source-code-cmake-whitespace
+                                                                   ^^^^^^^^^
+                                                                   source-code-cmake-literal-boolean-false
+                                                                            ^
+                                                                            source-code-cmake-punctuation
+set(not_literals Y N ON;OFF 1;2 ${x}-NOTFOUND NOTFOUND-x)
+^^^
+source-code-cmake-identifier-function
+   ^
+   source-code-cmake-punctuation
+    ^^^^^^^^^^^^
+    source-code-cmake-literal-string-unquoted
+                ^
+                source-code-cmake-whitespace
+                 ^
+                 source-code-cmake-literal-string-unquoted
+                  ^
+                  source-code-cmake-whitespace
+                   ^
+                   source-code-cmake-literal-string-unquoted
+                    ^
+                    source-code-cmake-whitespace
+                     ^^
+                     source-code-cmake-literal-string-unquoted
+                       ^
+                       source-code-cmake-punctuation-separator
+                        ^^^
+                        source-code-cmake-literal-string-unquoted
+                           ^
+                           source-code-cmake-whitespace
+                            ^
+                            source-code-cmake-literal-string-unquoted
+                             ^
+                             source-code-cmake-punctuation-separator
+                              ^
+                              source-code-cmake-literal-string-unquoted
+                               ^
+                               source-code-cmake-whitespace
+                                ^^^^
+                                source-code-cmake-identifier-variable
+                                    ^^^^^^^^^
+                                    source-code-cmake-literal-string-unquoted
+                                             ^
+                                             source-code-cmake-whitespace
+                                              ^^^^^^^^^^
+                                              source-code-cmake-literal-string-unquoted
+                                                        ^
+                                                        source-code-cmake-punctuation

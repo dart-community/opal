@@ -1,0 +1,81 @@
+#[==[
+^^^^^
+source-code-cmake-comment-block
+if(FALSE) # ${ignored}
+^^^^^^^^^^^^^^^^^^^^^^
+source-code-cmake-comment-block
+]=] still a comment
+^
+source-code-cmake-comment-block
+ ^
+ source-code-cmake-comment-block
+  ^
+  source-code-cmake-comment-block
+   ^^^^^^^^^^^^^^^^
+   source-code-cmake-comment-block
+]==]
+^^^^
+source-code-cmake-comment-block
+set(script [=[
+^^^
+source-code-cmake-identifier-function
+   ^
+   source-code-cmake-punctuation
+    ^^^^^^
+    source-code-cmake-literal-string-unquoted
+          ^
+          source-code-cmake-whitespace
+           ^^^
+           source-code-cmake-literal-string-quoted-bracket
+message("${name}") # $<CONFIG:Debug>
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+source-code-cmake-literal-string-quoted-bracket
+]] still literal
+^
+source-code-cmake-literal-string-quoted-bracket
+ ^
+ source-code-cmake-literal-string-quoted-bracket
+  ^^^^^^^^^^^^^^
+  source-code-cmake-literal-string-quoted-bracket
+]=] "${name}")
+^^^
+source-code-cmake-literal-string-quoted-bracket
+   ^
+   source-code-cmake-whitespace
+    ^
+    source-code-cmake-literal-string-quoted-double
+     ^^^^^^^
+     source-code-cmake-literal-string-quoted-double-identifier-variable
+            ^
+            source-code-cmake-literal-string-quoted-double
+             ^
+             source-code-cmake-punctuation
+message([[${literal}]] #[[ignore this )]] "done")
+^^^^^^^
+source-code-cmake-identifier-function
+       ^
+       source-code-cmake-punctuation
+        ^^
+        source-code-cmake-literal-string-quoted-bracket
+          ^^^^^^^^^^
+          source-code-cmake-literal-string-quoted-bracket
+                    ^^
+                    source-code-cmake-literal-string-quoted-bracket
+                      ^
+                      source-code-cmake-whitespace
+                       ^^^
+                       source-code-cmake-comment-block
+                          ^^^^^^^^^^^^^
+                          source-code-cmake-comment-block
+                                       ^^
+                                       source-code-cmake-comment-block
+                                         ^
+                                         source-code-cmake-whitespace
+                                          ^
+                                          source-code-cmake-literal-string-quoted-double
+                                           ^^^^
+                                           source-code-cmake-literal-string-quoted-double-literal-string-unquoted
+                                               ^
+                                               source-code-cmake-literal-string-quoted-double
+                                                ^
+                                                source-code-cmake-punctuation

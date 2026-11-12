@@ -1,0 +1,7 @@
+set(values ON off 42 -7 0xFF ON-call 12.cpp ${prefix}42)
+set(items first;second escaped\;item hash\#mark)
+set(path ${root}/$ENV{ARCH}/$CACHE{mode})
+message("literal \# and \;: \"${name}\" \${literal}
+  $ENV{HOME};$CACHE{mode} # still quoted") # line comment
+target_compile_definitions(app PRIVATE $<$<CONFIG:Debug>:DEBUG_BUILD>)
+target_include_directories(app PRIVATE "$<BUILD_INTERFACE:${root}/include>")

@@ -63,6 +63,20 @@ void main() {
         expect(BuiltInLanguages.all, contains(BuiltInLanguages.cSharp));
       });
 
+      test('includes CMake and its listfile name', () {
+        for (final name in [
+          'cmake',
+          'CMake',
+          'CMakeLists.txt',
+          ' CMAKELISTS.TXT ',
+        ]) {
+          expect(registry[name], same(BuiltInLanguages.cmake));
+        }
+        expect(BuiltInLanguages.cmake.name, 'cmake');
+        expect(BuiltInLanguages.all, contains(BuiltInLanguages.cmake));
+        expect(registry['txt'], same(BuiltInLanguages.text));
+      });
+
       test('includes diff language and fallbacks', () {
         for (final name in ['diff', 'patch', 'udiff', 'DIFF', ' Patch ']) {
           expect(registry[name], same(BuiltInLanguages.diff));

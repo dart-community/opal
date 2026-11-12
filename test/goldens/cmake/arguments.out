@@ -1,0 +1,201 @@
+set(values ON off 42 -7 0xFF ON-call 12.cpp ${prefix}42)
+^^^
+source-code-cmake-identifier-function
+   ^
+   source-code-cmake-punctuation
+    ^^^^^^
+    source-code-cmake-literal-string-unquoted
+          ^
+          source-code-cmake-whitespace
+           ^^
+           source-code-cmake-literal-boolean-true
+             ^
+             source-code-cmake-whitespace
+              ^^^
+              source-code-cmake-literal-boolean-false
+                 ^
+                 source-code-cmake-whitespace
+                  ^^
+                  source-code-cmake-literal-number-integer
+                    ^
+                    source-code-cmake-whitespace
+                     ^^
+                     source-code-cmake-literal-number-integer
+                       ^
+                       source-code-cmake-whitespace
+                        ^^^^
+                        source-code-cmake-literal-number-integer
+                            ^
+                            source-code-cmake-whitespace
+                             ^^^^^^^
+                             source-code-cmake-literal-string-unquoted
+                                    ^
+                                    source-code-cmake-whitespace
+                                     ^^^^^^
+                                     source-code-cmake-literal-string-unquoted
+                                           ^
+                                           source-code-cmake-whitespace
+                                            ^^^^^^^^^
+                                            source-code-cmake-identifier-variable
+                                                     ^^
+                                                     source-code-cmake-literal-string-unquoted
+                                                       ^
+                                                       source-code-cmake-punctuation
+set(items first;second escaped\;item hash\#mark)
+^^^
+source-code-cmake-identifier-function
+   ^
+   source-code-cmake-punctuation
+    ^^^^^
+    source-code-cmake-literal-string-unquoted
+         ^
+         source-code-cmake-whitespace
+          ^^^^^
+          source-code-cmake-literal-string-unquoted
+               ^
+               source-code-cmake-punctuation-separator
+                ^^^^^^
+                source-code-cmake-literal-string-unquoted
+                      ^
+                      source-code-cmake-whitespace
+                       ^^^^^^^
+                       source-code-cmake-literal-string-unquoted
+                              ^^
+                              source-code-cmake-literal-string-escape
+                                ^^^^
+                                source-code-cmake-literal-string-unquoted
+                                    ^
+                                    source-code-cmake-whitespace
+                                     ^^^^
+                                     source-code-cmake-literal-string-unquoted
+                                         ^^
+                                         source-code-cmake-literal-string-escape
+                                           ^^^^
+                                           source-code-cmake-literal-string-unquoted
+                                               ^
+                                               source-code-cmake-punctuation
+set(path ${root}/$ENV{ARCH}/$CACHE{mode})
+^^^
+source-code-cmake-identifier-function
+   ^
+   source-code-cmake-punctuation
+    ^^^^
+    source-code-cmake-literal-string-unquoted
+        ^
+        source-code-cmake-whitespace
+         ^^^^^^^
+         source-code-cmake-identifier-variable
+                ^
+                source-code-cmake-literal-string-unquoted
+                 ^^^^^^^^^^
+                 source-code-cmake-identifier-variable
+                           ^
+                           source-code-cmake-literal-string-unquoted
+                            ^^^^^^^^^^^^
+                            source-code-cmake-identifier-variable
+                                        ^
+                                        source-code-cmake-punctuation
+message("literal \# and \;: \"${name}\" \${literal}
+^^^^^^^
+source-code-cmake-identifier-function
+       ^
+       source-code-cmake-punctuation
+        ^
+        source-code-cmake-literal-string-quoted-double
+         ^^^^^^^^
+         source-code-cmake-literal-string-quoted-double-literal-string-unquoted
+                 ^^
+                 source-code-cmake-literal-string-quoted-double-literal-string-escape
+                   ^^^^^
+                   source-code-cmake-literal-string-quoted-double-literal-string-unquoted
+                        ^^
+                        source-code-cmake-literal-string-quoted-double-literal-string-escape
+                          ^^
+                          source-code-cmake-literal-string-quoted-double-literal-string-unquoted
+                            ^^
+                            source-code-cmake-literal-string-quoted-double-literal-string-escape
+                              ^^^^^^^
+                              source-code-cmake-literal-string-quoted-double-identifier-variable
+                                     ^^
+                                     source-code-cmake-literal-string-quoted-double-literal-string-escape
+                                       ^
+                                       source-code-cmake-literal-string-quoted-double-literal-string-unquoted
+                                        ^^
+                                        source-code-cmake-literal-string-quoted-double-literal-string-escape
+                                          ^^^^^^^^^
+                                          source-code-cmake-literal-string-quoted-double-literal-string-unquoted
+  $ENV{HOME};$CACHE{mode} # still quoted") # line comment
+^^
+source-code-cmake-literal-string-quoted-double-literal-string-unquoted
+  ^^^^^^^^^^
+  source-code-cmake-literal-string-quoted-double-identifier-variable
+            ^
+            source-code-cmake-literal-string-quoted-double-literal-string-unquoted
+             ^^^^^^^^^^^^
+             source-code-cmake-literal-string-quoted-double-identifier-variable
+                         ^^^^^^^^^^^^^^^
+                         source-code-cmake-literal-string-quoted-double-literal-string-unquoted
+                                        ^
+                                        source-code-cmake-literal-string-quoted-double
+                                         ^
+                                         source-code-cmake-punctuation
+                                          ^
+                                          source-code-cmake-whitespace
+                                           ^^^^^^^^^^^^^^
+                                           source-code-cmake-comment-line
+target_compile_definitions(app PRIVATE $<$<CONFIG:Debug>:DEBUG_BUILD>)
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+source-code-cmake-identifier-function
+                          ^
+                          source-code-cmake-punctuation
+                           ^^^
+                           source-code-cmake-literal-string-unquoted
+                              ^
+                              source-code-cmake-whitespace
+                               ^^^^^^^
+                               source-code-cmake-literal-string-unquoted
+                                      ^
+                                      source-code-cmake-whitespace
+                                       ^^
+                                       source-code-cmake-literal-string-interpolation
+                                         ^^
+                                         source-code-cmake-literal-string-interpolation
+                                           ^^^^^^^^^^^^
+                                           source-code-cmake-literal-string-interpolation
+                                                       ^
+                                                       source-code-cmake-literal-string-interpolation
+                                                        ^^^^^^^^^^^^
+                                                        source-code-cmake-literal-string-interpolation
+                                                                    ^
+                                                                    source-code-cmake-literal-string-interpolation
+                                                                     ^
+                                                                     source-code-cmake-punctuation
+target_include_directories(app PRIVATE "$<BUILD_INTERFACE:${root}/include>")
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+source-code-cmake-identifier-function
+                          ^
+                          source-code-cmake-punctuation
+                           ^^^
+                           source-code-cmake-literal-string-unquoted
+                              ^
+                              source-code-cmake-whitespace
+                               ^^^^^^^
+                               source-code-cmake-literal-string-unquoted
+                                      ^
+                                      source-code-cmake-whitespace
+                                       ^
+                                       source-code-cmake-literal-string-quoted-double
+                                        ^^
+                                        source-code-cmake-literal-string-quoted-double-literal-string-interpolation
+                                          ^^^^^^^^^^^^^^^^
+                                          source-code-cmake-literal-string-quoted-double-literal-string-interpolation
+                                                          ^^^^^^^
+                                                          source-code-cmake-literal-string-quoted-double-literal-string-interpolation-identifier-variable
+                                                                 ^^^^^^^^
+                                                                 source-code-cmake-literal-string-quoted-double-literal-string-interpolation
+                                                                         ^
+                                                                         source-code-cmake-literal-string-quoted-double-literal-string-interpolation
+                                                                          ^
+                                                                          source-code-cmake-literal-string-quoted-double
+                                                                           ^
+                                                                           source-code-cmake-punctuation

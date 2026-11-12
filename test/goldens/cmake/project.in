@@ -1,0 +1,15 @@
+cmake_minimum_required(VERSION 3.24)
+project(example LANGUAGES CXX)
+find_package(Threads REQUIRED)
+option(BUILD_EXAMPLE "Build the example" ON)
+
+function(link_threads target)
+  target_link_libraries(${target} PRIVATE Threads::Threads)
+endfunction()
+
+IF (BUILD_EXAMPLE AND (UNIX OR WIN32))
+  add_executable(example
+    src/main.cpp
+    src/worker.cpp)
+  Link_Threads(example)
+EnDiF()

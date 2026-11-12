@@ -1,0 +1,9 @@
+#[==[
+if(FALSE) # ${ignored}
+]=] still a comment
+]==]
+set(script [=[
+message("${name}") # $<CONFIG:Debug>
+]] still literal
+]=] "${name}")
+message([[${literal}]] #[[ignore this )]] "done")

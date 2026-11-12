@@ -1,0 +1,3 @@
+set(flat ${name} $ENV{HOME} $CACHE{mode} ${escaped\;name})
+set(nested ${outer_${inner}_suffix} $ENV{${env_name}} ${a_${b_${c}}})
+message("${lib_${name}}/include" $<$<BOOL:${use_${lang}}>:on>)

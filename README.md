@@ -53,6 +53,7 @@ the specified default and alternative IDs:
 - C (`c`)
 - C++ (`cpp`)
 - C# (`csharp`, `cs`, `c#`, `c-sharp`)
+- CMake (`cmake`, `CMakeLists.txt`)
 - CSS (`css`)
 - Dart (`dart`)
 - Diff (`diff`, `patch`, `udiff`)

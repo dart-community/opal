@@ -127,6 +127,7 @@ final Map<String, String> _defaultFallbackLanguageNames = {
   'cs': BuiltInLanguages.cSharp.name,
   'c#': BuiltInLanguages.cSharp.name,
   'c-sharp': BuiltInLanguages.cSharp.name,
+  'cmakelists.txt': BuiltInLanguages.cmake.name,
   'frag': BuiltInLanguages.glsl.name,
   'vert': BuiltInLanguages.glsl.name,
   'geom': BuiltInLanguages.glsl.name,

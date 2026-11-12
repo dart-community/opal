@@ -6,6 +6,7 @@ import 'language/bnf.dart';
 import 'language/c.dart';
 import 'language/c_plus_plus.dart';
 import 'language/c_sharp.dart';
+import 'language/cmake.dart';
 import 'language/css.dart';
 import 'language/dart.dart';
 import 'language/diff.dart';
@@ -47,6 +48,7 @@ abstract final class BuiltInLanguages {
     c,
     cPlusPlus,
     cSharp,
+    cmake,
     css,
     dart,
     diff,
@@ -113,6 +115,14 @@ abstract final class BuiltInLanguages {
     name: 'csharp',
     grammar: const CSharpGrammar(),
     baseTag: const Tag('csharp', parent: Tags.codeSource),
+  );
+
+  /// A tokenizing language implementation for
+  /// CMake listfiles (`CMakeLists.txt`) and `.cmake` scripts and modules.
+  static final Language cmake = MatcherLanguage(
+    name: 'cmake',
+    grammar: const CMakeGrammar(),
+    baseTag: const Tag('cmake', parent: Tags.codeSource),
   );
 
   /// A tokenizing language implementation for CSS (Cascading Style Sheets).

@@ -1,0 +1,5 @@
+set(y 2)
+foreach(n RANGE 3)
+set(true_values ON yes TRUE)
+set(false_values OFF no FALSE IGNORE NOTFOUND Foo_LIBRARY-NOTFOUND -NOTFOUND)
+set(not_literals Y N ON;OFF 1;2 ${x}-NOTFOUND NOTFOUND-x)

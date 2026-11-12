@@ -1,0 +1,175 @@
+cmake_minimum_required(VERSION 3.24)
+^^^^^^^^^^^^^^^^^^^^^^
+source-code-cmake-identifier-function
+                      ^
+                      source-code-cmake-punctuation
+                       ^^^^^^^
+                       source-code-cmake-literal-string-unquoted
+                              ^
+                              source-code-cmake-whitespace
+                               ^^^^
+                               source-code-cmake-literal-string-unquoted
+                                   ^
+                                   source-code-cmake-punctuation
+project(example LANGUAGES CXX)
+^^^^^^^
+source-code-cmake-identifier-function
+       ^
+       source-code-cmake-punctuation
+        ^^^^^^^
+        source-code-cmake-literal-string-unquoted
+               ^
+               source-code-cmake-whitespace
+                ^^^^^^^^^
+                source-code-cmake-literal-string-unquoted
+                         ^
+                         source-code-cmake-whitespace
+                          ^^^
+                          source-code-cmake-literal-string-unquoted
+                             ^
+                             source-code-cmake-punctuation
+find_package(Threads REQUIRED)
+^^^^^^^^^^^^
+source-code-cmake-identifier-function
+            ^
+            source-code-cmake-punctuation
+             ^^^^^^^
+             source-code-cmake-literal-string-unquoted
+                    ^
+                    source-code-cmake-whitespace
+                     ^^^^^^^^
+                     source-code-cmake-literal-string-unquoted
+                             ^
+                             source-code-cmake-punctuation
+option(BUILD_EXAMPLE "Build the example" ON)
+^^^^^^
+source-code-cmake-identifier-function
+      ^
+      source-code-cmake-punctuation
+       ^^^^^^^^^^^^^
+       source-code-cmake-literal-string-unquoted
+                    ^
+                    source-code-cmake-whitespace
+                     ^
+                     source-code-cmake-literal-string-quoted-double
+                      ^^^^^^^^^^^^^^^^^
+                      source-code-cmake-literal-string-quoted-double-literal-string-unquoted
+                                       ^
+                                       source-code-cmake-literal-string-quoted-double
+                                        ^
+                                        source-code-cmake-whitespace
+                                         ^^
+                                         source-code-cmake-literal-boolean-true
+                                           ^
+                                           source-code-cmake-punctuation
+
+function(link_threads target)
+^^^^^^^^
+source-code-cmake-keyword-declaration
+        ^
+        source-code-cmake-punctuation
+         ^^^^^^^^^^^^
+         source-code-cmake-literal-string-unquoted
+                     ^
+                     source-code-cmake-whitespace
+                      ^^^^^^
+                      source-code-cmake-literal-string-unquoted
+                            ^
+                            source-code-cmake-punctuation
+  target_link_libraries(${target} PRIVATE Threads::Threads)
+^^
+source-code-cmake-whitespace
+  ^^^^^^^^^^^^^^^^^^^^^
+  source-code-cmake-identifier-function
+                       ^
+                       source-code-cmake-punctuation
+                        ^^^^^^^^^
+                        source-code-cmake-identifier-variable
+                                 ^
+                                 source-code-cmake-whitespace
+                                  ^^^^^^^
+                                  source-code-cmake-literal-string-unquoted
+                                         ^
+                                         source-code-cmake-whitespace
+                                          ^^^^^^^^^^^^^^^^
+                                          source-code-cmake-literal-string-unquoted
+                                                          ^
+                                                          source-code-cmake-punctuation
+endfunction()
+^^^^^^^^^^^
+source-code-cmake-keyword-declaration
+           ^
+           source-code-cmake-punctuation
+            ^
+            source-code-cmake-punctuation
+
+IF (BUILD_EXAMPLE AND (UNIX OR WIN32))
+^^
+source-code-cmake-keyword-control
+  ^
+  source-code-cmake-whitespace
+   ^
+   source-code-cmake-punctuation
+    ^^^^^^^^^^^^^
+    source-code-cmake-literal-string-unquoted
+                 ^
+                 source-code-cmake-whitespace
+                  ^^^
+                  source-code-cmake-literal-string-unquoted
+                     ^
+                     source-code-cmake-whitespace
+                      ^
+                      source-code-cmake-punctuation
+                       ^^^^
+                       source-code-cmake-literal-string-unquoted
+                           ^
+                           source-code-cmake-whitespace
+                            ^^
+                            source-code-cmake-literal-string-unquoted
+                              ^
+                              source-code-cmake-whitespace
+                               ^^^^^
+                               source-code-cmake-literal-string-unquoted
+                                    ^
+                                    source-code-cmake-punctuation
+                                     ^
+                                     source-code-cmake-punctuation
+  add_executable(example
+^^
+source-code-cmake-whitespace
+  ^^^^^^^^^^^^^^
+  source-code-cmake-identifier-function
+                ^
+                source-code-cmake-punctuation
+                 ^^^^^^^
+                 source-code-cmake-literal-string-unquoted
+    src/main.cpp
+^^^^
+source-code-cmake-whitespace
+    ^^^^^^^^^^^^
+    source-code-cmake-literal-string-unquoted
+    src/worker.cpp)
+^^^^
+source-code-cmake-whitespace
+    ^^^^^^^^^^^^^^
+    source-code-cmake-literal-string-unquoted
+                  ^
+                  source-code-cmake-punctuation
+  Link_Threads(example)
+^^
+source-code-cmake-whitespace
+  ^^^^^^^^^^^^
+  source-code-cmake-identifier-function
+              ^
+              source-code-cmake-punctuation
+               ^^^^^^^
+               source-code-cmake-literal-string-unquoted
+                      ^
+                      source-code-cmake-punctuation
+EnDiF()
+^^^^^
+source-code-cmake-keyword-control
+     ^
+     source-code-cmake-punctuation
+      ^
+      source-code-cmake-punctuation

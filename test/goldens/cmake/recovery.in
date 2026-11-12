@@ -1,0 +1,4 @@
+set(incomplete $<CONFIG:Debug "$<BOOL:${x}" $<$<CONFIG:Debug other)
+set(malformed ${not valid} ${weird@name} ${a${b@}} ${unterminated
+  next)
+message(after)

@@ -1,0 +1,9 @@
+endpoint=https://example.org:8443/?tab=1#preview
+message = ready ; waiting # still text
+color = #ffeecc
+empty:
+quoted empty = ""
+labels = "draft" and "final"
+=missing key
+[unfinished:section
+next: valid

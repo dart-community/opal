@@ -1,0 +1,100 @@
+[section] ; trailing comment
+^
+source-text-data-ini-punctuation
+ ^^^^^^^
+ source-text-data-ini-identifier-property
+        ^
+        source-text-data-ini-punctuation
+         ^
+         source-text-data-ini-whitespace
+          ^^^^^^^^^^^^^^^^^^
+          source-text-data-ini-comment-line
+[section]# see [other]
+^
+source-text-data-ini-punctuation
+ ^^^^^^^
+ source-text-data-ini-identifier-property
+        ^
+        source-text-data-ini-punctuation
+         ^^^^^^^^^^^^^
+         source-text-data-ini-comment-line
+[a] ; see [b]
+^
+source-text-data-ini-punctuation
+ ^
+ source-text-data-ini-identifier-property
+  ^
+  source-text-data-ini-punctuation
+   ^
+   source-text-data-ini-whitespace
+    ^^^^^^^^^
+    source-text-data-ini-comment-line
+[[Mm]akefile]
+^
+source-text-data-ini-punctuation
+ ^^^^^^^^^^^
+ source-text-data-ini-identifier-property
+            ^
+            source-text-data-ini-punctuation
+[*.{json,yml}]
+^
+source-text-data-ini-punctuation
+ ^^^^^^^^^^^^
+ source-text-data-ini-identifier-property
+             ^
+             source-text-data-ini-punctuation
+[ spaced name ]  ; padded
+^
+source-text-data-ini-punctuation
+ ^
+ source-text-data-ini-whitespace
+  ^^^^^^^^^^^
+  source-text-data-ini-identifier-property
+             ^
+             source-text-data-ini-whitespace
+              ^
+              source-text-data-ini-punctuation
+               ^^
+               source-text-data-ini-whitespace
+                 ^^^^^^^^
+                 source-text-data-ini-comment-line
+[]
+^^
+source-text-data-ini-unknown
+[ ]
+^^^
+source-text-data-ini-unknown
+[section] trailing text
+^^^^^^^^^^^^^^^^^^^^^^^
+source-text-data-ini-unknown
+   
+^^^
+source-text-data-ini-whitespace
+	key	=	value	 
+^
+source-text-data-ini-whitespace
+ ^^^
+ source-text-data-ini-identifier-property
+    ^
+    source-text-data-ini-whitespace
+     ^
+     source-text-data-ini-punctuation-separator
+      ^
+      source-text-data-ini-whitespace
+       ^^^^^
+       source-text-data-ini-literal-string-unquoted
+            ^^
+            source-text-data-ini-whitespace
+trailing = space   
+^^^^^^^^
+source-text-data-ini-identifier-property
+        ^
+        source-text-data-ini-whitespace
+         ^
+         source-text-data-ini-punctuation-separator
+          ^
+          source-text-data-ini-whitespace
+           ^^^^^
+           source-text-data-ini-literal-string-unquoted
+                ^^^
+                source-text-data-ini-whitespace

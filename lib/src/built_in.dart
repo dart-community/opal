@@ -14,6 +14,7 @@ import 'language/glsl.dart';
 import 'language/go.dart';
 import 'language/groovy.dart';
 import 'language/html.dart';
+import 'language/ini.dart';
 import 'language/java.dart';
 import 'language/js.dart';
 import 'language/json.dart';
@@ -54,6 +55,7 @@ abstract final class BuiltInLanguages {
     go,
     groovy,
     html,
+    ini,
     java,
     js,
     json,
@@ -166,6 +168,9 @@ abstract final class BuiltInLanguages {
     grammar: const HtmlGrammar(),
     baseTag: const Tag('html', parent: Tags.markupSource),
   );
+
+  /// A tokenizing language implementation for INI configuration files.
+  static const Language ini = IniLanguage();
 
   /// A tokenizing language implementation for the Java programming language.
   static final Language java = MatcherLanguage(

@@ -1,0 +1,77 @@
+; Opal preview settings
+^^^^^^^^^^^^^^^^^^^^^^^
+source-text-data-ini-comment-line
+theme = light
+^^^^^
+source-text-data-ini-identifier-property
+     ^
+     source-text-data-ini-whitespace
+      ^
+      source-text-data-ini-punctuation-separator
+       ^
+       source-text-data-ini-whitespace
+        ^^^^^
+        source-text-data-ini-literal-string-unquoted
+
+[preview server]
+^
+source-text-data-ini-punctuation
+ ^^^^^^^^^^^^^^
+ source-text-data-ini-identifier-property
+               ^
+               source-text-data-ini-punctuation
+  # Local development
+^^
+source-text-data-ini-whitespace
+  ^^^^^^^^^^^^^^^^^^^
+  source-text-data-ini-comment-line
+  listen port : 8080
+^^
+source-text-data-ini-whitespace
+  ^^^^^^^^^^^
+  source-text-data-ini-identifier-property
+             ^
+             source-text-data-ini-whitespace
+              ^
+              source-text-data-ini-punctuation-separator
+               ^
+               source-text-data-ini-whitespace
+                ^^^^
+                source-text-data-ini-literal-string-unquoted
+enabled=true
+^^^^^^^
+source-text-data-ini-identifier-property
+       ^
+       source-text-data-ini-punctuation-separator
+        ^^^^
+        source-text-data-ini-literal-string-unquoted
+
+[labels]
+^
+source-text-data-ini-punctuation
+ ^^^^^^
+ source-text-data-ini-identifier-property
+       ^
+       source-text-data-ini-punctuation
+title = "Opal Preview"
+^^^^^
+source-text-data-ini-identifier-property
+     ^
+     source-text-data-ini-whitespace
+      ^
+      source-text-data-ini-punctuation-separator
+       ^
+       source-text-data-ini-whitespace
+        ^^^^^^^^^^^^^^
+        source-text-data-ini-literal-string-quoted-double
+status = 'Ready'
+^^^^^^
+source-text-data-ini-identifier-property
+      ^
+      source-text-data-ini-whitespace
+       ^
+       source-text-data-ini-punctuation-separator
+        ^
+        source-text-data-ini-whitespace
+         ^^^^^^^
+         source-text-data-ini-literal-string-quoted-single

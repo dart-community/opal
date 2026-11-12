@@ -1,0 +1,11 @@
+; Opal preview settings
+theme = light
+
+[preview server]
+  # Local development
+  listen port : 8080
+enabled=true
+
+[labels]
+title = "Opal Preview"
+status = 'Ready'

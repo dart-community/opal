@@ -1,0 +1,12 @@
+[section] ; trailing comment
+[section]# see [other]
+[a] ; see [b]
+[[Mm]akefile]
+[*.{json,yml}]
+[ spaced name ]  ; padded
+[]
+[ ]
+[section] trailing text
+   
+	key	=	value	 
+trailing = space   

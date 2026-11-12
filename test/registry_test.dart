@@ -86,6 +86,13 @@ void main() {
         expect(BuiltInLanguages.all, contains(BuiltInLanguages.html));
       });
 
+      test('includes ini language', () {
+        expect(registry['ini'], same(BuiltInLanguages.ini));
+        expect(registry[' INI '], same(BuiltInLanguages.ini));
+        expect(BuiltInLanguages.ini.name, 'ini');
+        expect(BuiltInLanguages.all, contains(BuiltInLanguages.ini));
+      });
+
       test('includes mermaid language and fallback', () {
         for (final name in ['mermaid', 'mmd', 'MERMAID', ' MMD ']) {
           expect(registry[name], same(BuiltInLanguages.mermaid));

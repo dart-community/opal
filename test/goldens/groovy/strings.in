@@ -1,0 +1,22 @@
+def single = 'It\'s $literal, \$5, \t and \u0041'
+def tripleSingle = '''Line 'one', \$5, and ''two''\n'''
+def gString = "Hi $user.name. Pair: $first$second, \"ok\", \$5, ${-> count + 1}"
+def nested = "${items.collect { "${it.trim()}" }.join(', ')}"
+def tripleDouble = """
+  Total: \$${
+    items.size()
+  } for "guest"
+  It's ${items.join(', ')}
+"""
+def regex = /^\d+\s+\/path\/$user.id${ext}$/
+def nestedSlashy = /outer ${ "inner /slash/ ${1 / 2}" }/
+def ratio = total / count / 2 + (a + b) / list[0]
+def wrappedRatio = total
+  / count
+  /divisor
+ratio
+  /= count / 2
+def dollarSlashy = $/
+  Hello $name and ${1 + 2}!
+  Escapes: $$5, $$$/, $/$$, C:\temp\file, $ standalone
+/$

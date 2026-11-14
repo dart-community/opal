@@ -1,0 +1,361 @@
+plugins {
+^^^^^^^
+source-code-groovy-identifier-function
+       ^
+       source-code-groovy-whitespace
+        ^
+        source-code-groovy-punctuation
+  id 'groovy'
+^^
+source-code-groovy-whitespace
+  ^^
+  source-code-groovy-identifier-function
+    ^
+    source-code-groovy-whitespace
+     ^
+     source-code-groovy-literal-string-quoted-single-literal-string-quoted-single-begin
+      ^^^^^^
+      source-code-groovy-literal-string-quoted-single-literal-string-unquoted
+            ^
+            source-code-groovy-literal-string-quoted-single-literal-string-quoted-single-end
+  id 'com.github.johnrengelman.shadow' version '8.1.1' apply false
+^^
+source-code-groovy-whitespace
+  ^^
+  source-code-groovy-identifier-function
+    ^
+    source-code-groovy-whitespace
+     ^
+     source-code-groovy-literal-string-quoted-single-literal-string-quoted-single-begin
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      source-code-groovy-literal-string-quoted-single-literal-string-unquoted
+                                     ^
+                                     source-code-groovy-literal-string-quoted-single-literal-string-quoted-single-end
+                                      ^
+                                      source-code-groovy-whitespace
+                                       ^^^^^^^
+                                       source-code-groovy-identifier
+                                              ^
+                                              source-code-groovy-whitespace
+                                               ^
+                                               source-code-groovy-literal-string-quoted-single-literal-string-quoted-single-begin
+                                                ^^^^^
+                                                source-code-groovy-literal-string-quoted-single-literal-string-unquoted
+                                                     ^
+                                                     source-code-groovy-literal-string-quoted-single-literal-string-quoted-single-end
+                                                      ^
+                                                      source-code-groovy-whitespace
+                                                       ^^^^^
+                                                       source-code-groovy-identifier
+                                                            ^
+                                                            source-code-groovy-whitespace
+                                                             ^^^^^
+                                                             source-code-groovy-literal-boolean-false
+}
+^
+source-code-groovy-punctuation
+
+apply plugin: 'maven-publish'
+^^^^^
+source-code-groovy-identifier-function
+     ^
+     source-code-groovy-whitespace
+      ^^^^^^
+      source-code-groovy-identifier
+            ^
+            source-code-groovy-punctuation-separator
+             ^
+             source-code-groovy-whitespace
+              ^
+              source-code-groovy-literal-string-quoted-single-literal-string-quoted-single-begin
+               ^^^^^^^^^^^^^
+               source-code-groovy-literal-string-quoted-single-literal-string-unquoted
+                            ^
+                            source-code-groovy-literal-string-quoted-single-literal-string-quoted-single-end
+
+group = 'org.example'
+^^^^^
+source-code-groovy-identifier
+     ^
+     source-code-groovy-whitespace
+      ^
+      source-code-groovy-keyword-operator
+       ^
+       source-code-groovy-whitespace
+        ^
+        source-code-groovy-literal-string-quoted-single-literal-string-quoted-single-begin
+         ^^^^^^^^^^^
+         source-code-groovy-literal-string-quoted-single-literal-string-unquoted
+                    ^
+                    source-code-groovy-literal-string-quoted-single-literal-string-quoted-single-end
+version = '1.0.0'
+^^^^^^^
+source-code-groovy-identifier
+       ^
+       source-code-groovy-whitespace
+        ^
+        source-code-groovy-keyword-operator
+         ^
+         source-code-groovy-whitespace
+          ^
+          source-code-groovy-literal-string-quoted-single-literal-string-quoted-single-begin
+           ^^^^^
+           source-code-groovy-literal-string-quoted-single-literal-string-unquoted
+                ^
+                source-code-groovy-literal-string-quoted-single-literal-string-quoted-single-end
+
+repositories {
+^^^^^^^^^^^^
+source-code-groovy-identifier-function
+            ^
+            source-code-groovy-whitespace
+             ^
+             source-code-groovy-punctuation
+  mavenCentral()
+^^
+source-code-groovy-whitespace
+  ^^^^^^^^^^^^
+  source-code-groovy-identifier-function
+              ^
+              source-code-groovy-punctuation
+               ^
+               source-code-groovy-punctuation
+}
+^
+source-code-groovy-punctuation
+
+dependencies {
+^^^^^^^^^^^^
+source-code-groovy-identifier-function
+            ^
+            source-code-groovy-whitespace
+             ^
+             source-code-groovy-punctuation
+  implementation 'org.apache.groovy:groovy:6.0.0'
+^^
+source-code-groovy-whitespace
+  ^^^^^^^^^^^^^^
+  source-code-groovy-identifier-function
+                ^
+                source-code-groovy-whitespace
+                 ^
+                 source-code-groovy-literal-string-quoted-single-literal-string-quoted-single-begin
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                  source-code-groovy-literal-string-quoted-single-literal-string-unquoted
+                                                ^
+                                                source-code-groovy-literal-string-quoted-single-literal-string-quoted-single-end
+  testImplementation 'org.spockframework:spock-core:2.4-groovy-5.0'
+^^
+source-code-groovy-whitespace
+  ^^^^^^^^^^^^^^^^^^
+  source-code-groovy-identifier-function
+                    ^
+                    source-code-groovy-whitespace
+                     ^
+                     source-code-groovy-literal-string-quoted-single-literal-string-quoted-single-begin
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                      source-code-groovy-literal-string-quoted-single-literal-string-unquoted
+                                                                  ^
+                                                                  source-code-groovy-literal-string-quoted-single-literal-string-quoted-single-end
+}
+^
+source-code-groovy-punctuation
+
+publishing {
+^^^^^^^^^^
+source-code-groovy-identifier-function
+          ^
+          source-code-groovy-whitespace
+           ^
+           source-code-groovy-punctuation
+  from components.java
+^^
+source-code-groovy-whitespace
+  ^^^^
+  source-code-groovy-identifier-function
+      ^
+      source-code-groovy-whitespace
+       ^^^^^^^^^^
+       source-code-groovy-identifier
+                 ^
+                 source-code-groovy-punctuation-accessor
+                  ^^^^
+                  source-code-groovy-identifier
+}
+^
+source-code-groovy-punctuation
+
+def project = [name: 'demo']
+^^^
+source-code-groovy-keyword-declaration-def
+   ^
+   source-code-groovy-whitespace
+    ^^^^^^^
+    source-code-groovy-identifier
+           ^
+           source-code-groovy-whitespace
+            ^
+            source-code-groovy-keyword-operator
+             ^
+             source-code-groovy-whitespace
+              ^
+              source-code-groovy-punctuation
+               ^^^^
+               source-code-groovy-identifier
+                   ^
+                   source-code-groovy-punctuation-separator
+                    ^
+                    source-code-groovy-whitespace
+                     ^
+                     source-code-groovy-literal-string-quoted-single-literal-string-quoted-single-begin
+                      ^^^^
+                      source-code-groovy-literal-string-quoted-single-literal-string-unquoted
+                          ^
+                          source-code-groovy-literal-string-quoted-single-literal-string-quoted-single-end
+                           ^
+                           source-code-groovy-punctuation
+for (task in tasks) {
+^^^
+source-code-groovy-keyword-control-for
+   ^
+   source-code-groovy-whitespace
+    ^
+    source-code-groovy-punctuation
+     ^^^^
+     source-code-groovy-identifier
+         ^
+         source-code-groovy-whitespace
+          ^^
+          source-code-groovy-keyword-in
+            ^
+            source-code-groovy-whitespace
+             ^^^^^
+             source-code-groovy-identifier
+                  ^
+                  source-code-groovy-punctuation
+                   ^
+                   source-code-groovy-whitespace
+                    ^
+                    source-code-groovy-punctuation
+  tasks.named('test') {
+^^
+source-code-groovy-whitespace
+  ^^^^^
+  source-code-groovy-identifier
+       ^
+       source-code-groovy-punctuation-accessor
+        ^^^^^
+        source-code-groovy-identifier-function
+             ^
+             source-code-groovy-punctuation
+              ^
+              source-code-groovy-literal-string-quoted-single-literal-string-quoted-single-begin
+               ^^^^
+               source-code-groovy-literal-string-quoted-single-literal-string-unquoted
+                   ^
+                   source-code-groovy-literal-string-quoted-single-literal-string-quoted-single-end
+                    ^
+                    source-code-groovy-punctuation
+                     ^
+                     source-code-groovy-whitespace
+                      ^
+                      source-code-groovy-punctuation
+    maxParallelForks = 2
+^^^^
+source-code-groovy-whitespace
+    ^^^^^^^^^^^^^^^^
+    source-code-groovy-identifier
+                    ^
+                    source-code-groovy-whitespace
+                     ^
+                     source-code-groovy-keyword-operator
+                      ^
+                      source-code-groovy-whitespace
+                       ^
+                       source-code-groovy-literal-number-integer
+    delete buildDir
+^^^^
+source-code-groovy-whitespace
+    ^^^^^^
+    source-code-groovy-identifier-function
+          ^
+          source-code-groovy-whitespace
+           ^^^^^^^^
+           source-code-groovy-identifier
+    useJUnitPlatform()
+^^^^
+source-code-groovy-whitespace
+    ^^^^^^^^^^^^^^^^
+    source-code-groovy-identifier-function
+                    ^
+                    source-code-groovy-punctuation
+                     ^
+                     source-code-groovy-punctuation
+  }
+^^
+source-code-groovy-whitespace
+  ^
+  source-code-groovy-punctuation
+}
+^
+source-code-groovy-punctuation
+
+tasks.register('hello') {
+^^^^^
+source-code-groovy-identifier
+     ^
+     source-code-groovy-punctuation-accessor
+      ^^^^^^^^
+      source-code-groovy-identifier-function
+              ^
+              source-code-groovy-punctuation
+               ^
+               source-code-groovy-literal-string-quoted-single-literal-string-quoted-single-begin
+                ^^^^^
+                source-code-groovy-literal-string-quoted-single-literal-string-unquoted
+                     ^
+                     source-code-groovy-literal-string-quoted-single-literal-string-quoted-single-end
+                      ^
+                      source-code-groovy-punctuation
+                       ^
+                       source-code-groovy-whitespace
+                        ^
+                        source-code-groovy-punctuation
+  doLast { println "Hello from ${project.name}" }
+^^
+source-code-groovy-whitespace
+  ^^^^^^
+  source-code-groovy-identifier-function
+        ^
+        source-code-groovy-whitespace
+         ^
+         source-code-groovy-punctuation
+          ^
+          source-code-groovy-whitespace
+           ^^^^^^^
+           source-code-groovy-identifier-function
+                  ^
+                  source-code-groovy-whitespace
+                   ^
+                   source-code-groovy-literal-string-quoted-double-literal-string-quoted-double-begin
+                    ^^^^^^^^^^^
+                    source-code-groovy-literal-string-quoted-double-literal-string-unquoted
+                               ^^
+                               source-code-groovy-literal-string-quoted-double-literal-string-interpolation-literal-string-interpolation-begin
+                                 ^^^^^^^
+                                 source-code-groovy-literal-string-quoted-double-literal-string-interpolation-identifier
+                                        ^
+                                        source-code-groovy-literal-string-quoted-double-literal-string-interpolation-punctuation-accessor
+                                         ^^^^
+                                         source-code-groovy-literal-string-quoted-double-literal-string-interpolation-identifier
+                                             ^
+                                             source-code-groovy-literal-string-quoted-double-literal-string-interpolation-literal-string-interpolation-end
+                                              ^
+                                              source-code-groovy-literal-string-quoted-double-literal-string-quoted-double-end
+                                               ^
+                                               source-code-groovy-whitespace
+                                                ^
+                                                source-code-groovy-punctuation
+}
+^
+source-code-groovy-punctuation

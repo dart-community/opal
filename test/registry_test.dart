@@ -40,6 +40,21 @@ void main() {
         expect(registry['GO'], same(BuiltInLanguages.go));
       });
 
+      test('includes groovy language and fallbacks', () {
+        for (final name in [
+          'groovy',
+          'gradle',
+          'gvy',
+          'Jenkinsfile',
+          'GROOVY',
+          ' Gradle ',
+        ]) {
+          expect(registry[name], same(BuiltInLanguages.groovy));
+        }
+        expect(BuiltInLanguages.groovy.name, 'groovy');
+        expect(BuiltInLanguages.all, contains(BuiltInLanguages.groovy));
+      });
+
       test('includes typescript language and fallback', () {
         expect(registry['typescript'], same(BuiltInLanguages.typescript));
         expect(registry['ts'], same(BuiltInLanguages.typescript));

@@ -1,0 +1,200 @@
+class MathSpec extends Specification {
+^^^^^
+source-code-groovy-keyword-declaration-class
+     ^
+     source-code-groovy-whitespace
+      ^^^^^^^^
+      source-code-groovy-identifier-type
+              ^
+              source-code-groovy-whitespace
+               ^^^^^^^
+               source-code-groovy-keyword-declaration-extends
+                      ^
+                      source-code-groovy-whitespace
+                       ^^^^^^^^^^^^^
+                       source-code-groovy-identifier-type
+                                    ^
+                                    source-code-groovy-whitespace
+                                     ^
+                                     source-code-groovy-punctuation
+  def "adds #a and #b"() {
+^^
+source-code-groovy-whitespace
+  ^^^
+  source-code-groovy-keyword-declaration-def
+     ^
+     source-code-groovy-whitespace
+      ^
+      source-code-groovy-literal-string-quoted-double-literal-string-quoted-double-begin
+       ^^^^^^^^^^^^^^
+       source-code-groovy-literal-string-quoted-double-literal-string-unquoted
+                     ^
+                     source-code-groovy-literal-string-quoted-double-literal-string-quoted-double-end
+                      ^
+                      source-code-groovy-punctuation
+                       ^
+                       source-code-groovy-punctuation
+                        ^
+                        source-code-groovy-whitespace
+                         ^
+                         source-code-groovy-punctuation
+    given: "two numbers"
+^^^^
+source-code-groovy-whitespace
+    ^^^^^
+    source-code-groovy-identifier-label
+         ^
+         source-code-groovy-punctuation-separator
+          ^
+          source-code-groovy-whitespace
+           ^
+           source-code-groovy-literal-string-quoted-double-literal-string-quoted-double-begin
+            ^^^^^^^^^^^
+            source-code-groovy-literal-string-quoted-double-literal-string-unquoted
+                       ^
+                       source-code-groovy-literal-string-quoted-double-literal-string-quoted-double-end
+    def calculator = new Calculator()
+^^^^
+source-code-groovy-whitespace
+    ^^^
+    source-code-groovy-keyword-declaration-def
+       ^
+       source-code-groovy-whitespace
+        ^^^^^^^^^^
+        source-code-groovy-identifier
+                  ^
+                  source-code-groovy-whitespace
+                   ^
+                   source-code-groovy-keyword-operator
+                    ^
+                    source-code-groovy-whitespace
+                     ^^^
+                     source-code-groovy-keyword-new
+                        ^
+                        source-code-groovy-whitespace
+                         ^^^^^^^^^^
+                         source-code-groovy-identifier-type
+                                   ^
+                                   source-code-groovy-punctuation
+                                    ^
+                                    source-code-groovy-punctuation
+
+    when:
+^^^^
+source-code-groovy-whitespace
+    ^^^^
+    source-code-groovy-identifier-label
+        ^
+        source-code-groovy-punctuation-separator
+    def sum = calculator.add(a, b)
+^^^^
+source-code-groovy-whitespace
+    ^^^
+    source-code-groovy-keyword-declaration-def
+       ^
+       source-code-groovy-whitespace
+        ^^^
+        source-code-groovy-identifier
+           ^
+           source-code-groovy-whitespace
+            ^
+            source-code-groovy-keyword-operator
+             ^
+             source-code-groovy-whitespace
+              ^^^^^^^^^^
+              source-code-groovy-identifier
+                        ^
+                        source-code-groovy-punctuation-accessor
+                         ^^^
+                         source-code-groovy-identifier-function
+                            ^
+                            source-code-groovy-punctuation
+                             ^
+                             source-code-groovy-identifier
+                              ^
+                              source-code-groovy-punctuation-separator
+                               ^
+                               source-code-groovy-whitespace
+                                ^
+                                source-code-groovy-identifier
+                                 ^
+                                 source-code-groovy-punctuation
+
+    then:
+^^^^
+source-code-groovy-whitespace
+    ^^^^
+    source-code-groovy-identifier-label
+        ^
+        source-code-groovy-punctuation-separator
+    sum == expected
+^^^^
+source-code-groovy-whitespace
+    ^^^
+    source-code-groovy-identifier
+       ^
+       source-code-groovy-whitespace
+        ^^
+        source-code-groovy-keyword-operator
+          ^
+          source-code-groovy-whitespace
+           ^^^^^^^^
+           source-code-groovy-identifier
+
+    where:
+^^^^
+source-code-groovy-whitespace
+    ^^^^^
+    source-code-groovy-identifier-label
+         ^
+         source-code-groovy-punctuation-separator
+    a | b || expected
+^^^^
+source-code-groovy-whitespace
+    ^
+    source-code-groovy-identifier
+     ^
+     source-code-groovy-whitespace
+      ^
+      source-code-groovy-keyword-operator
+       ^
+       source-code-groovy-whitespace
+        ^
+        source-code-groovy-identifier
+         ^
+         source-code-groovy-whitespace
+          ^^
+          source-code-groovy-keyword-operator
+            ^
+            source-code-groovy-whitespace
+             ^^^^^^^^
+             source-code-groovy-identifier
+    1 | 2 || 3
+^^^^
+source-code-groovy-whitespace
+    ^
+    source-code-groovy-literal-number-integer
+     ^
+     source-code-groovy-whitespace
+      ^
+      source-code-groovy-keyword-operator
+       ^
+       source-code-groovy-whitespace
+        ^
+        source-code-groovy-literal-number-integer
+         ^
+         source-code-groovy-whitespace
+          ^^
+          source-code-groovy-keyword-operator
+            ^
+            source-code-groovy-whitespace
+             ^
+             source-code-groovy-literal-number-integer
+  }
+^^
+source-code-groovy-whitespace
+  ^
+  source-code-groovy-punctuation
+}
+^
+source-code-groovy-punctuation

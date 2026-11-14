@@ -1,0 +1,13 @@
+def brokenSingle = 'missing quote
+def brokenDouble = "missing $quote
+def recovered = 42i
+def escape = '\q'
+def hole = "${call(1}"
+def badNumbers = [0x, 0x_, 08, 12abc, 1.5abc, 1.5e+abc]
+def badOperators = a<1+<2
+def wrapped = (total
+  / count) // trailing comment
+def stray = \;
+/** Unclosed {@code tag */
+/* Open block comment until EOF
+def insideComment = 1

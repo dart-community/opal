@@ -1,0 +1,49 @@
+package org.example.shapes
+
+import groovy.transform.CompileStatic
+import groovy.transform.Immutable
+import java.net.URL
+import static java.lang.Math.PI
+
+@interface Validated {
+  int level() default 1
+}
+
+trait Measurable {
+  double scaled(double factor = 1.0) { area() * factor }
+  abstract double area()
+}
+
+sealed @Immutable interface Shape extends Measurable permits Circle, Square {}
+
+sealed interface Packet extends Measurable
+    permits Syn, Ack {
+  abstract void send() throws IOException
+  Map.Entry<? extends URI, ? super Integer> header()
+}
+
+@CompileStatic
+@Immutable(copyWith = true)
+record Circle(double radius) implements Shape {
+  static final int MAX_RADIUS = 100
+  double area() { PI * radius ** 2 }
+}
+
+enum Color { RED, GREEN }
+
+non-sealed class Square<T> implements Shape, Serializable {
+  double side
+  URL specUrl
+  Map<String, List<UUID>> ids = [:]
+  private final HTTP client = new HTTP()
+  double area() { this.side * side }
+  <E extends Comparable<E>> E clamp(E value, E min, E max) { value }
+  @SuppressWarnings("unchecked") <E> List<E> empty() { [] }
+  def legacyNames(record, trait, var) {
+    def box = new Box<URI>(System.in, record.class)
+    println "item: $var"
+    println var
+    println record
+    println trait
+  }
+}

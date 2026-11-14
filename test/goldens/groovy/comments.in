@@ -1,0 +1,25 @@
+#!/usr/bin/env groovy
+
+// Line comment.
+//// Divider comment, not Groovydoc.
+
+/// Markdown Groovydoc referencing [List] and `code`.
+///
+/// @return result
+void run() {}
+
+/**/
+/****** Banner comment ******/
+/* Multi-line
+ * block comment. */
+
+/**
+ * Groovydoc for `Service` (contact user@version.com).
+ * Inline {@code '}'} and {@link String}.
+ * @param name the service name
+ * @return the service
+ */
+class Service {
+  /** Creates the service. */
+  static void create() {}
+}

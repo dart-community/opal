@@ -1,0 +1,35 @@
+plugins {
+  id 'groovy'
+  id 'com.github.johnrengelman.shadow' version '8.1.1' apply false
+}
+
+apply plugin: 'maven-publish'
+
+group = 'org.example'
+version = '1.0.0'
+
+repositories {
+  mavenCentral()
+}
+
+dependencies {
+  implementation 'org.apache.groovy:groovy:6.0.0'
+  testImplementation 'org.spockframework:spock-core:2.4-groovy-5.0'
+}
+
+publishing {
+  from components.java
+}
+
+def project = [name: 'demo']
+for (task in tasks) {
+  tasks.named('test') {
+    maxParallelForks = 2
+    delete buildDir
+    useJUnitPlatform()
+  }
+}
+
+tasks.register('hello') {
+  doLast { println "Hello from ${project.name}" }
+}

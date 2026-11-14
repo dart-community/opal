@@ -9,6 +9,8 @@
 - Add support for unified diffs and patches (`diff`, `patch`, `udiff`).
 - Add a `MarkupTags.unchanged` tag for
   the unchanged context lines of diffs.
+- Improve the accuracy and recovery of `groovy` highlighting
+  (`groovy`, `gradle`, `gvy`, `Jenkinsfile`), including Groovy 6 syntax.
 - Improve the accuracy and recovery of `html` highlighting.
 - Improve the accuracy and recovery of `xml` highlighting.
 

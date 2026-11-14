@@ -1,0 +1,37 @@
+def ints = [0, 42i, 1_000L, 456G, 0xFF_FFi, 0b1010L, 0755G]
+def floats = [3.14, 00.5, 1.5e-2G, 2e3f, 42d]
+def calls = 1.abs() + 1.f
+def ops = 2 ** 10 + (a <=> b) + (x ?: 0)
+ops **= 2; name ?= 'Guest'
+assert (a === b || a !== c) ==> (x !in 0<..<10 && x !instanceof Number && !inValid)
+def ranges = [0..5, 0..<5, 0<..5]
+def nav = user?.profile?.@email ?: users*.name + list?[0]
+def refs = [str.&trim, String::valueOf, ArrayList::new, *:defaults]
+def matcher = text =~ /\w+/ && text ==~ ~/^\d+$/
+def parsed = text =~ /it's/ ? URI.create(MAX_PORT) : fallback
+List<Map<String, List<Integer>>> matrix = [:]
+def shift = bits >> 1 >>> 2 << 3
+names << 'Ada'
+names <<
+  'Grace'
+names.each { name -> println name }
+def status = ok ? SUCCESS : FAILURE
+if (ok) SUCCESS else FAILURE
+for (int i = 0; i < n && n >= 0; i++) {
+  def url = (URL) obj ?: ENV['HOME']
+  move source from staging to dest
+  copy from: source, into: dest
+}
+def flags = [debug: true, level: 0, name: 'any']
+def picked = ready ? first : fallback
+outer: for (x in ranges) {
+  if (x) break outer else continue outer
+}
+switch (value) {
+  case [1, 2], null: return 0
+  case Point(var x, var y): return x
+  case Integer: return 1
+  default:
+    return LEN <= MAX ? MIN..MAX : 3
+}
+try {} catch (IOException | RuntimeException e) {}

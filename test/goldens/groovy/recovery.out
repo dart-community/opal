@@ -1,0 +1,251 @@
+def brokenSingle = 'missing quote
+^^^
+source-code-groovy-keyword-declaration-def
+   ^
+   source-code-groovy-whitespace
+    ^^^^^^^^^^^^
+    source-code-groovy-identifier
+                ^
+                source-code-groovy-whitespace
+                 ^
+                 source-code-groovy-keyword-operator
+                  ^
+                  source-code-groovy-whitespace
+                   ^
+                   source-code-groovy-literal-string-quoted-single-literal-string-quoted-single-begin
+                    ^^^^^^^^^^^^^
+                    source-code-groovy-literal-string-quoted-single-literal-string-unquoted
+def brokenDouble = "missing $quote
+^^^
+source-code-groovy-keyword-declaration-def
+   ^
+   source-code-groovy-whitespace
+    ^^^^^^^^^^^^
+    source-code-groovy-identifier
+                ^
+                source-code-groovy-whitespace
+                 ^
+                 source-code-groovy-keyword-operator
+                  ^
+                  source-code-groovy-whitespace
+                   ^
+                   source-code-groovy-literal-string-quoted-double-literal-string-quoted-double-begin
+                    ^^^^^^^^
+                    source-code-groovy-literal-string-quoted-double-literal-string-unquoted
+                            ^^^^^^
+                            source-code-groovy-literal-string-quoted-double-literal-string-interpolation
+def recovered = 42i
+^^^
+source-code-groovy-keyword-declaration-def
+   ^
+   source-code-groovy-whitespace
+    ^^^^^^^^^
+    source-code-groovy-identifier
+             ^
+             source-code-groovy-whitespace
+              ^
+              source-code-groovy-keyword-operator
+               ^
+               source-code-groovy-whitespace
+                ^^^
+                source-code-groovy-literal-number-integer
+def escape = '\q'
+^^^
+source-code-groovy-keyword-declaration-def
+   ^
+   source-code-groovy-whitespace
+    ^^^^^^
+    source-code-groovy-identifier
+          ^
+          source-code-groovy-whitespace
+           ^
+           source-code-groovy-keyword-operator
+            ^
+            source-code-groovy-whitespace
+             ^
+             source-code-groovy-literal-string-quoted-single-literal-string-quoted-single-begin
+              ^^
+              source-code-groovy-literal-string-quoted-single-literal-string-escape
+                ^
+                source-code-groovy-literal-string-quoted-single-literal-string-quoted-single-end
+def hole = "${call(1}"
+^^^
+source-code-groovy-keyword-declaration-def
+   ^
+   source-code-groovy-whitespace
+    ^^^^
+    source-code-groovy-identifier
+        ^
+        source-code-groovy-whitespace
+         ^
+         source-code-groovy-keyword-operator
+          ^
+          source-code-groovy-whitespace
+           ^
+           source-code-groovy-literal-string-quoted-double-literal-string-quoted-double-begin
+            ^^
+            source-code-groovy-literal-string-quoted-double-literal-string-interpolation-literal-string-interpolation-begin
+              ^^^^
+              source-code-groovy-literal-string-quoted-double-literal-string-interpolation-identifier-function
+                  ^
+                  source-code-groovy-literal-string-quoted-double-literal-string-interpolation-punctuation
+                   ^
+                   source-code-groovy-literal-string-quoted-double-literal-string-interpolation-literal-number-integer
+                    ^
+                    source-code-groovy-literal-string-quoted-double-literal-string-interpolation-literal-string-interpolation-end
+                     ^
+                     source-code-groovy-literal-string-quoted-double-literal-string-quoted-double-end
+def badNumbers = [0x, 0x_, 08, 12abc, 1.5abc, 1.5e+abc]
+^^^
+source-code-groovy-keyword-declaration-def
+   ^
+   source-code-groovy-whitespace
+    ^^^^^^^^^^
+    source-code-groovy-identifier
+              ^
+              source-code-groovy-whitespace
+               ^
+               source-code-groovy-keyword-operator
+                ^
+                source-code-groovy-whitespace
+                 ^
+                 source-code-groovy-punctuation
+                  ^^
+                  source-code-groovy-literal-number
+                    ^
+                    source-code-groovy-punctuation-separator
+                     ^
+                     source-code-groovy-whitespace
+                      ^^^
+                      source-code-groovy-literal-number-integer
+                         ^
+                         source-code-groovy-punctuation-separator
+                          ^
+                          source-code-groovy-whitespace
+                           ^^
+                           source-code-groovy-literal-number-integer
+                             ^
+                             source-code-groovy-punctuation-separator
+                              ^
+                              source-code-groovy-whitespace
+                               ^^^^^
+                               source-code-groovy-literal-number
+                                    ^
+                                    source-code-groovy-punctuation-separator
+                                     ^
+                                     source-code-groovy-whitespace
+                                      ^
+                                      source-code-groovy-literal-number-integer
+                                       ^
+                                       source-code-groovy-punctuation-accessor
+                                        ^^^^
+                                        source-code-groovy-literal-number
+                                            ^
+                                            source-code-groovy-punctuation-separator
+                                             ^
+                                             source-code-groovy-whitespace
+                                              ^
+                                              source-code-groovy-literal-number-integer
+                                               ^
+                                               source-code-groovy-punctuation-accessor
+                                                ^^
+                                                source-code-groovy-literal-number
+                                                  ^
+                                                  source-code-groovy-keyword-operator
+                                                   ^^^
+                                                   source-code-groovy-identifier
+                                                      ^
+                                                      source-code-groovy-punctuation
+def badOperators = a<1+<2
+^^^
+source-code-groovy-keyword-declaration-def
+   ^
+   source-code-groovy-whitespace
+    ^^^^^^^^^^^^
+    source-code-groovy-identifier
+                ^
+                source-code-groovy-whitespace
+                 ^
+                 source-code-groovy-keyword-operator
+                  ^
+                  source-code-groovy-whitespace
+                   ^
+                   source-code-groovy-identifier
+                    ^
+                    source-code-groovy-punctuation
+                     ^
+                     source-code-groovy-literal-number-integer
+                      ^
+                      source-code-groovy-keyword-operator
+                       ^
+                       source-code-groovy-punctuation
+                        ^
+                        source-code-groovy-literal-number-integer
+def wrapped = (total
+^^^
+source-code-groovy-keyword-declaration-def
+   ^
+   source-code-groovy-whitespace
+    ^^^^^^^
+    source-code-groovy-identifier
+           ^
+           source-code-groovy-whitespace
+            ^
+            source-code-groovy-keyword-operator
+             ^
+             source-code-groovy-whitespace
+              ^
+              source-code-groovy-punctuation
+               ^^^^^
+               source-code-groovy-identifier
+  / count) // trailing comment
+^^
+source-code-groovy-whitespace
+  ^
+  source-code-groovy-keyword-operator
+   ^
+   source-code-groovy-whitespace
+    ^^^^^
+    source-code-groovy-identifier
+         ^
+         source-code-groovy-punctuation
+          ^
+          source-code-groovy-whitespace
+           ^^^^^^^^^^^^^^^^^^^
+           source-code-groovy-comment-line
+def stray = \;
+^^^
+source-code-groovy-keyword-declaration-def
+   ^
+   source-code-groovy-whitespace
+    ^^^^^
+    source-code-groovy-identifier
+         ^
+         source-code-groovy-whitespace
+          ^
+          source-code-groovy-keyword-operator
+           ^
+           source-code-groovy-whitespace
+            ^
+            source-code-groovy-unknown
+             ^
+             source-code-groovy-punctuation
+/** Unclosed {@code tag */
+^^^
+source-code-groovy-comment-block-doc-comment-block-doc-begin
+   ^^^^^^^^^^^
+   source-code-groovy-comment-block-doc-comment-block-doc-content
+              ^^^^^
+              source-code-groovy-comment-block-doc-metadata-annotation
+                   ^^^^^
+                   source-code-groovy-comment-block-doc-comment-block-doc-content
+                        ^^
+                        source-code-groovy-comment-block-doc-comment-block-doc-end
+/* Open block comment until EOF
+^^
+source-code-groovy-comment-block-comment-block-begin
+  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  source-code-groovy-comment-block-comment-block-content
+def insideComment = 1
+^^^^^^^^^^^^^^^^^^^^^
+source-code-groovy-comment-block-comment-block-content

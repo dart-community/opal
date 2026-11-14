@@ -1,0 +1,560 @@
+def single = 'It\'s $literal, \$5, \t and \u0041'
+^^^
+source-code-groovy-keyword-declaration-def
+   ^
+   source-code-groovy-whitespace
+    ^^^^^^
+    source-code-groovy-identifier
+          ^
+          source-code-groovy-whitespace
+           ^
+           source-code-groovy-keyword-operator
+            ^
+            source-code-groovy-whitespace
+             ^
+             source-code-groovy-literal-string-quoted-single-literal-string-quoted-single-begin
+              ^^
+              source-code-groovy-literal-string-quoted-single-literal-string-unquoted
+                ^^
+                source-code-groovy-literal-string-quoted-single-literal-string-escape
+                  ^^
+                  source-code-groovy-literal-string-quoted-single-literal-string-unquoted
+                    ^
+                    source-code-groovy-literal-string-quoted-single-literal-string-unquoted
+                     ^^^^^^^^^
+                     source-code-groovy-literal-string-quoted-single-literal-string-unquoted
+                              ^^
+                              source-code-groovy-literal-string-quoted-single-literal-string-escape
+                                ^^^
+                                source-code-groovy-literal-string-quoted-single-literal-string-unquoted
+                                   ^^
+                                   source-code-groovy-literal-string-quoted-single-literal-string-escape
+                                     ^^^^^
+                                     source-code-groovy-literal-string-quoted-single-literal-string-unquoted
+                                          ^^^^^^
+                                          source-code-groovy-literal-string-quoted-single-literal-string-escape
+                                                ^
+                                                source-code-groovy-literal-string-quoted-single-literal-string-quoted-single-end
+def tripleSingle = '''Line 'one', \$5, and ''two''\n'''
+^^^
+source-code-groovy-keyword-declaration-def
+   ^
+   source-code-groovy-whitespace
+    ^^^^^^^^^^^^
+    source-code-groovy-identifier
+                ^
+                source-code-groovy-whitespace
+                 ^
+                 source-code-groovy-keyword-operator
+                  ^
+                  source-code-groovy-whitespace
+                   ^^^
+                   source-code-groovy-literal-string-quoted-triple-literal-string-quoted-triple-begin
+                      ^^^^^
+                      source-code-groovy-literal-string-quoted-triple-literal-string-unquoted
+                           ^
+                           source-code-groovy-literal-string-quoted-triple-literal-string-unquoted
+                            ^^^
+                            source-code-groovy-literal-string-quoted-triple-literal-string-unquoted
+                               ^
+                               source-code-groovy-literal-string-quoted-triple-literal-string-unquoted
+                                ^^
+                                source-code-groovy-literal-string-quoted-triple-literal-string-unquoted
+                                  ^^
+                                  source-code-groovy-literal-string-quoted-triple-literal-string-escape
+                                    ^^^^^^^
+                                    source-code-groovy-literal-string-quoted-triple-literal-string-unquoted
+                                           ^
+                                           source-code-groovy-literal-string-quoted-triple-literal-string-unquoted
+                                            ^
+                                            source-code-groovy-literal-string-quoted-triple-literal-string-unquoted
+                                             ^^^
+                                             source-code-groovy-literal-string-quoted-triple-literal-string-unquoted
+                                                ^
+                                                source-code-groovy-literal-string-quoted-triple-literal-string-unquoted
+                                                 ^
+                                                 source-code-groovy-literal-string-quoted-triple-literal-string-unquoted
+                                                  ^^
+                                                  source-code-groovy-literal-string-quoted-triple-literal-string-escape
+                                                    ^^^
+                                                    source-code-groovy-literal-string-quoted-triple-literal-string-quoted-triple-end
+def gString = "Hi $user.name. Pair: $first$second, \"ok\", \$5, ${-> count + 1}"
+^^^
+source-code-groovy-keyword-declaration-def
+   ^
+   source-code-groovy-whitespace
+    ^^^^^^^
+    source-code-groovy-identifier
+           ^
+           source-code-groovy-whitespace
+            ^
+            source-code-groovy-keyword-operator
+             ^
+             source-code-groovy-whitespace
+              ^
+              source-code-groovy-literal-string-quoted-double-literal-string-quoted-double-begin
+               ^^^
+               source-code-groovy-literal-string-quoted-double-literal-string-unquoted
+                  ^^^^^^^^^^
+                  source-code-groovy-literal-string-quoted-double-literal-string-interpolation
+                            ^^^^^^^^
+                            source-code-groovy-literal-string-quoted-double-literal-string-unquoted
+                                    ^^^^^^
+                                    source-code-groovy-literal-string-quoted-double-literal-string-interpolation
+                                          ^^^^^^^
+                                          source-code-groovy-literal-string-quoted-double-literal-string-interpolation
+                                                 ^^
+                                                 source-code-groovy-literal-string-quoted-double-literal-string-unquoted
+                                                   ^^
+                                                   source-code-groovy-literal-string-quoted-double-literal-string-escape
+                                                     ^^
+                                                     source-code-groovy-literal-string-quoted-double-literal-string-unquoted
+                                                       ^^
+                                                       source-code-groovy-literal-string-quoted-double-literal-string-escape
+                                                         ^^
+                                                         source-code-groovy-literal-string-quoted-double-literal-string-unquoted
+                                                           ^^
+                                                           source-code-groovy-literal-string-quoted-double-literal-string-escape
+                                                             ^^^
+                                                             source-code-groovy-literal-string-quoted-double-literal-string-unquoted
+                                                                ^^
+                                                                source-code-groovy-literal-string-quoted-double-literal-string-interpolation-literal-string-interpolation-begin
+                                                                  ^^
+                                                                  source-code-groovy-literal-string-quoted-double-literal-string-interpolation-keyword-operator
+                                                                    ^
+                                                                    source-code-groovy-literal-string-quoted-double-literal-string-interpolation-whitespace
+                                                                     ^^^^^
+                                                                     source-code-groovy-literal-string-quoted-double-literal-string-interpolation-identifier
+                                                                          ^
+                                                                          source-code-groovy-literal-string-quoted-double-literal-string-interpolation-whitespace
+                                                                           ^
+                                                                           source-code-groovy-literal-string-quoted-double-literal-string-interpolation-keyword-operator
+                                                                            ^
+                                                                            source-code-groovy-literal-string-quoted-double-literal-string-interpolation-whitespace
+                                                                             ^
+                                                                             source-code-groovy-literal-string-quoted-double-literal-string-interpolation-literal-number-integer
+                                                                              ^
+                                                                              source-code-groovy-literal-string-quoted-double-literal-string-interpolation-literal-string-interpolation-end
+                                                                               ^
+                                                                               source-code-groovy-literal-string-quoted-double-literal-string-quoted-double-end
+def nested = "${items.collect { "${it.trim()}" }.join(', ')}"
+^^^
+source-code-groovy-keyword-declaration-def
+   ^
+   source-code-groovy-whitespace
+    ^^^^^^
+    source-code-groovy-identifier
+          ^
+          source-code-groovy-whitespace
+           ^
+           source-code-groovy-keyword-operator
+            ^
+            source-code-groovy-whitespace
+             ^
+             source-code-groovy-literal-string-quoted-double-literal-string-quoted-double-begin
+              ^^
+              source-code-groovy-literal-string-quoted-double-literal-string-interpolation-literal-string-interpolation-begin
+                ^^^^^
+                source-code-groovy-literal-string-quoted-double-literal-string-interpolation-identifier
+                     ^
+                     source-code-groovy-literal-string-quoted-double-literal-string-interpolation-punctuation-accessor
+                      ^^^^^^^
+                      source-code-groovy-literal-string-quoted-double-literal-string-interpolation-identifier-function
+                             ^
+                             source-code-groovy-literal-string-quoted-double-literal-string-interpolation-whitespace
+                              ^
+                              source-code-groovy-literal-string-quoted-double-literal-string-interpolation-punctuation
+                               ^
+                               source-code-groovy-literal-string-quoted-double-literal-string-interpolation-whitespace
+                                ^
+                                source-code-groovy-literal-string-quoted-double-literal-string-interpolation-literal-string-quoted-double-literal-string-quoted-double-begin
+                                 ^^
+                                 source-code-groovy-literal-string-quoted-double-literal-string-interpolation-literal-string-quoted-double-literal-string-interpolation-literal-string-interpolation-begin
+                                   ^^
+                                   source-code-groovy-literal-string-quoted-double-literal-string-interpolation-literal-string-quoted-double-literal-string-interpolation-identifier
+                                     ^
+                                     source-code-groovy-literal-string-quoted-double-literal-string-interpolation-literal-string-quoted-double-literal-string-interpolation-punctuation-accessor
+                                      ^^^^
+                                      source-code-groovy-literal-string-quoted-double-literal-string-interpolation-literal-string-quoted-double-literal-string-interpolation-identifier-function
+                                          ^
+                                          source-code-groovy-literal-string-quoted-double-literal-string-interpolation-literal-string-quoted-double-literal-string-interpolation-punctuation
+                                           ^
+                                           source-code-groovy-literal-string-quoted-double-literal-string-interpolation-literal-string-quoted-double-literal-string-interpolation-punctuation
+                                            ^
+                                            source-code-groovy-literal-string-quoted-double-literal-string-interpolation-literal-string-quoted-double-literal-string-interpolation-literal-string-interpolation-end
+                                             ^
+                                             source-code-groovy-literal-string-quoted-double-literal-string-interpolation-literal-string-quoted-double-literal-string-quoted-double-end
+                                              ^
+                                              source-code-groovy-literal-string-quoted-double-literal-string-interpolation-whitespace
+                                               ^
+                                               source-code-groovy-literal-string-quoted-double-literal-string-interpolation-punctuation
+                                                ^
+                                                source-code-groovy-literal-string-quoted-double-literal-string-interpolation-punctuation-accessor
+                                                 ^^^^
+                                                 source-code-groovy-literal-string-quoted-double-literal-string-interpolation-identifier-function
+                                                     ^
+                                                     source-code-groovy-literal-string-quoted-double-literal-string-interpolation-punctuation
+                                                      ^
+                                                      source-code-groovy-literal-string-quoted-double-literal-string-interpolation-literal-string-quoted-single-literal-string-quoted-single-begin
+                                                       ^^
+                                                       source-code-groovy-literal-string-quoted-double-literal-string-interpolation-literal-string-quoted-single-literal-string-unquoted
+                                                         ^
+                                                         source-code-groovy-literal-string-quoted-double-literal-string-interpolation-literal-string-quoted-single-literal-string-quoted-single-end
+                                                          ^
+                                                          source-code-groovy-literal-string-quoted-double-literal-string-interpolation-punctuation
+                                                           ^
+                                                           source-code-groovy-literal-string-quoted-double-literal-string-interpolation-literal-string-interpolation-end
+                                                            ^
+                                                            source-code-groovy-literal-string-quoted-double-literal-string-quoted-double-end
+def tripleDouble = """
+^^^
+source-code-groovy-keyword-declaration-def
+   ^
+   source-code-groovy-whitespace
+    ^^^^^^^^^^^^
+    source-code-groovy-identifier
+                ^
+                source-code-groovy-whitespace
+                 ^
+                 source-code-groovy-keyword-operator
+                  ^
+                  source-code-groovy-whitespace
+                   ^^^
+                   source-code-groovy-literal-string-quoted-triple-literal-string-quoted-triple-begin
+  Total: \$${
+^^^^^^^^^
+source-code-groovy-literal-string-quoted-triple-literal-string-unquoted
+         ^^
+         source-code-groovy-literal-string-quoted-triple-literal-string-escape
+           ^^
+           source-code-groovy-literal-string-quoted-triple-literal-string-interpolation-literal-string-interpolation-begin
+    items.size()
+^^^^
+source-code-groovy-literal-string-quoted-triple-literal-string-interpolation-whitespace
+    ^^^^^
+    source-code-groovy-literal-string-quoted-triple-literal-string-interpolation-identifier
+         ^
+         source-code-groovy-literal-string-quoted-triple-literal-string-interpolation-punctuation-accessor
+          ^^^^
+          source-code-groovy-literal-string-quoted-triple-literal-string-interpolation-identifier-function
+              ^
+              source-code-groovy-literal-string-quoted-triple-literal-string-interpolation-punctuation
+               ^
+               source-code-groovy-literal-string-quoted-triple-literal-string-interpolation-punctuation
+  } for "guest"
+^^
+source-code-groovy-literal-string-quoted-triple-literal-string-interpolation-whitespace
+  ^
+  source-code-groovy-literal-string-quoted-triple-literal-string-interpolation-literal-string-interpolation-end
+   ^^^^^
+   source-code-groovy-literal-string-quoted-triple-literal-string-unquoted
+        ^
+        source-code-groovy-literal-string-quoted-triple-literal-string-unquoted
+         ^^^^^
+         source-code-groovy-literal-string-quoted-triple-literal-string-unquoted
+              ^
+              source-code-groovy-literal-string-quoted-triple-literal-string-unquoted
+  It's ${items.join(', ')}
+^^^^^^^
+source-code-groovy-literal-string-quoted-triple-literal-string-unquoted
+       ^^
+       source-code-groovy-literal-string-quoted-triple-literal-string-interpolation-literal-string-interpolation-begin
+         ^^^^^
+         source-code-groovy-literal-string-quoted-triple-literal-string-interpolation-identifier
+              ^
+              source-code-groovy-literal-string-quoted-triple-literal-string-interpolation-punctuation-accessor
+               ^^^^
+               source-code-groovy-literal-string-quoted-triple-literal-string-interpolation-identifier-function
+                   ^
+                   source-code-groovy-literal-string-quoted-triple-literal-string-interpolation-punctuation
+                    ^
+                    source-code-groovy-literal-string-quoted-triple-literal-string-interpolation-literal-string-quoted-single-literal-string-quoted-single-begin
+                     ^^
+                     source-code-groovy-literal-string-quoted-triple-literal-string-interpolation-literal-string-quoted-single-literal-string-unquoted
+                       ^
+                       source-code-groovy-literal-string-quoted-triple-literal-string-interpolation-literal-string-quoted-single-literal-string-quoted-single-end
+                        ^
+                        source-code-groovy-literal-string-quoted-triple-literal-string-interpolation-punctuation
+                         ^
+                         source-code-groovy-literal-string-quoted-triple-literal-string-interpolation-literal-string-interpolation-end
+"""
+^^^
+source-code-groovy-literal-string-quoted-triple-literal-string-quoted-triple-end
+def regex = /^\d+\s+\/path\/$user.id${ext}$/
+^^^
+source-code-groovy-keyword-declaration-def
+   ^
+   source-code-groovy-whitespace
+    ^^^^^
+    source-code-groovy-identifier
+         ^
+         source-code-groovy-whitespace
+          ^
+          source-code-groovy-keyword-operator
+           ^
+           source-code-groovy-whitespace
+            ^
+            source-code-groovy-literal-string-quoted-literal-string-quoted-begin
+             ^
+             source-code-groovy-literal-string-quoted-literal-string-unquoted
+              ^^
+              source-code-groovy-literal-string-quoted-literal-string-escape
+                ^
+                source-code-groovy-literal-string-quoted-literal-string-unquoted
+                 ^^
+                 source-code-groovy-literal-string-quoted-literal-string-escape
+                   ^
+                   source-code-groovy-literal-string-quoted-literal-string-unquoted
+                    ^^
+                    source-code-groovy-literal-string-quoted-literal-string-escape
+                      ^^^^
+                      source-code-groovy-literal-string-quoted-literal-string-unquoted
+                          ^^
+                          source-code-groovy-literal-string-quoted-literal-string-escape
+                            ^^^^^^^^
+                            source-code-groovy-literal-string-quoted-literal-string-interpolation
+                                    ^^
+                                    source-code-groovy-literal-string-quoted-literal-string-interpolation-literal-string-interpolation-begin
+                                      ^^^
+                                      source-code-groovy-literal-string-quoted-literal-string-interpolation-identifier
+                                         ^
+                                         source-code-groovy-literal-string-quoted-literal-string-interpolation-literal-string-interpolation-end
+                                          ^
+                                          source-code-groovy-literal-string-quoted-literal-string-unquoted
+                                           ^
+                                           source-code-groovy-literal-string-quoted-literal-string-quoted-end
+def nestedSlashy = /outer ${ "inner /slash/ ${1 / 2}" }/
+^^^
+source-code-groovy-keyword-declaration-def
+   ^
+   source-code-groovy-whitespace
+    ^^^^^^^^^^^^
+    source-code-groovy-identifier
+                ^
+                source-code-groovy-whitespace
+                 ^
+                 source-code-groovy-keyword-operator
+                  ^
+                  source-code-groovy-whitespace
+                   ^
+                   source-code-groovy-literal-string-quoted-literal-string-quoted-begin
+                    ^^^^^^
+                    source-code-groovy-literal-string-quoted-literal-string-unquoted
+                          ^^
+                          source-code-groovy-literal-string-quoted-literal-string-interpolation-literal-string-interpolation-begin
+                            ^
+                            source-code-groovy-literal-string-quoted-literal-string-interpolation-whitespace
+                             ^
+                             source-code-groovy-literal-string-quoted-literal-string-interpolation-literal-string-quoted-double-literal-string-quoted-double-begin
+                              ^^^^^^^^^^^^^^
+                              source-code-groovy-literal-string-quoted-literal-string-interpolation-literal-string-quoted-double-literal-string-unquoted
+                                            ^^
+                                            source-code-groovy-literal-string-quoted-literal-string-interpolation-literal-string-quoted-double-literal-string-interpolation-literal-string-interpolation-begin
+                                              ^
+                                              source-code-groovy-literal-string-quoted-literal-string-interpolation-literal-string-quoted-double-literal-string-interpolation-literal-number-integer
+                                               ^
+                                               source-code-groovy-literal-string-quoted-literal-string-interpolation-literal-string-quoted-double-literal-string-interpolation-whitespace
+                                                ^
+                                                source-code-groovy-literal-string-quoted-literal-string-interpolation-literal-string-quoted-double-literal-string-interpolation-keyword-operator
+                                                 ^
+                                                 source-code-groovy-literal-string-quoted-literal-string-interpolation-literal-string-quoted-double-literal-string-interpolation-whitespace
+                                                  ^
+                                                  source-code-groovy-literal-string-quoted-literal-string-interpolation-literal-string-quoted-double-literal-string-interpolation-literal-number-integer
+                                                   ^
+                                                   source-code-groovy-literal-string-quoted-literal-string-interpolation-literal-string-quoted-double-literal-string-interpolation-literal-string-interpolation-end
+                                                    ^
+                                                    source-code-groovy-literal-string-quoted-literal-string-interpolation-literal-string-quoted-double-literal-string-quoted-double-end
+                                                     ^
+                                                     source-code-groovy-literal-string-quoted-literal-string-interpolation-whitespace
+                                                      ^
+                                                      source-code-groovy-literal-string-quoted-literal-string-interpolation-literal-string-interpolation-end
+                                                       ^
+                                                       source-code-groovy-literal-string-quoted-literal-string-quoted-end
+def ratio = total / count / 2 + (a + b) / list[0]
+^^^
+source-code-groovy-keyword-declaration-def
+   ^
+   source-code-groovy-whitespace
+    ^^^^^
+    source-code-groovy-identifier
+         ^
+         source-code-groovy-whitespace
+          ^
+          source-code-groovy-keyword-operator
+           ^
+           source-code-groovy-whitespace
+            ^^^^^
+            source-code-groovy-identifier
+                 ^
+                 source-code-groovy-whitespace
+                  ^
+                  source-code-groovy-keyword-operator
+                   ^
+                   source-code-groovy-whitespace
+                    ^^^^^
+                    source-code-groovy-identifier
+                         ^
+                         source-code-groovy-whitespace
+                          ^
+                          source-code-groovy-keyword-operator
+                           ^
+                           source-code-groovy-whitespace
+                            ^
+                            source-code-groovy-literal-number-integer
+                             ^
+                             source-code-groovy-whitespace
+                              ^
+                              source-code-groovy-keyword-operator
+                               ^
+                               source-code-groovy-whitespace
+                                ^
+                                source-code-groovy-punctuation
+                                 ^
+                                 source-code-groovy-identifier
+                                  ^
+                                  source-code-groovy-whitespace
+                                   ^
+                                   source-code-groovy-keyword-operator
+                                    ^
+                                    source-code-groovy-whitespace
+                                     ^
+                                     source-code-groovy-identifier
+                                      ^
+                                      source-code-groovy-punctuation
+                                       ^
+                                       source-code-groovy-whitespace
+                                        ^
+                                        source-code-groovy-keyword-operator
+                                         ^
+                                         source-code-groovy-whitespace
+                                          ^^^^
+                                          source-code-groovy-identifier
+                                              ^
+                                              source-code-groovy-punctuation
+                                               ^
+                                               source-code-groovy-literal-number-integer
+                                                ^
+                                                source-code-groovy-punctuation
+def wrappedRatio = total
+^^^
+source-code-groovy-keyword-declaration-def
+   ^
+   source-code-groovy-whitespace
+    ^^^^^^^^^^^^
+    source-code-groovy-identifier
+                ^
+                source-code-groovy-whitespace
+                 ^
+                 source-code-groovy-keyword-operator
+                  ^
+                  source-code-groovy-whitespace
+                   ^^^^^
+                   source-code-groovy-identifier
+  / count
+^^
+source-code-groovy-whitespace
+  ^
+  source-code-groovy-keyword-operator
+   ^
+   source-code-groovy-whitespace
+    ^^^^^
+    source-code-groovy-identifier
+  /divisor
+^^
+source-code-groovy-whitespace
+  ^
+  source-code-groovy-keyword-operator
+   ^^^^^^^
+   source-code-groovy-identifier
+ratio
+^^^^^
+source-code-groovy-identifier
+  /= count / 2
+^^
+source-code-groovy-whitespace
+  ^^
+  source-code-groovy-keyword-operator
+    ^
+    source-code-groovy-whitespace
+     ^^^^^
+     source-code-groovy-identifier
+          ^
+          source-code-groovy-whitespace
+           ^
+           source-code-groovy-keyword-operator
+            ^
+            source-code-groovy-whitespace
+             ^
+             source-code-groovy-literal-number-integer
+def dollarSlashy = $/
+^^^
+source-code-groovy-keyword-declaration-def
+   ^
+   source-code-groovy-whitespace
+    ^^^^^^^^^^^^
+    source-code-groovy-identifier
+                ^
+                source-code-groovy-whitespace
+                 ^
+                 source-code-groovy-keyword-operator
+                  ^
+                  source-code-groovy-whitespace
+                   ^^
+                   source-code-groovy-literal-string-quoted-literal-string-quoted-begin
+  Hello $name and ${1 + 2}!
+^^^^^^^^
+source-code-groovy-literal-string-quoted-literal-string-unquoted
+        ^^^^^
+        source-code-groovy-literal-string-quoted-literal-string-interpolation
+             ^^^^^
+             source-code-groovy-literal-string-quoted-literal-string-unquoted
+                  ^^
+                  source-code-groovy-literal-string-quoted-literal-string-interpolation-literal-string-interpolation-begin
+                    ^
+                    source-code-groovy-literal-string-quoted-literal-string-interpolation-literal-number-integer
+                     ^
+                     source-code-groovy-literal-string-quoted-literal-string-interpolation-whitespace
+                      ^
+                      source-code-groovy-literal-string-quoted-literal-string-interpolation-keyword-operator
+                       ^
+                       source-code-groovy-literal-string-quoted-literal-string-interpolation-whitespace
+                        ^
+                        source-code-groovy-literal-string-quoted-literal-string-interpolation-literal-number-integer
+                         ^
+                         source-code-groovy-literal-string-quoted-literal-string-interpolation-literal-string-interpolation-end
+                          ^
+                          source-code-groovy-literal-string-quoted-literal-string-unquoted
+  Escapes: $$5, $$$/, $/$$, C:\temp\file, $ standalone
+^^^^^^^^^^^
+source-code-groovy-literal-string-quoted-literal-string-unquoted
+           ^^
+           source-code-groovy-literal-string-quoted-literal-string-escape
+             ^^^
+             source-code-groovy-literal-string-quoted-literal-string-unquoted
+                ^^
+                source-code-groovy-literal-string-quoted-literal-string-escape
+                  ^^
+                  source-code-groovy-literal-string-quoted-literal-string-escape
+                    ^^
+                    source-code-groovy-literal-string-quoted-literal-string-unquoted
+                      ^^
+                      source-code-groovy-literal-string-quoted-literal-string-escape
+                        ^^
+                        source-code-groovy-literal-string-quoted-literal-string-escape
+                          ^^^^
+                          source-code-groovy-literal-string-quoted-literal-string-unquoted
+                              ^
+                              source-code-groovy-literal-string-quoted-literal-string-unquoted
+                               ^^^^
+                               source-code-groovy-literal-string-quoted-literal-string-unquoted
+                                   ^
+                                   source-code-groovy-literal-string-quoted-literal-string-unquoted
+                                    ^^^^^^
+                                    source-code-groovy-literal-string-quoted-literal-string-unquoted
+                                          ^
+                                          source-code-groovy-literal-string-quoted-literal-string-unquoted
+                                           ^^^^^^^^^^^
+                                           source-code-groovy-literal-string-quoted-literal-string-unquoted
+/$
+^^
+source-code-groovy-literal-string-quoted-literal-string-quoted-end

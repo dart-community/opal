@@ -1,0 +1,147 @@
+#!/usr/bin/env groovy
+^^^^^^^^^^^^^^^^^^^^^
+source-code-groovy-comment-line
+
+// Line comment.
+^^^^^^^^^^^^^^^^
+source-code-groovy-comment-line
+//// Divider comment, not Groovydoc.
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+source-code-groovy-comment-line
+
+/// Markdown Groovydoc referencing [List] and `code`.
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+source-code-groovy-comment-block-doc
+///
+^^^
+source-code-groovy-comment-block-doc
+/// @return result
+^^^^^^^^^^^^^^^^^^
+source-code-groovy-comment-block-doc
+void run() {}
+^^^^
+source-code-groovy-identifier-type-built-in
+    ^
+    source-code-groovy-whitespace
+     ^^^
+     source-code-groovy-identifier-function
+        ^
+        source-code-groovy-punctuation
+         ^
+         source-code-groovy-punctuation
+          ^
+          source-code-groovy-whitespace
+           ^
+           source-code-groovy-punctuation
+            ^
+            source-code-groovy-punctuation
+
+/**/
+^^
+source-code-groovy-comment-block-comment-block-begin
+  ^^
+  source-code-groovy-comment-block-comment-block-end
+/****** Banner comment ******/
+^^
+source-code-groovy-comment-block-comment-block-begin
+  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  source-code-groovy-comment-block-comment-block-content
+                            ^^
+                            source-code-groovy-comment-block-comment-block-end
+/* Multi-line
+^^
+source-code-groovy-comment-block-comment-block-begin
+  ^^^^^^^^^^^
+  source-code-groovy-comment-block-comment-block-content
+ * block comment. */
+^^^^^^^^^^^^^^^^^^
+source-code-groovy-comment-block-comment-block-content
+                  ^^
+                  source-code-groovy-comment-block-comment-block-end
+
+/**
+^^^
+source-code-groovy-comment-block-doc-comment-block-doc-begin
+ * Groovydoc for `Service` (contact user@version.com).
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+source-code-groovy-comment-block-doc-comment-block-doc-content
+                                        ^
+                                        source-code-groovy-comment-block-doc-comment-block-doc-content
+                                         ^^^^^^^^^^^^^
+                                         source-code-groovy-comment-block-doc-comment-block-doc-content
+ * Inline {@code '}'} and {@link String}.
+^^^^^^^^^^^
+source-code-groovy-comment-block-doc-comment-block-doc-content
+           ^^^^^
+           source-code-groovy-comment-block-doc-metadata-annotation
+                ^^^^^^^^^^^
+                source-code-groovy-comment-block-doc-comment-block-doc-content
+                           ^^^^^
+                           source-code-groovy-comment-block-doc-metadata-annotation
+                                ^^^^^^^^^
+                                source-code-groovy-comment-block-doc-comment-block-doc-content
+ * @param name the service name
+^^^
+source-code-groovy-comment-block-doc-comment-block-doc-content
+   ^^^^^^
+   source-code-groovy-comment-block-doc-metadata-annotation
+         ^^^^^^^^^^^^^^^^^^^^^^
+         source-code-groovy-comment-block-doc-comment-block-doc-content
+ * @return the service
+^^^
+source-code-groovy-comment-block-doc-comment-block-doc-content
+   ^^^^^^^
+   source-code-groovy-comment-block-doc-metadata-annotation
+          ^^^^^^^^^^^^
+          source-code-groovy-comment-block-doc-comment-block-doc-content
+ */
+^
+source-code-groovy-comment-block-doc-comment-block-doc-content
+ ^^
+ source-code-groovy-comment-block-doc-comment-block-doc-end
+class Service {
+^^^^^
+source-code-groovy-keyword-declaration-class
+     ^
+     source-code-groovy-whitespace
+      ^^^^^^^
+      source-code-groovy-identifier-type
+             ^
+             source-code-groovy-whitespace
+              ^
+              source-code-groovy-punctuation
+  /** Creates the service. */
+^^
+source-code-groovy-whitespace
+  ^^^
+  source-code-groovy-comment-block-doc-comment-block-doc-begin
+     ^^^^^^^^^^^^^^^^^^^^^^
+     source-code-groovy-comment-block-doc-comment-block-doc-content
+                           ^^
+                           source-code-groovy-comment-block-doc-comment-block-doc-end
+  static void create() {}
+^^
+source-code-groovy-whitespace
+  ^^^^^^
+  source-code-groovy-keyword-modifier-static
+        ^
+        source-code-groovy-whitespace
+         ^^^^
+         source-code-groovy-identifier-type-built-in
+             ^
+             source-code-groovy-whitespace
+              ^^^^^^
+              source-code-groovy-identifier-function
+                    ^
+                    source-code-groovy-punctuation
+                     ^
+                     source-code-groovy-punctuation
+                      ^
+                      source-code-groovy-whitespace
+                       ^
+                       source-code-groovy-punctuation
+                        ^
+                        source-code-groovy-punctuation
+}
+^
+source-code-groovy-punctuation

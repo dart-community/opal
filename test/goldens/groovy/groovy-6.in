@@ -1,0 +1,69 @@
+@ActiveObject
+@Pure
+class DungeonRunner {
+  Iterable<List<String>> generateWaves(String id) {
+    yield ['Goblin', 'Orc']
+    yield return ['Boss']
+  }
+
+  async def run(hero, String dungeonId) {
+    val (firstId, _, *rest) = [dungeonId, 'skip', 'fallback']
+    val (name: heroName) = hero
+    val task = async {
+      val portal = openPortal(firstId, heroName)
+      defer portal.close()
+      defer { cleanup() }
+
+      for await (val (id, wave) in generateWaves(rest[0])) {
+        for (val idx, val foe in wave) {
+          val ok = ready ? await hero.fightAsync(idx, foe) : false
+          if (!ok || idx > await limit()) return false
+        }
+      }
+      await(ping(), syncState())
+      try (val r1 = openPortal(firstId, 'a'); final var r2 = openPortal(firstId, 'b')) {}
+      @SuppressWarnings(
+        'unchecked'
+      ) val checked = rest
+    }
+    return await task
+  }
+
+  async <T> Awaitable<T> load(Class<T> type) {
+    await fetch(type)
+  }
+
+  async void pingAsync() {
+    await ping()
+  }
+
+  int score(int tier, items) {
+    val total = DO(x in Optional.of(tier), y in Optional.of(2)) {
+      Optional.of(x + y)
+    }
+    val queried = GQ { from x in items where x > 1 select x }
+    switch (total.orElse(tier)) {
+      case 1 -> yield(10 + tier)
+      case null, default -> {
+        val bonus = 5
+        yield tier * bonus
+      }
+    }
+  }
+
+  void await(defer, yield, expected) {
+    def val = 1
+    def r = val(
+      1,
+      2
+    )
+    assert val == 1
+    println val
+    println defer
+    println yield
+    await()
+    latch.await()
+    Thread.yield()
+    configure(async: true, val: val, defer: false)
+  }
+}

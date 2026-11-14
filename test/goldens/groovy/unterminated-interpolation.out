@@ -1,0 +1,44 @@
+def msg = "Count: ${items.size()
+^^^
+source-code-groovy-keyword-declaration-def
+   ^
+   source-code-groovy-whitespace
+    ^^^
+    source-code-groovy-identifier
+       ^
+       source-code-groovy-whitespace
+        ^
+        source-code-groovy-keyword-operator
+         ^
+         source-code-groovy-whitespace
+          ^
+          source-code-groovy-literal-string-quoted-double-literal-string-quoted-double-begin
+           ^^^^^^^
+           source-code-groovy-literal-string-quoted-double-literal-string-unquoted
+                  ^^
+                  source-code-groovy-literal-string-quoted-double-literal-string-interpolation-literal-string-interpolation-begin
+                    ^^^^^
+                    source-code-groovy-literal-string-quoted-double-literal-string-interpolation-identifier
+                         ^
+                         source-code-groovy-literal-string-quoted-double-literal-string-interpolation-punctuation-accessor
+                          ^^^^
+                          source-code-groovy-literal-string-quoted-double-literal-string-interpolation-identifier-function
+                              ^
+                              source-code-groovy-literal-string-quoted-double-literal-string-interpolation-punctuation
+                               ^
+                               source-code-groovy-literal-string-quoted-double-literal-string-interpolation-punctuation
+def trailing = 1
+^^^
+source-code-groovy-keyword-declaration-def
+   ^
+   source-code-groovy-whitespace
+    ^^^^^^^^
+    source-code-groovy-identifier
+            ^
+            source-code-groovy-whitespace
+             ^
+             source-code-groovy-keyword-operator
+              ^
+              source-code-groovy-whitespace
+               ^
+               source-code-groovy-literal-number-integer

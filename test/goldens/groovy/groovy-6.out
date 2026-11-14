@@ -1,0 +1,1331 @@
+@ActiveObject
+^^^^^^^^^^^^^
+source-code-groovy-metadata-annotation
+@Pure
+^^^^^
+source-code-groovy-metadata-annotation
+class DungeonRunner {
+^^^^^
+source-code-groovy-keyword-declaration-class
+     ^
+     source-code-groovy-whitespace
+      ^^^^^^^^^^^^^
+      source-code-groovy-identifier-type
+                   ^
+                   source-code-groovy-whitespace
+                    ^
+                    source-code-groovy-punctuation
+  Iterable<List<String>> generateWaves(String id) {
+^^
+source-code-groovy-whitespace
+  ^^^^^^^^
+  source-code-groovy-identifier-type-built-in
+          ^
+          source-code-groovy-punctuation
+           ^^^^
+           source-code-groovy-identifier-type-built-in
+               ^
+               source-code-groovy-punctuation
+                ^^^^^^
+                source-code-groovy-identifier-type-built-in
+                      ^
+                      source-code-groovy-punctuation
+                       ^
+                       source-code-groovy-punctuation
+                        ^
+                        source-code-groovy-whitespace
+                         ^^^^^^^^^^^^^
+                         source-code-groovy-identifier-function
+                                      ^
+                                      source-code-groovy-punctuation
+                                       ^^^^^^
+                                       source-code-groovy-identifier-type-built-in
+                                             ^
+                                             source-code-groovy-whitespace
+                                              ^^
+                                              source-code-groovy-identifier
+                                                ^
+                                                source-code-groovy-punctuation
+                                                 ^
+                                                 source-code-groovy-whitespace
+                                                  ^
+                                                  source-code-groovy-punctuation
+    yield ['Goblin', 'Orc']
+^^^^
+source-code-groovy-whitespace
+    ^^^^^
+    source-code-groovy-keyword-control-yield
+         ^
+         source-code-groovy-whitespace
+          ^
+          source-code-groovy-punctuation
+           ^
+           source-code-groovy-literal-string-quoted-single-literal-string-quoted-single-begin
+            ^^^^^^
+            source-code-groovy-literal-string-quoted-single-literal-string-unquoted
+                  ^
+                  source-code-groovy-literal-string-quoted-single-literal-string-quoted-single-end
+                   ^
+                   source-code-groovy-punctuation-separator
+                    ^
+                    source-code-groovy-whitespace
+                     ^
+                     source-code-groovy-literal-string-quoted-single-literal-string-quoted-single-begin
+                      ^^^
+                      source-code-groovy-literal-string-quoted-single-literal-string-unquoted
+                         ^
+                         source-code-groovy-literal-string-quoted-single-literal-string-quoted-single-end
+                          ^
+                          source-code-groovy-punctuation
+    yield return ['Boss']
+^^^^
+source-code-groovy-whitespace
+    ^^^^^
+    source-code-groovy-keyword-control-yield
+         ^
+         source-code-groovy-whitespace
+          ^^^^^^
+          source-code-groovy-keyword-control-return
+                ^
+                source-code-groovy-whitespace
+                 ^
+                 source-code-groovy-punctuation
+                  ^
+                  source-code-groovy-literal-string-quoted-single-literal-string-quoted-single-begin
+                   ^^^^
+                   source-code-groovy-literal-string-quoted-single-literal-string-unquoted
+                       ^
+                       source-code-groovy-literal-string-quoted-single-literal-string-quoted-single-end
+                        ^
+                        source-code-groovy-punctuation
+  }
+^^
+source-code-groovy-whitespace
+  ^
+  source-code-groovy-punctuation
+
+  async def run(hero, String dungeonId) {
+^^
+source-code-groovy-whitespace
+  ^^^^^
+  source-code-groovy-keyword-modifier-async
+       ^
+       source-code-groovy-whitespace
+        ^^^
+        source-code-groovy-keyword-declaration-def
+           ^
+           source-code-groovy-whitespace
+            ^^^
+            source-code-groovy-identifier-function
+               ^
+               source-code-groovy-punctuation
+                ^^^^
+                source-code-groovy-identifier
+                    ^
+                    source-code-groovy-punctuation-separator
+                     ^
+                     source-code-groovy-whitespace
+                      ^^^^^^
+                      source-code-groovy-identifier-type-built-in
+                            ^
+                            source-code-groovy-whitespace
+                             ^^^^^^^^^
+                             source-code-groovy-identifier
+                                      ^
+                                      source-code-groovy-punctuation
+                                       ^
+                                       source-code-groovy-whitespace
+                                        ^
+                                        source-code-groovy-punctuation
+    val (firstId, _, *rest) = [dungeonId, 'skip', 'fallback']
+^^^^
+source-code-groovy-whitespace
+    ^^^
+    source-code-groovy-keyword-declaration-val
+       ^
+       source-code-groovy-whitespace
+        ^
+        source-code-groovy-punctuation
+         ^^^^^^^
+         source-code-groovy-identifier
+                ^
+                source-code-groovy-punctuation-separator
+                 ^
+                 source-code-groovy-whitespace
+                  ^
+                  source-code-groovy-identifier
+                   ^
+                   source-code-groovy-punctuation-separator
+                    ^
+                    source-code-groovy-whitespace
+                     ^
+                     source-code-groovy-keyword-operator
+                      ^^^^
+                      source-code-groovy-identifier
+                          ^
+                          source-code-groovy-punctuation
+                           ^
+                           source-code-groovy-whitespace
+                            ^
+                            source-code-groovy-keyword-operator
+                             ^
+                             source-code-groovy-whitespace
+                              ^
+                              source-code-groovy-punctuation
+                               ^^^^^^^^^
+                               source-code-groovy-identifier
+                                        ^
+                                        source-code-groovy-punctuation-separator
+                                         ^
+                                         source-code-groovy-whitespace
+                                          ^
+                                          source-code-groovy-literal-string-quoted-single-literal-string-quoted-single-begin
+                                           ^^^^
+                                           source-code-groovy-literal-string-quoted-single-literal-string-unquoted
+                                               ^
+                                               source-code-groovy-literal-string-quoted-single-literal-string-quoted-single-end
+                                                ^
+                                                source-code-groovy-punctuation-separator
+                                                 ^
+                                                 source-code-groovy-whitespace
+                                                  ^
+                                                  source-code-groovy-literal-string-quoted-single-literal-string-quoted-single-begin
+                                                   ^^^^^^^^
+                                                   source-code-groovy-literal-string-quoted-single-literal-string-unquoted
+                                                           ^
+                                                           source-code-groovy-literal-string-quoted-single-literal-string-quoted-single-end
+                                                            ^
+                                                            source-code-groovy-punctuation
+    val (name: heroName) = hero
+^^^^
+source-code-groovy-whitespace
+    ^^^
+    source-code-groovy-keyword-declaration-val
+       ^
+       source-code-groovy-whitespace
+        ^
+        source-code-groovy-punctuation
+         ^^^^
+         source-code-groovy-identifier
+             ^
+             source-code-groovy-punctuation-separator
+              ^
+              source-code-groovy-whitespace
+               ^^^^^^^^
+               source-code-groovy-identifier
+                       ^
+                       source-code-groovy-punctuation
+                        ^
+                        source-code-groovy-whitespace
+                         ^
+                         source-code-groovy-keyword-operator
+                          ^
+                          source-code-groovy-whitespace
+                           ^^^^
+                           source-code-groovy-identifier
+    val task = async {
+^^^^
+source-code-groovy-whitespace
+    ^^^
+    source-code-groovy-keyword-declaration-val
+       ^
+       source-code-groovy-whitespace
+        ^^^^
+        source-code-groovy-identifier
+            ^
+            source-code-groovy-whitespace
+             ^
+             source-code-groovy-keyword-operator
+              ^
+              source-code-groovy-whitespace
+               ^^^^^
+               source-code-groovy-keyword-modifier-async
+                    ^
+                    source-code-groovy-whitespace
+                     ^
+                     source-code-groovy-punctuation
+      val portal = openPortal(firstId, heroName)
+^^^^^^
+source-code-groovy-whitespace
+      ^^^
+      source-code-groovy-keyword-declaration-val
+         ^
+         source-code-groovy-whitespace
+          ^^^^^^
+          source-code-groovy-identifier
+                ^
+                source-code-groovy-whitespace
+                 ^
+                 source-code-groovy-keyword-operator
+                  ^
+                  source-code-groovy-whitespace
+                   ^^^^^^^^^^
+                   source-code-groovy-identifier-function
+                             ^
+                             source-code-groovy-punctuation
+                              ^^^^^^^
+                              source-code-groovy-identifier
+                                     ^
+                                     source-code-groovy-punctuation-separator
+                                      ^
+                                      source-code-groovy-whitespace
+                                       ^^^^^^^^
+                                       source-code-groovy-identifier
+                                               ^
+                                               source-code-groovy-punctuation
+      defer portal.close()
+^^^^^^
+source-code-groovy-whitespace
+      ^^^^^
+      source-code-groovy-keyword-control-defer
+           ^
+           source-code-groovy-whitespace
+            ^^^^^^
+            source-code-groovy-identifier
+                  ^
+                  source-code-groovy-punctuation-accessor
+                   ^^^^^
+                   source-code-groovy-identifier-function
+                        ^
+                        source-code-groovy-punctuation
+                         ^
+                         source-code-groovy-punctuation
+      defer { cleanup() }
+^^^^^^
+source-code-groovy-whitespace
+      ^^^^^
+      source-code-groovy-keyword-control-defer
+           ^
+           source-code-groovy-whitespace
+            ^
+            source-code-groovy-punctuation
+             ^
+             source-code-groovy-whitespace
+              ^^^^^^^
+              source-code-groovy-identifier-function
+                     ^
+                     source-code-groovy-punctuation
+                      ^
+                      source-code-groovy-punctuation
+                       ^
+                       source-code-groovy-whitespace
+                        ^
+                        source-code-groovy-punctuation
+
+      for await (val (id, wave) in generateWaves(rest[0])) {
+^^^^^^
+source-code-groovy-whitespace
+      ^^^
+      source-code-groovy-keyword-control-for
+         ^
+         source-code-groovy-whitespace
+          ^^^^^
+          source-code-groovy-keyword-control-await
+               ^
+               source-code-groovy-whitespace
+                ^
+                source-code-groovy-punctuation
+                 ^^^
+                 source-code-groovy-keyword-declaration-val
+                    ^
+                    source-code-groovy-whitespace
+                     ^
+                     source-code-groovy-punctuation
+                      ^^
+                      source-code-groovy-identifier
+                        ^
+                        source-code-groovy-punctuation-separator
+                         ^
+                         source-code-groovy-whitespace
+                          ^^^^
+                          source-code-groovy-identifier
+                              ^
+                              source-code-groovy-punctuation
+                               ^
+                               source-code-groovy-whitespace
+                                ^^
+                                source-code-groovy-keyword-in
+                                  ^
+                                  source-code-groovy-whitespace
+                                   ^^^^^^^^^^^^^
+                                   source-code-groovy-identifier-function
+                                                ^
+                                                source-code-groovy-punctuation
+                                                 ^^^^
+                                                 source-code-groovy-identifier
+                                                     ^
+                                                     source-code-groovy-punctuation
+                                                      ^
+                                                      source-code-groovy-literal-number-integer
+                                                       ^
+                                                       source-code-groovy-punctuation
+                                                        ^
+                                                        source-code-groovy-punctuation
+                                                         ^
+                                                         source-code-groovy-punctuation
+                                                          ^
+                                                          source-code-groovy-whitespace
+                                                           ^
+                                                           source-code-groovy-punctuation
+        for (val idx, val foe in wave) {
+^^^^^^^^
+source-code-groovy-whitespace
+        ^^^
+        source-code-groovy-keyword-control-for
+           ^
+           source-code-groovy-whitespace
+            ^
+            source-code-groovy-punctuation
+             ^^^
+             source-code-groovy-keyword-declaration-val
+                ^
+                source-code-groovy-whitespace
+                 ^^^
+                 source-code-groovy-identifier
+                    ^
+                    source-code-groovy-punctuation-separator
+                     ^
+                     source-code-groovy-whitespace
+                      ^^^
+                      source-code-groovy-keyword-declaration-val
+                         ^
+                         source-code-groovy-whitespace
+                          ^^^
+                          source-code-groovy-identifier
+                             ^
+                             source-code-groovy-whitespace
+                              ^^
+                              source-code-groovy-keyword-in
+                                ^
+                                source-code-groovy-whitespace
+                                 ^^^^
+                                 source-code-groovy-identifier
+                                     ^
+                                     source-code-groovy-punctuation
+                                      ^
+                                      source-code-groovy-whitespace
+                                       ^
+                                       source-code-groovy-punctuation
+          val ok = ready ? await hero.fightAsync(idx, foe) : false
+^^^^^^^^^^
+source-code-groovy-whitespace
+          ^^^
+          source-code-groovy-keyword-declaration-val
+             ^
+             source-code-groovy-whitespace
+              ^^
+              source-code-groovy-identifier
+                ^
+                source-code-groovy-whitespace
+                 ^
+                 source-code-groovy-keyword-operator
+                  ^
+                  source-code-groovy-whitespace
+                   ^^^^^
+                   source-code-groovy-identifier
+                        ^
+                        source-code-groovy-whitespace
+                         ^
+                         source-code-groovy-keyword-operator
+                          ^
+                          source-code-groovy-whitespace
+                           ^^^^^
+                           source-code-groovy-keyword-control-await
+                                ^
+                                source-code-groovy-whitespace
+                                 ^^^^
+                                 source-code-groovy-identifier
+                                     ^
+                                     source-code-groovy-punctuation-accessor
+                                      ^^^^^^^^^^
+                                      source-code-groovy-identifier-function
+                                                ^
+                                                source-code-groovy-punctuation
+                                                 ^^^
+                                                 source-code-groovy-identifier
+                                                    ^
+                                                    source-code-groovy-punctuation-separator
+                                                     ^
+                                                     source-code-groovy-whitespace
+                                                      ^^^
+                                                      source-code-groovy-identifier
+                                                         ^
+                                                         source-code-groovy-punctuation
+                                                          ^
+                                                          source-code-groovy-whitespace
+                                                           ^
+                                                           source-code-groovy-punctuation-separator
+                                                            ^
+                                                            source-code-groovy-whitespace
+                                                             ^^^^^
+                                                             source-code-groovy-literal-boolean-false
+          if (!ok || idx > await limit()) return false
+^^^^^^^^^^
+source-code-groovy-whitespace
+          ^^
+          source-code-groovy-keyword-control-if
+            ^
+            source-code-groovy-whitespace
+             ^
+             source-code-groovy-punctuation
+              ^
+              source-code-groovy-keyword-operator
+               ^^
+               source-code-groovy-identifier
+                 ^
+                 source-code-groovy-whitespace
+                  ^^
+                  source-code-groovy-keyword-operator
+                    ^
+                    source-code-groovy-whitespace
+                     ^^^
+                     source-code-groovy-identifier
+                        ^
+                        source-code-groovy-whitespace
+                         ^
+                         source-code-groovy-keyword-operator
+                          ^
+                          source-code-groovy-whitespace
+                           ^^^^^
+                           source-code-groovy-keyword-control-await
+                                ^
+                                source-code-groovy-whitespace
+                                 ^^^^^
+                                 source-code-groovy-identifier-function
+                                      ^
+                                      source-code-groovy-punctuation
+                                       ^
+                                       source-code-groovy-punctuation
+                                        ^
+                                        source-code-groovy-punctuation
+                                         ^
+                                         source-code-groovy-whitespace
+                                          ^^^^^^
+                                          source-code-groovy-keyword-control-return
+                                                ^
+                                                source-code-groovy-whitespace
+                                                 ^^^^^
+                                                 source-code-groovy-literal-boolean-false
+        }
+^^^^^^^^
+source-code-groovy-whitespace
+        ^
+        source-code-groovy-punctuation
+      }
+^^^^^^
+source-code-groovy-whitespace
+      ^
+      source-code-groovy-punctuation
+      await(ping(), syncState())
+^^^^^^
+source-code-groovy-whitespace
+      ^^^^^
+      source-code-groovy-identifier-function
+           ^
+           source-code-groovy-punctuation
+            ^^^^
+            source-code-groovy-identifier-function
+                ^
+                source-code-groovy-punctuation
+                 ^
+                 source-code-groovy-punctuation
+                  ^
+                  source-code-groovy-punctuation-separator
+                   ^
+                   source-code-groovy-whitespace
+                    ^^^^^^^^^
+                    source-code-groovy-identifier-function
+                             ^
+                             source-code-groovy-punctuation
+                              ^
+                              source-code-groovy-punctuation
+                               ^
+                               source-code-groovy-punctuation
+      try (val r1 = openPortal(firstId, 'a'); final var r2 = openPortal(firstId, 'b')) {}
+^^^^^^
+source-code-groovy-whitespace
+      ^^^
+      source-code-groovy-keyword-control-try
+         ^
+         source-code-groovy-whitespace
+          ^
+          source-code-groovy-punctuation
+           ^^^
+           source-code-groovy-keyword-declaration-val
+              ^
+              source-code-groovy-whitespace
+               ^^
+               source-code-groovy-identifier
+                 ^
+                 source-code-groovy-whitespace
+                  ^
+                  source-code-groovy-keyword-operator
+                   ^
+                   source-code-groovy-whitespace
+                    ^^^^^^^^^^
+                    source-code-groovy-identifier-function
+                              ^
+                              source-code-groovy-punctuation
+                               ^^^^^^^
+                               source-code-groovy-identifier
+                                      ^
+                                      source-code-groovy-punctuation-separator
+                                       ^
+                                       source-code-groovy-whitespace
+                                        ^
+                                        source-code-groovy-literal-string-quoted-single-literal-string-quoted-single-begin
+                                         ^
+                                         source-code-groovy-literal-string-quoted-single-literal-string-unquoted
+                                          ^
+                                          source-code-groovy-literal-string-quoted-single-literal-string-quoted-single-end
+                                           ^
+                                           source-code-groovy-punctuation
+                                            ^
+                                            source-code-groovy-punctuation
+                                             ^
+                                             source-code-groovy-whitespace
+                                              ^^^^^
+                                              source-code-groovy-keyword-modifier-final
+                                                   ^
+                                                   source-code-groovy-whitespace
+                                                    ^^^
+                                                    source-code-groovy-keyword-declaration-var
+                                                       ^
+                                                       source-code-groovy-whitespace
+                                                        ^^
+                                                        source-code-groovy-identifier
+                                                          ^
+                                                          source-code-groovy-whitespace
+                                                           ^
+                                                           source-code-groovy-keyword-operator
+                                                            ^
+                                                            source-code-groovy-whitespace
+                                                             ^^^^^^^^^^
+                                                             source-code-groovy-identifier-function
+                                                                       ^
+                                                                       source-code-groovy-punctuation
+                                                                        ^^^^^^^
+                                                                        source-code-groovy-identifier
+                                                                               ^
+                                                                               source-code-groovy-punctuation-separator
+                                                                                ^
+                                                                                source-code-groovy-whitespace
+                                                                                 ^
+                                                                                 source-code-groovy-literal-string-quoted-single-literal-string-quoted-single-begin
+                                                                                  ^
+                                                                                  source-code-groovy-literal-string-quoted-single-literal-string-unquoted
+                                                                                   ^
+                                                                                   source-code-groovy-literal-string-quoted-single-literal-string-quoted-single-end
+                                                                                    ^
+                                                                                    source-code-groovy-punctuation
+                                                                                     ^
+                                                                                     source-code-groovy-punctuation
+                                                                                      ^
+                                                                                      source-code-groovy-whitespace
+                                                                                       ^
+                                                                                       source-code-groovy-punctuation
+                                                                                        ^
+                                                                                        source-code-groovy-punctuation
+      @SuppressWarnings(
+^^^^^^
+source-code-groovy-whitespace
+      ^^^^^^^^^^^^^^^^^
+      source-code-groovy-metadata-annotation
+                       ^
+                       source-code-groovy-punctuation
+        'unchecked'
+^^^^^^^^
+source-code-groovy-whitespace
+        ^
+        source-code-groovy-literal-string-quoted-single-literal-string-quoted-single-begin
+         ^^^^^^^^^
+         source-code-groovy-literal-string-quoted-single-literal-string-unquoted
+                  ^
+                  source-code-groovy-literal-string-quoted-single-literal-string-quoted-single-end
+      ) val checked = rest
+^^^^^^
+source-code-groovy-whitespace
+      ^
+      source-code-groovy-punctuation
+       ^
+       source-code-groovy-whitespace
+        ^^^
+        source-code-groovy-keyword-declaration-val
+           ^
+           source-code-groovy-whitespace
+            ^^^^^^^
+            source-code-groovy-identifier
+                   ^
+                   source-code-groovy-whitespace
+                    ^
+                    source-code-groovy-keyword-operator
+                     ^
+                     source-code-groovy-whitespace
+                      ^^^^
+                      source-code-groovy-identifier
+    }
+^^^^
+source-code-groovy-whitespace
+    ^
+    source-code-groovy-punctuation
+    return await task
+^^^^
+source-code-groovy-whitespace
+    ^^^^^^
+    source-code-groovy-keyword-control-return
+          ^
+          source-code-groovy-whitespace
+           ^^^^^
+           source-code-groovy-keyword-control-await
+                ^
+                source-code-groovy-whitespace
+                 ^^^^
+                 source-code-groovy-identifier
+  }
+^^
+source-code-groovy-whitespace
+  ^
+  source-code-groovy-punctuation
+
+  async <T> Awaitable<T> load(Class<T> type) {
+^^
+source-code-groovy-whitespace
+  ^^^^^
+  source-code-groovy-keyword-modifier-async
+       ^
+       source-code-groovy-whitespace
+        ^
+        source-code-groovy-punctuation
+         ^
+         source-code-groovy-identifier-type
+          ^
+          source-code-groovy-punctuation
+           ^
+           source-code-groovy-whitespace
+            ^^^^^^^^^
+            source-code-groovy-identifier-type
+                     ^
+                     source-code-groovy-punctuation
+                      ^
+                      source-code-groovy-identifier-type
+                       ^
+                       source-code-groovy-punctuation
+                        ^
+                        source-code-groovy-whitespace
+                         ^^^^
+                         source-code-groovy-identifier-function
+                             ^
+                             source-code-groovy-punctuation
+                              ^^^^^
+                              source-code-groovy-identifier-type-built-in
+                                   ^
+                                   source-code-groovy-punctuation
+                                    ^
+                                    source-code-groovy-identifier-type
+                                     ^
+                                     source-code-groovy-punctuation
+                                      ^
+                                      source-code-groovy-whitespace
+                                       ^^^^
+                                       source-code-groovy-identifier
+                                           ^
+                                           source-code-groovy-punctuation
+                                            ^
+                                            source-code-groovy-whitespace
+                                             ^
+                                             source-code-groovy-punctuation
+    await fetch(type)
+^^^^
+source-code-groovy-whitespace
+    ^^^^^
+    source-code-groovy-keyword-control-await
+         ^
+         source-code-groovy-whitespace
+          ^^^^^
+          source-code-groovy-identifier-function
+               ^
+               source-code-groovy-punctuation
+                ^^^^
+                source-code-groovy-identifier
+                    ^
+                    source-code-groovy-punctuation
+  }
+^^
+source-code-groovy-whitespace
+  ^
+  source-code-groovy-punctuation
+
+  async void pingAsync() {
+^^
+source-code-groovy-whitespace
+  ^^^^^
+  source-code-groovy-keyword-modifier-async
+       ^
+       source-code-groovy-whitespace
+        ^^^^
+        source-code-groovy-identifier-type-built-in
+            ^
+            source-code-groovy-whitespace
+             ^^^^^^^^^
+             source-code-groovy-identifier-function
+                      ^
+                      source-code-groovy-punctuation
+                       ^
+                       source-code-groovy-punctuation
+                        ^
+                        source-code-groovy-whitespace
+                         ^
+                         source-code-groovy-punctuation
+    await ping()
+^^^^
+source-code-groovy-whitespace
+    ^^^^^
+    source-code-groovy-keyword-control-await
+         ^
+         source-code-groovy-whitespace
+          ^^^^
+          source-code-groovy-identifier-function
+              ^
+              source-code-groovy-punctuation
+               ^
+               source-code-groovy-punctuation
+  }
+^^
+source-code-groovy-whitespace
+  ^
+  source-code-groovy-punctuation
+
+  int score(int tier, items) {
+^^
+source-code-groovy-whitespace
+  ^^^
+  source-code-groovy-identifier-type-built-in
+     ^
+     source-code-groovy-whitespace
+      ^^^^^
+      source-code-groovy-identifier-function
+           ^
+           source-code-groovy-punctuation
+            ^^^
+            source-code-groovy-identifier-type-built-in
+               ^
+               source-code-groovy-whitespace
+                ^^^^
+                source-code-groovy-identifier
+                    ^
+                    source-code-groovy-punctuation-separator
+                     ^
+                     source-code-groovy-whitespace
+                      ^^^^^
+                      source-code-groovy-identifier
+                           ^
+                           source-code-groovy-punctuation
+                            ^
+                            source-code-groovy-whitespace
+                             ^
+                             source-code-groovy-punctuation
+    val total = DO(x in Optional.of(tier), y in Optional.of(2)) {
+^^^^
+source-code-groovy-whitespace
+    ^^^
+    source-code-groovy-keyword-declaration-val
+       ^
+       source-code-groovy-whitespace
+        ^^^^^
+        source-code-groovy-identifier
+             ^
+             source-code-groovy-whitespace
+              ^
+              source-code-groovy-keyword-operator
+               ^
+               source-code-groovy-whitespace
+                ^^
+                source-code-groovy-identifier-special-constant
+                  ^
+                  source-code-groovy-punctuation
+                   ^
+                   source-code-groovy-identifier
+                    ^
+                    source-code-groovy-whitespace
+                     ^^
+                     source-code-groovy-keyword-in
+                       ^
+                       source-code-groovy-whitespace
+                        ^^^^^^^^
+                        source-code-groovy-identifier-type-built-in
+                                ^
+                                source-code-groovy-punctuation-accessor
+                                 ^^
+                                 source-code-groovy-identifier-function
+                                   ^
+                                   source-code-groovy-punctuation
+                                    ^^^^
+                                    source-code-groovy-identifier
+                                        ^
+                                        source-code-groovy-punctuation
+                                         ^
+                                         source-code-groovy-punctuation-separator
+                                          ^
+                                          source-code-groovy-whitespace
+                                           ^
+                                           source-code-groovy-identifier
+                                            ^
+                                            source-code-groovy-whitespace
+                                             ^^
+                                             source-code-groovy-keyword-in
+                                               ^
+                                               source-code-groovy-whitespace
+                                                ^^^^^^^^
+                                                source-code-groovy-identifier-type-built-in
+                                                        ^
+                                                        source-code-groovy-punctuation-accessor
+                                                         ^^
+                                                         source-code-groovy-identifier-function
+                                                           ^
+                                                           source-code-groovy-punctuation
+                                                            ^
+                                                            source-code-groovy-literal-number-integer
+                                                             ^
+                                                             source-code-groovy-punctuation
+                                                              ^
+                                                              source-code-groovy-punctuation
+                                                               ^
+                                                               source-code-groovy-whitespace
+                                                                ^
+                                                                source-code-groovy-punctuation
+      Optional.of(x + y)
+^^^^^^
+source-code-groovy-whitespace
+      ^^^^^^^^
+      source-code-groovy-identifier-type-built-in
+              ^
+              source-code-groovy-punctuation-accessor
+               ^^
+               source-code-groovy-identifier-function
+                 ^
+                 source-code-groovy-punctuation
+                  ^
+                  source-code-groovy-identifier
+                   ^
+                   source-code-groovy-whitespace
+                    ^
+                    source-code-groovy-keyword-operator
+                     ^
+                     source-code-groovy-whitespace
+                      ^
+                      source-code-groovy-identifier
+                       ^
+                       source-code-groovy-punctuation
+    }
+^^^^
+source-code-groovy-whitespace
+    ^
+    source-code-groovy-punctuation
+    val queried = GQ { from x in items where x > 1 select x }
+^^^^
+source-code-groovy-whitespace
+    ^^^
+    source-code-groovy-keyword-declaration-val
+       ^
+       source-code-groovy-whitespace
+        ^^^^^^^
+        source-code-groovy-identifier
+               ^
+               source-code-groovy-whitespace
+                ^
+                source-code-groovy-keyword-operator
+                 ^
+                 source-code-groovy-whitespace
+                  ^^
+                  source-code-groovy-identifier-special-constant
+                    ^
+                    source-code-groovy-whitespace
+                     ^
+                     source-code-groovy-punctuation
+                      ^
+                      source-code-groovy-whitespace
+                       ^^^^
+                       source-code-groovy-identifier-function
+                           ^
+                           source-code-groovy-whitespace
+                            ^
+                            source-code-groovy-identifier
+                             ^
+                             source-code-groovy-whitespace
+                              ^^
+                              source-code-groovy-keyword-in
+                                ^
+                                source-code-groovy-whitespace
+                                 ^^^^^
+                                 source-code-groovy-identifier
+                                      ^
+                                      source-code-groovy-whitespace
+                                       ^^^^^
+                                       source-code-groovy-identifier
+                                            ^
+                                            source-code-groovy-whitespace
+                                             ^
+                                             source-code-groovy-identifier
+                                              ^
+                                              source-code-groovy-whitespace
+                                               ^
+                                               source-code-groovy-keyword-operator
+                                                ^
+                                                source-code-groovy-whitespace
+                                                 ^
+                                                 source-code-groovy-literal-number-integer
+                                                  ^
+                                                  source-code-groovy-whitespace
+                                                   ^^^^^^
+                                                   source-code-groovy-identifier
+                                                         ^
+                                                         source-code-groovy-whitespace
+                                                          ^
+                                                          source-code-groovy-identifier
+                                                           ^
+                                                           source-code-groovy-whitespace
+                                                            ^
+                                                            source-code-groovy-punctuation
+    switch (total.orElse(tier)) {
+^^^^
+source-code-groovy-whitespace
+    ^^^^^^
+    source-code-groovy-keyword-control-switch
+          ^
+          source-code-groovy-whitespace
+           ^
+           source-code-groovy-punctuation
+            ^^^^^
+            source-code-groovy-identifier
+                 ^
+                 source-code-groovy-punctuation-accessor
+                  ^^^^^^
+                  source-code-groovy-identifier-function
+                        ^
+                        source-code-groovy-punctuation
+                         ^^^^
+                         source-code-groovy-identifier
+                             ^
+                             source-code-groovy-punctuation
+                              ^
+                              source-code-groovy-punctuation
+                               ^
+                               source-code-groovy-whitespace
+                                ^
+                                source-code-groovy-punctuation
+      case 1 -> yield(10 + tier)
+^^^^^^
+source-code-groovy-whitespace
+      ^^^^
+      source-code-groovy-keyword-control-case
+          ^
+          source-code-groovy-whitespace
+           ^
+           source-code-groovy-literal-number-integer
+            ^
+            source-code-groovy-whitespace
+             ^^
+             source-code-groovy-keyword-operator
+               ^
+               source-code-groovy-whitespace
+                ^^^^^
+                source-code-groovy-identifier-function
+                     ^
+                     source-code-groovy-punctuation
+                      ^^
+                      source-code-groovy-literal-number-integer
+                        ^
+                        source-code-groovy-whitespace
+                         ^
+                         source-code-groovy-keyword-operator
+                          ^
+                          source-code-groovy-whitespace
+                           ^^^^
+                           source-code-groovy-identifier
+                               ^
+                               source-code-groovy-punctuation
+      case null, default -> {
+^^^^^^
+source-code-groovy-whitespace
+      ^^^^
+      source-code-groovy-keyword-control-case
+          ^
+          source-code-groovy-whitespace
+           ^^^^
+           source-code-groovy-literal-null
+               ^
+               source-code-groovy-punctuation-separator
+                ^
+                source-code-groovy-whitespace
+                 ^^^^^^^
+                 source-code-groovy-keyword-control-default
+                        ^
+                        source-code-groovy-whitespace
+                         ^^
+                         source-code-groovy-keyword-operator
+                           ^
+                           source-code-groovy-whitespace
+                            ^
+                            source-code-groovy-punctuation
+        val bonus = 5
+^^^^^^^^
+source-code-groovy-whitespace
+        ^^^
+        source-code-groovy-keyword-declaration-val
+           ^
+           source-code-groovy-whitespace
+            ^^^^^
+            source-code-groovy-identifier
+                 ^
+                 source-code-groovy-whitespace
+                  ^
+                  source-code-groovy-keyword-operator
+                   ^
+                   source-code-groovy-whitespace
+                    ^
+                    source-code-groovy-literal-number-integer
+        yield tier * bonus
+^^^^^^^^
+source-code-groovy-whitespace
+        ^^^^^
+        source-code-groovy-keyword-control-yield
+             ^
+             source-code-groovy-whitespace
+              ^^^^
+              source-code-groovy-identifier
+                  ^
+                  source-code-groovy-whitespace
+                   ^
+                   source-code-groovy-keyword-operator
+                    ^
+                    source-code-groovy-whitespace
+                     ^^^^^
+                     source-code-groovy-identifier
+      }
+^^^^^^
+source-code-groovy-whitespace
+      ^
+      source-code-groovy-punctuation
+    }
+^^^^
+source-code-groovy-whitespace
+    ^
+    source-code-groovy-punctuation
+  }
+^^
+source-code-groovy-whitespace
+  ^
+  source-code-groovy-punctuation
+
+  void await(defer, yield, expected) {
+^^
+source-code-groovy-whitespace
+  ^^^^
+  source-code-groovy-identifier-type-built-in
+      ^
+      source-code-groovy-whitespace
+       ^^^^^
+       source-code-groovy-identifier-function
+            ^
+            source-code-groovy-punctuation
+             ^^^^^
+             source-code-groovy-identifier
+                  ^
+                  source-code-groovy-punctuation-separator
+                   ^
+                   source-code-groovy-whitespace
+                    ^^^^^
+                    source-code-groovy-identifier
+                         ^
+                         source-code-groovy-punctuation-separator
+                          ^
+                          source-code-groovy-whitespace
+                           ^^^^^^^^
+                           source-code-groovy-identifier
+                                   ^
+                                   source-code-groovy-punctuation
+                                    ^
+                                    source-code-groovy-whitespace
+                                     ^
+                                     source-code-groovy-punctuation
+    def val = 1
+^^^^
+source-code-groovy-whitespace
+    ^^^
+    source-code-groovy-keyword-declaration-def
+       ^
+       source-code-groovy-whitespace
+        ^^^
+        source-code-groovy-identifier
+           ^
+           source-code-groovy-whitespace
+            ^
+            source-code-groovy-keyword-operator
+             ^
+             source-code-groovy-whitespace
+              ^
+              source-code-groovy-literal-number-integer
+    def r = val(
+^^^^
+source-code-groovy-whitespace
+    ^^^
+    source-code-groovy-keyword-declaration-def
+       ^
+       source-code-groovy-whitespace
+        ^
+        source-code-groovy-identifier
+         ^
+         source-code-groovy-whitespace
+          ^
+          source-code-groovy-keyword-operator
+           ^
+           source-code-groovy-whitespace
+            ^^^
+            source-code-groovy-identifier-function
+               ^
+               source-code-groovy-punctuation
+      1,
+^^^^^^
+source-code-groovy-whitespace
+      ^
+      source-code-groovy-literal-number-integer
+       ^
+       source-code-groovy-punctuation-separator
+      2
+^^^^^^
+source-code-groovy-whitespace
+      ^
+      source-code-groovy-literal-number-integer
+    )
+^^^^
+source-code-groovy-whitespace
+    ^
+    source-code-groovy-punctuation
+    assert val == 1
+^^^^
+source-code-groovy-whitespace
+    ^^^^^^
+    source-code-groovy-keyword-control-assert
+          ^
+          source-code-groovy-whitespace
+           ^^^
+           source-code-groovy-identifier
+              ^
+              source-code-groovy-whitespace
+               ^^
+               source-code-groovy-keyword-operator
+                 ^
+                 source-code-groovy-whitespace
+                  ^
+                  source-code-groovy-literal-number-integer
+    println val
+^^^^
+source-code-groovy-whitespace
+    ^^^^^^^
+    source-code-groovy-identifier-function
+           ^
+           source-code-groovy-whitespace
+            ^^^
+            source-code-groovy-identifier
+    println defer
+^^^^
+source-code-groovy-whitespace
+    ^^^^^^^
+    source-code-groovy-identifier-function
+           ^
+           source-code-groovy-whitespace
+            ^^^^^
+            source-code-groovy-identifier
+    println yield
+^^^^
+source-code-groovy-whitespace
+    ^^^^^^^
+    source-code-groovy-identifier-function
+           ^
+           source-code-groovy-whitespace
+            ^^^^^
+            source-code-groovy-identifier
+    await()
+^^^^
+source-code-groovy-whitespace
+    ^^^^^
+    source-code-groovy-identifier-function
+         ^
+         source-code-groovy-punctuation
+          ^
+          source-code-groovy-punctuation
+    latch.await()
+^^^^
+source-code-groovy-whitespace
+    ^^^^^
+    source-code-groovy-identifier
+         ^
+         source-code-groovy-punctuation-accessor
+          ^^^^^
+          source-code-groovy-identifier-function
+               ^
+               source-code-groovy-punctuation
+                ^
+                source-code-groovy-punctuation
+    Thread.yield()
+^^^^
+source-code-groovy-whitespace
+    ^^^^^^
+    source-code-groovy-identifier-type-built-in
+          ^
+          source-code-groovy-punctuation-accessor
+           ^^^^^
+           source-code-groovy-identifier-function
+                ^
+                source-code-groovy-punctuation
+                 ^
+                 source-code-groovy-punctuation
+    configure(async: true, val: val, defer: false)
+^^^^
+source-code-groovy-whitespace
+    ^^^^^^^^^
+    source-code-groovy-identifier-function
+             ^
+             source-code-groovy-punctuation
+              ^^^^^
+              source-code-groovy-identifier
+                   ^
+                   source-code-groovy-punctuation-separator
+                    ^
+                    source-code-groovy-whitespace
+                     ^^^^
+                     source-code-groovy-literal-boolean-true
+                         ^
+                         source-code-groovy-punctuation-separator
+                          ^
+                          source-code-groovy-whitespace
+                           ^^^
+                           source-code-groovy-identifier
+                              ^
+                              source-code-groovy-punctuation-separator
+                               ^
+                               source-code-groovy-whitespace
+                                ^^^
+                                source-code-groovy-identifier
+                                   ^
+                                   source-code-groovy-punctuation-separator
+                                    ^
+                                    source-code-groovy-whitespace
+                                     ^^^^^
+                                     source-code-groovy-identifier
+                                          ^
+                                          source-code-groovy-punctuation-separator
+                                           ^
+                                           source-code-groovy-whitespace
+                                            ^^^^^
+                                            source-code-groovy-literal-boolean-false
+                                                 ^
+                                                 source-code-groovy-punctuation
+  }
+^^
+source-code-groovy-whitespace
+  ^
+  source-code-groovy-punctuation
+}
+^
+source-code-groovy-punctuation

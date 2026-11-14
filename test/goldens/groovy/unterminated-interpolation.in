@@ -1,0 +1,2 @@
+def msg = "Count: ${items.size()
+def trailing = 1

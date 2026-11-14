@@ -60,7 +60,7 @@ the specified default and alternative IDs:
 - EBNF (`ebnf`)
 - GLSL (`glsl`, `frag`, `vert`, `geom`, `comp`)
 - Go (`go`, `golang`)
-- Groovy (`groovy`, `gradle`)
+- Groovy (`groovy`, `gradle`, `gvy`, `Jenkinsfile`)
 - HTML (`html`)
 - INI (`ini`)
 - Java (`java`)

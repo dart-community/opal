@@ -1,0 +1,16 @@
+class MathSpec extends Specification {
+  def "adds #a and #b"() {
+    given: "two numbers"
+    def calculator = new Calculator()
+
+    when:
+    def sum = calculator.add(a, b)
+
+    then:
+    sum == expected
+
+    where:
+    a | b || expected
+    1 | 2 || 3
+  }
+}

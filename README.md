@@ -57,6 +57,7 @@ the specified default and alternative IDs:
 - CSS (`css`)
 - Dart (`dart`)
 - Diff (`diff`, `patch`, `udiff`)
+- Dockerfile (`dockerfile`, `docker`, `containerfile`)
 - EBNF (`ebnf`)
 - GLSL (`glsl`, `frag`, `vert`, `geom`, `comp`)
 - Go (`go`, `golang`)

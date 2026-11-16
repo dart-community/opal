@@ -1,0 +1,19 @@
+# syntax=docker/dockerfile:1
+# check=error=true
+# Escape=\
+
+ARG BASE=alpine:3.22
+from --platform=$BUILDPLATFORM ${BASE:-alpine} as build
+WORKDIR /src
+COPY . .
+RUN --mount=type=cache,target=/cache make \
+    # Keep using the same cache.
+    && make install
+
+FROM scratch
+COPY --link --from=build /src/app /app
+ENV APP_HOME=/app PATH="$APP_HOME/bin:${PATH}"
+LABEL org.example.name="Example app"
+USER 1000
+EXPOSE 8080
+ENTRYPOINT ["/app"]

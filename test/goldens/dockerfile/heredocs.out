@@ -1,0 +1,203 @@
+RUN <<EOF
+^^^
+source-code-dockerfile-keyword
+   ^
+   source-code-dockerfile-whitespace
+    ^^
+    source-code-dockerfile-keyword-operator
+      ^^^
+      source-code-dockerfile-literal-string-unquoted
+echo "$HOME"
+^^^^^^^^^^^^
+source-code-dockerfile-literal-string-unquoted
+# payload
+^^^^^^^^^
+source-code-dockerfile-literal-string-unquoted
+EOF
+^^^
+source-code-dockerfile-identifier-label
+COPY <<'CONFIG' /etc/app.conf
+^^^^
+source-code-dockerfile-keyword
+    ^
+    source-code-dockerfile-whitespace
+     ^^
+     source-code-dockerfile-keyword-operator
+       ^
+       source-code-dockerfile-literal-string-quoted-single
+        ^^^^^^
+        source-code-dockerfile-literal-string-quoted-single
+              ^
+              source-code-dockerfile-literal-string-quoted-single
+               ^
+               source-code-dockerfile-whitespace
+                ^^^^^^^^^^^^^
+                source-code-dockerfile-literal-string-unquoted
+FROM another-image
+^^^^^^^^^^^^^^^^^^
+source-code-dockerfile-literal-string-unquoted
+CONFIG
+^^^^^^
+source-code-dockerfile-identifier-label
+RUN cat <<-'SCRIPT' > /app/start
+^^^
+source-code-dockerfile-keyword
+   ^
+   source-code-dockerfile-whitespace
+    ^^^
+    source-code-dockerfile-literal-string-unquoted
+       ^
+       source-code-dockerfile-whitespace
+        ^^^
+        source-code-dockerfile-keyword-operator
+           ^
+           source-code-dockerfile-literal-string-quoted-single
+            ^^^^^^
+            source-code-dockerfile-literal-string-quoted-single
+                  ^
+                  source-code-dockerfile-literal-string-quoted-single
+                   ^
+                   source-code-dockerfile-whitespace
+                    ^
+                    source-code-dockerfile-keyword-operator
+                     ^
+                     source-code-dockerfile-whitespace
+                      ^^^^^^^^^^
+                      source-code-dockerfile-literal-string-unquoted
+FROM payload
+^^^^^^^^^^^^
+source-code-dockerfile-literal-string-unquoted
+	SCRIPT
+^^^^^^^
+source-code-dockerfile-identifier-label
+RUN cat > "/etc/motd" <<EOF
+^^^
+source-code-dockerfile-keyword
+   ^
+   source-code-dockerfile-whitespace
+    ^^^
+    source-code-dockerfile-literal-string-unquoted
+       ^
+       source-code-dockerfile-whitespace
+        ^
+        source-code-dockerfile-keyword-operator
+         ^
+         source-code-dockerfile-whitespace
+          ^
+          source-code-dockerfile-literal-string-quoted-double
+           ^^^^^^^^^
+           source-code-dockerfile-literal-string-quoted-double
+                    ^
+                    source-code-dockerfile-literal-string-quoted-double
+                     ^
+                     source-code-dockerfile-whitespace
+                      ^^
+                      source-code-dockerfile-keyword-operator
+                        ^^^
+                        source-code-dockerfile-literal-string-unquoted
+FROM nowhere
+^^^^^^^^^^^^
+source-code-dockerfile-literal-string-unquoted
+EOF
+^^^
+source-code-dockerfile-identifier-label
+RUN <<ONE cat > /one && <<TWO cat > /two
+^^^
+source-code-dockerfile-keyword
+   ^
+   source-code-dockerfile-whitespace
+    ^^
+    source-code-dockerfile-keyword-operator
+      ^^^
+      source-code-dockerfile-literal-string-unquoted
+         ^
+         source-code-dockerfile-whitespace
+          ^^^
+          source-code-dockerfile-literal-string-unquoted
+             ^
+             source-code-dockerfile-whitespace
+              ^
+              source-code-dockerfile-keyword-operator
+               ^
+               source-code-dockerfile-whitespace
+                ^^^^
+                source-code-dockerfile-literal-string-unquoted
+                    ^
+                    source-code-dockerfile-whitespace
+                     ^^
+                     source-code-dockerfile-keyword-operator
+                       ^
+                       source-code-dockerfile-whitespace
+                        ^^
+                        source-code-dockerfile-keyword-operator
+                          ^^^
+                          source-code-dockerfile-literal-string-unquoted
+                             ^
+                             source-code-dockerfile-whitespace
+                              ^^^
+                              source-code-dockerfile-literal-string-unquoted
+                                 ^
+                                 source-code-dockerfile-whitespace
+                                  ^
+                                  source-code-dockerfile-keyword-operator
+                                   ^
+                                   source-code-dockerfile-whitespace
+                                    ^^^^
+                                    source-code-dockerfile-literal-string-unquoted
+first
+^^^^^
+source-code-dockerfile-literal-string-unquoted
+ONE
+^^^
+source-code-dockerfile-identifier-label
+second
+^^^^^^
+source-code-dockerfile-keyword
+TWO
+^^^
+source-code-dockerfile-keyword
+RUN echo "<<EOF"
+^^^
+source-code-dockerfile-keyword
+   ^
+   source-code-dockerfile-whitespace
+    ^^^^
+    source-code-dockerfile-literal-string-unquoted
+        ^
+        source-code-dockerfile-whitespace
+         ^
+         source-code-dockerfile-literal-string-quoted-double
+          ^^^^^
+          source-code-dockerfile-literal-string-quoted-double
+               ^
+               source-code-dockerfile-literal-string-quoted-double
+RUN echo done # <<IGNORED
+^^^
+source-code-dockerfile-keyword
+   ^
+   source-code-dockerfile-whitespace
+    ^^^^
+    source-code-dockerfile-literal-string-unquoted
+        ^
+        source-code-dockerfile-whitespace
+         ^^^^
+         source-code-dockerfile-literal-string-unquoted
+             ^
+             source-code-dockerfile-whitespace
+              ^^^^^^^^^^^
+              source-code-dockerfile-comment-line
+CMD ["app"]
+^^^
+source-code-dockerfile-keyword
+   ^
+   source-code-dockerfile-whitespace
+    ^
+    source-code-dockerfile-literal-string-unquoted
+     ^
+     source-code-dockerfile-literal-string-quoted-double
+      ^^^
+      source-code-dockerfile-literal-string-quoted-double
+         ^
+         source-code-dockerfile-literal-string-quoted-double
+          ^
+          source-code-dockerfile-literal-string-unquoted

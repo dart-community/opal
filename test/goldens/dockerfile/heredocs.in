@@ -1,0 +1,21 @@
+RUN <<EOF
+echo "$HOME"
+# payload
+EOF
+COPY <<'CONFIG' /etc/app.conf
+FROM another-image
+CONFIG
+RUN cat <<-'SCRIPT' > /app/start
+FROM payload
+	SCRIPT
+RUN cat > "/etc/motd" <<EOF
+FROM nowhere
+EOF
+RUN <<ONE cat > /one && <<TWO cat > /two
+first
+ONE
+second
+TWO
+RUN echo "<<EOF"
+RUN echo done # <<IGNORED
+CMD ["app"]

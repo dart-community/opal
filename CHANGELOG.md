@@ -1,5 +1,6 @@
 ## 0.3.1-wip
 
+- Add support for Dockerfiles (`dockerfile`, `docker`, `containerfile`).
 - Add support for CMake files (`cmake`, `CMakeLists.txt`).
 - Add support for INI configuration files (`ini`).
 - Add support for Java properties files

@@ -97,6 +97,8 @@ final Map<String, Language> _defaultLanguages = {
 final Map<String, String> _defaultFallbackLanguageNames = {
   'patch': BuiltInLanguages.diff.name,
   'udiff': BuiltInLanguages.diff.name,
+  'docker': BuiltInLanguages.dockerfile.name,
+  'containerfile': BuiltInLanguages.dockerfile.name,
   'golang': BuiltInLanguages.go.name,
   'xhtml': BuiltInLanguages.xml.name,
   'javascript': BuiltInLanguages.js.name,

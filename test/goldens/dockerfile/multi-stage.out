@@ -1,0 +1,209 @@
+# syntax=docker/dockerfile:1
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+source-code-dockerfile-metadata-preprocessor-directive
+# check=error=true
+^^^^^^^^^^^^^^^^^^
+source-code-dockerfile-metadata-preprocessor-directive
+# Escape=\
+^^^^^^^^^^
+source-code-dockerfile-metadata-preprocessor-directive
+
+ARG BASE=alpine:3.22
+^^^
+source-code-dockerfile-keyword
+   ^
+   source-code-dockerfile-whitespace
+    ^^^^
+    source-code-dockerfile-identifier-variable
+        ^
+        source-code-dockerfile-keyword-operator
+         ^^^^^^^^^^^
+         source-code-dockerfile-literal-string-unquoted
+from --platform=$BUILDPLATFORM ${BASE:-alpine} as build
+^^^^
+source-code-dockerfile-keyword
+    ^
+    source-code-dockerfile-whitespace
+     ^^^^^^^^^^
+     source-code-dockerfile-keyword-modifier
+               ^
+               source-code-dockerfile-keyword-operator
+                ^^^^^^^^^^^^^^
+                source-code-dockerfile-identifier-variable
+                              ^
+                              source-code-dockerfile-whitespace
+                               ^^^^^^^^^^^^^^^
+                               source-code-dockerfile-identifier-variable
+                                              ^
+                                              source-code-dockerfile-whitespace
+                                               ^^
+                                               source-code-dockerfile-keyword
+                                                 ^
+                                                 source-code-dockerfile-whitespace
+                                                  ^^^^^
+                                                  source-code-dockerfile-literal-string-unquoted
+WORKDIR /src
+^^^^^^^
+source-code-dockerfile-keyword
+       ^
+       source-code-dockerfile-whitespace
+        ^^^^
+        source-code-dockerfile-literal-string-unquoted
+COPY . .
+^^^^
+source-code-dockerfile-keyword
+    ^
+    source-code-dockerfile-whitespace
+     ^
+     source-code-dockerfile-literal-string-unquoted
+      ^
+      source-code-dockerfile-whitespace
+       ^
+       source-code-dockerfile-literal-string-unquoted
+RUN --mount=type=cache,target=/cache make \
+^^^
+source-code-dockerfile-keyword
+   ^
+   source-code-dockerfile-whitespace
+    ^^^^^^^
+    source-code-dockerfile-keyword-modifier
+           ^
+           source-code-dockerfile-keyword-operator
+            ^^^^
+            source-code-dockerfile-literal-string-unquoted
+                ^
+                source-code-dockerfile-keyword-operator
+                 ^^^^^^^^^^^^
+                 source-code-dockerfile-literal-string-unquoted
+                             ^
+                             source-code-dockerfile-keyword-operator
+                              ^^^^^^
+                              source-code-dockerfile-literal-string-unquoted
+                                    ^
+                                    source-code-dockerfile-whitespace
+                                     ^^^^
+                                     source-code-dockerfile-literal-string-unquoted
+                                         ^
+                                         source-code-dockerfile-whitespace
+                                          ^
+                                          source-code-dockerfile-literal-string-escape
+    # Keep using the same cache.
+^^^^
+source-code-dockerfile-whitespace
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    source-code-dockerfile-comment-line
+    && make install
+^^^^
+source-code-dockerfile-whitespace
+    ^^
+    source-code-dockerfile-keyword-operator
+      ^
+      source-code-dockerfile-whitespace
+       ^^^^
+       source-code-dockerfile-literal-string-unquoted
+           ^
+           source-code-dockerfile-whitespace
+            ^^^^^^^
+            source-code-dockerfile-literal-string-unquoted
+
+FROM scratch
+^^^^
+source-code-dockerfile-keyword
+    ^
+    source-code-dockerfile-whitespace
+     ^^^^^^^
+     source-code-dockerfile-literal-string-unquoted
+COPY --link --from=build /src/app /app
+^^^^
+source-code-dockerfile-keyword
+    ^
+    source-code-dockerfile-whitespace
+     ^^^^^^
+     source-code-dockerfile-keyword-modifier
+           ^
+           source-code-dockerfile-whitespace
+            ^^^^^^
+            source-code-dockerfile-keyword-modifier
+                  ^
+                  source-code-dockerfile-keyword-operator
+                   ^^^^^
+                   source-code-dockerfile-literal-string-unquoted
+                        ^
+                        source-code-dockerfile-whitespace
+                         ^^^^^^^^
+                         source-code-dockerfile-literal-string-unquoted
+                                 ^
+                                 source-code-dockerfile-whitespace
+                                  ^^^^
+                                  source-code-dockerfile-literal-string-unquoted
+ENV APP_HOME=/app PATH="$APP_HOME/bin:${PATH}"
+^^^
+source-code-dockerfile-keyword
+   ^
+   source-code-dockerfile-whitespace
+    ^^^^^^^^
+    source-code-dockerfile-identifier-variable
+            ^
+            source-code-dockerfile-keyword-operator
+             ^^^^
+             source-code-dockerfile-literal-string-unquoted
+                 ^
+                 source-code-dockerfile-whitespace
+                  ^^^^
+                  source-code-dockerfile-identifier-variable
+                      ^
+                      source-code-dockerfile-keyword-operator
+                       ^
+                       source-code-dockerfile-literal-string-quoted-double
+                        ^^^^^^^^^
+                        source-code-dockerfile-literal-string-quoted-double-identifier-variable
+                                 ^^^^^
+                                 source-code-dockerfile-literal-string-quoted-double
+                                      ^^^^^^^
+                                      source-code-dockerfile-literal-string-quoted-double-identifier-variable
+                                             ^
+                                             source-code-dockerfile-literal-string-quoted-double
+LABEL org.example.name="Example app"
+^^^^^
+source-code-dockerfile-keyword
+     ^
+     source-code-dockerfile-whitespace
+      ^^^^^^^^^^^^^^^^
+      source-code-dockerfile-identifier-variable
+                      ^
+                      source-code-dockerfile-keyword-operator
+                       ^
+                       source-code-dockerfile-literal-string-quoted-double
+                        ^^^^^^^^^^^
+                        source-code-dockerfile-literal-string-quoted-double
+                                   ^
+                                   source-code-dockerfile-literal-string-quoted-double
+USER 1000
+^^^^
+source-code-dockerfile-keyword
+    ^
+    source-code-dockerfile-whitespace
+     ^^^^
+     source-code-dockerfile-literal-string-unquoted
+EXPOSE 8080
+^^^^^^
+source-code-dockerfile-keyword
+      ^
+      source-code-dockerfile-whitespace
+       ^^^^
+       source-code-dockerfile-literal-string-unquoted
+ENTRYPOINT ["/app"]
+^^^^^^^^^^
+source-code-dockerfile-keyword
+          ^
+          source-code-dockerfile-whitespace
+           ^
+           source-code-dockerfile-literal-string-unquoted
+            ^
+            source-code-dockerfile-literal-string-quoted-double
+             ^^^^
+             source-code-dockerfile-literal-string-quoted-double
+                 ^
+                 source-code-dockerfile-literal-string-quoted-double
+                  ^
+                  source-code-dockerfile-literal-string-unquoted

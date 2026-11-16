@@ -1,0 +1,455 @@
+ARG TARGETOS TARGETARCH
+^^^
+source-code-dockerfile-keyword
+   ^
+   source-code-dockerfile-whitespace
+    ^^^^^^^^
+    source-code-dockerfile-identifier-variable
+            ^
+            source-code-dockerfile-whitespace
+             ^^^^^^^^^^
+             source-code-dockerfile-identifier-variable
+ENV PATH /app/bin:$PATH
+^^^
+source-code-dockerfile-keyword
+   ^
+   source-code-dockerfile-whitespace
+    ^^^^
+    source-code-dockerfile-identifier-variable
+        ^
+        source-code-dockerfile-whitespace
+         ^^^^^^^^^
+         source-code-dockerfile-literal-string-unquoted
+                  ^^^^^
+                  source-code-dockerfile-identifier-variable
+RUN echo '$HOME' "$HOME" \$HOME | sort && echo done
+^^^
+source-code-dockerfile-keyword
+   ^
+   source-code-dockerfile-whitespace
+    ^^^^
+    source-code-dockerfile-literal-string-unquoted
+        ^
+        source-code-dockerfile-whitespace
+         ^
+         source-code-dockerfile-literal-string-quoted-single
+          ^^^^^
+          source-code-dockerfile-literal-string-quoted-single
+               ^
+               source-code-dockerfile-literal-string-quoted-single
+                ^
+                source-code-dockerfile-whitespace
+                 ^
+                 source-code-dockerfile-literal-string-quoted-double
+                  ^^^^^
+                  source-code-dockerfile-literal-string-quoted-double-identifier-variable
+                       ^
+                       source-code-dockerfile-literal-string-quoted-double
+                        ^
+                        source-code-dockerfile-whitespace
+                         ^^
+                         source-code-dockerfile-literal-string-escape
+                           ^^^^
+                           source-code-dockerfile-literal-string-unquoted
+                               ^
+                               source-code-dockerfile-whitespace
+                                ^
+                                source-code-dockerfile-keyword-operator
+                                 ^
+                                 source-code-dockerfile-whitespace
+                                  ^^^^
+                                  source-code-dockerfile-literal-string-unquoted
+                                      ^
+                                      source-code-dockerfile-whitespace
+                                       ^^
+                                       source-code-dockerfile-keyword-operator
+                                         ^
+                                         source-code-dockerfile-whitespace
+                                          ^^^^
+                                          source-code-dockerfile-literal-string-unquoted
+                                              ^
+                                              source-code-dockerfile-whitespace
+                                               ^^^^
+                                               source-code-dockerfile-literal-string-unquoted
+RUN printf "%s\n" "${MODE:-dev}" "$@" # keep # and $HOME literal here
+^^^
+source-code-dockerfile-keyword
+   ^
+   source-code-dockerfile-whitespace
+    ^^^^^^
+    source-code-dockerfile-literal-string-unquoted
+          ^
+          source-code-dockerfile-whitespace
+           ^
+           source-code-dockerfile-literal-string-quoted-double
+            ^^
+            source-code-dockerfile-literal-string-quoted-double
+              ^^
+              source-code-dockerfile-literal-string-quoted-double-literal-string-escape
+                ^
+                source-code-dockerfile-literal-string-quoted-double
+                 ^
+                 source-code-dockerfile-whitespace
+                  ^
+                  source-code-dockerfile-literal-string-quoted-double
+                   ^^^^^^^^^^^^
+                   source-code-dockerfile-literal-string-quoted-double-identifier-variable
+                               ^
+                               source-code-dockerfile-literal-string-quoted-double
+                                ^
+                                source-code-dockerfile-whitespace
+                                 ^
+                                 source-code-dockerfile-literal-string-quoted-double
+                                  ^
+                                  source-code-dockerfile-literal-string-quoted-double-identifier-variable
+                                   ^
+                                   source-code-dockerfile-literal-string-quoted-double
+                                    ^
+                                    source-code-dockerfile-literal-string-quoted-double
+                                     ^
+                                     source-code-dockerfile-whitespace
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                                      source-code-dockerfile-comment-line
+RUN echo "${ARCH##*-}"
+^^^
+source-code-dockerfile-keyword
+   ^
+   source-code-dockerfile-whitespace
+    ^^^^
+    source-code-dockerfile-literal-string-unquoted
+        ^
+        source-code-dockerfile-whitespace
+         ^
+         source-code-dockerfile-literal-string-quoted-double
+          ^^^^^^^^^^^
+          source-code-dockerfile-literal-string-quoted-double-identifier-variable
+                     ^
+                     source-code-dockerfile-literal-string-quoted-double
+RUN [ -f /app ] && echo exists
+^^^
+source-code-dockerfile-keyword
+   ^
+   source-code-dockerfile-whitespace
+    ^
+    source-code-dockerfile-literal-string-unquoted
+     ^
+     source-code-dockerfile-whitespace
+      ^^
+      source-code-dockerfile-literal-string-unquoted
+        ^
+        source-code-dockerfile-whitespace
+         ^^^^
+         source-code-dockerfile-literal-string-unquoted
+             ^
+             source-code-dockerfile-whitespace
+              ^
+              source-code-dockerfile-literal-string-unquoted
+               ^
+               source-code-dockerfile-whitespace
+                ^^
+                source-code-dockerfile-keyword-operator
+                  ^
+                  source-code-dockerfile-whitespace
+                   ^^^^
+                   source-code-dockerfile-literal-string-unquoted
+                       ^
+                       source-code-dockerfile-whitespace
+                        ^^^^^^
+                        source-code-dockerfile-literal-string-unquoted
+RUN [ "$MODE" = prod ] || exit 1
+^^^
+source-code-dockerfile-keyword
+   ^
+   source-code-dockerfile-whitespace
+    ^
+    source-code-dockerfile-literal-string-unquoted
+     ^
+     source-code-dockerfile-whitespace
+      ^
+      source-code-dockerfile-literal-string-quoted-double
+       ^^^^^
+       source-code-dockerfile-literal-string-quoted-double-identifier-variable
+            ^
+            source-code-dockerfile-literal-string-quoted-double
+             ^
+             source-code-dockerfile-whitespace
+              ^
+              source-code-dockerfile-keyword-operator
+               ^
+               source-code-dockerfile-whitespace
+                ^^^^
+                source-code-dockerfile-literal-string-unquoted
+                    ^
+                    source-code-dockerfile-whitespace
+                     ^
+                     source-code-dockerfile-literal-string-unquoted
+                      ^
+                      source-code-dockerfile-whitespace
+                       ^^
+                       source-code-dockerfile-keyword-operator
+                         ^
+                         source-code-dockerfile-whitespace
+                          ^^^^
+                          source-code-dockerfile-literal-string-unquoted
+                              ^
+                              source-code-dockerfile-whitespace
+                               ^
+                               source-code-dockerfile-literal-string-unquoted
+RUN echo "line one \
+^^^
+source-code-dockerfile-keyword
+   ^
+   source-code-dockerfile-whitespace
+    ^^^^
+    source-code-dockerfile-literal-string-unquoted
+        ^
+        source-code-dockerfile-whitespace
+         ^
+         source-code-dockerfile-literal-string-quoted-double
+          ^^^^^^^^^
+          source-code-dockerfile-literal-string-quoted-double
+                   ^
+                   source-code-dockerfile-literal-string-quoted-double-literal-string-escape
+    and line two"
+^^^^^^^^^^^^^^^^
+source-code-dockerfile-literal-string-quoted-double
+                ^
+                source-code-dockerfile-literal-string-quoted-double
+RUN sh -c 'echo one && \
+^^^
+source-code-dockerfile-keyword
+   ^
+   source-code-dockerfile-whitespace
+    ^^
+    source-code-dockerfile-literal-string-unquoted
+      ^
+      source-code-dockerfile-whitespace
+       ^^
+       source-code-dockerfile-literal-string-unquoted
+         ^
+         source-code-dockerfile-whitespace
+          ^
+          source-code-dockerfile-literal-string-quoted-single
+           ^^^^^^^^^^^^
+           source-code-dockerfile-literal-string-quoted-single
+                       ^
+                       source-code-dockerfile-literal-string-quoted-single-literal-string-escape
+    echo two' && echo three
+^^^^^^^^^^^^
+source-code-dockerfile-literal-string-quoted-single
+            ^
+            source-code-dockerfile-literal-string-quoted-single
+             ^
+             source-code-dockerfile-whitespace
+              ^^
+              source-code-dockerfile-keyword-operator
+                ^
+                source-code-dockerfile-whitespace
+                 ^^^^
+                 source-code-dockerfile-literal-string-unquoted
+                     ^
+                     source-code-dockerfile-whitespace
+                      ^^^^^
+                      source-code-dockerfile-literal-string-unquoted
+RUN sh -c 'echo one && \
+^^^
+source-code-dockerfile-keyword
+   ^
+   source-code-dockerfile-whitespace
+    ^^
+    source-code-dockerfile-literal-string-unquoted
+      ^
+      source-code-dockerfile-whitespace
+       ^^
+       source-code-dockerfile-literal-string-unquoted
+         ^
+         source-code-dockerfile-whitespace
+          ^
+          source-code-dockerfile-literal-string-quoted-single
+           ^^^^^^^^^^^^
+           source-code-dockerfile-literal-string-quoted-single
+                       ^
+                       source-code-dockerfile-literal-string-quoted-single-literal-string-escape
+    # This isn't part of the string.
+^^^^
+source-code-dockerfile-literal-string-quoted-single-whitespace
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    source-code-dockerfile-literal-string-quoted-single-comment-line
+    echo two'
+^^^^^^^^^^^^
+source-code-dockerfile-literal-string-quoted-single
+            ^
+            source-code-dockerfile-literal-string-quoted-single
+RUN echo "unfinished
+^^^
+source-code-dockerfile-keyword
+   ^
+   source-code-dockerfile-whitespace
+    ^^^^
+    source-code-dockerfile-literal-string-unquoted
+        ^
+        source-code-dockerfile-whitespace
+         ^
+         source-code-dockerfile-literal-string-quoted-double
+          ^^^^^^^^^^
+          source-code-dockerfile-literal-string-quoted-double
+WORKDIR /app#current
+^^^^^^^
+source-code-dockerfile-keyword
+       ^
+       source-code-dockerfile-whitespace
+        ^^^^^^^^^^^^
+        source-code-dockerfile-literal-string-unquoted
+CMD ["echo", "$HOME", "a\"b"]
+^^^
+source-code-dockerfile-keyword
+   ^
+   source-code-dockerfile-whitespace
+    ^
+    source-code-dockerfile-literal-string-unquoted
+     ^
+     source-code-dockerfile-literal-string-quoted-double
+      ^^^^
+      source-code-dockerfile-literal-string-quoted-double
+          ^
+          source-code-dockerfile-literal-string-quoted-double
+           ^
+           source-code-dockerfile-literal-string-unquoted
+            ^
+            source-code-dockerfile-whitespace
+             ^
+             source-code-dockerfile-literal-string-quoted-double
+              ^^^^^
+              source-code-dockerfile-literal-string-quoted-double-identifier-variable
+                   ^
+                   source-code-dockerfile-literal-string-quoted-double
+                    ^
+                    source-code-dockerfile-literal-string-unquoted
+                     ^
+                     source-code-dockerfile-whitespace
+                      ^
+                      source-code-dockerfile-literal-string-quoted-double
+                       ^
+                       source-code-dockerfile-literal-string-quoted-double
+                        ^^
+                        source-code-dockerfile-literal-string-quoted-double-literal-string-escape
+                          ^
+                          source-code-dockerfile-literal-string-quoted-double
+                           ^
+                           source-code-dockerfile-literal-string-quoted-double
+                            ^
+                            source-code-dockerfile-literal-string-unquoted
+SHELL ["/bin/sh", "-c"]
+^^^^^
+source-code-dockerfile-keyword
+     ^
+     source-code-dockerfile-whitespace
+      ^
+      source-code-dockerfile-literal-string-unquoted
+       ^
+       source-code-dockerfile-literal-string-quoted-double
+        ^^^^^^^
+        source-code-dockerfile-literal-string-quoted-double
+               ^
+               source-code-dockerfile-literal-string-quoted-double
+                ^
+                source-code-dockerfile-literal-string-unquoted
+                 ^
+                 source-code-dockerfile-whitespace
+                  ^
+                  source-code-dockerfile-literal-string-quoted-double
+                   ^^
+                   source-code-dockerfile-literal-string-quoted-double
+                     ^
+                     source-code-dockerfile-literal-string-quoted-double
+                      ^
+                      source-code-dockerfile-literal-string-unquoted
+COPY ["file name", \
+^^^^
+source-code-dockerfile-keyword
+    ^
+    source-code-dockerfile-whitespace
+     ^
+     source-code-dockerfile-literal-string-unquoted
+      ^
+      source-code-dockerfile-literal-string-quoted-double
+       ^^^^^^^^^
+       source-code-dockerfile-literal-string-quoted-double
+                ^
+                source-code-dockerfile-literal-string-quoted-double
+                 ^
+                 source-code-dockerfile-literal-string-unquoted
+                  ^
+                  source-code-dockerfile-whitespace
+                   ^
+                   source-code-dockerfile-literal-string-escape
+      "/app/"]
+^^^^^^
+source-code-dockerfile-whitespace
+      ^
+      source-code-dockerfile-literal-string-quoted-double
+       ^^^^^
+       source-code-dockerfile-literal-string-quoted-double
+            ^
+            source-code-dockerfile-literal-string-quoted-double
+             ^
+             source-code-dockerfile-literal-string-unquoted
+HEALTHCHECK --interval=30s --timeout=3s \
+^^^^^^^^^^^
+source-code-dockerfile-keyword
+           ^
+           source-code-dockerfile-whitespace
+            ^^^^^^^^^^
+            source-code-dockerfile-keyword-modifier
+                      ^
+                      source-code-dockerfile-keyword-operator
+                       ^^^
+                       source-code-dockerfile-literal-string-unquoted
+                          ^
+                          source-code-dockerfile-whitespace
+                           ^^^^^^^^^
+                           source-code-dockerfile-keyword-modifier
+                                    ^
+                                    source-code-dockerfile-keyword-operator
+                                     ^^
+                                     source-code-dockerfile-literal-string-unquoted
+                                       ^
+                                       source-code-dockerfile-whitespace
+                                        ^
+                                        source-code-dockerfile-literal-string-escape
+    CMD curl -f localhost || exit 1
+^^^^
+source-code-dockerfile-whitespace
+    ^^^
+    source-code-dockerfile-keyword
+       ^
+       source-code-dockerfile-whitespace
+        ^^^^
+        source-code-dockerfile-literal-string-unquoted
+            ^
+            source-code-dockerfile-whitespace
+             ^^
+             source-code-dockerfile-literal-string-unquoted
+               ^
+               source-code-dockerfile-whitespace
+                ^^^^^^^^^
+                source-code-dockerfile-literal-string-unquoted
+                         ^
+                         source-code-dockerfile-whitespace
+                          ^^
+                          source-code-dockerfile-keyword-operator
+                            ^
+                            source-code-dockerfile-whitespace
+                             ^^^^
+                             source-code-dockerfile-literal-string-unquoted
+                                 ^
+                                 source-code-dockerfile-whitespace
+                                  ^
+                                  source-code-dockerfile-literal-string-unquoted
+HEALTHCHECK NONE
+^^^^^^^^^^^
+source-code-dockerfile-keyword
+           ^
+           source-code-dockerfile-whitespace
+            ^^^^
+            source-code-dockerfile-keyword

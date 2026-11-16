@@ -1,0 +1,23 @@
+ARG TARGETOS TARGETARCH
+ENV PATH /app/bin:$PATH
+RUN echo '$HOME' "$HOME" \$HOME | sort && echo done
+RUN printf "%s\n" "${MODE:-dev}" "$@" # keep # and $HOME literal here
+RUN echo "${ARCH##*-}"
+RUN [ -f /app ] && echo exists
+RUN [ "$MODE" = prod ] || exit 1
+RUN echo "line one \
+    and line two"
+RUN sh -c 'echo one && \
+    echo two' && echo three
+RUN sh -c 'echo one && \
+    # This isn't part of the string.
+    echo two'
+RUN echo "unfinished
+WORKDIR /app#current
+CMD ["echo", "$HOME", "a\"b"]
+SHELL ["/bin/sh", "-c"]
+COPY ["file name", \
+      "/app/"]
+HEALTHCHECK --interval=30s --timeout=3s \
+    CMD curl -f localhost || exit 1
+HEALTHCHECK NONE

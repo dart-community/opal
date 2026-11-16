@@ -10,6 +10,7 @@ import 'language/cmake.dart';
 import 'language/css.dart';
 import 'language/dart.dart';
 import 'language/diff.dart';
+import 'language/dockerfile.dart';
 import 'language/ebnf.dart';
 import 'language/glsl.dart';
 import 'language/go.dart';
@@ -52,6 +53,7 @@ abstract final class BuiltInLanguages {
     css,
     dart,
     diff,
+    dockerfile,
     ebnf,
     glsl,
     go,
@@ -142,6 +144,13 @@ abstract final class BuiltInLanguages {
   /// A tokenizing language implementation for unified diffs and patches,
   /// including those created by `git diff` and `git format-patch`.
   static const Language diff = DiffLanguage();
+
+  /// A tokenizing language implementation for Dockerfiles and Containerfiles.
+  static final Language dockerfile = MatcherLanguage(
+    name: 'dockerfile',
+    grammar: const DockerfileGrammar(),
+    baseTag: const Tag('dockerfile', parent: Tags.codeSource),
+  );
 
   /// A tokenizing language implementation for the
   /// Extended Backus-Naur Form (EBNF) syntactic metalanguage.

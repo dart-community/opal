@@ -100,6 +100,19 @@ void main() {
         expect(BuiltInLanguages.all, contains(BuiltInLanguages.diff));
       });
 
+      test('includes Dockerfile and its aliases', () {
+        for (final name in [
+          'dockerfile',
+          'Dockerfile',
+          'docker',
+          ' Containerfile ',
+        ]) {
+          expect(registry[name], same(BuiltInLanguages.dockerfile));
+        }
+        expect(BuiltInLanguages.dockerfile.name, 'dockerfile');
+        expect(BuiltInLanguages.all, contains(BuiltInLanguages.dockerfile));
+      });
+
       test('includes css language', () {
         expect(registry['css'], same(BuiltInLanguages.css));
         expect(registry['CSS'], same(BuiltInLanguages.css));

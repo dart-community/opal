@@ -1,4 +1,4 @@
-## 0.3.1-wip
+## 0.3.1
 
 - Add support for Dockerfiles (`dockerfile`, `docker`, `containerfile`).
 - Add support for CMake files (`cmake`, `CMakeLists.txt`).

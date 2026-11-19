@@ -1,0 +1,7 @@
+void main() => print('not code'); // comment
+/* unterminated block comment
+still plain text with "unclosed quote
+<div class="note">&amp; <!-- comment --></div>
+# Heading with **bold**, `code`, and [link](https://dart.dev)
+{"enabled": true, "items": [1, 2, null]}
+Escapes \n \t \\ and Unicode: café 日本語 🌍

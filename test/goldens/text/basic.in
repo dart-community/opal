@@ -1,0 +1,6 @@
+Hello, world!
+Plain text passes through each line as a single token.
+
+  Indented line with numbers (42, 3.14) and "quotes".
+   
+	Tab-indented line with 'apostrophes' & punctuation!

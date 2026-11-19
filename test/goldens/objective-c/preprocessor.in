@@ -1,0 +1,27 @@
+#import <Foundation/Foundation.h>
+#import "MyHeader.h"
+#include <stdio.h>
+
+#define MAX_COUNT 100 // Upper bound.
+#define HOME_URL @"https://example.com" /* Not a // comment. */
+#undef MAX_COUNT
+
+#if defined(DEBUG) && DEBUG
+  #ifdef __OBJC__
+    #  ifndef MY_GUARD
+      #define MY_GUARD 1
+    #endif
+  #endif
+#elif TARGET_OS_IOS
+#warning "iOS fallback"
+#else
+#error "Unsupported platform"
+#endif
+
+#pragma mark - Lifecycle
+#pragma mark - Don't forget // Not a character literal.
+#line 42 "generated.m"
+
+#define SWAP(a, b) \
+    do { __typeof__(a) tmp = (a); (a) = (b); (b) = tmp; } while (0)
+int afterMacro = 0;

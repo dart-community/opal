@@ -1,0 +1,16 @@
+NSString *empty = @"";
+NSString *greeting = @"Hello, \"Obj-C\"!\n\t\\\'\r\b\f";
+NSString *escapes = @"\0\101\377\x41\x7f\u0041\u2603\U0001F600";
+
+const char *cEmpty = "";
+const char *cText = "Line 1\nLine 2\t\"quoted\"\\\'\r\b\f";
+const char *cEscapes = "\0\123\x1b";
+
+char c1 = 'a';
+char c2 = '\'';
+char c3 = '\\';
+char c4 = '\n';
+char c5 = '\0';
+char c6 = '\101';
+char c7 = '\x7f';
+unsigned int fourCC = 'ABCD';

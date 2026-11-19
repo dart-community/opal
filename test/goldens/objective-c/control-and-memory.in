@@ -1,0 +1,45 @@
+static const extern inline volatile int gCount = 0;
+_Thread_local _Atomic _Bool gReady = 0;
+_Static_assert(sizeof(int) >= 4, "int size");
+
+- (void)transfer:(id)src to:(id *)dst {
+    auto int a = 1;
+    register int r = 2;
+    int *restrict p = &a;
+    typeof(a) copy = sizeof(a);
+
+    __strong id s = self;
+    __weak id w = super;
+    __weak __typeof__(self) weakSelf = self;
+    __unsafe_unretained id u = s;
+    __autoreleasing NSError *err = nil;
+    __block int total = 0;
+    void *bridged = (__bridge void *)s;
+    void *retained = (__bridge_retained void *)s;
+    id back = (__bridge_transfer id)retained;
+
+    @autoreleasepool {
+        @synchronized(self) {
+            SEL sel = @selector(transfer:to:);
+            const char *enc = @encode(int);
+        }
+        @try {
+            for (NSString *item in @[@"a", @"b"]) {
+                if (item.length == 0) continue;
+                else break;
+            }
+            switch (total) {
+                case 0: goto done;
+                default: break;
+            }
+            while (total < 3) { total++; }
+            do { total--; } while (total > 0);
+            @throw [NSException exceptionWithName:@"Err" reason:nil userInfo:nil];
+        } @catch (NSException *e) {
+            return;
+        } @finally {
+        done:
+            total = 0;
+        }
+    }
+}

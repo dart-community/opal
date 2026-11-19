@@ -184,6 +184,22 @@ void main() {
         expect(BuiltInLanguages.all, contains(BuiltInLanguages.rust));
       });
 
+      test('includes objective-c language and fallbacks', () {
+        for (final name in [
+          'objective-c',
+          'objectivec',
+          'objc',
+          'obj-c',
+          'OBJECTIVE-C',
+          ' ObjC ',
+          ' Obj-C ',
+        ]) {
+          expect(registry[name], same(BuiltInLanguages.objectiveC));
+        }
+        expect(BuiltInLanguages.objectiveC.name, 'objective-c');
+        expect(BuiltInLanguages.all, contains(BuiltInLanguages.objectiveC));
+      });
+
       test('includes xml language and fallback', () {
         for (final name in ['xml', 'xhtml', 'XML', ' XHTML ']) {
           expect(registry[name], same(BuiltInLanguages.xml));

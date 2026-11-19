@@ -1,0 +1,25 @@
+@import Foundation;
+
+BOOL b1 = YES;
+BOOL b2 = NO;
+BOOL b3 = TRUE;
+BOOL b4 = FALSE;
+BOOL b5 = true;
+BOOL b6 = false;
+
+id obj = nil;
+Class cls = Nil;
+void *ptr = NULL;
+
+NSNumber *boxed = @(1 + 2);
+NSArray *arr = @[@YES, @NO, @TRUE, @FALSE, @42, @-1, @.5, @'a'];
+NSDictionary *dict = @{@"key": @"value"};
+
+if (@available(iOS 15.0, *)) {
+    unsigned long hex = 0xFF + 0X1a2bUL + 0x10uLL;
+    unsigned int bin = 0b1010 + 0B1100UL;
+    unsigned int oct = 0755 + 0123u;
+    double sci = 1e10 + 2.5e-3f + 3.0E+2L;
+    float flt = 3.14 + 1.0f + 0.5L + .5 + .5f + 1. + 1.f;
+    long dec = 0 + 42 + 100u + 999ULL;
+}

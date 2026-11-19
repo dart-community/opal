@@ -1,0 +1,650 @@
+#import <Foundation/Foundation.h>
+^^^^^^^
+source-code-objective-c-metadata-preprocessor-directive-metadata-preprocessor-directive-name
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+       source-code-objective-c-metadata-preprocessor-directive-metadata-preprocessor-directive-options
+
+/// Manages a list of tasks.
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+source-code-objective-c-comment-block-doc
+@interface TaskRunner : NSObject
+^^^^^^^^^^
+source-code-objective-c-keyword-declaration-interface
+          ^
+          source-code-objective-c-whitespace
+           ^^^^^^^^^^
+           source-code-objective-c-identifier-type
+                     ^
+                     source-code-objective-c-whitespace
+                      ^
+                      source-code-objective-c-keyword-operator
+                       ^
+                       source-code-objective-c-whitespace
+                        ^^^^^^^^
+                        source-code-objective-c-identifier-type-built-in
+@property (nonatomic, copy, readonly) NSArray<NSString *> *tasks;
+^^^^^^^^^
+source-code-objective-c-keyword-declaration-property
+         ^
+         source-code-objective-c-whitespace
+          ^
+          source-code-objective-c-punctuation
+           ^^^^^^^^^
+           source-code-objective-c-keyword-modifier-nonatomic
+                    ^
+                    source-code-objective-c-punctuation
+                     ^
+                     source-code-objective-c-whitespace
+                      ^^^^
+                      source-code-objective-c-keyword-modifier-copy
+                          ^
+                          source-code-objective-c-punctuation
+                           ^
+                           source-code-objective-c-whitespace
+                            ^^^^^^^^
+                            source-code-objective-c-keyword-modifier-readonly
+                                    ^
+                                    source-code-objective-c-punctuation
+                                     ^
+                                     source-code-objective-c-whitespace
+                                      ^^^^^^^
+                                      source-code-objective-c-identifier-type-built-in
+                                             ^
+                                             source-code-objective-c-keyword-operator
+                                              ^^^^^^^^
+                                              source-code-objective-c-identifier-type-built-in
+                                                      ^
+                                                      source-code-objective-c-whitespace
+                                                       ^
+                                                       source-code-objective-c-keyword-operator
+                                                        ^
+                                                        source-code-objective-c-keyword-operator
+                                                         ^
+                                                         source-code-objective-c-whitespace
+                                                          ^
+                                                          source-code-objective-c-keyword-operator
+                                                           ^^^^^
+                                                           source-code-objective-c-identifier
+                                                                ^
+                                                                source-code-objective-c-punctuation
+- (instancetype)initWithTasks:(NSArray<NSString *> *)tasks;
+^
+source-code-objective-c-keyword-operator
+ ^
+ source-code-objective-c-whitespace
+  ^
+  source-code-objective-c-punctuation
+   ^^^^^^^^^^^^
+   source-code-objective-c-identifier-type-built-in
+               ^
+               source-code-objective-c-punctuation
+                ^^^^^^^^^^^^^
+                source-code-objective-c-identifier
+                             ^
+                             source-code-objective-c-keyword-operator
+                              ^
+                              source-code-objective-c-punctuation
+                               ^^^^^^^
+                               source-code-objective-c-identifier-type-built-in
+                                      ^
+                                      source-code-objective-c-keyword-operator
+                                       ^^^^^^^^
+                                       source-code-objective-c-identifier-type-built-in
+                                               ^
+                                               source-code-objective-c-whitespace
+                                                ^
+                                                source-code-objective-c-keyword-operator
+                                                 ^
+                                                 source-code-objective-c-keyword-operator
+                                                  ^
+                                                  source-code-objective-c-whitespace
+                                                   ^
+                                                   source-code-objective-c-keyword-operator
+                                                    ^
+                                                    source-code-objective-c-punctuation
+                                                     ^^^^^
+                                                     source-code-objective-c-identifier
+                                                          ^
+                                                          source-code-objective-c-punctuation
+- (void)runWithCompletion:(void (^)(BOOL success, NSError *error))completion;
+^
+source-code-objective-c-keyword-operator
+ ^
+ source-code-objective-c-whitespace
+  ^
+  source-code-objective-c-punctuation
+   ^^^^
+   source-code-objective-c-identifier-type-built-in
+       ^
+       source-code-objective-c-punctuation
+        ^^^^^^^^^^^^^^^^^
+        source-code-objective-c-identifier
+                         ^
+                         source-code-objective-c-keyword-operator
+                          ^
+                          source-code-objective-c-punctuation
+                           ^^^^
+                           source-code-objective-c-identifier-type-built-in
+                               ^
+                               source-code-objective-c-whitespace
+                                ^
+                                source-code-objective-c-punctuation
+                                 ^
+                                 source-code-objective-c-keyword-operator
+                                  ^
+                                  source-code-objective-c-punctuation
+                                   ^
+                                   source-code-objective-c-punctuation
+                                    ^^^^
+                                    source-code-objective-c-identifier-type-built-in
+                                        ^
+                                        source-code-objective-c-whitespace
+                                         ^^^^^^^
+                                         source-code-objective-c-identifier
+                                                ^
+                                                source-code-objective-c-punctuation
+                                                 ^
+                                                 source-code-objective-c-whitespace
+                                                  ^^^^^^^
+                                                  source-code-objective-c-identifier-type-built-in
+                                                         ^
+                                                         source-code-objective-c-whitespace
+                                                          ^
+                                                          source-code-objective-c-keyword-operator
+                                                           ^^^^^
+                                                           source-code-objective-c-identifier
+                                                                ^
+                                                                source-code-objective-c-punctuation
+                                                                 ^
+                                                                 source-code-objective-c-punctuation
+                                                                  ^^^^^^^^^^
+                                                                  source-code-objective-c-identifier
+                                                                            ^
+                                                                            source-code-objective-c-punctuation
+@end
+^^^^
+source-code-objective-c-keyword-declaration-end
+
+@implementation TaskRunner
+^^^^^^^^^^^^^^^
+source-code-objective-c-keyword-declaration-implementation
+               ^
+               source-code-objective-c-whitespace
+                ^^^^^^^^^^
+                source-code-objective-c-identifier-type
+
+- (instancetype)initWithTasks:(NSArray<NSString *> *)tasks {
+^
+source-code-objective-c-keyword-operator
+ ^
+ source-code-objective-c-whitespace
+  ^
+  source-code-objective-c-punctuation
+   ^^^^^^^^^^^^
+   source-code-objective-c-identifier-type-built-in
+               ^
+               source-code-objective-c-punctuation
+                ^^^^^^^^^^^^^
+                source-code-objective-c-identifier
+                             ^
+                             source-code-objective-c-keyword-operator
+                              ^
+                              source-code-objective-c-punctuation
+                               ^^^^^^^
+                               source-code-objective-c-identifier-type-built-in
+                                      ^
+                                      source-code-objective-c-keyword-operator
+                                       ^^^^^^^^
+                                       source-code-objective-c-identifier-type-built-in
+                                               ^
+                                               source-code-objective-c-whitespace
+                                                ^
+                                                source-code-objective-c-keyword-operator
+                                                 ^
+                                                 source-code-objective-c-keyword-operator
+                                                  ^
+                                                  source-code-objective-c-whitespace
+                                                   ^
+                                                   source-code-objective-c-keyword-operator
+                                                    ^
+                                                    source-code-objective-c-punctuation
+                                                     ^^^^^
+                                                     source-code-objective-c-identifier
+                                                          ^
+                                                          source-code-objective-c-whitespace
+                                                           ^
+                                                           source-code-objective-c-punctuation
+    self = [super init];
+^^^^
+source-code-objective-c-whitespace
+    ^^^^
+    source-code-objective-c-keyword-self
+        ^
+        source-code-objective-c-whitespace
+         ^
+         source-code-objective-c-keyword-operator
+          ^
+          source-code-objective-c-whitespace
+           ^
+           source-code-objective-c-punctuation
+            ^^^^^
+            source-code-objective-c-keyword-super
+                 ^
+                 source-code-objective-c-whitespace
+                  ^^^^
+                  source-code-objective-c-identifier
+                      ^
+                      source-code-objective-c-punctuation
+                       ^
+                       source-code-objective-c-punctuation
+    if (self != nil) {
+^^^^
+source-code-objective-c-whitespace
+    ^^
+    source-code-objective-c-keyword-control-if
+      ^
+      source-code-objective-c-whitespace
+       ^
+       source-code-objective-c-punctuation
+        ^^^^
+        source-code-objective-c-keyword-self
+            ^
+            source-code-objective-c-whitespace
+             ^^
+             source-code-objective-c-keyword-operator
+               ^
+               source-code-objective-c-whitespace
+                ^^^
+                source-code-objective-c-literal-null
+                   ^
+                   source-code-objective-c-punctuation
+                    ^
+                    source-code-objective-c-whitespace
+                     ^
+                     source-code-objective-c-punctuation
+        _tasks = [tasks copy];
+^^^^^^^^
+source-code-objective-c-whitespace
+        ^^^^^^
+        source-code-objective-c-identifier-property-ivar
+              ^
+              source-code-objective-c-whitespace
+               ^
+               source-code-objective-c-keyword-operator
+                ^
+                source-code-objective-c-whitespace
+                 ^
+                 source-code-objective-c-punctuation
+                  ^^^^^
+                  source-code-objective-c-identifier
+                       ^
+                       source-code-objective-c-whitespace
+                        ^^^^
+                        source-code-objective-c-identifier
+                            ^
+                            source-code-objective-c-punctuation
+                             ^
+                             source-code-objective-c-punctuation
+    }
+^^^^
+source-code-objective-c-whitespace
+    ^
+    source-code-objective-c-punctuation
+    return self;
+^^^^
+source-code-objective-c-whitespace
+    ^^^^^^
+    source-code-objective-c-keyword-control-return
+          ^
+          source-code-objective-c-whitespace
+           ^^^^
+           source-code-objective-c-keyword-self
+               ^
+               source-code-objective-c-punctuation
+}
+^
+source-code-objective-c-punctuation
+
+- (void)runWithCompletion:(void (^)(BOOL, NSError *))completion {
+^
+source-code-objective-c-keyword-operator
+ ^
+ source-code-objective-c-whitespace
+  ^
+  source-code-objective-c-punctuation
+   ^^^^
+   source-code-objective-c-identifier-type-built-in
+       ^
+       source-code-objective-c-punctuation
+        ^^^^^^^^^^^^^^^^^
+        source-code-objective-c-identifier
+                         ^
+                         source-code-objective-c-keyword-operator
+                          ^
+                          source-code-objective-c-punctuation
+                           ^^^^
+                           source-code-objective-c-identifier-type-built-in
+                               ^
+                               source-code-objective-c-whitespace
+                                ^
+                                source-code-objective-c-punctuation
+                                 ^
+                                 source-code-objective-c-keyword-operator
+                                  ^
+                                  source-code-objective-c-punctuation
+                                   ^
+                                   source-code-objective-c-punctuation
+                                    ^^^^
+                                    source-code-objective-c-identifier-type-built-in
+                                        ^
+                                        source-code-objective-c-punctuation
+                                         ^
+                                         source-code-objective-c-whitespace
+                                          ^^^^^^^
+                                          source-code-objective-c-identifier-type-built-in
+                                                 ^
+                                                 source-code-objective-c-whitespace
+                                                  ^
+                                                  source-code-objective-c-keyword-operator
+                                                   ^
+                                                   source-code-objective-c-punctuation
+                                                    ^
+                                                    source-code-objective-c-punctuation
+                                                     ^^^^^^^^^^
+                                                     source-code-objective-c-identifier
+                                                               ^
+                                                               source-code-objective-c-whitespace
+                                                                ^
+                                                                source-code-objective-c-punctuation
+    @autoreleasepool {
+^^^^
+source-code-objective-c-whitespace
+    ^^^^^^^^^^^^^^^^
+    source-code-objective-c-keyword-control-autoreleasepool
+                    ^
+                    source-code-objective-c-whitespace
+                     ^
+                     source-code-objective-c-punctuation
+        @try {
+^^^^^^^^
+source-code-objective-c-whitespace
+        ^^^^
+        source-code-objective-c-keyword-control-try
+            ^
+            source-code-objective-c-whitespace
+             ^
+             source-code-objective-c-punctuation
+            for (NSString *task in self.tasks) {
+^^^^^^^^^^^^
+source-code-objective-c-whitespace
+            ^^^
+            source-code-objective-c-keyword-control-for
+               ^
+               source-code-objective-c-whitespace
+                ^
+                source-code-objective-c-punctuation
+                 ^^^^^^^^
+                 source-code-objective-c-identifier-type-built-in
+                         ^
+                         source-code-objective-c-whitespace
+                          ^
+                          source-code-objective-c-keyword-operator
+                           ^^^^
+                           source-code-objective-c-identifier
+                               ^
+                               source-code-objective-c-whitespace
+                                ^^
+                                source-code-objective-c-keyword-in
+                                  ^
+                                  source-code-objective-c-whitespace
+                                   ^^^^
+                                   source-code-objective-c-keyword-self
+                                       ^
+                                       source-code-objective-c-punctuation-accessor
+                                        ^^^^^
+                                        source-code-objective-c-identifier
+                                             ^
+                                             source-code-objective-c-punctuation
+                                              ^
+                                              source-code-objective-c-whitespace
+                                               ^
+                                               source-code-objective-c-punctuation
+                NSLog(@"Running: %@", task);
+^^^^^^^^^^^^^^^^
+source-code-objective-c-whitespace
+                ^^^^^
+                source-code-objective-c-identifier-function
+                     ^
+                     source-code-objective-c-punctuation
+                      ^^
+                      source-code-objective-c-literal-string-quoted-double-literal-string-quoted-double-begin
+                        ^^^^^^^^^^^
+                        source-code-objective-c-literal-string-quoted-double-literal-string-unquoted
+                                   ^
+                                   source-code-objective-c-literal-string-quoted-double-literal-string-quoted-double-end
+                                    ^
+                                    source-code-objective-c-punctuation
+                                     ^
+                                     source-code-objective-c-whitespace
+                                      ^^^^
+                                      source-code-objective-c-identifier
+                                          ^
+                                          source-code-objective-c-punctuation
+                                           ^
+                                           source-code-objective-c-punctuation
+            }
+^^^^^^^^^^^^
+source-code-objective-c-whitespace
+            ^
+            source-code-objective-c-punctuation
+            if (completion) {
+^^^^^^^^^^^^
+source-code-objective-c-whitespace
+            ^^
+            source-code-objective-c-keyword-control-if
+              ^
+              source-code-objective-c-whitespace
+               ^
+               source-code-objective-c-punctuation
+                ^^^^^^^^^^
+                source-code-objective-c-identifier
+                          ^
+                          source-code-objective-c-punctuation
+                           ^
+                           source-code-objective-c-whitespace
+                            ^
+                            source-code-objective-c-punctuation
+                completion(YES, nil);
+^^^^^^^^^^^^^^^^
+source-code-objective-c-whitespace
+                ^^^^^^^^^^
+                source-code-objective-c-identifier-function
+                          ^
+                          source-code-objective-c-punctuation
+                           ^^^
+                           source-code-objective-c-literal-boolean-true
+                              ^
+                              source-code-objective-c-punctuation
+                               ^
+                               source-code-objective-c-whitespace
+                                ^^^
+                                source-code-objective-c-literal-null
+                                   ^
+                                   source-code-objective-c-punctuation
+                                    ^
+                                    source-code-objective-c-punctuation
+            }
+^^^^^^^^^^^^
+source-code-objective-c-whitespace
+            ^
+            source-code-objective-c-punctuation
+        } @catch (NSException *exception) {
+^^^^^^^^
+source-code-objective-c-whitespace
+        ^
+        source-code-objective-c-punctuation
+         ^
+         source-code-objective-c-whitespace
+          ^^^^^^
+          source-code-objective-c-keyword-control-catch
+                ^
+                source-code-objective-c-whitespace
+                 ^
+                 source-code-objective-c-punctuation
+                  ^^^^^^^^^^^
+                  source-code-objective-c-identifier-type-built-in
+                             ^
+                             source-code-objective-c-whitespace
+                              ^
+                              source-code-objective-c-keyword-operator
+                               ^^^^^^^^^
+                               source-code-objective-c-identifier
+                                        ^
+                                        source-code-objective-c-punctuation
+                                         ^
+                                         source-code-objective-c-whitespace
+                                          ^
+                                          source-code-objective-c-punctuation
+            NSError *err = [NSError errorWithDomain:@"TaskRunner"
+^^^^^^^^^^^^
+source-code-objective-c-whitespace
+            ^^^^^^^
+            source-code-objective-c-identifier-type-built-in
+                   ^
+                   source-code-objective-c-whitespace
+                    ^
+                    source-code-objective-c-keyword-operator
+                     ^^^
+                     source-code-objective-c-identifier
+                        ^
+                        source-code-objective-c-whitespace
+                         ^
+                         source-code-objective-c-keyword-operator
+                          ^
+                          source-code-objective-c-whitespace
+                           ^
+                           source-code-objective-c-punctuation
+                            ^^^^^^^
+                            source-code-objective-c-identifier-type-built-in
+                                   ^
+                                   source-code-objective-c-whitespace
+                                    ^^^^^^^^^^^^^^^
+                                    source-code-objective-c-identifier
+                                                   ^
+                                                   source-code-objective-c-keyword-operator
+                                                    ^^
+                                                    source-code-objective-c-literal-string-quoted-double-literal-string-quoted-double-begin
+                                                      ^^^^^^^^^^
+                                                      source-code-objective-c-literal-string-quoted-double-literal-string-unquoted
+                                                                ^
+                                                                source-code-objective-c-literal-string-quoted-double-literal-string-quoted-double-end
+                                               code:1
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+source-code-objective-c-whitespace
+                                               ^^^^
+                                               source-code-objective-c-identifier
+                                                   ^
+                                                   source-code-objective-c-keyword-operator
+                                                    ^
+                                                    source-code-objective-c-literal-number-integer
+                                           userInfo:@{@"reason": exception.reason ?: @""}];
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+source-code-objective-c-whitespace
+                                           ^^^^^^^^
+                                           source-code-objective-c-identifier
+                                                   ^
+                                                   source-code-objective-c-keyword-operator
+                                                    ^
+                                                    source-code-objective-c-keyword-operator
+                                                     ^
+                                                     source-code-objective-c-punctuation
+                                                      ^^
+                                                      source-code-objective-c-literal-string-quoted-double-literal-string-quoted-double-begin
+                                                        ^^^^^^
+                                                        source-code-objective-c-literal-string-quoted-double-literal-string-unquoted
+                                                              ^
+                                                              source-code-objective-c-literal-string-quoted-double-literal-string-quoted-double-end
+                                                               ^
+                                                               source-code-objective-c-keyword-operator
+                                                                ^
+                                                                source-code-objective-c-whitespace
+                                                                 ^^^^^^^^^
+                                                                 source-code-objective-c-identifier
+                                                                          ^
+                                                                          source-code-objective-c-punctuation-accessor
+                                                                           ^^^^^^
+                                                                           source-code-objective-c-identifier
+                                                                                 ^
+                                                                                 source-code-objective-c-whitespace
+                                                                                  ^^
+                                                                                  source-code-objective-c-keyword-operator
+                                                                                    ^
+                                                                                    source-code-objective-c-whitespace
+                                                                                     ^^
+                                                                                     source-code-objective-c-literal-string-quoted-double-literal-string-quoted-double-begin
+                                                                                       ^
+                                                                                       source-code-objective-c-literal-string-quoted-double-literal-string-quoted-double-end
+                                                                                        ^
+                                                                                        source-code-objective-c-punctuation
+                                                                                         ^
+                                                                                         source-code-objective-c-punctuation
+                                                                                          ^
+                                                                                          source-code-objective-c-punctuation
+            if (completion) {
+^^^^^^^^^^^^
+source-code-objective-c-whitespace
+            ^^
+            source-code-objective-c-keyword-control-if
+              ^
+              source-code-objective-c-whitespace
+               ^
+               source-code-objective-c-punctuation
+                ^^^^^^^^^^
+                source-code-objective-c-identifier
+                          ^
+                          source-code-objective-c-punctuation
+                           ^
+                           source-code-objective-c-whitespace
+                            ^
+                            source-code-objective-c-punctuation
+                completion(NO, err);
+^^^^^^^^^^^^^^^^
+source-code-objective-c-whitespace
+                ^^^^^^^^^^
+                source-code-objective-c-identifier-function
+                          ^
+                          source-code-objective-c-punctuation
+                           ^^
+                           source-code-objective-c-literal-boolean-false
+                             ^
+                             source-code-objective-c-punctuation
+                              ^
+                              source-code-objective-c-whitespace
+                               ^^^
+                               source-code-objective-c-identifier
+                                  ^
+                                  source-code-objective-c-punctuation
+                                   ^
+                                   source-code-objective-c-punctuation
+            }
+^^^^^^^^^^^^
+source-code-objective-c-whitespace
+            ^
+            source-code-objective-c-punctuation
+        }
+^^^^^^^^
+source-code-objective-c-whitespace
+        ^
+        source-code-objective-c-punctuation
+    }
+^^^^
+source-code-objective-c-whitespace
+    ^
+    source-code-objective-c-punctuation
+}
+^
+source-code-objective-c-punctuation
+
+@end
+^^^^
+source-code-objective-c-keyword-declaration-end

@@ -1,0 +1,382 @@
+NSString *empty = @"";
+^^^^^^^^
+source-code-objective-c-identifier-type-built-in
+        ^
+        source-code-objective-c-whitespace
+         ^
+         source-code-objective-c-keyword-operator
+          ^^^^^
+          source-code-objective-c-identifier
+               ^
+               source-code-objective-c-whitespace
+                ^
+                source-code-objective-c-keyword-operator
+                 ^
+                 source-code-objective-c-whitespace
+                  ^^
+                  source-code-objective-c-literal-string-quoted-double-literal-string-quoted-double-begin
+                    ^
+                    source-code-objective-c-literal-string-quoted-double-literal-string-quoted-double-end
+                     ^
+                     source-code-objective-c-punctuation
+NSString *greeting = @"Hello, \"Obj-C\"!\n\t\\\'\r\b\f";
+^^^^^^^^
+source-code-objective-c-identifier-type-built-in
+        ^
+        source-code-objective-c-whitespace
+         ^
+         source-code-objective-c-keyword-operator
+          ^^^^^^^^
+          source-code-objective-c-identifier
+                  ^
+                  source-code-objective-c-whitespace
+                   ^
+                   source-code-objective-c-keyword-operator
+                    ^
+                    source-code-objective-c-whitespace
+                     ^^
+                     source-code-objective-c-literal-string-quoted-double-literal-string-quoted-double-begin
+                       ^^^^^^^
+                       source-code-objective-c-literal-string-quoted-double-literal-string-unquoted
+                              ^^
+                              source-code-objective-c-literal-string-quoted-double-literal-string-escape
+                                ^^^^^
+                                source-code-objective-c-literal-string-quoted-double-literal-string-unquoted
+                                     ^^
+                                     source-code-objective-c-literal-string-quoted-double-literal-string-escape
+                                       ^
+                                       source-code-objective-c-literal-string-quoted-double-literal-string-unquoted
+                                        ^^
+                                        source-code-objective-c-literal-string-quoted-double-literal-string-escape
+                                          ^^
+                                          source-code-objective-c-literal-string-quoted-double-literal-string-escape
+                                            ^^
+                                            source-code-objective-c-literal-string-quoted-double-literal-string-escape
+                                              ^^
+                                              source-code-objective-c-literal-string-quoted-double-literal-string-escape
+                                                ^^
+                                                source-code-objective-c-literal-string-quoted-double-literal-string-escape
+                                                  ^^
+                                                  source-code-objective-c-literal-string-quoted-double-literal-string-escape
+                                                    ^^
+                                                    source-code-objective-c-literal-string-quoted-double-literal-string-escape
+                                                      ^
+                                                      source-code-objective-c-literal-string-quoted-double-literal-string-quoted-double-end
+                                                       ^
+                                                       source-code-objective-c-punctuation
+NSString *escapes = @"\0\101\377\x41\x7f\u0041\u2603\U0001F600";
+^^^^^^^^
+source-code-objective-c-identifier-type-built-in
+        ^
+        source-code-objective-c-whitespace
+         ^
+         source-code-objective-c-keyword-operator
+          ^^^^^^^
+          source-code-objective-c-identifier
+                 ^
+                 source-code-objective-c-whitespace
+                  ^
+                  source-code-objective-c-keyword-operator
+                   ^
+                   source-code-objective-c-whitespace
+                    ^^
+                    source-code-objective-c-literal-string-quoted-double-literal-string-quoted-double-begin
+                      ^^
+                      source-code-objective-c-literal-string-quoted-double-literal-string-escape
+                        ^^^^
+                        source-code-objective-c-literal-string-quoted-double-literal-string-escape
+                            ^^^^
+                            source-code-objective-c-literal-string-quoted-double-literal-string-escape
+                                ^^^^
+                                source-code-objective-c-literal-string-quoted-double-literal-string-escape
+                                    ^^^^
+                                    source-code-objective-c-literal-string-quoted-double-literal-string-escape
+                                        ^^^^^^
+                                        source-code-objective-c-literal-string-quoted-double-literal-string-escape
+                                              ^^^^^^
+                                              source-code-objective-c-literal-string-quoted-double-literal-string-escape
+                                                    ^^^^^^^^^^
+                                                    source-code-objective-c-literal-string-quoted-double-literal-string-escape
+                                                              ^
+                                                              source-code-objective-c-literal-string-quoted-double-literal-string-quoted-double-end
+                                                               ^
+                                                               source-code-objective-c-punctuation
+
+const char *cEmpty = "";
+^^^^^
+source-code-objective-c-keyword-modifier-const
+     ^
+     source-code-objective-c-whitespace
+      ^^^^
+      source-code-objective-c-identifier-type-built-in
+          ^
+          source-code-objective-c-whitespace
+           ^
+           source-code-objective-c-keyword-operator
+            ^^^^^^
+            source-code-objective-c-identifier
+                  ^
+                  source-code-objective-c-whitespace
+                   ^
+                   source-code-objective-c-keyword-operator
+                    ^
+                    source-code-objective-c-whitespace
+                     ^
+                     source-code-objective-c-literal-string-quoted-double-literal-string-quoted-double-begin
+                      ^
+                      source-code-objective-c-literal-string-quoted-double-literal-string-quoted-double-end
+                       ^
+                       source-code-objective-c-punctuation
+const char *cText = "Line 1\nLine 2\t\"quoted\"\\\'\r\b\f";
+^^^^^
+source-code-objective-c-keyword-modifier-const
+     ^
+     source-code-objective-c-whitespace
+      ^^^^
+      source-code-objective-c-identifier-type-built-in
+          ^
+          source-code-objective-c-whitespace
+           ^
+           source-code-objective-c-keyword-operator
+            ^^^^^
+            source-code-objective-c-identifier
+                 ^
+                 source-code-objective-c-whitespace
+                  ^
+                  source-code-objective-c-keyword-operator
+                   ^
+                   source-code-objective-c-whitespace
+                    ^
+                    source-code-objective-c-literal-string-quoted-double-literal-string-quoted-double-begin
+                     ^^^^^^
+                     source-code-objective-c-literal-string-quoted-double-literal-string-unquoted
+                           ^^
+                           source-code-objective-c-literal-string-quoted-double-literal-string-escape
+                             ^^^^^^
+                             source-code-objective-c-literal-string-quoted-double-literal-string-unquoted
+                                   ^^
+                                   source-code-objective-c-literal-string-quoted-double-literal-string-escape
+                                     ^^
+                                     source-code-objective-c-literal-string-quoted-double-literal-string-escape
+                                       ^^^^^^
+                                       source-code-objective-c-literal-string-quoted-double-literal-string-unquoted
+                                             ^^
+                                             source-code-objective-c-literal-string-quoted-double-literal-string-escape
+                                               ^^
+                                               source-code-objective-c-literal-string-quoted-double-literal-string-escape
+                                                 ^^
+                                                 source-code-objective-c-literal-string-quoted-double-literal-string-escape
+                                                   ^^
+                                                   source-code-objective-c-literal-string-quoted-double-literal-string-escape
+                                                     ^^
+                                                     source-code-objective-c-literal-string-quoted-double-literal-string-escape
+                                                       ^^
+                                                       source-code-objective-c-literal-string-quoted-double-literal-string-escape
+                                                         ^
+                                                         source-code-objective-c-literal-string-quoted-double-literal-string-quoted-double-end
+                                                          ^
+                                                          source-code-objective-c-punctuation
+const char *cEscapes = "\0\123\x1b";
+^^^^^
+source-code-objective-c-keyword-modifier-const
+     ^
+     source-code-objective-c-whitespace
+      ^^^^
+      source-code-objective-c-identifier-type-built-in
+          ^
+          source-code-objective-c-whitespace
+           ^
+           source-code-objective-c-keyword-operator
+            ^^^^^^^^
+            source-code-objective-c-identifier
+                    ^
+                    source-code-objective-c-whitespace
+                     ^
+                     source-code-objective-c-keyword-operator
+                      ^
+                      source-code-objective-c-whitespace
+                       ^
+                       source-code-objective-c-literal-string-quoted-double-literal-string-quoted-double-begin
+                        ^^
+                        source-code-objective-c-literal-string-quoted-double-literal-string-escape
+                          ^^^^
+                          source-code-objective-c-literal-string-quoted-double-literal-string-escape
+                              ^^^^
+                              source-code-objective-c-literal-string-quoted-double-literal-string-escape
+                                  ^
+                                  source-code-objective-c-literal-string-quoted-double-literal-string-quoted-double-end
+                                   ^
+                                   source-code-objective-c-punctuation
+
+char c1 = 'a';
+^^^^
+source-code-objective-c-identifier-type-built-in
+    ^
+    source-code-objective-c-whitespace
+     ^^
+     source-code-objective-c-identifier
+       ^
+       source-code-objective-c-whitespace
+        ^
+        source-code-objective-c-keyword-operator
+         ^
+         source-code-objective-c-whitespace
+          ^
+          source-code-objective-c-literal-string-character-literal-string-character-begin
+           ^
+           source-code-objective-c-literal-string-character-literal-string-unquoted
+            ^
+            source-code-objective-c-literal-string-character-literal-string-character-end
+             ^
+             source-code-objective-c-punctuation
+char c2 = '\'';
+^^^^
+source-code-objective-c-identifier-type-built-in
+    ^
+    source-code-objective-c-whitespace
+     ^^
+     source-code-objective-c-identifier
+       ^
+       source-code-objective-c-whitespace
+        ^
+        source-code-objective-c-keyword-operator
+         ^
+         source-code-objective-c-whitespace
+          ^
+          source-code-objective-c-literal-string-character-literal-string-character-begin
+           ^^
+           source-code-objective-c-literal-string-character-literal-string-escape
+             ^
+             source-code-objective-c-literal-string-character-literal-string-character-end
+              ^
+              source-code-objective-c-punctuation
+char c3 = '\\';
+^^^^
+source-code-objective-c-identifier-type-built-in
+    ^
+    source-code-objective-c-whitespace
+     ^^
+     source-code-objective-c-identifier
+       ^
+       source-code-objective-c-whitespace
+        ^
+        source-code-objective-c-keyword-operator
+         ^
+         source-code-objective-c-whitespace
+          ^
+          source-code-objective-c-literal-string-character-literal-string-character-begin
+           ^^
+           source-code-objective-c-literal-string-character-literal-string-escape
+             ^
+             source-code-objective-c-literal-string-character-literal-string-character-end
+              ^
+              source-code-objective-c-punctuation
+char c4 = '\n';
+^^^^
+source-code-objective-c-identifier-type-built-in
+    ^
+    source-code-objective-c-whitespace
+     ^^
+     source-code-objective-c-identifier
+       ^
+       source-code-objective-c-whitespace
+        ^
+        source-code-objective-c-keyword-operator
+         ^
+         source-code-objective-c-whitespace
+          ^
+          source-code-objective-c-literal-string-character-literal-string-character-begin
+           ^^
+           source-code-objective-c-literal-string-character-literal-string-escape
+             ^
+             source-code-objective-c-literal-string-character-literal-string-character-end
+              ^
+              source-code-objective-c-punctuation
+char c5 = '\0';
+^^^^
+source-code-objective-c-identifier-type-built-in
+    ^
+    source-code-objective-c-whitespace
+     ^^
+     source-code-objective-c-identifier
+       ^
+       source-code-objective-c-whitespace
+        ^
+        source-code-objective-c-keyword-operator
+         ^
+         source-code-objective-c-whitespace
+          ^
+          source-code-objective-c-literal-string-character-literal-string-character-begin
+           ^^
+           source-code-objective-c-literal-string-character-literal-string-escape
+             ^
+             source-code-objective-c-literal-string-character-literal-string-character-end
+              ^
+              source-code-objective-c-punctuation
+char c6 = '\101';
+^^^^
+source-code-objective-c-identifier-type-built-in
+    ^
+    source-code-objective-c-whitespace
+     ^^
+     source-code-objective-c-identifier
+       ^
+       source-code-objective-c-whitespace
+        ^
+        source-code-objective-c-keyword-operator
+         ^
+         source-code-objective-c-whitespace
+          ^
+          source-code-objective-c-literal-string-character-literal-string-character-begin
+           ^^^^
+           source-code-objective-c-literal-string-character-literal-string-escape
+               ^
+               source-code-objective-c-literal-string-character-literal-string-character-end
+                ^
+                source-code-objective-c-punctuation
+char c7 = '\x7f';
+^^^^
+source-code-objective-c-identifier-type-built-in
+    ^
+    source-code-objective-c-whitespace
+     ^^
+     source-code-objective-c-identifier
+       ^
+       source-code-objective-c-whitespace
+        ^
+        source-code-objective-c-keyword-operator
+         ^
+         source-code-objective-c-whitespace
+          ^
+          source-code-objective-c-literal-string-character-literal-string-character-begin
+           ^^^^
+           source-code-objective-c-literal-string-character-literal-string-escape
+               ^
+               source-code-objective-c-literal-string-character-literal-string-character-end
+                ^
+                source-code-objective-c-punctuation
+unsigned int fourCC = 'ABCD';
+^^^^^^^^
+source-code-objective-c-identifier-type-built-in
+        ^
+        source-code-objective-c-whitespace
+         ^^^
+         source-code-objective-c-identifier-type-built-in
+            ^
+            source-code-objective-c-whitespace
+             ^^^^^^
+             source-code-objective-c-identifier
+                   ^
+                   source-code-objective-c-whitespace
+                    ^
+                    source-code-objective-c-keyword-operator
+                     ^
+                     source-code-objective-c-whitespace
+                      ^
+                      source-code-objective-c-literal-string-character-literal-string-character-begin
+                       ^^^^
+                       source-code-objective-c-literal-string-character-literal-string-unquoted
+                           ^
+                           source-code-objective-c-literal-string-character-literal-string-character-end
+                            ^
+                            source-code-objective-c-punctuation

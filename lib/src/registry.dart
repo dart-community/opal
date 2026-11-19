@@ -122,7 +122,7 @@ final Map<String, String> _defaultFallbackLanguageNames = {
   'jenkinsfile': BuiltInLanguages.groovy.name,
   'objc': BuiltInLanguages.objectiveC.name,
   'obj-c': BuiltInLanguages.objectiveC.name,
-  'objective-c': BuiltInLanguages.objectiveC.name,
+  'objectivec': BuiltInLanguages.objectiveC.name,
   'rb': BuiltInLanguages.ruby.name,
   'rs': BuiltInLanguages.rust.name,
   'clang': BuiltInLanguages.c.name,

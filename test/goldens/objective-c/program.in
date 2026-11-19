@@ -1,0 +1,40 @@
+#import <Foundation/Foundation.h>
+
+/// Manages a list of tasks.
+@interface TaskRunner : NSObject
+@property (nonatomic, copy, readonly) NSArray<NSString *> *tasks;
+- (instancetype)initWithTasks:(NSArray<NSString *> *)tasks;
+- (void)runWithCompletion:(void (^)(BOOL success, NSError *error))completion;
+@end
+
+@implementation TaskRunner
+
+- (instancetype)initWithTasks:(NSArray<NSString *> *)tasks {
+    self = [super init];
+    if (self != nil) {
+        _tasks = [tasks copy];
+    }
+    return self;
+}
+
+- (void)runWithCompletion:(void (^)(BOOL, NSError *))completion {
+    @autoreleasepool {
+        @try {
+            for (NSString *task in self.tasks) {
+                NSLog(@"Running: %@", task);
+            }
+            if (completion) {
+                completion(YES, nil);
+            }
+        } @catch (NSException *exception) {
+            NSError *err = [NSError errorWithDomain:@"TaskRunner"
+                                               code:1
+                                           userInfo:@{@"reason": exception.reason ?: @""}];
+            if (completion) {
+                completion(NO, err);
+            }
+        }
+    }
+}
+
+@end

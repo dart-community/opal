@@ -1,0 +1,11 @@
+NSString *brokenObjc = @"unterminated string
+NSString *brokenC = "also unterminated\
+char brokenChar = 'x
+int recovered = 42;
+
+@property (nonatomic, copy;
+@property (nonatomic, copy
+@end
+
+/* Unclosed block comment until EOF
+int insideComment = 1;

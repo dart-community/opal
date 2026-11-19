@@ -1,0 +1,96 @@
+/// A documentation line comment.
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+source-code-objective-c-comment-block-doc
+//! A Doxygen line comment.
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+source-code-objective-c-comment-block-doc
+//// A banner line comment.
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+source-code-objective-c-comment-line
+// A regular line comment.
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+source-code-objective-c-comment-line
+int value = 1; // Trailing line comment.
+^^^
+source-code-objective-c-identifier-type-built-in
+   ^
+   source-code-objective-c-whitespace
+    ^^^^^
+    source-code-objective-c-identifier
+         ^
+         source-code-objective-c-whitespace
+          ^
+          source-code-objective-c-keyword-operator
+           ^
+           source-code-objective-c-whitespace
+            ^
+            source-code-objective-c-literal-number-integer
+             ^
+             source-code-objective-c-punctuation
+              ^
+              source-code-objective-c-whitespace
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+               source-code-objective-c-comment-line
+
+/** Single-line doc block comment. */
+^^^
+source-code-objective-c-comment-block-doc-comment-block-doc-begin
+   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   source-code-objective-c-comment-block-doc-comment-block-doc-content
+                                   ^^
+                                   source-code-objective-c-comment-block-doc-comment-block-doc-end
+/*! HeaderDoc block comment. */
+^^^
+source-code-objective-c-comment-block-doc-comment-block-doc-begin
+   ^^^^^^^^^^^^^^^^^^^^^^^^^^
+   source-code-objective-c-comment-block-doc-comment-block-doc-content
+                             ^^
+                             source-code-objective-c-comment-block-doc-comment-block-doc-end
+/* Single-line block comment. */
+^^
+source-code-objective-c-comment-block-comment-block-begin
+  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  source-code-objective-c-comment-block-comment-block-content
+                              ^^
+                              source-code-objective-c-comment-block-comment-block-end
+/*** Banner block comment. ***/
+^^
+source-code-objective-c-comment-block-comment-block-begin
+  ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  source-code-objective-c-comment-block-comment-block-content
+                             ^^
+                             source-code-objective-c-comment-block-comment-block-end
+/**/
+^^
+source-code-objective-c-comment-block-comment-block-begin
+  ^^
+  source-code-objective-c-comment-block-comment-block-end
+
+/**
+^^^
+source-code-objective-c-comment-block-doc-comment-block-doc-begin
+ * Multi-line documentation comment
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+source-code-objective-c-comment-block-doc-comment-block-doc-content
+ * describing a method.
+^^^^^^^^^^^^^^^^^^^^^^^
+source-code-objective-c-comment-block-doc-comment-block-doc-content
+ */
+^
+source-code-objective-c-comment-block-doc-comment-block-doc-content
+ ^^
+ source-code-objective-c-comment-block-doc-comment-block-doc-end
+/*
+^^
+source-code-objective-c-comment-block-comment-block-begin
+ * Multi-line block comment
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+source-code-objective-c-comment-block-comment-block-content
+ * spanning multiple lines.
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+source-code-objective-c-comment-block-comment-block-content
+ */
+^
+source-code-objective-c-comment-block-comment-block-content
+ ^^
+ source-code-objective-c-comment-block-comment-block-end

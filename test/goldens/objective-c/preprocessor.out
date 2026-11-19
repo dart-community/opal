@@ -1,0 +1,141 @@
+#import <Foundation/Foundation.h>
+^^^^^^^
+source-code-objective-c-metadata-preprocessor-directive-metadata-preprocessor-directive-name
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+       source-code-objective-c-metadata-preprocessor-directive-metadata-preprocessor-directive-options
+#import "MyHeader.h"
+^^^^^^^
+source-code-objective-c-metadata-preprocessor-directive-metadata-preprocessor-directive-name
+       ^^^^^^^^^^^^^
+       source-code-objective-c-metadata-preprocessor-directive-metadata-preprocessor-directive-options
+#include <stdio.h>
+^^^^^^^^
+source-code-objective-c-metadata-preprocessor-directive-metadata-preprocessor-directive-name
+        ^^^^^^^^^^
+        source-code-objective-c-metadata-preprocessor-directive-metadata-preprocessor-directive-options
+
+#define MAX_COUNT 100 // Upper bound.
+^^^^^^^
+source-code-objective-c-metadata-preprocessor-directive-metadata-preprocessor-directive-name
+       ^^^^^^^^^^^^^^^
+       source-code-objective-c-metadata-preprocessor-directive-metadata-preprocessor-directive-options
+                      ^^^^^^^^^^^^^^^
+                      source-code-objective-c-metadata-preprocessor-directive-comment-line
+#define HOME_URL @"https://example.com" /* Not a // comment. */
+^^^^^^^
+source-code-objective-c-metadata-preprocessor-directive-metadata-preprocessor-directive-name
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+       source-code-objective-c-metadata-preprocessor-directive-metadata-preprocessor-directive-options
+                                        ^^
+                                        source-code-objective-c-metadata-preprocessor-directive-comment-block-comment-block-begin
+                                          ^^^^^^^^^^^^^^^^^^^
+                                          source-code-objective-c-metadata-preprocessor-directive-comment-block-comment-block-content
+                                                             ^^
+                                                             source-code-objective-c-metadata-preprocessor-directive-comment-block-comment-block-end
+#undef MAX_COUNT
+^^^^^^
+source-code-objective-c-metadata-preprocessor-directive-metadata-preprocessor-directive-name
+      ^^^^^^^^^^
+      source-code-objective-c-metadata-preprocessor-directive-metadata-preprocessor-directive-options
+
+#if defined(DEBUG) && DEBUG
+^^^
+source-code-objective-c-metadata-preprocessor-directive-metadata-preprocessor-directive-name
+   ^^^^^^^^^^^^^^^^^^^^^^^^
+   source-code-objective-c-metadata-preprocessor-directive-metadata-preprocessor-directive-options
+  #ifdef __OBJC__
+^^
+source-code-objective-c-whitespace
+  ^^^^^^
+  source-code-objective-c-metadata-preprocessor-directive-metadata-preprocessor-directive-name
+        ^^^^^^^^^
+        source-code-objective-c-metadata-preprocessor-directive-metadata-preprocessor-directive-options
+    #  ifndef MY_GUARD
+^^^^
+source-code-objective-c-whitespace
+    ^^^^^^^^^
+    source-code-objective-c-metadata-preprocessor-directive-metadata-preprocessor-directive-name
+             ^^^^^^^^^
+             source-code-objective-c-metadata-preprocessor-directive-metadata-preprocessor-directive-options
+      #define MY_GUARD 1
+^^^^^^
+source-code-objective-c-whitespace
+      ^^^^^^^
+      source-code-objective-c-metadata-preprocessor-directive-metadata-preprocessor-directive-name
+             ^^^^^^^^^^^
+             source-code-objective-c-metadata-preprocessor-directive-metadata-preprocessor-directive-options
+    #endif
+^^^^
+source-code-objective-c-whitespace
+    ^^^^^^
+    source-code-objective-c-metadata-preprocessor-directive-metadata-preprocessor-directive-name
+  #endif
+^^
+source-code-objective-c-whitespace
+  ^^^^^^
+  source-code-objective-c-metadata-preprocessor-directive-metadata-preprocessor-directive-name
+#elif TARGET_OS_IOS
+^^^^^
+source-code-objective-c-metadata-preprocessor-directive-metadata-preprocessor-directive-name
+     ^^^^^^^^^^^^^^
+     source-code-objective-c-metadata-preprocessor-directive-metadata-preprocessor-directive-options
+#warning "iOS fallback"
+^^^^^^^^
+source-code-objective-c-metadata-preprocessor-directive-metadata-preprocessor-directive-name
+        ^^^^^^^^^^^^^^^
+        source-code-objective-c-metadata-preprocessor-directive-metadata-preprocessor-directive-options
+#else
+^^^^^
+source-code-objective-c-metadata-preprocessor-directive-metadata-preprocessor-directive-name
+#error "Unsupported platform"
+^^^^^^
+source-code-objective-c-metadata-preprocessor-directive-metadata-preprocessor-directive-name
+      ^^^^^^^^^^^^^^^^^^^^^^^
+      source-code-objective-c-metadata-preprocessor-directive-metadata-preprocessor-directive-options
+#endif
+^^^^^^
+source-code-objective-c-metadata-preprocessor-directive-metadata-preprocessor-directive-name
+
+#pragma mark - Lifecycle
+^^^^^^^
+source-code-objective-c-metadata-preprocessor-directive-metadata-preprocessor-directive-name
+       ^^^^^^^^^^^^^^^^^
+       source-code-objective-c-metadata-preprocessor-directive-metadata-preprocessor-directive-options
+#pragma mark - Don't forget // Not a character literal.
+^^^^^^^
+source-code-objective-c-metadata-preprocessor-directive-metadata-preprocessor-directive-name
+       ^^^^^^^^^^^^^^^^^^^^^
+       source-code-objective-c-metadata-preprocessor-directive-metadata-preprocessor-directive-options
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                            source-code-objective-c-metadata-preprocessor-directive-comment-line
+#line 42 "generated.m"
+^^^^^
+source-code-objective-c-metadata-preprocessor-directive-metadata-preprocessor-directive-name
+     ^^^^^^^^^^^^^^^^^
+     source-code-objective-c-metadata-preprocessor-directive-metadata-preprocessor-directive-options
+
+#define SWAP(a, b) \
+^^^^^^^
+source-code-objective-c-metadata-preprocessor-directive-metadata-preprocessor-directive-name
+       ^^^^^^^^^^^^^
+       source-code-objective-c-metadata-preprocessor-directive-metadata-preprocessor-directive-options
+    do { __typeof__(a) tmp = (a); (a) = (b); (b) = tmp; } while (0)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+source-code-objective-c-metadata-preprocessor-directive-metadata-preprocessor-directive-options
+int afterMacro = 0;
+^^^
+source-code-objective-c-identifier-type-built-in
+   ^
+   source-code-objective-c-whitespace
+    ^^^^^^^^^^
+    source-code-objective-c-identifier
+              ^
+              source-code-objective-c-whitespace
+               ^
+               source-code-objective-c-keyword-operator
+                ^
+                source-code-objective-c-whitespace
+                 ^
+                 source-code-objective-c-literal-number-integer
+                  ^
+                  source-code-objective-c-punctuation

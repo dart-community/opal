@@ -1,0 +1,20 @@
+/// A documentation line comment.
+//! A Doxygen line comment.
+//// A banner line comment.
+// A regular line comment.
+int value = 1; // Trailing line comment.
+
+/** Single-line doc block comment. */
+/*! HeaderDoc block comment. */
+/* Single-line block comment. */
+/*** Banner block comment. ***/
+/**/
+
+/**
+ * Multi-line documentation comment
+ * describing a method.
+ */
+/*
+ * Multi-line block comment
+ * spanning multiple lines.
+ */

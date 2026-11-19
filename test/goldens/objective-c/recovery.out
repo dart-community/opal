@@ -1,0 +1,119 @@
+NSString *brokenObjc = @"unterminated string
+^^^^^^^^
+source-code-objective-c-identifier-type-built-in
+        ^
+        source-code-objective-c-whitespace
+         ^
+         source-code-objective-c-keyword-operator
+          ^^^^^^^^^^
+          source-code-objective-c-identifier
+                    ^
+                    source-code-objective-c-whitespace
+                     ^
+                     source-code-objective-c-keyword-operator
+                      ^
+                      source-code-objective-c-whitespace
+                       ^^
+                       source-code-objective-c-literal-string-quoted-double-literal-string-quoted-double-begin
+                         ^^^^^^^^^^^^^^^^^^^
+                         source-code-objective-c-literal-string-quoted-double-literal-string-unquoted
+NSString *brokenC = "also unterminated\
+^^^^^^^^
+source-code-objective-c-identifier-type-built-in
+        ^
+        source-code-objective-c-whitespace
+         ^
+         source-code-objective-c-keyword-operator
+          ^^^^^^^
+          source-code-objective-c-identifier
+                 ^
+                 source-code-objective-c-whitespace
+                  ^
+                  source-code-objective-c-keyword-operator
+                   ^
+                   source-code-objective-c-whitespace
+                    ^
+                    source-code-objective-c-literal-string-quoted-double-literal-string-quoted-double-begin
+                     ^^^^^^^^^^^^^^^^^
+                     source-code-objective-c-literal-string-quoted-double-literal-string-unquoted
+                                      ^
+                                      source-code-objective-c-literal-string-quoted-double-literal-string-unquoted
+char brokenChar = 'x
+^^^^
+source-code-objective-c-identifier-type-built-in
+    ^
+    source-code-objective-c-whitespace
+     ^^^^^^^^^^
+     source-code-objective-c-identifier
+               ^
+               source-code-objective-c-whitespace
+                ^
+                source-code-objective-c-keyword-operator
+                 ^
+                 source-code-objective-c-whitespace
+                  ^
+                  source-code-objective-c-literal-string-character-literal-string-character-begin
+                   ^
+                   source-code-objective-c-literal-string-character-literal-string-unquoted
+int recovered = 42;
+^^^
+source-code-objective-c-identifier-type-built-in
+   ^
+   source-code-objective-c-whitespace
+    ^^^^^^^^^
+    source-code-objective-c-identifier
+             ^
+             source-code-objective-c-whitespace
+              ^
+              source-code-objective-c-keyword-operator
+               ^
+               source-code-objective-c-whitespace
+                ^^
+                source-code-objective-c-literal-number-integer
+                  ^
+                  source-code-objective-c-punctuation
+
+@property (nonatomic, copy;
+^^^^^^^^^
+source-code-objective-c-keyword-declaration-property
+         ^
+         source-code-objective-c-whitespace
+          ^
+          source-code-objective-c-punctuation
+           ^^^^^^^^^
+           source-code-objective-c-keyword-modifier-nonatomic
+                    ^
+                    source-code-objective-c-punctuation
+                     ^
+                     source-code-objective-c-whitespace
+                      ^^^^
+                      source-code-objective-c-keyword-modifier-copy
+                          ^
+                          source-code-objective-c-punctuation
+@property (nonatomic, copy
+^^^^^^^^^
+source-code-objective-c-keyword-declaration-property
+         ^
+         source-code-objective-c-whitespace
+          ^
+          source-code-objective-c-punctuation
+           ^^^^^^^^^
+           source-code-objective-c-keyword-modifier-nonatomic
+                    ^
+                    source-code-objective-c-punctuation
+                     ^
+                     source-code-objective-c-whitespace
+                      ^^^^
+                      source-code-objective-c-keyword-modifier-copy
+@end
+^^^^
+source-code-objective-c-keyword-declaration-end
+
+/* Unclosed block comment until EOF
+^^
+source-code-objective-c-comment-block-comment-block-begin
+  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  source-code-objective-c-comment-block-comment-block-content
+int insideComment = 1;
+^^^^^^^^^^^^^^^^^^^^^^
+source-code-objective-c-comment-block-comment-block-content

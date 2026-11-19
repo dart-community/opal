@@ -1,0 +1,27 @@
+int compute_sum(int a, int b) {
+    return a + b;
+}
+
+void demo(Person *person, Node *node) {
+    id obj = [[NSObject alloc] init];
+    [obj performSelector:@selector(description) withObject:nil];
+    person.name = @"Ada";
+    NSLog(@"%@", person.name);
+    printf("sum=%d\n", compute_sum(1, 2));
+
+    int (^simple)(void) = ^{ return 1; };
+    int (^doubler)(int) = ^(int x) { return x * 2; };
+    void (^variadic)(int, ...) = ^void(int n, ...) { };
+    int (^adder)(int, int) = ^int(int a, int b) { return a + b; };
+
+    int x = _count + localVar + MAX_LIMIT;
+    x++; x--;
+    x += 1; x -= 2; x <<= 1; x >>= 1; x &= 0xFF; x |= 1; x ^= 3;
+    x *= 2; x /= 2; x %= 3;
+    int bits = (x << 1) >> 1;
+    int mask = (a & b) | (a ^ b) ^ ~a;
+    BOOL cmp = (a <= b) && (a >= b) || (a == b) != (a < b) && (a > b);
+    int res = !cmp ? (node->value * 2 / 3 % 4) : (a - b);
+    NSString *display = person.name ?: @"none";
+    id retained = [obj retain];
+}

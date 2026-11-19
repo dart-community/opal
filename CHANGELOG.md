@@ -1,5 +1,9 @@
 ## 0.3.2-wip
 
+- Improve the accuracy, recovery, and performance of `objective-c`
+  highlighting (`objective-c`, `objectivec`, `obj-c`, `objc`).
+- Fix the documented `objectivec` name not resolving to `objective-c`.
+
 ## 0.3.1
 
 - Add support for Dockerfiles (`dockerfile`, `docker`, `containerfile`).

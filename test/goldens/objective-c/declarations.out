@@ -1,0 +1,1013 @@
+@class ForwardClass;
+^^^^^^
+source-code-objective-c-keyword-declaration-class
+      ^
+      source-code-objective-c-whitespace
+       ^^^^^^^^^^^^
+       source-code-objective-c-identifier-type
+                   ^
+                   source-code-objective-c-punctuation
+@compatibility_alias AliasPerson Person;
+^^^^^^^^^^^^^^^^^^^^
+source-code-objective-c-keyword-declaration-compatibility_alias
+                    ^
+                    source-code-objective-c-whitespace
+                     ^^^^^^^^^^^
+                     source-code-objective-c-identifier-type
+                                ^
+                                source-code-objective-c-whitespace
+                                 ^^^^^^
+                                 source-code-objective-c-identifier-type
+                                       ^
+                                       source-code-objective-c-punctuation
+
+@protocol Greeter <NSObject>
+^^^^^^^^^
+source-code-objective-c-keyword-declaration-protocol
+         ^
+         source-code-objective-c-whitespace
+          ^^^^^^^
+          source-code-objective-c-identifier-type
+                 ^
+                 source-code-objective-c-whitespace
+                  ^
+                  source-code-objective-c-keyword-operator
+                   ^^^^^^^^
+                   source-code-objective-c-identifier-type-built-in
+                           ^
+                           source-code-objective-c-keyword-operator
+@required
+^^^^^^^^^
+source-code-objective-c-keyword-modifier-required
+- (NSString *)greet;
+^
+source-code-objective-c-keyword-operator
+ ^
+ source-code-objective-c-whitespace
+  ^
+  source-code-objective-c-punctuation
+   ^^^^^^^^
+   source-code-objective-c-identifier-type-built-in
+           ^
+           source-code-objective-c-whitespace
+            ^
+            source-code-objective-c-keyword-operator
+             ^
+             source-code-objective-c-punctuation
+              ^^^^^
+              source-code-objective-c-identifier
+                   ^
+                   source-code-objective-c-punctuation
+@optional
+^^^^^^^^^
+source-code-objective-c-keyword-modifier-optional
+- (void)farewell;
+^
+source-code-objective-c-keyword-operator
+ ^
+ source-code-objective-c-whitespace
+  ^
+  source-code-objective-c-punctuation
+   ^^^^
+   source-code-objective-c-identifier-type-built-in
+       ^
+       source-code-objective-c-punctuation
+        ^^^^^^^^
+        source-code-objective-c-identifier
+                ^
+                source-code-objective-c-punctuation
+@end
+^^^^
+source-code-objective-c-keyword-declaration-end
+
+typedef struct {
+^^^^^^^
+source-code-objective-c-keyword-declaration-typedef
+       ^
+       source-code-objective-c-whitespace
+        ^^^^^^
+        source-code-objective-c-keyword-declaration-struct
+              ^
+              source-code-objective-c-whitespace
+               ^
+               source-code-objective-c-punctuation
+    int x;
+^^^^
+source-code-objective-c-whitespace
+    ^^^
+    source-code-objective-c-identifier-type-built-in
+       ^
+       source-code-objective-c-whitespace
+        ^
+        source-code-objective-c-identifier
+         ^
+         source-code-objective-c-punctuation
+    double y;
+^^^^
+source-code-objective-c-whitespace
+    ^^^^^^
+    source-code-objective-c-identifier-type-built-in
+          ^
+          source-code-objective-c-whitespace
+           ^
+           source-code-objective-c-identifier
+            ^
+            source-code-objective-c-punctuation
+} Point2D;
+^
+source-code-objective-c-punctuation
+ ^
+ source-code-objective-c-whitespace
+  ^^^^^^^
+  source-code-objective-c-identifier-type
+         ^
+         source-code-objective-c-punctuation
+
+typedef enum { StatusOk, StatusError } Status;
+^^^^^^^
+source-code-objective-c-keyword-declaration-typedef
+       ^
+       source-code-objective-c-whitespace
+        ^^^^
+        source-code-objective-c-keyword-declaration-enum
+            ^
+            source-code-objective-c-whitespace
+             ^
+             source-code-objective-c-punctuation
+              ^
+              source-code-objective-c-whitespace
+               ^^^^^^^^
+               source-code-objective-c-identifier-type
+                       ^
+                       source-code-objective-c-punctuation
+                        ^
+                        source-code-objective-c-whitespace
+                         ^^^^^^^^^^^
+                         source-code-objective-c-identifier-type
+                                    ^
+                                    source-code-objective-c-whitespace
+                                     ^
+                                     source-code-objective-c-punctuation
+                                      ^
+                                      source-code-objective-c-whitespace
+                                       ^^^^^^
+                                       source-code-objective-c-identifier-type
+                                             ^
+                                             source-code-objective-c-punctuation
+union Payload { char c; short s; long l; float f; signed int si; unsigned int ui; };
+^^^^^
+source-code-objective-c-keyword-declaration-union
+     ^
+     source-code-objective-c-whitespace
+      ^^^^^^^
+      source-code-objective-c-identifier-type
+             ^
+             source-code-objective-c-whitespace
+              ^
+              source-code-objective-c-punctuation
+               ^
+               source-code-objective-c-whitespace
+                ^^^^
+                source-code-objective-c-identifier-type-built-in
+                    ^
+                    source-code-objective-c-whitespace
+                     ^
+                     source-code-objective-c-identifier
+                      ^
+                      source-code-objective-c-punctuation
+                       ^
+                       source-code-objective-c-whitespace
+                        ^^^^^
+                        source-code-objective-c-identifier-type-built-in
+                             ^
+                             source-code-objective-c-whitespace
+                              ^
+                              source-code-objective-c-identifier
+                               ^
+                               source-code-objective-c-punctuation
+                                ^
+                                source-code-objective-c-whitespace
+                                 ^^^^
+                                 source-code-objective-c-identifier-type-built-in
+                                     ^
+                                     source-code-objective-c-whitespace
+                                      ^
+                                      source-code-objective-c-identifier
+                                       ^
+                                       source-code-objective-c-punctuation
+                                        ^
+                                        source-code-objective-c-whitespace
+                                         ^^^^^
+                                         source-code-objective-c-identifier-type-built-in
+                                              ^
+                                              source-code-objective-c-whitespace
+                                               ^
+                                               source-code-objective-c-identifier
+                                                ^
+                                                source-code-objective-c-punctuation
+                                                 ^
+                                                 source-code-objective-c-whitespace
+                                                  ^^^^^^
+                                                  source-code-objective-c-identifier-type-built-in
+                                                        ^
+                                                        source-code-objective-c-whitespace
+                                                         ^^^
+                                                         source-code-objective-c-identifier-type-built-in
+                                                            ^
+                                                            source-code-objective-c-whitespace
+                                                             ^^
+                                                             source-code-objective-c-identifier
+                                                               ^
+                                                               source-code-objective-c-punctuation
+                                                                ^
+                                                                source-code-objective-c-whitespace
+                                                                 ^^^^^^^^
+                                                                 source-code-objective-c-identifier-type-built-in
+                                                                         ^
+                                                                         source-code-objective-c-whitespace
+                                                                          ^^^
+                                                                          source-code-objective-c-identifier-type-built-in
+                                                                             ^
+                                                                             source-code-objective-c-whitespace
+                                                                              ^^
+                                                                              source-code-objective-c-identifier
+                                                                                ^
+                                                                                source-code-objective-c-punctuation
+                                                                                 ^
+                                                                                 source-code-objective-c-whitespace
+                                                                                  ^
+                                                                                  source-code-objective-c-punctuation
+                                                                                   ^
+                                                                                   source-code-objective-c-punctuation
+
+@interface Person : NSObject <Greeter> {
+^^^^^^^^^^
+source-code-objective-c-keyword-declaration-interface
+          ^
+          source-code-objective-c-whitespace
+           ^^^^^^
+           source-code-objective-c-identifier-type
+                 ^
+                 source-code-objective-c-whitespace
+                  ^
+                  source-code-objective-c-keyword-operator
+                   ^
+                   source-code-objective-c-whitespace
+                    ^^^^^^^^
+                    source-code-objective-c-identifier-type-built-in
+                            ^
+                            source-code-objective-c-whitespace
+                             ^
+                             source-code-objective-c-keyword-operator
+                              ^^^^^^^
+                              source-code-objective-c-identifier-type
+                                     ^
+                                     source-code-objective-c-keyword-operator
+                                      ^
+                                      source-code-objective-c-whitespace
+                                       ^
+                                       source-code-objective-c-punctuation
+@public
+^^^^^^^
+source-code-objective-c-keyword-modifier-public
+    NSInteger _id;
+^^^^
+source-code-objective-c-whitespace
+    ^^^^^^^^^
+    source-code-objective-c-identifier-type-built-in
+             ^
+             source-code-objective-c-whitespace
+              ^^^
+              source-code-objective-c-identifier-property-ivar
+                 ^
+                 source-code-objective-c-punctuation
+@protected
+^^^^^^^^^^
+source-code-objective-c-keyword-modifier-protected
+    NSUInteger _age;
+^^^^
+source-code-objective-c-whitespace
+    ^^^^^^^^^^
+    source-code-objective-c-identifier-type-built-in
+              ^
+              source-code-objective-c-whitespace
+               ^^^^
+               source-code-objective-c-identifier-property-ivar
+                   ^
+                   source-code-objective-c-punctuation
+@private
+^^^^^^^^
+source-code-objective-c-keyword-modifier-private
+    NSString *_secret;
+^^^^
+source-code-objective-c-whitespace
+    ^^^^^^^^
+    source-code-objective-c-identifier-type-built-in
+            ^
+            source-code-objective-c-whitespace
+             ^
+             source-code-objective-c-keyword-operator
+              ^^^^^^^
+              source-code-objective-c-identifier-property-ivar
+                     ^
+                     source-code-objective-c-punctuation
+@package
+^^^^^^^^
+source-code-objective-c-keyword-modifier-package
+    CGFloat _score;
+^^^^
+source-code-objective-c-whitespace
+    ^^^^^^^
+    source-code-objective-c-identifier-type-built-in
+           ^
+           source-code-objective-c-whitespace
+            ^^^^^^
+            source-code-objective-c-identifier-property-ivar
+                  ^
+                  source-code-objective-c-punctuation
+}
+^
+source-code-objective-c-punctuation
+
+@property (nonatomic, copy, nonnull) NSString *name;
+^^^^^^^^^
+source-code-objective-c-keyword-declaration-property
+         ^
+         source-code-objective-c-whitespace
+          ^
+          source-code-objective-c-punctuation
+           ^^^^^^^^^
+           source-code-objective-c-keyword-modifier-nonatomic
+                    ^
+                    source-code-objective-c-punctuation
+                     ^
+                     source-code-objective-c-whitespace
+                      ^^^^
+                      source-code-objective-c-keyword-modifier-copy
+                          ^
+                          source-code-objective-c-punctuation
+                           ^
+                           source-code-objective-c-whitespace
+                            ^^^^^^^
+                            source-code-objective-c-keyword-modifier-nonnull
+                                   ^
+                                   source-code-objective-c-punctuation
+                                    ^
+                                    source-code-objective-c-whitespace
+                                     ^^^^^^^^
+                                     source-code-objective-c-identifier-type-built-in
+                                             ^
+                                             source-code-objective-c-whitespace
+                                              ^
+                                              source-code-objective-c-keyword-operator
+                                               ^^^^
+                                               source-code-objective-c-identifier
+                                                   ^
+                                                   source-code-objective-c-punctuation
+@property (atomic, strong, nullable) NSArray<NSNumber *> *items;
+^^^^^^^^^
+source-code-objective-c-keyword-declaration-property
+         ^
+         source-code-objective-c-whitespace
+          ^
+          source-code-objective-c-punctuation
+           ^^^^^^
+           source-code-objective-c-keyword-modifier-atomic
+                 ^
+                 source-code-objective-c-punctuation
+                  ^
+                  source-code-objective-c-whitespace
+                   ^^^^^^
+                   source-code-objective-c-keyword-modifier-strong
+                         ^
+                         source-code-objective-c-punctuation
+                          ^
+                          source-code-objective-c-whitespace
+                           ^^^^^^^^
+                           source-code-objective-c-keyword-modifier-nullable
+                                   ^
+                                   source-code-objective-c-punctuation
+                                    ^
+                                    source-code-objective-c-whitespace
+                                     ^^^^^^^
+                                     source-code-objective-c-identifier-type-built-in
+                                            ^
+                                            source-code-objective-c-keyword-operator
+                                             ^^^^^^^^
+                                             source-code-objective-c-identifier-type-built-in
+                                                     ^
+                                                     source-code-objective-c-whitespace
+                                                      ^
+                                                      source-code-objective-c-keyword-operator
+                                                       ^
+                                                       source-code-objective-c-keyword-operator
+                                                        ^
+                                                        source-code-objective-c-whitespace
+                                                         ^
+                                                         source-code-objective-c-keyword-operator
+                                                          ^^^^^
+                                                          source-code-objective-c-identifier
+                                                               ^
+                                                               source-code-objective-c-punctuation
+@property (nonatomic, weak, readonly) UIViewController *controller;
+^^^^^^^^^
+source-code-objective-c-keyword-declaration-property
+         ^
+         source-code-objective-c-whitespace
+          ^
+          source-code-objective-c-punctuation
+           ^^^^^^^^^
+           source-code-objective-c-keyword-modifier-nonatomic
+                    ^
+                    source-code-objective-c-punctuation
+                     ^
+                     source-code-objective-c-whitespace
+                      ^^^^
+                      source-code-objective-c-keyword-modifier-weak
+                          ^
+                          source-code-objective-c-punctuation
+                           ^
+                           source-code-objective-c-whitespace
+                            ^^^^^^^^
+                            source-code-objective-c-keyword-modifier-readonly
+                                    ^
+                                    source-code-objective-c-punctuation
+                                     ^
+                                     source-code-objective-c-whitespace
+                                      ^^^^^^^^^^^^^^^^
+                                      source-code-objective-c-identifier-type
+                                                      ^
+                                                      source-code-objective-c-whitespace
+                                                       ^
+                                                       source-code-objective-c-keyword-operator
+                                                        ^^^^^^^^^^
+                                                        source-code-objective-c-identifier
+                                                                  ^
+                                                                  source-code-objective-c-punctuation
+@property (nonatomic, assign, readwrite, getter=isActive, setter=setActive:) BOOL active;
+^^^^^^^^^
+source-code-objective-c-keyword-declaration-property
+         ^
+         source-code-objective-c-whitespace
+          ^
+          source-code-objective-c-punctuation
+           ^^^^^^^^^
+           source-code-objective-c-keyword-modifier-nonatomic
+                    ^
+                    source-code-objective-c-punctuation
+                     ^
+                     source-code-objective-c-whitespace
+                      ^^^^^^
+                      source-code-objective-c-keyword-modifier-assign
+                            ^
+                            source-code-objective-c-punctuation
+                             ^
+                             source-code-objective-c-whitespace
+                              ^^^^^^^^^
+                              source-code-objective-c-keyword-modifier-readwrite
+                                       ^
+                                       source-code-objective-c-punctuation
+                                        ^
+                                        source-code-objective-c-whitespace
+                                         ^^^^^^
+                                         source-code-objective-c-keyword-modifier-getter
+                                               ^
+                                               source-code-objective-c-keyword-operator
+                                                ^^^^^^^^
+                                                source-code-objective-c-identifier
+                                                        ^
+                                                        source-code-objective-c-punctuation
+                                                         ^
+                                                         source-code-objective-c-whitespace
+                                                          ^^^^^^
+                                                          source-code-objective-c-keyword-modifier-setter
+                                                                ^
+                                                                source-code-objective-c-keyword-operator
+                                                                 ^^^^^^^^^
+                                                                 source-code-objective-c-identifier
+                                                                          ^
+                                                                          source-code-objective-c-keyword-operator
+                                                                           ^
+                                                                           source-code-objective-c-punctuation
+                                                                            ^
+                                                                            source-code-objective-c-whitespace
+                                                                             ^^^^
+                                                                             source-code-objective-c-identifier-type-built-in
+                                                                                 ^
+                                                                                 source-code-objective-c-whitespace
+                                                                                  ^^^^^^
+                                                                                  source-code-objective-c-identifier
+                                                                                        ^
+                                                                                        source-code-objective-c-punctuation
+@property (nonatomic, retain) NSMutableDictionary *_Nullable metadata;
+^^^^^^^^^
+source-code-objective-c-keyword-declaration-property
+         ^
+         source-code-objective-c-whitespace
+          ^
+          source-code-objective-c-punctuation
+           ^^^^^^^^^
+           source-code-objective-c-keyword-modifier-nonatomic
+                    ^
+                    source-code-objective-c-punctuation
+                     ^
+                     source-code-objective-c-whitespace
+                      ^^^^^^
+                      source-code-objective-c-keyword-modifier-retain
+                            ^
+                            source-code-objective-c-punctuation
+                             ^
+                             source-code-objective-c-whitespace
+                              ^^^^^^^^^^^^^^^^^^^
+                              source-code-objective-c-identifier-type-built-in
+                                                 ^
+                                                 source-code-objective-c-whitespace
+                                                  ^
+                                                  source-code-objective-c-keyword-operator
+                                                   ^^^^^^^^^
+                                                   source-code-objective-c-keyword-modifier-_Nullable
+                                                            ^
+                                                            source-code-objective-c-whitespace
+                                                             ^^^^^^^^
+                                                             source-code-objective-c-identifier
+                                                                     ^
+                                                                     source-code-objective-c-punctuation
+@property (nonatomic, strong) NSError *_Nonnull lastError;
+^^^^^^^^^
+source-code-objective-c-keyword-declaration-property
+         ^
+         source-code-objective-c-whitespace
+          ^
+          source-code-objective-c-punctuation
+           ^^^^^^^^^
+           source-code-objective-c-keyword-modifier-nonatomic
+                    ^
+                    source-code-objective-c-punctuation
+                     ^
+                     source-code-objective-c-whitespace
+                      ^^^^^^
+                      source-code-objective-c-keyword-modifier-strong
+                            ^
+                            source-code-objective-c-punctuation
+                             ^
+                             source-code-objective-c-whitespace
+                              ^^^^^^^
+                              source-code-objective-c-identifier-type-built-in
+                                     ^
+                                     source-code-objective-c-whitespace
+                                      ^
+                                      source-code-objective-c-keyword-operator
+                                       ^^^^^^^^
+                                       source-code-objective-c-keyword-modifier-_Nonnull
+                                               ^
+                                               source-code-objective-c-whitespace
+                                                ^^^^^^^^^
+                                                source-code-objective-c-identifier
+                                                         ^
+                                                         source-code-objective-c-punctuation
+@property (nonatomic, strong) CustomWidget *_Null_unspecified widget;
+^^^^^^^^^
+source-code-objective-c-keyword-declaration-property
+         ^
+         source-code-objective-c-whitespace
+          ^
+          source-code-objective-c-punctuation
+           ^^^^^^^^^
+           source-code-objective-c-keyword-modifier-nonatomic
+                    ^
+                    source-code-objective-c-punctuation
+                     ^
+                     source-code-objective-c-whitespace
+                      ^^^^^^
+                      source-code-objective-c-keyword-modifier-strong
+                            ^
+                            source-code-objective-c-punctuation
+                             ^
+                             source-code-objective-c-whitespace
+                              ^^^^^^^^^^^^
+                              source-code-objective-c-identifier-type
+                                          ^
+                                          source-code-objective-c-whitespace
+                                           ^
+                                           source-code-objective-c-keyword-operator
+                                            ^^^^^^^^^^^^^^^^^
+                                            source-code-objective-c-keyword-modifier-_Null_unspecified
+                                                             ^
+                                                             source-code-objective-c-whitespace
+                                                              ^^^^^^
+                                                              source-code-objective-c-identifier
+                                                                    ^
+                                                                    source-code-objective-c-punctuation
+@property (class, nonatomic, readonly) NSString *defaultName;
+^^^^^^^^^
+source-code-objective-c-keyword-declaration-property
+         ^
+         source-code-objective-c-whitespace
+          ^
+          source-code-objective-c-punctuation
+           ^^^^^
+           source-code-objective-c-keyword-modifier-class
+                ^
+                source-code-objective-c-punctuation
+                 ^
+                 source-code-objective-c-whitespace
+                  ^^^^^^^^^
+                  source-code-objective-c-keyword-modifier-nonatomic
+                           ^
+                           source-code-objective-c-punctuation
+                            ^
+                            source-code-objective-c-whitespace
+                             ^^^^^^^^
+                             source-code-objective-c-keyword-modifier-readonly
+                                     ^
+                                     source-code-objective-c-punctuation
+                                      ^
+                                      source-code-objective-c-whitespace
+                                       ^^^^^^^^
+                                       source-code-objective-c-identifier-type-built-in
+                                               ^
+                                               source-code-objective-c-whitespace
+                                                ^
+                                                source-code-objective-c-keyword-operator
+                                                 ^^^^^^^^^^^
+                                                 source-code-objective-c-identifier
+                                                            ^
+                                                            source-code-objective-c-punctuation
+@property NSString *plainProp;
+^^^^^^^^^
+source-code-objective-c-keyword-declaration-property
+         ^
+         source-code-objective-c-whitespace
+          ^^^^^^^^
+          source-code-objective-c-identifier-type-built-in
+                  ^
+                  source-code-objective-c-whitespace
+                   ^
+                   source-code-objective-c-keyword-operator
+                    ^^^^^^^^^
+                    source-code-objective-c-identifier
+                             ^
+                             source-code-objective-c-punctuation
+
+- (instancetype)initWithName:(NSString *)name;
+^
+source-code-objective-c-keyword-operator
+ ^
+ source-code-objective-c-whitespace
+  ^
+  source-code-objective-c-punctuation
+   ^^^^^^^^^^^^
+   source-code-objective-c-identifier-type-built-in
+               ^
+               source-code-objective-c-punctuation
+                ^^^^^^^^^^^^
+                source-code-objective-c-identifier
+                            ^
+                            source-code-objective-c-keyword-operator
+                             ^
+                             source-code-objective-c-punctuation
+                              ^^^^^^^^
+                              source-code-objective-c-identifier-type-built-in
+                                      ^
+                                      source-code-objective-c-whitespace
+                                       ^
+                                       source-code-objective-c-keyword-operator
+                                        ^
+                                        source-code-objective-c-punctuation
+                                         ^^^^
+                                         source-code-objective-c-identifier
+                                             ^
+                                             source-code-objective-c-punctuation
+- (nullable NSString *)titleForKey:(nonnull NSString *)key;
+^
+source-code-objective-c-keyword-operator
+ ^
+ source-code-objective-c-whitespace
+  ^
+  source-code-objective-c-punctuation
+   ^^^^^^^^
+   source-code-objective-c-keyword-modifier-nullable
+           ^
+           source-code-objective-c-whitespace
+            ^^^^^^^^
+            source-code-objective-c-identifier-type-built-in
+                    ^
+                    source-code-objective-c-whitespace
+                     ^
+                     source-code-objective-c-keyword-operator
+                      ^
+                      source-code-objective-c-punctuation
+                       ^^^^^^^^^^^
+                       source-code-objective-c-identifier
+                                  ^
+                                  source-code-objective-c-keyword-operator
+                                   ^
+                                   source-code-objective-c-punctuation
+                                    ^^^^^^^
+                                    source-code-objective-c-keyword-modifier-nonnull
+                                           ^
+                                           source-code-objective-c-whitespace
+                                            ^^^^^^^^
+                                            source-code-objective-c-identifier-type-built-in
+                                                    ^
+                                                    source-code-objective-c-whitespace
+                                                     ^
+                                                     source-code-objective-c-keyword-operator
+                                                      ^
+                                                      source-code-objective-c-punctuation
+                                                       ^^^
+                                                       source-code-objective-c-identifier
+                                                          ^
+                                                          source-code-objective-c-punctuation
++ (Class)class;
+^
+source-code-objective-c-keyword-operator
+ ^
+ source-code-objective-c-whitespace
+  ^
+  source-code-objective-c-punctuation
+   ^^^^^
+   source-code-objective-c-identifier-type-built-in
+        ^
+        source-code-objective-c-punctuation
+         ^^^^^
+         source-code-objective-c-identifier
+              ^
+              source-code-objective-c-punctuation
+- (id)perform:(SEL)sel imp:(IMP)imp proto:(Protocol *)p;
+^
+source-code-objective-c-keyword-operator
+ ^
+ source-code-objective-c-whitespace
+  ^
+  source-code-objective-c-punctuation
+   ^^
+   source-code-objective-c-identifier-type-built-in
+     ^
+     source-code-objective-c-punctuation
+      ^^^^^^^
+      source-code-objective-c-identifier
+             ^
+             source-code-objective-c-keyword-operator
+              ^
+              source-code-objective-c-punctuation
+               ^^^
+               source-code-objective-c-identifier-type-built-in
+                  ^
+                  source-code-objective-c-punctuation
+                   ^^^
+                   source-code-objective-c-identifier
+                      ^
+                      source-code-objective-c-whitespace
+                       ^^^
+                       source-code-objective-c-identifier
+                          ^
+                          source-code-objective-c-keyword-operator
+                           ^
+                           source-code-objective-c-punctuation
+                            ^^^
+                            source-code-objective-c-identifier-type-built-in
+                               ^
+                               source-code-objective-c-punctuation
+                                ^^^
+                                source-code-objective-c-identifier
+                                   ^
+                                   source-code-objective-c-whitespace
+                                    ^^^^^
+                                    source-code-objective-c-identifier
+                                         ^
+                                         source-code-objective-c-keyword-operator
+                                          ^
+                                          source-code-objective-c-punctuation
+                                           ^^^^^^^^
+                                           source-code-objective-c-identifier-type-built-in
+                                                   ^
+                                                   source-code-objective-c-whitespace
+                                                    ^
+                                                    source-code-objective-c-keyword-operator
+                                                     ^
+                                                     source-code-objective-c-punctuation
+                                                      ^
+                                                      source-code-objective-c-identifier
+                                                       ^
+                                                       source-code-objective-c-punctuation
+@end
+^^^^
+source-code-objective-c-keyword-declaration-end
+
+@implementation Person
+^^^^^^^^^^^^^^^
+source-code-objective-c-keyword-declaration-implementation
+               ^
+               source-code-objective-c-whitespace
+                ^^^^^^
+                source-code-objective-c-identifier-type
+@synthesize name = _name;
+^^^^^^^^^^^
+source-code-objective-c-keyword-declaration-synthesize
+           ^
+           source-code-objective-c-whitespace
+            ^^^^
+            source-code-objective-c-identifier
+                ^
+                source-code-objective-c-whitespace
+                 ^
+                 source-code-objective-c-keyword-operator
+                  ^
+                  source-code-objective-c-whitespace
+                   ^^^^^
+                   source-code-objective-c-identifier-property-ivar
+                        ^
+                        source-code-objective-c-punctuation
+@dynamic active;
+^^^^^^^^
+source-code-objective-c-keyword-declaration-dynamic
+        ^
+        source-code-objective-c-whitespace
+         ^^^^^^
+         source-code-objective-c-identifier
+               ^
+               source-code-objective-c-punctuation
+@end
+^^^^
+source-code-objective-c-keyword-declaration-end
+
+@interface Person ()
+^^^^^^^^^^
+source-code-objective-c-keyword-declaration-interface
+          ^
+          source-code-objective-c-whitespace
+           ^^^^^^
+           source-code-objective-c-identifier-type
+                 ^
+                 source-code-objective-c-whitespace
+                  ^
+                  source-code-objective-c-punctuation
+                   ^
+                   source-code-objective-c-punctuation
+@property (nonatomic, strong) NSMutableArray *notes;
+^^^^^^^^^
+source-code-objective-c-keyword-declaration-property
+         ^
+         source-code-objective-c-whitespace
+          ^
+          source-code-objective-c-punctuation
+           ^^^^^^^^^
+           source-code-objective-c-keyword-modifier-nonatomic
+                    ^
+                    source-code-objective-c-punctuation
+                     ^
+                     source-code-objective-c-whitespace
+                      ^^^^^^
+                      source-code-objective-c-keyword-modifier-strong
+                            ^
+                            source-code-objective-c-punctuation
+                             ^
+                             source-code-objective-c-whitespace
+                              ^^^^^^^^^^^^^^
+                              source-code-objective-c-identifier-type-built-in
+                                            ^
+                                            source-code-objective-c-whitespace
+                                             ^
+                                             source-code-objective-c-keyword-operator
+                                              ^^^^^
+                                              source-code-objective-c-identifier
+                                                   ^
+                                                   source-code-objective-c-punctuation
+@end
+^^^^
+source-code-objective-c-keyword-declaration-end
+
+@interface Person (Helpers)
+^^^^^^^^^^
+source-code-objective-c-keyword-declaration-interface
+          ^
+          source-code-objective-c-whitespace
+           ^^^^^^
+           source-code-objective-c-identifier-type
+                 ^
+                 source-code-objective-c-whitespace
+                  ^
+                  source-code-objective-c-punctuation
+                   ^^^^^^^
+                   source-code-objective-c-identifier-type
+                          ^
+                          source-code-objective-c-punctuation
+- (void)reset;
+^
+source-code-objective-c-keyword-operator
+ ^
+ source-code-objective-c-whitespace
+  ^
+  source-code-objective-c-punctuation
+   ^^^^
+   source-code-objective-c-identifier-type-built-in
+       ^
+       source-code-objective-c-punctuation
+        ^^^^^
+        source-code-objective-c-identifier
+             ^
+             source-code-objective-c-punctuation
+@end
+^^^^
+source-code-objective-c-keyword-declaration-end
+
+@implementation Person (Helpers)
+^^^^^^^^^^^^^^^
+source-code-objective-c-keyword-declaration-implementation
+               ^
+               source-code-objective-c-whitespace
+                ^^^^^^
+                source-code-objective-c-identifier-type
+                      ^
+                      source-code-objective-c-whitespace
+                       ^
+                       source-code-objective-c-punctuation
+                        ^^^^^^^
+                        source-code-objective-c-identifier-type
+                               ^
+                               source-code-objective-c-punctuation
+- (void)reset { }
+^
+source-code-objective-c-keyword-operator
+ ^
+ source-code-objective-c-whitespace
+  ^
+  source-code-objective-c-punctuation
+   ^^^^
+   source-code-objective-c-identifier-type-built-in
+       ^
+       source-code-objective-c-punctuation
+        ^^^^^
+        source-code-objective-c-identifier
+             ^
+             source-code-objective-c-whitespace
+              ^
+              source-code-objective-c-punctuation
+               ^
+               source-code-objective-c-whitespace
+                ^
+                source-code-objective-c-punctuation
+@end
+^^^^
+source-code-objective-c-keyword-declaration-end
+
+@interface NSString (Additions)
+^^^^^^^^^^
+source-code-objective-c-keyword-declaration-interface
+          ^
+          source-code-objective-c-whitespace
+           ^^^^^^^^
+           source-code-objective-c-identifier-type-built-in
+                   ^
+                   source-code-objective-c-whitespace
+                    ^
+                    source-code-objective-c-punctuation
+                     ^^^^^^^^^
+                     source-code-objective-c-identifier-type
+                              ^
+                              source-code-objective-c-punctuation
+- (__kindof NSString *)trimmed:(null_unspecified NSString *)other;
+^
+source-code-objective-c-keyword-operator
+ ^
+ source-code-objective-c-whitespace
+  ^
+  source-code-objective-c-punctuation
+   ^^^^^^^^
+   source-code-objective-c-keyword-modifier-__kindof
+           ^
+           source-code-objective-c-whitespace
+            ^^^^^^^^
+            source-code-objective-c-identifier-type-built-in
+                    ^
+                    source-code-objective-c-whitespace
+                     ^
+                     source-code-objective-c-keyword-operator
+                      ^
+                      source-code-objective-c-punctuation
+                       ^^^^^^^
+                       source-code-objective-c-identifier
+                              ^
+                              source-code-objective-c-keyword-operator
+                               ^
+                               source-code-objective-c-punctuation
+                                ^^^^^^^^^^^^^^^^
+                                source-code-objective-c-keyword-modifier-null_unspecified
+                                                ^
+                                                source-code-objective-c-whitespace
+                                                 ^^^^^^^^
+                                                 source-code-objective-c-identifier-type-built-in
+                                                         ^
+                                                         source-code-objective-c-whitespace
+                                                          ^
+                                                          source-code-objective-c-keyword-operator
+                                                           ^
+                                                           source-code-objective-c-punctuation
+                                                            ^^^^^
+                                                            source-code-objective-c-identifier
+                                                                 ^
+                                                                 source-code-objective-c-punctuation
+@end
+^^^^
+source-code-objective-c-keyword-declaration-end

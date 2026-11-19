@@ -1,0 +1,65 @@
+@class ForwardClass;
+@compatibility_alias AliasPerson Person;
+
+@protocol Greeter <NSObject>
+@required
+- (NSString *)greet;
+@optional
+- (void)farewell;
+@end
+
+typedef struct {
+    int x;
+    double y;
+} Point2D;
+
+typedef enum { StatusOk, StatusError } Status;
+union Payload { char c; short s; long l; float f; signed int si; unsigned int ui; };
+
+@interface Person : NSObject <Greeter> {
+@public
+    NSInteger _id;
+@protected
+    NSUInteger _age;
+@private
+    NSString *_secret;
+@package
+    CGFloat _score;
+}
+
+@property (nonatomic, copy, nonnull) NSString *name;
+@property (atomic, strong, nullable) NSArray<NSNumber *> *items;
+@property (nonatomic, weak, readonly) UIViewController *controller;
+@property (nonatomic, assign, readwrite, getter=isActive, setter=setActive:) BOOL active;
+@property (nonatomic, retain) NSMutableDictionary *_Nullable metadata;
+@property (nonatomic, strong) NSError *_Nonnull lastError;
+@property (nonatomic, strong) CustomWidget *_Null_unspecified widget;
+@property (class, nonatomic, readonly) NSString *defaultName;
+@property NSString *plainProp;
+
+- (instancetype)initWithName:(NSString *)name;
+- (nullable NSString *)titleForKey:(nonnull NSString *)key;
++ (Class)class;
+- (id)perform:(SEL)sel imp:(IMP)imp proto:(Protocol *)p;
+@end
+
+@implementation Person
+@synthesize name = _name;
+@dynamic active;
+@end
+
+@interface Person ()
+@property (nonatomic, strong) NSMutableArray *notes;
+@end
+
+@interface Person (Helpers)
+- (void)reset;
+@end
+
+@implementation Person (Helpers)
+- (void)reset { }
+@end
+
+@interface NSString (Additions)
+- (__kindof NSString *)trimmed:(null_unspecified NSString *)other;
+@end

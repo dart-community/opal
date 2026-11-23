@@ -1,0 +1,837 @@
+$prefix: "ui";
+^^^^^^^
+source-code-scss-identifier-variable
+       ^
+       source-code-scss-punctuation-separator
+        ^
+        source-code-scss-whitespace
+         ^
+         source-code-scss-literal-string-quoted-double-literal-string-quoted-double-begin
+          ^^
+          source-code-scss-literal-string-quoted-double-literal-string-unquoted
+            ^
+            source-code-scss-literal-string-quoted-double-literal-string-quoted-double-end
+             ^
+             source-code-scss-punctuation-separator
+$side: inline-start;
+^^^^^
+source-code-scss-identifier-variable
+     ^
+     source-code-scss-punctuation-separator
+      ^
+      source-code-scss-whitespace
+       ^^^^^^^^^^^^
+       source-code-scss-identifier
+                   ^
+                   source-code-scss-punctuation-separator
+$gutter: 1.5rem;
+^^^^^^^
+source-code-scss-identifier-variable
+       ^
+       source-code-scss-punctuation-separator
+        ^
+        source-code-scss-whitespace
+         ^^^
+         source-code-scss-literal-number
+            ^^^
+            source-code-scss-keyword-unit
+               ^
+               source-code-scss-punctuation-separator
+$asset-dir: "/assets/icons";
+^^^^^^^^^^
+source-code-scss-identifier-variable
+          ^
+          source-code-scss-punctuation-separator
+           ^
+           source-code-scss-whitespace
+            ^
+            source-code-scss-literal-string-quoted-double-literal-string-quoted-double-begin
+             ^^^^^^^^^^^^^
+             source-code-scss-literal-string-quoted-double-literal-string-unquoted
+                          ^
+                          source-code-scss-literal-string-quoted-double-literal-string-quoted-double-end
+                           ^
+                           source-code-scss-punctuation-separator
+
+%visually-hidden {
+^
+source-code-scss-punctuation
+ ^^^^^^^^^^^^^^^
+ source-code-scss-identifier-selector-placeholder
+                ^
+                source-code-scss-whitespace
+                 ^
+                 source-code-scss-punctuation-begin
+  position: absolute;
+^^
+source-code-scss-whitespace
+  ^^^^^^^^
+  source-code-scss-identifier-property
+          ^
+          source-code-scss-punctuation-separator
+           ^
+           source-code-scss-whitespace
+            ^^^^^^^^
+            source-code-scss-identifier
+                    ^
+                    source-code-scss-punctuation-separator
+  width: 1px;
+^^
+source-code-scss-whitespace
+  ^^^^^
+  source-code-scss-identifier-property
+       ^
+       source-code-scss-punctuation-separator
+        ^
+        source-code-scss-whitespace
+         ^
+         source-code-scss-literal-number
+          ^^
+          source-code-scss-keyword-unit
+            ^
+            source-code-scss-punctuation-separator
+  height: 1px;
+^^
+source-code-scss-whitespace
+  ^^^^^^
+  source-code-scss-identifier-property
+        ^
+        source-code-scss-punctuation-separator
+         ^
+         source-code-scss-whitespace
+          ^
+          source-code-scss-literal-number
+           ^^
+           source-code-scss-keyword-unit
+             ^
+             source-code-scss-punctuation-separator
+  overflow: hidden;
+^^
+source-code-scss-whitespace
+  ^^^^^^^^
+  source-code-scss-identifier-property
+          ^
+          source-code-scss-punctuation-separator
+           ^
+           source-code-scss-whitespace
+            ^^^^^^
+            source-code-scss-identifier
+                  ^
+                  source-code-scss-punctuation-separator
+  clip-path: inset(50%);
+^^
+source-code-scss-whitespace
+  ^^^^^^^^^
+  source-code-scss-identifier-property
+           ^
+           source-code-scss-punctuation-separator
+            ^
+            source-code-scss-whitespace
+             ^^^^^
+             source-code-scss-identifier-function
+                  ^
+                  source-code-scss-punctuation
+                   ^^
+                   source-code-scss-literal-number
+                     ^
+                     source-code-scss-keyword-unit
+                      ^
+                      source-code-scss-punctuation
+                       ^
+                       source-code-scss-punctuation-separator
+}
+^
+source-code-scss-punctuation-end
+
+%button-base {
+^
+source-code-scss-punctuation
+ ^^^^^^^^^^^
+ source-code-scss-identifier-selector-placeholder
+            ^
+            source-code-scss-whitespace
+             ^
+             source-code-scss-punctuation-begin
+  display: inline-flex;
+^^
+source-code-scss-whitespace
+  ^^^^^^^
+  source-code-scss-identifier-property
+         ^
+         source-code-scss-punctuation-separator
+          ^
+          source-code-scss-whitespace
+           ^^^^^^^^^^^
+           source-code-scss-identifier
+                      ^
+                      source-code-scss-punctuation-separator
+  align-items: center;
+^^
+source-code-scss-whitespace
+  ^^^^^^^^^^^
+  source-code-scss-identifier-property
+             ^
+             source-code-scss-punctuation-separator
+              ^
+              source-code-scss-whitespace
+               ^^^^^^
+               source-code-scss-identifier
+                     ^
+                     source-code-scss-punctuation-separator
+  cursor: pointer;
+^^
+source-code-scss-whitespace
+  ^^^^^^
+  source-code-scss-identifier-property
+        ^
+        source-code-scss-punctuation-separator
+         ^
+         source-code-scss-whitespace
+          ^^^^^^^
+          source-code-scss-identifier
+                 ^
+                 source-code-scss-punctuation-separator
+}
+^
+source-code-scss-punctuation-end
+
+.#{$prefix}-card {
+^
+source-code-scss-punctuation
+ ^^
+ source-code-scss-literal-string-interpolation-literal-string-interpolation-begin
+   ^^^^^^^
+   source-code-scss-literal-string-interpolation-identifier-variable
+          ^
+          source-code-scss-literal-string-interpolation-literal-string-interpolation-end
+           ^^^^^
+           source-code-scss-identifier-selector
+                ^
+                source-code-scss-whitespace
+                 ^
+                 source-code-scss-punctuation-begin
+  border: 1px solid #cbd5e1 {
+^^
+source-code-scss-whitespace
+  ^^^^^^
+  source-code-scss-identifier-property
+        ^
+        source-code-scss-punctuation-separator
+         ^
+         source-code-scss-whitespace
+          ^
+          source-code-scss-literal-number
+           ^^
+           source-code-scss-keyword-unit
+             ^
+             source-code-scss-whitespace
+              ^^^^^
+              source-code-scss-identifier
+                   ^
+                   source-code-scss-whitespace
+                    ^^^^^^^
+                    source-code-scss-literal-color
+                           ^
+                           source-code-scss-whitespace
+                            ^
+                            source-code-scss-punctuation-begin
+    radius: 0.75rem;
+^^^^
+source-code-scss-whitespace
+    ^^^^^^
+    source-code-scss-identifier-property
+          ^
+          source-code-scss-punctuation-separator
+           ^
+           source-code-scss-whitespace
+            ^^^^
+            source-code-scss-literal-number
+                ^^^
+                source-code-scss-keyword-unit
+                   ^
+                   source-code-scss-punctuation-separator
+  }
+^^
+source-code-scss-whitespace
+  ^
+  source-code-scss-punctuation-end
+  font: {
+^^
+source-code-scss-whitespace
+  ^^^^
+  source-code-scss-identifier-property
+      ^
+      source-code-scss-punctuation-separator
+       ^
+       source-code-scss-whitespace
+        ^
+        source-code-scss-punctuation-begin
+    family: "Inter", sans-serif;
+^^^^
+source-code-scss-whitespace
+    ^^^^^^
+    source-code-scss-identifier-property
+          ^
+          source-code-scss-punctuation-separator
+           ^
+           source-code-scss-whitespace
+            ^
+            source-code-scss-literal-string-quoted-double-literal-string-quoted-double-begin
+             ^^^^^
+             source-code-scss-literal-string-quoted-double-literal-string-unquoted
+                  ^
+                  source-code-scss-literal-string-quoted-double-literal-string-quoted-double-end
+                   ^
+                   source-code-scss-punctuation-separator
+                    ^
+                    source-code-scss-whitespace
+                     ^^^^^^^^^^
+                     source-code-scss-identifier
+                               ^
+                               source-code-scss-punctuation-separator
+    size: 1rem;
+^^^^
+source-code-scss-whitespace
+    ^^^^
+    source-code-scss-identifier-property
+        ^
+        source-code-scss-punctuation-separator
+         ^
+         source-code-scss-whitespace
+          ^
+          source-code-scss-literal-number
+           ^^^
+           source-code-scss-keyword-unit
+              ^
+              source-code-scss-punctuation-separator
+    weight: 500;
+^^^^
+source-code-scss-whitespace
+    ^^^^^^
+    source-code-scss-identifier-property
+          ^
+          source-code-scss-punctuation-separator
+           ^
+           source-code-scss-whitespace
+            ^^^
+            source-code-scss-literal-number
+               ^
+               source-code-scss-punctuation-separator
+  }
+^^
+source-code-scss-whitespace
+  ^
+  source-code-scss-punctuation-end
+  margin-#{$side}: calc(100% - #{$gutter});
+^^
+source-code-scss-whitespace
+  ^^^^^^^
+  source-code-scss-identifier-property
+         ^^
+         source-code-scss-literal-string-interpolation-literal-string-interpolation-begin
+           ^^^^^
+           source-code-scss-literal-string-interpolation-identifier-variable
+                ^
+                source-code-scss-literal-string-interpolation-literal-string-interpolation-end
+                 ^
+                 source-code-scss-punctuation-separator
+                  ^
+                  source-code-scss-whitespace
+                   ^^^^
+                   source-code-scss-identifier-function
+                       ^
+                       source-code-scss-punctuation
+                        ^^^
+                        source-code-scss-literal-number
+                           ^
+                           source-code-scss-keyword-unit
+                            ^
+                            source-code-scss-whitespace
+                             ^
+                             source-code-scss-keyword-operator
+                              ^
+                              source-code-scss-whitespace
+                               ^^
+                               source-code-scss-literal-string-interpolation-literal-string-interpolation-begin
+                                 ^^^^^^^
+                                 source-code-scss-literal-string-interpolation-identifier-variable
+                                        ^
+                                        source-code-scss-literal-string-interpolation-literal-string-interpolation-end
+                                         ^
+                                         source-code-scss-punctuation
+                                          ^
+                                          source-code-scss-punctuation-separator
+
+  &__header {
+^^
+source-code-scss-whitespace
+  ^
+  source-code-scss-identifier-selector-nesting
+   ^^^^^^^^
+   source-code-scss-identifier-selector
+           ^
+           source-code-scss-whitespace
+            ^
+            source-code-scss-punctuation-begin
+    display: flex;
+^^^^
+source-code-scss-whitespace
+    ^^^^^^^
+    source-code-scss-identifier-property
+           ^
+           source-code-scss-punctuation-separator
+            ^
+            source-code-scss-whitespace
+             ^^^^
+             source-code-scss-identifier
+                 ^
+                 source-code-scss-punctuation-separator
+    gap: 0.5rem;
+^^^^
+source-code-scss-whitespace
+    ^^^
+    source-code-scss-identifier-property
+       ^
+       source-code-scss-punctuation-separator
+        ^
+        source-code-scss-whitespace
+         ^^^
+         source-code-scss-literal-number
+            ^^^
+            source-code-scss-keyword-unit
+               ^
+               source-code-scss-punctuation-separator
+  }
+^^
+source-code-scss-whitespace
+  ^
+  source-code-scss-punctuation-end
+
+  &__label {
+^^
+source-code-scss-whitespace
+  ^
+  source-code-scss-identifier-selector-nesting
+   ^^^^^^^
+   source-code-scss-identifier-selector
+          ^
+          source-code-scss-whitespace
+           ^
+           source-code-scss-punctuation-begin
+    @extend %visually-hidden;
+^^^^
+source-code-scss-whitespace
+    ^
+    source-code-scss-punctuation
+     ^^^^^^
+     source-code-scss-keyword-at-rule
+           ^
+           source-code-scss-whitespace
+            ^
+            source-code-scss-punctuation
+             ^^^^^^^^^^^^^^^
+             source-code-scss-identifier-selector-placeholder
+                            ^
+                            source-code-scss-punctuation-separator
+    content: "Card: #{$prefix}" ' (#{$side})';
+^^^^
+source-code-scss-whitespace
+    ^^^^^^^
+    source-code-scss-identifier-property
+           ^
+           source-code-scss-punctuation-separator
+            ^
+            source-code-scss-whitespace
+             ^
+             source-code-scss-literal-string-quoted-double-literal-string-quoted-double-begin
+              ^^^^^^
+              source-code-scss-literal-string-quoted-double-literal-string-unquoted
+                    ^^
+                    source-code-scss-literal-string-quoted-double-literal-string-interpolation-literal-string-interpolation-begin
+                      ^^^^^^^
+                      source-code-scss-literal-string-quoted-double-literal-string-interpolation-identifier-variable
+                             ^
+                             source-code-scss-literal-string-quoted-double-literal-string-interpolation-literal-string-interpolation-end
+                              ^
+                              source-code-scss-literal-string-quoted-double-literal-string-quoted-double-end
+                               ^
+                               source-code-scss-whitespace
+                                ^
+                                source-code-scss-literal-string-quoted-single-literal-string-quoted-single-begin
+                                 ^^
+                                 source-code-scss-literal-string-quoted-single-literal-string-unquoted
+                                   ^^
+                                   source-code-scss-literal-string-quoted-single-literal-string-interpolation-literal-string-interpolation-begin
+                                     ^^^^^
+                                     source-code-scss-literal-string-quoted-single-literal-string-interpolation-identifier-variable
+                                          ^
+                                          source-code-scss-literal-string-quoted-single-literal-string-interpolation-literal-string-interpolation-end
+                                           ^
+                                           source-code-scss-literal-string-quoted-single-literal-string-unquoted
+                                            ^
+                                            source-code-scss-literal-string-quoted-single-literal-string-quoted-single-end
+                                             ^
+                                             source-code-scss-punctuation-separator
+  }
+^^
+source-code-scss-whitespace
+  ^
+  source-code-scss-punctuation-end
+
+  &--featured {
+^^
+source-code-scss-whitespace
+  ^
+  source-code-scss-identifier-selector-nesting
+   ^^^^^^^^^^
+   source-code-scss-identifier-selector
+             ^
+             source-code-scss-whitespace
+              ^
+              source-code-scss-punctuation-begin
+    @extend %button-base;
+^^^^
+source-code-scss-whitespace
+    ^
+    source-code-scss-punctuation
+     ^^^^^^
+     source-code-scss-keyword-at-rule
+           ^
+           source-code-scss-whitespace
+            ^
+            source-code-scss-punctuation
+             ^^^^^^^^^^^
+             source-code-scss-identifier-selector-placeholder
+                        ^
+                        source-code-scss-punctuation-separator
+    @extend .missing-utility !optional;
+^^^^
+source-code-scss-whitespace
+    ^
+    source-code-scss-punctuation
+     ^^^^^^
+     source-code-scss-keyword-at-rule
+           ^
+           source-code-scss-whitespace
+            ^
+            source-code-scss-punctuation
+             ^^^^^^^^^^^^^^^
+             source-code-scss-identifier-selector-class
+                            ^
+                            source-code-scss-whitespace
+                             ^
+                             source-code-scss-keyword-operator
+                              ^^^^^^^^
+                              source-code-scss-keyword-modifier-optional
+                                      ^
+                                      source-code-scss-punctuation-separator
+    background-image: url("#{$asset-dir}/star.svg");
+^^^^
+source-code-scss-whitespace
+    ^^^^^^^^^^^^^^^^
+    source-code-scss-identifier-property
+                    ^
+                    source-code-scss-punctuation-separator
+                     ^
+                     source-code-scss-whitespace
+                      ^^^
+                      source-code-scss-link-identifier-function
+                         ^
+                         source-code-scss-link-punctuation
+                          ^
+                          source-code-scss-link-literal-string-quoted-double-literal-string-quoted-double-begin
+                           ^^
+                           source-code-scss-link-literal-string-quoted-double-literal-string-interpolation-literal-string-interpolation-begin
+                             ^^^^^^^^^^
+                             source-code-scss-link-literal-string-quoted-double-literal-string-interpolation-identifier-variable
+                                       ^
+                                       source-code-scss-link-literal-string-quoted-double-literal-string-interpolation-literal-string-interpolation-end
+                                        ^^^^^^^^^
+                                        source-code-scss-link-literal-string-quoted-double-literal-string-unquoted
+                                                 ^
+                                                 source-code-scss-link-literal-string-quoted-double-literal-string-quoted-double-end
+                                                  ^
+                                                  source-code-scss-link-punctuation
+                                                   ^
+                                                   source-code-scss-punctuation-separator
+    mask-image: url(#{$asset-dir}/badge.svg);
+^^^^
+source-code-scss-whitespace
+    ^^^^^^^^^^
+    source-code-scss-identifier-property
+              ^
+              source-code-scss-punctuation-separator
+               ^
+               source-code-scss-whitespace
+                ^^^
+                source-code-scss-link-identifier-function
+                   ^
+                   source-code-scss-link-punctuation
+                    ^^
+                    source-code-scss-link-literal-string-interpolation-literal-string-interpolation-begin
+                      ^^^^^^^^^^
+                      source-code-scss-link-literal-string-interpolation-identifier-variable
+                                ^
+                                source-code-scss-link-literal-string-interpolation-literal-string-interpolation-end
+                                 ^^^^^^^^^^
+                                 source-code-scss-link-link-content
+                                           ^
+                                           source-code-scss-link-punctuation
+                                            ^
+                                            source-code-scss-punctuation-separator
+    list-style-image: url($asset-dir + "/dot.svg");
+^^^^
+source-code-scss-whitespace
+    ^^^^^^^^^^^^^^^^
+    source-code-scss-identifier-property
+                    ^
+                    source-code-scss-punctuation-separator
+                     ^
+                     source-code-scss-whitespace
+                      ^^^
+                      source-code-scss-identifier-function
+                         ^
+                         source-code-scss-punctuation
+                          ^^^^^^^^^^
+                          source-code-scss-identifier-variable
+                                    ^
+                                    source-code-scss-whitespace
+                                     ^
+                                     source-code-scss-keyword-operator
+                                      ^
+                                      source-code-scss-whitespace
+                                       ^
+                                       source-code-scss-literal-string-quoted-double-literal-string-quoted-double-begin
+                                        ^^^^^^^^
+                                        source-code-scss-literal-string-quoted-double-literal-string-unquoted
+                                                ^
+                                                source-code-scss-literal-string-quoted-double-literal-string-quoted-double-end
+                                                 ^
+                                                 source-code-scss-punctuation
+                                                  ^
+                                                  source-code-scss-punctuation-separator
+  }
+^^
+source-code-scss-whitespace
+  ^
+  source-code-scss-punctuation-end
+
+  &:hover > &__header {
+^^
+source-code-scss-whitespace
+  ^
+  source-code-scss-identifier-selector-nesting
+   ^
+   source-code-scss-punctuation
+    ^^^^^
+    source-code-scss-identifier-selector-pseudo-class
+         ^
+         source-code-scss-whitespace
+          ^
+          source-code-scss-keyword-operator
+           ^
+           source-code-scss-whitespace
+            ^
+            source-code-scss-identifier-selector-nesting
+             ^^^^^^^^
+             source-code-scss-identifier-selector
+                     ^
+                     source-code-scss-whitespace
+                      ^
+                      source-code-scss-punctuation-begin
+    color: #1d4ed8;
+^^^^
+source-code-scss-whitespace
+    ^^^^^
+    source-code-scss-identifier-property
+         ^
+         source-code-scss-punctuation-separator
+          ^
+          source-code-scss-whitespace
+           ^^^^^^^
+           source-code-scss-literal-color
+                  ^
+                  source-code-scss-punctuation-separator
+  }
+^^
+source-code-scss-whitespace
+  ^
+  source-code-scss-punctuation-end
+
+  a:hover,
+^^
+source-code-scss-whitespace
+  ^
+  source-code-scss-identifier-selector-type
+   ^
+   source-code-scss-punctuation
+    ^^^^^
+    source-code-scss-identifier-selector-pseudo-class
+         ^
+         source-code-scss-punctuation-separator
+  a:focus-visible {
+^^
+source-code-scss-whitespace
+  ^
+  source-code-scss-identifier-selector-type
+   ^
+   source-code-scss-punctuation
+    ^^^^^^^^^^^^^
+    source-code-scss-identifier-selector-pseudo-class
+                 ^
+                 source-code-scss-whitespace
+                  ^
+                  source-code-scss-punctuation-begin
+    box-shadow: 0 0 0 2px #fff,
+^^^^
+source-code-scss-whitespace
+    ^^^^^^^^^^
+    source-code-scss-identifier-property
+              ^
+              source-code-scss-punctuation-separator
+               ^
+               source-code-scss-whitespace
+                ^
+                source-code-scss-literal-number
+                 ^
+                 source-code-scss-whitespace
+                  ^
+                  source-code-scss-literal-number
+                   ^
+                   source-code-scss-whitespace
+                    ^
+                    source-code-scss-literal-number
+                     ^
+                     source-code-scss-whitespace
+                      ^
+                      source-code-scss-literal-number
+                       ^^
+                       source-code-scss-keyword-unit
+                         ^
+                         source-code-scss-whitespace
+                          ^^^^
+                          source-code-scss-literal-color
+                              ^
+                              source-code-scss-punctuation-separator
+      0 0 0 4px #1d4ed8;
+^^^^^^
+source-code-scss-whitespace
+      ^
+      source-code-scss-literal-number
+       ^
+       source-code-scss-whitespace
+        ^
+        source-code-scss-literal-number
+         ^
+         source-code-scss-whitespace
+          ^
+          source-code-scss-literal-number
+           ^
+           source-code-scss-whitespace
+            ^
+            source-code-scss-literal-number
+             ^^
+             source-code-scss-keyword-unit
+               ^
+               source-code-scss-whitespace
+                ^^^^^^^
+                source-code-scss-literal-color
+                       ^
+                       source-code-scss-punctuation-separator
+    text-decoration: underline;
+^^^^
+source-code-scss-whitespace
+    ^^^^^^^^^^^^^^^
+    source-code-scss-identifier-property
+                   ^
+                   source-code-scss-punctuation-separator
+                    ^
+                    source-code-scss-whitespace
+                     ^^^^^^^^^
+                     source-code-scss-identifier
+                              ^
+                              source-code-scss-punctuation-separator
+  }
+^^
+source-code-scss-whitespace
+  ^
+  source-code-scss-punctuation-end
+
+  .dark & {
+^^
+source-code-scss-whitespace
+  ^
+  source-code-scss-punctuation
+   ^^^^
+   source-code-scss-identifier-selector-class
+       ^
+       source-code-scss-whitespace
+        ^
+        source-code-scss-identifier-selector-nesting
+         ^
+         source-code-scss-whitespace
+          ^
+          source-code-scss-punctuation-begin
+    background-color: #0f172a;
+^^^^
+source-code-scss-whitespace
+    ^^^^^^^^^^^^^^^^
+    source-code-scss-identifier-property
+                    ^
+                    source-code-scss-punctuation-separator
+                     ^
+                     source-code-scss-whitespace
+                      ^^^^^^^
+                      source-code-scss-literal-color
+                             ^
+                             source-code-scss-punctuation-separator
+  }
+^^
+source-code-scss-whitespace
+  ^
+  source-code-scss-punctuation-end
+
+  @at-root .#{$prefix}-card-backdrop {
+^^
+source-code-scss-whitespace
+  ^
+  source-code-scss-punctuation
+   ^^^^^^^
+   source-code-scss-keyword-at-rule
+          ^
+          source-code-scss-whitespace
+           ^
+           source-code-scss-punctuation
+            ^^
+            source-code-scss-literal-string-interpolation-literal-string-interpolation-begin
+              ^^^^^^^
+              source-code-scss-literal-string-interpolation-identifier-variable
+                     ^
+                     source-code-scss-literal-string-interpolation-literal-string-interpolation-end
+                      ^^^^^^^^^^^^^^
+                      source-code-scss-identifier-selector
+                                    ^
+                                    source-code-scss-whitespace
+                                     ^
+                                     source-code-scss-punctuation-begin
+    inset: 0;
+^^^^
+source-code-scss-whitespace
+    ^^^^^
+    source-code-scss-identifier-property
+         ^
+         source-code-scss-punctuation-separator
+          ^
+          source-code-scss-whitespace
+           ^
+           source-code-scss-literal-number
+            ^
+            source-code-scss-punctuation-separator
+  }
+^^
+source-code-scss-whitespace
+  ^
+  source-code-scss-punctuation-end
+}
+^
+source-code-scss-punctuation-end

@@ -1,5 +1,6 @@
 ## 0.3.2-wip
 
+- Add support for the SCSS (`scss`) and the Sass indented syntax (`sass`).
 - Improve the accuracy, recovery, and performance of `objective-c`
   highlighting (`objective-c`, `objectivec`, `obj-c`, `objc`).
 - Fix the documented `objectivec` name not resolving to `objective-c`.

@@ -29,6 +29,8 @@ import 'language/properties.dart';
 import 'language/python.dart';
 import 'language/ruby.dart';
 import 'language/rust.dart';
+import 'language/sass.dart';
+import 'language/scss.dart';
 import 'language/swift.dart';
 import 'language/text.dart';
 import 'language/toml.dart';
@@ -72,6 +74,8 @@ abstract final class BuiltInLanguages {
     python,
     ruby,
     rust,
+    sass,
+    scss,
     swift,
     text,
     toml,
@@ -269,6 +273,20 @@ abstract final class BuiltInLanguages {
     name: 'rust',
     grammar: const RustGrammar(),
     baseTag: const Tag('rust', parent: Tags.codeSource),
+  );
+
+  /// A tokenizing language implementation for Sass (indented syntax).
+  static final Language sass = MatcherLanguage(
+    name: 'sass',
+    grammar: const SassGrammar(),
+    baseTag: const Tag('sass', parent: Tags.codeSource),
+  );
+
+  /// A tokenizing language implementation for SCSS.
+  static final Language scss = MatcherLanguage(
+    name: 'scss',
+    grammar: const ScssGrammar(),
+    baseTag: const Tag('scss', parent: Tags.codeSource),
   );
 
   /// A tokenizing language implementation for the Swift programming language.

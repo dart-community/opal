@@ -1,0 +1,28 @@
+/*!
+ * Opal Theme Stylesheet
+ * Licensed under MIT
+ */
+
+/// Default accent color for interactive controls.
+/// @group theme
+/// @type Color
+$accent: #2563eb !default;
+
+/// Computes a fluid font size between two bounds.
+/// @param {Number} $min - Minimum size in rem.
+/// @param {Number} $max - Maximum size in rem.
+/// @return {String} A CSS clamp expression.
+@function fluid($min, $max) {
+  // Clamp keeps typography legible across viewports.
+  @return clamp(#{$min}, 2vw + 1rem, #{$max});
+}
+
+/* Theme build: #{$accent} */
+.banner {
+  /*
+   * Loud block comments remain in compiled CSS
+   * and can span multiple lines.
+   */
+  color: $accent; // Trailing silent comment.
+  font-size: fluid(1rem, 1.75rem);
+}

@@ -76,6 +76,8 @@ the specified default and alternative IDs:
 - Python (`python`, `py`)
 - Ruby (`ruby`, `rb`)
 - Rust (`rust`, `rs`)
+- Sass (`sass`)
+- SCSS (`scss`)
 - Swift (`swift`)
 - Text (`text`, `plaintext`, `none`, `txt`)
 - TOML (`toml`; TOML 1.1)

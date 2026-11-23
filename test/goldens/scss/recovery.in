@@ -1,0 +1,31 @@
+$broken-double: "unterminated string
+$broken-single: 'also unterminated
+$recovered: #123456;
+
+.broken-interpolation {
+  content: "hello #{$unclosed
+  background: url("#{$path/image.svg");
+  margin-#{$unclosed: 1rem;
+  color: red;
+}
+
+.broken-delimiters {
+  width: calc(100% - 2rem;
+  opacity: 0.8
+  padding: 1rem;
+  color: $recovered !
+  invalid: `token;
+}
+
+@unknown missing-semicolon
+@include missing-paren(1rem
+
+.recovered-rule {
+  display: grid;
+  gap: 1rem;
+}
+
+.unclosed-block {
+  padding: 0.5rem;
+  /* Unclosed block comment through EOF
+  still inside comment

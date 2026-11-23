@@ -2,44 +2,20 @@ import 'package:meta/meta.dart';
 
 import '../matcher.dart';
 import '../tag.dart';
+import 'css_shared.dart';
 
 /// A flexible lexical grammar for CSS (Cascading Style Sheets).
 @internal
 final class CssGrammar extends MatcherGrammar {
   const CssGrammar();
 
-  // Keep reusable patterns non-capturing so they can safely be interpolated
-  // into `Matcher.capture` expressions.
-  // Hex escapes must consume up to six digits and
-  // their optional whitespace terminator greedily.
-  // Allowing either to backtrack makes declaration lookaheads slow on
-  // incomplete escaped names or strings.
-  static const String _escapePattern =
-      r'\\(?:(?:[0-9a-fA-F]{6}|[0-9a-fA-F]{1,5}(?![0-9a-fA-F]))'
-      r'(?:[ \t\f]|(?![ \t\f]))|[^\r\n0-9a-fA-F])';
-  static const String _nonAsciiPattern = r'[^\x00-\x7f]';
-  static const String _nameStartPattern =
-      '(?:[_a-zA-Z]|$_nonAsciiPattern|$_escapePattern)';
-  static const String _nameContinuePattern =
-      '(?:[-_a-zA-Z0-9]|$_nonAsciiPattern|$_escapePattern)';
-  static const String _identifierPattern =
-      '(?:--|-?$_nameStartPattern)$_nameContinuePattern*';
-  static const String _customIdentifierPattern = '--$_nameContinuePattern+';
-  static const String _numberPattern =
-      r'[+-]?(?:(?:[0-9]*\.[0-9]+)|[0-9]+)'
-      r'(?:[eE][+-]?[0-9]+)?';
-  static const String _closedCommentPattern = r'/\*(?:[^*]|\*(?!/))*\*/';
-  static const String _doubleQuotedValuePattern =
-      '"(?:$_escapePattern|[^"\\\\])*"';
-  static const String _singleQuotedValuePattern =
-      "'(?:$_escapePattern|[^'\\\\])*'";
   static const String _declarationValueItemPattern =
-      '(?:$_closedCommentPattern|$_doubleQuotedValuePattern|'
-      '$_singleQuotedValuePattern|$_escapePattern|/(?!\\*)|'
+      '(?:${StylesheetTokens.closedCommentPattern}|'
+      '${StylesheetTokens.doubleQuotedValuePattern}|'
+      '${StylesheetTokens.singleQuotedValuePattern}|'
+      '${StylesheetTokens.escapePattern}|/(?!\\*)|'
       r'''[^;{}"'/\\]'''
       ')';
-  static const String _declarationTriviaPattern =
-      '(?:[ \t\f]|$_closedCommentPattern)*';
   // Avoid treating nested selectors such as `a:hover {}` as declarations.
   // The lookahead stops at the first `;`, `{`, or `}`
   // outside of a string or comment,
@@ -50,31 +26,6 @@ final class CssGrammar extends MatcherGrammar {
   // get best-effort highlighting.
   static const String _declarationValueGuard =
       '(?!$_declarationValueItemPattern*\\{)';
-
-  static const Tag _atRuleTag = Tag('at-rule', parent: Tags.keyword);
-  static const Tag _colorTag = Tag('color', parent: Tags.literal);
-  static const Tag _unitTag = Tag('unit', parent: Tags.keyword);
-  static const Tag _importantTag = Tag(
-    'important',
-    parent: Tags.modifierKeyword,
-  );
-  static const Tag _customPropertyTag = Tag('custom', parent: Tags.property);
-  static const Tag _customVariableTag = Tag('custom', parent: Tags.variable);
-
-  static const Tag _selectorTag = Tag('selector', parent: Tags.identifier);
-  static const Tag _typeSelectorTag = Tag('type', parent: _selectorTag);
-  static const Tag _universalTag = Tag('universal', parent: _selectorTag);
-  static const Tag _classSelectorTag = Tag('class', parent: _selectorTag);
-  static const Tag _idSelectorTag = Tag('id', parent: _selectorTag);
-  static const Tag _attributeTag = Tag('attribute', parent: _selectorTag);
-  static const Tag _attributeFlagTag = Tag(
-    'flag',
-    parent: Tags.modifierKeyword,
-  );
-  static const Tag _pseudoTag = Tag('pseudo', parent: _selectorTag);
-  static const Tag _pseudoClassTag = Tag('class', parent: _pseudoTag);
-  static const Tag _pseudoElementTag = Tag('element', parent: _pseudoTag);
-  static const Tag _nestingTag = Tag('nesting', parent: _selectorTag);
 
   @override
   List<Matcher> get matchers => [
@@ -135,8 +86,8 @@ final class CssGrammar extends MatcherGrammar {
 
   Matcher _atRule() => Matcher.wrapped(
     begin: Matcher.capture(
-      '(@)($_identifierPattern)',
-      captures: [Tags.punctuation, _atRuleTag],
+      '(@)(${StylesheetTokens.identifierPattern})',
+      captures: [Tags.punctuation, StylesheetTokens.atRuleTag],
       caseSensitive: false,
     ),
     // A missing `;` must not swallow the enclosing block's closing brace
@@ -150,11 +101,11 @@ final class CssGrammar extends MatcherGrammar {
     // so match them before applying the nested-rule guard
     // used by normal declarations.
     _declaration(
-      namePattern: _customIdentifierPattern,
-      nameTag: _customPropertyTag,
+      namePattern: StylesheetTokens.customIdentifierPattern,
+      nameTag: StylesheetTokens.customPropertyTag,
     ),
     _declaration(
-      namePattern: _identifierPattern,
+      namePattern: StylesheetTokens.identifierPattern,
       nameTag: Tags.property,
       afterColonPattern: _declarationValueGuard,
       // A non-custom declaration value can never contain a block,
@@ -175,7 +126,8 @@ final class CssGrammar extends MatcherGrammar {
   }) => Matcher.wrapped(
     begin: Matcher.wrapped(
       begin: Matcher.regex(
-        '$namePattern(?=$_declarationTriviaPattern:$afterColonPattern)',
+        '$namePattern'
+        '(?=${StylesheetTokens.declarationTriviaPattern}:$afterColonPattern)',
         tag: nameTag,
       ),
       end: Matcher.verbatim(':', tag: Tags.separator),
@@ -195,49 +147,44 @@ final class CssGrammar extends MatcherGrammar {
     Matcher.include(_strings),
     Matcher.include(_url),
     Matcher.include(_important),
-    Matcher.include(_unicodeRange),
-    Matcher.include(_colorLiteral),
-    Matcher.include(_hashValue),
-    Matcher.include(_dimension),
-    Matcher.include(_percentage),
-    Matcher.include(_numberLiteral),
+    StylesheetTokens.unicodeRange,
+    StylesheetTokens.colorLiteral,
+    StylesheetTokens.hashValue,
+    StylesheetTokens.dimension,
+    StylesheetTokens.percentage,
+    StylesheetTokens.numberLiteral,
     // A following `(` takes precedence over identifier classifications,
     // including custom names such as `--spacing()`.
     Matcher.include(_selectorFunction),
     Matcher.include(_function),
-    Matcher.include(_customPropertyReference),
-    Matcher.include(_cssWideKeywords),
+    StylesheetTokens.customPropertyReference,
+    StylesheetTokens.cssWideKeywords,
     Matcher.include(_parenthesizedComponent),
     Matcher.include(_bracketedComponent),
     Matcher.include(_block),
-    Matcher.include(_featureName),
+    StylesheetTokens.featureName,
     Matcher.include(_functionalPseudoSelectors),
-    Matcher.include(_classSelector),
-    Matcher.include(_idSelector),
-    Matcher.include(_pseudoSelectors),
+    StylesheetTokens.classSelector,
+    StylesheetTokens.idSelector,
+    StylesheetTokens.pseudoSelectors,
     Matcher.include(_nestingSelector),
-    Matcher.include(_identifier),
+    StylesheetTokens.identifier,
     Matcher.include(_operators),
-    Matcher.include(_punctuation),
+    StylesheetTokens.punctuation,
   ]);
-
-  Matcher _featureName() => Matcher.capture(
-    '($_identifierPattern)(:)(?!:)',
-    captures: [Tags.identifier, Tags.separator],
-  );
 
   Matcher _selectorContent() => Matcher.options([
     Matcher.include(_comment),
     Matcher.include(_functionalPseudoSelectors),
     Matcher.include(_attributeSelector),
-    Matcher.include(_classSelector),
-    Matcher.include(_idSelector),
-    Matcher.include(_pseudoSelectors),
+    StylesheetTokens.classSelector,
+    StylesheetTokens.idSelector,
+    StylesheetTokens.pseudoSelectors,
     Matcher.include(_nestingSelector),
-    Matcher.include(_selectorCombinators),
-    Matcher.include(_universalSelector),
-    Matcher.include(_namespaceSeparator),
-    Matcher.include(_typeSelector),
+    StylesheetTokens.selectorCombinators,
+    StylesheetTokens.universalSelector,
+    StylesheetTokens.namespaceSeparator,
+    StylesheetTokens.typeSelector,
     // The value grammar is the recovery path for unknown selector syntax.
     Matcher.include(_componentValues),
   ]);
@@ -281,19 +228,12 @@ final class CssGrammar extends MatcherGrammar {
         tag: Tag('end', parent: tag),
       ),
       content: Matcher.options([
-        Matcher.include(_stringEscape),
+        StylesheetTokens.stringEscape,
         Matcher.regex(contentPattern, tag: Tags.stringContent),
       ]),
       tag: tag,
     );
   }
-
-  Matcher _stringEscape() => Matcher.regex(
-    '(?:$_escapePattern|'
-    r'\\$'
-    ')',
-    tag: Tags.stringEscape,
-  );
 
   Matcher _url() => Matcher.wrapped(
     // Let the value start on a later line while
@@ -315,13 +255,13 @@ final class CssGrammar extends MatcherGrammar {
     // Continue recovering at `}` and line endings.
     end: Matcher.regex(
       r'\)|(?=\})|(?=;)(?!'
-      '(?:$_escapePattern|'
+      '(?:${StylesheetTokens.escapePattern}|'
       r'''[^"'()}\\\s])*[ \t\f]*(?:\)|$))|$''',
       tag: Tags.punctuation,
     ),
     content: Matcher.options([
       Matcher.include(_strings),
-      Matcher.include(_stringEscape),
+      StylesheetTokens.stringEscape,
       Matcher.regex(
         r'''[^"'()}\\\s]+''',
         tag: const Tag('content', parent: MarkupTags.link),
@@ -336,66 +276,15 @@ final class CssGrammar extends MatcherGrammar {
     // back to the value grammar.
     // The wrapper can cross lines without searching past a token.
     end: Matcher.regex(
-      'important(?!$_nameContinuePattern)|'
+      'important(?!${StylesheetTokens.nameContinuePattern})|'
       r'(?=[^\s/]|/(?!\*))',
-      tag: _importantTag,
+      tag: StylesheetTokens.importantTag,
       caseSensitive: false,
     ),
     content: Matcher.options([
       Matcher.include(_comment),
     ]),
   );
-
-  Matcher _unicodeRange() => Matcher.regex(
-    r'[uU]\+[0-9a-fA-F?]{1,6}(?:-[0-9a-fA-F]{1,6})?',
-    tag: Tags.numberLiteral,
-  );
-
-  Matcher _colorLiteral() => Matcher.regex(
-    r'#(?:[0-9a-fA-F]{8}|[0-9a-fA-F]{6}|[0-9a-fA-F]{4}|'
-    '[0-9a-fA-F]{3})(?!$_nameContinuePattern)',
-    tag: _colorTag,
-  );
-
-  Matcher _hashValue() => Matcher.regex(
-    '#$_nameContinuePattern+',
-    tag: const Tag('hash', parent: Tags.literal),
-  );
-
-  Matcher _dimension() => Matcher.capture(
-    '($_numberPattern)((?![eE][+-]?[0-9])$_identifierPattern)',
-    captures: [Tags.numberLiteral, _unitTag],
-  );
-
-  Matcher _percentage() => Matcher.capture(
-    '($_numberPattern)(%)',
-    captures: [Tags.numberLiteral, _unitTag],
-  );
-
-  Matcher _numberLiteral() => Matcher.regex(
-    _numberPattern,
-    tag: Tags.numberLiteral,
-  );
-
-  Matcher _customPropertyReference() => Matcher.regex(
-    _customIdentifierPattern,
-    tag: _customVariableTag,
-  );
-
-  Matcher _cssWideKeywords() => Matcher.options([
-    for (final keyword in [
-      'inherit',
-      'initial',
-      'revert',
-      'revert-layer',
-      'unset',
-    ])
-      Matcher.regex(
-        '$keyword(?!$_nameContinuePattern)',
-        tag: Tag(keyword, parent: Tags.keyword),
-        caseSensitive: false,
-      ),
-  ]);
 
   Matcher _selectorFunction() => _parenthesized(
     begin: Matcher.capture(
@@ -408,7 +297,7 @@ final class CssGrammar extends MatcherGrammar {
 
   Matcher _function() => _parenthesized(
     begin: Matcher.capture(
-      '($_identifierPattern)(\\()',
+      '(${StylesheetTokens.identifierPattern})(\\()',
       captures: [Tags.function, Tags.punctuation],
     ),
     content: Matcher.include(_componentValues),
@@ -442,13 +331,13 @@ final class CssGrammar extends MatcherGrammar {
   );
 
   Matcher _functionalPseudoSelectors() => Matcher.options([
-    _functionalPseudoSelector('::', _pseudoElementTag),
-    _functionalPseudoSelector(':', _pseudoClassTag),
+    _functionalPseudoSelector('::', StylesheetTokens.pseudoElementTag),
+    _functionalPseudoSelector(':', StylesheetTokens.pseudoClassTag),
   ]);
 
   Matcher _functionalPseudoSelector(String prefix, Tag tag) => _parenthesized(
     begin: Matcher.capture(
-      '($prefix)($_identifierPattern)(\\()',
+      '($prefix)(${StylesheetTokens.identifierPattern})(\\()',
       captures: [Tags.punctuation, tag, Tags.punctuation],
     ),
     content: Matcher.include(_selectorContent),
@@ -468,13 +357,13 @@ final class CssGrammar extends MatcherGrammar {
       Matcher.include(_comment),
       Matcher.include(_strings),
       Matcher.include(_function),
-      Matcher.include(_numberLiteral),
-      Matcher.regex(_identifierPattern, tag: Tags.property),
+      StylesheetTokens.numberLiteral,
+      Matcher.regex(StylesheetTokens.identifierPattern, tag: Tags.property),
       Matcher.include(_attributeValue),
       Matcher.include(_operators),
-      Matcher.include(_punctuation),
+      StylesheetTokens.punctuation,
     ]),
-    tag: _attributeTag,
+    tag: StylesheetTokens.attributeTag,
   );
 
   // Wrapping everything after the matcher operator
@@ -489,74 +378,25 @@ final class CssGrammar extends MatcherGrammar {
       Matcher.include(_strings),
       // The flag follows a value, so a lone `[lang=i]` stays a value.
       Matcher.regex(
-        '(?<=[\\s\'"])[iIsS](?=$_declarationTriviaPattern\\])',
-        tag: _attributeFlagTag,
+        '(?<=[\\s\'"])[iIsS](?=${StylesheetTokens.declarationTriviaPattern}\\])',
+        tag: StylesheetTokens.attributeFlagTag,
       ),
-      Matcher.include(_numberLiteral),
-      Matcher.regex(_identifierPattern, tag: Tags.unquotedString),
-      Matcher.include(_punctuation),
+      StylesheetTokens.numberLiteral,
+      Matcher.regex(
+        StylesheetTokens.identifierPattern,
+        tag: Tags.unquotedString,
+      ),
+      StylesheetTokens.punctuation,
     ]),
   );
 
-  Matcher _classSelector() => Matcher.capture(
-    '(\\.)($_identifierPattern)',
-    captures: [Tags.punctuation, _classSelectorTag],
-  );
-
-  Matcher _idSelector() => Matcher.capture(
-    '(#)($_identifierPattern)',
-    captures: [Tags.punctuation, _idSelectorTag],
-  );
-
-  Matcher _pseudoSelectors() => Matcher.options([
-    Matcher.capture(
-      '(::)($_identifierPattern)',
-      captures: [Tags.punctuation, _pseudoElementTag],
-    ),
-    Matcher.capture(
-      '(:)($_identifierPattern)',
-      captures: [Tags.punctuation, _pseudoClassTag],
-    ),
-  ]);
-
   Matcher _nestingSelector() => Matcher.verbatim(
     '&',
-    tag: _nestingTag,
-  );
-
-  Matcher _selectorCombinators() => Matcher.options([
-    Matcher.verbatim('||', tag: Tags.operator),
-    Matcher.regex(r'[>+~]', tag: Tags.operator),
-  ]);
-
-  Matcher _universalSelector() => Matcher.verbatim(
-    '*',
-    tag: _universalTag,
-  );
-
-  Matcher _namespaceSeparator() => Matcher.verbatim(
-    '|',
-    tag: Tags.punctuation,
-  );
-
-  Matcher _typeSelector() => Matcher.regex(
-    _identifierPattern,
-    tag: _typeSelectorTag,
-  );
-
-  Matcher _identifier() => Matcher.regex(
-    _identifierPattern,
-    tag: Tags.identifier,
+    tag: StylesheetTokens.nestingTag,
   );
 
   Matcher _operators() => Matcher.regex(
     r'~=|\|=|\^=|\$=|\*=|<=|>=|!=|==|\|\||[>+~*/=<!&|^?%-]',
     tag: Tags.operator,
   );
-
-  Matcher _punctuation() => Matcher.options([
-    Matcher.regex(r'[:,;]', tag: Tags.separator),
-    Matcher.regex(r'[{}()\[\]#@]', tag: Tags.punctuation),
-    Matcher.verbatim('.', tag: Tags.accessor),
-  ]);
 }

@@ -1,0 +1,67 @@
+$prefix: "ui";
+$side: inline-start;
+$gutter: 1.5rem;
+$asset-dir: "/assets/icons";
+
+%visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+}
+
+%button-base {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.#{$prefix}-card {
+  border: 1px solid #cbd5e1 {
+    radius: 0.75rem;
+  }
+  font: {
+    family: "Inter", sans-serif;
+    size: 1rem;
+    weight: 500;
+  }
+  margin-#{$side}: calc(100% - #{$gutter});
+
+  &__header {
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  &__label {
+    @extend %visually-hidden;
+    content: "Card: #{$prefix}" ' (#{$side})';
+  }
+
+  &--featured {
+    @extend %button-base;
+    @extend .missing-utility !optional;
+    background-image: url("#{$asset-dir}/star.svg");
+    mask-image: url(#{$asset-dir}/badge.svg);
+    list-style-image: url($asset-dir + "/dot.svg");
+  }
+
+  &:hover > &__header {
+    color: #1d4ed8;
+  }
+
+  a:hover,
+  a:focus-visible {
+    box-shadow: 0 0 0 2px #fff,
+      0 0 0 4px #1d4ed8;
+    text-decoration: underline;
+  }
+
+  .dark & {
+    background-color: #0f172a;
+  }
+
+  @at-root .#{$prefix}-card-backdrop {
+    inset: 0;
+  }
+}

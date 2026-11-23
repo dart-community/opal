@@ -1,0 +1,337 @@
+/*!
+^^^
+source-code-sass-comment-block-comment-block-begin
+ * Opal Theme Stylesheet
+^^^^^^^^^^^^^^^^^^^^^^^^
+source-code-sass-comment-block-comment-block-content
+ * Licensed under MIT
+^^^^^^^^^^^^^^^^^^^^^
+source-code-sass-comment-block-comment-block-content
+ */
+^
+source-code-sass-comment-block-comment-block-content
+ ^^
+ source-code-sass-comment-block-comment-block-end
+
+/// Default accent color for interactive controls.
+^^^
+source-code-sass-comment-block-doc-comment-block-doc-begin
+   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   source-code-sass-comment-block-doc-comment-block-doc-content
+/// @group theme
+^^^
+source-code-sass-comment-block-doc-comment-block-doc-begin
+   ^
+   source-code-sass-comment-block-doc-comment-block-doc-content
+    ^^^^^^
+    source-code-sass-comment-block-doc-metadata-annotation
+          ^^^^^^
+          source-code-sass-comment-block-doc-comment-block-doc-content
+/// @type Color
+^^^
+source-code-sass-comment-block-doc-comment-block-doc-begin
+   ^
+   source-code-sass-comment-block-doc-comment-block-doc-content
+    ^^^^^
+    source-code-sass-comment-block-doc-metadata-annotation
+         ^^^^^^
+         source-code-sass-comment-block-doc-comment-block-doc-content
+$accent: #2563eb !default
+^^^^^^^
+source-code-sass-identifier-variable
+       ^
+       source-code-sass-punctuation-separator
+        ^
+        source-code-sass-whitespace
+         ^^^^^^^
+         source-code-sass-literal-color
+                ^
+                source-code-sass-whitespace
+                 ^
+                 source-code-sass-keyword-operator
+                  ^^^^^^^
+                  source-code-sass-keyword-modifier-default
+
+/// Computes a fluid font size between two bounds.
+^^^
+source-code-sass-comment-block-doc-comment-block-doc-begin
+   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   source-code-sass-comment-block-doc-comment-block-doc-content
+/// @param {Number} $min - Minimum size in rem.
+^^^
+source-code-sass-comment-block-doc-comment-block-doc-begin
+   ^
+   source-code-sass-comment-block-doc-comment-block-doc-content
+    ^^^^^^
+    source-code-sass-comment-block-doc-metadata-annotation
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+          source-code-sass-comment-block-doc-comment-block-doc-content
+/// @param {Number} $max - Maximum size in rem.
+^^^
+source-code-sass-comment-block-doc-comment-block-doc-begin
+   ^
+   source-code-sass-comment-block-doc-comment-block-doc-content
+    ^^^^^^
+    source-code-sass-comment-block-doc-metadata-annotation
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+          source-code-sass-comment-block-doc-comment-block-doc-content
+/// @return {String} A CSS clamp expression.
+^^^
+source-code-sass-comment-block-doc-comment-block-doc-begin
+   ^
+   source-code-sass-comment-block-doc-comment-block-doc-content
+    ^^^^^^^
+    source-code-sass-comment-block-doc-metadata-annotation
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+           source-code-sass-comment-block-doc-comment-block-doc-content
+@function fluid($min, $max)
+^
+source-code-sass-punctuation
+ ^^^^^^^^
+ source-code-sass-keyword-at-rule
+         ^
+         source-code-sass-whitespace
+          ^^^^^
+          source-code-sass-identifier-function
+               ^
+               source-code-sass-punctuation
+                ^^^^
+                source-code-sass-identifier-variable
+                    ^
+                    source-code-sass-punctuation-separator
+                     ^
+                     source-code-sass-whitespace
+                      ^^^^
+                      source-code-sass-identifier-variable
+                          ^
+                          source-code-sass-punctuation
+  // Clamp keeps typography legible across viewports.
+^^
+source-code-sass-whitespace
+  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  source-code-sass-comment-line
+  @return clamp(#{$min}, 2vw + 1rem, #{$max})
+^^
+source-code-sass-whitespace
+  ^
+  source-code-sass-punctuation
+   ^^^^^^
+   source-code-sass-keyword-at-rule
+         ^
+         source-code-sass-whitespace
+          ^^^^^
+          source-code-sass-identifier-function
+               ^
+               source-code-sass-punctuation
+                ^^
+                source-code-sass-literal-string-interpolation-literal-string-interpolation-begin
+                  ^^^^
+                  source-code-sass-literal-string-interpolation-identifier-variable
+                      ^
+                      source-code-sass-literal-string-interpolation-literal-string-interpolation-end
+                       ^
+                       source-code-sass-punctuation-separator
+                        ^
+                        source-code-sass-whitespace
+                         ^
+                         source-code-sass-literal-number
+                          ^^
+                          source-code-sass-keyword-unit
+                            ^
+                            source-code-sass-whitespace
+                             ^
+                             source-code-sass-keyword-operator
+                              ^
+                              source-code-sass-whitespace
+                               ^
+                               source-code-sass-literal-number
+                                ^^^
+                                source-code-sass-keyword-unit
+                                   ^
+                                   source-code-sass-punctuation-separator
+                                    ^
+                                    source-code-sass-whitespace
+                                     ^^
+                                     source-code-sass-literal-string-interpolation-literal-string-interpolation-begin
+                                       ^^^^
+                                       source-code-sass-literal-string-interpolation-identifier-variable
+                                           ^
+                                           source-code-sass-literal-string-interpolation-literal-string-interpolation-end
+                                            ^
+                                            source-code-sass-punctuation
+
+/* Theme build: #{$accent} */
+^^
+source-code-sass-comment-block-comment-block-begin
+  ^^^^^^^^^^^^^^
+  source-code-sass-comment-block-comment-block-content
+                ^^
+                source-code-sass-comment-block-literal-string-interpolation-literal-string-interpolation-begin
+                  ^^^^^^^
+                  source-code-sass-comment-block-literal-string-interpolation-identifier-variable
+                         ^
+                         source-code-sass-comment-block-literal-string-interpolation-literal-string-interpolation-end
+                          ^
+                          source-code-sass-comment-block-comment-block-content
+                           ^^
+                           source-code-sass-comment-block-comment-block-end
+.banner
+^
+source-code-sass-punctuation
+ ^^^^^^
+ source-code-sass-identifier-selector-class
+  /*
+^^
+source-code-sass-whitespace
+  ^^
+  source-code-sass-comment-block-comment-block-begin
+   * Loud block comments remain in compiled CSS
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+source-code-sass-comment-block-comment-block-content
+   * and can span multiple lines.
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+source-code-sass-comment-block-comment-block-content
+   */
+^^^
+source-code-sass-comment-block-comment-block-content
+   ^^
+   source-code-sass-comment-block-comment-block-end
+  color: $accent // Trailing silent comment.
+^^
+source-code-sass-whitespace
+  ^^^^^
+  source-code-sass-identifier-property
+       ^
+       source-code-sass-punctuation-separator
+        ^
+        source-code-sass-whitespace
+         ^^^^^^^
+         source-code-sass-identifier-variable
+                ^
+                source-code-sass-whitespace
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                 source-code-sass-comment-line
+  border-color: /* Match the border to the accent
+^^
+source-code-sass-whitespace
+  ^^^^^^^^^^^^
+  source-code-sass-identifier-property
+              ^
+              source-code-sass-punctuation-separator
+               ^
+               source-code-sass-whitespace
+                ^^
+                source-code-sass-comment-block-comment-block-begin
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                  source-code-sass-comment-block-comment-block-content
+even in dark mode. */ $accent
+^^^^^^^^^^^^^^^^^^^
+source-code-sass-comment-block-comment-block-content
+                   ^^
+                   source-code-sass-comment-block-comment-block-end
+                     ^
+                     source-code-sass-whitespace
+                      ^^^^^^^
+                      source-code-sass-identifier-variable
+  font-size: fluid(1rem, 1.75rem)
+^^
+source-code-sass-whitespace
+  ^^^^^^^^^
+  source-code-sass-identifier-property
+           ^
+           source-code-sass-punctuation-separator
+            ^
+            source-code-sass-whitespace
+             ^^^^^
+             source-code-sass-identifier-function
+                  ^
+                  source-code-sass-punctuation
+                   ^
+                   source-code-sass-literal-number
+                    ^^^
+                    source-code-sass-keyword-unit
+                       ^
+                       source-code-sass-punctuation-separator
+                        ^
+                        source-code-sass-whitespace
+                         ^^^^
+                         source-code-sass-literal-number
+                             ^^^
+                             source-code-sass-keyword-unit
+                                ^
+                                source-code-sass-punctuation
+
+/* Indented loud comments can omit the closing delimiter
+^^
+source-code-sass-comment-block-comment-block-begin
+  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  source-code-sass-comment-block-comment-block-content
+   and end at the next unindented line.
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+source-code-sass-comment-block-comment-block-content
+.after-comment
+^
+source-code-sass-punctuation
+ ^^^^^^^^^^^^^
+ source-code-sass-identifier-selector-class
+  /* Keep the link color in sync with the banner.
+^^
+source-code-sass-whitespace
+  ^^
+  source-code-sass-comment-block-comment-block-begin
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    source-code-sass-comment-block-comment-block-content
+  color: $accent
+^^
+source-code-sass-whitespace
+  ^^^^^
+  source-code-sass-identifier-property
+       ^
+       source-code-sass-punctuation-separator
+        ^
+        source-code-sass-whitespace
+         ^^^^^^^
+         source-code-sass-identifier-variable
+  // Silent comments also cover the lines indented beneath them.
+^^
+source-code-sass-whitespace
+  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  source-code-sass-comment-line
+    border: 1px solid $accent
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+source-code-sass-comment-line
+  outline-color: $accent
+^^
+source-code-sass-whitespace
+  ^^^^^^^^^^^^^
+  source-code-sass-identifier-property
+               ^
+               source-code-sass-punctuation-separator
+                ^
+                source-code-sass-whitespace
+                 ^^^^^^^
+                 source-code-sass-identifier-variable
+  /*
+^^
+source-code-sass-whitespace
+  ^^
+  source-code-sass-comment-block-comment-block-begin
+    An aligned closer still ends the comment.
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+source-code-sass-comment-block-comment-block-content
+  */
+^^
+source-code-sass-comment-block-comment-block-content
+  ^^
+  source-code-sass-comment-block-comment-block-end
+  background-color: transparent
+^^
+source-code-sass-whitespace
+  ^^^^^^^^^^^^^^^^
+  source-code-sass-identifier-property
+                  ^
+                  source-code-sass-punctuation-separator
+                   ^
+                   source-code-sass-whitespace
+                    ^^^^^^^^^^^
+                    source-code-sass-identifier

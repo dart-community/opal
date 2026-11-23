@@ -1,0 +1,51 @@
+$accent: #0ea5e9;
+$steps: (
+  sm: 0.5rem,
+  md: 1rem,
+  lg: 2rem,
+);
+
+@layer reset, tokens, components;
+
+@layer tokens {
+  :root {
+    --surface-bg: oklch(98% 0.01 250);
+    --surface-ink: color(display-p3 0.08 0.12 0.2);
+    --accent-alpha: #0ea5e980;
+
+    @each $name, $value in $steps {
+      --space-#{$name}: #{$value};
+    }
+  }
+}
+
+@layer components {
+  @scope (.panel) to (.panel__footer) {
+    :is(h2, h3):has(+ p) {
+      margin-bottom: var(--space-sm);
+    }
+
+    a[href^="https" i][data-external="true" s] {
+      color: $accent !important;
+      background: url("/icons/external.svg") no-repeat right center;
+    }
+  }
+
+  @container panel (inline-size >= 32rem) {
+    .panel__grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      min-height: 40dvh;
+      gap: var(--space-md);
+      background: linear-gradient(135deg, #0af, rgb(15 23 42 / 80%));
+      transition: transform 250ms ease-out;
+    }
+  }
+
+  @media screen and (width >= 48rem) {
+    .panel {
+      padding: var(--space-lg);
+      box-shadow: 0 4px 16px #00000026;
+    }
+  }
+}

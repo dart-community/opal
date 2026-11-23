@@ -1,0 +1,262 @@
+/*!
+^^^
+source-code-scss-comment-block-comment-block-begin
+ * Opal Theme Stylesheet
+^^^^^^^^^^^^^^^^^^^^^^^^
+source-code-scss-comment-block-comment-block-content
+ * Licensed under MIT
+^^^^^^^^^^^^^^^^^^^^^
+source-code-scss-comment-block-comment-block-content
+ */
+^
+source-code-scss-comment-block-comment-block-content
+ ^^
+ source-code-scss-comment-block-comment-block-end
+
+/// Default accent color for interactive controls.
+^^^
+source-code-scss-comment-block-doc-comment-block-doc-begin
+   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   source-code-scss-comment-block-doc-comment-block-doc-content
+/// @group theme
+^^^
+source-code-scss-comment-block-doc-comment-block-doc-begin
+   ^
+   source-code-scss-comment-block-doc-comment-block-doc-content
+    ^^^^^^
+    source-code-scss-comment-block-doc-metadata-annotation
+          ^^^^^^
+          source-code-scss-comment-block-doc-comment-block-doc-content
+/// @type Color
+^^^
+source-code-scss-comment-block-doc-comment-block-doc-begin
+   ^
+   source-code-scss-comment-block-doc-comment-block-doc-content
+    ^^^^^
+    source-code-scss-comment-block-doc-metadata-annotation
+         ^^^^^^
+         source-code-scss-comment-block-doc-comment-block-doc-content
+$accent: #2563eb !default;
+^^^^^^^
+source-code-scss-identifier-variable
+       ^
+       source-code-scss-punctuation-separator
+        ^
+        source-code-scss-whitespace
+         ^^^^^^^
+         source-code-scss-literal-color
+                ^
+                source-code-scss-whitespace
+                 ^
+                 source-code-scss-keyword-operator
+                  ^^^^^^^
+                  source-code-scss-keyword-modifier-default
+                         ^
+                         source-code-scss-punctuation-separator
+
+/// Computes a fluid font size between two bounds.
+^^^
+source-code-scss-comment-block-doc-comment-block-doc-begin
+   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   source-code-scss-comment-block-doc-comment-block-doc-content
+/// @param {Number} $min - Minimum size in rem.
+^^^
+source-code-scss-comment-block-doc-comment-block-doc-begin
+   ^
+   source-code-scss-comment-block-doc-comment-block-doc-content
+    ^^^^^^
+    source-code-scss-comment-block-doc-metadata-annotation
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+          source-code-scss-comment-block-doc-comment-block-doc-content
+/// @param {Number} $max - Maximum size in rem.
+^^^
+source-code-scss-comment-block-doc-comment-block-doc-begin
+   ^
+   source-code-scss-comment-block-doc-comment-block-doc-content
+    ^^^^^^
+    source-code-scss-comment-block-doc-metadata-annotation
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+          source-code-scss-comment-block-doc-comment-block-doc-content
+/// @return {String} A CSS clamp expression.
+^^^
+source-code-scss-comment-block-doc-comment-block-doc-begin
+   ^
+   source-code-scss-comment-block-doc-comment-block-doc-content
+    ^^^^^^^
+    source-code-scss-comment-block-doc-metadata-annotation
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+           source-code-scss-comment-block-doc-comment-block-doc-content
+@function fluid($min, $max) {
+^
+source-code-scss-punctuation
+ ^^^^^^^^
+ source-code-scss-keyword-at-rule
+         ^
+         source-code-scss-whitespace
+          ^^^^^
+          source-code-scss-identifier-function
+               ^
+               source-code-scss-punctuation
+                ^^^^
+                source-code-scss-identifier-variable
+                    ^
+                    source-code-scss-punctuation-separator
+                     ^
+                     source-code-scss-whitespace
+                      ^^^^
+                      source-code-scss-identifier-variable
+                          ^
+                          source-code-scss-punctuation
+                           ^
+                           source-code-scss-whitespace
+                            ^
+                            source-code-scss-punctuation-begin
+  // Clamp keeps typography legible across viewports.
+^^
+source-code-scss-whitespace
+  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  source-code-scss-comment-line
+  @return clamp(#{$min}, 2vw + 1rem, #{$max});
+^^
+source-code-scss-whitespace
+  ^
+  source-code-scss-punctuation
+   ^^^^^^
+   source-code-scss-keyword-at-rule
+         ^
+         source-code-scss-whitespace
+          ^^^^^
+          source-code-scss-identifier-function
+               ^
+               source-code-scss-punctuation
+                ^^
+                source-code-scss-literal-string-interpolation-literal-string-interpolation-begin
+                  ^^^^
+                  source-code-scss-literal-string-interpolation-identifier-variable
+                      ^
+                      source-code-scss-literal-string-interpolation-literal-string-interpolation-end
+                       ^
+                       source-code-scss-punctuation-separator
+                        ^
+                        source-code-scss-whitespace
+                         ^
+                         source-code-scss-literal-number
+                          ^^
+                          source-code-scss-keyword-unit
+                            ^
+                            source-code-scss-whitespace
+                             ^
+                             source-code-scss-keyword-operator
+                              ^
+                              source-code-scss-whitespace
+                               ^
+                               source-code-scss-literal-number
+                                ^^^
+                                source-code-scss-keyword-unit
+                                   ^
+                                   source-code-scss-punctuation-separator
+                                    ^
+                                    source-code-scss-whitespace
+                                     ^^
+                                     source-code-scss-literal-string-interpolation-literal-string-interpolation-begin
+                                       ^^^^
+                                       source-code-scss-literal-string-interpolation-identifier-variable
+                                           ^
+                                           source-code-scss-literal-string-interpolation-literal-string-interpolation-end
+                                            ^
+                                            source-code-scss-punctuation
+                                             ^
+                                             source-code-scss-punctuation-separator
+}
+^
+source-code-scss-punctuation-end
+
+/* Theme build: #{$accent} */
+^^
+source-code-scss-comment-block-comment-block-begin
+  ^^^^^^^^^^^^^^
+  source-code-scss-comment-block-comment-block-content
+                ^^
+                source-code-scss-comment-block-literal-string-interpolation-literal-string-interpolation-begin
+                  ^^^^^^^
+                  source-code-scss-comment-block-literal-string-interpolation-identifier-variable
+                         ^
+                         source-code-scss-comment-block-literal-string-interpolation-literal-string-interpolation-end
+                          ^
+                          source-code-scss-comment-block-comment-block-content
+                           ^^
+                           source-code-scss-comment-block-comment-block-end
+.banner {
+^
+source-code-scss-punctuation
+ ^^^^^^
+ source-code-scss-identifier-selector-class
+       ^
+       source-code-scss-whitespace
+        ^
+        source-code-scss-punctuation-begin
+  /*
+^^
+source-code-scss-whitespace
+  ^^
+  source-code-scss-comment-block-comment-block-begin
+   * Loud block comments remain in compiled CSS
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+source-code-scss-comment-block-comment-block-content
+   * and can span multiple lines.
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+source-code-scss-comment-block-comment-block-content
+   */
+^^^
+source-code-scss-comment-block-comment-block-content
+   ^^
+   source-code-scss-comment-block-comment-block-end
+  color: $accent; // Trailing silent comment.
+^^
+source-code-scss-whitespace
+  ^^^^^
+  source-code-scss-identifier-property
+       ^
+       source-code-scss-punctuation-separator
+        ^
+        source-code-scss-whitespace
+         ^^^^^^^
+         source-code-scss-identifier-variable
+                ^
+                source-code-scss-punctuation-separator
+                 ^
+                 source-code-scss-whitespace
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                  source-code-scss-comment-line
+  font-size: fluid(1rem, 1.75rem);
+^^
+source-code-scss-whitespace
+  ^^^^^^^^^
+  source-code-scss-identifier-property
+           ^
+           source-code-scss-punctuation-separator
+            ^
+            source-code-scss-whitespace
+             ^^^^^
+             source-code-scss-identifier-function
+                  ^
+                  source-code-scss-punctuation
+                   ^
+                   source-code-scss-literal-number
+                    ^^^
+                    source-code-scss-keyword-unit
+                       ^
+                       source-code-scss-punctuation-separator
+                        ^
+                        source-code-scss-whitespace
+                         ^^^^
+                         source-code-scss-literal-number
+                             ^^^
+                             source-code-scss-keyword-unit
+                                ^
+                                source-code-scss-punctuation
+                                 ^
+                                 source-code-scss-punctuation-separator
+}
+^
+source-code-scss-punctuation-end

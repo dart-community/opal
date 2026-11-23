@@ -1,0 +1,45 @@
+@use "sass:color"
+@use "sass:list"
+@use "sass:map"
+@use "sass:math"
+@use "tokens/colors" as vars with ($primary: #2563eb, $radius: 0.5rem)
+@use "mixins/layout" as *
+
+@forward "tokens/typography" as type-* hide $-base-scale
+@forward "tokens/spacing" show $space-sm, $space-md with ($space-md: 1rem !default)
+
+$brand: vars.$primary !default
+$-internal-gap: 0.75rem
+$enable-shadows: true
+$fallback-font: null
+
+$breakpoints: (
+  sm: 36rem,
+  md: 48rem,
+  lg: 64rem,
+)
+
+$font-stack: "Inter", system-ui, sans-serif
+$padding-box: 0.75rem 1.25rem
+
+.card
+  $local-width: math.div(100%, 3)
+  $enable-shadows: false !global
+
+  width: $local-width
+  padding: $padding-box
+  font-family: $font-stack
+  color: color.adjust($brand, $lightness: -12%)
+  max-width: map.get($breakpoints, md)
+  opacity: if(not $enable-shadows and $fallback-font == null, 0.95, 1)
+  z-index: 10 + 2 * 3 - 1
+
+.flags
+  $is-compact: 48rem >= 36rem and 10 != 20 or false
+  $remainder: 17 % 5
+  gap: $-internal-gap
+  order: $remainder
+
+.spread-example
+  $list-args: (0.5rem 1rem, 1.5rem 2rem)
+  margin: list.join($list-args...)

@@ -1,0 +1,60 @@
+@use "sass:map"
+@use "sass:math"
+@use "mixins/focus"
+
+$breakpoints: (sm: 36rem, md: 48rem, lg: 64rem)
+
+@function rem($px, $base: 16)
+  @if $base <= 0
+    @error "Base font size must be positive, got #{$base}."
+  @else if math.unit($px) != ""
+    @warn "Expected unitless pixel value, received #{$px}."
+  @else
+    @debug "Converting #{$px}px with base #{$base}."
+
+  @return math.div($px, $base) * 1rem
+
+=respond-to($name)
+  $min-width: map.get($breakpoints, $name)
+
+  @if $min-width != null
+    @media (width >= $min-width)
+      @content($min-width)
+
+@mixin transition($properties...)
+  transition-property: $properties
+  transition-duration: 180ms
+
+=reduced-motion
+  @media (prefers-reduced-motion: reduce)
+    @content
+
+.button
+  font-size: rem(14)
+  @include focus.ring(#2563eb)
+  @include transition(color, background-color, border-color)
+
+  +reduced-motion
+    transition: none
+
+  +respond-to(md) using ($width)
+    max-width: $width
+    padding: 0.75rem 1.5rem
+
+@each $tone, $hex in (info: #0284c7, warn: #d97706, danger: #dc2626)
+  .badge--#{$tone}
+    background-color: $hex
+
+@for $step from 1 through 4
+  .mt-#{$step}
+    margin-top: $step * 0.25rem
+
+@for $col from 0 to 3
+  .col-offset-#{$col}
+    grid-column-start: $col + 1
+
+$level: 3
+@while $level > 0
+  .z-#{$level}
+    z-index: $level * 10
+  $level: $level - 1

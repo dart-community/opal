@@ -1,0 +1,658 @@
+$accent: #0ea5e9
+^^^^^^^
+source-code-sass-identifier-variable
+       ^
+       source-code-sass-punctuation-separator
+        ^
+        source-code-sass-whitespace
+         ^^^^^^^
+         source-code-sass-literal-color
+$steps: (sm: 0.5rem, md: 1rem, lg: 2rem)
+^^^^^^
+source-code-sass-identifier-variable
+      ^
+      source-code-sass-punctuation-separator
+       ^
+       source-code-sass-whitespace
+        ^
+        source-code-sass-punctuation
+         ^^
+         source-code-sass-identifier
+           ^
+           source-code-sass-punctuation-separator
+            ^
+            source-code-sass-whitespace
+             ^^^
+             source-code-sass-literal-number
+                ^^^
+                source-code-sass-keyword-unit
+                   ^
+                   source-code-sass-punctuation-separator
+                    ^
+                    source-code-sass-whitespace
+                     ^^
+                     source-code-sass-identifier
+                       ^
+                       source-code-sass-punctuation-separator
+                        ^
+                        source-code-sass-whitespace
+                         ^
+                         source-code-sass-literal-number
+                          ^^^
+                          source-code-sass-keyword-unit
+                             ^
+                             source-code-sass-punctuation-separator
+                              ^
+                              source-code-sass-whitespace
+                               ^^
+                               source-code-sass-identifier
+                                 ^
+                                 source-code-sass-punctuation-separator
+                                  ^
+                                  source-code-sass-whitespace
+                                   ^
+                                   source-code-sass-literal-number
+                                    ^^^
+                                    source-code-sass-keyword-unit
+                                       ^
+                                       source-code-sass-punctuation
+
+@layer reset, tokens, components
+^
+source-code-sass-punctuation
+ ^^^^^
+ source-code-sass-keyword-at-rule
+      ^
+      source-code-sass-whitespace
+       ^^^^^
+       source-code-sass-identifier
+            ^
+            source-code-sass-punctuation-separator
+             ^
+             source-code-sass-whitespace
+              ^^^^^^
+              source-code-sass-identifier
+                    ^
+                    source-code-sass-punctuation-separator
+                     ^
+                     source-code-sass-whitespace
+                      ^^^^^^^^^^
+                      source-code-sass-identifier
+
+@layer tokens
+^
+source-code-sass-punctuation
+ ^^^^^
+ source-code-sass-keyword-at-rule
+      ^
+      source-code-sass-whitespace
+       ^^^^^^
+       source-code-sass-identifier
+  :root
+^^
+source-code-sass-whitespace
+  ^
+  source-code-sass-punctuation
+   ^^^^
+   source-code-sass-identifier-selector-pseudo-class
+    --surface-bg: oklch(98% 0.01 250)
+^^^^
+source-code-sass-whitespace
+    ^^^^^^^^^^^^
+    source-code-sass-identifier-property-custom
+                ^
+                source-code-sass-punctuation-separator
+                 ^
+                 source-code-sass-whitespace
+                  ^^^^^
+                  source-code-sass-identifier-function
+                       ^
+                       source-code-sass-punctuation
+                        ^^
+                        source-code-sass-literal-number
+                          ^
+                          source-code-sass-keyword-unit
+                           ^
+                           source-code-sass-whitespace
+                            ^^^^
+                            source-code-sass-literal-number
+                                ^
+                                source-code-sass-whitespace
+                                 ^^^
+                                 source-code-sass-literal-number
+                                    ^
+                                    source-code-sass-punctuation
+    --surface-ink: color(display-p3 0.08 0.12 0.2)
+^^^^
+source-code-sass-whitespace
+    ^^^^^^^^^^^^^
+    source-code-sass-identifier-property-custom
+                 ^
+                 source-code-sass-punctuation-separator
+                  ^
+                  source-code-sass-whitespace
+                   ^^^^^
+                   source-code-sass-identifier-function
+                        ^
+                        source-code-sass-punctuation
+                         ^^^^^^^^^^
+                         source-code-sass-identifier
+                                   ^
+                                   source-code-sass-whitespace
+                                    ^^^^
+                                    source-code-sass-literal-number
+                                        ^
+                                        source-code-sass-whitespace
+                                         ^^^^
+                                         source-code-sass-literal-number
+                                             ^
+                                             source-code-sass-whitespace
+                                              ^^^
+                                              source-code-sass-literal-number
+                                                 ^
+                                                 source-code-sass-punctuation
+    --accent-alpha: #0ea5e980
+^^^^
+source-code-sass-whitespace
+    ^^^^^^^^^^^^^^
+    source-code-sass-identifier-property-custom
+                  ^
+                  source-code-sass-punctuation-separator
+                   ^
+                   source-code-sass-whitespace
+                    ^^^^^^^^^
+                    source-code-sass-literal-color
+
+    @each $name, $value in $steps
+^^^^
+source-code-sass-whitespace
+    ^
+    source-code-sass-punctuation
+     ^^^^
+     source-code-sass-keyword-at-rule
+         ^
+         source-code-sass-whitespace
+          ^^^^^
+          source-code-sass-identifier-variable
+               ^
+               source-code-sass-punctuation-separator
+                ^
+                source-code-sass-whitespace
+                 ^^^^^^
+                 source-code-sass-identifier-variable
+                       ^
+                       source-code-sass-whitespace
+                        ^^
+                        source-code-sass-keyword-control-in
+                          ^
+                          source-code-sass-whitespace
+                           ^^^^^^
+                           source-code-sass-identifier-variable
+      --space-#{$name}: #{$value}
+^^^^^^
+source-code-sass-whitespace
+      ^^^^^^^^
+      source-code-sass-identifier-property-custom
+              ^^
+              source-code-sass-literal-string-interpolation-literal-string-interpolation-begin
+                ^^^^^
+                source-code-sass-literal-string-interpolation-identifier-variable
+                     ^
+                     source-code-sass-literal-string-interpolation-literal-string-interpolation-end
+                      ^
+                      source-code-sass-punctuation-separator
+                       ^
+                       source-code-sass-whitespace
+                        ^^
+                        source-code-sass-literal-string-interpolation-literal-string-interpolation-begin
+                          ^^^^^^
+                          source-code-sass-literal-string-interpolation-identifier-variable
+                                ^
+                                source-code-sass-literal-string-interpolation-literal-string-interpolation-end
+
+@layer components
+^
+source-code-sass-punctuation
+ ^^^^^
+ source-code-sass-keyword-at-rule
+      ^
+      source-code-sass-whitespace
+       ^^^^^^^^^^
+       source-code-sass-identifier
+  @scope (.panel) to (.panel__footer)
+^^
+source-code-sass-whitespace
+  ^
+  source-code-sass-punctuation
+   ^^^^^
+   source-code-sass-keyword-at-rule
+        ^
+        source-code-sass-whitespace
+         ^
+         source-code-sass-punctuation
+          ^
+          source-code-sass-punctuation
+           ^^^^^
+           source-code-sass-identifier-selector-class
+                ^
+                source-code-sass-punctuation
+                 ^
+                 source-code-sass-whitespace
+                  ^^
+                  source-code-sass-identifier
+                    ^
+                    source-code-sass-whitespace
+                     ^
+                     source-code-sass-punctuation
+                      ^
+                      source-code-sass-punctuation
+                       ^^^^^^^^^^^^^
+                       source-code-sass-identifier-selector-class
+                                    ^
+                                    source-code-sass-punctuation
+    :is(h2, h3):has(+ p)
+^^^^
+source-code-sass-whitespace
+    ^
+    source-code-sass-punctuation
+     ^^
+     source-code-sass-identifier-selector-pseudo-class
+       ^
+       source-code-sass-punctuation
+        ^^
+        source-code-sass-identifier-selector-type
+          ^
+          source-code-sass-punctuation-separator
+           ^
+           source-code-sass-whitespace
+            ^^
+            source-code-sass-identifier-selector-type
+              ^
+              source-code-sass-punctuation
+               ^
+               source-code-sass-punctuation
+                ^^^
+                source-code-sass-identifier-selector-pseudo-class
+                   ^
+                   source-code-sass-punctuation
+                    ^
+                    source-code-sass-keyword-operator
+                     ^
+                     source-code-sass-whitespace
+                      ^
+                      source-code-sass-identifier-selector-type
+                       ^
+                       source-code-sass-punctuation
+      margin-bottom: var(--space-sm)
+^^^^^^
+source-code-sass-whitespace
+      ^^^^^^^^^^^^^
+      source-code-sass-identifier-property
+                   ^
+                   source-code-sass-punctuation-separator
+                    ^
+                    source-code-sass-whitespace
+                     ^^^
+                     source-code-sass-identifier-function
+                        ^
+                        source-code-sass-punctuation
+                         ^^^^^^^^^^
+                         source-code-sass-identifier-variable-custom
+                                   ^
+                                   source-code-sass-punctuation
+
+    a[href^="https" i][data-external="true" s]
+^^^^
+source-code-sass-whitespace
+    ^
+    source-code-sass-identifier-selector-type
+     ^
+     source-code-sass-identifier-selector-attribute-punctuation-begin
+      ^^^^
+      source-code-sass-identifier-selector-attribute-identifier-property
+          ^^
+          source-code-sass-identifier-selector-attribute-keyword-operator
+            ^
+            source-code-sass-identifier-selector-attribute-literal-string-quoted-double-literal-string-quoted-double-begin
+             ^^^^^
+             source-code-sass-identifier-selector-attribute-literal-string-quoted-double-literal-string-unquoted
+                  ^
+                  source-code-sass-identifier-selector-attribute-literal-string-quoted-double-literal-string-quoted-double-end
+                   ^
+                   source-code-sass-identifier-selector-attribute-whitespace
+                    ^
+                    source-code-sass-identifier-selector-attribute-keyword-modifier-flag
+                     ^
+                     source-code-sass-identifier-selector-attribute-punctuation-end
+                      ^
+                      source-code-sass-identifier-selector-attribute-punctuation-begin
+                       ^^^^^^^^^^^^^
+                       source-code-sass-identifier-selector-attribute-identifier-property
+                                    ^
+                                    source-code-sass-identifier-selector-attribute-keyword-operator
+                                     ^
+                                     source-code-sass-identifier-selector-attribute-literal-string-quoted-double-literal-string-quoted-double-begin
+                                      ^^^^
+                                      source-code-sass-identifier-selector-attribute-literal-string-quoted-double-literal-string-unquoted
+                                          ^
+                                          source-code-sass-identifier-selector-attribute-literal-string-quoted-double-literal-string-quoted-double-end
+                                           ^
+                                           source-code-sass-identifier-selector-attribute-whitespace
+                                            ^
+                                            source-code-sass-identifier-selector-attribute-keyword-modifier-flag
+                                             ^
+                                             source-code-sass-identifier-selector-attribute-punctuation-end
+      color: $accent !important
+^^^^^^
+source-code-sass-whitespace
+      ^^^^^
+      source-code-sass-identifier-property
+           ^
+           source-code-sass-punctuation-separator
+            ^
+            source-code-sass-whitespace
+             ^^^^^^^
+             source-code-sass-identifier-variable
+                    ^
+                    source-code-sass-whitespace
+                     ^
+                     source-code-sass-keyword-operator
+                      ^^^^^^^^^
+                      source-code-sass-keyword-modifier-important
+      background: url("/icons/external.svg") no-repeat right center
+^^^^^^
+source-code-sass-whitespace
+      ^^^^^^^^^^
+      source-code-sass-identifier-property
+                ^
+                source-code-sass-punctuation-separator
+                 ^
+                 source-code-sass-whitespace
+                  ^^^
+                  source-code-sass-link-identifier-function
+                     ^
+                     source-code-sass-link-punctuation
+                      ^
+                      source-code-sass-link-literal-string-quoted-double-literal-string-quoted-double-begin
+                       ^^^^^^^^^^^^^^^^^^^
+                       source-code-sass-link-literal-string-quoted-double-literal-string-unquoted
+                                          ^
+                                          source-code-sass-link-literal-string-quoted-double-literal-string-quoted-double-end
+                                           ^
+                                           source-code-sass-link-punctuation
+                                            ^
+                                            source-code-sass-whitespace
+                                             ^^^^^^^^^
+                                             source-code-sass-identifier
+                                                      ^
+                                                      source-code-sass-whitespace
+                                                       ^^^^^
+                                                       source-code-sass-identifier
+                                                            ^
+                                                            source-code-sass-whitespace
+                                                             ^^^^^^
+                                                             source-code-sass-identifier
+
+  @container panel (inline-size >= 32rem)
+^^
+source-code-sass-whitespace
+  ^
+  source-code-sass-punctuation
+   ^^^^^^^^^
+   source-code-sass-keyword-at-rule
+            ^
+            source-code-sass-whitespace
+             ^^^^^
+             source-code-sass-identifier
+                  ^
+                  source-code-sass-whitespace
+                   ^
+                   source-code-sass-punctuation
+                    ^^^^^^^^^^^
+                    source-code-sass-identifier
+                               ^
+                               source-code-sass-whitespace
+                                ^^
+                                source-code-sass-keyword-operator
+                                  ^
+                                  source-code-sass-whitespace
+                                   ^^
+                                   source-code-sass-literal-number
+                                     ^^^
+                                     source-code-sass-keyword-unit
+                                        ^
+                                        source-code-sass-punctuation
+    .panel__grid
+^^^^
+source-code-sass-whitespace
+    ^
+    source-code-sass-punctuation
+     ^^^^^^^^^^^
+     source-code-sass-identifier-selector-class
+      display: grid
+^^^^^^
+source-code-sass-whitespace
+      ^^^^^^^
+      source-code-sass-identifier-property
+             ^
+             source-code-sass-punctuation-separator
+              ^
+              source-code-sass-whitespace
+               ^^^^
+               source-code-sass-identifier
+      grid-template-columns: repeat(3, 1fr)
+^^^^^^
+source-code-sass-whitespace
+      ^^^^^^^^^^^^^^^^^^^^^
+      source-code-sass-identifier-property
+                           ^
+                           source-code-sass-punctuation-separator
+                            ^
+                            source-code-sass-whitespace
+                             ^^^^^^
+                             source-code-sass-identifier-function
+                                   ^
+                                   source-code-sass-punctuation
+                                    ^
+                                    source-code-sass-literal-number
+                                     ^
+                                     source-code-sass-punctuation-separator
+                                      ^
+                                      source-code-sass-whitespace
+                                       ^
+                                       source-code-sass-literal-number
+                                        ^^
+                                        source-code-sass-keyword-unit
+                                          ^
+                                          source-code-sass-punctuation
+      min-height: 40dvh
+^^^^^^
+source-code-sass-whitespace
+      ^^^^^^^^^^
+      source-code-sass-identifier-property
+                ^
+                source-code-sass-punctuation-separator
+                 ^
+                 source-code-sass-whitespace
+                  ^^
+                  source-code-sass-literal-number
+                    ^^^
+                    source-code-sass-keyword-unit
+      gap: var(--space-md)
+^^^^^^
+source-code-sass-whitespace
+      ^^^
+      source-code-sass-identifier-property
+         ^
+         source-code-sass-punctuation-separator
+          ^
+          source-code-sass-whitespace
+           ^^^
+           source-code-sass-identifier-function
+              ^
+              source-code-sass-punctuation
+               ^^^^^^^^^^
+               source-code-sass-identifier-variable-custom
+                         ^
+                         source-code-sass-punctuation
+      background: linear-gradient(135deg, #0af, rgb(15 23 42 / 80%))
+^^^^^^
+source-code-sass-whitespace
+      ^^^^^^^^^^
+      source-code-sass-identifier-property
+                ^
+                source-code-sass-punctuation-separator
+                 ^
+                 source-code-sass-whitespace
+                  ^^^^^^^^^^^^^^^
+                  source-code-sass-identifier-function
+                                 ^
+                                 source-code-sass-punctuation
+                                  ^^^
+                                  source-code-sass-literal-number
+                                     ^^^
+                                     source-code-sass-keyword-unit
+                                        ^
+                                        source-code-sass-punctuation-separator
+                                         ^
+                                         source-code-sass-whitespace
+                                          ^^^^
+                                          source-code-sass-literal-color
+                                              ^
+                                              source-code-sass-punctuation-separator
+                                               ^
+                                               source-code-sass-whitespace
+                                                ^^^
+                                                source-code-sass-identifier-function
+                                                   ^
+                                                   source-code-sass-punctuation
+                                                    ^^
+                                                    source-code-sass-literal-number
+                                                      ^
+                                                      source-code-sass-whitespace
+                                                       ^^
+                                                       source-code-sass-literal-number
+                                                         ^
+                                                         source-code-sass-whitespace
+                                                          ^^
+                                                          source-code-sass-literal-number
+                                                            ^
+                                                            source-code-sass-whitespace
+                                                             ^
+                                                             source-code-sass-keyword-operator
+                                                              ^
+                                                              source-code-sass-whitespace
+                                                               ^^
+                                                               source-code-sass-literal-number
+                                                                 ^
+                                                                 source-code-sass-keyword-unit
+                                                                  ^
+                                                                  source-code-sass-punctuation
+                                                                   ^
+                                                                   source-code-sass-punctuation
+      transition: transform 250ms ease-out
+^^^^^^
+source-code-sass-whitespace
+      ^^^^^^^^^^
+      source-code-sass-identifier-property
+                ^
+                source-code-sass-punctuation-separator
+                 ^
+                 source-code-sass-whitespace
+                  ^^^^^^^^^
+                  source-code-sass-identifier
+                           ^
+                           source-code-sass-whitespace
+                            ^^^
+                            source-code-sass-literal-number
+                               ^^
+                               source-code-sass-keyword-unit
+                                 ^
+                                 source-code-sass-whitespace
+                                  ^^^^^^^^
+                                  source-code-sass-identifier
+
+  @media screen and (width >= 48rem)
+^^
+source-code-sass-whitespace
+  ^
+  source-code-sass-punctuation
+   ^^^^^
+   source-code-sass-keyword-at-rule
+        ^
+        source-code-sass-whitespace
+         ^^^^^^
+         source-code-sass-identifier
+               ^
+               source-code-sass-whitespace
+                ^^^
+                source-code-sass-keyword-operator-and
+                   ^
+                   source-code-sass-whitespace
+                    ^
+                    source-code-sass-punctuation
+                     ^^^^^
+                     source-code-sass-identifier
+                          ^
+                          source-code-sass-whitespace
+                           ^^
+                           source-code-sass-keyword-operator
+                             ^
+                             source-code-sass-whitespace
+                              ^^
+                              source-code-sass-literal-number
+                                ^^^
+                                source-code-sass-keyword-unit
+                                   ^
+                                   source-code-sass-punctuation
+    .panel
+^^^^
+source-code-sass-whitespace
+    ^
+    source-code-sass-punctuation
+     ^^^^^
+     source-code-sass-identifier-selector-class
+      padding: var(--space-lg)
+^^^^^^
+source-code-sass-whitespace
+      ^^^^^^^
+      source-code-sass-identifier-property
+             ^
+             source-code-sass-punctuation-separator
+              ^
+              source-code-sass-whitespace
+               ^^^
+               source-code-sass-identifier-function
+                  ^
+                  source-code-sass-punctuation
+                   ^^^^^^^^^^
+                   source-code-sass-identifier-variable-custom
+                             ^
+                             source-code-sass-punctuation
+      box-shadow: 0 4px 16px #00000026
+^^^^^^
+source-code-sass-whitespace
+      ^^^^^^^^^^
+      source-code-sass-identifier-property
+                ^
+                source-code-sass-punctuation-separator
+                 ^
+                 source-code-sass-whitespace
+                  ^
+                  source-code-sass-literal-number
+                   ^
+                   source-code-sass-whitespace
+                    ^
+                    source-code-sass-literal-number
+                     ^^
+                     source-code-sass-keyword-unit
+                       ^
+                       source-code-sass-whitespace
+                        ^^
+                        source-code-sass-literal-number
+                          ^^
+                          source-code-sass-keyword-unit
+                            ^
+                            source-code-sass-whitespace
+                             ^^^^^^^^^
+                             source-code-sass-literal-color

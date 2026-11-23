@@ -1,0 +1,1133 @@
+@use "sass:map";
+^
+source-code-scss-punctuation
+ ^^^
+ source-code-scss-keyword-at-rule
+    ^
+    source-code-scss-whitespace
+     ^
+     source-code-scss-literal-string-quoted-double-literal-string-quoted-double-begin
+      ^^^^^^^^
+      source-code-scss-literal-string-quoted-double-literal-string-unquoted
+              ^
+              source-code-scss-literal-string-quoted-double-literal-string-quoted-double-end
+               ^
+               source-code-scss-punctuation-separator
+@use "sass:math";
+^
+source-code-scss-punctuation
+ ^^^
+ source-code-scss-keyword-at-rule
+    ^
+    source-code-scss-whitespace
+     ^
+     source-code-scss-literal-string-quoted-double-literal-string-quoted-double-begin
+      ^^^^^^^^^
+      source-code-scss-literal-string-quoted-double-literal-string-unquoted
+               ^
+               source-code-scss-literal-string-quoted-double-literal-string-quoted-double-end
+                ^
+                source-code-scss-punctuation-separator
+@use "mixins/focus";
+^
+source-code-scss-punctuation
+ ^^^
+ source-code-scss-keyword-at-rule
+    ^
+    source-code-scss-whitespace
+     ^
+     source-code-scss-literal-string-quoted-double-literal-string-quoted-double-begin
+      ^^^^^^^^^^^^
+      source-code-scss-literal-string-quoted-double-literal-string-unquoted
+                  ^
+                  source-code-scss-literal-string-quoted-double-literal-string-quoted-double-end
+                   ^
+                   source-code-scss-punctuation-separator
+
+$breakpoints: (
+^^^^^^^^^^^^
+source-code-scss-identifier-variable
+            ^
+            source-code-scss-punctuation-separator
+             ^
+             source-code-scss-whitespace
+              ^
+              source-code-scss-punctuation
+  sm: 36rem,
+^^
+source-code-scss-whitespace
+  ^^
+  source-code-scss-identifier
+    ^
+    source-code-scss-punctuation-separator
+     ^
+     source-code-scss-whitespace
+      ^^
+      source-code-scss-literal-number
+        ^^^
+        source-code-scss-keyword-unit
+           ^
+           source-code-scss-punctuation-separator
+  md: 48rem,
+^^
+source-code-scss-whitespace
+  ^^
+  source-code-scss-identifier
+    ^
+    source-code-scss-punctuation-separator
+     ^
+     source-code-scss-whitespace
+      ^^
+      source-code-scss-literal-number
+        ^^^
+        source-code-scss-keyword-unit
+           ^
+           source-code-scss-punctuation-separator
+  lg: 64rem,
+^^
+source-code-scss-whitespace
+  ^^
+  source-code-scss-identifier
+    ^
+    source-code-scss-punctuation-separator
+     ^
+     source-code-scss-whitespace
+      ^^
+      source-code-scss-literal-number
+        ^^^
+        source-code-scss-keyword-unit
+           ^
+           source-code-scss-punctuation-separator
+);
+^
+source-code-scss-punctuation
+ ^
+ source-code-scss-punctuation-separator
+
+@function rem($px, $base: 16) {
+^
+source-code-scss-punctuation
+ ^^^^^^^^
+ source-code-scss-keyword-at-rule
+         ^
+         source-code-scss-whitespace
+          ^^^
+          source-code-scss-identifier-function
+             ^
+             source-code-scss-punctuation
+              ^^^
+              source-code-scss-identifier-variable
+                 ^
+                 source-code-scss-punctuation-separator
+                  ^
+                  source-code-scss-whitespace
+                   ^^^^^
+                   source-code-scss-identifier-variable
+                        ^
+                        source-code-scss-punctuation-separator
+                         ^
+                         source-code-scss-whitespace
+                          ^^
+                          source-code-scss-literal-number
+                            ^
+                            source-code-scss-punctuation
+                             ^
+                             source-code-scss-whitespace
+                              ^
+                              source-code-scss-punctuation-begin
+  @if $base <= 0 {
+^^
+source-code-scss-whitespace
+  ^
+  source-code-scss-punctuation
+   ^^
+   source-code-scss-keyword-at-rule
+     ^
+     source-code-scss-whitespace
+      ^^^^^
+      source-code-scss-identifier-variable
+           ^
+           source-code-scss-whitespace
+            ^^
+            source-code-scss-keyword-operator
+              ^
+              source-code-scss-whitespace
+               ^
+               source-code-scss-literal-number
+                ^
+                source-code-scss-whitespace
+                 ^
+                 source-code-scss-punctuation-begin
+    @error "Base font size must be positive, got #{$base}.";
+^^^^
+source-code-scss-whitespace
+    ^
+    source-code-scss-punctuation
+     ^^^^^
+     source-code-scss-keyword-at-rule
+          ^
+          source-code-scss-whitespace
+           ^
+           source-code-scss-literal-string-quoted-double-literal-string-quoted-double-begin
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+            source-code-scss-literal-string-quoted-double-literal-string-unquoted
+                                                 ^^
+                                                 source-code-scss-literal-string-quoted-double-literal-string-interpolation-literal-string-interpolation-begin
+                                                   ^^^^^
+                                                   source-code-scss-literal-string-quoted-double-literal-string-interpolation-identifier-variable
+                                                        ^
+                                                        source-code-scss-literal-string-quoted-double-literal-string-interpolation-literal-string-interpolation-end
+                                                         ^
+                                                         source-code-scss-literal-string-quoted-double-literal-string-unquoted
+                                                          ^
+                                                          source-code-scss-literal-string-quoted-double-literal-string-quoted-double-end
+                                                           ^
+                                                           source-code-scss-punctuation-separator
+  } @else if math.unit($px) != "" {
+^^
+source-code-scss-whitespace
+  ^
+  source-code-scss-punctuation-end
+   ^
+   source-code-scss-whitespace
+    ^
+    source-code-scss-punctuation
+     ^^^^
+     source-code-scss-keyword-at-rule
+         ^
+         source-code-scss-whitespace
+          ^^
+          source-code-scss-keyword-control-if
+            ^
+            source-code-scss-whitespace
+             ^^^^
+             source-code-scss-identifier-namespace
+                 ^
+                 source-code-scss-punctuation-accessor
+                  ^^^^
+                  source-code-scss-identifier-function
+                      ^
+                      source-code-scss-punctuation
+                       ^^^
+                       source-code-scss-identifier-variable
+                          ^
+                          source-code-scss-punctuation
+                           ^
+                           source-code-scss-whitespace
+                            ^^
+                            source-code-scss-keyword-operator
+                              ^
+                              source-code-scss-whitespace
+                               ^
+                               source-code-scss-literal-string-quoted-double-literal-string-quoted-double-begin
+                                ^
+                                source-code-scss-literal-string-quoted-double-literal-string-quoted-double-end
+                                 ^
+                                 source-code-scss-whitespace
+                                  ^
+                                  source-code-scss-punctuation-begin
+    @warn "Expected unitless pixel value, received #{$px}.";
+^^^^
+source-code-scss-whitespace
+    ^
+    source-code-scss-punctuation
+     ^^^^
+     source-code-scss-keyword-at-rule
+         ^
+         source-code-scss-whitespace
+          ^
+          source-code-scss-literal-string-quoted-double-literal-string-quoted-double-begin
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+           source-code-scss-literal-string-quoted-double-literal-string-unquoted
+                                                   ^^
+                                                   source-code-scss-literal-string-quoted-double-literal-string-interpolation-literal-string-interpolation-begin
+                                                     ^^^
+                                                     source-code-scss-literal-string-quoted-double-literal-string-interpolation-identifier-variable
+                                                        ^
+                                                        source-code-scss-literal-string-quoted-double-literal-string-interpolation-literal-string-interpolation-end
+                                                         ^
+                                                         source-code-scss-literal-string-quoted-double-literal-string-unquoted
+                                                          ^
+                                                          source-code-scss-literal-string-quoted-double-literal-string-quoted-double-end
+                                                           ^
+                                                           source-code-scss-punctuation-separator
+  } @else {
+^^
+source-code-scss-whitespace
+  ^
+  source-code-scss-punctuation-end
+   ^
+   source-code-scss-whitespace
+    ^
+    source-code-scss-punctuation
+     ^^^^
+     source-code-scss-keyword-at-rule
+         ^
+         source-code-scss-whitespace
+          ^
+          source-code-scss-punctuation-begin
+    @debug "Converting #{$px}px with base #{$base}.";
+^^^^
+source-code-scss-whitespace
+    ^
+    source-code-scss-punctuation
+     ^^^^^
+     source-code-scss-keyword-at-rule
+          ^
+          source-code-scss-whitespace
+           ^
+           source-code-scss-literal-string-quoted-double-literal-string-quoted-double-begin
+            ^^^^^^^^^^^
+            source-code-scss-literal-string-quoted-double-literal-string-unquoted
+                       ^^
+                       source-code-scss-literal-string-quoted-double-literal-string-interpolation-literal-string-interpolation-begin
+                         ^^^
+                         source-code-scss-literal-string-quoted-double-literal-string-interpolation-identifier-variable
+                            ^
+                            source-code-scss-literal-string-quoted-double-literal-string-interpolation-literal-string-interpolation-end
+                             ^^^^^^^^^^^^^
+                             source-code-scss-literal-string-quoted-double-literal-string-unquoted
+                                          ^^
+                                          source-code-scss-literal-string-quoted-double-literal-string-interpolation-literal-string-interpolation-begin
+                                            ^^^^^
+                                            source-code-scss-literal-string-quoted-double-literal-string-interpolation-identifier-variable
+                                                 ^
+                                                 source-code-scss-literal-string-quoted-double-literal-string-interpolation-literal-string-interpolation-end
+                                                  ^
+                                                  source-code-scss-literal-string-quoted-double-literal-string-unquoted
+                                                   ^
+                                                   source-code-scss-literal-string-quoted-double-literal-string-quoted-double-end
+                                                    ^
+                                                    source-code-scss-punctuation-separator
+  }
+^^
+source-code-scss-whitespace
+  ^
+  source-code-scss-punctuation-end
+
+  @return math.div($px, $base) * 1rem;
+^^
+source-code-scss-whitespace
+  ^
+  source-code-scss-punctuation
+   ^^^^^^
+   source-code-scss-keyword-at-rule
+         ^
+         source-code-scss-whitespace
+          ^^^^
+          source-code-scss-identifier-namespace
+              ^
+              source-code-scss-punctuation-accessor
+               ^^^
+               source-code-scss-identifier-function
+                  ^
+                  source-code-scss-punctuation
+                   ^^^
+                   source-code-scss-identifier-variable
+                      ^
+                      source-code-scss-punctuation-separator
+                       ^
+                       source-code-scss-whitespace
+                        ^^^^^
+                        source-code-scss-identifier-variable
+                             ^
+                             source-code-scss-punctuation
+                              ^
+                              source-code-scss-whitespace
+                               ^
+                               source-code-scss-keyword-operator
+                                ^
+                                source-code-scss-whitespace
+                                 ^
+                                 source-code-scss-literal-number
+                                  ^^^
+                                  source-code-scss-keyword-unit
+                                     ^
+                                     source-code-scss-punctuation-separator
+}
+^
+source-code-scss-punctuation-end
+
+@mixin respond-to($name) {
+^
+source-code-scss-punctuation
+ ^^^^^
+ source-code-scss-keyword-at-rule
+      ^
+      source-code-scss-whitespace
+       ^^^^^^^^^^
+       source-code-scss-identifier-function
+                 ^
+                 source-code-scss-punctuation
+                  ^^^^^
+                  source-code-scss-identifier-variable
+                       ^
+                       source-code-scss-punctuation
+                        ^
+                        source-code-scss-whitespace
+                         ^
+                         source-code-scss-punctuation-begin
+  $min-width: map.get($breakpoints, $name);
+^^
+source-code-scss-whitespace
+  ^^^^^^^^^^
+  source-code-scss-identifier-variable
+            ^
+            source-code-scss-punctuation-separator
+             ^
+             source-code-scss-whitespace
+              ^^^
+              source-code-scss-identifier-namespace
+                 ^
+                 source-code-scss-punctuation-accessor
+                  ^^^
+                  source-code-scss-identifier-function
+                     ^
+                     source-code-scss-punctuation
+                      ^^^^^^^^^^^^
+                      source-code-scss-identifier-variable
+                                  ^
+                                  source-code-scss-punctuation-separator
+                                   ^
+                                   source-code-scss-whitespace
+                                    ^^^^^
+                                    source-code-scss-identifier-variable
+                                         ^
+                                         source-code-scss-punctuation
+                                          ^
+                                          source-code-scss-punctuation-separator
+
+  @if $min-width != null {
+^^
+source-code-scss-whitespace
+  ^
+  source-code-scss-punctuation
+   ^^
+   source-code-scss-keyword-at-rule
+     ^
+     source-code-scss-whitespace
+      ^^^^^^^^^^
+      source-code-scss-identifier-variable
+                ^
+                source-code-scss-whitespace
+                 ^^
+                 source-code-scss-keyword-operator
+                   ^
+                   source-code-scss-whitespace
+                    ^^^^
+                    source-code-scss-literal-null
+                        ^
+                        source-code-scss-whitespace
+                         ^
+                         source-code-scss-punctuation-begin
+    @media (width >= $min-width) {
+^^^^
+source-code-scss-whitespace
+    ^
+    source-code-scss-punctuation
+     ^^^^^
+     source-code-scss-keyword-at-rule
+          ^
+          source-code-scss-whitespace
+           ^
+           source-code-scss-punctuation
+            ^^^^^
+            source-code-scss-identifier
+                 ^
+                 source-code-scss-whitespace
+                  ^^
+                  source-code-scss-keyword-operator
+                    ^
+                    source-code-scss-whitespace
+                     ^^^^^^^^^^
+                     source-code-scss-identifier-variable
+                               ^
+                               source-code-scss-punctuation
+                                ^
+                                source-code-scss-whitespace
+                                 ^
+                                 source-code-scss-punctuation-begin
+      @content($min-width);
+^^^^^^
+source-code-scss-whitespace
+      ^
+      source-code-scss-punctuation
+       ^^^^^^^
+       source-code-scss-keyword-at-rule
+              ^
+              source-code-scss-punctuation
+               ^^^^^^^^^^
+               source-code-scss-identifier-variable
+                         ^
+                         source-code-scss-punctuation
+                          ^
+                          source-code-scss-punctuation-separator
+    }
+^^^^
+source-code-scss-whitespace
+    ^
+    source-code-scss-punctuation-end
+  }
+^^
+source-code-scss-whitespace
+  ^
+  source-code-scss-punctuation-end
+}
+^
+source-code-scss-punctuation-end
+
+@mixin transition($properties...) {
+^
+source-code-scss-punctuation
+ ^^^^^
+ source-code-scss-keyword-at-rule
+      ^
+      source-code-scss-whitespace
+       ^^^^^^^^^^
+       source-code-scss-identifier-function
+                 ^
+                 source-code-scss-punctuation
+                  ^^^^^^^^^^^
+                  source-code-scss-identifier-variable
+                             ^^^
+                             source-code-scss-keyword-operator
+                                ^
+                                source-code-scss-punctuation
+                                 ^
+                                 source-code-scss-whitespace
+                                  ^
+                                  source-code-scss-punctuation-begin
+  transition-property: $properties;
+^^
+source-code-scss-whitespace
+  ^^^^^^^^^^^^^^^^^^^
+  source-code-scss-identifier-property
+                     ^
+                     source-code-scss-punctuation-separator
+                      ^
+                      source-code-scss-whitespace
+                       ^^^^^^^^^^^
+                       source-code-scss-identifier-variable
+                                  ^
+                                  source-code-scss-punctuation-separator
+  transition-duration: 180ms;
+^^
+source-code-scss-whitespace
+  ^^^^^^^^^^^^^^^^^^^
+  source-code-scss-identifier-property
+                     ^
+                     source-code-scss-punctuation-separator
+                      ^
+                      source-code-scss-whitespace
+                       ^^^
+                       source-code-scss-literal-number
+                          ^^
+                          source-code-scss-keyword-unit
+                            ^
+                            source-code-scss-punctuation-separator
+}
+^
+source-code-scss-punctuation-end
+
+@mixin reduced-motion {
+^
+source-code-scss-punctuation
+ ^^^^^
+ source-code-scss-keyword-at-rule
+      ^
+      source-code-scss-whitespace
+       ^^^^^^^^^^^^^^
+       source-code-scss-identifier-function
+                     ^
+                     source-code-scss-whitespace
+                      ^
+                      source-code-scss-punctuation-begin
+  @media (prefers-reduced-motion: reduce) {
+^^
+source-code-scss-whitespace
+  ^
+  source-code-scss-punctuation
+   ^^^^^
+   source-code-scss-keyword-at-rule
+        ^
+        source-code-scss-whitespace
+         ^
+         source-code-scss-punctuation
+          ^^^^^^^^^^^^^^^^^^^^^^
+          source-code-scss-identifier
+                                ^
+                                source-code-scss-punctuation-separator
+                                 ^
+                                 source-code-scss-whitespace
+                                  ^^^^^^
+                                  source-code-scss-identifier
+                                        ^
+                                        source-code-scss-punctuation
+                                         ^
+                                         source-code-scss-whitespace
+                                          ^
+                                          source-code-scss-punctuation-begin
+    @content;
+^^^^
+source-code-scss-whitespace
+    ^
+    source-code-scss-punctuation
+     ^^^^^^^
+     source-code-scss-keyword-at-rule
+            ^
+            source-code-scss-punctuation-separator
+  }
+^^
+source-code-scss-whitespace
+  ^
+  source-code-scss-punctuation-end
+}
+^
+source-code-scss-punctuation-end
+
+.button {
+^
+source-code-scss-punctuation
+ ^^^^^^
+ source-code-scss-identifier-selector-class
+       ^
+       source-code-scss-whitespace
+        ^
+        source-code-scss-punctuation-begin
+  font-size: rem(14);
+^^
+source-code-scss-whitespace
+  ^^^^^^^^^
+  source-code-scss-identifier-property
+           ^
+           source-code-scss-punctuation-separator
+            ^
+            source-code-scss-whitespace
+             ^^^
+             source-code-scss-identifier-function
+                ^
+                source-code-scss-punctuation
+                 ^^
+                 source-code-scss-literal-number
+                   ^
+                   source-code-scss-punctuation
+                    ^
+                    source-code-scss-punctuation-separator
+  @include focus.ring(#2563eb);
+^^
+source-code-scss-whitespace
+  ^
+  source-code-scss-punctuation
+   ^^^^^^^
+   source-code-scss-keyword-at-rule
+          ^
+          source-code-scss-whitespace
+           ^^^^^
+           source-code-scss-identifier-namespace
+                ^
+                source-code-scss-punctuation-accessor
+                 ^^^^
+                 source-code-scss-identifier-function
+                     ^
+                     source-code-scss-punctuation
+                      ^^^^^^^
+                      source-code-scss-literal-color
+                             ^
+                             source-code-scss-punctuation
+                              ^
+                              source-code-scss-punctuation-separator
+  @include transition(color, background-color, border-color);
+^^
+source-code-scss-whitespace
+  ^
+  source-code-scss-punctuation
+   ^^^^^^^
+   source-code-scss-keyword-at-rule
+          ^
+          source-code-scss-whitespace
+           ^^^^^^^^^^
+           source-code-scss-identifier-function
+                     ^
+                     source-code-scss-punctuation
+                      ^^^^^
+                      source-code-scss-identifier
+                           ^
+                           source-code-scss-punctuation-separator
+                            ^
+                            source-code-scss-whitespace
+                             ^^^^^^^^^^^^^^^^
+                             source-code-scss-identifier
+                                             ^
+                                             source-code-scss-punctuation-separator
+                                              ^
+                                              source-code-scss-whitespace
+                                               ^^^^^^^^^^^^
+                                               source-code-scss-identifier
+                                                           ^
+                                                           source-code-scss-punctuation
+                                                            ^
+                                                            source-code-scss-punctuation-separator
+
+  @include reduced-motion {
+^^
+source-code-scss-whitespace
+  ^
+  source-code-scss-punctuation
+   ^^^^^^^
+   source-code-scss-keyword-at-rule
+          ^
+          source-code-scss-whitespace
+           ^^^^^^^^^^^^^^
+           source-code-scss-identifier-function
+                         ^
+                         source-code-scss-whitespace
+                          ^
+                          source-code-scss-punctuation-begin
+    transition: none;
+^^^^
+source-code-scss-whitespace
+    ^^^^^^^^^^
+    source-code-scss-identifier-property
+              ^
+              source-code-scss-punctuation-separator
+               ^
+               source-code-scss-whitespace
+                ^^^^
+                source-code-scss-identifier
+                    ^
+                    source-code-scss-punctuation-separator
+  }
+^^
+source-code-scss-whitespace
+  ^
+  source-code-scss-punctuation-end
+
+  @include respond-to(md) using ($width) {
+^^
+source-code-scss-whitespace
+  ^
+  source-code-scss-punctuation
+   ^^^^^^^
+   source-code-scss-keyword-at-rule
+          ^
+          source-code-scss-whitespace
+           ^^^^^^^^^^
+           source-code-scss-identifier-function
+                     ^
+                     source-code-scss-punctuation
+                      ^^
+                      source-code-scss-identifier
+                        ^
+                        source-code-scss-punctuation
+                         ^
+                         source-code-scss-whitespace
+                          ^^^^^
+                          source-code-scss-keyword-using
+                               ^
+                               source-code-scss-whitespace
+                                ^
+                                source-code-scss-punctuation
+                                 ^^^^^^
+                                 source-code-scss-identifier-variable
+                                       ^
+                                       source-code-scss-punctuation
+                                        ^
+                                        source-code-scss-whitespace
+                                         ^
+                                         source-code-scss-punctuation-begin
+    max-width: $width;
+^^^^
+source-code-scss-whitespace
+    ^^^^^^^^^
+    source-code-scss-identifier-property
+             ^
+             source-code-scss-punctuation-separator
+              ^
+              source-code-scss-whitespace
+               ^^^^^^
+               source-code-scss-identifier-variable
+                     ^
+                     source-code-scss-punctuation-separator
+    padding: 0.75rem 1.5rem;
+^^^^
+source-code-scss-whitespace
+    ^^^^^^^
+    source-code-scss-identifier-property
+           ^
+           source-code-scss-punctuation-separator
+            ^
+            source-code-scss-whitespace
+             ^^^^
+             source-code-scss-literal-number
+                 ^^^
+                 source-code-scss-keyword-unit
+                    ^
+                    source-code-scss-whitespace
+                     ^^^
+                     source-code-scss-literal-number
+                        ^^^
+                        source-code-scss-keyword-unit
+                           ^
+                           source-code-scss-punctuation-separator
+  }
+^^
+source-code-scss-whitespace
+  ^
+  source-code-scss-punctuation-end
+}
+^
+source-code-scss-punctuation-end
+
+@each $tone, $hex in (info: #0284c7, warn: #d97706, danger: #dc2626) {
+^
+source-code-scss-punctuation
+ ^^^^
+ source-code-scss-keyword-at-rule
+     ^
+     source-code-scss-whitespace
+      ^^^^^
+      source-code-scss-identifier-variable
+           ^
+           source-code-scss-punctuation-separator
+            ^
+            source-code-scss-whitespace
+             ^^^^
+             source-code-scss-identifier-variable
+                 ^
+                 source-code-scss-whitespace
+                  ^^
+                  source-code-scss-keyword-control-in
+                    ^
+                    source-code-scss-whitespace
+                     ^
+                     source-code-scss-punctuation
+                      ^^^^
+                      source-code-scss-identifier
+                          ^
+                          source-code-scss-punctuation-separator
+                           ^
+                           source-code-scss-whitespace
+                            ^^^^^^^
+                            source-code-scss-literal-color
+                                   ^
+                                   source-code-scss-punctuation-separator
+                                    ^
+                                    source-code-scss-whitespace
+                                     ^^^^
+                                     source-code-scss-identifier
+                                         ^
+                                         source-code-scss-punctuation-separator
+                                          ^
+                                          source-code-scss-whitespace
+                                           ^^^^^^^
+                                           source-code-scss-literal-color
+                                                  ^
+                                                  source-code-scss-punctuation-separator
+                                                   ^
+                                                   source-code-scss-whitespace
+                                                    ^^^^^^
+                                                    source-code-scss-identifier
+                                                          ^
+                                                          source-code-scss-punctuation-separator
+                                                           ^
+                                                           source-code-scss-whitespace
+                                                            ^^^^^^^
+                                                            source-code-scss-literal-color
+                                                                   ^
+                                                                   source-code-scss-punctuation
+                                                                    ^
+                                                                    source-code-scss-whitespace
+                                                                     ^
+                                                                     source-code-scss-punctuation-begin
+  .badge--#{$tone} {
+^^
+source-code-scss-whitespace
+  ^
+  source-code-scss-punctuation
+   ^^^^^^^
+   source-code-scss-identifier-selector-class
+          ^^
+          source-code-scss-literal-string-interpolation-literal-string-interpolation-begin
+            ^^^^^
+            source-code-scss-literal-string-interpolation-identifier-variable
+                 ^
+                 source-code-scss-literal-string-interpolation-literal-string-interpolation-end
+                  ^
+                  source-code-scss-whitespace
+                   ^
+                   source-code-scss-punctuation-begin
+    background-color: $hex;
+^^^^
+source-code-scss-whitespace
+    ^^^^^^^^^^^^^^^^
+    source-code-scss-identifier-property
+                    ^
+                    source-code-scss-punctuation-separator
+                     ^
+                     source-code-scss-whitespace
+                      ^^^^
+                      source-code-scss-identifier-variable
+                          ^
+                          source-code-scss-punctuation-separator
+  }
+^^
+source-code-scss-whitespace
+  ^
+  source-code-scss-punctuation-end
+}
+^
+source-code-scss-punctuation-end
+
+@for $step from 1 through 4 {
+^
+source-code-scss-punctuation
+ ^^^
+ source-code-scss-keyword-at-rule
+    ^
+    source-code-scss-whitespace
+     ^^^^^
+     source-code-scss-identifier-variable
+          ^
+          source-code-scss-whitespace
+           ^^^^
+           source-code-scss-keyword-control-from
+               ^
+               source-code-scss-whitespace
+                ^
+                source-code-scss-literal-number
+                 ^
+                 source-code-scss-whitespace
+                  ^^^^^^^
+                  source-code-scss-keyword-control-through
+                         ^
+                         source-code-scss-whitespace
+                          ^
+                          source-code-scss-literal-number
+                           ^
+                           source-code-scss-whitespace
+                            ^
+                            source-code-scss-punctuation-begin
+  .mt-#{$step} {
+^^
+source-code-scss-whitespace
+  ^
+  source-code-scss-punctuation
+   ^^^
+   source-code-scss-identifier-selector-class
+      ^^
+      source-code-scss-literal-string-interpolation-literal-string-interpolation-begin
+        ^^^^^
+        source-code-scss-literal-string-interpolation-identifier-variable
+             ^
+             source-code-scss-literal-string-interpolation-literal-string-interpolation-end
+              ^
+              source-code-scss-whitespace
+               ^
+               source-code-scss-punctuation-begin
+    margin-top: $step * 0.25rem;
+^^^^
+source-code-scss-whitespace
+    ^^^^^^^^^^
+    source-code-scss-identifier-property
+              ^
+              source-code-scss-punctuation-separator
+               ^
+               source-code-scss-whitespace
+                ^^^^^
+                source-code-scss-identifier-variable
+                     ^
+                     source-code-scss-whitespace
+                      ^
+                      source-code-scss-keyword-operator
+                       ^
+                       source-code-scss-whitespace
+                        ^^^^
+                        source-code-scss-literal-number
+                            ^^^
+                            source-code-scss-keyword-unit
+                               ^
+                               source-code-scss-punctuation-separator
+  }
+^^
+source-code-scss-whitespace
+  ^
+  source-code-scss-punctuation-end
+}
+^
+source-code-scss-punctuation-end
+
+@for $col from 0 to 3 {
+^
+source-code-scss-punctuation
+ ^^^
+ source-code-scss-keyword-at-rule
+    ^
+    source-code-scss-whitespace
+     ^^^^
+     source-code-scss-identifier-variable
+         ^
+         source-code-scss-whitespace
+          ^^^^
+          source-code-scss-keyword-control-from
+              ^
+              source-code-scss-whitespace
+               ^
+               source-code-scss-literal-number
+                ^
+                source-code-scss-whitespace
+                 ^^
+                 source-code-scss-keyword-control-to
+                   ^
+                   source-code-scss-whitespace
+                    ^
+                    source-code-scss-literal-number
+                     ^
+                     source-code-scss-whitespace
+                      ^
+                      source-code-scss-punctuation-begin
+  .col-offset-#{$col} {
+^^
+source-code-scss-whitespace
+  ^
+  source-code-scss-punctuation
+   ^^^^^^^^^^^
+   source-code-scss-identifier-selector-class
+              ^^
+              source-code-scss-literal-string-interpolation-literal-string-interpolation-begin
+                ^^^^
+                source-code-scss-literal-string-interpolation-identifier-variable
+                    ^
+                    source-code-scss-literal-string-interpolation-literal-string-interpolation-end
+                     ^
+                     source-code-scss-whitespace
+                      ^
+                      source-code-scss-punctuation-begin
+    grid-column-start: $col + 1;
+^^^^
+source-code-scss-whitespace
+    ^^^^^^^^^^^^^^^^^
+    source-code-scss-identifier-property
+                     ^
+                     source-code-scss-punctuation-separator
+                      ^
+                      source-code-scss-whitespace
+                       ^^^^
+                       source-code-scss-identifier-variable
+                           ^
+                           source-code-scss-whitespace
+                            ^
+                            source-code-scss-keyword-operator
+                             ^
+                             source-code-scss-whitespace
+                              ^
+                              source-code-scss-literal-number
+                               ^
+                               source-code-scss-punctuation-separator
+  }
+^^
+source-code-scss-whitespace
+  ^
+  source-code-scss-punctuation-end
+}
+^
+source-code-scss-punctuation-end
+
+$level: 3;
+^^^^^^
+source-code-scss-identifier-variable
+      ^
+      source-code-scss-punctuation-separator
+       ^
+       source-code-scss-whitespace
+        ^
+        source-code-scss-literal-number
+         ^
+         source-code-scss-punctuation-separator
+@while $level > 0 {
+^
+source-code-scss-punctuation
+ ^^^^^
+ source-code-scss-keyword-at-rule
+      ^
+      source-code-scss-whitespace
+       ^^^^^^
+       source-code-scss-identifier-variable
+             ^
+             source-code-scss-whitespace
+              ^
+              source-code-scss-keyword-operator
+               ^
+               source-code-scss-whitespace
+                ^
+                source-code-scss-literal-number
+                 ^
+                 source-code-scss-whitespace
+                  ^
+                  source-code-scss-punctuation-begin
+  .z-#{$level} {
+^^
+source-code-scss-whitespace
+  ^
+  source-code-scss-punctuation
+   ^^
+   source-code-scss-identifier-selector-class
+     ^^
+     source-code-scss-literal-string-interpolation-literal-string-interpolation-begin
+       ^^^^^^
+       source-code-scss-literal-string-interpolation-identifier-variable
+             ^
+             source-code-scss-literal-string-interpolation-literal-string-interpolation-end
+              ^
+              source-code-scss-whitespace
+               ^
+               source-code-scss-punctuation-begin
+    z-index: $level * 10;
+^^^^
+source-code-scss-whitespace
+    ^^^^^^^
+    source-code-scss-identifier-property
+           ^
+           source-code-scss-punctuation-separator
+            ^
+            source-code-scss-whitespace
+             ^^^^^^
+             source-code-scss-identifier-variable
+                   ^
+                   source-code-scss-whitespace
+                    ^
+                    source-code-scss-keyword-operator
+                     ^
+                     source-code-scss-whitespace
+                      ^^
+                      source-code-scss-literal-number
+                        ^
+                        source-code-scss-punctuation-separator
+  }
+^^
+source-code-scss-whitespace
+  ^
+  source-code-scss-punctuation-end
+  $level: $level - 1;
+^^
+source-code-scss-whitespace
+  ^^^^^^
+  source-code-scss-identifier-variable
+        ^
+        source-code-scss-punctuation-separator
+         ^
+         source-code-scss-whitespace
+          ^^^^^^
+          source-code-scss-identifier-variable
+                ^
+                source-code-scss-whitespace
+                 ^
+                 source-code-scss-keyword-operator
+                  ^
+                  source-code-scss-whitespace
+                   ^
+                   source-code-scss-literal-number
+                    ^
+                    source-code-scss-punctuation-separator
+}
+^
+source-code-scss-punctuation-end

@@ -184,6 +184,20 @@ void main() {
         expect(BuiltInLanguages.all, contains(BuiltInLanguages.rust));
       });
 
+      test('includes sass and scss languages', () {
+        for (final name in ['sass', 'SASS', ' sass ']) {
+          expect(registry[name], same(BuiltInLanguages.sass));
+        }
+        for (final name in ['scss', 'SCSS', ' scss ']) {
+          expect(registry[name], same(BuiltInLanguages.scss));
+        }
+        expect(BuiltInLanguages.sass.name, 'sass');
+        expect(BuiltInLanguages.scss.name, 'scss');
+        expect(BuiltInLanguages.all, contains(BuiltInLanguages.sass));
+        expect(BuiltInLanguages.all, contains(BuiltInLanguages.scss));
+        expect(BuiltInLanguages.sass, isNot(same(BuiltInLanguages.scss)));
+      });
+
       test('includes objective-c language and fallbacks', () {
         for (final name in [
           'objective-c',

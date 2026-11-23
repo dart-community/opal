@@ -1,0 +1,283 @@
+$broken-double: "unterminated string
+^^^^^^^^^^^^^^
+source-code-sass-identifier-variable
+              ^
+              source-code-sass-punctuation-separator
+               ^
+               source-code-sass-whitespace
+                ^
+                source-code-sass-literal-string-quoted-double-literal-string-quoted-double-begin
+                 ^^^^^^^^^^^^^^^^^^^
+                 source-code-sass-literal-string-quoted-double-literal-string-unquoted
+$broken-single: 'also unterminated
+^^^^^^^^^^^^^^
+source-code-sass-identifier-variable
+              ^
+              source-code-sass-punctuation-separator
+               ^
+               source-code-sass-whitespace
+                ^
+                source-code-sass-literal-string-quoted-single-literal-string-quoted-single-begin
+                 ^^^^^^^^^^^^^^^^^
+                 source-code-sass-literal-string-quoted-single-literal-string-unquoted
+$recovered: #123456
+^^^^^^^^^^
+source-code-sass-identifier-variable
+          ^
+          source-code-sass-punctuation-separator
+           ^
+           source-code-sass-whitespace
+            ^^^^^^^
+            source-code-sass-literal-color
+
+.broken-interpolation
+^
+source-code-sass-punctuation
+ ^^^^^^^^^^^^^^^^^^^^
+ source-code-sass-identifier-selector-class
+  content: "hello #{$unclosed
+^^
+source-code-sass-whitespace
+  ^^^^^^^
+  source-code-sass-identifier-property
+         ^
+         source-code-sass-punctuation-separator
+          ^
+          source-code-sass-whitespace
+           ^
+           source-code-sass-literal-string-quoted-double-literal-string-quoted-double-begin
+            ^^^^^^
+            source-code-sass-literal-string-quoted-double-literal-string-unquoted
+                  ^^
+                  source-code-sass-literal-string-quoted-double-literal-string-interpolation-literal-string-interpolation-begin
+                    ^^^^^^^^^
+                    source-code-sass-literal-string-quoted-double-literal-string-interpolation-identifier-variable
+  background: url("#{$path/image.svg")
+^^
+source-code-sass-whitespace
+  ^^^^^^^^^^
+  source-code-sass-identifier-property
+            ^
+            source-code-sass-punctuation-separator
+             ^
+             source-code-sass-whitespace
+              ^^^
+              source-code-sass-link-identifier-function
+                 ^
+                 source-code-sass-link-punctuation
+                  ^
+                  source-code-sass-link-literal-string-quoted-double-literal-string-quoted-double-begin
+                   ^^
+                   source-code-sass-link-literal-string-quoted-double-literal-string-interpolation-literal-string-interpolation-begin
+                     ^^^^^
+                     source-code-sass-link-literal-string-quoted-double-literal-string-interpolation-identifier-variable
+                          ^
+                          source-code-sass-link-literal-string-quoted-double-literal-string-interpolation-keyword-operator
+                           ^^^^^
+                           source-code-sass-link-literal-string-quoted-double-literal-string-interpolation-identifier
+                                ^
+                                source-code-sass-link-literal-string-quoted-double-literal-string-interpolation-punctuation
+                                 ^^^
+                                 source-code-sass-link-literal-string-quoted-double-literal-string-interpolation-identifier-selector-class
+                                    ^
+                                    source-code-sass-link-literal-string-quoted-double-literal-string-interpolation-literal-string-quoted-double-literal-string-quoted-double-begin
+                                     ^
+                                     source-code-sass-link-literal-string-quoted-double-literal-string-interpolation-literal-string-quoted-double-literal-string-unquoted
+  margin-#{$unclosed: 1rem
+^^
+source-code-sass-whitespace
+  ^^^^^^^
+  source-code-sass-identifier-selector-type
+         ^^
+         source-code-sass-literal-string-interpolation-literal-string-interpolation-begin
+           ^^^^^^^^^
+           source-code-sass-literal-string-interpolation-identifier-variable
+                    ^
+                    source-code-sass-literal-string-interpolation-punctuation-separator
+                     ^
+                     source-code-sass-literal-string-interpolation-whitespace
+                      ^
+                      source-code-sass-literal-string-interpolation-literal-number
+                       ^^^
+                       source-code-sass-literal-string-interpolation-keyword-unit
+  color: red
+^^
+source-code-sass-whitespace
+  ^^^^^
+  source-code-sass-identifier-property
+       ^
+       source-code-sass-punctuation-separator
+        ^
+        source-code-sass-whitespace
+         ^^^
+         source-code-sass-identifier
+
+.broken-delimiters
+^
+source-code-sass-punctuation
+ ^^^^^^^^^^^^^^^^^
+ source-code-sass-identifier-selector-class
+  width: calc(100% - 2rem
+^^
+source-code-sass-whitespace
+  ^^^^^
+  source-code-sass-identifier-property
+       ^
+       source-code-sass-punctuation-separator
+        ^
+        source-code-sass-whitespace
+         ^^^^
+         source-code-sass-identifier-function
+             ^
+             source-code-sass-punctuation
+              ^^^
+              source-code-sass-literal-number
+                 ^
+                 source-code-sass-keyword-unit
+                  ^
+                  source-code-sass-whitespace
+                   ^
+                   source-code-sass-keyword-operator
+                    ^
+                    source-code-sass-whitespace
+                     ^
+                     source-code-sass-literal-number
+                      ^^^
+                      source-code-sass-keyword-unit
+  opacity: 0.8;
+^^
+source-code-sass-whitespace
+  ^^^^^^^
+  source-code-sass-identifier-property
+         ^
+         source-code-sass-punctuation-separator
+          ^
+          source-code-sass-whitespace
+           ^^^
+           source-code-sass-literal-number
+              ^
+              source-code-sass-punctuation-separator
+  padding: 1rem {
+^^
+source-code-sass-whitespace
+  ^^^^^^^
+  source-code-sass-identifier-property
+         ^
+         source-code-sass-punctuation-separator
+          ^
+          source-code-sass-whitespace
+           ^
+           source-code-sass-literal-number
+            ^^^
+            source-code-sass-keyword-unit
+               ^
+               source-code-sass-whitespace
+                ^
+                source-code-sass-punctuation
+  color: $recovered !
+^^
+source-code-sass-whitespace
+  ^^^^^
+  source-code-sass-identifier-property
+       ^
+       source-code-sass-punctuation-separator
+        ^
+        source-code-sass-whitespace
+         ^^^^^^^^^^
+         source-code-sass-identifier-variable
+                   ^
+                   source-code-sass-whitespace
+                    ^
+                    source-code-sass-keyword-operator
+  invalid: `token
+^^
+source-code-sass-whitespace
+  ^^^^^^^
+  source-code-sass-identifier-property
+         ^
+         source-code-sass-punctuation-separator
+          ^
+          source-code-sass-whitespace
+           ^
+           source-code-sass-unknown
+            ^^^^^
+            source-code-sass-identifier
+
+@unknown stray-arg
+^
+source-code-sass-punctuation
+ ^^^^^^^
+ source-code-sass-keyword-at-rule
+        ^
+        source-code-sass-whitespace
+         ^^^^^^^^^
+         source-code-sass-identifier
++missing-paren(1rem
+^
+source-code-sass-keyword-at-rule
+ ^^^^^^^^^^^^^
+ source-code-sass-identifier-function
+              ^
+              source-code-sass-punctuation
+               ^
+               source-code-sass-literal-number
+                ^^^
+                source-code-sass-keyword-unit
+
+.recovered-rule
+^
+source-code-sass-punctuation
+ ^^^^^^^^^^^^^^
+ source-code-sass-identifier-selector-class
+  display: grid
+^^
+source-code-sass-whitespace
+  ^^^^^^^
+  source-code-sass-identifier-property
+         ^
+         source-code-sass-punctuation-separator
+          ^
+          source-code-sass-whitespace
+           ^^^^
+           source-code-sass-identifier
+  gap: 1rem
+^^
+source-code-sass-whitespace
+  ^^^
+  source-code-sass-identifier-property
+     ^
+     source-code-sass-punctuation-separator
+      ^
+      source-code-sass-whitespace
+       ^
+       source-code-sass-literal-number
+        ^^^
+        source-code-sass-keyword-unit
+
+.unclosed-comment
+^
+source-code-sass-punctuation
+ ^^^^^^^^^^^^^^^^
+ source-code-sass-identifier-selector-class
+  padding: 0.5rem /* Unclosed inline comment through EOF
+^^
+source-code-sass-whitespace
+  ^^^^^^^
+  source-code-sass-identifier-property
+         ^
+         source-code-sass-punctuation-separator
+          ^
+          source-code-sass-whitespace
+           ^^^
+           source-code-sass-literal-number
+              ^^^
+              source-code-sass-keyword-unit
+                 ^
+                 source-code-sass-whitespace
+                  ^^
+                  source-code-sass-comment-block-comment-block-begin
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                    source-code-sass-comment-block-comment-block-content
+  still inside comment
+^^^^^^^^^^^^^^^^^^^^^^
+source-code-sass-comment-block-comment-block-content

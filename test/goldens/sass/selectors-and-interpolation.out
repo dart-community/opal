@@ -1,0 +1,618 @@
+$prefix: "ui"
+^^^^^^^
+source-code-sass-identifier-variable
+       ^
+       source-code-sass-punctuation-separator
+        ^
+        source-code-sass-whitespace
+         ^
+         source-code-sass-literal-string-quoted-double-literal-string-quoted-double-begin
+          ^^
+          source-code-sass-literal-string-quoted-double-literal-string-unquoted
+            ^
+            source-code-sass-literal-string-quoted-double-literal-string-quoted-double-end
+$side: inline-start
+^^^^^
+source-code-sass-identifier-variable
+     ^
+     source-code-sass-punctuation-separator
+      ^
+      source-code-sass-whitespace
+       ^^^^^^^^^^^^
+       source-code-sass-identifier
+$gutter: 1.5rem
+^^^^^^^
+source-code-sass-identifier-variable
+       ^
+       source-code-sass-punctuation-separator
+        ^
+        source-code-sass-whitespace
+         ^^^
+         source-code-sass-literal-number
+            ^^^
+            source-code-sass-keyword-unit
+$asset-dir: "/assets/icons"
+^^^^^^^^^^
+source-code-sass-identifier-variable
+          ^
+          source-code-sass-punctuation-separator
+           ^
+           source-code-sass-whitespace
+            ^
+            source-code-sass-literal-string-quoted-double-literal-string-quoted-double-begin
+             ^^^^^^^^^^^^^
+             source-code-sass-literal-string-quoted-double-literal-string-unquoted
+                          ^
+                          source-code-sass-literal-string-quoted-double-literal-string-quoted-double-end
+
+%visually-hidden
+^
+source-code-sass-punctuation
+ ^^^^^^^^^^^^^^^
+ source-code-sass-identifier-selector-placeholder
+  position: absolute
+^^
+source-code-sass-whitespace
+  ^^^^^^^^
+  source-code-sass-identifier-property
+          ^
+          source-code-sass-punctuation-separator
+           ^
+           source-code-sass-whitespace
+            ^^^^^^^^
+            source-code-sass-identifier
+  width: 1px
+^^
+source-code-sass-whitespace
+  ^^^^^
+  source-code-sass-identifier-property
+       ^
+       source-code-sass-punctuation-separator
+        ^
+        source-code-sass-whitespace
+         ^
+         source-code-sass-literal-number
+          ^^
+          source-code-sass-keyword-unit
+  height: 1px
+^^
+source-code-sass-whitespace
+  ^^^^^^
+  source-code-sass-identifier-property
+        ^
+        source-code-sass-punctuation-separator
+         ^
+         source-code-sass-whitespace
+          ^
+          source-code-sass-literal-number
+           ^^
+           source-code-sass-keyword-unit
+  overflow: hidden
+^^
+source-code-sass-whitespace
+  ^^^^^^^^
+  source-code-sass-identifier-property
+          ^
+          source-code-sass-punctuation-separator
+           ^
+           source-code-sass-whitespace
+            ^^^^^^
+            source-code-sass-identifier
+  clip-path: inset(50%)
+^^
+source-code-sass-whitespace
+  ^^^^^^^^^
+  source-code-sass-identifier-property
+           ^
+           source-code-sass-punctuation-separator
+            ^
+            source-code-sass-whitespace
+             ^^^^^
+             source-code-sass-identifier-function
+                  ^
+                  source-code-sass-punctuation
+                   ^^
+                   source-code-sass-literal-number
+                     ^
+                     source-code-sass-keyword-unit
+                      ^
+                      source-code-sass-punctuation
+
+%button-base
+^
+source-code-sass-punctuation
+ ^^^^^^^^^^^
+ source-code-sass-identifier-selector-placeholder
+  display: inline-flex
+^^
+source-code-sass-whitespace
+  ^^^^^^^
+  source-code-sass-identifier-property
+         ^
+         source-code-sass-punctuation-separator
+          ^
+          source-code-sass-whitespace
+           ^^^^^^^^^^^
+           source-code-sass-identifier
+  align-items: center
+^^
+source-code-sass-whitespace
+  ^^^^^^^^^^^
+  source-code-sass-identifier-property
+             ^
+             source-code-sass-punctuation-separator
+              ^
+              source-code-sass-whitespace
+               ^^^^^^
+               source-code-sass-identifier
+  cursor: pointer
+^^
+source-code-sass-whitespace
+  ^^^^^^
+  source-code-sass-identifier-property
+        ^
+        source-code-sass-punctuation-separator
+         ^
+         source-code-sass-whitespace
+          ^^^^^^^
+          source-code-sass-identifier
+
+.#{$prefix}-card
+^
+source-code-sass-punctuation
+ ^^
+ source-code-sass-literal-string-interpolation-literal-string-interpolation-begin
+   ^^^^^^^
+   source-code-sass-literal-string-interpolation-identifier-variable
+          ^
+          source-code-sass-literal-string-interpolation-literal-string-interpolation-end
+           ^^^^^
+           source-code-sass-identifier-selector
+  border: 1px solid #cbd5e1
+^^
+source-code-sass-whitespace
+  ^^^^^^
+  source-code-sass-identifier-property
+        ^
+        source-code-sass-punctuation-separator
+         ^
+         source-code-sass-whitespace
+          ^
+          source-code-sass-literal-number
+           ^^
+           source-code-sass-keyword-unit
+             ^
+             source-code-sass-whitespace
+              ^^^^^
+              source-code-sass-identifier
+                   ^
+                   source-code-sass-whitespace
+                    ^^^^^^^
+                    source-code-sass-literal-color
+    radius: 0.75rem
+^^^^
+source-code-sass-whitespace
+    ^^^^^^
+    source-code-sass-identifier-property
+          ^
+          source-code-sass-punctuation-separator
+           ^
+           source-code-sass-whitespace
+            ^^^^
+            source-code-sass-literal-number
+                ^^^
+                source-code-sass-keyword-unit
+  font:
+^^
+source-code-sass-whitespace
+  ^^^^
+  source-code-sass-identifier-property
+      ^
+      source-code-sass-punctuation-separator
+    family: "Inter", sans-serif
+^^^^
+source-code-sass-whitespace
+    ^^^^^^
+    source-code-sass-identifier-property
+          ^
+          source-code-sass-punctuation-separator
+           ^
+           source-code-sass-whitespace
+            ^
+            source-code-sass-literal-string-quoted-double-literal-string-quoted-double-begin
+             ^^^^^
+             source-code-sass-literal-string-quoted-double-literal-string-unquoted
+                  ^
+                  source-code-sass-literal-string-quoted-double-literal-string-quoted-double-end
+                   ^
+                   source-code-sass-punctuation-separator
+                    ^
+                    source-code-sass-whitespace
+                     ^^^^^^^^^^
+                     source-code-sass-identifier
+    size: 1rem
+^^^^
+source-code-sass-whitespace
+    ^^^^
+    source-code-sass-identifier-property
+        ^
+        source-code-sass-punctuation-separator
+         ^
+         source-code-sass-whitespace
+          ^
+          source-code-sass-literal-number
+           ^^^
+           source-code-sass-keyword-unit
+    weight: 500
+^^^^
+source-code-sass-whitespace
+    ^^^^^^
+    source-code-sass-identifier-property
+          ^
+          source-code-sass-punctuation-separator
+           ^
+           source-code-sass-whitespace
+            ^^^
+            source-code-sass-literal-number
+  margin-#{$side}: calc(100% - #{$gutter})
+^^
+source-code-sass-whitespace
+  ^^^^^^^
+  source-code-sass-identifier-property
+         ^^
+         source-code-sass-literal-string-interpolation-literal-string-interpolation-begin
+           ^^^^^
+           source-code-sass-literal-string-interpolation-identifier-variable
+                ^
+                source-code-sass-literal-string-interpolation-literal-string-interpolation-end
+                 ^
+                 source-code-sass-punctuation-separator
+                  ^
+                  source-code-sass-whitespace
+                   ^^^^
+                   source-code-sass-identifier-function
+                       ^
+                       source-code-sass-punctuation
+                        ^^^
+                        source-code-sass-literal-number
+                           ^
+                           source-code-sass-keyword-unit
+                            ^
+                            source-code-sass-whitespace
+                             ^
+                             source-code-sass-keyword-operator
+                              ^
+                              source-code-sass-whitespace
+                               ^^
+                               source-code-sass-literal-string-interpolation-literal-string-interpolation-begin
+                                 ^^^^^^^
+                                 source-code-sass-literal-string-interpolation-identifier-variable
+                                        ^
+                                        source-code-sass-literal-string-interpolation-literal-string-interpolation-end
+                                         ^
+                                         source-code-sass-punctuation
+
+  &__header
+^^
+source-code-sass-whitespace
+  ^
+  source-code-sass-identifier-selector-nesting
+   ^^^^^^^^
+   source-code-sass-identifier-selector
+    display: flex
+^^^^
+source-code-sass-whitespace
+    ^^^^^^^
+    source-code-sass-identifier-property
+           ^
+           source-code-sass-punctuation-separator
+            ^
+            source-code-sass-whitespace
+             ^^^^
+             source-code-sass-identifier
+    gap: 0.5rem
+^^^^
+source-code-sass-whitespace
+    ^^^
+    source-code-sass-identifier-property
+       ^
+       source-code-sass-punctuation-separator
+        ^
+        source-code-sass-whitespace
+         ^^^
+         source-code-sass-literal-number
+            ^^^
+            source-code-sass-keyword-unit
+
+  &__label
+^^
+source-code-sass-whitespace
+  ^
+  source-code-sass-identifier-selector-nesting
+   ^^^^^^^
+   source-code-sass-identifier-selector
+    @extend %visually-hidden
+^^^^
+source-code-sass-whitespace
+    ^
+    source-code-sass-punctuation
+     ^^^^^^
+     source-code-sass-keyword-at-rule
+           ^
+           source-code-sass-whitespace
+            ^
+            source-code-sass-punctuation
+             ^^^^^^^^^^^^^^^
+             source-code-sass-identifier-selector-placeholder
+    content: "Card: #{$prefix}" ' (#{$side})'
+^^^^
+source-code-sass-whitespace
+    ^^^^^^^
+    source-code-sass-identifier-property
+           ^
+           source-code-sass-punctuation-separator
+            ^
+            source-code-sass-whitespace
+             ^
+             source-code-sass-literal-string-quoted-double-literal-string-quoted-double-begin
+              ^^^^^^
+              source-code-sass-literal-string-quoted-double-literal-string-unquoted
+                    ^^
+                    source-code-sass-literal-string-quoted-double-literal-string-interpolation-literal-string-interpolation-begin
+                      ^^^^^^^
+                      source-code-sass-literal-string-quoted-double-literal-string-interpolation-identifier-variable
+                             ^
+                             source-code-sass-literal-string-quoted-double-literal-string-interpolation-literal-string-interpolation-end
+                              ^
+                              source-code-sass-literal-string-quoted-double-literal-string-quoted-double-end
+                               ^
+                               source-code-sass-whitespace
+                                ^
+                                source-code-sass-literal-string-quoted-single-literal-string-quoted-single-begin
+                                 ^^
+                                 source-code-sass-literal-string-quoted-single-literal-string-unquoted
+                                   ^^
+                                   source-code-sass-literal-string-quoted-single-literal-string-interpolation-literal-string-interpolation-begin
+                                     ^^^^^
+                                     source-code-sass-literal-string-quoted-single-literal-string-interpolation-identifier-variable
+                                          ^
+                                          source-code-sass-literal-string-quoted-single-literal-string-interpolation-literal-string-interpolation-end
+                                           ^
+                                           source-code-sass-literal-string-quoted-single-literal-string-unquoted
+                                            ^
+                                            source-code-sass-literal-string-quoted-single-literal-string-quoted-single-end
+
+  &--featured
+^^
+source-code-sass-whitespace
+  ^
+  source-code-sass-identifier-selector-nesting
+   ^^^^^^^^^^
+   source-code-sass-identifier-selector
+    @extend %button-base
+^^^^
+source-code-sass-whitespace
+    ^
+    source-code-sass-punctuation
+     ^^^^^^
+     source-code-sass-keyword-at-rule
+           ^
+           source-code-sass-whitespace
+            ^
+            source-code-sass-punctuation
+             ^^^^^^^^^^^
+             source-code-sass-identifier-selector-placeholder
+    @extend .missing-utility !optional
+^^^^
+source-code-sass-whitespace
+    ^
+    source-code-sass-punctuation
+     ^^^^^^
+     source-code-sass-keyword-at-rule
+           ^
+           source-code-sass-whitespace
+            ^
+            source-code-sass-punctuation
+             ^^^^^^^^^^^^^^^
+             source-code-sass-identifier-selector-class
+                            ^
+                            source-code-sass-whitespace
+                             ^
+                             source-code-sass-keyword-operator
+                              ^^^^^^^^
+                              source-code-sass-keyword-modifier-optional
+    background-image: url("#{$asset-dir}/star.svg")
+^^^^
+source-code-sass-whitespace
+    ^^^^^^^^^^^^^^^^
+    source-code-sass-identifier-property
+                    ^
+                    source-code-sass-punctuation-separator
+                     ^
+                     source-code-sass-whitespace
+                      ^^^
+                      source-code-sass-link-identifier-function
+                         ^
+                         source-code-sass-link-punctuation
+                          ^
+                          source-code-sass-link-literal-string-quoted-double-literal-string-quoted-double-begin
+                           ^^
+                           source-code-sass-link-literal-string-quoted-double-literal-string-interpolation-literal-string-interpolation-begin
+                             ^^^^^^^^^^
+                             source-code-sass-link-literal-string-quoted-double-literal-string-interpolation-identifier-variable
+                                       ^
+                                       source-code-sass-link-literal-string-quoted-double-literal-string-interpolation-literal-string-interpolation-end
+                                        ^^^^^^^^^
+                                        source-code-sass-link-literal-string-quoted-double-literal-string-unquoted
+                                                 ^
+                                                 source-code-sass-link-literal-string-quoted-double-literal-string-quoted-double-end
+                                                  ^
+                                                  source-code-sass-link-punctuation
+    mask-image: url(#{$asset-dir}/badge.svg)
+^^^^
+source-code-sass-whitespace
+    ^^^^^^^^^^
+    source-code-sass-identifier-property
+              ^
+              source-code-sass-punctuation-separator
+               ^
+               source-code-sass-whitespace
+                ^^^
+                source-code-sass-link-identifier-function
+                   ^
+                   source-code-sass-link-punctuation
+                    ^^
+                    source-code-sass-link-literal-string-interpolation-literal-string-interpolation-begin
+                      ^^^^^^^^^^
+                      source-code-sass-link-literal-string-interpolation-identifier-variable
+                                ^
+                                source-code-sass-link-literal-string-interpolation-literal-string-interpolation-end
+                                 ^^^^^^^^^^
+                                 source-code-sass-link-link-content
+                                           ^
+                                           source-code-sass-link-punctuation
+    list-style-image: url($asset-dir + "/dot.svg")
+^^^^
+source-code-sass-whitespace
+    ^^^^^^^^^^^^^^^^
+    source-code-sass-identifier-property
+                    ^
+                    source-code-sass-punctuation-separator
+                     ^
+                     source-code-sass-whitespace
+                      ^^^
+                      source-code-sass-identifier-function
+                         ^
+                         source-code-sass-punctuation
+                          ^^^^^^^^^^
+                          source-code-sass-identifier-variable
+                                    ^
+                                    source-code-sass-whitespace
+                                     ^
+                                     source-code-sass-keyword-operator
+                                      ^
+                                      source-code-sass-whitespace
+                                       ^
+                                       source-code-sass-literal-string-quoted-double-literal-string-quoted-double-begin
+                                        ^^^^^^^^
+                                        source-code-sass-literal-string-quoted-double-literal-string-unquoted
+                                                ^
+                                                source-code-sass-literal-string-quoted-double-literal-string-quoted-double-end
+                                                 ^
+                                                 source-code-sass-punctuation
+
+  &:hover > &__header
+^^
+source-code-sass-whitespace
+  ^
+  source-code-sass-identifier-selector-nesting
+   ^
+   source-code-sass-punctuation
+    ^^^^^
+    source-code-sass-identifier-selector-pseudo-class
+         ^
+         source-code-sass-whitespace
+          ^
+          source-code-sass-keyword-operator
+           ^
+           source-code-sass-whitespace
+            ^
+            source-code-sass-identifier-selector-nesting
+             ^^^^^^^^
+             source-code-sass-identifier-selector
+    color: #1d4ed8
+^^^^
+source-code-sass-whitespace
+    ^^^^^
+    source-code-sass-identifier-property
+         ^
+         source-code-sass-punctuation-separator
+          ^
+          source-code-sass-whitespace
+           ^^^^^^^
+           source-code-sass-literal-color
+
+  a:focus-visible
+^^
+source-code-sass-whitespace
+  ^
+  source-code-sass-identifier-selector-type
+   ^
+   source-code-sass-punctuation
+    ^^^^^^^^^^^^^
+    source-code-sass-identifier-selector-pseudo-class
+    outline: 2px solid #2563eb
+^^^^
+source-code-sass-whitespace
+    ^^^^^^^
+    source-code-sass-identifier-property
+           ^
+           source-code-sass-punctuation-separator
+            ^
+            source-code-sass-whitespace
+             ^
+             source-code-sass-literal-number
+              ^^
+              source-code-sass-keyword-unit
+                ^
+                source-code-sass-whitespace
+                 ^^^^^
+                 source-code-sass-identifier
+                      ^
+                      source-code-sass-whitespace
+                       ^^^^^^^
+                       source-code-sass-literal-color
+
+  .dark &
+^^
+source-code-sass-whitespace
+  ^
+  source-code-sass-punctuation
+   ^^^^
+   source-code-sass-identifier-selector-class
+       ^
+       source-code-sass-whitespace
+        ^
+        source-code-sass-identifier-selector-nesting
+    background-color: #0f172a
+^^^^
+source-code-sass-whitespace
+    ^^^^^^^^^^^^^^^^
+    source-code-sass-identifier-property
+                    ^
+                    source-code-sass-punctuation-separator
+                     ^
+                     source-code-sass-whitespace
+                      ^^^^^^^
+                      source-code-sass-literal-color
+
+  @at-root .#{$prefix}-card-backdrop
+^^
+source-code-sass-whitespace
+  ^
+  source-code-sass-punctuation
+   ^^^^^^^
+   source-code-sass-keyword-at-rule
+          ^
+          source-code-sass-whitespace
+           ^
+           source-code-sass-punctuation
+            ^^
+            source-code-sass-literal-string-interpolation-literal-string-interpolation-begin
+              ^^^^^^^
+              source-code-sass-literal-string-interpolation-identifier-variable
+                     ^
+                     source-code-sass-literal-string-interpolation-literal-string-interpolation-end
+                      ^^^^^^^^^^^^^^
+                      source-code-sass-identifier-selector
+    inset: 0
+^^^^
+source-code-sass-whitespace
+    ^^^^^
+    source-code-sass-identifier-property
+         ^
+         source-code-sass-punctuation-separator
+          ^
+          source-code-sass-whitespace
+           ^
+           source-code-sass-literal-number
